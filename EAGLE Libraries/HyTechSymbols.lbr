@@ -137,293 +137,6 @@
 </layers>
 <library>
 <packages>
-<package name="DIL68">
-<description>&lt;b&gt;Dual In Line&lt;/b&gt;</description>
-<wire x1="-43.815" y1="-1.27" x2="-43.815" y2="-10.414" width="0.1524" layer="21"/>
-<wire x1="-43.815" y1="1.27" x2="-43.815" y2="-1.27" width="0.1524" layer="21" curve="-180"/>
-<wire x1="43.815" y1="-10.414" x2="43.815" y2="10.414" width="0.1524" layer="21"/>
-<wire x1="-43.815" y1="-10.414" x2="43.815" y2="-10.414" width="0.1524" layer="21"/>
-<wire x1="-43.815" y1="10.414" x2="-43.815" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="-43.815" y1="10.414" x2="43.815" y2="10.414" width="0.1524" layer="21"/>
-<pad name="1" x="-41.91" y="-11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="2" x="-39.37" y="-11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="3" x="-36.83" y="-11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="4" x="-34.29" y="-11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="5" x="-31.75" y="-11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="6" x="-29.21" y="-11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="7" x="-26.67" y="-11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="8" x="-24.13" y="-11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="9" x="-21.59" y="-11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="10" x="-19.05" y="-11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="11" x="-16.51" y="-11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="12" x="-13.97" y="-11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="13" x="-11.43" y="-11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="14" x="-8.89" y="-11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="15" x="-6.35" y="-11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="16" x="-3.81" y="-11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="17" x="-1.27" y="-11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="18" x="1.27" y="-11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="19" x="3.81" y="-11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="32" x="36.83" y="-11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="33" x="39.37" y="-11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="46" x="13.97" y="11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="47" x="11.43" y="11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="48" x="8.89" y="11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="49" x="6.35" y="11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="50" x="3.81" y="11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="51" x="1.27" y="11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="52" x="-1.27" y="11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="53" x="-3.81" y="11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="54" x="-6.35" y="11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="55" x="-8.89" y="11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="56" x="-11.43" y="11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="57" x="-13.97" y="11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="58" x="-16.51" y="11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="59" x="-19.05" y="11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="60" x="-21.59" y="11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="61" x="-24.13" y="11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="62" x="-26.67" y="11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="63" x="-29.21" y="11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="64" x="-31.75" y="11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="20" x="6.35" y="-11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="21" x="8.89" y="-11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="22" x="11.43" y="-11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="23" x="13.97" y="-11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="24" x="16.51" y="-11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="25" x="19.05" y="-11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="26" x="21.59" y="-11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="27" x="24.13" y="-11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="28" x="26.67" y="-11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="29" x="29.21" y="-11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="30" x="31.75" y="-11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="31" x="34.29" y="-11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="45" x="16.51" y="11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="44" x="19.05" y="11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="43" x="21.59" y="11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="42" x="24.13" y="11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="41" x="26.67" y="11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="40" x="29.21" y="11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="39" x="31.75" y="11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="38" x="34.29" y="11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="37" x="36.83" y="11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="36" x="39.37" y="11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="35" x="41.91" y="11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="34" x="41.91" y="-11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="65" x="-34.29" y="11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="66" x="-36.83" y="11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="67" x="-39.37" y="11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="68" x="-41.91" y="11.43" drill="0.8128" shape="long" rot="R90"/>
-<text x="-44.323" y="-10.033" size="1.778" layer="25" ratio="10" rot="R90">&gt;NAME</text>
-<text x="-39.37" y="-0.9652" size="1.778" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="DIL64">
-<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
-<wire x1="-41.275" y1="-1.27" x2="-41.275" y2="-10.414" width="0.1524" layer="21"/>
-<wire x1="-41.275" y1="1.27" x2="-41.275" y2="-1.27" width="0.1524" layer="21" curve="-180"/>
-<wire x1="41.275" y1="-10.414" x2="41.275" y2="10.414" width="0.1524" layer="21"/>
-<wire x1="-41.275" y1="-10.414" x2="41.275" y2="-10.414" width="0.1524" layer="21"/>
-<wire x1="-41.275" y1="10.414" x2="-41.275" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="-41.275" y1="10.414" x2="41.275" y2="10.414" width="0.1524" layer="21"/>
-<pad name="1" x="-39.37" y="-11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="2" x="-36.83" y="-11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="3" x="-34.29" y="-11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="4" x="-31.75" y="-11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="5" x="-29.21" y="-11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="6" x="-26.67" y="-11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="7" x="-24.13" y="-11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="8" x="-21.59" y="-11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="9" x="-19.05" y="-11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="10" x="-16.51" y="-11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="11" x="-13.97" y="-11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="12" x="-11.43" y="-11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="13" x="-8.89" y="-11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="14" x="-6.35" y="-11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="15" x="-3.81" y="-11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="16" x="-1.27" y="-11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="17" x="1.27" y="-11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="18" x="3.81" y="-11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="19" x="6.35" y="-11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="32" x="39.37" y="-11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="33" x="39.37" y="11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="46" x="6.35" y="11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="47" x="3.81" y="11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="48" x="1.27" y="11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="49" x="-1.27" y="11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="50" x="-3.81" y="11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="51" x="-6.35" y="11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="52" x="-8.89" y="11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="53" x="-11.43" y="11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="54" x="-13.97" y="11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="55" x="-16.51" y="11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="56" x="-19.05" y="11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="57" x="-21.59" y="11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="58" x="-24.13" y="11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="59" x="-26.67" y="11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="60" x="-29.21" y="11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="61" x="-31.75" y="11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="62" x="-34.29" y="11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="63" x="-36.83" y="11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="64" x="-39.37" y="11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="20" x="8.89" y="-11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="21" x="11.43" y="-11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="22" x="13.97" y="-11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="23" x="16.51" y="-11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="24" x="19.05" y="-11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="25" x="21.59" y="-11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="26" x="24.13" y="-11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="27" x="26.67" y="-11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="28" x="29.21" y="-11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="29" x="31.75" y="-11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="30" x="34.29" y="-11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="31" x="36.83" y="-11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="45" x="8.89" y="11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="44" x="11.43" y="11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="43" x="13.97" y="11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="42" x="16.51" y="11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="41" x="19.05" y="11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="40" x="21.59" y="11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="39" x="24.13" y="11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="38" x="26.67" y="11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="37" x="29.21" y="11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="36" x="31.75" y="11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="35" x="34.29" y="11.43" drill="0.8128" shape="long" rot="R90"/>
-<pad name="34" x="36.83" y="11.43" drill="0.8128" shape="long" rot="R90"/>
-<text x="-41.783" y="-9.906" size="1.778" layer="25" ratio="10" rot="R90">&gt;NAME</text>
-<text x="-36.83" y="-0.9652" size="1.778" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="1X04">
-<wire x1="6.985" y1="1.27" x2="8.255" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="8.255" y1="1.27" x2="8.89" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="8.89" y1="-0.635" x2="8.255" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="3.81" y1="0.635" x2="4.445" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="4.445" y1="1.27" x2="5.715" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="5.715" y1="1.27" x2="6.35" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="6.35" y1="-0.635" x2="5.715" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="5.715" y1="-1.27" x2="4.445" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="4.445" y1="-1.27" x2="3.81" y2="-0.635" width="0.2032" layer="21"/>
-<wire x1="6.985" y1="1.27" x2="6.35" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="6.35" y1="-0.635" x2="6.985" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="8.255" y1="-1.27" x2="6.985" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="0.635" y1="1.27" x2="1.27" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="1.27" y1="-0.635" x2="0.635" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="1.27" y1="0.635" x2="1.905" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="1.905" y1="1.27" x2="3.175" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="3.175" y1="1.27" x2="3.81" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="3.81" y1="-0.635" x2="3.175" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="3.175" y1="-1.27" x2="1.905" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="1.905" y1="-1.27" x2="1.27" y2="-0.635" width="0.2032" layer="21"/>
-<wire x1="-1.27" y1="0.635" x2="-1.27" y2="-0.635" width="0.2032" layer="21"/>
-<wire x1="-0.635" y1="1.27" x2="-1.27" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="-1.27" y1="-0.635" x2="-0.635" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="0.635" y1="-1.27" x2="-0.635" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="8.89" y1="0.635" x2="8.89" y2="-0.635" width="0.2032" layer="21"/>
-<pad name="1" x="0" y="0" drill="1.016" diameter="1.8796" shape="square" rot="R90"/>
-<pad name="2" x="2.54" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="3" x="5.08" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="4" x="7.62" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<text x="-1.3462" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-1.27" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="7.366" y1="-0.254" x2="7.874" y2="0.254" layer="51"/>
-<rectangle x1="4.826" y1="-0.254" x2="5.334" y2="0.254" layer="51"/>
-<rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
-<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
-</package>
-<package name="TO-220">
-<pad name="1" x="-2.54" y="0" drill="1" diameter="1.8796" shape="square"/>
-<pad name="2" x="0" y="0" drill="1" diameter="1.8796"/>
-<pad name="3" x="2.54" y="0" drill="1" diameter="1.8796"/>
-<wire x1="-5.08" y1="3.81" x2="5.08" y2="3.81" width="0.127" layer="21"/>
-<wire x1="5.08" y1="3.81" x2="5.08" y2="-3.81" width="0.127" layer="21"/>
-<wire x1="5.08" y1="-3.81" x2="-5.08" y2="-3.81" width="0.127" layer="21"/>
-<wire x1="-5.08" y1="-3.81" x2="-5.08" y2="3.81" width="0.127" layer="21"/>
-</package>
-<package name="1X06">
-<wire x1="11.43" y1="0.635" x2="12.065" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="12.065" y1="1.27" x2="13.335" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="13.335" y1="1.27" x2="13.97" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="13.97" y1="-0.635" x2="13.335" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="13.335" y1="-1.27" x2="12.065" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="12.065" y1="-1.27" x2="11.43" y2="-0.635" width="0.2032" layer="21"/>
-<wire x1="6.985" y1="1.27" x2="8.255" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="8.255" y1="1.27" x2="8.89" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="8.89" y1="-0.635" x2="8.255" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="8.89" y1="0.635" x2="9.525" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="9.525" y1="1.27" x2="10.795" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="10.795" y1="1.27" x2="11.43" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="11.43" y1="-0.635" x2="10.795" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="10.795" y1="-1.27" x2="9.525" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="9.525" y1="-1.27" x2="8.89" y2="-0.635" width="0.2032" layer="21"/>
-<wire x1="3.81" y1="0.635" x2="4.445" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="4.445" y1="1.27" x2="5.715" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="5.715" y1="1.27" x2="6.35" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="6.35" y1="-0.635" x2="5.715" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="5.715" y1="-1.27" x2="4.445" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="4.445" y1="-1.27" x2="3.81" y2="-0.635" width="0.2032" layer="21"/>
-<wire x1="6.985" y1="1.27" x2="6.35" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="6.35" y1="-0.635" x2="6.985" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="8.255" y1="-1.27" x2="6.985" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="0.635" y1="1.27" x2="1.27" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="1.27" y1="-0.635" x2="0.635" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="1.27" y1="0.635" x2="1.905" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="1.905" y1="1.27" x2="3.175" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="3.175" y1="1.27" x2="3.81" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="3.81" y1="-0.635" x2="3.175" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="3.175" y1="-1.27" x2="1.905" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="1.905" y1="-1.27" x2="1.27" y2="-0.635" width="0.2032" layer="21"/>
-<wire x1="-1.27" y1="0.635" x2="-1.27" y2="-0.635" width="0.2032" layer="21"/>
-<wire x1="-0.635" y1="1.27" x2="-1.27" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="-1.27" y1="-0.635" x2="-0.635" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="0.635" y1="-1.27" x2="-0.635" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="13.97" y1="0.635" x2="13.97" y2="-0.635" width="0.2032" layer="21"/>
-<pad name="1" x="0" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="2" x="2.54" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="3" x="5.08" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="4" x="7.62" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="5" x="10.16" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="6" x="12.7" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<text x="-1.3462" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-1.27" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="12.446" y1="-0.254" x2="12.954" y2="0.254" layer="51"/>
-<rectangle x1="9.906" y1="-0.254" x2="10.414" y2="0.254" layer="51"/>
-<rectangle x1="7.366" y1="-0.254" x2="7.874" y2="0.254" layer="51"/>
-<rectangle x1="4.826" y1="-0.254" x2="5.334" y2="0.254" layer="51"/>
-<rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
-<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
-</package>
-<package name="BENDER_IR155-3204">
-<wire x1="-5.08" y1="5.588" x2="-5.08" y2="0" width="0.127" layer="21"/>
-<wire x1="0" y1="5.588" x2="0" y2="0" width="0.127" layer="21"/>
-<wire x1="0" y1="5.588" x2="-5.08" y2="5.588" width="0.127" layer="21"/>
-<wire x1="0" y1="0" x2="-1.27" y2="0" width="0.127" layer="21"/>
-<wire x1="-1.27" y1="0" x2="-3.81" y2="0" width="0.127" layer="21"/>
-<wire x1="-3.81" y1="0" x2="-5.08" y2="0" width="0.127" layer="21"/>
-<wire x1="-3.81" y1="0" x2="-3.81" y2="1.27" width="0.127" layer="21"/>
-<wire x1="-3.81" y1="1.27" x2="-1.27" y2="1.27" width="0.127" layer="21"/>
-<wire x1="-1.27" y1="1.27" x2="-1.27" y2="0" width="0.127" layer="21"/>
-<pad name="HV-_9" x="-3.81" y="2.54" drill="1.016" diameter="1.8796" shape="square"/>
-<pad name="HV+_10" x="-1.27" y="2.54" drill="1.016" diameter="1.8796"/>
-<wire x1="1.27" y1="3.175" x2="1.27" y2="1.905" width="0.2032" layer="21"/>
-<wire x1="21.59" y1="3.175" x2="21.59" y2="1.905" width="0.2032" layer="21"/>
-<pad name="GND_1" x="2.54" y="2.54" drill="1.1176" diameter="1.8796" shape="long" rot="R90"/>
-<pad name="VCC_2" x="5.08" y="2.54" drill="1.1176" diameter="1.8796" shape="long" rot="R90"/>
-<pad name="CHASSISGND_3" x="7.62" y="2.54" drill="1.1176" diameter="1.8796" shape="long" rot="R90"/>
-<pad name="CHASSISGND_4" x="10.16" y="2.54" drill="1.1176" diameter="1.8796" shape="long" rot="R90"/>
-<pad name="PWMHIGH_5" x="12.7" y="2.54" drill="1.1176" diameter="1.8796" shape="long" rot="R90"/>
-<pad name="PWMLOW_6" x="15.24" y="2.54" drill="1.1176" diameter="1.8796" shape="long" rot="R90"/>
-<pad name="NC_7" x="17.78" y="2.54" drill="1.1176" diameter="1.8796" shape="long" rot="R90"/>
-<pad name="OKHS_8" x="20.32" y="2.54" drill="1.1176" diameter="1.8796" shape="long" rot="R90"/>
-<rectangle x1="17.526" y1="2.286" x2="18.034" y2="2.794" layer="51"/>
-<rectangle x1="14.986" y1="2.286" x2="15.494" y2="2.794" layer="51"/>
-<rectangle x1="12.446" y1="2.286" x2="12.954" y2="2.794" layer="51"/>
-<rectangle x1="9.906" y1="2.286" x2="10.414" y2="2.794" layer="51"/>
-<rectangle x1="7.366" y1="2.286" x2="7.874" y2="2.794" layer="51"/>
-<rectangle x1="4.826" y1="2.286" x2="5.334" y2="2.794" layer="51"/>
-<rectangle x1="2.286" y1="2.286" x2="2.794" y2="2.794" layer="51"/>
-<rectangle x1="20.066" y1="2.286" x2="20.574" y2="2.794" layer="51"/>
-<text x="1.27" y="5.08" size="1.27" layer="21">BENDER IR155-3204</text>
-</package>
 </packages>
 <symbols>
 <symbol name="VIN">
@@ -627,6 +340,86 @@ Precharger</text>
 <pin name="P10" x="7.62" y="27.94" length="middle" rot="R270"/>
 <text x="7.62" y="7.62" size="1.778" layer="94">BENDER IR155-3204</text>
 </symbol>
+<symbol name="SWITCH_DPST">
+<description>&lt;a href="http://www2.produktinfo.conrad.com/datenblaetter/700000-724999/705152-da-01-de-Subminiaturschalter_TL_36YO.pdf"&gt;Source&lt;/a&gt;</description>
+<wire x1="0" y1="-3.175" x2="0" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.905" x2="-1.905" y2="3.175" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="3.175" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-3.175" x2="10.16" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-1.905" x2="8.255" y2="3.175" width="0.254" layer="94"/>
+<wire x1="10.16" y1="2.54" x2="10.16" y2="3.175" width="0.254" layer="94"/>
+<wire x1="9.398" y1="0" x2="-5.08" y2="0" width="0.254" layer="94" style="shortdash"/>
+<wire x1="-5.08" y1="1.27" x2="-5.08" y2="-1.27" width="0.254" layer="94"/>
+<text x="15.24" y="-5.08" size="1.778" layer="95" rot="R90">&gt;NAME</text>
+<text x="17.78" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="P" x="0" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
+<pin name="S" x="0" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
+<pin name="P1" x="10.16" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
+<pin name="S1" x="10.16" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
+</symbol>
+<symbol name="SWITCH_DPST_MOM">
+<description>&lt;a href="http://www2.produktinfo.conrad.com/datenblaetter/700000-724999/705152-da-01-de-Subminiaturschalter_TL_36YO.pdf"&gt;Source&lt;/a&gt;</description>
+<wire x1="0" y1="-3.175" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="-1.524" y2="3.048" width="0.254" layer="94"/>
+<wire x1="1.27" y1="2.54" x2="2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="3.175" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="-1.27" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="3.175" width="0.254" layer="94"/>
+<wire x1="0.508" y1="1.27" x2="1.016" y2="1.524" width="0.1524" layer="94"/>
+<wire x1="0.508" y1="1.27" x2="1.016" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="0.508" y1="1.27" x2="1.524" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-3.175" x2="10.16" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-2.54" x2="8.636" y2="3.048" width="0.254" layer="94"/>
+<wire x1="11.43" y1="2.54" x2="12.7" y2="2.54" width="0.254" layer="94"/>
+<wire x1="12.7" y1="2.54" x2="12.7" y2="3.175" width="0.254" layer="94"/>
+<wire x1="7.62" y1="2.54" x2="8.89" y2="2.54" width="0.254" layer="94"/>
+<wire x1="7.62" y1="2.54" x2="7.62" y2="3.175" width="0.254" layer="94"/>
+<wire x1="10.668" y1="1.27" x2="11.176" y2="1.524" width="0.1524" layer="94"/>
+<wire x1="10.668" y1="1.27" x2="11.176" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="10.668" y1="1.27" x2="11.684" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="9.398" y1="0" x2="-5.08" y2="0" width="0.254" layer="94" style="shortdash"/>
+<wire x1="-5.08" y1="1.27" x2="-5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="0" x2="-5.08" y2="-1.27" width="0.254" layer="94"/>
+<text x="15.24" y="-5.08" size="1.778" layer="95" rot="R90">&gt;NAME</text>
+<text x="17.78" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="P" x="0" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
+<pin name="S" x="2.54" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
+<pin name="O" x="-2.54" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
+<pin name="P1" x="10.16" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
+<pin name="S1" x="12.7" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
+<pin name="O1" x="7.62" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
+</symbol>
+<symbol name="SWITCH_SPST_MOM">
+<description>&lt;a href="http://www2.produktinfo.conrad.com/datenblaetter/700000-724999/705152-da-01-de-Subminiaturschalter_TL_36YO.pdf"&gt;Source&lt;/a&gt;</description>
+<wire x1="0" y1="-3.175" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="-1.524" y2="3.048" width="0.254" layer="94"/>
+<wire x1="1.27" y1="2.54" x2="2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="3.175" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="-1.27" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="3.175" width="0.254" layer="94"/>
+<wire x1="0.508" y1="1.27" x2="1.016" y2="1.524" width="0.1524" layer="94"/>
+<wire x1="0.508" y1="1.27" x2="1.016" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="0.508" y1="1.27" x2="1.524" y2="1.27" width="0.1524" layer="94"/>
+<text x="5.08" y="-5.08" size="1.778" layer="95" rot="R90">&gt;NAME</text>
+<text x="7.62" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="P" x="0" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
+<pin name="S" x="2.54" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
+<pin name="O" x="-2.54" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
+</symbol>
+<symbol name="SWITCH_SPST">
+<description>&lt;a href="http://www2.produktinfo.conrad.com/datenblaetter/700000-724999/705152-da-01-de-Subminiaturschalter_TL_36YO.pdf"&gt;Source&lt;/a&gt;</description>
+<wire x1="0" y1="-3.175" x2="0" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.905" x2="-1.905" y2="3.175" width="0.254" layer="94"/>
+<wire x1="1.27" y1="2.54" x2="2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="3.175" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="-1.27" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="3.175" width="0.254" layer="94"/>
+<text x="5.08" y="-5.08" size="1.778" layer="95" rot="R90">&gt;NAME</text>
+<text x="7.62" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="P" x="0" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
+<pin name="S" x="2.54" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
+<pin name="O" x="-2.54" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="VIN" prefix="SUPPLY">
@@ -691,101 +484,58 @@ Precharger</text>
 <gate name="G$1" symbol="TRITIUM_WAVESCULPTOR200" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="DIL68">
-<connects>
-<connect gate="G$1" pin="12V+" pad="6"/>
-<connect gate="G$1" pin="A" pad="1"/>
-<connect gate="G$1" pin="B" pad="2"/>
-<connect gate="G$1" pin="C" pad="3"/>
-<connect gate="G$1" pin="CAN-H_IN" pad="8"/>
-<connect gate="G$1" pin="CAN-H_OUT" pad="10"/>
-<connect gate="G$1" pin="CAN-L_IN" pad="9"/>
-<connect gate="G$1" pin="CAN-L_OUT" pad="11"/>
-<connect gate="G$1" pin="DC+" pad="4"/>
-<connect gate="G$1" pin="DC-" pad="5"/>
-<connect gate="G$1" pin="GND" pad="7"/>
-</connects>
+<device name="">
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="ORION_BMS">
+<description>Orion Battery Management System
+&lt;br&gt;
+&lt;a href="http://www.orionbms.com/products"&gt;Product Page&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="ORION_BMS" x="0" y="2.54"/>
 </gates>
 <devices>
-<device name="" package="DIL64">
-<connects>
-<connect gate="G$1" pin="10:FAN_POWER_CONTROL" pad="10"/>
-<connect gate="G$1" pin="11:GROUND" pad="11"/>
-<connect gate="G$1" pin="12:GROUND" pad="12"/>
-<connect gate="G$1" pin="13:MULTI_PURPOSE_INPUT_SIGNAL" pad="13"/>
-<connect gate="G$1" pin="14:POWER_ON_SIGNAL" pad="14"/>
-<connect gate="G$1" pin="15:AMPERAGE(0-5V)" pad="15"/>
-<connect gate="G$1" pin="16:DISCHARGE_CURRENT_LIMIT(0-5V)" pad="16"/>
-<connect gate="G$1" pin="17:CAN1_SHIELD" pad="17"/>
-<connect gate="G$1" pin="18:CAN1_H" pad="18"/>
-<connect gate="G$1" pin="19:CAN1_L" pad="19"/>
-<connect gate="G$1" pin="1:ALWAYS_ON_POWER" pad="1"/>
-<connect gate="G$1" pin="20:CAN2_L" pad="20"/>
-<connect gate="G$1" pin="21:CAN2_H" pad="21"/>
-<connect gate="G$1" pin="22:CAN2_SHIELD" pad="22"/>
-<connect gate="G$1" pin="23:MULTI_PURPOSE_OUTPUT_SIGNAL" pad="23"/>
-<connect gate="G$1" pin="24:FAN_PWM_SIGNAL" pad="24"/>
-<connect gate="G$1" pin="25:NC" pad="25"/>
-<connect gate="G$1" pin="26:NC" pad="26"/>
-<connect gate="G$1" pin="2:READY_POWER" pad="2"/>
-<connect gate="G$1" pin="3:CHARGE_POWER" pad="3"/>
-<connect gate="G$1" pin="4:STATE_OF_CHARGE(0-5V)" pad="4"/>
-<connect gate="G$1" pin="5:CHARGE_CURRENT_LIMIT(0-5V)" pad="5"/>
-<connect gate="G$1" pin="6:CHARGE_SAFETY" pad="6"/>
-<connect gate="G$1" pin="7:DISCHARGE_ENABLE" pad="7"/>
-<connect gate="G$1" pin="8:CHARGE_ENABLE" pad="8"/>
-<connect gate="G$1" pin="9:FAN_MONITOR" pad="9"/>
-<connect gate="G$1" pin="CELLBANK1_X36WIRES" pad="29"/>
-<connect gate="G$1" pin="CELLBANK2_X36WIRES" pad="30"/>
-<connect gate="G$1" pin="CELLBANK3_X36WIRES" pad="31"/>
-<connect gate="G$1" pin="PACK+" pad="27"/>
-<connect gate="G$1" pin="PACK-" pad="28"/>
-</connects>
+<device name="">
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="MOTOR_DC">
+<description>Generic DC electric motor</description>
 <gates>
 <gate name="G$1" symbol="MOTOR_DC" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="1X04">
-<connects>
-<connect gate="G$1" pin="+" pad="1"/>
-<connect gate="G$1" pin="-" pad="2" route="any"/>
-<connect gate="G$1" pin="PWM" pad="3"/>
-</connects>
+<device name="">
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="MOTOR_AC">
+<description>Generic three-phase AC electric motor</description>
 <gates>
 <gate name="G$1" symbol="MOTOR_AC" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="TO-220">
-<connects>
-<connect gate="G$1" pin="A" pad="1"/>
-<connect gate="G$1" pin="B" pad="2"/>
-<connect gate="G$1" pin="C" pad="3"/>
-</connects>
+<device name="">
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -798,17 +548,11 @@ Precharger</text>
 <gate name="G$1" symbol="SMART_PRECHARGER" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="1X06">
-<connects>
-<connect gate="G$1" pin="12V" pad="1"/>
-<connect gate="G$1" pin="COIL+" pad="3"/>
-<connect gate="G$1" pin="COIL-" pad="4"/>
-<connect gate="G$1" pin="CTCS+" pad="6"/>
-<connect gate="G$1" pin="CTCS-" pad="5"/>
-<connect gate="G$1" pin="GND" pad="2"/>
-</connects>
+<device name="">
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -819,88 +563,89 @@ Precharger</text>
 <gate name="G$1" symbol="EV_DRIVER_CONTROLS" x="0" y="35.56"/>
 </gates>
 <devices>
-<device name="" package="DIL64">
-<connects>
-<connect gate="G$1" pin="+12V(RED)_IN" pad="53"/>
-<connect gate="G$1" pin="+12V(RED)_OUT" pad="52"/>
-<connect gate="G$1" pin="10:GEAR_SWITCH_4(ACTIVE_LOW)" pad="10"/>
-<connect gate="G$1" pin="11:GEAR_SWITCH_6(ACTIVE_LOW)" pad="11"/>
-<connect gate="G$1" pin="12:LED_OUTPUT_GEAR_1" pad="12"/>
-<connect gate="G$1" pin="12V+_IN" pad="13"/>
-<connect gate="G$1" pin="12V_BRAKE" pad="14"/>
-<connect gate="G$1" pin="12V_REVERSE" pad="15"/>
-<connect gate="G$1" pin="13:LED_OUTPUT_GEAR_3" pad="16"/>
-<connect gate="G$1" pin="14:LED_OUTPUT_BACKLIGHTING" pad="17"/>
-<connect gate="G$1" pin="15:LED_OUTPUT_FAULT_1" pad="18"/>
-<connect gate="G$1" pin="16:LED_OUTPUT_FAULT_3" pad="19"/>
-<connect gate="G$1" pin="17:GAUGE_DRIVE_OUTPUT_4" pad="20"/>
-<connect gate="G$1" pin="18:GAUGE_DRIVE_OUTPUT_2" pad="21"/>
-<connect gate="G$1" pin="19:GAUGE_DRIVE_GROUND" pad="22"/>
-<connect gate="G$1" pin="1:ANALOG_A_+5V_OUTPUT" pad="1"/>
-<connect gate="G$1" pin="20:ANALOG_A_SIGNAL_INPUT" pad="23"/>
-<connect gate="G$1" pin="21:ANALOG_B_+5V_OUTPUT" pad="24"/>
-<connect gate="G$1" pin="22:ANALOG_B_GROUND" pad="25"/>
-<connect gate="G$1" pin="23:ANALOG_C_SIGNAL_INPUT" pad="26"/>
-<connect gate="G$1" pin="24:IGNITION_SWITCH_ACCY(ACTIVE_HIGH)" pad="27"/>
-<connect gate="G$1" pin="25:IGNITION_SWITCH_START(ACTIVE_HIGH)" pad="28"/>
-<connect gate="G$1" pin="26:FUEL_DOOR_SWITCH(ACTIVE_LOW)" pad="29"/>
-<connect gate="G$1" pin="27:GEAR_SWITCH_1(ACTIVE_LOW)" pad="30"/>
-<connect gate="G$1" pin="28:GEAR_SWITCH_3(ACTIVE_LOW)" pad="31"/>
-<connect gate="G$1" pin="29:GEAR_SWITCH_5(ACTIVE_LOW)" pad="32"/>
-<connect gate="G$1" pin="2:ANALOG_A_GROUND" pad="2"/>
-<connect gate="G$1" pin="30:GEAR_SWITCH_GROUND" pad="33"/>
-<connect gate="G$1" pin="31:LED_OUTPUT_GEAR_2" pad="34"/>
-<connect gate="G$1" pin="32:LED_OUTPUT_GEAR_4" pad="35"/>
-<connect gate="G$1" pin="33:LED_OUTPUT_GEAR_GROUND" pad="36"/>
-<connect gate="G$1" pin="34:LED_OUTPUT_FAULT_2" pad="37"/>
-<connect gate="G$1" pin="35:LED_OUTPUT_FAULT_GROUND" pad="38"/>
-<connect gate="G$1" pin="36:GAUGE_DRIVE_OUTPUT_3" pad="39"/>
-<connect gate="G$1" pin="37:GAUGE_DRIVE_OUTPUT_1" pad="40"/>
-<connect gate="G$1" pin="3:ANALOG_B_SIGNAL_INPUT" pad="3"/>
-<connect gate="G$1" pin="4:ANALOG_C_+5V_OUTPUT" pad="4"/>
-<connect gate="G$1" pin="5:ANALOG_C_GROUND" pad="5"/>
-<connect gate="G$1" pin="6:IGNITION_SWITCH_RUN(ACTIVE_HIGH)" pad="6"/>
-<connect gate="G$1" pin="7:BRAKE_LIGHTS(ACTIVE_HIGH)" pad="7"/>
-<connect gate="G$1" pin="8:FUEL_DOOR_SWITCH_GROUND" pad="8"/>
-<connect gate="G$1" pin="9:GEAR_SWITCH_2(ACTIVE_LOW)" pad="9"/>
-<connect gate="G$1" pin="CAN-H(WHITE)_IN" pad="41"/>
-<connect gate="G$1" pin="CAN-H(WHITE)_OUT" pad="42"/>
-<connect gate="G$1" pin="CAN-L(BLUE)_IN" pad="43"/>
-<connect gate="G$1" pin="CAN-L(BLUE)_OUT" pad="44"/>
-<connect gate="G$1" pin="GND" pad="45"/>
-<connect gate="G$1" pin="GROUND(BLACK)_IN" pad="46"/>
-<connect gate="G$1" pin="GROUND(BLACK)_OUT" pad="47"/>
-<connect gate="G$1" pin="SHIELDGROUND_IN" pad="48"/>
-<connect gate="G$1" pin="SHIELDGROUND_OUT" pad="49"/>
-<connect gate="G$1" pin="SHIELD_IN" pad="50"/>
-<connect gate="G$1" pin="SHIELD_OUT" pad="51"/>
-</connects>
+<device name="">
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="BENDER_IR155-3204">
+<description>Bender IR155-3204 Insulation Monitoring Device
+&lt;br&gt;
+&lt;br&gt;
+&lt;a href="http://www.bender-es.com/fileadmin/products/doc/IR155-32xx-V004_D00115_D_XXEN.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="BENDER_IR155-3204" x="-22.86" y="-12.7"/>
 </gates>
 <devices>
-<device name="" package="BENDER_IR155-3204">
-<connects>
-<connect gate="G$1" pin="P1" pad="GND_1"/>
-<connect gate="G$1" pin="P10" pad="HV+_10"/>
-<connect gate="G$1" pin="P2" pad="VCC_2"/>
-<connect gate="G$1" pin="P3" pad="CHASSISGND_3"/>
-<connect gate="G$1" pin="P4" pad="CHASSISGND_4"/>
-<connect gate="G$1" pin="P5" pad="PWMHIGH_5"/>
-<connect gate="G$1" pin="P6" pad="PWMLOW_6"/>
-<connect gate="G$1" pin="P7" pad="NC_7"/>
-<connect gate="G$1" pin="P8" pad="OKHS_8"/>
-<connect gate="G$1" pin="P9" pad="HV-_9"/>
-</connects>
+<device name="">
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SWITCH_DPST" prefix="S">
+<description>Double Pull Single Throw Switch</description>
+<gates>
+<gate name="DPST" symbol="SWITCH_DPST" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="">
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SWITCH_DPST_MOM" prefix="S">
+<description>Double Pull Single Throw Switch Momentary</description>
+<gates>
+<gate name="DPST_MOM" symbol="SWITCH_DPST_MOM" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="">
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SWITCH_SPST_MOM" prefix="S">
+<description>Single Pull Single Throw Switch Momentary</description>
+<gates>
+<gate name="SPST_MOM" symbol="SWITCH_SPST_MOM" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="">
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SWITCH_SPST" prefix="S">
+<description>Single Pull Single Throw Switch</description>
+<gates>
+<gate name="SPST" symbol="SWITCH_SPST" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="">
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
