@@ -1,8 +1,6 @@
-# 2017 Circuits
-
 ![HyTech logo](https://hytechracing.gatech.edu/images/hytech_logo_small.png)
 
----
+# 2017 Circuits
 
 ## Getting Started with this git repository
 1. Install [Github Desktop](https://desktop.github.com/) (basic) or [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) (advanced)
