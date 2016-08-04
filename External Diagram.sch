@@ -375,6 +375,23 @@
 <pin name="12" x="5.08" y="15.24" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="13" x="5.08" y="17.78" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 </symbol>
+<symbol name="SWITCH_SPST_MOM">
+<description>&lt;a href="http://www2.produktinfo.conrad.com/datenblaetter/700000-724999/705152-da-01-de-Subminiaturschalter_TL_36YO.pdf"&gt;Source&lt;/a&gt;</description>
+<wire x1="0" y1="-3.175" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="-1.524" y2="3.048" width="0.254" layer="94"/>
+<wire x1="1.27" y1="2.54" x2="2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="3.175" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="-1.27" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="3.175" width="0.254" layer="94"/>
+<wire x1="0.508" y1="1.27" x2="1.016" y2="1.524" width="0.1524" layer="94"/>
+<wire x1="0.508" y1="1.27" x2="1.016" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="0.508" y1="1.27" x2="1.524" y2="1.27" width="0.1524" layer="94"/>
+<text x="5.08" y="-5.08" size="1.778" layer="95" rot="R90">&gt;NAME</text>
+<text x="7.62" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="P" x="0" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
+<pin name="S" x="2.54" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
+<pin name="O" x="-2.54" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="SWITCH_DPST" prefix="S">
@@ -604,6 +621,21 @@ Purchasing:
 </device>
 </devices>
 </deviceset>
+<deviceset name="SWITCH_SPST_MOM" prefix="S">
+<description>Single Pull Single Throw Switch Momentary</description>
+<gates>
+<gate name="SPST_MOM" symbol="SWITCH_SPST_MOM" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="">
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -708,14 +740,16 @@ Purchasing:
 </module>
 <module name="MAIN_ECU" prefix="" dx="30.48" dy="20.32">
 <ports>
-<port name="CANH" side="left" coord="-2.54" direction="io"/>
-<port name="CANL" side="left" coord="-5.08" direction="io"/>
+<port name="CANH" side="left" coord="5.08" direction="io"/>
+<port name="CANL" side="left" coord="2.54" direction="io"/>
 <port name="GND" side="right" coord="5.08" direction="out"/>
 <port name="VCC12+" side="right" coord="7.62" direction="in"/>
-<port name="SHUTDOWN_IN" side="right" coord="-2.54" direction="in"/>
-<port name="SHUTDOWN_OUT" side="right" coord="-5.08" direction="out"/>
-<port name="OKHS" side="left" coord="0" direction="in"/>
-<port name="BRAKE_LIGHT" side="left" coord="-7.62" direction="out"/>
+<port name="SHUTDOWN_IN" side="right" coord="-5.08" direction="in"/>
+<port name="SHUTDOWN_OUT" side="right" coord="-7.62" direction="out"/>
+<port name="OKHS" side="left" coord="7.62" direction="in"/>
+<port name="BRAKE_LIGHT" side="left" coord="-2.54" direction="out"/>
+<port name="BMS_RST" side="left" coord="-5.08" direction="in"/>
+<port name="IMD_RST" side="left" coord="-7.62" direction="in"/>
 </ports>
 <variantdefs>
 </variantdefs>
@@ -843,6 +877,10 @@ Purchasing:
 <part name="GND4" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="SL1" library="HyTechSymbols" deviceset="M13" device=""/>
 <part name="SL2" library="HyTechSymbols" deviceset="M13" device=""/>
+<part name="IMD_RST" library="HyTechSymbols" deviceset="SWITCH_SPST_MOM" device=""/>
+<part name="BMS_RST" library="HyTechSymbols" deviceset="SWITCH_SPST_MOM" device=""/>
+<part name="GND19" library="HyTechSymbols" deviceset="GND" device=""/>
+<part name="GND20" library="HyTechSymbols" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -851,7 +889,7 @@ Purchasing:
 <text x="325.12" y="208.28" size="5.08" layer="91">Pedalbox</text>
 <text x="210.82" y="208.28" size="5.08" layer="91">Dash</text>
 <text x="-58.42" y="266.7" size="5.08" layer="91">Accumulator container</text>
-<text x="0" y="-12.7" size="5.08" layer="91">Right Panel</text>
+<text x="2.54" y="-22.86" size="5.08" layer="91">Right Panel</text>
 </plain>
 <moduleinsts>
 <moduleinst name="PEDAL_BOX_ECU1" module="PEDAL_BOX_ECU" x="331.47" y="160.02" smashed="yes" rot="MR0">
@@ -861,7 +899,7 @@ Purchasing:
 <attribute name="NAME" x="-88.9" y="91.44" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
 <moduleinst name="COOLING_ECU1" module="COOLING_ECU" x="134.62" y="170.18" rot="R90"/>
-<moduleinst name="MAIN_ECU1" module="MAIN_ECU" x="152.4" y="86.36"/>
+<moduleinst name="MAIN_ECU1" module="MAIN_ECU" x="152.4" y="78.74"/>
 <moduleinst name="DASH_ECU1" module="DASH_ECU" x="231.14" y="149.86"/>
 <moduleinst name="TELEMETRY_ECU1" module="TELEMETRY_ECU" x="-83.82" y="58.42"/>
 </moduleinsts>
@@ -917,11 +955,15 @@ Purchasing:
 <instance part="GND16" gate="1" x="144.78" y="231.14" rot="R90"/>
 <instance part="TSAL/TSEL" gate="G$1" x="96.52" y="149.86" rot="R180"/>
 <instance part="GND17" gate="1" x="86.36" y="149.86" rot="R180"/>
-<instance part="GND18" gate="1" x="175.26" y="88.9"/>
+<instance part="GND18" gate="1" x="175.26" y="81.28"/>
 <instance part="BRAKE_LIGHT" gate="G$1" x="-124.46" y="66.04" rot="R90"/>
 <instance part="GND4" gate="1" x="-127" y="78.74" rot="R180"/>
 <instance part="SL1" gate="G$1" x="10.16" y="101.6" rot="R270"/>
 <instance part="SL2" gate="G$1" x="15.24" y="116.84" rot="R90"/>
+<instance part="IMD_RST" gate="SPST_MOM" x="12.7" y="-2.54" rot="MR90"/>
+<instance part="BMS_RST" gate="SPST_MOM" x="40.64" y="-2.54" rot="MR90"/>
+<instance part="GND19" gate="1" x="2.54" y="-2.54" rot="R270"/>
+<instance part="GND20" gate="1" x="30.48" y="-2.54" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -1097,12 +1139,22 @@ Purchasing:
 <segment>
 <pinref part="GND18" gate="1" pin="GND"/>
 <portref moduleinst="MAIN_ECU1" port="GND"/>
-<wire x1="172.72" y1="91.44" x2="175.26" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="83.82" x2="175.26" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="BRAKE_LIGHT" gate="G$1" pin="C"/>
 <pinref part="GND4" gate="1" pin="GND"/>
 <wire x1="-127" y1="76.2" x2="-127" y2="73.66" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="IMD_RST" gate="SPST_MOM" pin="P"/>
+<pinref part="GND19" gate="1" pin="GND"/>
+<wire x1="5.08" y1="-2.54" x2="7.62" y2="-2.54" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="BMS_RST" gate="SPST_MOM" pin="P"/>
+<pinref part="GND20" gate="1" pin="GND"/>
+<wire x1="33.02" y1="-2.54" x2="35.56" y2="-2.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$17" class="0">
@@ -1207,8 +1259,8 @@ Purchasing:
 <pinref part="MEASURE_12V+" gate="G$1" pin="1"/>
 <wire x1="-25.4" y1="43.18" x2="-17.78" y2="43.18" width="0.1524" layer="91"/>
 <portref moduleinst="MAIN_ECU1" port="VCC12+"/>
-<wire x1="172.72" y1="93.98" x2="180.34" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="180.34" y1="93.98" x2="180.34" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="86.36" x2="180.34" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="86.36" x2="180.34" y2="15.24" width="0.1524" layer="91"/>
 <junction x="180.34" y="15.24"/>
 <portref moduleinst="TELEMETRY_ECU1" port="VCC12+"/>
 <wire x1="-63.5" y1="66.04" x2="-45.72" y2="66.04" width="0.1524" layer="91"/>
@@ -1291,9 +1343,9 @@ Purchasing:
 <wire x1="299.72" y1="7.62" x2="177.8" y2="7.62" width="0.1524" layer="91"/>
 <label x="210.82" y="7.62" size="1.778" layer="95"/>
 <label x="299.72" y="121.92" size="1.778" layer="95" rot="R90"/>
-<wire x1="177.8" y1="7.62" x2="177.8" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="7.62" x2="177.8" y2="73.66" width="0.1524" layer="91"/>
 <portref moduleinst="MAIN_ECU1" port="SHUTDOWN_IN"/>
-<wire x1="177.8" y1="83.82" x2="172.72" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="73.66" x2="172.72" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="BOTS" gate="SPST" pin="O"/>
@@ -1314,18 +1366,18 @@ Purchasing:
 <segment>
 <pinref part="COOLANT_PRESSURE_SW" gate="SPST" pin="P"/>
 <portref moduleinst="MAIN_ECU1" port="SHUTDOWN_OUT"/>
-<wire x1="172.72" y1="81.28" x2="175.26" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="175.26" y1="81.28" x2="175.26" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="71.12" x2="175.26" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="71.12" x2="175.26" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="7.62" x2="111.76" y2="7.62" width="0.1524" layer="91"/>
 <label x="144.78" y="7.62" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$26" class="0">
 <segment>
-<wire x1="60.96" y1="-5.08" x2="60.96" y2="76.2" width="1.27" layer="91"/>
+<wire x1="60.96" y1="-12.7" x2="60.96" y2="76.2" width="1.27" layer="91"/>
 <wire x1="60.96" y1="76.2" x2="-35.56" y2="76.2" width="1.27" layer="91"/>
-<wire x1="-35.56" y1="76.2" x2="-35.56" y2="-5.08" width="1.27" layer="91"/>
-<wire x1="-35.56" y1="-5.08" x2="60.96" y2="-5.08" width="1.27" layer="91"/>
+<wire x1="-35.56" y1="76.2" x2="-35.56" y2="-12.7" width="1.27" layer="91"/>
+<wire x1="-35.56" y1="-12.7" x2="60.96" y2="-12.7" width="1.27" layer="91"/>
 </segment>
 </net>
 <net name="N$27" class="0">
@@ -1520,9 +1572,9 @@ Purchasing:
 <net name="N$39" class="0">
 <segment>
 <portref moduleinst="MAIN_ECU1" port="BRAKE_LIGHT"/>
-<wire x1="132.08" y1="78.74" x2="129.54" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="129.54" y1="78.74" x2="129.54" y2="-15.24" width="0.1524" layer="91"/>
-<wire x1="129.54" y1="-15.24" x2="-127" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="76.2" x2="121.92" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="76.2" x2="121.92" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="-15.24" x2="-127" y2="-15.24" width="0.1524" layer="91"/>
 <wire x1="-127" y1="-15.24" x2="-127" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="BRAKE_LIGHT" gate="G$1" pin="A"/>
 </segment>
@@ -1576,6 +1628,58 @@ Purchasing:
 <label x="66.04" y="45.72" size="1.778" layer="95" rot="R90"/>
 <label x="30.48" y="88.9" size="1.778" layer="95"/>
 <pinref part="SL1" gate="G$1" pin="11"/>
+</segment>
+</net>
+<net name="N$14" class="0">
+<segment>
+<portref moduleinst="GLV_BATTERY_MODULE1" port="CANH"/>
+<wire x1="-63.5" y1="81.28" x2="-48.26" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="-48.26" y1="81.28" x2="-48.26" y2="53.34" width="0.1524" layer="91"/>
+<portref moduleinst="TELEMETRY_ECU1" port="CANH"/>
+<wire x1="-48.26" y1="53.34" x2="-63.5" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="CAN-H"/>
+<wire x1="-193.04" y1="157.48" x2="-205.74" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="-205.74" y1="157.48" x2="-205.74" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="-205.74" y1="38.1" x2="-48.26" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="-48.26" y1="38.1" x2="-48.26" y2="53.34" width="0.1524" layer="91"/>
+<junction x="-48.26" y="53.34"/>
+</segment>
+</net>
+<net name="N$40" class="0">
+<segment>
+<portref moduleinst="GLV_BATTERY_MODULE1" port="CANL"/>
+<wire x1="-63.5" y1="78.74" x2="-50.8" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="-50.8" y1="78.74" x2="-50.8" y2="50.8" width="0.1524" layer="91"/>
+<portref moduleinst="TELEMETRY_ECU1" port="CANL"/>
+<wire x1="-50.8" y1="50.8" x2="-63.5" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="CAN-L"/>
+<wire x1="-193.04" y1="154.94" x2="-203.2" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="-203.2" y1="154.94" x2="-203.2" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="-203.2" y1="40.64" x2="-50.8" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="-50.8" y1="40.64" x2="-50.8" y2="50.8" width="0.1524" layer="91"/>
+<junction x="-50.8" y="50.8"/>
+</segment>
+</net>
+<net name="N$41" class="0">
+<segment>
+<pinref part="BMS_RST" gate="SPST_MOM" pin="S"/>
+<wire x1="45.72" y1="0" x2="48.26" y2="0" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="0" x2="48.26" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="-5.08" x2="124.46" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="-5.08" x2="124.46" y2="73.66" width="0.1524" layer="91"/>
+<portref moduleinst="MAIN_ECU1" port="BMS_RST"/>
+<wire x1="124.46" y1="73.66" x2="132.08" y2="73.66" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$42" class="0">
+<segment>
+<portref moduleinst="MAIN_ECU1" port="IMD_RST"/>
+<wire x1="132.08" y1="71.12" x2="127" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="127" y1="71.12" x2="127" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="127" y1="-7.62" x2="20.32" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="-7.62" x2="20.32" y2="0" width="0.1524" layer="91"/>
+<pinref part="IMD_RST" gate="SPST_MOM" pin="S"/>
+<wire x1="20.32" y1="0" x2="17.78" y2="0" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
