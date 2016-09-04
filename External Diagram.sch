@@ -882,8 +882,8 @@ Source: Sonnenschein</description>
 <port name="WHEEL_TEMP_SENSE" side="top" coord="0" direction="in"/>
 <port name="WHEEL_TEMP_GND" side="top" coord="2.54" direction="in"/>
 <port name="SUSPENSION_GND" side="top" coord="17.78" direction="in"/>
-<port name="SUSPENSION_SENSE" side="top" coord="15.24" direction="out"/>
 <port name="SUSPENSION_5V" side="top" coord="12.7" direction="out"/>
+<port name="SUSPENSION_SENSE" side="top" coord="15.24" direction="in"/>
 </ports>
 <variantdefs>
 </variantdefs>
@@ -1156,6 +1156,7 @@ Source: Sonnenschein</description>
 <text x="116.84" y="2.54" size="1.778" layer="91">todo hook these up</text>
 <text x="289.56" y="182.88" size="1.778" layer="91">todo add BMS</text>
 <text x="289.56" y="177.8" size="1.778" layer="91">todo add canbus</text>
+<text x="175.26" y="0" size="1.778" layer="91">todo add main power relay?</text>
 </plain>
 <moduleinsts>
 <moduleinst name="PEDAL_BOX_ECU1" module="PEDAL_BOX_ECU" x="734.06" y="149.86" smashed="yes">
