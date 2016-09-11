@@ -919,6 +919,7 @@ Source: Sonnenschein</description>
 <port name="BUTTON_TOGGLE" side="right" coord="-7.62" direction="in"/>
 <port name="BUTTON_BOOST" side="right" coord="-5.08" direction="in"/>
 <port name="BUTTON_SELECT" side="right" coord="-2.54" direction="in"/>
+<port name="LED_POWER" side="right" coord="10.16" direction="out"/>
 </ports>
 <variantdefs>
 </variantdefs>
@@ -1141,6 +1142,8 @@ Source: Sonnenschein</description>
 <part name="GND4" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="SL10" library="HyTechSymbols" deviceset="M06" device=""/>
 <part name="SL11" library="HyTechSymbols" deviceset="M06" device=""/>
+<part name="LED_POWER" library="HyTechSymbols" deviceset="LED" device=""/>
+<part name="GND24" library="HyTechSymbols" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1288,6 +1291,8 @@ Source: Sonnenschein</description>
 <instance part="GND4" gate="1" x="246.38" y="5.08"/>
 <instance part="SL10" gate="G$1" x="241.3" y="55.88"/>
 <instance part="SL11" gate="G$1" x="226.06" y="58.42" rot="R180"/>
+<instance part="LED_POWER" gate="G$1" x="622.3" y="170.18" rot="R90"/>
+<instance part="GND24" gate="1" x="619.76" y="182.88" rot="R180"/>
 </instances>
 <busses>
 <bus name="12VSUPPLY,GND,CANL,CANH">
@@ -1582,6 +1587,11 @@ Source: Sonnenschein</description>
 <wire x1="134.62" y1="66.04" x2="124.46" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="66.04" x2="124.46" y2="48.26" width="0.1524" layer="91"/>
 <junction x="134.62" y="66.04"/>
+</segment>
+<segment>
+<pinref part="GND24" gate="1" pin="GND"/>
+<pinref part="LED_POWER" gate="G$1" pin="C"/>
+<wire x1="619.76" y1="180.34" x2="619.76" y2="177.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -2097,8 +2107,6 @@ Source: Sonnenschein</description>
 </net>
 <net name="SHUTDOWN_CIRCUIT" class="0">
 <segment>
-<wire x1="734.06" y1="121.92" x2="734.06" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="734.06" y1="119.38" x2="734.06" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="734.06" y1="111.76" x2="558.8" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="558.8" y1="111.76" x2="558.8" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="COOLANT_PRESSURE_SW" gate="SPST" pin="P"/>
@@ -2107,7 +2115,7 @@ Source: Sonnenschein</description>
 <label x="591.82" y="111.76" size="1.778" layer="95"/>
 <label x="452.12" y="81.28" size="1.778" layer="95"/>
 <portref moduleinst="PEDAL_BOX_ECU1" port="SHUTDOWN_OUT"/>
-<junction x="734.06" y="119.38"/>
+<wire x1="734.06" y1="119.38" x2="734.06" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="COCKPIT_BRB" gate="SPST" pin="P"/>
@@ -2731,6 +2739,14 @@ Source: Sonnenschein</description>
 <pinref part="SL11" gate="G$1" pin="6"/>
 <portref moduleinst="MAIN_ECU1" port="BRAKE_LIGHT"/>
 <wire x1="215.9" y1="50.8" x2="220.98" y2="50.8" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$74" class="0">
+<segment>
+<pinref part="LED_POWER" gate="G$1" pin="A"/>
+<portref moduleinst="DASHBOARD_ECU1" port="LED_POWER"/>
+<wire x1="586.74" y1="162.56" x2="619.76" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="619.76" y1="162.56" x2="619.76" y2="170.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
