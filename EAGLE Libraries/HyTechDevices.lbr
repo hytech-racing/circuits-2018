@@ -8527,6 +8527,7 @@ Source: http://www.molex.com</description>
 <device name="" package="MINIFIT_5566-2">
 <connects>
 <connect gate="-1" pin="S" pad="1"/>
+<connect gate="-2" pin="S" pad="2"/>
 </connects>
 <technologies>
 <technology name="">
