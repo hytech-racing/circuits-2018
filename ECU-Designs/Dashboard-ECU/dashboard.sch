@@ -514,6 +514,25 @@ Yageo CFR series &lt;a href="http://www.yageo.com/pdf/yageo/Leaded-R_CFR_2008.pd
 <text x="-7.62" y="3.175" size="0.8128" layer="25" font="vector" ratio="15">&gt;Name</text>
 <text x="-5.969" y="-0.381" size="0.8128" layer="21" font="vector" ratio="15">&gt;Value</text>
 </package>
+<package name="DIL08">
+<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
+<wire x1="5.08" y1="2.921" x2="-5.08" y2="2.921" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="-2.921" x2="5.08" y2="-2.921" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="2.921" x2="5.08" y2="-2.921" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="2.921" x2="-5.08" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="-2.921" x2="-5.08" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="1.016" x2="-5.08" y2="-1.016" width="0.1524" layer="21" curve="-180"/>
+<pad name="1" x="-3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="2" x="-1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="3" x="1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="4" x="3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="5" x="3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="6" x="1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="7" x="-1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="8" x="-3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<text x="-5.334" y="-2.921" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="-3.556" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="MV">
@@ -627,6 +646,31 @@ Yageo CFR series &lt;a href="http://www.yageo.com/pdf/yageo/Leaded-R_CFR_2008.pd
 <pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <text x="-3.81" y="1.4986" size="1.778" layer="95">&gt;NAME</text>
 <text x="-3.81" y="-3.302" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="MCP2551">
+<wire x1="0" y1="11.43" x2="0" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.27" x2="15.24" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-1.27" x2="15.24" y2="11.43" width="0.254" layer="94"/>
+<wire x1="15.24" y1="11.43" x2="10.16" y2="11.43" width="0.254" layer="94"/>
+<wire x1="0" y1="11.43" x2="5.08" y2="11.43" width="0.254" layer="94"/>
+<wire x1="5.08" y1="11.43" x2="10.16" y2="11.43" width="0.254" layer="94" curve="180"/>
+<pin name="1" x="-2.54" y="7.62" visible="pad" length="short" direction="pas"/>
+<pin name="2" x="-2.54" y="5.08" visible="pad" length="short" direction="pas"/>
+<pin name="3" x="-2.54" y="2.54" visible="pad" length="short" direction="pas"/>
+<pin name="4" x="-2.54" y="0" visible="pad" length="short" direction="pas"/>
+<pin name="5" x="17.78" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="6" x="17.78" y="2.54" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="7" x="17.78" y="5.08" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="8" x="17.78" y="7.62" visible="pad" length="short" direction="pas" rot="R180"/>
+<text x="3.175" y="12.065" size="1.778" layer="95">&gt;NAME</text>
+<text x="1.27" y="7.62" size="1.27" layer="94">TXD</text>
+<text x="1.27" y="5.08" size="1.27" layer="94">VSS</text>
+<text x="1.27" y="2.54" size="1.27" layer="94">VDD</text>
+<text x="1.27" y="0" size="1.27" layer="94">RXD</text>
+<text x="13.97" y="1.27" size="1.27" layer="94" rot="R180">VREF</text>
+<text x="13.97" y="3.81" size="1.27" layer="94" rot="R180">CANL</text>
+<text x="13.97" y="8.89" size="1.27" layer="94" rot="R180">RS</text>
+<text x="13.97" y="6.35" size="1.27" layer="94" rot="R180">CANH</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -981,6 +1025,45 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </device>
 </devices>
 </deviceset>
+<deviceset name="MCP2551">
+<description>MCP2551 High-Speed CAN Transceiver
+&lt;br&gt;
+&lt;br&gt;
+&lt;a href="https://www.microchip.com/wwwproducts/en/MCP2551"&gt;Product Webpage&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="http://ww1.microchip.com/downloads/en/DeviceDoc/21667f.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;This device is outdated&lt;/b&gt;
+&lt;br&gt;
+It is replaced by MCP2561.
+&lt;br&gt;
+&lt;a href="https://www.microchip.com/wwwproducts/ProductCompare/MCP2551/MCP2561"&gt;Comparison Page&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="https://www.microchip.com/wwwproducts/en/MCP2561"&gt;Product Webpage&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="http://ww1.microchip.com/downloads/en/DeviceDoc/20005167C.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="MCP2551" x="0" y="-12.7"/>
+</gates>
+<devices>
+<device name="" package="DIL08">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="supply1">
@@ -1125,68 +1208,115 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="U$1" library="HyTechDevices" deviceset="TEENSY_3.2_SIMPLE" device=""/>
 <part name="IC1" library="HyTechDevices" deviceset="5V_REGULATOR" device="SWITCHING"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
+<part name="GND2" library="supply1" deviceset="GND" device=""/>
+<part name="GND3" library="supply1" deviceset="GND" device=""/>
+<part name="U$2" library="HyTechDevices" deviceset="MCP2551" device=""/>
+<part name="GND4" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="-27.94" y="10.16" size="1.4224" layer="91" rot="R90">CANL_2</text>
-<text x="-25.4" y="10.16" size="1.4224" layer="91" rot="R90">CANH_2</text>
-<text x="-30.48" y="10.16" size="1.4224" layer="91" rot="R90">GND_2</text>
-<text x="-33.02" y="5.08" size="1.4224" layer="91" rot="R90">12VSUPPLY_2</text>
-<text x="-25.4" y="93.98" size="1.4224" layer="91" rot="R90">12VSUPPLY_1
-GND_1
-CANL_1
-CANH_1</text>
-<text x="38.1" y="73.66" size="1.4224" layer="91">RTDS_POWER
+<text x="147.32" y="35.56" size="1.4224" layer="91">RTDS_POWER
 LED_BMS
 LED_IMD
 LED_POWER</text>
-<text x="38.1" y="40.64" size="1.4224" layer="91">BUTTON_SELECT
+<text x="58.42" y="-15.24" size="1.4224" layer="91">BUTTON_SELECT
 BUTTON_BOOST
 BUTTON_TOGGLE
 BUTTON_START</text>
+<text x="-12.7" y="27.94" size="1.778" layer="91" rot="R90">CANH_2
+CANL_2
+GND_2
+12VSUPPLY_2</text>
+<text x="-22.86" y="-5.08" size="1.778" layer="91" rot="R270">CANH_1
+CANL_1
+GND_1
+12VSUPPLY_1</text>
 </plain>
 <moduleinsts>
-<moduleinst name="5-12TRANSISTOR1" module="5-12TRANSISTOR" x="17.78" y="12.7"/>
-<moduleinst name="5-12TRANSISTOR2" module="5-12TRANSISTOR" x="58.42" y="12.7"/>
-<moduleinst name="5-12TRANSISTOR3" module="5-12TRANSISTOR" x="96.52" y="12.7"/>
-<moduleinst name="5-12TRANSISTOR4" module="5-12TRANSISTOR" x="139.7" y="12.7"/>
+<moduleinst name="5-12TRANSISTOR1" module="5-12TRANSISTOR" x="35.56" y="142.24" rot="MR180"/>
+<moduleinst name="5-12TRANSISTOR2" module="5-12TRANSISTOR" x="-2.54" y="142.24" rot="MR180"/>
+<moduleinst name="5-12TRANSISTOR3" module="5-12TRANSISTOR" x="-38.1" y="114.3" rot="MR0"/>
+<moduleinst name="5-12TRANSISTOR4" module="5-12TRANSISTOR" x="-38.1" y="83.82" rot="MR0"/>
 </moduleinsts>
 <instances>
-<instance part="X1" gate="-1" x="-25.4" y="86.36" rot="MR90"/>
-<instance part="X1" gate="-2" x="-27.94" y="86.36" rot="MR90"/>
-<instance part="X1" gate="-3" x="-30.48" y="86.36" rot="MR90"/>
-<instance part="X1" gate="-4" x="-33.02" y="86.36" rot="MR90"/>
-<instance part="CANL" gate="-1" x="-25.4" y="27.94" rot="R270"/>
-<instance part="CANL" gate="-2" x="-27.94" y="27.94" rot="R270"/>
-<instance part="CANL" gate="-3" x="-30.48" y="27.94" rot="R270"/>
-<instance part="CANL" gate="-4" x="-33.02" y="27.94" rot="R270"/>
-<instance part="X3" gate="-1" x="30.48" y="40.64" rot="MR180"/>
-<instance part="X3" gate="-2" x="30.48" y="43.18" rot="MR180"/>
-<instance part="X3" gate="-3" x="30.48" y="45.72" rot="MR180"/>
-<instance part="X3" gate="-4" x="30.48" y="48.26" rot="MR180"/>
-<instance part="X4" gate="-1" x="30.48" y="81.28"/>
-<instance part="X4" gate="-2" x="30.48" y="78.74"/>
-<instance part="X4" gate="-3" x="30.48" y="76.2"/>
-<instance part="X4" gate="-4" x="30.48" y="73.66"/>
-<instance part="U$1" gate="G$1" x="-10.16" y="35.56"/>
-<instance part="IC1" gate="G$1" x="-33.02" y="45.72" rot="R90"/>
-<instance part="GND1" gate="1" x="-22.86" y="45.72" rot="R90"/>
+<instance part="X1" gate="-1" x="-20.32" y="20.32" rot="R90"/>
+<instance part="X1" gate="-2" x="-17.78" y="20.32" rot="R90"/>
+<instance part="X1" gate="-3" x="-15.24" y="20.32" rot="R90"/>
+<instance part="X1" gate="-4" x="-12.7" y="20.32" rot="R90"/>
+<instance part="CANL" gate="-1" x="-20.32" y="5.08" rot="MR270"/>
+<instance part="CANL" gate="-2" x="-17.78" y="5.08" rot="MR270"/>
+<instance part="CANL" gate="-3" x="-15.24" y="5.08" rot="MR270"/>
+<instance part="CANL" gate="-4" x="-12.7" y="5.08" rot="MR270"/>
+<instance part="X3" gate="-1" x="50.8" y="-15.24" rot="MR180"/>
+<instance part="X3" gate="-2" x="50.8" y="-12.7" rot="MR180"/>
+<instance part="X3" gate="-3" x="50.8" y="-10.16" rot="MR180"/>
+<instance part="X3" gate="-4" x="50.8" y="-7.62" rot="MR180"/>
+<instance part="X4" gate="-1" x="139.7" y="43.18"/>
+<instance part="X4" gate="-2" x="139.7" y="40.64"/>
+<instance part="X4" gate="-3" x="139.7" y="38.1"/>
+<instance part="X4" gate="-4" x="139.7" y="35.56"/>
+<instance part="U$1" gate="G$1" x="-10.16" y="83.82"/>
+<instance part="IC1" gate="G$1" x="25.4" y="27.94" rot="R90"/>
+<instance part="GND1" gate="1" x="35.56" y="27.94" rot="R90"/>
+<instance part="GND2" gate="1" x="-15.24" y="101.6" rot="R270"/>
+<instance part="GND3" gate="1" x="-15.24" y="10.16" rot="R180"/>
+<instance part="U$2" gate="G$1" x="-68.58" y="58.42" rot="MR270"/>
+<instance part="GND4" gate="1" x="-15.24" y="15.24"/>
 </instances>
 <busses>
 </busses>
 <nets>
-<net name="N$1" class="0">
-<segment>
-<pinref part="CANL" gate="-4" pin="S"/>
-<pinref part="IC1" gate="G$1" pin="IN"/>
-<wire x1="-33.02" y1="30.48" x2="-33.02" y2="38.1" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="GND" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="GND"/>
 <pinref part="GND1" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="CANL" gate="-3" pin="S"/>
+<pinref part="GND3" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="X1" gate="-3" pin="S"/>
+<pinref part="GND4" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="GND"/>
+<pinref part="GND2" gate="1" pin="GND"/>
+<pinref part="U$1" gate="G$1" pin="D7(RX3)"/>
+<wire x1="-12.7" y1="121.92" x2="-12.7" y2="101.6" width="0.1524" layer="91"/>
+<junction x="-12.7" y="101.6"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="CANL" gate="-2" pin="S"/>
+<pinref part="X1" gate="-2" pin="S"/>
+<wire x1="-17.78" y1="7.62" x2="-17.78" y2="17.78" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="CANL" gate="-1" pin="S"/>
+<pinref part="X1" gate="-1" pin="S"/>
+<wire x1="-20.32" y1="7.62" x2="-20.32" y2="17.78" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="CANL" gate="-4" pin="S"/>
+<wire x1="-12.7" y1="7.62" x2="-12.7" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="12.7" x2="25.4" y2="12.7" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="G$1" pin="IN"/>
+<wire x1="25.4" y1="12.7" x2="25.4" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="X1" gate="-4" pin="S"/>
+<junction x="-12.7" y="12.7"/>
+<wire x1="-12.7" y1="12.7" x2="-12.7" y2="17.78" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<portref moduleinst="5-12TRANSISTOR4" port="12VSUPPLY"/>
 </segment>
 </net>
 </nets>
