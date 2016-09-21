@@ -1102,6 +1102,10 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
 <part name="X1" library="HyTechDevices" deviceset="MINIFIT_5566-4" device=""/>
 <part name="Q1" library="HyTechDevices" deviceset="BJT_NPN" device="TIP120(SINK)"/>
 <part name="R2" library="HyTechDevices" deviceset="RESISTOR" device="PTH-1/2W"/>
+<part name="Q2" library="HyTechDevices" deviceset="BJT_NPN" device="TIP120(SINK)"/>
+<part name="R3" library="HyTechDevices" deviceset="RESISTOR" device="PTH-1/2W"/>
+<part name="Q3" library="HyTechDevices" deviceset="BJT_NPN" device="TIP120(SINK)"/>
+<part name="R4" library="HyTechDevices" deviceset="RESISTOR" device="PTH-1/2W"/>
 </parts>
 <sheets>
 <sheet>
@@ -1117,8 +1121,12 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
 <instance part="X1" gate="-2" x="-43.18" y="38.1" rot="MR0"/>
 <instance part="X1" gate="-3" x="-43.18" y="35.56" rot="MR0"/>
 <instance part="X1" gate="-4" x="-43.18" y="33.02" rot="MR0"/>
-<instance part="Q1" gate="G$1" x="111.76" y="55.88"/>
+<instance part="Q1" gate="G$1" x="127" y="55.88"/>
 <instance part="R2" gate="G$1" x="99.06" y="55.88"/>
+<instance part="Q2" gate="G$1" x="119.38" y="53.34"/>
+<instance part="R3" gate="G$1" x="99.06" y="53.34" rot="R180"/>
+<instance part="Q3" gate="G$1" x="109.22" y="45.72"/>
+<instance part="R4" gate="G$1" x="99.06" y="48.26"/>
 </instances>
 <busses>
 </busses>
@@ -1188,22 +1196,17 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
 <wire x1="-40.64" y1="38.1" x2="-12.7" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$6" class="0">
-<segment>
-<pinref part="Q1" gate="G$1" pin="COLLECTOR"/>
-<wire x1="114.3" y1="60.96" x2="114.3" y2="76.2" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$7" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="2"/>
-<wire x1="111.76" y1="55.88" x2="104.14" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="Q1" gate="G$1" pin="BASE"/>
+<wire x1="104.14" y1="55.88" x2="124.46" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$8" class="0">
 <segment>
 <pinref part="Q1" gate="G$1" pin="EMITTER"/>
-<wire x1="114.3" y1="50.8" x2="114.3" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="50.8" x2="129.54" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -1224,6 +1227,60 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
 <pinref part="U$1" gate="G$1" pin="D11"/>
 <wire x1="48.26" y1="33.02" x2="43.18" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="33.02" x2="43.18" y2="12.7" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$12" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="A8"/>
+<pinref part="R3" gate="G$1" pin="2"/>
+<wire x1="73.66" y1="53.34" x2="93.98" y2="53.34" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$13" class="0">
+<segment>
+<pinref part="Q1" gate="G$1" pin="COLLECTOR"/>
+<wire x1="129.54" y1="60.96" x2="129.54" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="Q2" gate="G$1" pin="COLLECTOR"/>
+<wire x1="121.92" y1="58.42" x2="121.92" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="73.66" x2="129.54" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="63.5" x2="121.92" y2="73.66" width="0.1524" layer="91"/>
+<junction x="121.92" y="73.66"/>
+<wire x1="111.76" y1="48.26" x2="111.76" y2="63.5" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$14" class="0">
+<segment>
+<pinref part="Q2" gate="G$1" pin="EMITTER"/>
+<wire x1="121.92" y1="48.26" x2="121.92" y2="35.56" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$15" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="A6"/>
+<pinref part="R4" gate="G$1" pin="1"/>
+<wire x1="73.66" y1="48.26" x2="93.98" y2="48.26" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$16" class="0">
+<segment>
+<pinref part="R4" gate="G$1" pin="2"/>
+<wire x1="104.14" y1="48.26" x2="106.68" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="Q3" gate="G$1" pin="BASE"/>
+</segment>
+</net>
+<net name="N$17" class="0">
+<segment>
+<pinref part="Q2" gate="G$1" pin="BASE"/>
+<wire x1="116.84" y1="53.34" x2="119.38" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="R3" gate="G$1" pin="1"/>
+<wire x1="104.14" y1="53.34" x2="116.84" y2="53.34" width="0.1524" layer="91"/>
+<junction x="116.84" y="53.34"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="Q3" gate="G$1" pin="EMITTER"/>
+<wire x1="111.76" y1="40.64" x2="111.76" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
