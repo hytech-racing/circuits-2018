@@ -1203,24 +1203,24 @@ It is replaced by MCP2561.
 <parts>
 <part name="X1" library="HyTechDevices" deviceset="MINIFIT_5566-4" device=""/>
 <part name="CANL" library="HyTechDevices" deviceset="MINIFIT_5566-4" device=""/>
-<part name="X3" library="HyTechDevices" deviceset="MINIFIT_5566-4" device=""/>
-<part name="X4" library="HyTechDevices" deviceset="MINIFIT_5566-4" device=""/>
+<part name="TOBUTTONS" library="HyTechDevices" deviceset="MINIFIT_5566-4" device=""/>
+<part name="TOLEDS" library="HyTechDevices" deviceset="MINIFIT_5566-4" device=""/>
 <part name="U$1" library="HyTechDevices" deviceset="TEENSY_3.2_SIMPLE" device=""/>
 <part name="IC1" library="HyTechDevices" deviceset="5V_REGULATOR" device="SWITCHING"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
-<part name="U$2" library="HyTechDevices" deviceset="MCP2551" device=""/>
+<part name="CAN" library="HyTechDevices" deviceset="MCP2551" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="147.32" y="35.56" size="1.4224" layer="91">RTDS_POWER
+<text x="7.62" y="142.24" size="1.4224" layer="91" rot="R90">RTDS_POWER
 LED_BMS
 LED_IMD
 LED_POWER</text>
-<text x="58.42" y="-15.24" size="1.4224" layer="91">BUTTON_SELECT
+<text x="-48.26" y="58.42" size="1.4224" layer="91" rot="R180">BUTTON_SELECT
 BUTTON_BOOST
 BUTTON_TOGGLE
 BUTTON_START</text>
@@ -1234,10 +1234,10 @@ GND_1
 12VSUPPLY_1</text>
 </plain>
 <moduleinsts>
-<moduleinst name="5-12TRANSISTOR1" module="5-12TRANSISTOR" x="35.56" y="142.24" rot="MR180"/>
-<moduleinst name="5-12TRANSISTOR2" module="5-12TRANSISTOR" x="-2.54" y="142.24" rot="MR180"/>
-<moduleinst name="5-12TRANSISTOR3" module="5-12TRANSISTOR" x="-38.1" y="114.3" rot="MR0"/>
-<moduleinst name="5-12TRANSISTOR4" module="5-12TRANSISTOR" x="-38.1" y="83.82" rot="MR0"/>
+<moduleinst name="TRANS4" module="5-12TRANSISTOR" x="50.8" y="104.14" rot="MR270"/>
+<moduleinst name="TRANS3" module="5-12TRANSISTOR" x="15.24" y="104.14" rot="MR270"/>
+<moduleinst name="TRANS2" module="5-12TRANSISTOR" x="-20.32" y="104.14" rot="MR270"/>
+<moduleinst name="TRANS1" module="5-12TRANSISTOR" x="-60.96" y="104.14" rot="MR270"/>
 </moduleinsts>
 <instances>
 <instance part="X1" gate="-1" x="-20.32" y="20.32" rot="R90"/>
@@ -1248,20 +1248,20 @@ GND_1
 <instance part="CANL" gate="-2" x="-17.78" y="5.08" rot="MR270"/>
 <instance part="CANL" gate="-3" x="-15.24" y="5.08" rot="MR270"/>
 <instance part="CANL" gate="-4" x="-12.7" y="5.08" rot="MR270"/>
-<instance part="X3" gate="-1" x="50.8" y="-15.24" rot="MR180"/>
-<instance part="X3" gate="-2" x="50.8" y="-12.7" rot="MR180"/>
-<instance part="X3" gate="-3" x="50.8" y="-10.16" rot="MR180"/>
-<instance part="X3" gate="-4" x="50.8" y="-7.62" rot="MR180"/>
-<instance part="X4" gate="-1" x="139.7" y="43.18"/>
-<instance part="X4" gate="-2" x="139.7" y="40.64"/>
-<instance part="X4" gate="-3" x="139.7" y="38.1"/>
-<instance part="X4" gate="-4" x="139.7" y="35.56"/>
-<instance part="U$1" gate="G$1" x="-10.16" y="83.82"/>
+<instance part="TOBUTTONS" gate="-1" x="-40.64" y="58.42" rot="MR0"/>
+<instance part="TOBUTTONS" gate="-2" x="-40.64" y="55.88" rot="MR0"/>
+<instance part="TOBUTTONS" gate="-3" x="-40.64" y="53.34" rot="MR0"/>
+<instance part="TOBUTTONS" gate="-4" x="-40.64" y="50.8" rot="MR0"/>
+<instance part="TOLEDS" gate="-1" x="0" y="134.62" rot="R90"/>
+<instance part="TOLEDS" gate="-2" x="2.54" y="134.62" rot="R90"/>
+<instance part="TOLEDS" gate="-3" x="5.08" y="134.62" rot="R90"/>
+<instance part="TOLEDS" gate="-4" x="7.62" y="134.62" rot="R90"/>
+<instance part="U$1" gate="G$1" x="-5.08" y="38.1"/>
 <instance part="IC1" gate="G$1" x="25.4" y="27.94" rot="R90"/>
 <instance part="GND1" gate="1" x="35.56" y="27.94" rot="R90"/>
-<instance part="GND2" gate="1" x="-15.24" y="101.6" rot="R270"/>
+<instance part="GND2" gate="1" x="-7.62" y="76.2" rot="R270"/>
 <instance part="GND3" gate="1" x="-15.24" y="10.16" rot="R180"/>
-<instance part="U$2" gate="G$1" x="-68.58" y="58.42" rot="MR270"/>
+<instance part="CAN" gate="G$1" x="-68.58" y="58.42" rot="MR270"/>
 <instance part="GND4" gate="1" x="-15.24" y="15.24"/>
 </instances>
 <busses>
@@ -1280,26 +1280,29 @@ GND_1
 <pinref part="X1" gate="-3" pin="S"/>
 <pinref part="GND4" gate="1" pin="GND"/>
 </segment>
-<segment>
-<pinref part="U$1" gate="G$1" pin="GND"/>
-<pinref part="GND2" gate="1" pin="GND"/>
-<pinref part="U$1" gate="G$1" pin="D7(RX3)"/>
-<wire x1="-12.7" y1="121.92" x2="-12.7" y2="101.6" width="0.1524" layer="91"/>
-<junction x="-12.7" y="101.6"/>
-</segment>
 </net>
 <net name="N$5" class="0">
 <segment>
 <pinref part="CANL" gate="-2" pin="S"/>
 <pinref part="X1" gate="-2" pin="S"/>
-<wire x1="-17.78" y1="7.62" x2="-17.78" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="7.62" x2="-17.78" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="12.7" x2="-17.78" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="12.7" x2="-71.12" y2="12.7" width="0.1524" layer="91"/>
+<junction x="-17.78" y="12.7"/>
+<pinref part="CAN" gate="G$1" pin="6"/>
+<wire x1="-71.12" y1="12.7" x2="-71.12" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
 <pinref part="CANL" gate="-1" pin="S"/>
 <pinref part="X1" gate="-1" pin="S"/>
-<wire x1="-20.32" y1="7.62" x2="-20.32" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="-20.32" y1="7.62" x2="-20.32" y2="10.16" width="0.1524" layer="91"/>
+<pinref part="CAN" gate="G$1" pin="7"/>
+<wire x1="-20.32" y1="10.16" x2="-20.32" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="-73.66" y1="40.64" x2="-73.66" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="-73.66" y1="10.16" x2="-20.32" y2="10.16" width="0.1524" layer="91"/>
+<junction x="-20.32" y="10.16"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -1316,7 +1319,143 @@ GND_1
 </net>
 <net name="N$7" class="0">
 <segment>
-<portref moduleinst="5-12TRANSISTOR4" port="12VSUPPLY"/>
+<portref moduleinst="TRANS1" port="12VSUPPLY"/>
+<portref moduleinst="TRANS2" port="12VSUPPLY"/>
+<wire x1="-55.88" y1="124.46" x2="-15.24" y2="124.46" width="0.1524" layer="91"/>
+<portref moduleinst="TRANS3" port="12VSUPPLY"/>
+<wire x1="-15.24" y1="124.46" x2="20.32" y2="124.46" width="0.1524" layer="91"/>
+<junction x="-15.24" y="124.46"/>
+<portref moduleinst="TRANS4" port="12VSUPPLY"/>
+<wire x1="20.32" y1="124.46" x2="55.88" y2="124.46" width="0.1524" layer="91"/>
+<junction x="20.32" y="124.46"/>
+<junction x="55.88" y="124.46"/>
+<wire x1="76.2" y1="12.7" x2="25.4" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="124.46" x2="73.66" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="124.46" x2="76.2" y2="12.7" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="D3(CANTX)"/>
+<wire x1="-7.62" y1="66.04" x2="-76.2" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="CAN" gate="G$1" pin="1"/>
+<wire x1="-76.2" y1="66.04" x2="-76.2" y2="60.96" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="D4(CANRX)"/>
+<wire x1="-7.62" y1="63.5" x2="-68.58" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="CAN" gate="G$1" pin="4"/>
+<wire x1="-68.58" y1="63.5" x2="-68.58" y2="60.96" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<portref moduleinst="TRANS1" port="TOCONTROLPIN"/>
+<wire x1="-76.2" y1="111.76" x2="-76.2" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="-76.2" y1="73.66" x2="-38.1" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="-38.1" y1="73.66" x2="-38.1" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="D5"/>
+<wire x1="-38.1" y1="60.96" x2="-7.62" y2="60.96" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<portref moduleinst="TRANS2" port="TOCONTROLPIN"/>
+<wire x1="-35.56" y1="111.76" x2="-35.56" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="D2"/>
+<wire x1="-35.56" y1="68.58" x2="-7.62" y2="68.58" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<portref moduleinst="TRANS4" port="TOCONTROLPIN"/>
+<wire x1="35.56" y1="111.76" x2="35.56" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="81.28" x2="-10.16" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="-10.16" y1="81.28" x2="-10.16" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="D0(RX1)"/>
+<wire x1="-10.16" y1="73.66" x2="-7.62" y2="73.66" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<portref moduleinst="TRANS3" port="TOCONTROLPIN"/>
+<wire x1="0" y1="111.76" x2="0" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="0" y1="83.82" x2="-12.7" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="83.82" x2="-12.7" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="D1(TX1)"/>
+<wire x1="-12.7" y1="71.12" x2="-7.62" y2="71.12" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$11" class="0">
+<segment>
+<portref moduleinst="TRANS1" port="TOLED"/>
+<wire x1="-45.72" y1="96.52" x2="-45.72" y2="132.08" width="0.1524" layer="91"/>
+<pinref part="TOLEDS" gate="-1" pin="S"/>
+<wire x1="-45.72" y1="132.08" x2="0" y2="132.08" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$12" class="0">
+<segment>
+<portref moduleinst="TRANS2" port="TOLED"/>
+<wire x1="-5.08" y1="96.52" x2="-5.08" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="129.54" x2="2.54" y2="129.54" width="0.1524" layer="91"/>
+<pinref part="TOLEDS" gate="-2" pin="S"/>
+<wire x1="2.54" y1="129.54" x2="2.54" y2="132.08" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$13" class="0">
+<segment>
+<portref moduleinst="TRANS3" port="TOLED"/>
+<wire x1="30.48" y1="96.52" x2="30.48" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="129.54" x2="5.08" y2="129.54" width="0.1524" layer="91"/>
+<pinref part="TOLEDS" gate="-3" pin="S"/>
+<wire x1="5.08" y1="129.54" x2="5.08" y2="132.08" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$14" class="0">
+<segment>
+<portref moduleinst="TRANS4" port="TOLED"/>
+<wire x1="66.04" y1="96.52" x2="66.04" y2="132.08" width="0.1524" layer="91"/>
+<pinref part="TOLEDS" gate="-4" pin="S"/>
+<wire x1="66.04" y1="132.08" x2="7.62" y2="132.08" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$15" class="0">
+<segment>
+<pinref part="TOBUTTONS" gate="-1" pin="S"/>
+<pinref part="U$1" gate="G$1" pin="D6"/>
+<wire x1="-38.1" y1="58.42" x2="-7.62" y2="58.42" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$16" class="0">
+<segment>
+<pinref part="TOBUTTONS" gate="-2" pin="S"/>
+<pinref part="U$1" gate="G$1" pin="D7(RX3)"/>
+<wire x1="-38.1" y1="55.88" x2="-7.62" y2="55.88" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$17" class="0">
+<segment>
+<pinref part="TOBUTTONS" gate="-3" pin="S"/>
+<pinref part="U$1" gate="G$1" pin="D8(TX3)"/>
+<wire x1="-38.1" y1="53.34" x2="-7.62" y2="53.34" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$18" class="0">
+<segment>
+<pinref part="TOBUTTONS" gate="-4" pin="S"/>
+<pinref part="U$1" gate="G$1" pin="D9(RX2)"/>
+<wire x1="-38.1" y1="50.8" x2="-7.62" y2="50.8" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$19" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="OUT"/>
+<wire x1="25.4" y1="35.56" x2="25.4" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="VIN"/>
+<wire x1="25.4" y1="76.2" x2="17.78" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
