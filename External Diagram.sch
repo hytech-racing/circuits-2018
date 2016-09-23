@@ -545,7 +545,7 @@ Source: Schukat</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="FUSE" prefix="F">
+<deviceset name="FUSE" prefix="F" uservalue="yes">
 <description>Generic Fuse</description>
 <gates>
 <gate name="G$1" symbol="FUSE" x="0" y="0"/>
@@ -1092,6 +1092,7 @@ Source: Sonnenschein</description>
 <part name="F5" library="HyTechSymbols" deviceset="FUSE" device="" value="5A"/>
 <part name="F6" library="HyTechSymbols" deviceset="FUSE" device="" value="5A"/>
 <part name="F7" library="HyTechSymbols" deviceset="FUSE" device="" value="5A"/>
+<part name="F8" library="HyTechSymbols" deviceset="FUSE" device="" value="9A"/>
 </parts>
 <sheets>
 <sheet>
@@ -1238,6 +1239,7 @@ move to after GLVMS</text>
 <instance part="F5" gate="G$1" x="157.48" y="15.24"/>
 <instance part="F6" gate="G$1" x="213.36" y="81.28"/>
 <instance part="F7" gate="G$1" x="149.86" y="81.28"/>
+<instance part="F8" gate="G$1" x="167.64" y="30.48" rot="R90"/>
 </instances>
 <busses>
 <bus name="12VSUPPLY,GND,CANL,CANH">
@@ -1692,14 +1694,14 @@ move to after GLVMS</text>
 </segment>
 <segment>
 <pinref part="BP5" gate="G$1" pin="1"/>
-<portref moduleinst="MAIN_ECU1" port="12VSUPPLY"/>
 <wire x1="226.06" y1="20.32" x2="167.64" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="167.64" y1="20.32" x2="167.64" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="20.32" x2="167.64" y2="15.24" width="0.1524" layer="91"/>
-<junction x="167.64" y="20.32"/>
 <label x="226.06" y="20.32" size="1.778" layer="95" rot="MR0"/>
 <pinref part="F5" gate="G$1" pin="2"/>
 <wire x1="167.64" y1="15.24" x2="162.56" y2="15.24" width="0.1524" layer="91"/>
+<pinref part="F8" gate="G$1" pin="1"/>
+<wire x1="167.64" y1="25.4" x2="167.64" y2="20.32" width="0.1524" layer="91"/>
+<junction x="167.64" y="20.32"/>
 </segment>
 <segment>
 <portref moduleinst="DASHBOARD_ECU1" port="12VSUPPLY_1"/>
@@ -2660,6 +2662,13 @@ move to after GLVMS</text>
 <pinref part="F7" gate="G$1" pin="1"/>
 <pinref part="SL7" gate="G$1" pin="4"/>
 <wire x1="144.78" y1="81.28" x2="139.7" y2="81.28" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$19" class="0">
+<segment>
+<pinref part="F8" gate="G$1" pin="2"/>
+<portref moduleinst="MAIN_ECU1" port="12VSUPPLY"/>
+<wire x1="167.64" y1="38.1" x2="167.64" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
