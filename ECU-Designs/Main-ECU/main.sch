@@ -1362,7 +1362,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="POWER" library="HyTechDevices" deviceset="MINIFIT_5566-2" device=""/>
 <part name="BUS2" library="HyTechDevices" deviceset="MINIFIT_5566-4" device=""/>
 <part name="FUSE_BUS_1" library="HyTechDevices" deviceset="FUSE_HOLDER" device="" value="5A"/>
-<part name="U$8" library="HyTechDevices" deviceset="FUSE_HOLDER" device=""/>
+<part name="FUSE_BUS_2" library="HyTechDevices" deviceset="FUSE_HOLDER" device="" value="5A"/>
 <part name="GND2" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="GND15" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="GND16" library="HyTechSymbols" deviceset="GND" device=""/>
@@ -1382,6 +1382,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="R7" library="HyTechDevices" deviceset="RESISTOR" device="2010"/>
 <part name="R8" library="HyTechDevices" deviceset="RESISTOR" device="2010"/>
 <part name="BOARD_TEMP" library="HyTechDevices" deviceset="THERMISTOR_NCP21" device=""/>
+<part name="R9" library="HyTechDevices" deviceset="RESISTOR" device="2010" value="10k"/>
 </parts>
 <sheets>
 <sheet>
@@ -1398,7 +1399,7 @@ something cheaper</text>
 <instance part="GND1" gate="1" x="48.26" y="71.12"/>
 <instance part="U$3" gate="G$1" x="73.66" y="38.1"/>
 <instance part="GND10" gate="1" x="66.04" y="76.2" rot="R270"/>
-<instance part="GND11" gate="1" x="101.6" y="73.66" rot="R90"/>
+<instance part="GND11" gate="1" x="104.14" y="76.2" rot="R180"/>
 <instance part="CAN_TRANSCEIVER" gate="G$1" x="50.8" y="63.5" rot="R180"/>
 <instance part="GND12" gate="1" x="58.42" y="58.42" rot="R90"/>
 <instance part="LATCH_SSR" gate="G$1" x="50.8" y="35.56"/>
@@ -1412,7 +1413,7 @@ something cheaper</text>
 <instance part="BUS2" gate="-3" x="119.38" y="96.52"/>
 <instance part="BUS2" gate="-4" x="119.38" y="93.98"/>
 <instance part="FUSE_BUS_1" gate="G$1" x="5.08" y="99.06"/>
-<instance part="U$8" gate="G$1" x="99.06" y="99.06"/>
+<instance part="FUSE_BUS_2" gate="G$1" x="99.06" y="99.06"/>
 <instance part="GND2" gate="1" x="-7.62" y="81.28" rot="R90"/>
 <instance part="GND15" gate="1" x="-7.62" y="99.06" rot="R90"/>
 <instance part="GND16" gate="1" x="111.76" y="99.06" rot="R270"/>
@@ -1434,7 +1435,8 @@ something cheaper</text>
 <instance part="GND4" gate="1" x="134.62" y="66.04" rot="R90"/>
 <instance part="R7" gate="G$1" x="129.54" y="30.48" rot="R90"/>
 <instance part="R8" gate="G$1" x="129.54" y="60.96" rot="R90"/>
-<instance part="BOARD_TEMP" gate="G$1" x="111.76" y="71.12" rot="R90"/>
+<instance part="BOARD_TEMP" gate="G$1" x="116.84" y="83.82" rot="R180"/>
+<instance part="R9" gate="G$1" x="111.76" y="73.66"/>
 </instances>
 <busses>
 </busses>
@@ -1453,7 +1455,10 @@ something cheaper</text>
 <segment>
 <pinref part="U$3" gate="G$1" pin="AGND"/>
 <pinref part="GND11" gate="1" pin="GND"/>
-<wire x1="99.06" y1="73.66" x2="96.52" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="73.66" x2="96.52" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="R9" gate="G$1" pin="1"/>
+<wire x1="104.14" y1="73.66" x2="106.68" y2="73.66" width="0.1524" layer="91"/>
+<junction x="104.14" y="73.66"/>
 </segment>
 <segment>
 <pinref part="CAN_TRANSCEIVER" gate="G$1" pin="2"/>
@@ -1528,7 +1533,6 @@ something cheaper</text>
 <wire x1="58.42" y1="60.96" x2="58.42" y2="83.82" width="0.1524" layer="91"/>
 <junction x="58.42" y="83.82"/>
 <pinref part="BOARD_TEMP" gate="G$1" pin="1"/>
-<wire x1="111.76" y1="76.2" x2="111.76" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="83.82" x2="99.06" y2="83.82" width="0.1524" layer="91"/>
 <junction x="99.06" y="83.82"/>
 </segment>
@@ -1614,7 +1618,7 @@ something cheaper</text>
 </net>
 <net name="N$11" class="0">
 <segment>
-<pinref part="U$8" gate="G$1" pin="2"/>
+<pinref part="FUSE_BUS_2" gate="G$1" pin="2"/>
 <pinref part="BUS2" gate="-1" pin="S"/>
 <wire x1="109.22" y1="101.6" x2="116.84" y2="101.6" width="0.1524" layer="91"/>
 </segment>
@@ -1641,7 +1645,7 @@ something cheaper</text>
 <segment>
 <pinref part="IMD_SHUTDOWN" gate="G$1" pin="6"/>
 <pinref part="POWER" gate="-1" pin="S"/>
-<pinref part="U$8" gate="G$1" pin="1"/>
+<pinref part="FUSE_BUS_2" gate="G$1" pin="1"/>
 <pinref part="FUSE_BUS_1" gate="G$1" pin="2"/>
 <wire x1="88.9" y1="101.6" x2="17.78" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="17.78" y1="101.6" x2="15.24" y2="101.6" width="0.1524" layer="91"/>
@@ -1720,7 +1724,7 @@ something cheaper</text>
 <junction x="114.3" y="22.86"/>
 </segment>
 </net>
-<net name="N$7" class="0">
+<net name="OKHS_READ" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>
 <pinref part="R1" gate="G$1" pin="2"/>
@@ -1731,7 +1735,7 @@ something cheaper</text>
 <junction x="114.3" y="45.72"/>
 </segment>
 </net>
-<net name="N$9" class="0">
+<net name="BMS_OK_READ" class="0">
 <segment>
 <pinref part="R3" gate="G$1" pin="2"/>
 <pinref part="R4" gate="G$1" pin="1"/>
@@ -1742,7 +1746,7 @@ something cheaper</text>
 <junction x="119.38" y="48.26"/>
 </segment>
 </net>
-<net name="N$12" class="0">
+<net name="SHUTDOWN_OUT_READ" class="0">
 <segment>
 <pinref part="R6" gate="G$1" pin="1"/>
 <pinref part="R5" gate="G$1" pin="2"/>
@@ -1753,7 +1757,7 @@ something cheaper</text>
 <junction x="124.46" y="50.8"/>
 </segment>
 </net>
-<net name="N$14" class="0">
+<net name="12VSUPPLY_READ" class="0">
 <segment>
 <pinref part="R8" gate="G$1" pin="1"/>
 <pinref part="R7" gate="G$1" pin="2"/>
@@ -1766,11 +1770,16 @@ something cheaper</text>
 </net>
 <net name="N$15" class="0">
 <segment>
-<pinref part="BOARD_TEMP" gate="G$1" pin="2"/>
-<wire x1="111.76" y1="66.04" x2="106.68" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="66.04" x2="106.68" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="68.58" x2="106.68" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="U$3" gate="G$1" pin="A4"/>
 <wire x1="106.68" y1="55.88" x2="96.52" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="R9" gate="G$1" pin="2"/>
+<pinref part="BOARD_TEMP" gate="G$1" pin="2"/>
+<wire x1="116.84" y1="73.66" x2="121.92" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="73.66" x2="121.92" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="68.58" x2="121.92" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="68.58" x2="121.92" y2="73.66" width="0.1524" layer="91"/>
+<junction x="121.92" y="73.66"/>
 </segment>
 </net>
 </nets>

@@ -992,6 +992,29 @@ Source: Sonnenschein</description>
 </sheet>
 </sheets>
 </module>
+<module name="CUTOFF" prefix="" dx="25.4" dy="10.16">
+<ports>
+<port name="OUT" side="right" coord="0" direction="out"/>
+<port name="GND" side="right" coord="-2.54" direction="out"/>
+<port name="IN" side="right" coord="2.54" direction="in"/>
+</ports>
+<variantdefs>
+</variantdefs>
+<parts>
+</parts>
+<sheets>
+<sheet>
+<plain>
+</plain>
+<instances>
+</instances>
+<busses>
+</busses>
+<nets>
+</nets>
+</sheet>
+</sheets>
+</module>
 </modules>
 <parts>
 <part name="RTDS" library="HyTechSymbols" deviceset="BUZZER" device=""/>
@@ -1093,6 +1116,7 @@ Source: Sonnenschein</description>
 <part name="F6" library="HyTechSymbols" deviceset="FUSE" device="" value="5A"/>
 <part name="F7" library="HyTechSymbols" deviceset="FUSE" device="" value="5A"/>
 <part name="F8" library="HyTechSymbols" deviceset="FUSE" device="" value="9A"/>
+<part name="GND22" library="HyTechSymbols" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1106,9 +1130,6 @@ Source: Sonnenschein</description>
 <text x="289.56" y="177.8" size="1.778" layer="91">todo add canbus</text>
 <text x="193.04" y="15.24" size="1.778" layer="91">todo add main power relay?</text>
 <text x="129.54" y="20.32" size="1.778" layer="91" rot="R90">Possible location of Samsung Galaxy</text>
-<text x="304.8" y="45.72" size="1.778" layer="91">This may need to
-move to after GLVMS</text>
-<text x="304.8" y="43.18" size="1.778" layer="91">FH EV7.3</text>
 <text x="254" y="104.14" size="1.778" layer="91">Does this need to be isolated from TS?</text>
 <text x="309.88" y="101.6" size="1.778" layer="91">See FH EV12.2.15 </text>
 </plain>
@@ -1133,6 +1154,7 @@ move to after GLVMS</text>
 </moduleinst>
 <moduleinst name="HV_ECU1" module="HV_ECU" x="256.54" y="152.4"/>
 <moduleinst name="SAMSUNG_GALAXY1" module="SAMSUNG_GALAXY" x="147.32" y="40.64"/>
+<moduleinst name="CUTOFF1" module="CUTOFF" x="312.42" y="12.7"/>
 </moduleinsts>
 <instances>
 <instance part="RTDS" gate="1" x="576.58" y="177.8" rot="MR0"/>
@@ -1145,10 +1167,10 @@ move to after GLVMS</text>
 <instance part="PED2" gate="G$1" x="774.7" y="162.56" rot="R270"/>
 <instance part="PED3" gate="G$1" x="774.7" y="149.86" rot="R270"/>
 <instance part="S1" gate="DPST" x="355.6" y="312.42" rot="R270"/>
-<instance part="RIGHT_REAR_BRB" gate="DPST" x="355.6" y="27.94" rot="R270"/>
-<instance part="GLVMS" gate="SPST" x="314.96" y="30.48" rot="R270"/>
-<instance part="F1" gate="G$1" x="335.28" y="27.94"/>
-<instance part="F2" gate="G$1" x="335.28" y="17.78"/>
+<instance part="RIGHT_REAR_BRB" gate="DPST" x="358.14" y="27.94" rot="R270"/>
+<instance part="GLVMS" gate="SPST" x="304.8" y="30.48" rot="R270"/>
+<instance part="F1" gate="G$1" x="342.9" y="27.94"/>
+<instance part="F2" gate="G$1" x="342.9" y="17.78"/>
 <instance part="U$1" gate="G$1" x="27.94" y="187.96" rot="R270"/>
 <instance part="EMRAX_207_MED" gate="G$1" x="-24.13" y="152.4" rot="R90"/>
 <instance part="LED1" gate="G$1" x="-58.42" y="147.32" rot="R90"/>
@@ -1240,6 +1262,7 @@ move to after GLVMS</text>
 <instance part="F6" gate="G$1" x="213.36" y="81.28"/>
 <instance part="F7" gate="G$1" x="149.86" y="81.28"/>
 <instance part="F8" gate="G$1" x="167.64" y="30.48" rot="R90"/>
+<instance part="GND22" gate="1" x="332.74" y="10.16" rot="R90"/>
 </instances>
 <busses>
 <bus name="12VSUPPLY,GND,CANL,CANH">
@@ -1520,6 +1543,10 @@ move to after GLVMS</text>
 <pinref part="U$1" gate="G$1" pin="GND"/>
 <pinref part="GND7" gate="1" pin="GND"/>
 <wire x1="68.58" y1="167.64" x2="60.96" y2="167.64" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<portref moduleinst="CUTOFF1" port="GND"/>
+<pinref part="GND22" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -1876,28 +1903,18 @@ move to after GLVMS</text>
 <wire x1="375.92" y1="76.2" x2="297.18" y2="76.2" width="1.27" layer="91"/>
 </segment>
 </net>
-<net name="N$15" class="0">
-<segment>
-<pinref part="F1" gate="G$1" pin="1"/>
-<pinref part="GLVMS" gate="SPST" pin="S"/>
-<wire x1="320.04" y1="27.94" x2="330.2" y2="27.94" width="0.1524" layer="91"/>
-<pinref part="F2" gate="G$1" pin="1"/>
-<wire x1="330.2" y1="27.94" x2="330.2" y2="17.78" width="0.1524" layer="91"/>
-<junction x="330.2" y="27.94"/>
-</segment>
-</net>
 <net name="N$16" class="0">
 <segment>
 <pinref part="F1" gate="G$1" pin="2"/>
 <pinref part="RIGHT_REAR_BRB" gate="DPST" pin="P"/>
-<wire x1="350.52" y1="27.94" x2="340.36" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="353.06" y1="27.94" x2="347.98" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$17" class="0">
 <segment>
 <pinref part="F2" gate="G$1" pin="2"/>
 <pinref part="RIGHT_REAR_BRB" gate="DPST" pin="P1"/>
-<wire x1="350.52" y1="17.78" x2="340.36" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="353.06" y1="17.78" x2="347.98" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="12VSUPPLY_COOLING_UNSWITCHED" class="0">
@@ -1908,7 +1925,7 @@ move to after GLVMS</text>
 <wire x1="340.36" y1="289.56" x2="388.62" y2="289.56" width="0.1524" layer="91"/>
 <wire x1="388.62" y1="289.56" x2="388.62" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="RIGHT_REAR_BRB" gate="DPST" pin="O"/>
-<wire x1="388.62" y1="30.48" x2="360.68" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="388.62" y1="30.48" x2="363.22" y2="30.48" width="0.1524" layer="91"/>
 <label x="388.62" y="170.18" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
@@ -2434,19 +2451,14 @@ move to after GLVMS</text>
 </net>
 <net name="12VSUPPLY_UNSWITCHED" class="0">
 <segment>
-<pinref part="MEASURE_12V" gate="G$1" pin="1"/>
-<wire x1="309.88" y1="53.34" x2="302.26" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="302.26" y1="53.34" x2="302.26" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="302.26" y1="30.48" x2="241.3" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="299.72" y1="30.48" x2="241.3" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="BP4" gate="G$1" pin="1"/>
 <label x="241.3" y="30.48" size="1.778" layer="95"/>
 <pinref part="GLVMS" gate="SPST" pin="P"/>
-<wire x1="309.88" y1="30.48" x2="302.26" y2="30.48" width="0.1524" layer="91"/>
-<junction x="302.26" y="30.48"/>
 </segment>
 <segment>
 <pinref part="RIGHT_REAR_BRB" gate="DPST" pin="O1"/>
-<wire x1="360.68" y1="20.32" x2="391.16" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="363.22" y1="20.32" x2="391.16" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="S1" gate="DPST" pin="P1"/>
 <wire x1="350.52" y1="302.26" x2="342.9" y2="302.26" width="0.1524" layer="91"/>
 <wire x1="342.9" y1="302.26" x2="342.9" y2="292.1" width="0.1524" layer="91"/>
@@ -2669,6 +2681,32 @@ move to after GLVMS</text>
 <pinref part="F8" gate="G$1" pin="2"/>
 <portref moduleinst="MAIN_ECU1" port="12VSUPPLY"/>
 <wire x1="167.64" y1="38.1" x2="167.64" y2="35.56" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$32" class="0">
+<segment>
+<pinref part="MEASURE_12V" gate="G$1" pin="1"/>
+<wire x1="309.88" y1="53.34" x2="302.26" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="302.26" y1="53.34" x2="302.26" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="F1" gate="G$1" pin="1"/>
+<pinref part="F2" gate="G$1" pin="1"/>
+<wire x1="337.82" y1="27.94" x2="337.82" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="332.74" y1="27.94" x2="337.82" y2="27.94" width="0.1524" layer="91"/>
+<junction x="337.82" y="27.94"/>
+<wire x1="302.26" y1="38.1" x2="332.74" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="332.74" y1="38.1" x2="332.74" y2="27.94" width="0.1524" layer="91"/>
+<portref moduleinst="CUTOFF1" port="OUT"/>
+<wire x1="330.2" y1="12.7" x2="332.74" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="332.74" y1="12.7" x2="332.74" y2="27.94" width="0.1524" layer="91"/>
+<junction x="332.74" y="27.94"/>
+</segment>
+</net>
+<net name="N$36" class="0">
+<segment>
+<pinref part="GLVMS" gate="SPST" pin="S"/>
+<portref moduleinst="CUTOFF1" port="IN"/>
+<wire x1="309.88" y1="27.94" x2="330.2" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="330.2" y1="27.94" x2="330.2" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
