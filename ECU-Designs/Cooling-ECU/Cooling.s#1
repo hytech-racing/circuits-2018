@@ -1377,7 +1377,6 @@ Source: http://www.molex.com</description>
 <wire x1="-25.4" y1="50.8" x2="-15.24" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="-25.4" y1="22.86" x2="-25.4" y2="40.64" width="0.1524" layer="91"/>
 <junction x="-25.4" y="40.64"/>
-<junction x="-15.24" y="50.8"/>
 </segment>
 </net>
 </nets>
