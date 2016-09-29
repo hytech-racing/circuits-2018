@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -5521,6 +5521,16 @@ These measurements should be close enough to place on a pcb</description>
 <wire x1="1.6" y1="-0.125" x2="-11.1" y2="-0.125" width="0.127" layer="20"/>
 <wire x1="-11.1" y1="-0.125" x2="-11.1" y2="5.375" width="0.127" layer="20"/>
 </package>
+<package name="5504-12-1-NC">
+<wire x1="0" y1="0" x2="71.12" y2="0" width="0.127" layer="21"/>
+<wire x1="71.12" y1="0" x2="71.12" y2="-18.034" width="0.127" layer="21"/>
+<wire x1="71.12" y1="-18.034" x2="0" y2="-18.034" width="0.127" layer="21"/>
+<wire x1="0" y1="-18.034" x2="0" y2="0" width="0.127" layer="21"/>
+<pad name="HV_IN" x="5.08" y="-9.017" drill="0.8" diameter="0.8382" shape="square" rot="R90"/>
+<pad name="HV_OUT" x="66.04" y="-9.017" drill="0.8" diameter="0.8382" shape="square"/>
+<pad name="SHUTDOWN-" x="22.86" y="-14.097" drill="0.8" diameter="0.8382" shape="square" rot="R90"/>
+<pad name="SHUTDOWN+" x="48.26" y="-14.097" drill="0.8" diameter="0.8382" shape="square" rot="R90"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ARDUINO_NANO">
@@ -6986,6 +6996,17 @@ These measurements should be close enough to place on a pcb</description>
 <pin name="S12" x="-2.54" y="-7.62" length="short"/>
 <pin name="C12" x="-2.54" y="-5.08" length="short"/>
 <pin name="V+" x="-2.54" y="-2.54" length="short"/>
+</symbol>
+<symbol name="5504-12-1-NC">
+<description>HV Discharge Relay Normally Closed</description>
+<wire x1="0" y1="0" x2="58.42" y2="0" width="0.254" layer="94"/>
+<wire x1="58.42" y1="0" x2="58.42" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="58.42" y1="-20.32" x2="0" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="0" y1="-20.32" x2="0" y2="0" width="0.254" layer="94"/>
+<pin name="HV_IN" x="-2.54" y="-10.16" length="middle"/>
+<pin name="HV_OUT" x="60.96" y="-10.16" length="middle" rot="R180"/>
+<pin name="SHUTDOWN+" x="45.72" y="-22.86" length="middle" rot="R90"/>
+<pin name="SHUTDOWN-" x="12.7" y="-22.86" length="middle" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -9975,6 +9996,24 @@ MAX voltage in: 35V</description>
 <connect gate="G$1" pin="VREF2" pad="34"/>
 <connect gate="G$1" pin="VREG" pad="37"/>
 <connect gate="G$1" pin="WDT" pad="39"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DISCHARGE_RELAY_5504-12-1-NC">
+<gates>
+<gate name="G$1" symbol="5504-12-1-NC" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="5504-12-1-NC">
+<connects>
+<connect gate="G$1" pin="HV_IN" pad="HV_IN"/>
+<connect gate="G$1" pin="HV_OUT" pad="HV_OUT"/>
+<connect gate="G$1" pin="SHUTDOWN+" pad="SHUTDOWN+"/>
+<connect gate="G$1" pin="SHUTDOWN-" pad="SHUTDOWN-"/>
 </connects>
 <technologies>
 <technology name=""/>
