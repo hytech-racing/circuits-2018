@@ -5543,6 +5543,12 @@ These measurements should be close enough to place on a pcb</description>
 <wire x1="-0.4" y1="0" x2="3.7" y2="0" width="0.127" layer="20"/>
 <wire x1="3.7" y1="0" x2="3.7" y2="3.2" width="0.127" layer="20"/>
 </package>
+<package name="P/PG-TO263">
+<smd name="B" x="1.5" y="-4.4" dx="1.35" dy="4.6" layer="1" rot="R180"/>
+<smd name="E" x="9.3" y="-4.4" dx="1.35" dy="4.6" layer="1" rot="R180"/>
+<rectangle x1="0" y1="0" x2="10.8" y2="9.4" layer="1"/>
+<smd name="C" x="5.4" y="4.7" dx="10.8" dy="9.4" layer="1"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ARDUINO_NANO">
@@ -10049,6 +10055,23 @@ MAX voltage in: 35V</description>
 <connect gate="G$1" pin="SLOW" pad="13"/>
 <connect gate="G$1" pin="VDD" pad="9"/>
 <connect gate="G$1" pin="VDDS" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="2STBN15D100">
+<gates>
+<gate name="G$1" symbol="NPN_BJT" x="-5.08" y="0"/>
+</gates>
+<devices>
+<device name="" package="P/PG-TO263">
+<connects>
+<connect gate="G$1" pin="BASE" pad="B"/>
+<connect gate="G$1" pin="COLLECTOR" pad="C"/>
+<connect gate="G$1" pin="EMITTER" pad="E"/>
 </connects>
 <technologies>
 <technology name=""/>
