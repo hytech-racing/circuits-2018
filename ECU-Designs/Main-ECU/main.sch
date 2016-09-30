@@ -1372,26 +1372,24 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="GND18" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="BMS_SSR" library="HyTechDevices" deviceset="SOLID_STATE_RELAY" device="_VO14642AT"/>
 <part name="GND3" library="HyTechSymbols" deviceset="GND" device=""/>
-<part name="R1" library="HyTechDevices" deviceset="RESISTOR" device="2010"/>
-<part name="R2" library="HyTechDevices" deviceset="RESISTOR" device="2010"/>
-<part name="R3" library="HyTechDevices" deviceset="RESISTOR" device="2010"/>
-<part name="R4" library="HyTechDevices" deviceset="RESISTOR" device="2010"/>
-<part name="R5" library="HyTechDevices" deviceset="RESISTOR" device="2010"/>
-<part name="R6" library="HyTechDevices" deviceset="RESISTOR" device="2010"/>
+<part name="R1" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES"/>
+<part name="R2" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES"/>
+<part name="R3" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES"/>
+<part name="R4" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES"/>
+<part name="R5" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES"/>
+<part name="R6" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES"/>
 <part name="GND4" library="HyTechSymbols" deviceset="GND" device=""/>
-<part name="R7" library="HyTechDevices" deviceset="RESISTOR" device="2010"/>
-<part name="R8" library="HyTechDevices" deviceset="RESISTOR" device="2010"/>
+<part name="R7" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES"/>
+<part name="R8" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES"/>
 <part name="BOARD_TEMP" library="HyTechDevices" deviceset="THERMISTOR_NCP21" device=""/>
-<part name="R9" library="HyTechDevices" deviceset="RESISTOR" device="2010" value="10k"/>
-<part name="R10" library="HyTechDevices" deviceset="RESISTOR" device="2010" value="10k"/>
-<part name="R11" library="HyTechDevices" deviceset="RESISTOR" device="2010" value="10k"/>
-<part name="R12" library="HyTechDevices" deviceset="RESISTOR" device="2010" value="10k"/>
+<part name="R9" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="10k"/>
+<part name="R10" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="10k"/>
+<part name="R11" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="10k"/>
+<part name="R12" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="10k"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="101.6" y="-10.16" size="1.778" layer="91">todo replace this with
-something cheaper</text>
 </plain>
 <instances>
 <instance part="BUS1" gate="-1" x="-15.24" y="101.6" rot="MR0"/>
@@ -1812,10 +1810,4 @@ something cheaper</text>
 </sheets>
 </schematic>
 </drawing>
-<compatibility>
-<note version="6.3" minversion="6.2.2" severity="warning">
-Since Version 6.2.2 text objects can contain more than one line,
-which will not be processed correctly with this version.
-</note>
-</compatibility>
 </eagle>
