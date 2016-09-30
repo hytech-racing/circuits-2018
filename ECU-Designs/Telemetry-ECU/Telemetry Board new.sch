@@ -216,6 +216,22 @@
 <wire x1="5.08" y1="30.48" x2="12.7" y2="30.48" width="0.127" layer="51"/>
 <wire x1="12.7" y1="30.48" x2="12.7" y2="35.56" width="0.127" layer="51"/>
 </package>
+<package name="SOIC08">
+<smd name="1" x="0" y="0" dx="0.6" dy="1.55" layer="1"/>
+<smd name="7" x="1.27" y="5.4" dx="0.6" dy="1.55" layer="1"/>
+<smd name="6" x="2.54" y="5.4" dx="0.6" dy="1.55" layer="1"/>
+<smd name="5" x="3.81" y="5.4" dx="0.6" dy="1.55" layer="1"/>
+<smd name="8" x="0" y="5.4" dx="0.6" dy="1.55" layer="1"/>
+<smd name="2" x="1.27" y="0" dx="0.6" dy="1.55" layer="1"/>
+<smd name="3" x="2.54" y="0" dx="0.6" dy="1.55" layer="1"/>
+<smd name="4" x="3.81" y="0" dx="0.6" dy="1.55" layer="1"/>
+<wire x1="-0.25" y1="4.54" x2="4.07" y2="4.54" width="0.127" layer="20"/>
+<wire x1="4.07" y1="4.54" x2="4.07" y2="0.81" width="0.127" layer="20"/>
+<wire x1="-0.25" y1="4.54" x2="-0.25" y2="3.3" width="0.127" layer="20"/>
+<wire x1="-0.25" y1="0.81" x2="-0.25" y2="2.053334375" width="0.127" layer="20"/>
+<wire x1="-0.25" y1="0.81" x2="4.07" y2="0.81" width="0.127" layer="20"/>
+<wire x1="-0.254" y1="2.032" x2="-0.254" y2="3.302" width="0.127" layer="20" curve="180"/>
+</package>
 <package name="DIL08">
 <description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
 <wire x1="5.08" y1="2.921" x2="-5.08" y2="2.921" width="0.1524" layer="21"/>
@@ -368,6 +384,7 @@ Source: http://www.molex.com</description>
 <text x="13.97" y="3.81" size="1.27" layer="94" rot="R180">CANL</text>
 <text x="13.97" y="8.89" size="1.27" layer="94" rot="R180">RS</text>
 <text x="13.97" y="6.35" size="1.27" layer="94" rot="R180">CANH</text>
+<text x="1.27" y="5.08" size="1.27" layer="94">VSS</text>
 </symbol>
 <symbol name="MV">
 <wire x1="1.27" y1="0" x2="0" y2="0" width="0.6096" layer="94"/>
@@ -461,7 +478,22 @@ It is replaced by MCP2561.
 <gate name="G$1" symbol="MCP2551" x="0" y="-12.7"/>
 </gates>
 <devices>
-<device name="" package="DIL08">
+<device name="DIL" package="DIL08">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SOIC" package="SOIC08">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -566,7 +598,7 @@ MAX voltage in: 35V</description>
 </classes>
 <parts>
 <part name="U$1" library="HyTechDevices" deviceset="TEENSY_3.2_SIMPLE" device=""/>
-<part name="U$2" library="HyTechDevices" deviceset="MCP2551" device=""/>
+<part name="U$2" library="HyTechDevices" deviceset="MCP2551" device="SOIC"/>
 <part name="X1" library="HyTechDevices" deviceset="MINIFIT_5566-4" device="" value="Suspension Sensor"/>
 <part name="X2" library="HyTechDevices" deviceset="MINIFIT_5566-4" device="" value="Wheel Sensor"/>
 <part name="X3" library="HyTechDevices" deviceset="MINIFIT_5566-4" device="" value="Tire Temperature Sensor"/>
