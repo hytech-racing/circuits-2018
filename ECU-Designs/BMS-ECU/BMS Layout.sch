@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.05" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -230,6 +230,40 @@
 <pin name="S" x="2.54" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
 <pin name="O" x="-2.54" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
 </symbol>
+<symbol name="MV">
+<wire x1="1.27" y1="0" x2="0" y2="0" width="0.6096" layer="94"/>
+<pin name="S" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+<text x="2.54" y="-0.762" size="1.524" layer="95">&gt;NAME</text>
+<text x="-0.762" y="1.397" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="M02">
+<wire x1="3.81" y1="-2.54" x2="-2.54" y2="-2.54" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="2.54" x2="2.54" y2="2.54" width="0.6096" layer="94"/>
+<wire x1="1.27" y1="0" x2="2.54" y2="0" width="0.6096" layer="94"/>
+<wire x1="-2.54" y1="5.08" x2="-2.54" y2="-2.54" width="0.4064" layer="94"/>
+<wire x1="3.81" y1="-2.54" x2="3.81" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="-2.54" y1="5.08" x2="3.81" y2="5.08" width="0.4064" layer="94"/>
+<text x="-2.54" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-2.54" y="5.842" size="1.778" layer="95">&gt;NAME</text>
+<pin name="1" x="7.62" y="0" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="2" x="7.62" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+</symbol>
+<symbol name="M04">
+<wire x1="1.27" y1="-5.08" x2="-5.08" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="-1.27" y1="2.54" x2="0" y2="2.54" width="0.6096" layer="94"/>
+<wire x1="-1.27" y1="0" x2="0" y2="0" width="0.6096" layer="94"/>
+<wire x1="-1.27" y1="-2.54" x2="0" y2="-2.54" width="0.6096" layer="94"/>
+<wire x1="-5.08" y1="7.62" x2="-5.08" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="-5.08" x2="1.27" y2="7.62" width="0.4064" layer="94"/>
+<wire x1="-5.08" y1="7.62" x2="1.27" y2="7.62" width="0.4064" layer="94"/>
+<wire x1="-1.27" y1="5.08" x2="0" y2="5.08" width="0.6096" layer="94"/>
+<text x="-5.08" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-5.08" y="8.382" size="1.778" layer="95">&gt;NAME</text>
+<pin name="1" x="5.08" y="-2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="2" x="5.08" y="0" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="3" x="5.08" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="4" x="5.08" y="5.08" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="BATTERY_1_CELL" prefix="G">
@@ -270,6 +304,50 @@ Source: Sonnenschein</description>
 <description>Single Pull Single Throw Switch</description>
 <gates>
 <gate name="SPST" symbol="SWITCH_SPST" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="">
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="THERMISTOR">
+<gates>
+<gate name="G$1" symbol="MV" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="">
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="M02" prefix="SL" uservalue="yes">
+<description>Generic 2-pin connector</description>
+<gates>
+<gate name="G$1" symbol="M02" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="">
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="M04" prefix="SL" uservalue="yes">
+<description>Generic 4-pin connector</description>
+<gates>
+<gate name="G$1" symbol="M04" x="-2.54" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -333,7 +411,7 @@ Source: Sonnenschein</description>
 </module>
 <module name="BMS_MICROCONTROLLER" prefix="" dx="40.64" dy="30.48">
 <ports>
-<port name="ISOSPI-P" side="bottom" coord="2.54" direction="out"/>
+<port name="ISOSPI-P" side="bottom" coord="-2.54" direction="out"/>
 <port name="ISOPSI-M" side="bottom" coord="0" direction="out"/>
 <port name="12V_SUPPLY_IN" side="left" coord="12.7" direction="in"/>
 <port name="GND_IN" side="left" coord="10.16" direction="in"/>
@@ -343,6 +421,8 @@ Source: Sonnenschein</description>
 <port name="GND_OUT" side="right" coord="10.16" direction="out"/>
 <port name="CANL_OUT" side="right" coord="7.62" direction="out"/>
 <port name="CANH_OUT" side="right" coord="5.08" direction="out"/>
+<port name="SHUTDOWN_IN" side="left" coord="-7.62" direction="in"/>
+<port name="SHUTDOWN_OUT" side="right" coord="-7.62" direction="out"/>
 </ports>
 <variantdefs>
 </variantdefs>
@@ -440,22 +520,53 @@ Source: Sonnenschein</description>
 <part name="SMD-2" library="HyTechSymbols" deviceset="RELAY" device="" value=""/>
 <part name="AIR-1" library="HyTechSymbols" deviceset="RELAY" device="" value=""/>
 <part name="AIR-2" library="HyTechSymbols" deviceset="RELAY" device="" value=""/>
+<part name="THERM1" library="HyTechSymbols" deviceset="THERMISTOR" device="" value=""/>
+<part name="THERM2" library="HyTechSymbols" deviceset="THERMISTOR" device="" value=""/>
+<part name="THERM3" library="HyTechSymbols" deviceset="THERMISTOR" device="" value=""/>
+<part name="THERM4" library="HyTechSymbols" deviceset="THERMISTOR" device="" value=""/>
+<part name="THERM5" library="HyTechSymbols" deviceset="THERMISTOR" device="" value=""/>
+<part name="THERM6" library="HyTechSymbols" deviceset="THERMISTOR" device="" value=""/>
+<part name="THERM7" library="HyTechSymbols" deviceset="THERMISTOR" device="" value=""/>
+<part name="THERM8" library="HyTechSymbols" deviceset="THERMISTOR" device="" value=""/>
+<part name="THERM9" library="HyTechSymbols" deviceset="THERMISTOR" device="" value=""/>
+<part name="THERM10" library="HyTechSymbols" deviceset="THERMISTOR" device="" value=""/>
+<part name="THERM11" library="HyTechSymbols" deviceset="THERMISTOR" device="" value=""/>
+<part name="THERM12" library="HyTechSymbols" deviceset="THERMISTOR" device="" value=""/>
+<part name="THERM13" library="HyTechSymbols" deviceset="THERMISTOR" device="" value=""/>
+<part name="THERM14" library="HyTechSymbols" deviceset="THERMISTOR" device="" value=""/>
+<part name="THERM15" library="HyTechSymbols" deviceset="THERMISTOR" device="" value=""/>
+<part name="THERM16" library="HyTechSymbols" deviceset="THERMISTOR" device="" value=""/>
+<part name="THERM17" library="HyTechSymbols" deviceset="THERMISTOR" device="" value=""/>
+<part name="THERM18" library="HyTechSymbols" deviceset="THERMISTOR" device="" value=""/>
+<part name="THERM19" library="HyTechSymbols" deviceset="THERMISTOR" device="" value=""/>
+<part name="THERM20" library="HyTechSymbols" deviceset="THERMISTOR" device="" value=""/>
+<part name="THERM21" library="HyTechSymbols" deviceset="THERMISTOR" device="" value=""/>
+<part name="THERM22" library="HyTechSymbols" deviceset="THERMISTOR" device="" value=""/>
+<part name="THERM23" library="HyTechSymbols" deviceset="THERMISTOR" device="" value=""/>
+<part name="THERM24" library="HyTechSymbols" deviceset="THERMISTOR" device="" value=""/>
+<part name="MOLEX_IMPERIUM" library="HyTechSymbols" deviceset="M02" device=""/>
+<part name="SHUTDOWN_CIRCUIT" library="HyTechSymbols" deviceset="M02" device=""/>
+<part name="CAN/POWER_IN" library="HyTechSymbols" deviceset="M04" device=""/>
+<part name="CAN/POWER_OUT" library="HyTechSymbols" deviceset="M04" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="-187.96" y="154.94" size="1.778" layer="91">TODO: Run shutdown circuit through BMS Micro Board</text>
+<text x="-127" y="68.58" size="2.54" layer="91">ACCUMULATOR SEGMENT 1</text>
+<text x="93.98" y="68.58" size="2.54" layer="91">ACCUMULATOR SEGMENT 2</text>
+<text x="-127" y="-81.28" size="2.54" layer="91">ACCUMULATOR SEGMENT 3</text>
+<text x="93.98" y="-81.28" size="2.54" layer="91">ACCUMULATOR SEGMENT 4</text>
 </plain>
 <moduleinsts>
 <moduleinst name="BMS_SEGMENT1" module="BMS_SEGMENT" x="-160.02" y="78.74"/>
-<moduleinst name="BMS_SEGMENT2" module="BMS_SEGMENT" x="-55.88" y="78.74"/>
-<moduleinst name="BMS_SEGMENT3" module="BMS_SEGMENT" x="-160.02" y="-33.02"/>
-<moduleinst name="BMS_SEGMENT4" module="BMS_SEGMENT" x="-55.88" y="-33.02"/>
-<moduleinst name="BMS_SEGMENT5" module="BMS_SEGMENT" x="53.34" y="78.74"/>
-<moduleinst name="BMS_SEGMENT6" module="BMS_SEGMENT" x="152.4" y="78.74"/>
-<moduleinst name="BMS_SEGMENT7" module="BMS_SEGMENT" x="53.34" y="-33.02"/>
-<moduleinst name="BMS_SEGMENT8" module="BMS_SEGMENT" x="152.4" y="-33.02"/>
-<moduleinst name="BMS_MICROCONTROLLER1" module="BMS_MICROCONTROLLER" x="-160.02" y="134.62"/>
+<moduleinst name="BMS_SEGMENT2" module="BMS_SEGMENT" x="-53.34" y="78.74"/>
+<moduleinst name="BMS_SEGMENT3" module="BMS_SEGMENT" x="-160.02" y="-71.12"/>
+<moduleinst name="BMS_SEGMENT4" module="BMS_SEGMENT" x="-53.34" y="-71.12"/>
+<moduleinst name="BMS_SEGMENT5" module="BMS_SEGMENT" x="60.96" y="78.74"/>
+<moduleinst name="BMS_SEGMENT6" module="BMS_SEGMENT" x="167.64" y="78.74"/>
+<moduleinst name="BMS_SEGMENT7" module="BMS_SEGMENT" x="60.96" y="-71.12"/>
+<moduleinst name="BMS_SEGMENT8" module="BMS_SEGMENT" x="167.64" y="-71.12"/>
+<moduleinst name="BMS_MICROCONTROLLER1" module="BMS_MICROCONTROLLER" x="-261.62" y="-30.48" rot="MR180"/>
 </moduleinsts>
 <instances>
 <instance part="G1" gate="G$1" x="-205.74" y="22.86" rot="MR0"/>
@@ -467,184 +578,283 @@ Source: Sonnenschein</description>
 <instance part="G7" gate="G$1" x="-144.78" y="22.86" rot="MR0"/>
 <instance part="G8" gate="G$1" x="-134.62" y="22.86" rot="MR0"/>
 <instance part="G9" gate="G$1" x="-124.46" y="22.86" rot="MR0"/>
-<instance part="G10" gate="G$1" x="-101.6" y="22.86" rot="MR0"/>
-<instance part="G11" gate="G$1" x="-91.44" y="22.86" rot="MR0"/>
-<instance part="G12" gate="G$1" x="-81.28" y="22.86" rot="MR0"/>
-<instance part="G13" gate="G$1" x="-71.12" y="22.86" rot="MR0"/>
-<instance part="G14" gate="G$1" x="-60.96" y="22.86" rot="MR0"/>
-<instance part="G15" gate="G$1" x="-50.8" y="22.86" rot="MR0"/>
-<instance part="G16" gate="G$1" x="-40.64" y="22.86" rot="MR0"/>
-<instance part="G17" gate="G$1" x="-30.48" y="22.86" rot="MR0"/>
-<instance part="G18" gate="G$1" x="-20.32" y="22.86" rot="MR0"/>
-<instance part="G19" gate="G$1" x="7.62" y="22.86" rot="MR0"/>
-<instance part="G20" gate="G$1" x="17.78" y="22.86" rot="MR0"/>
-<instance part="G21" gate="G$1" x="27.94" y="22.86" rot="MR0"/>
-<instance part="G22" gate="G$1" x="38.1" y="22.86" rot="MR0"/>
-<instance part="G23" gate="G$1" x="48.26" y="22.86" rot="MR0"/>
-<instance part="G24" gate="G$1" x="58.42" y="22.86" rot="MR0"/>
-<instance part="G25" gate="G$1" x="68.58" y="22.86" rot="MR0"/>
-<instance part="G26" gate="G$1" x="78.74" y="22.86" rot="MR0"/>
-<instance part="G27" gate="G$1" x="88.9" y="22.86" rot="MR0"/>
-<instance part="SMD-1" gate="1" x="-7.62" y="33.02" rot="R270"/>
-<instance part="G28" gate="G$1" x="106.68" y="22.86" rot="MR0"/>
-<instance part="G29" gate="G$1" x="116.84" y="22.86" rot="MR0"/>
-<instance part="G30" gate="G$1" x="127" y="22.86" rot="MR0"/>
-<instance part="G31" gate="G$1" x="137.16" y="22.86" rot="MR0"/>
-<instance part="G32" gate="G$1" x="147.32" y="22.86" rot="MR0"/>
-<instance part="G33" gate="G$1" x="157.48" y="22.86" rot="MR0"/>
-<instance part="G34" gate="G$1" x="167.64" y="22.86" rot="MR0"/>
-<instance part="G35" gate="G$1" x="177.8" y="22.86" rot="MR0"/>
-<instance part="G36" gate="G$1" x="187.96" y="22.86" rot="MR0"/>
-<instance part="G37" gate="G$1" x="-205.74" y="-88.9" rot="MR0"/>
-<instance part="G38" gate="G$1" x="-195.58" y="-88.9" rot="MR0"/>
-<instance part="G39" gate="G$1" x="-185.42" y="-88.9" rot="MR0"/>
-<instance part="G40" gate="G$1" x="-175.26" y="-88.9" rot="MR0"/>
-<instance part="G41" gate="G$1" x="-165.1" y="-88.9" rot="MR0"/>
-<instance part="G42" gate="G$1" x="-154.94" y="-88.9" rot="MR0"/>
-<instance part="G43" gate="G$1" x="-144.78" y="-88.9" rot="MR0"/>
-<instance part="G44" gate="G$1" x="-134.62" y="-88.9" rot="MR0"/>
-<instance part="G45" gate="G$1" x="-124.46" y="-88.9" rot="MR0"/>
-<instance part="G46" gate="G$1" x="-101.6" y="-88.9" rot="MR0"/>
-<instance part="G47" gate="G$1" x="-91.44" y="-88.9" rot="MR0"/>
-<instance part="G48" gate="G$1" x="-81.28" y="-88.9" rot="MR0"/>
-<instance part="G49" gate="G$1" x="-71.12" y="-88.9" rot="MR0"/>
-<instance part="G50" gate="G$1" x="-60.96" y="-88.9" rot="MR0"/>
-<instance part="G51" gate="G$1" x="-50.8" y="-88.9" rot="MR0"/>
-<instance part="G52" gate="G$1" x="-40.64" y="-88.9" rot="MR0"/>
-<instance part="G53" gate="G$1" x="-30.48" y="-88.9" rot="MR0"/>
-<instance part="G54" gate="G$1" x="-20.32" y="-88.9" rot="MR0"/>
-<instance part="G55" gate="G$1" x="7.62" y="-88.9" rot="MR0"/>
-<instance part="G56" gate="G$1" x="17.78" y="-88.9" rot="MR0"/>
-<instance part="G57" gate="G$1" x="27.94" y="-88.9" rot="MR0"/>
-<instance part="G58" gate="G$1" x="38.1" y="-88.9" rot="MR0"/>
-<instance part="G59" gate="G$1" x="48.26" y="-88.9" rot="MR0"/>
-<instance part="G60" gate="G$1" x="58.42" y="-88.9" rot="MR0"/>
-<instance part="G61" gate="G$1" x="68.58" y="-88.9" rot="MR0"/>
-<instance part="G62" gate="G$1" x="78.74" y="-88.9" rot="MR0"/>
-<instance part="G63" gate="G$1" x="88.9" y="-88.9" rot="MR0"/>
-<instance part="G64" gate="G$1" x="106.68" y="-88.9" rot="MR0"/>
-<instance part="G65" gate="G$1" x="116.84" y="-88.9" rot="MR0"/>
-<instance part="G66" gate="G$1" x="127" y="-88.9" rot="MR0"/>
-<instance part="G67" gate="G$1" x="137.16" y="-88.9" rot="MR0"/>
-<instance part="G68" gate="G$1" x="147.32" y="-88.9" rot="MR0"/>
-<instance part="G69" gate="G$1" x="157.48" y="-88.9" rot="MR0"/>
-<instance part="G70" gate="G$1" x="167.64" y="-88.9" rot="MR0"/>
-<instance part="G71" gate="G$1" x="177.8" y="-88.9" rot="MR0"/>
-<instance part="G72" gate="G$1" x="187.96" y="-88.9" rot="MR0"/>
-<instance part="HVD" gate="SPST" x="5.08" y="5.08" rot="R90"/>
-<instance part="SMD-2" gate="1" x="-7.62" y="-78.74" rot="R270"/>
-<instance part="AIR-1" gate="1" x="-220.98" y="33.02" rot="R270"/>
-<instance part="AIR-2" gate="1" x="200.66" y="-78.74" rot="R270"/>
+<instance part="G10" gate="G$1" x="-99.06" y="22.86" rot="MR0"/>
+<instance part="G11" gate="G$1" x="-88.9" y="22.86" rot="MR0"/>
+<instance part="G12" gate="G$1" x="-78.74" y="22.86" rot="MR0"/>
+<instance part="G13" gate="G$1" x="-68.58" y="22.86" rot="MR0"/>
+<instance part="G14" gate="G$1" x="-58.42" y="22.86" rot="MR0"/>
+<instance part="G15" gate="G$1" x="-48.26" y="22.86" rot="MR0"/>
+<instance part="G16" gate="G$1" x="-38.1" y="22.86" rot="MR0"/>
+<instance part="G17" gate="G$1" x="-27.94" y="22.86" rot="MR0"/>
+<instance part="G18" gate="G$1" x="-17.78" y="22.86" rot="MR0"/>
+<instance part="G19" gate="G$1" x="15.24" y="22.86" rot="MR0"/>
+<instance part="G20" gate="G$1" x="25.4" y="22.86" rot="MR0"/>
+<instance part="G21" gate="G$1" x="35.56" y="22.86" rot="MR0"/>
+<instance part="G22" gate="G$1" x="45.72" y="22.86" rot="MR0"/>
+<instance part="G23" gate="G$1" x="55.88" y="22.86" rot="MR0"/>
+<instance part="G24" gate="G$1" x="66.04" y="22.86" rot="MR0"/>
+<instance part="G25" gate="G$1" x="76.2" y="22.86" rot="MR0"/>
+<instance part="G26" gate="G$1" x="86.36" y="22.86" rot="MR0"/>
+<instance part="G27" gate="G$1" x="96.52" y="22.86" rot="MR0"/>
+<instance part="SMD-1" gate="1" x="-5.08" y="-22.86" rot="MR90"/>
+<instance part="G28" gate="G$1" x="121.92" y="22.86" rot="MR0"/>
+<instance part="G29" gate="G$1" x="132.08" y="22.86" rot="MR0"/>
+<instance part="G30" gate="G$1" x="142.24" y="22.86" rot="MR0"/>
+<instance part="G31" gate="G$1" x="152.4" y="22.86" rot="MR0"/>
+<instance part="G32" gate="G$1" x="162.56" y="22.86" rot="MR0"/>
+<instance part="G33" gate="G$1" x="172.72" y="22.86" rot="MR0"/>
+<instance part="G34" gate="G$1" x="182.88" y="22.86" rot="MR0"/>
+<instance part="G35" gate="G$1" x="193.04" y="22.86" rot="MR0"/>
+<instance part="G36" gate="G$1" x="203.2" y="22.86" rot="MR0"/>
+<instance part="G37" gate="G$1" x="-205.74" y="-127" rot="MR0"/>
+<instance part="G38" gate="G$1" x="-195.58" y="-127" rot="MR0"/>
+<instance part="G39" gate="G$1" x="-185.42" y="-127" rot="MR0"/>
+<instance part="G40" gate="G$1" x="-175.26" y="-127" rot="MR0"/>
+<instance part="G41" gate="G$1" x="-165.1" y="-127" rot="MR0"/>
+<instance part="G42" gate="G$1" x="-154.94" y="-127" rot="MR0"/>
+<instance part="G43" gate="G$1" x="-144.78" y="-127" rot="MR0"/>
+<instance part="G44" gate="G$1" x="-134.62" y="-127" rot="MR0"/>
+<instance part="G45" gate="G$1" x="-124.46" y="-127" rot="MR0"/>
+<instance part="G46" gate="G$1" x="-99.06" y="-127" rot="MR0"/>
+<instance part="G47" gate="G$1" x="-88.9" y="-127" rot="MR0"/>
+<instance part="G48" gate="G$1" x="-78.74" y="-127" rot="MR0"/>
+<instance part="G49" gate="G$1" x="-68.58" y="-127" rot="MR0"/>
+<instance part="G50" gate="G$1" x="-58.42" y="-127" rot="MR0"/>
+<instance part="G51" gate="G$1" x="-48.26" y="-127" rot="MR0"/>
+<instance part="G52" gate="G$1" x="-38.1" y="-127" rot="MR0"/>
+<instance part="G53" gate="G$1" x="-27.94" y="-127" rot="MR0"/>
+<instance part="G54" gate="G$1" x="-17.78" y="-127" rot="MR0"/>
+<instance part="G55" gate="G$1" x="15.24" y="-127" rot="MR0"/>
+<instance part="G56" gate="G$1" x="25.4" y="-127" rot="MR0"/>
+<instance part="G57" gate="G$1" x="35.56" y="-127" rot="MR0"/>
+<instance part="G58" gate="G$1" x="45.72" y="-127" rot="MR0"/>
+<instance part="G59" gate="G$1" x="55.88" y="-127" rot="MR0"/>
+<instance part="G60" gate="G$1" x="66.04" y="-127" rot="MR0"/>
+<instance part="G61" gate="G$1" x="76.2" y="-127" rot="MR0"/>
+<instance part="G62" gate="G$1" x="86.36" y="-127" rot="MR0"/>
+<instance part="G63" gate="G$1" x="96.52" y="-127" rot="MR0"/>
+<instance part="G64" gate="G$1" x="121.92" y="-127" rot="MR0"/>
+<instance part="G65" gate="G$1" x="132.08" y="-127" rot="MR0"/>
+<instance part="G66" gate="G$1" x="142.24" y="-127" rot="MR0"/>
+<instance part="G67" gate="G$1" x="152.4" y="-127" rot="MR0"/>
+<instance part="G68" gate="G$1" x="162.56" y="-127" rot="MR0"/>
+<instance part="G69" gate="G$1" x="172.72" y="-127" rot="MR0"/>
+<instance part="G70" gate="G$1" x="182.88" y="-127" rot="MR0"/>
+<instance part="G71" gate="G$1" x="193.04" y="-127" rot="MR0"/>
+<instance part="G72" gate="G$1" x="203.2" y="-127" rot="MR0"/>
+<instance part="HVD" gate="SPST" x="60.96" y="0" rot="R90"/>
+<instance part="SMD-2" gate="1" x="12.7" y="-22.86" rot="R270"/>
+<instance part="AIR-1" gate="1" x="-203.2" y="-22.86" rot="MR90"/>
+<instance part="AIR-2" gate="1" x="210.82" y="-22.86" rot="R270"/>
+<instance part="THERM1" gate="G$1" x="-185.42" y="17.78" smashed="yes" rot="R90">
+<attribute name="NAME" x="-194.818" y="15.494" size="1.524" layer="95"/>
+<attribute name="VALUE" x="-186.817" y="17.018" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="THERM2" gate="G$1" x="-154.94" y="17.78" smashed="yes" rot="R90">
+<attribute name="NAME" x="-164.338" y="15.494" size="1.524" layer="95"/>
+<attribute name="VALUE" x="-156.337" y="17.018" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="THERM3" gate="G$1" x="-124.46" y="17.78" smashed="yes" rot="R90">
+<attribute name="NAME" x="-133.858" y="15.494" size="1.524" layer="95"/>
+<attribute name="VALUE" x="-125.857" y="17.018" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="THERM4" gate="G$1" x="-78.74" y="17.78" smashed="yes" rot="R90">
+<attribute name="NAME" x="-88.138" y="15.494" size="1.524" layer="95"/>
+<attribute name="VALUE" x="-80.137" y="17.018" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="THERM5" gate="G$1" x="-48.26" y="17.78" smashed="yes" rot="R90">
+<attribute name="NAME" x="-57.658" y="15.494" size="1.524" layer="95"/>
+<attribute name="VALUE" x="-49.657" y="17.018" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="THERM6" gate="G$1" x="-17.78" y="17.78" smashed="yes" rot="R90">
+<attribute name="NAME" x="-27.178" y="15.494" size="1.524" layer="95"/>
+<attribute name="VALUE" x="-19.177" y="17.018" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="THERM7" gate="G$1" x="35.56" y="17.78" smashed="yes" rot="R90">
+<attribute name="NAME" x="26.162" y="15.494" size="1.524" layer="95"/>
+<attribute name="VALUE" x="34.163" y="17.018" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="THERM8" gate="G$1" x="66.04" y="17.78" smashed="yes" rot="R90">
+<attribute name="NAME" x="56.642" y="15.494" size="1.524" layer="95"/>
+<attribute name="VALUE" x="64.643" y="17.018" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="THERM9" gate="G$1" x="96.52" y="17.78" smashed="yes" rot="R90">
+<attribute name="NAME" x="87.122" y="15.494" size="1.524" layer="95"/>
+<attribute name="VALUE" x="95.123" y="17.018" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="THERM10" gate="G$1" x="142.24" y="17.78" smashed="yes" rot="R90">
+<attribute name="NAME" x="132.842" y="15.494" size="1.524" layer="95"/>
+<attribute name="VALUE" x="140.843" y="17.018" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="THERM11" gate="G$1" x="172.72" y="17.78" smashed="yes" rot="R90">
+<attribute name="NAME" x="163.322" y="15.494" size="1.524" layer="95"/>
+<attribute name="VALUE" x="171.323" y="17.018" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="THERM12" gate="G$1" x="203.2" y="17.78" smashed="yes" rot="R90">
+<attribute name="NAME" x="193.802" y="15.494" size="1.524" layer="95"/>
+<attribute name="VALUE" x="201.803" y="17.018" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="THERM13" gate="G$1" x="-185.42" y="-132.08" smashed="yes" rot="R90">
+<attribute name="NAME" x="-194.818" y="-134.366" size="1.524" layer="95"/>
+<attribute name="VALUE" x="-186.817" y="-132.842" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="THERM14" gate="G$1" x="-154.94" y="-132.08" smashed="yes" rot="R90">
+<attribute name="NAME" x="-164.338" y="-134.366" size="1.524" layer="95"/>
+<attribute name="VALUE" x="-156.337" y="-132.842" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="THERM15" gate="G$1" x="-124.46" y="-132.08" smashed="yes" rot="R90">
+<attribute name="NAME" x="-133.858" y="-134.366" size="1.524" layer="95"/>
+<attribute name="VALUE" x="-125.857" y="-132.842" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="THERM16" gate="G$1" x="-78.74" y="-132.08" smashed="yes" rot="R90">
+<attribute name="NAME" x="-88.138" y="-134.366" size="1.524" layer="95"/>
+<attribute name="VALUE" x="-80.137" y="-132.842" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="THERM17" gate="G$1" x="-48.26" y="-132.08" smashed="yes" rot="R90">
+<attribute name="NAME" x="-57.658" y="-134.366" size="1.524" layer="95"/>
+<attribute name="VALUE" x="-49.657" y="-132.842" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="THERM18" gate="G$1" x="-17.78" y="-132.08" smashed="yes" rot="R90">
+<attribute name="NAME" x="-27.178" y="-134.366" size="1.524" layer="95"/>
+<attribute name="VALUE" x="-19.177" y="-132.842" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="THERM19" gate="G$1" x="35.56" y="-132.08" smashed="yes" rot="R90">
+<attribute name="NAME" x="26.162" y="-134.366" size="1.524" layer="95"/>
+<attribute name="VALUE" x="34.163" y="-132.842" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="THERM20" gate="G$1" x="66.04" y="-132.08" smashed="yes" rot="R90">
+<attribute name="NAME" x="56.642" y="-134.366" size="1.524" layer="95"/>
+<attribute name="VALUE" x="64.643" y="-132.842" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="THERM21" gate="G$1" x="96.52" y="-132.08" smashed="yes" rot="R90">
+<attribute name="NAME" x="87.122" y="-134.366" size="1.524" layer="95"/>
+<attribute name="VALUE" x="95.123" y="-132.842" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="THERM22" gate="G$1" x="142.24" y="-132.08" smashed="yes" rot="R90">
+<attribute name="NAME" x="132.842" y="-134.366" size="1.524" layer="95"/>
+<attribute name="VALUE" x="140.843" y="-132.842" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="THERM23" gate="G$1" x="172.72" y="-132.08" smashed="yes" rot="R90">
+<attribute name="NAME" x="163.322" y="-134.366" size="1.524" layer="95"/>
+<attribute name="VALUE" x="171.323" y="-132.842" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="THERM24" gate="G$1" x="203.2" y="-132.08" smashed="yes" rot="R90">
+<attribute name="NAME" x="193.802" y="-134.366" size="1.524" layer="95"/>
+<attribute name="VALUE" x="201.803" y="-132.842" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="MOLEX_IMPERIUM" gate="G$1" x="-330.2" y="20.32"/>
+<instance part="SHUTDOWN_CIRCUIT" gate="G$1" x="-330.2" y="-25.4"/>
+<instance part="CAN/POWER_IN" gate="G$1" x="-327.66" y="-40.64"/>
+<instance part="CAN/POWER_OUT" gate="G$1" x="-327.66" y="-58.42"/>
 </instances>
 <busses>
+<bus name="B$1">
+<segment>
+<wire x1="-127" y1="86.36" x2="-127" y2="83.82" width="0.762" layer="92"/>
+</segment>
+<segment>
+<wire x1="-20.32" y1="86.36" x2="-20.32" y2="83.82" width="0.762" layer="92"/>
+</segment>
+<segment>
+<wire x1="93.98" y1="86.36" x2="93.98" y2="83.82" width="0.762" layer="92"/>
+</segment>
+<segment>
+<wire x1="-127" y1="-63.5" x2="-127" y2="-66.04" width="0.762" layer="92"/>
+</segment>
+<segment>
+<wire x1="-20.32" y1="-63.5" x2="-20.32" y2="-66.04" width="0.762" layer="92"/>
+</segment>
+<segment>
+<wire x1="93.98" y1="-63.5" x2="93.98" y2="-66.04" width="0.762" layer="92"/>
+</segment>
+</bus>
+<bus name="B$2">
+<segment>
+<wire x1="-86.36" y1="86.36" x2="-86.36" y2="85.09" width="0.762" layer="92"/>
+<wire x1="-86.36" y1="85.09" x2="-86.36" y2="83.82" width="0.762" layer="92"/>
+<wire x1="-126.746" y1="85.09" x2="-86.36" y2="85.09" width="0.762" layer="92"/>
+</segment>
+<segment>
+<wire x1="27.94" y1="86.36" x2="27.94" y2="85.09" width="0.762" layer="92"/>
+<wire x1="27.94" y1="85.09" x2="27.94" y2="83.82" width="0.762" layer="92"/>
+<wire x1="-20.066" y1="85.09" x2="27.94" y2="85.09" width="0.762" layer="92"/>
+</segment>
+<segment>
+<wire x1="134.62" y1="86.36" x2="134.62" y2="85.09" width="0.762" layer="92"/>
+<wire x1="134.62" y1="85.09" x2="134.62" y2="83.82" width="0.762" layer="92"/>
+<wire x1="94.234" y1="85.09" x2="134.62" y2="85.09" width="0.762" layer="92"/>
+</segment>
+<segment>
+<wire x1="-86.36" y1="-63.5" x2="-86.36" y2="-64.77" width="0.762" layer="92"/>
+<wire x1="-86.36" y1="-64.77" x2="-86.36" y2="-66.04" width="0.762" layer="92"/>
+<wire x1="-126.746" y1="-64.77" x2="-86.36" y2="-64.77" width="0.762" layer="92"/>
+</segment>
+<segment>
+<wire x1="27.94" y1="-63.5" x2="27.94" y2="-64.77" width="0.762" layer="92"/>
+<wire x1="27.94" y1="-64.77" x2="27.94" y2="-66.04" width="0.762" layer="92"/>
+<wire x1="-20.066" y1="-64.77" x2="27.94" y2="-64.77" width="0.762" layer="92"/>
+</segment>
+<segment>
+<wire x1="134.62" y1="-63.5" x2="134.62" y2="-64.77" width="0.762" layer="92"/>
+<wire x1="134.62" y1="-64.77" x2="134.62" y2="-66.04" width="0.762" layer="92"/>
+<wire x1="94.234" y1="-64.77" x2="134.62" y2="-64.77" width="0.762" layer="92"/>
+</segment>
+</bus>
+<bus name="B$3">
+<segment>
+<wire x1="-264.16" y1="-7.62" x2="-261.62" y2="-7.62" width="0.762" layer="92"/>
+</segment>
+</bus>
+<bus name="B$4">
+<segment>
+<wire x1="-262.89" y1="-7.366" x2="-262.89" y2="85.09" width="0.762" layer="92"/>
+<wire x1="-262.89" y1="85.09" x2="-193.04" y2="85.09" width="0.762" layer="92"/>
+<wire x1="-193.04" y1="85.09" x2="-193.04" y2="86.36" width="0.762" layer="92"/>
+<wire x1="-193.04" y1="85.09" x2="-193.04" y2="83.82" width="0.762" layer="92"/>
+</segment>
+</bus>
+<bus name="ISOSPI">
+<segment>
+<wire x1="200.66" y1="86.36" x2="200.66" y2="85.09" width="0.762" layer="92"/>
+<wire x1="200.66" y1="85.09" x2="200.66" y2="83.82" width="0.762" layer="92"/>
+<wire x1="200.66" y1="85.09" x2="241.3" y2="85.09" width="0.762" layer="92"/>
+<wire x1="241.3" y1="85.09" x2="241.3" y2="-45.72" width="0.762" layer="92"/>
+<wire x1="241.3" y1="-45.72" x2="-195.58" y2="-45.72" width="0.762" layer="92"/>
+<wire x1="-195.58" y1="-45.72" x2="-195.58" y2="-64.77" width="0.762" layer="92"/>
+<wire x1="-195.58" y1="-64.77" x2="-193.04" y2="-64.77" width="0.762" layer="92"/>
+<wire x1="-193.04" y1="-64.77" x2="-193.04" y2="-63.5" width="0.762" layer="92"/>
+<wire x1="-193.04" y1="-64.77" x2="-193.04" y2="-66.04" width="0.762" layer="92"/>
+<label x="-83.82" y="-44.45" size="1.778" layer="95"/>
+</segment>
+</bus>
+<bus name="B$5">
+<segment>
+<wire x1="-289.56" y1="-35.56" x2="-289.56" y2="-39.37" width="0.762" layer="92"/>
+<wire x1="-289.56" y1="-39.37" x2="-289.56" y2="-43.18" width="0.762" layer="92"/>
+<wire x1="-289.56" y1="-39.37" x2="-320.04" y2="-39.37" width="0.762" layer="92"/>
+</segment>
+</bus>
+<bus name="B$6">
+<segment>
+<wire x1="-233.68" y1="-35.56" x2="-233.68" y2="-39.37" width="0.762" layer="92"/>
+<wire x1="-233.68" y1="-39.37" x2="-233.68" y2="-43.18" width="0.762" layer="92"/>
+<wire x1="-233.68" y1="-39.37" x2="-228.6" y2="-39.37" width="0.762" layer="92"/>
+<wire x1="-228.6" y1="-39.37" x2="-228.6" y2="-57.15" width="0.762" layer="92"/>
+<wire x1="-228.6" y1="-57.15" x2="-320.04" y2="-57.15" width="0.762" layer="92"/>
+</segment>
+</bus>
+<bus name="B$7">
+<segment>
+<wire x1="-320.04" y1="-35.56" x2="-320.04" y2="-43.18" width="0.762" layer="92"/>
+</segment>
+</bus>
+<bus name="B$8">
+<segment>
+<wire x1="-320.04" y1="-53.34" x2="-320.04" y2="-60.96" width="0.762" layer="92"/>
+</segment>
+</bus>
 </busses>
 <nets>
-<net name="N$1" class="0">
-<segment>
-<portref moduleinst="BMS_SEGMENT1" port="ISOSPI-P_OUT"/>
-<portref moduleinst="BMS_SEGMENT2" port="ISOSPI-P_IN"/>
-<wire x1="-129.54" y1="86.36" x2="-86.36" y2="86.36" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$2" class="0">
-<segment>
-<portref moduleinst="BMS_SEGMENT1" port="ISOSPI-M_OUT"/>
-<portref moduleinst="BMS_SEGMENT2" port="ISOSPI-M_IN"/>
-<wire x1="-129.54" y1="83.82" x2="-86.36" y2="83.82" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$3" class="0">
-<segment>
-<portref moduleinst="BMS_SEGMENT2" port="ISOSPI-P_OUT"/>
-<wire x1="-25.4" y1="86.36" x2="22.86" y2="86.36" width="0.1524" layer="91"/>
-<portref moduleinst="BMS_SEGMENT5" port="ISOSPI-P_IN"/>
-</segment>
-</net>
-<net name="N$4" class="0">
-<segment>
-<portref moduleinst="BMS_SEGMENT2" port="ISOSPI-M_OUT"/>
-<portref moduleinst="BMS_SEGMENT5" port="ISOSPI-M_IN"/>
-<wire x1="-25.4" y1="83.82" x2="22.86" y2="83.82" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$5" class="0">
-<segment>
-<portref moduleinst="BMS_SEGMENT5" port="ISOSPI-P_OUT"/>
-<portref moduleinst="BMS_SEGMENT6" port="ISOSPI-P_IN"/>
-<wire x1="83.82" y1="86.36" x2="121.92" y2="86.36" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$6" class="0">
-<segment>
-<portref moduleinst="BMS_SEGMENT5" port="ISOSPI-M_OUT"/>
-<portref moduleinst="BMS_SEGMENT6" port="ISOSPI-M_IN"/>
-<wire x1="83.82" y1="83.82" x2="121.92" y2="83.82" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$7" class="0">
-<segment>
-<portref moduleinst="BMS_SEGMENT6" port="ISOSPI-M_OUT"/>
-<wire x1="182.88" y1="83.82" x2="203.2" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="203.2" y1="83.82" x2="203.2" y2="-7.62" width="0.1524" layer="91"/>
-<wire x1="203.2" y1="-7.62" x2="-195.58" y2="-7.62" width="0.1524" layer="91"/>
-<wire x1="-195.58" y1="-7.62" x2="-195.58" y2="-27.94" width="0.1524" layer="91"/>
-<portref moduleinst="BMS_SEGMENT3" port="ISOSPI-M_IN"/>
-<wire x1="-195.58" y1="-27.94" x2="-190.5" y2="-27.94" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$8" class="0">
-<segment>
-<portref moduleinst="BMS_SEGMENT6" port="ISOSPI-P_OUT"/>
-<wire x1="182.88" y1="86.36" x2="205.74" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="86.36" x2="205.74" y2="-10.16" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="-10.16" x2="-193.04" y2="-10.16" width="0.1524" layer="91"/>
-<wire x1="-193.04" y1="-10.16" x2="-193.04" y2="-25.4" width="0.1524" layer="91"/>
-<portref moduleinst="BMS_SEGMENT3" port="ISOSPI-P_IN"/>
-<wire x1="-193.04" y1="-25.4" x2="-190.5" y2="-25.4" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$9" class="0">
-<segment>
-<portref moduleinst="BMS_SEGMENT3" port="ISOSPI-P_OUT"/>
-<portref moduleinst="BMS_SEGMENT4" port="ISOSPI-P_IN"/>
-<wire x1="-129.54" y1="-25.4" x2="-86.36" y2="-25.4" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$10" class="0">
-<segment>
-<portref moduleinst="BMS_SEGMENT3" port="ISOSPI-M_OUT"/>
-<portref moduleinst="BMS_SEGMENT4" port="ISOSPI-M_IN"/>
-<wire x1="-129.54" y1="-27.94" x2="-86.36" y2="-27.94" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$11" class="0">
-<segment>
-<portref moduleinst="BMS_SEGMENT4" port="ISOSPI-P_OUT"/>
-<portref moduleinst="BMS_SEGMENT7" port="ISOSPI-P_IN"/>
-<wire x1="-25.4" y1="-25.4" x2="22.86" y2="-25.4" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$12" class="0">
-<segment>
-<portref moduleinst="BMS_SEGMENT4" port="ISOSPI-M_OUT"/>
-<portref moduleinst="BMS_SEGMENT7" port="ISOSPI-M_IN"/>
-<wire x1="-25.4" y1="-27.94" x2="22.86" y2="-27.94" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$13" class="0">
-<segment>
-<portref moduleinst="BMS_SEGMENT7" port="ISOSPI-P_OUT"/>
-<portref moduleinst="BMS_SEGMENT8" port="ISOSPI-P_IN"/>
-<wire x1="83.82" y1="-25.4" x2="121.92" y2="-25.4" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$14" class="0">
-<segment>
-<portref moduleinst="BMS_SEGMENT7" port="ISOSPI-M_OUT"/>
-<portref moduleinst="BMS_SEGMENT8" port="ISOSPI-M_IN"/>
-<wire x1="83.82" y1="-27.94" x2="121.92" y2="-27.94" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$19" class="0">
 <segment>
 <pinref part="G2" gate="G$1" pin="+"/>
@@ -739,12 +949,13 @@ Source: Sonnenschein</description>
 <wire x1="-119.38" y1="40.64" x2="-119.38" y2="22.86" width="0.1524" layer="91"/>
 <portref moduleinst="BMS_SEGMENT1" port="CELL9-"/>
 <pinref part="G10" gate="G$1" pin="+"/>
-<wire x1="-106.68" y1="22.86" x2="-106.68" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="-106.68" y1="38.1" x2="-76.2" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="-76.2" y1="38.1" x2="-76.2" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="-119.38" y1="22.86" x2="-106.68" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="-104.14" y1="22.86" x2="-104.14" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="-104.14" y1="38.1" x2="-73.66" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="-73.66" y1="38.1" x2="-73.66" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="-119.38" y1="22.86" x2="-104.14" y2="22.86" width="0.1524" layer="91"/>
 <junction x="-119.38" y="22.86"/>
-<junction x="-106.68" y="22.86"/>
+<junction x="-104.14" y="22.86"/>
+<portref moduleinst="BMS_SEGMENT2" port="CELL1"/>
 </segment>
 </net>
 <net name="N$15" class="0">
@@ -755,9 +966,11 @@ Source: Sonnenschein</description>
 <wire x1="-210.82" y1="38.1" x2="-180.34" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="-180.34" y1="38.1" x2="-180.34" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="AIR-1" gate="1" pin="S"/>
-<wire x1="-215.9" y1="25.4" x2="-213.36" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="-213.36" y1="25.4" x2="-213.36" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="-213.36" y1="22.86" x2="-210.82" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="-198.12" y1="-15.24" x2="-195.58" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="-195.58" y1="-15.24" x2="-195.58" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="-195.58" y1="-2.54" x2="-218.44" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="-218.44" y1="-2.54" x2="-218.44" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="-218.44" y1="22.86" x2="-210.82" y2="22.86" width="0.1524" layer="91"/>
 <junction x="-210.82" y="22.86"/>
 </segment>
 </net>
@@ -765,99 +978,112 @@ Source: Sonnenschein</description>
 <segment>
 <pinref part="G11" gate="G$1" pin="+"/>
 <pinref part="G10" gate="G$1" pin="-"/>
-<wire x1="-96.52" y1="22.86" x2="-96.52" y2="35.56" width="0.1524" layer="91"/>
-<junction x="-96.52" y="22.86"/>
-<wire x1="-96.52" y1="35.56" x2="-73.66" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="-73.66" y1="35.56" x2="-73.66" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="-93.98" y1="22.86" x2="-93.98" y2="35.56" width="0.1524" layer="91"/>
+<junction x="-93.98" y="22.86"/>
+<wire x1="-93.98" y1="35.56" x2="-71.12" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="-71.12" y1="35.56" x2="-71.12" y2="55.88" width="0.1524" layer="91"/>
+<portref moduleinst="BMS_SEGMENT2" port="CELL2"/>
 </segment>
 </net>
 <net name="N$17" class="0">
 <segment>
 <pinref part="G12" gate="G$1" pin="+"/>
 <pinref part="G11" gate="G$1" pin="-"/>
-<wire x1="-86.36" y1="22.86" x2="-86.36" y2="33.02" width="0.1524" layer="91"/>
-<junction x="-86.36" y="22.86"/>
-<wire x1="-86.36" y1="33.02" x2="-71.12" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="-71.12" y1="33.02" x2="-71.12" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="-83.82" y1="22.86" x2="-83.82" y2="33.02" width="0.1524" layer="91"/>
+<junction x="-83.82" y="22.86"/>
+<wire x1="-83.82" y1="33.02" x2="-68.58" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="-68.58" y1="33.02" x2="-68.58" y2="55.88" width="0.1524" layer="91"/>
+<portref moduleinst="BMS_SEGMENT2" port="CELL3"/>
 </segment>
 </net>
 <net name="N$18" class="0">
 <segment>
 <pinref part="G13" gate="G$1" pin="+"/>
 <pinref part="G12" gate="G$1" pin="-"/>
-<wire x1="-76.2" y1="22.86" x2="-76.2" y2="30.48" width="0.1524" layer="91"/>
-<junction x="-76.2" y="22.86"/>
-<wire x1="-76.2" y1="30.48" x2="-68.58" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="-68.58" y1="30.48" x2="-68.58" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="-73.66" y1="22.86" x2="-73.66" y2="30.48" width="0.1524" layer="91"/>
+<junction x="-73.66" y="22.86"/>
+<wire x1="-73.66" y1="30.48" x2="-66.04" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="-66.04" y1="30.48" x2="-66.04" y2="55.88" width="0.1524" layer="91"/>
+<portref moduleinst="BMS_SEGMENT2" port="CELL4"/>
 </segment>
 </net>
 <net name="N$20" class="0">
 <segment>
 <pinref part="G14" gate="G$1" pin="+"/>
 <pinref part="G13" gate="G$1" pin="-"/>
-<junction x="-66.04" y="22.86"/>
-<wire x1="-66.04" y1="22.86" x2="-66.04" y2="55.88" width="0.1524" layer="91"/>
+<junction x="-63.5" y="22.86"/>
+<wire x1="-63.5" y1="22.86" x2="-63.5" y2="55.88" width="0.1524" layer="91"/>
+<portref moduleinst="BMS_SEGMENT2" port="CELL5"/>
 </segment>
 </net>
 <net name="N$22" class="0">
 <segment>
 <pinref part="G15" gate="G$1" pin="+"/>
 <pinref part="G14" gate="G$1" pin="-"/>
-<wire x1="-63.5" y1="55.88" x2="-63.5" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="-63.5" y1="30.48" x2="-55.88" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="-55.88" y1="30.48" x2="-55.88" y2="22.86" width="0.1524" layer="91"/>
-<junction x="-55.88" y="22.86"/>
+<wire x1="-60.96" y1="55.88" x2="-60.96" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="-60.96" y1="30.48" x2="-53.34" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="-53.34" y1="30.48" x2="-53.34" y2="22.86" width="0.1524" layer="91"/>
+<junction x="-53.34" y="22.86"/>
+<portref moduleinst="BMS_SEGMENT2" port="CELL6"/>
 </segment>
 </net>
 <net name="N$23" class="0">
 <segment>
 <pinref part="G16" gate="G$1" pin="+"/>
 <pinref part="G15" gate="G$1" pin="-"/>
-<wire x1="-60.96" y1="55.88" x2="-60.96" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="-60.96" y1="33.02" x2="-45.72" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="-45.72" y1="33.02" x2="-45.72" y2="22.86" width="0.1524" layer="91"/>
-<junction x="-45.72" y="22.86"/>
+<wire x1="-58.42" y1="55.88" x2="-58.42" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="-58.42" y1="33.02" x2="-43.18" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="-43.18" y1="33.02" x2="-43.18" y2="22.86" width="0.1524" layer="91"/>
+<junction x="-43.18" y="22.86"/>
+<portref moduleinst="BMS_SEGMENT2" port="CELL7"/>
 </segment>
 </net>
 <net name="N$24" class="0">
 <segment>
 <pinref part="G17" gate="G$1" pin="+"/>
 <pinref part="G16" gate="G$1" pin="-"/>
-<wire x1="-58.42" y1="55.88" x2="-58.42" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="-58.42" y1="35.56" x2="-35.56" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="-35.56" y1="35.56" x2="-35.56" y2="22.86" width="0.1524" layer="91"/>
-<junction x="-35.56" y="22.86"/>
+<wire x1="-55.88" y1="55.88" x2="-55.88" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="-55.88" y1="35.56" x2="-33.02" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="-33.02" y1="35.56" x2="-33.02" y2="22.86" width="0.1524" layer="91"/>
+<junction x="-33.02" y="22.86"/>
+<portref moduleinst="BMS_SEGMENT2" port="CELL8"/>
 </segment>
 </net>
 <net name="N$25" class="0">
 <segment>
 <pinref part="G18" gate="G$1" pin="+"/>
 <pinref part="G17" gate="G$1" pin="-"/>
-<wire x1="-55.88" y1="55.88" x2="-55.88" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="-55.88" y1="38.1" x2="-25.4" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="-25.4" y1="38.1" x2="-25.4" y2="22.86" width="0.1524" layer="91"/>
-<junction x="-25.4" y="22.86"/>
+<wire x1="-53.34" y1="55.88" x2="-53.34" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="-53.34" y1="38.1" x2="-22.86" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="-22.86" y1="38.1" x2="-22.86" y2="22.86" width="0.1524" layer="91"/>
+<junction x="-22.86" y="22.86"/>
+<portref moduleinst="BMS_SEGMENT2" port="CELL9"/>
 </segment>
 </net>
 <net name="N$27" class="0">
 <segment>
 <pinref part="G18" gate="G$1" pin="-"/>
-<wire x1="-53.34" y1="55.88" x2="-53.34" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="-53.34" y1="40.64" x2="-15.24" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="-15.24" y1="40.64" x2="-15.24" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="-50.8" y1="55.88" x2="-50.8" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="-50.8" y1="40.64" x2="-12.7" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="40.64" x2="-12.7" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="SMD-1" gate="1" pin="P"/>
-<wire x1="-15.24" y1="22.86" x2="-12.7" y2="22.86" width="0.1524" layer="91"/>
-<junction x="-15.24" y="22.86"/>
+<wire x1="-12.7" y1="22.86" x2="2.54" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="22.86" x2="2.54" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="-2.54" x2="-12.7" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="-2.54" x2="-12.7" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="-12.7" x2="-10.16" y2="-12.7" width="0.1524" layer="91"/>
+<junction x="-12.7" y="22.86"/>
+<portref moduleinst="BMS_SEGMENT2" port="CELL9-"/>
 </segment>
 </net>
 <net name="N$29" class="0">
 <segment>
 <pinref part="G20" gate="G$1" pin="+"/>
 <pinref part="G19" gate="G$1" pin="-"/>
-<wire x1="12.7" y1="22.86" x2="12.7" y2="35.56" width="0.1524" layer="91"/>
-<junction x="12.7" y="22.86"/>
-<wire x1="12.7" y1="35.56" x2="35.56" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="35.56" x2="35.56" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="22.86" x2="20.32" y2="35.56" width="0.1524" layer="91"/>
+<junction x="20.32" y="22.86"/>
+<wire x1="20.32" y1="35.56" x2="43.18" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="35.56" x2="43.18" y2="55.88" width="0.1524" layer="91"/>
 <portref moduleinst="BMS_SEGMENT5" port="CELL2"/>
 </segment>
 </net>
@@ -865,10 +1091,10 @@ Source: Sonnenschein</description>
 <segment>
 <pinref part="G21" gate="G$1" pin="+"/>
 <pinref part="G20" gate="G$1" pin="-"/>
-<wire x1="22.86" y1="22.86" x2="22.86" y2="33.02" width="0.1524" layer="91"/>
-<junction x="22.86" y="22.86"/>
-<wire x1="22.86" y1="33.02" x2="38.1" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="33.02" x2="38.1" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="22.86" x2="30.48" y2="33.02" width="0.1524" layer="91"/>
+<junction x="30.48" y="22.86"/>
+<wire x1="30.48" y1="33.02" x2="45.72" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="33.02" x2="45.72" y2="55.88" width="0.1524" layer="91"/>
 <portref moduleinst="BMS_SEGMENT5" port="CELL3"/>
 </segment>
 </net>
@@ -876,10 +1102,10 @@ Source: Sonnenschein</description>
 <segment>
 <pinref part="G22" gate="G$1" pin="+"/>
 <pinref part="G21" gate="G$1" pin="-"/>
-<wire x1="33.02" y1="22.86" x2="33.02" y2="30.48" width="0.1524" layer="91"/>
-<junction x="33.02" y="22.86"/>
-<wire x1="33.02" y1="30.48" x2="40.64" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="30.48" x2="40.64" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="22.86" x2="40.64" y2="30.48" width="0.1524" layer="91"/>
+<junction x="40.64" y="22.86"/>
+<wire x1="40.64" y1="30.48" x2="48.26" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="30.48" x2="48.26" y2="55.88" width="0.1524" layer="91"/>
 <portref moduleinst="BMS_SEGMENT5" port="CELL4"/>
 </segment>
 </net>
@@ -887,8 +1113,8 @@ Source: Sonnenschein</description>
 <segment>
 <pinref part="G23" gate="G$1" pin="+"/>
 <pinref part="G22" gate="G$1" pin="-"/>
-<junction x="43.18" y="22.86"/>
-<wire x1="43.18" y1="22.86" x2="43.18" y2="55.88" width="0.1524" layer="91"/>
+<junction x="50.8" y="22.86"/>
+<wire x1="50.8" y1="22.86" x2="50.8" y2="55.88" width="0.1524" layer="91"/>
 <portref moduleinst="BMS_SEGMENT5" port="CELL5"/>
 </segment>
 </net>
@@ -896,10 +1122,10 @@ Source: Sonnenschein</description>
 <segment>
 <pinref part="G24" gate="G$1" pin="+"/>
 <pinref part="G23" gate="G$1" pin="-"/>
-<wire x1="45.72" y1="55.88" x2="45.72" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="30.48" x2="53.34" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="30.48" x2="53.34" y2="22.86" width="0.1524" layer="91"/>
-<junction x="53.34" y="22.86"/>
+<wire x1="53.34" y1="55.88" x2="53.34" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="30.48" x2="60.96" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="30.48" x2="60.96" y2="22.86" width="0.1524" layer="91"/>
+<junction x="60.96" y="22.86"/>
 <portref moduleinst="BMS_SEGMENT5" port="CELL6"/>
 </segment>
 </net>
@@ -907,10 +1133,10 @@ Source: Sonnenschein</description>
 <segment>
 <pinref part="G25" gate="G$1" pin="+"/>
 <pinref part="G24" gate="G$1" pin="-"/>
-<wire x1="48.26" y1="55.88" x2="48.26" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="33.02" x2="63.5" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="33.02" x2="63.5" y2="22.86" width="0.1524" layer="91"/>
-<junction x="63.5" y="22.86"/>
+<wire x1="55.88" y1="55.88" x2="55.88" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="33.02" x2="71.12" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="33.02" x2="71.12" y2="22.86" width="0.1524" layer="91"/>
+<junction x="71.12" y="22.86"/>
 <portref moduleinst="BMS_SEGMENT5" port="CELL7"/>
 </segment>
 </net>
@@ -918,10 +1144,10 @@ Source: Sonnenschein</description>
 <segment>
 <pinref part="G26" gate="G$1" pin="+"/>
 <pinref part="G25" gate="G$1" pin="-"/>
-<wire x1="50.8" y1="55.88" x2="50.8" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="35.56" x2="73.66" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="35.56" x2="73.66" y2="22.86" width="0.1524" layer="91"/>
-<junction x="73.66" y="22.86"/>
+<wire x1="58.42" y1="55.88" x2="58.42" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="35.56" x2="81.28" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="35.56" x2="81.28" y2="22.86" width="0.1524" layer="91"/>
+<junction x="81.28" y="22.86"/>
 <portref moduleinst="BMS_SEGMENT5" port="CELL8"/>
 </segment>
 </net>
@@ -929,52 +1155,52 @@ Source: Sonnenschein</description>
 <segment>
 <pinref part="G27" gate="G$1" pin="+"/>
 <pinref part="G26" gate="G$1" pin="-"/>
-<wire x1="53.34" y1="55.88" x2="53.34" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="38.1" x2="83.82" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="38.1" x2="83.82" y2="22.86" width="0.1524" layer="91"/>
-<junction x="83.82" y="22.86"/>
+<wire x1="60.96" y1="55.88" x2="60.96" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="38.1" x2="91.44" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="38.1" x2="91.44" y2="22.86" width="0.1524" layer="91"/>
+<junction x="91.44" y="22.86"/>
 <portref moduleinst="BMS_SEGMENT5" port="CELL9"/>
 </segment>
 </net>
 <net name="N$39" class="0">
 <segment>
 <pinref part="G27" gate="G$1" pin="-"/>
-<wire x1="55.88" y1="55.88" x2="55.88" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="40.64" x2="93.98" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="40.64" x2="93.98" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="55.88" x2="63.5" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="40.64" x2="101.6" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="40.64" x2="101.6" y2="22.86" width="0.1524" layer="91"/>
 <portref moduleinst="BMS_SEGMENT5" port="CELL9-"/>
 <pinref part="G28" gate="G$1" pin="+"/>
-<wire x1="101.6" y1="22.86" x2="101.6" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="38.1" x2="132.08" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="132.08" y1="38.1" x2="132.08" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="22.86" x2="116.84" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="38.1" x2="147.32" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="38.1" x2="147.32" y2="55.88" width="0.1524" layer="91"/>
 <portref moduleinst="BMS_SEGMENT6" port="CELL1"/>
-<wire x1="93.98" y1="22.86" x2="101.6" y2="22.86" width="0.1524" layer="91"/>
-<junction x="93.98" y="22.86"/>
+<wire x1="101.6" y1="22.86" x2="116.84" y2="22.86" width="0.1524" layer="91"/>
 <junction x="101.6" y="22.86"/>
+<junction x="116.84" y="22.86"/>
 </segment>
 </net>
 <net name="N$40" class="0">
 <segment>
 <pinref part="G19" gate="G$1" pin="+"/>
-<wire x1="2.54" y1="22.86" x2="2.54" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="2.54" y1="38.1" x2="33.02" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="38.1" x2="33.02" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="22.86" x2="10.16" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="38.1" x2="40.64" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="38.1" x2="40.64" y2="55.88" width="0.1524" layer="91"/>
 <portref moduleinst="BMS_SEGMENT5" port="CELL1"/>
 <pinref part="SMD-1" gate="1" pin="S"/>
-<wire x1="-2.54" y1="25.4" x2="0" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="0" y1="25.4" x2="0" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="0" y1="22.86" x2="2.54" y2="22.86" width="0.1524" layer="91"/>
-<junction x="2.54" y="22.86"/>
+<wire x1="0" y1="-15.24" x2="5.08" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="-15.24" x2="5.08" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="22.86" x2="10.16" y2="22.86" width="0.1524" layer="91"/>
+<junction x="10.16" y="22.86"/>
 </segment>
 </net>
 <net name="N$28" class="0">
 <segment>
 <pinref part="G29" gate="G$1" pin="+"/>
 <pinref part="G28" gate="G$1" pin="-"/>
-<wire x1="111.76" y1="22.86" x2="111.76" y2="35.56" width="0.1524" layer="91"/>
-<junction x="111.76" y="22.86"/>
-<wire x1="111.76" y1="35.56" x2="134.62" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="35.56" x2="134.62" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="127" y1="22.86" x2="127" y2="35.56" width="0.1524" layer="91"/>
+<junction x="127" y="22.86"/>
+<wire x1="127" y1="35.56" x2="149.86" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="35.56" x2="149.86" y2="55.88" width="0.1524" layer="91"/>
 <portref moduleinst="BMS_SEGMENT6" port="CELL2"/>
 </segment>
 </net>
@@ -982,10 +1208,10 @@ Source: Sonnenschein</description>
 <segment>
 <pinref part="G30" gate="G$1" pin="+"/>
 <pinref part="G29" gate="G$1" pin="-"/>
-<wire x1="121.92" y1="22.86" x2="121.92" y2="33.02" width="0.1524" layer="91"/>
-<junction x="121.92" y="22.86"/>
-<wire x1="121.92" y1="33.02" x2="137.16" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="33.02" x2="137.16" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="22.86" x2="137.16" y2="33.02" width="0.1524" layer="91"/>
+<junction x="137.16" y="22.86"/>
+<wire x1="137.16" y1="33.02" x2="152.4" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="33.02" x2="152.4" y2="55.88" width="0.1524" layer="91"/>
 <portref moduleinst="BMS_SEGMENT6" port="CELL3"/>
 </segment>
 </net>
@@ -993,10 +1219,10 @@ Source: Sonnenschein</description>
 <segment>
 <pinref part="G31" gate="G$1" pin="+"/>
 <pinref part="G30" gate="G$1" pin="-"/>
-<wire x1="132.08" y1="22.86" x2="132.08" y2="30.48" width="0.1524" layer="91"/>
-<junction x="132.08" y="22.86"/>
-<wire x1="132.08" y1="30.48" x2="139.7" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="139.7" y1="30.48" x2="139.7" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="22.86" x2="147.32" y2="30.48" width="0.1524" layer="91"/>
+<junction x="147.32" y="22.86"/>
+<wire x1="147.32" y1="30.48" x2="154.94" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="30.48" x2="154.94" y2="55.88" width="0.1524" layer="91"/>
 <portref moduleinst="BMS_SEGMENT6" port="CELL4"/>
 </segment>
 </net>
@@ -1004,8 +1230,8 @@ Source: Sonnenschein</description>
 <segment>
 <pinref part="G32" gate="G$1" pin="+"/>
 <pinref part="G31" gate="G$1" pin="-"/>
-<junction x="142.24" y="22.86"/>
-<wire x1="142.24" y1="22.86" x2="142.24" y2="55.88" width="0.1524" layer="91"/>
+<junction x="157.48" y="22.86"/>
+<wire x1="157.48" y1="22.86" x2="157.48" y2="55.88" width="0.1524" layer="91"/>
 <portref moduleinst="BMS_SEGMENT6" port="CELL5"/>
 </segment>
 </net>
@@ -1013,10 +1239,10 @@ Source: Sonnenschein</description>
 <segment>
 <pinref part="G33" gate="G$1" pin="+"/>
 <pinref part="G32" gate="G$1" pin="-"/>
-<wire x1="144.78" y1="55.88" x2="144.78" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="30.48" x2="152.4" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="152.4" y1="30.48" x2="152.4" y2="22.86" width="0.1524" layer="91"/>
-<junction x="152.4" y="22.86"/>
+<wire x1="160.02" y1="55.88" x2="160.02" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="30.48" x2="167.64" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="30.48" x2="167.64" y2="22.86" width="0.1524" layer="91"/>
+<junction x="167.64" y="22.86"/>
 <portref moduleinst="BMS_SEGMENT6" port="CELL6"/>
 </segment>
 </net>
@@ -1024,10 +1250,10 @@ Source: Sonnenschein</description>
 <segment>
 <pinref part="G34" gate="G$1" pin="+"/>
 <pinref part="G33" gate="G$1" pin="-"/>
-<wire x1="147.32" y1="55.88" x2="147.32" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="147.32" y1="33.02" x2="162.56" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="33.02" x2="162.56" y2="22.86" width="0.1524" layer="91"/>
-<junction x="162.56" y="22.86"/>
+<wire x1="162.56" y1="55.88" x2="162.56" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="33.02" x2="177.8" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="33.02" x2="177.8" y2="22.86" width="0.1524" layer="91"/>
+<junction x="177.8" y="22.86"/>
 <portref moduleinst="BMS_SEGMENT6" port="CELL7"/>
 </segment>
 </net>
@@ -1035,10 +1261,10 @@ Source: Sonnenschein</description>
 <segment>
 <pinref part="G35" gate="G$1" pin="+"/>
 <pinref part="G34" gate="G$1" pin="-"/>
-<wire x1="149.86" y1="55.88" x2="149.86" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="149.86" y1="35.56" x2="172.72" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="172.72" y1="35.56" x2="172.72" y2="22.86" width="0.1524" layer="91"/>
-<junction x="172.72" y="22.86"/>
+<wire x1="165.1" y1="55.88" x2="165.1" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="35.56" x2="187.96" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="35.56" x2="187.96" y2="22.86" width="0.1524" layer="91"/>
+<junction x="187.96" y="22.86"/>
 <portref moduleinst="BMS_SEGMENT6" port="CELL8"/>
 </segment>
 </net>
@@ -1046,35 +1272,35 @@ Source: Sonnenschein</description>
 <segment>
 <pinref part="G36" gate="G$1" pin="+"/>
 <pinref part="G35" gate="G$1" pin="-"/>
-<wire x1="152.4" y1="55.88" x2="152.4" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="152.4" y1="38.1" x2="182.88" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="182.88" y1="38.1" x2="182.88" y2="22.86" width="0.1524" layer="91"/>
-<junction x="182.88" y="22.86"/>
+<wire x1="167.64" y1="55.88" x2="167.64" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="38.1" x2="198.12" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="38.1" x2="198.12" y2="22.86" width="0.1524" layer="91"/>
+<junction x="198.12" y="22.86"/>
 <portref moduleinst="BMS_SEGMENT6" port="CELL9"/>
 </segment>
 </net>
 <net name="N$51" class="0">
 <segment>
-<wire x1="-213.36" y1="7.62" x2="-213.36" y2="-88.9" width="0.1524" layer="91"/>
+<wire x1="-213.36" y1="2.54" x2="-213.36" y2="-127" width="0.1524" layer="91"/>
 <pinref part="G37" gate="G$1" pin="+"/>
-<wire x1="-210.82" y1="-88.9" x2="-210.82" y2="-73.66" width="0.1524" layer="91"/>
-<wire x1="-210.82" y1="-73.66" x2="-180.34" y2="-73.66" width="0.1524" layer="91"/>
-<wire x1="-180.34" y1="-73.66" x2="-180.34" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="-210.82" y1="-127" x2="-210.82" y2="-111.76" width="0.1524" layer="91"/>
+<wire x1="-210.82" y1="-111.76" x2="-180.34" y2="-111.76" width="0.1524" layer="91"/>
+<wire x1="-180.34" y1="-111.76" x2="-180.34" y2="-93.98" width="0.1524" layer="91"/>
 <portref moduleinst="BMS_SEGMENT3" port="CELL1"/>
-<wire x1="-213.36" y1="-88.9" x2="-210.82" y2="-88.9" width="0.1524" layer="91"/>
-<junction x="-210.82" y="-88.9"/>
+<wire x1="-213.36" y1="-127" x2="-210.82" y2="-127" width="0.1524" layer="91"/>
+<junction x="-210.82" y="-127"/>
 <pinref part="HVD" gate="SPST" pin="S"/>
-<wire x1="0" y1="7.62" x2="-213.36" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="2.54" x2="-213.36" y2="2.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$53" class="0">
 <segment>
 <pinref part="G38" gate="G$1" pin="+"/>
 <pinref part="G37" gate="G$1" pin="-"/>
-<wire x1="-200.66" y1="-88.9" x2="-200.66" y2="-76.2" width="0.1524" layer="91"/>
-<junction x="-200.66" y="-88.9"/>
-<wire x1="-200.66" y1="-76.2" x2="-177.8" y2="-76.2" width="0.1524" layer="91"/>
-<wire x1="-177.8" y1="-76.2" x2="-177.8" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="-200.66" y1="-127" x2="-200.66" y2="-114.3" width="0.1524" layer="91"/>
+<junction x="-200.66" y="-127"/>
+<wire x1="-200.66" y1="-114.3" x2="-177.8" y2="-114.3" width="0.1524" layer="91"/>
+<wire x1="-177.8" y1="-114.3" x2="-177.8" y2="-93.98" width="0.1524" layer="91"/>
 <portref moduleinst="BMS_SEGMENT3" port="CELL2"/>
 </segment>
 </net>
@@ -1082,10 +1308,10 @@ Source: Sonnenschein</description>
 <segment>
 <pinref part="G39" gate="G$1" pin="+"/>
 <pinref part="G38" gate="G$1" pin="-"/>
-<wire x1="-190.5" y1="-88.9" x2="-190.5" y2="-78.74" width="0.1524" layer="91"/>
-<junction x="-190.5" y="-88.9"/>
-<wire x1="-190.5" y1="-78.74" x2="-175.26" y2="-78.74" width="0.1524" layer="91"/>
-<wire x1="-175.26" y1="-78.74" x2="-175.26" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="-190.5" y1="-127" x2="-190.5" y2="-116.84" width="0.1524" layer="91"/>
+<junction x="-190.5" y="-127"/>
+<wire x1="-190.5" y1="-116.84" x2="-175.26" y2="-116.84" width="0.1524" layer="91"/>
+<wire x1="-175.26" y1="-116.84" x2="-175.26" y2="-93.98" width="0.1524" layer="91"/>
 <portref moduleinst="BMS_SEGMENT3" port="CELL3"/>
 </segment>
 </net>
@@ -1093,10 +1319,10 @@ Source: Sonnenschein</description>
 <segment>
 <pinref part="G40" gate="G$1" pin="+"/>
 <pinref part="G39" gate="G$1" pin="-"/>
-<wire x1="-180.34" y1="-88.9" x2="-180.34" y2="-81.28" width="0.1524" layer="91"/>
-<junction x="-180.34" y="-88.9"/>
-<wire x1="-180.34" y1="-81.28" x2="-172.72" y2="-81.28" width="0.1524" layer="91"/>
-<wire x1="-172.72" y1="-81.28" x2="-172.72" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="-180.34" y1="-127" x2="-180.34" y2="-119.38" width="0.1524" layer="91"/>
+<junction x="-180.34" y="-127"/>
+<wire x1="-180.34" y1="-119.38" x2="-172.72" y2="-119.38" width="0.1524" layer="91"/>
+<wire x1="-172.72" y1="-119.38" x2="-172.72" y2="-93.98" width="0.1524" layer="91"/>
 <portref moduleinst="BMS_SEGMENT3" port="CELL4"/>
 </segment>
 </net>
@@ -1104,8 +1330,8 @@ Source: Sonnenschein</description>
 <segment>
 <pinref part="G41" gate="G$1" pin="+"/>
 <pinref part="G40" gate="G$1" pin="-"/>
-<junction x="-170.18" y="-88.9"/>
-<wire x1="-170.18" y1="-88.9" x2="-170.18" y2="-55.88" width="0.1524" layer="91"/>
+<junction x="-170.18" y="-127"/>
+<wire x1="-170.18" y1="-127" x2="-170.18" y2="-93.98" width="0.1524" layer="91"/>
 <portref moduleinst="BMS_SEGMENT3" port="CELL5"/>
 </segment>
 </net>
@@ -1113,10 +1339,10 @@ Source: Sonnenschein</description>
 <segment>
 <pinref part="G42" gate="G$1" pin="+"/>
 <pinref part="G41" gate="G$1" pin="-"/>
-<wire x1="-167.64" y1="-55.88" x2="-167.64" y2="-81.28" width="0.1524" layer="91"/>
-<wire x1="-167.64" y1="-81.28" x2="-160.02" y2="-81.28" width="0.1524" layer="91"/>
-<wire x1="-160.02" y1="-81.28" x2="-160.02" y2="-88.9" width="0.1524" layer="91"/>
-<junction x="-160.02" y="-88.9"/>
+<wire x1="-167.64" y1="-93.98" x2="-167.64" y2="-119.38" width="0.1524" layer="91"/>
+<wire x1="-167.64" y1="-119.38" x2="-160.02" y2="-119.38" width="0.1524" layer="91"/>
+<wire x1="-160.02" y1="-119.38" x2="-160.02" y2="-127" width="0.1524" layer="91"/>
+<junction x="-160.02" y="-127"/>
 <portref moduleinst="BMS_SEGMENT3" port="CELL6"/>
 </segment>
 </net>
@@ -1124,10 +1350,10 @@ Source: Sonnenschein</description>
 <segment>
 <pinref part="G43" gate="G$1" pin="+"/>
 <pinref part="G42" gate="G$1" pin="-"/>
-<wire x1="-165.1" y1="-55.88" x2="-165.1" y2="-78.74" width="0.1524" layer="91"/>
-<wire x1="-165.1" y1="-78.74" x2="-149.86" y2="-78.74" width="0.1524" layer="91"/>
-<wire x1="-149.86" y1="-78.74" x2="-149.86" y2="-88.9" width="0.1524" layer="91"/>
-<junction x="-149.86" y="-88.9"/>
+<wire x1="-165.1" y1="-93.98" x2="-165.1" y2="-116.84" width="0.1524" layer="91"/>
+<wire x1="-165.1" y1="-116.84" x2="-149.86" y2="-116.84" width="0.1524" layer="91"/>
+<wire x1="-149.86" y1="-116.84" x2="-149.86" y2="-127" width="0.1524" layer="91"/>
+<junction x="-149.86" y="-127"/>
 <portref moduleinst="BMS_SEGMENT3" port="CELL7"/>
 </segment>
 </net>
@@ -1135,10 +1361,10 @@ Source: Sonnenschein</description>
 <segment>
 <pinref part="G44" gate="G$1" pin="+"/>
 <pinref part="G43" gate="G$1" pin="-"/>
-<wire x1="-162.56" y1="-55.88" x2="-162.56" y2="-76.2" width="0.1524" layer="91"/>
-<wire x1="-162.56" y1="-76.2" x2="-139.7" y2="-76.2" width="0.1524" layer="91"/>
-<wire x1="-139.7" y1="-76.2" x2="-139.7" y2="-88.9" width="0.1524" layer="91"/>
-<junction x="-139.7" y="-88.9"/>
+<wire x1="-162.56" y1="-93.98" x2="-162.56" y2="-114.3" width="0.1524" layer="91"/>
+<wire x1="-162.56" y1="-114.3" x2="-139.7" y2="-114.3" width="0.1524" layer="91"/>
+<wire x1="-139.7" y1="-114.3" x2="-139.7" y2="-127" width="0.1524" layer="91"/>
+<junction x="-139.7" y="-127"/>
 <portref moduleinst="BMS_SEGMENT3" port="CELL8"/>
 </segment>
 </net>
@@ -1146,38 +1372,38 @@ Source: Sonnenschein</description>
 <segment>
 <pinref part="G45" gate="G$1" pin="+"/>
 <pinref part="G44" gate="G$1" pin="-"/>
-<wire x1="-160.02" y1="-55.88" x2="-160.02" y2="-73.66" width="0.1524" layer="91"/>
-<wire x1="-160.02" y1="-73.66" x2="-129.54" y2="-73.66" width="0.1524" layer="91"/>
-<wire x1="-129.54" y1="-73.66" x2="-129.54" y2="-88.9" width="0.1524" layer="91"/>
-<junction x="-129.54" y="-88.9"/>
+<wire x1="-160.02" y1="-93.98" x2="-160.02" y2="-111.76" width="0.1524" layer="91"/>
+<wire x1="-160.02" y1="-111.76" x2="-129.54" y2="-111.76" width="0.1524" layer="91"/>
+<wire x1="-129.54" y1="-111.76" x2="-129.54" y2="-127" width="0.1524" layer="91"/>
+<junction x="-129.54" y="-127"/>
 <portref moduleinst="BMS_SEGMENT3" port="CELL9"/>
 </segment>
 </net>
 <net name="N$62" class="0">
 <segment>
 <pinref part="G45" gate="G$1" pin="-"/>
-<wire x1="-157.48" y1="-55.88" x2="-157.48" y2="-71.12" width="0.1524" layer="91"/>
-<wire x1="-157.48" y1="-71.12" x2="-119.38" y2="-71.12" width="0.1524" layer="91"/>
-<wire x1="-119.38" y1="-71.12" x2="-119.38" y2="-88.9" width="0.1524" layer="91"/>
+<wire x1="-157.48" y1="-93.98" x2="-157.48" y2="-109.22" width="0.1524" layer="91"/>
+<wire x1="-157.48" y1="-109.22" x2="-119.38" y2="-109.22" width="0.1524" layer="91"/>
+<wire x1="-119.38" y1="-109.22" x2="-119.38" y2="-127" width="0.1524" layer="91"/>
 <portref moduleinst="BMS_SEGMENT3" port="CELL9-"/>
 <pinref part="G46" gate="G$1" pin="+"/>
-<wire x1="-106.68" y1="-88.9" x2="-106.68" y2="-73.66" width="0.1524" layer="91"/>
-<wire x1="-106.68" y1="-73.66" x2="-76.2" y2="-73.66" width="0.1524" layer="91"/>
-<wire x1="-76.2" y1="-73.66" x2="-76.2" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="-104.14" y1="-127" x2="-104.14" y2="-111.76" width="0.1524" layer="91"/>
+<wire x1="-104.14" y1="-111.76" x2="-73.66" y2="-111.76" width="0.1524" layer="91"/>
+<wire x1="-73.66" y1="-111.76" x2="-73.66" y2="-93.98" width="0.1524" layer="91"/>
 <portref moduleinst="BMS_SEGMENT4" port="CELL1"/>
-<wire x1="-119.38" y1="-88.9" x2="-106.68" y2="-88.9" width="0.1524" layer="91"/>
-<junction x="-119.38" y="-88.9"/>
-<junction x="-106.68" y="-88.9"/>
+<wire x1="-119.38" y1="-127" x2="-104.14" y2="-127" width="0.1524" layer="91"/>
+<junction x="-119.38" y="-127"/>
+<junction x="-104.14" y="-127"/>
 </segment>
 </net>
 <net name="N$64" class="0">
 <segment>
 <pinref part="G47" gate="G$1" pin="+"/>
 <pinref part="G46" gate="G$1" pin="-"/>
-<wire x1="-96.52" y1="-88.9" x2="-96.52" y2="-76.2" width="0.1524" layer="91"/>
-<junction x="-96.52" y="-88.9"/>
-<wire x1="-96.52" y1="-76.2" x2="-73.66" y2="-76.2" width="0.1524" layer="91"/>
-<wire x1="-73.66" y1="-76.2" x2="-73.66" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="-93.98" y1="-127" x2="-93.98" y2="-114.3" width="0.1524" layer="91"/>
+<junction x="-93.98" y="-127"/>
+<wire x1="-93.98" y1="-114.3" x2="-71.12" y2="-114.3" width="0.1524" layer="91"/>
+<wire x1="-71.12" y1="-114.3" x2="-71.12" y2="-93.98" width="0.1524" layer="91"/>
 <portref moduleinst="BMS_SEGMENT4" port="CELL2"/>
 </segment>
 </net>
@@ -1185,10 +1411,10 @@ Source: Sonnenschein</description>
 <segment>
 <pinref part="G48" gate="G$1" pin="+"/>
 <pinref part="G47" gate="G$1" pin="-"/>
-<wire x1="-86.36" y1="-88.9" x2="-86.36" y2="-78.74" width="0.1524" layer="91"/>
-<junction x="-86.36" y="-88.9"/>
-<wire x1="-86.36" y1="-78.74" x2="-71.12" y2="-78.74" width="0.1524" layer="91"/>
-<wire x1="-71.12" y1="-78.74" x2="-71.12" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="-83.82" y1="-127" x2="-83.82" y2="-116.84" width="0.1524" layer="91"/>
+<junction x="-83.82" y="-127"/>
+<wire x1="-83.82" y1="-116.84" x2="-68.58" y2="-116.84" width="0.1524" layer="91"/>
+<wire x1="-68.58" y1="-116.84" x2="-68.58" y2="-93.98" width="0.1524" layer="91"/>
 <portref moduleinst="BMS_SEGMENT4" port="CELL3"/>
 </segment>
 </net>
@@ -1196,10 +1422,10 @@ Source: Sonnenschein</description>
 <segment>
 <pinref part="G49" gate="G$1" pin="+"/>
 <pinref part="G48" gate="G$1" pin="-"/>
-<wire x1="-76.2" y1="-88.9" x2="-76.2" y2="-81.28" width="0.1524" layer="91"/>
-<junction x="-76.2" y="-88.9"/>
-<wire x1="-76.2" y1="-81.28" x2="-68.58" y2="-81.28" width="0.1524" layer="91"/>
-<wire x1="-68.58" y1="-81.28" x2="-68.58" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="-73.66" y1="-127" x2="-73.66" y2="-119.38" width="0.1524" layer="91"/>
+<junction x="-73.66" y="-127"/>
+<wire x1="-73.66" y1="-119.38" x2="-66.04" y2="-119.38" width="0.1524" layer="91"/>
+<wire x1="-66.04" y1="-119.38" x2="-66.04" y2="-93.98" width="0.1524" layer="91"/>
 <portref moduleinst="BMS_SEGMENT4" port="CELL4"/>
 </segment>
 </net>
@@ -1207,8 +1433,8 @@ Source: Sonnenschein</description>
 <segment>
 <pinref part="G50" gate="G$1" pin="+"/>
 <pinref part="G49" gate="G$1" pin="-"/>
-<junction x="-66.04" y="-88.9"/>
-<wire x1="-66.04" y1="-88.9" x2="-66.04" y2="-55.88" width="0.1524" layer="91"/>
+<junction x="-63.5" y="-127"/>
+<wire x1="-63.5" y1="-127" x2="-63.5" y2="-93.98" width="0.1524" layer="91"/>
 <portref moduleinst="BMS_SEGMENT4" port="CELL5"/>
 </segment>
 </net>
@@ -1216,10 +1442,10 @@ Source: Sonnenschein</description>
 <segment>
 <pinref part="G51" gate="G$1" pin="+"/>
 <pinref part="G50" gate="G$1" pin="-"/>
-<wire x1="-63.5" y1="-55.88" x2="-63.5" y2="-81.28" width="0.1524" layer="91"/>
-<wire x1="-63.5" y1="-81.28" x2="-55.88" y2="-81.28" width="0.1524" layer="91"/>
-<wire x1="-55.88" y1="-81.28" x2="-55.88" y2="-88.9" width="0.1524" layer="91"/>
-<junction x="-55.88" y="-88.9"/>
+<wire x1="-60.96" y1="-93.98" x2="-60.96" y2="-119.38" width="0.1524" layer="91"/>
+<wire x1="-60.96" y1="-119.38" x2="-53.34" y2="-119.38" width="0.1524" layer="91"/>
+<wire x1="-53.34" y1="-119.38" x2="-53.34" y2="-127" width="0.1524" layer="91"/>
+<junction x="-53.34" y="-127"/>
 <portref moduleinst="BMS_SEGMENT4" port="CELL6"/>
 </segment>
 </net>
@@ -1227,10 +1453,10 @@ Source: Sonnenschein</description>
 <segment>
 <pinref part="G52" gate="G$1" pin="+"/>
 <pinref part="G51" gate="G$1" pin="-"/>
-<wire x1="-60.96" y1="-55.88" x2="-60.96" y2="-78.74" width="0.1524" layer="91"/>
-<wire x1="-60.96" y1="-78.74" x2="-45.72" y2="-78.74" width="0.1524" layer="91"/>
-<wire x1="-45.72" y1="-78.74" x2="-45.72" y2="-88.9" width="0.1524" layer="91"/>
-<junction x="-45.72" y="-88.9"/>
+<wire x1="-58.42" y1="-93.98" x2="-58.42" y2="-116.84" width="0.1524" layer="91"/>
+<wire x1="-58.42" y1="-116.84" x2="-43.18" y2="-116.84" width="0.1524" layer="91"/>
+<wire x1="-43.18" y1="-116.84" x2="-43.18" y2="-127" width="0.1524" layer="91"/>
+<junction x="-43.18" y="-127"/>
 <portref moduleinst="BMS_SEGMENT4" port="CELL7"/>
 </segment>
 </net>
@@ -1238,10 +1464,10 @@ Source: Sonnenschein</description>
 <segment>
 <pinref part="G53" gate="G$1" pin="+"/>
 <pinref part="G52" gate="G$1" pin="-"/>
-<wire x1="-58.42" y1="-55.88" x2="-58.42" y2="-76.2" width="0.1524" layer="91"/>
-<wire x1="-58.42" y1="-76.2" x2="-35.56" y2="-76.2" width="0.1524" layer="91"/>
-<wire x1="-35.56" y1="-76.2" x2="-35.56" y2="-88.9" width="0.1524" layer="91"/>
-<junction x="-35.56" y="-88.9"/>
+<wire x1="-55.88" y1="-93.98" x2="-55.88" y2="-114.3" width="0.1524" layer="91"/>
+<wire x1="-55.88" y1="-114.3" x2="-33.02" y2="-114.3" width="0.1524" layer="91"/>
+<wire x1="-33.02" y1="-114.3" x2="-33.02" y2="-127" width="0.1524" layer="91"/>
+<junction x="-33.02" y="-127"/>
 <portref moduleinst="BMS_SEGMENT4" port="CELL8"/>
 </segment>
 </net>
@@ -1249,33 +1475,35 @@ Source: Sonnenschein</description>
 <segment>
 <pinref part="G54" gate="G$1" pin="+"/>
 <pinref part="G53" gate="G$1" pin="-"/>
-<wire x1="-55.88" y1="-55.88" x2="-55.88" y2="-73.66" width="0.1524" layer="91"/>
-<wire x1="-55.88" y1="-73.66" x2="-25.4" y2="-73.66" width="0.1524" layer="91"/>
-<wire x1="-25.4" y1="-73.66" x2="-25.4" y2="-88.9" width="0.1524" layer="91"/>
-<junction x="-25.4" y="-88.9"/>
+<wire x1="-53.34" y1="-93.98" x2="-53.34" y2="-111.76" width="0.1524" layer="91"/>
+<wire x1="-53.34" y1="-111.76" x2="-22.86" y2="-111.76" width="0.1524" layer="91"/>
+<wire x1="-22.86" y1="-111.76" x2="-22.86" y2="-127" width="0.1524" layer="91"/>
+<junction x="-22.86" y="-127"/>
 <portref moduleinst="BMS_SEGMENT4" port="CELL9"/>
 </segment>
 </net>
 <net name="N$72" class="0">
 <segment>
 <pinref part="G54" gate="G$1" pin="-"/>
-<wire x1="-53.34" y1="-55.88" x2="-53.34" y2="-71.12" width="0.1524" layer="91"/>
-<wire x1="-53.34" y1="-71.12" x2="-15.24" y2="-71.12" width="0.1524" layer="91"/>
-<wire x1="-15.24" y1="-71.12" x2="-15.24" y2="-88.9" width="0.1524" layer="91"/>
+<wire x1="-50.8" y1="-93.98" x2="-50.8" y2="-109.22" width="0.1524" layer="91"/>
+<wire x1="-50.8" y1="-109.22" x2="-12.7" y2="-109.22" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="-109.22" x2="-12.7" y2="-127" width="0.1524" layer="91"/>
 <portref moduleinst="BMS_SEGMENT4" port="CELL9-"/>
 <pinref part="SMD-2" gate="1" pin="P"/>
-<wire x1="-15.24" y1="-88.9" x2="-12.7" y2="-88.9" width="0.1524" layer="91"/>
-<junction x="-15.24" y="-88.9"/>
+<wire x1="-12.7" y1="-127" x2="2.54" y2="-127" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="-127" x2="2.54" y2="-33.02" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="-33.02" x2="7.62" y2="-33.02" width="0.1524" layer="91"/>
+<junction x="-12.7" y="-127"/>
 </segment>
 </net>
 <net name="N$74" class="0">
 <segment>
 <pinref part="G56" gate="G$1" pin="+"/>
 <pinref part="G55" gate="G$1" pin="-"/>
-<wire x1="12.7" y1="-88.9" x2="12.7" y2="-76.2" width="0.1524" layer="91"/>
-<junction x="12.7" y="-88.9"/>
-<wire x1="12.7" y1="-76.2" x2="35.56" y2="-76.2" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="-76.2" x2="35.56" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="-127" x2="20.32" y2="-114.3" width="0.1524" layer="91"/>
+<junction x="20.32" y="-127"/>
+<wire x1="20.32" y1="-114.3" x2="43.18" y2="-114.3" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="-114.3" x2="43.18" y2="-93.98" width="0.1524" layer="91"/>
 <portref moduleinst="BMS_SEGMENT7" port="CELL2"/>
 </segment>
 </net>
@@ -1283,10 +1511,10 @@ Source: Sonnenschein</description>
 <segment>
 <pinref part="G57" gate="G$1" pin="+"/>
 <pinref part="G56" gate="G$1" pin="-"/>
-<wire x1="22.86" y1="-88.9" x2="22.86" y2="-78.74" width="0.1524" layer="91"/>
-<junction x="22.86" y="-88.9"/>
-<wire x1="22.86" y1="-78.74" x2="38.1" y2="-78.74" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="-78.74" x2="38.1" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="-127" x2="30.48" y2="-116.84" width="0.1524" layer="91"/>
+<junction x="30.48" y="-127"/>
+<wire x1="30.48" y1="-116.84" x2="45.72" y2="-116.84" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="-116.84" x2="45.72" y2="-93.98" width="0.1524" layer="91"/>
 <portref moduleinst="BMS_SEGMENT7" port="CELL3"/>
 </segment>
 </net>
@@ -1294,10 +1522,10 @@ Source: Sonnenschein</description>
 <segment>
 <pinref part="G58" gate="G$1" pin="+"/>
 <pinref part="G57" gate="G$1" pin="-"/>
-<wire x1="33.02" y1="-88.9" x2="33.02" y2="-81.28" width="0.1524" layer="91"/>
-<junction x="33.02" y="-88.9"/>
-<wire x1="33.02" y1="-81.28" x2="40.64" y2="-81.28" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="-81.28" x2="40.64" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="-127" x2="40.64" y2="-119.38" width="0.1524" layer="91"/>
+<junction x="40.64" y="-127"/>
+<wire x1="40.64" y1="-119.38" x2="48.26" y2="-119.38" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="-119.38" x2="48.26" y2="-93.98" width="0.1524" layer="91"/>
 <portref moduleinst="BMS_SEGMENT7" port="CELL4"/>
 </segment>
 </net>
@@ -1305,8 +1533,8 @@ Source: Sonnenschein</description>
 <segment>
 <pinref part="G59" gate="G$1" pin="+"/>
 <pinref part="G58" gate="G$1" pin="-"/>
-<junction x="43.18" y="-88.9"/>
-<wire x1="43.18" y1="-88.9" x2="43.18" y2="-55.88" width="0.1524" layer="91"/>
+<junction x="50.8" y="-127"/>
+<wire x1="50.8" y1="-127" x2="50.8" y2="-93.98" width="0.1524" layer="91"/>
 <portref moduleinst="BMS_SEGMENT7" port="CELL5"/>
 </segment>
 </net>
@@ -1314,10 +1542,10 @@ Source: Sonnenschein</description>
 <segment>
 <pinref part="G60" gate="G$1" pin="+"/>
 <pinref part="G59" gate="G$1" pin="-"/>
-<wire x1="45.72" y1="-55.88" x2="45.72" y2="-81.28" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="-81.28" x2="53.34" y2="-81.28" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="-81.28" x2="53.34" y2="-88.9" width="0.1524" layer="91"/>
-<junction x="53.34" y="-88.9"/>
+<wire x1="53.34" y1="-93.98" x2="53.34" y2="-119.38" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="-119.38" x2="60.96" y2="-119.38" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="-119.38" x2="60.96" y2="-127" width="0.1524" layer="91"/>
+<junction x="60.96" y="-127"/>
 <portref moduleinst="BMS_SEGMENT7" port="CELL6"/>
 </segment>
 </net>
@@ -1325,10 +1553,10 @@ Source: Sonnenschein</description>
 <segment>
 <pinref part="G61" gate="G$1" pin="+"/>
 <pinref part="G60" gate="G$1" pin="-"/>
-<wire x1="48.26" y1="-55.88" x2="48.26" y2="-78.74" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="-78.74" x2="63.5" y2="-78.74" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="-78.74" x2="63.5" y2="-88.9" width="0.1524" layer="91"/>
-<junction x="63.5" y="-88.9"/>
+<wire x1="55.88" y1="-93.98" x2="55.88" y2="-116.84" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="-116.84" x2="71.12" y2="-116.84" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="-116.84" x2="71.12" y2="-127" width="0.1524" layer="91"/>
+<junction x="71.12" y="-127"/>
 <portref moduleinst="BMS_SEGMENT7" port="CELL7"/>
 </segment>
 </net>
@@ -1336,10 +1564,10 @@ Source: Sonnenschein</description>
 <segment>
 <pinref part="G62" gate="G$1" pin="+"/>
 <pinref part="G61" gate="G$1" pin="-"/>
-<wire x1="50.8" y1="-55.88" x2="50.8" y2="-76.2" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="-76.2" x2="73.66" y2="-76.2" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="-76.2" x2="73.66" y2="-88.9" width="0.1524" layer="91"/>
-<junction x="73.66" y="-88.9"/>
+<wire x1="58.42" y1="-93.98" x2="58.42" y2="-114.3" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="-114.3" x2="81.28" y2="-114.3" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="-114.3" x2="81.28" y2="-127" width="0.1524" layer="91"/>
+<junction x="81.28" y="-127"/>
 <portref moduleinst="BMS_SEGMENT7" port="CELL8"/>
 </segment>
 </net>
@@ -1347,52 +1575,54 @@ Source: Sonnenschein</description>
 <segment>
 <pinref part="G63" gate="G$1" pin="+"/>
 <pinref part="G62" gate="G$1" pin="-"/>
-<wire x1="53.34" y1="-55.88" x2="53.34" y2="-73.66" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="-73.66" x2="83.82" y2="-73.66" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="-73.66" x2="83.82" y2="-88.9" width="0.1524" layer="91"/>
-<junction x="83.82" y="-88.9"/>
+<wire x1="60.96" y1="-93.98" x2="60.96" y2="-111.76" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="-111.76" x2="91.44" y2="-111.76" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="-111.76" x2="91.44" y2="-127" width="0.1524" layer="91"/>
+<junction x="91.44" y="-127"/>
 <portref moduleinst="BMS_SEGMENT7" port="CELL9"/>
 </segment>
 </net>
 <net name="N$82" class="0">
 <segment>
 <pinref part="G63" gate="G$1" pin="-"/>
-<wire x1="55.88" y1="-55.88" x2="55.88" y2="-71.12" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="-71.12" x2="93.98" y2="-71.12" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="-71.12" x2="93.98" y2="-88.9" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="-93.98" x2="63.5" y2="-109.22" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="-109.22" x2="101.6" y2="-109.22" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="-109.22" x2="101.6" y2="-127" width="0.1524" layer="91"/>
 <portref moduleinst="BMS_SEGMENT7" port="CELL9-"/>
 <pinref part="G64" gate="G$1" pin="+"/>
-<wire x1="101.6" y1="-88.9" x2="101.6" y2="-73.66" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="-73.66" x2="132.08" y2="-73.66" width="0.1524" layer="91"/>
-<wire x1="132.08" y1="-73.66" x2="132.08" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="-127" x2="116.84" y2="-111.76" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="-111.76" x2="147.32" y2="-111.76" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="-111.76" x2="147.32" y2="-93.98" width="0.1524" layer="91"/>
 <portref moduleinst="BMS_SEGMENT8" port="CELL1"/>
-<wire x1="93.98" y1="-88.9" x2="101.6" y2="-88.9" width="0.1524" layer="91"/>
-<junction x="93.98" y="-88.9"/>
-<junction x="101.6" y="-88.9"/>
+<wire x1="101.6" y1="-127" x2="116.84" y2="-127" width="0.1524" layer="91"/>
+<junction x="101.6" y="-127"/>
+<junction x="116.84" y="-127"/>
 </segment>
 </net>
 <net name="N$83" class="0">
 <segment>
 <pinref part="G55" gate="G$1" pin="+"/>
-<wire x1="2.54" y1="-88.9" x2="2.54" y2="-73.66" width="0.1524" layer="91"/>
-<wire x1="2.54" y1="-73.66" x2="33.02" y2="-73.66" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="-73.66" x2="33.02" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="-127" x2="10.16" y2="-111.76" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="-111.76" x2="40.64" y2="-111.76" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="-111.76" x2="40.64" y2="-93.98" width="0.1524" layer="91"/>
 <portref moduleinst="BMS_SEGMENT7" port="CELL1"/>
 <pinref part="SMD-2" gate="1" pin="S"/>
-<wire x1="-2.54" y1="-86.36" x2="0" y2="-86.36" width="0.1524" layer="91"/>
-<wire x1="0" y1="-86.36" x2="0" y2="-88.9" width="0.1524" layer="91"/>
-<wire x1="0" y1="-88.9" x2="2.54" y2="-88.9" width="0.1524" layer="91"/>
-<junction x="2.54" y="-88.9"/>
+<wire x1="17.78" y1="-30.48" x2="20.32" y2="-30.48" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="-30.48" x2="20.32" y2="-40.64" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="-40.64" x2="5.08" y2="-40.64" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="-40.64" x2="5.08" y2="-127" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="-127" x2="10.16" y2="-127" width="0.1524" layer="91"/>
+<junction x="10.16" y="-127"/>
 </segment>
 </net>
 <net name="N$84" class="0">
 <segment>
 <pinref part="G65" gate="G$1" pin="+"/>
 <pinref part="G64" gate="G$1" pin="-"/>
-<wire x1="111.76" y1="-88.9" x2="111.76" y2="-76.2" width="0.1524" layer="91"/>
-<junction x="111.76" y="-88.9"/>
-<wire x1="111.76" y1="-76.2" x2="134.62" y2="-76.2" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="-76.2" x2="134.62" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="127" y1="-127" x2="127" y2="-114.3" width="0.1524" layer="91"/>
+<junction x="127" y="-127"/>
+<wire x1="127" y1="-114.3" x2="149.86" y2="-114.3" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="-114.3" x2="149.86" y2="-93.98" width="0.1524" layer="91"/>
 <portref moduleinst="BMS_SEGMENT8" port="CELL2"/>
 </segment>
 </net>
@@ -1400,10 +1630,10 @@ Source: Sonnenschein</description>
 <segment>
 <pinref part="G66" gate="G$1" pin="+"/>
 <pinref part="G65" gate="G$1" pin="-"/>
-<wire x1="121.92" y1="-88.9" x2="121.92" y2="-78.74" width="0.1524" layer="91"/>
-<junction x="121.92" y="-88.9"/>
-<wire x1="121.92" y1="-78.74" x2="137.16" y2="-78.74" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="-78.74" x2="137.16" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="-127" x2="137.16" y2="-116.84" width="0.1524" layer="91"/>
+<junction x="137.16" y="-127"/>
+<wire x1="137.16" y1="-116.84" x2="152.4" y2="-116.84" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="-116.84" x2="152.4" y2="-93.98" width="0.1524" layer="91"/>
 <portref moduleinst="BMS_SEGMENT8" port="CELL3"/>
 </segment>
 </net>
@@ -1411,10 +1641,10 @@ Source: Sonnenschein</description>
 <segment>
 <pinref part="G67" gate="G$1" pin="+"/>
 <pinref part="G66" gate="G$1" pin="-"/>
-<wire x1="132.08" y1="-88.9" x2="132.08" y2="-81.28" width="0.1524" layer="91"/>
-<junction x="132.08" y="-88.9"/>
-<wire x1="132.08" y1="-81.28" x2="139.7" y2="-81.28" width="0.1524" layer="91"/>
-<wire x1="139.7" y1="-81.28" x2="139.7" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="-127" x2="147.32" y2="-119.38" width="0.1524" layer="91"/>
+<junction x="147.32" y="-127"/>
+<wire x1="147.32" y1="-119.38" x2="154.94" y2="-119.38" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="-119.38" x2="154.94" y2="-93.98" width="0.1524" layer="91"/>
 <portref moduleinst="BMS_SEGMENT8" port="CELL4"/>
 </segment>
 </net>
@@ -1422,8 +1652,8 @@ Source: Sonnenschein</description>
 <segment>
 <pinref part="G68" gate="G$1" pin="+"/>
 <pinref part="G67" gate="G$1" pin="-"/>
-<junction x="142.24" y="-88.9"/>
-<wire x1="142.24" y1="-88.9" x2="142.24" y2="-55.88" width="0.1524" layer="91"/>
+<junction x="157.48" y="-127"/>
+<wire x1="157.48" y1="-127" x2="157.48" y2="-93.98" width="0.1524" layer="91"/>
 <portref moduleinst="BMS_SEGMENT8" port="CELL5"/>
 </segment>
 </net>
@@ -1431,10 +1661,10 @@ Source: Sonnenschein</description>
 <segment>
 <pinref part="G69" gate="G$1" pin="+"/>
 <pinref part="G68" gate="G$1" pin="-"/>
-<wire x1="144.78" y1="-55.88" x2="144.78" y2="-81.28" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="-81.28" x2="152.4" y2="-81.28" width="0.1524" layer="91"/>
-<wire x1="152.4" y1="-81.28" x2="152.4" y2="-88.9" width="0.1524" layer="91"/>
-<junction x="152.4" y="-88.9"/>
+<wire x1="160.02" y1="-93.98" x2="160.02" y2="-119.38" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="-119.38" x2="167.64" y2="-119.38" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="-119.38" x2="167.64" y2="-127" width="0.1524" layer="91"/>
+<junction x="167.64" y="-127"/>
 <portref moduleinst="BMS_SEGMENT8" port="CELL6"/>
 </segment>
 </net>
@@ -1442,10 +1672,10 @@ Source: Sonnenschein</description>
 <segment>
 <pinref part="G70" gate="G$1" pin="+"/>
 <pinref part="G69" gate="G$1" pin="-"/>
-<wire x1="147.32" y1="-55.88" x2="147.32" y2="-78.74" width="0.1524" layer="91"/>
-<wire x1="147.32" y1="-78.74" x2="162.56" y2="-78.74" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="-78.74" x2="162.56" y2="-88.9" width="0.1524" layer="91"/>
-<junction x="162.56" y="-88.9"/>
+<wire x1="162.56" y1="-93.98" x2="162.56" y2="-116.84" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="-116.84" x2="177.8" y2="-116.84" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="-116.84" x2="177.8" y2="-127" width="0.1524" layer="91"/>
+<junction x="177.8" y="-127"/>
 <portref moduleinst="BMS_SEGMENT8" port="CELL7"/>
 </segment>
 </net>
@@ -1453,10 +1683,10 @@ Source: Sonnenschein</description>
 <segment>
 <pinref part="G71" gate="G$1" pin="+"/>
 <pinref part="G70" gate="G$1" pin="-"/>
-<wire x1="149.86" y1="-55.88" x2="149.86" y2="-76.2" width="0.1524" layer="91"/>
-<wire x1="149.86" y1="-76.2" x2="172.72" y2="-76.2" width="0.1524" layer="91"/>
-<wire x1="172.72" y1="-76.2" x2="172.72" y2="-88.9" width="0.1524" layer="91"/>
-<junction x="172.72" y="-88.9"/>
+<wire x1="165.1" y1="-93.98" x2="165.1" y2="-114.3" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="-114.3" x2="187.96" y2="-114.3" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="-114.3" x2="187.96" y2="-127" width="0.1524" layer="91"/>
+<junction x="187.96" y="-127"/>
 <portref moduleinst="BMS_SEGMENT8" port="CELL8"/>
 </segment>
 </net>
@@ -1464,75 +1694,583 @@ Source: Sonnenschein</description>
 <segment>
 <pinref part="G72" gate="G$1" pin="+"/>
 <pinref part="G71" gate="G$1" pin="-"/>
-<wire x1="152.4" y1="-55.88" x2="152.4" y2="-73.66" width="0.1524" layer="91"/>
-<wire x1="152.4" y1="-73.66" x2="182.88" y2="-73.66" width="0.1524" layer="91"/>
-<wire x1="182.88" y1="-73.66" x2="182.88" y2="-88.9" width="0.1524" layer="91"/>
-<junction x="182.88" y="-88.9"/>
+<wire x1="167.64" y1="-93.98" x2="167.64" y2="-111.76" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="-111.76" x2="198.12" y2="-111.76" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="-111.76" x2="198.12" y2="-127" width="0.1524" layer="91"/>
+<junction x="198.12" y="-127"/>
 <portref moduleinst="BMS_SEGMENT8" port="CELL9"/>
 </segment>
 </net>
 <net name="N$92" class="0">
 <segment>
 <pinref part="G72" gate="G$1" pin="-"/>
-<wire x1="154.94" y1="-55.88" x2="154.94" y2="-71.12" width="0.1524" layer="91"/>
-<wire x1="154.94" y1="-71.12" x2="193.04" y2="-71.12" width="0.1524" layer="91"/>
-<wire x1="193.04" y1="-71.12" x2="193.04" y2="-88.9" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="-93.98" x2="170.18" y2="-109.22" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="-109.22" x2="208.28" y2="-109.22" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="-109.22" x2="208.28" y2="-127" width="0.1524" layer="91"/>
 <portref moduleinst="BMS_SEGMENT8" port="CELL9-"/>
 <pinref part="AIR-2" gate="1" pin="P"/>
-<wire x1="193.04" y1="-88.9" x2="195.58" y2="-88.9" width="0.1524" layer="91"/>
-<junction x="193.04" y="-88.9"/>
+<wire x1="208.28" y1="-127" x2="223.52" y2="-127" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="-127" x2="223.52" y2="-40.64" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="-40.64" x2="203.2" y2="-40.64" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="-40.64" x2="203.2" y2="-33.02" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="-33.02" x2="205.74" y2="-33.02" width="0.1524" layer="91"/>
+<junction x="208.28" y="-127"/>
 </segment>
 </net>
 <net name="N$94" class="0">
 <segment>
 <pinref part="G36" gate="G$1" pin="-"/>
 <portref moduleinst="BMS_SEGMENT6" port="CELL9-"/>
-<wire x1="154.94" y1="55.88" x2="154.94" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="154.94" y1="40.64" x2="193.04" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="193.04" y1="40.64" x2="193.04" y2="22.86" width="0.1524" layer="91"/>
-<junction x="193.04" y="22.86"/>
-<wire x1="193.04" y1="22.86" x2="198.12" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="198.12" y1="22.86" x2="198.12" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="55.88" x2="170.18" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="40.64" x2="208.28" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="40.64" x2="208.28" y2="22.86" width="0.1524" layer="91"/>
+<junction x="208.28" y="22.86"/>
+<wire x1="208.28" y1="22.86" x2="223.52" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="22.86" x2="223.52" y2="0" width="0.1524" layer="91"/>
 <pinref part="HVD" gate="SPST" pin="P"/>
-<wire x1="10.16" y1="5.08" x2="198.12" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="0" x2="223.52" y2="0" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="HV+" class="0">
 <segment>
 <pinref part="AIR-1" gate="1" pin="P"/>
-<wire x1="-226.06" y1="22.86" x2="-241.3" y2="22.86" width="0.1524" layer="91"/>
-<label x="-238.76" y="22.86" size="1.778" layer="95"/>
+<wire x1="-208.28" y1="-12.7" x2="-223.52" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="-223.52" y1="-12.7" x2="-223.52" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="-223.52" y1="22.86" x2="-322.58" y2="22.86" width="0.1524" layer="91"/>
+<label x="-317.5" y="22.86" size="1.778" layer="95"/>
+<pinref part="MOLEX_IMPERIUM" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="HV-" class="0">
 <segment>
 <pinref part="AIR-2" gate="1" pin="S"/>
-<wire x1="205.74" y1="-86.36" x2="210.82" y2="-86.36" width="0.1524" layer="91"/>
-<wire x1="210.82" y1="-86.36" x2="210.82" y2="-101.6" width="0.1524" layer="91"/>
-<wire x1="210.82" y1="-101.6" x2="-228.6" y2="-101.6" width="0.1524" layer="91"/>
-<wire x1="-228.6" y1="-101.6" x2="-228.6" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="-228.6" y1="20.32" x2="-241.3" y2="20.32" width="0.1524" layer="91"/>
-<label x="-238.76" y="20.32" size="1.778" layer="95"/>
+<wire x1="215.9" y1="-30.48" x2="226.06" y2="-30.48" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="-30.48" x2="226.06" y2="-149.86" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="-149.86" x2="-226.06" y2="-149.86" width="0.1524" layer="91"/>
+<wire x1="-226.06" y1="-149.86" x2="-226.06" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="-226.06" y1="20.32" x2="-322.58" y2="20.32" width="0.1524" layer="91"/>
+<label x="-317.5" y="20.32" size="1.778" layer="95"/>
+<pinref part="MOLEX_IMPERIUM" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="N$52" class="0">
+<net name="N$73" class="0">
 <segment>
-<wire x1="-193.04" y1="99.06" x2="-193.04" y2="86.36" width="0.1524" layer="91"/>
+<portref moduleinst="BMS_SEGMENT1" port="THERMISTOR1"/>
+<wire x1="-147.32" y1="55.88" x2="-147.32" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="-147.32" y1="45.72" x2="-114.3" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="-114.3" y1="45.72" x2="-114.3" y2="7.62" width="0.1524" layer="91"/>
+<pinref part="THERM1" gate="G$1" pin="S"/>
+<wire x1="-114.3" y1="7.62" x2="-185.42" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="-185.42" y1="7.62" x2="-185.42" y2="15.24" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$93" class="0">
+<segment>
+<portref moduleinst="BMS_SEGMENT1" port="THERMISTOR2"/>
+<wire x1="-144.78" y1="55.88" x2="-144.78" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="-144.78" y1="48.26" x2="-111.76" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="-111.76" y1="48.26" x2="-111.76" y2="10.16" width="0.1524" layer="91"/>
+<pinref part="THERM2" gate="G$1" pin="S"/>
+<wire x1="-111.76" y1="10.16" x2="-154.94" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="-154.94" y1="10.16" x2="-154.94" y2="15.24" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$95" class="0">
+<segment>
+<portref moduleinst="BMS_SEGMENT1" port="THERMISTOR3"/>
+<wire x1="-142.24" y1="55.88" x2="-142.24" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="-142.24" y1="50.8" x2="-109.22" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="-109.22" y1="50.8" x2="-109.22" y2="12.7" width="0.1524" layer="91"/>
+<pinref part="THERM3" gate="G$1" pin="S"/>
+<wire x1="-109.22" y1="12.7" x2="-124.46" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="-124.46" y1="12.7" x2="-124.46" y2="15.24" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$96" class="0">
+<segment>
+<wire x1="-7.62" y1="45.72" x2="-7.62" y2="7.62" width="0.1524" layer="91"/>
+<pinref part="THERM4" gate="G$1" pin="S"/>
+<wire x1="-7.62" y1="7.62" x2="-78.74" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="-78.74" y1="7.62" x2="-78.74" y2="15.24" width="0.1524" layer="91"/>
+<portref moduleinst="BMS_SEGMENT2" port="THERMISTOR1"/>
+<wire x1="-7.62" y1="45.72" x2="-40.64" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="-40.64" y1="45.72" x2="-40.64" y2="55.88" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$97" class="0">
+<segment>
+<wire x1="-5.08" y1="48.26" x2="-5.08" y2="10.16" width="0.1524" layer="91"/>
+<pinref part="THERM5" gate="G$1" pin="S"/>
+<wire x1="-5.08" y1="10.16" x2="-48.26" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="-48.26" y1="10.16" x2="-48.26" y2="15.24" width="0.1524" layer="91"/>
+<portref moduleinst="BMS_SEGMENT2" port="THERMISTOR2"/>
+<wire x1="-5.08" y1="48.26" x2="-38.1" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="-38.1" y1="48.26" x2="-38.1" y2="55.88" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$98" class="0">
+<segment>
+<wire x1="-2.54" y1="50.8" x2="-2.54" y2="12.7" width="0.1524" layer="91"/>
+<pinref part="THERM6" gate="G$1" pin="S"/>
+<wire x1="-2.54" y1="12.7" x2="-17.78" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="12.7" x2="-17.78" y2="15.24" width="0.1524" layer="91"/>
+<portref moduleinst="BMS_SEGMENT2" port="THERMISTOR3"/>
+<wire x1="-2.54" y1="50.8" x2="-35.56" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="-35.56" y1="50.8" x2="-35.56" y2="55.88" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$99" class="0">
+<segment>
+<wire x1="106.68" y1="45.72" x2="106.68" y2="7.62" width="0.1524" layer="91"/>
+<pinref part="THERM7" gate="G$1" pin="S"/>
+<wire x1="106.68" y1="7.62" x2="35.56" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="7.62" x2="35.56" y2="15.24" width="0.1524" layer="91"/>
+<portref moduleinst="BMS_SEGMENT5" port="THERMISTOR1"/>
+<wire x1="106.68" y1="45.72" x2="73.66" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="45.72" x2="73.66" y2="55.88" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$100" class="0">
+<segment>
+<wire x1="109.22" y1="48.26" x2="109.22" y2="10.16" width="0.1524" layer="91"/>
+<pinref part="THERM8" gate="G$1" pin="S"/>
+<wire x1="109.22" y1="10.16" x2="66.04" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="10.16" x2="66.04" y2="15.24" width="0.1524" layer="91"/>
+<portref moduleinst="BMS_SEGMENT5" port="THERMISTOR2"/>
+<wire x1="109.22" y1="48.26" x2="76.2" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="48.26" x2="76.2" y2="55.88" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$101" class="0">
+<segment>
+<wire x1="111.76" y1="50.8" x2="111.76" y2="12.7" width="0.1524" layer="91"/>
+<pinref part="THERM9" gate="G$1" pin="S"/>
+<wire x1="111.76" y1="12.7" x2="96.52" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="12.7" x2="96.52" y2="15.24" width="0.1524" layer="91"/>
+<portref moduleinst="BMS_SEGMENT5" port="THERMISTOR3"/>
+<wire x1="111.76" y1="50.8" x2="78.74" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="50.8" x2="78.74" y2="55.88" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$102" class="0">
+<segment>
+<wire x1="213.36" y1="45.72" x2="213.36" y2="7.62" width="0.1524" layer="91"/>
+<pinref part="THERM10" gate="G$1" pin="S"/>
+<wire x1="213.36" y1="7.62" x2="142.24" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="7.62" x2="142.24" y2="15.24" width="0.1524" layer="91"/>
+<portref moduleinst="BMS_SEGMENT6" port="THERMISTOR1"/>
+<wire x1="213.36" y1="45.72" x2="180.34" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="45.72" x2="180.34" y2="55.88" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$103" class="0">
+<segment>
+<wire x1="215.9" y1="48.26" x2="215.9" y2="10.16" width="0.1524" layer="91"/>
+<pinref part="THERM11" gate="G$1" pin="S"/>
+<wire x1="215.9" y1="10.16" x2="172.72" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="10.16" x2="172.72" y2="15.24" width="0.1524" layer="91"/>
+<portref moduleinst="BMS_SEGMENT6" port="THERMISTOR2"/>
+<wire x1="215.9" y1="48.26" x2="182.88" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="48.26" x2="182.88" y2="55.88" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$104" class="0">
+<segment>
+<wire x1="218.44" y1="50.8" x2="218.44" y2="12.7" width="0.1524" layer="91"/>
+<pinref part="THERM12" gate="G$1" pin="S"/>
+<wire x1="218.44" y1="12.7" x2="203.2" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="12.7" x2="203.2" y2="15.24" width="0.1524" layer="91"/>
+<portref moduleinst="BMS_SEGMENT6" port="THERMISTOR3"/>
+<wire x1="218.44" y1="50.8" x2="185.42" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="50.8" x2="185.42" y2="55.88" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$105" class="0">
+<segment>
+<wire x1="-114.3" y1="-104.14" x2="-114.3" y2="-142.24" width="0.1524" layer="91"/>
+<pinref part="THERM13" gate="G$1" pin="S"/>
+<wire x1="-114.3" y1="-142.24" x2="-185.42" y2="-142.24" width="0.1524" layer="91"/>
+<wire x1="-185.42" y1="-142.24" x2="-185.42" y2="-134.62" width="0.1524" layer="91"/>
+<portref moduleinst="BMS_SEGMENT3" port="THERMISTOR1"/>
+<wire x1="-114.3" y1="-104.14" x2="-147.32" y2="-104.14" width="0.1524" layer="91"/>
+<wire x1="-147.32" y1="-104.14" x2="-147.32" y2="-93.98" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$106" class="0">
+<segment>
+<wire x1="-111.76" y1="-101.6" x2="-111.76" y2="-139.7" width="0.1524" layer="91"/>
+<pinref part="THERM14" gate="G$1" pin="S"/>
+<wire x1="-111.76" y1="-139.7" x2="-154.94" y2="-139.7" width="0.1524" layer="91"/>
+<wire x1="-154.94" y1="-139.7" x2="-154.94" y2="-134.62" width="0.1524" layer="91"/>
+<portref moduleinst="BMS_SEGMENT3" port="THERMISTOR2"/>
+<wire x1="-111.76" y1="-101.6" x2="-144.78" y2="-101.6" width="0.1524" layer="91"/>
+<wire x1="-144.78" y1="-101.6" x2="-144.78" y2="-93.98" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$107" class="0">
+<segment>
+<wire x1="-109.22" y1="-99.06" x2="-109.22" y2="-137.16" width="0.1524" layer="91"/>
+<pinref part="THERM15" gate="G$1" pin="S"/>
+<wire x1="-109.22" y1="-137.16" x2="-124.46" y2="-137.16" width="0.1524" layer="91"/>
+<wire x1="-124.46" y1="-137.16" x2="-124.46" y2="-134.62" width="0.1524" layer="91"/>
+<portref moduleinst="BMS_SEGMENT3" port="THERMISTOR3"/>
+<wire x1="-109.22" y1="-99.06" x2="-142.24" y2="-99.06" width="0.1524" layer="91"/>
+<wire x1="-142.24" y1="-99.06" x2="-142.24" y2="-93.98" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$108" class="0">
+<segment>
+<wire x1="-7.62" y1="-104.14" x2="-7.62" y2="-142.24" width="0.1524" layer="91"/>
+<pinref part="THERM16" gate="G$1" pin="S"/>
+<wire x1="-7.62" y1="-142.24" x2="-78.74" y2="-142.24" width="0.1524" layer="91"/>
+<wire x1="-78.74" y1="-142.24" x2="-78.74" y2="-134.62" width="0.1524" layer="91"/>
+<portref moduleinst="BMS_SEGMENT4" port="THERMISTOR1"/>
+<wire x1="-7.62" y1="-104.14" x2="-40.64" y2="-104.14" width="0.1524" layer="91"/>
+<wire x1="-40.64" y1="-104.14" x2="-40.64" y2="-93.98" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$109" class="0">
+<segment>
+<wire x1="-5.08" y1="-101.6" x2="-5.08" y2="-139.7" width="0.1524" layer="91"/>
+<pinref part="THERM17" gate="G$1" pin="S"/>
+<wire x1="-5.08" y1="-139.7" x2="-48.26" y2="-139.7" width="0.1524" layer="91"/>
+<wire x1="-48.26" y1="-139.7" x2="-48.26" y2="-134.62" width="0.1524" layer="91"/>
+<portref moduleinst="BMS_SEGMENT4" port="THERMISTOR2"/>
+<wire x1="-5.08" y1="-101.6" x2="-38.1" y2="-101.6" width="0.1524" layer="91"/>
+<wire x1="-38.1" y1="-101.6" x2="-38.1" y2="-93.98" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$110" class="0">
+<segment>
+<wire x1="-2.54" y1="-99.06" x2="-2.54" y2="-137.16" width="0.1524" layer="91"/>
+<pinref part="THERM18" gate="G$1" pin="S"/>
+<wire x1="-2.54" y1="-137.16" x2="-17.78" y2="-137.16" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="-137.16" x2="-17.78" y2="-134.62" width="0.1524" layer="91"/>
+<portref moduleinst="BMS_SEGMENT4" port="THERMISTOR3"/>
+<wire x1="-2.54" y1="-99.06" x2="-35.56" y2="-99.06" width="0.1524" layer="91"/>
+<wire x1="-35.56" y1="-99.06" x2="-35.56" y2="-93.98" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$111" class="0">
+<segment>
+<wire x1="106.68" y1="-104.14" x2="106.68" y2="-142.24" width="0.1524" layer="91"/>
+<pinref part="THERM19" gate="G$1" pin="S"/>
+<wire x1="106.68" y1="-142.24" x2="35.56" y2="-142.24" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="-142.24" x2="35.56" y2="-134.62" width="0.1524" layer="91"/>
+<portref moduleinst="BMS_SEGMENT7" port="THERMISTOR1"/>
+<wire x1="106.68" y1="-104.14" x2="73.66" y2="-104.14" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="-104.14" x2="73.66" y2="-93.98" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$112" class="0">
+<segment>
+<wire x1="109.22" y1="-101.6" x2="109.22" y2="-139.7" width="0.1524" layer="91"/>
+<pinref part="THERM20" gate="G$1" pin="S"/>
+<wire x1="109.22" y1="-139.7" x2="66.04" y2="-139.7" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="-139.7" x2="66.04" y2="-134.62" width="0.1524" layer="91"/>
+<portref moduleinst="BMS_SEGMENT7" port="THERMISTOR2"/>
+<wire x1="109.22" y1="-101.6" x2="76.2" y2="-101.6" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="-101.6" x2="76.2" y2="-93.98" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$113" class="0">
+<segment>
+<wire x1="111.76" y1="-99.06" x2="111.76" y2="-137.16" width="0.1524" layer="91"/>
+<pinref part="THERM21" gate="G$1" pin="S"/>
+<wire x1="111.76" y1="-137.16" x2="96.52" y2="-137.16" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="-137.16" x2="96.52" y2="-134.62" width="0.1524" layer="91"/>
+<portref moduleinst="BMS_SEGMENT7" port="THERMISTOR3"/>
+<wire x1="111.76" y1="-99.06" x2="78.74" y2="-99.06" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="-99.06" x2="78.74" y2="-93.98" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$114" class="0">
+<segment>
+<wire x1="213.36" y1="-104.14" x2="213.36" y2="-142.24" width="0.1524" layer="91"/>
+<pinref part="THERM22" gate="G$1" pin="S"/>
+<wire x1="213.36" y1="-142.24" x2="142.24" y2="-142.24" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="-142.24" x2="142.24" y2="-134.62" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="-104.14" x2="180.34" y2="-104.14" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="-104.14" x2="180.34" y2="-93.98" width="0.1524" layer="91"/>
+<portref moduleinst="BMS_SEGMENT8" port="THERMISTOR1"/>
+</segment>
+</net>
+<net name="N$115" class="0">
+<segment>
+<wire x1="215.9" y1="-101.6" x2="215.9" y2="-139.7" width="0.1524" layer="91"/>
+<pinref part="THERM23" gate="G$1" pin="S"/>
+<wire x1="215.9" y1="-139.7" x2="172.72" y2="-139.7" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="-139.7" x2="172.72" y2="-134.62" width="0.1524" layer="91"/>
+<portref moduleinst="BMS_SEGMENT8" port="THERMISTOR2"/>
+<wire x1="215.9" y1="-101.6" x2="182.88" y2="-101.6" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="-101.6" x2="182.88" y2="-93.98" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$116" class="0">
+<segment>
+<wire x1="218.44" y1="-99.06" x2="218.44" y2="-137.16" width="0.1524" layer="91"/>
+<pinref part="THERM24" gate="G$1" pin="S"/>
+<wire x1="218.44" y1="-137.16" x2="203.2" y2="-137.16" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="-137.16" x2="203.2" y2="-134.62" width="0.1524" layer="91"/>
+<portref moduleinst="BMS_SEGMENT8" port="THERMISTOR3"/>
+<wire x1="218.44" y1="-99.06" x2="185.42" y2="-99.06" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="-99.06" x2="185.42" y2="-93.98" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="SMD-1" gate="1" pin="1"/>
+<pinref part="SMD-2" gate="1" pin="2"/>
+<wire x1="0" y1="-22.86" x2="7.62" y2="-22.86" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$117" class="0">
+<segment>
+<pinref part="SMD-2" gate="1" pin="1"/>
+<pinref part="AIR-2" gate="1" pin="2"/>
+<wire x1="17.78" y1="-22.86" x2="205.74" y2="-22.86" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="AIR-1" gate="1" pin="1"/>
+<pinref part="SMD-1" gate="1" pin="2"/>
+<wire x1="-198.12" y1="-22.86" x2="-10.16" y2="-22.86" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$120" class="0">
+<segment>
+<portref moduleinst="BMS_MICROCONTROLLER1" port="SHUTDOWN_OUT"/>
+<pinref part="AIR-1" gate="1" pin="2"/>
+<wire x1="-208.28" y1="-22.86" x2="-236.22" y2="-22.86" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="SHUTDOWN_OUT" class="0">
+<segment>
+<pinref part="AIR-2" gate="1" pin="1"/>
+<wire x1="215.9" y1="-22.86" x2="236.22" y2="-22.86" width="0.1524" layer="91"/>
+<wire x1="236.22" y1="-22.86" x2="236.22" y2="-160.02" width="0.1524" layer="91"/>
+<wire x1="236.22" y1="-160.02" x2="-292.1" y2="-160.02" width="0.1524" layer="91"/>
+<wire x1="-292.1" y1="-160.02" x2="-292.1" y2="-25.4" width="0.1524" layer="91"/>
+<wire x1="-292.1" y1="-25.4" x2="-322.58" y2="-25.4" width="0.1524" layer="91"/>
+<label x="-317.5" y="-25.4" size="1.778" layer="95"/>
+<pinref part="SHUTDOWN_CIRCUIT" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="SHUTDOWN_IN" class="0">
+<segment>
+<portref moduleinst="BMS_MICROCONTROLLER1" port="SHUTDOWN_IN"/>
+<wire x1="-287.02" y1="-22.86" x2="-322.58" y2="-22.86" width="0.1524" layer="91"/>
+<label x="-317.5" y="-22.86" size="1.778" layer="95"/>
+<pinref part="SHUTDOWN_CIRCUIT" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="B$1" class="0">
+<segment>
+<portref moduleinst="BMS_SEGMENT1" port="ISOSPI-P_OUT"/>
+<wire x1="-129.54" y1="86.36" x2="-127" y2="86.36" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<portref moduleinst="BMS_SEGMENT1" port="ISOSPI-M_OUT"/>
+<wire x1="-129.54" y1="83.82" x2="-127" y2="83.82" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<portref moduleinst="BMS_SEGMENT2" port="ISOSPI-P_OUT"/>
+<wire x1="-22.86" y1="86.36" x2="-20.32" y2="86.36" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<portref moduleinst="BMS_SEGMENT2" port="ISOSPI-M_OUT"/>
+<wire x1="-20.32" y1="83.82" x2="-22.86" y2="83.82" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<portref moduleinst="BMS_SEGMENT5" port="ISOSPI-P_OUT"/>
+<wire x1="91.44" y1="86.36" x2="93.98" y2="86.36" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<portref moduleinst="BMS_SEGMENT5" port="ISOSPI-M_OUT"/>
+<wire x1="91.44" y1="83.82" x2="93.98" y2="83.82" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<portref moduleinst="BMS_SEGMENT3" port="ISOSPI-P_OUT"/>
+<wire x1="-129.54" y1="-63.5" x2="-127" y2="-63.5" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<portref moduleinst="BMS_SEGMENT3" port="ISOSPI-M_OUT"/>
+<wire x1="-129.54" y1="-66.04" x2="-127" y2="-66.04" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<portref moduleinst="BMS_SEGMENT4" port="ISOSPI-P_OUT"/>
+<wire x1="-22.86" y1="-63.5" x2="-20.32" y2="-63.5" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<portref moduleinst="BMS_SEGMENT4" port="ISOSPI-M_OUT"/>
+<wire x1="-22.86" y1="-66.04" x2="-20.32" y2="-66.04" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<portref moduleinst="BMS_SEGMENT7" port="ISOSPI-P_OUT"/>
+<wire x1="91.44" y1="-63.5" x2="93.98" y2="-63.5" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<portref moduleinst="BMS_SEGMENT7" port="ISOSPI-M_OUT"/>
+<wire x1="91.44" y1="-66.04" x2="93.98" y2="-66.04" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="B$2" class="0">
+<segment>
+<portref moduleinst="BMS_SEGMENT2" port="ISOSPI-P_IN"/>
+<wire x1="-86.36" y1="86.36" x2="-83.82" y2="86.36" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<portref moduleinst="BMS_SEGMENT2" port="ISOSPI-M_IN"/>
+<wire x1="-83.82" y1="83.82" x2="-86.36" y2="83.82" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<portref moduleinst="BMS_SEGMENT5" port="ISOSPI-P_IN"/>
+<wire x1="30.48" y1="86.36" x2="27.94" y2="86.36" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<portref moduleinst="BMS_SEGMENT5" port="ISOSPI-M_IN"/>
+<wire x1="30.48" y1="83.82" x2="27.94" y2="83.82" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<portref moduleinst="BMS_SEGMENT6" port="ISOSPI-P_IN"/>
+<wire x1="134.62" y1="86.36" x2="137.16" y2="86.36" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<portref moduleinst="BMS_SEGMENT6" port="ISOSPI-M_IN"/>
+<wire x1="137.16" y1="83.82" x2="134.62" y2="83.82" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<portref moduleinst="BMS_SEGMENT4" port="ISOSPI-P_IN"/>
+<wire x1="-83.82" y1="-63.5" x2="-86.36" y2="-63.5" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<portref moduleinst="BMS_SEGMENT4" port="ISOSPI-M_IN"/>
+<wire x1="-83.82" y1="-66.04" x2="-86.36" y2="-66.04" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<portref moduleinst="BMS_SEGMENT7" port="ISOSPI-P_IN"/>
+<wire x1="30.48" y1="-63.5" x2="27.94" y2="-63.5" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<portref moduleinst="BMS_SEGMENT7" port="ISOSPI-M_IN"/>
+<wire x1="30.48" y1="-66.04" x2="27.94" y2="-66.04" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<portref moduleinst="BMS_SEGMENT8" port="ISOSPI-P_IN"/>
+<wire x1="137.16" y1="-63.5" x2="134.62" y2="-63.5" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<portref moduleinst="BMS_SEGMENT8" port="ISOSPI-M_IN"/>
+<wire x1="137.16" y1="-66.04" x2="134.62" y2="-66.04" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="B$4" class="0">
+<segment>
 <portref moduleinst="BMS_SEGMENT1" port="ISOSPI-P_IN"/>
 <wire x1="-193.04" y1="86.36" x2="-190.5" y2="86.36" width="0.1524" layer="91"/>
-<portref moduleinst="BMS_MICROCONTROLLER1" port="ISOSPI-P"/>
-<wire x1="-193.04" y1="99.06" x2="-157.48" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="-157.48" y1="99.06" x2="-157.48" y2="114.3" width="0.1524" layer="91"/>
 </segment>
-</net>
-<net name="N$63" class="0">
 <segment>
 <portref moduleinst="BMS_SEGMENT1" port="ISOSPI-M_IN"/>
-<wire x1="-195.58" y1="83.82" x2="-190.5" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="-195.58" y1="83.82" x2="-195.58" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="-190.5" y1="83.82" x2="-193.04" y2="83.82" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="B$5" class="0">
+<segment>
+<portref moduleinst="BMS_SEGMENT6" port="ISOSPI-P_OUT"/>
+<wire x1="198.12" y1="86.36" x2="200.66" y2="86.36" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<portref moduleinst="BMS_SEGMENT6" port="ISOSPI-M_OUT"/>
+<wire x1="198.12" y1="83.82" x2="200.66" y2="83.82" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<portref moduleinst="BMS_SEGMENT3" port="ISOSPI-P_IN"/>
+<wire x1="-193.04" y1="-63.5" x2="-190.5" y2="-63.5" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<portref moduleinst="BMS_SEGMENT3" port="ISOSPI-M_IN"/>
+<wire x1="-193.04" y1="-66.04" x2="-190.5" y2="-66.04" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<portref moduleinst="BMS_MICROCONTROLLER1" port="CANH_IN"/>
+<wire x1="-289.56" y1="-35.56" x2="-287.02" y2="-35.56" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<portref moduleinst="BMS_MICROCONTROLLER1" port="CANL_IN"/>
+<wire x1="-287.02" y1="-38.1" x2="-289.56" y2="-38.1" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<portref moduleinst="BMS_MICROCONTROLLER1" port="GND_IN"/>
+<wire x1="-287.02" y1="-40.64" x2="-289.56" y2="-40.64" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<portref moduleinst="BMS_MICROCONTROLLER1" port="12V_SUPPLY_IN"/>
+<wire x1="-287.02" y1="-43.18" x2="-289.56" y2="-43.18" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="B$3" class="0">
+<segment>
+<portref moduleinst="BMS_MICROCONTROLLER1" port="ISOSPI-P"/>
+<wire x1="-264.16" y1="-10.16" x2="-264.16" y2="-7.62" width="0.1524" layer="91"/>
+</segment>
+<segment>
 <portref moduleinst="BMS_MICROCONTROLLER1" port="ISOPSI-M"/>
-<wire x1="-195.58" y1="101.6" x2="-160.02" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="-160.02" y1="101.6" x2="-160.02" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="-261.62" y1="-10.16" x2="-261.62" y2="-7.62" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="B$6" class="0">
+<segment>
+<portref moduleinst="BMS_MICROCONTROLLER1" port="CANH_OUT"/>
+<wire x1="-236.22" y1="-35.56" x2="-233.68" y2="-35.56" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<portref moduleinst="BMS_MICROCONTROLLER1" port="CANL_OUT"/>
+<wire x1="-236.22" y1="-38.1" x2="-233.68" y2="-38.1" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<portref moduleinst="BMS_MICROCONTROLLER1" port="GND_OUT"/>
+<wire x1="-236.22" y1="-40.64" x2="-233.68" y2="-40.64" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<portref moduleinst="BMS_MICROCONTROLLER1" port="12V_SUPPLY_OUT"/>
+<wire x1="-236.22" y1="-43.18" x2="-233.68" y2="-43.18" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="B$7" class="0">
+<segment>
+<pinref part="CAN/POWER_IN" gate="G$1" pin="4"/>
+<wire x1="-322.58" y1="-35.56" x2="-320.04" y2="-35.56" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="CAN/POWER_IN" gate="G$1" pin="3"/>
+<wire x1="-322.58" y1="-38.1" x2="-320.04" y2="-38.1" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="CAN/POWER_IN" gate="G$1" pin="2"/>
+<wire x1="-322.58" y1="-40.64" x2="-320.04" y2="-40.64" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="CAN/POWER_IN" gate="G$1" pin="1"/>
+<wire x1="-322.58" y1="-43.18" x2="-320.04" y2="-43.18" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="B$8" class="0">
+<segment>
+<pinref part="CAN/POWER_OUT" gate="G$1" pin="4"/>
+<wire x1="-322.58" y1="-53.34" x2="-320.04" y2="-53.34" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="CAN/POWER_OUT" gate="G$1" pin="3"/>
+<wire x1="-322.58" y1="-55.88" x2="-320.04" y2="-55.88" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="CAN/POWER_OUT" gate="G$1" pin="2"/>
+<wire x1="-322.58" y1="-58.42" x2="-320.04" y2="-58.42" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="CAN/POWER_OUT" gate="G$1" pin="1"/>
+<wire x1="-322.58" y1="-60.96" x2="-320.04" y2="-60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
