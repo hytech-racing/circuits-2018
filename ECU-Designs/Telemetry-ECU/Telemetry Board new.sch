@@ -555,9 +555,9 @@ MAX voltage in: 35V</description>
 <devices>
 <device name="LM340MPX-5.0/NOPB" package="SOT223">
 <connects>
-<connect gate="G$1" pin="GND" pad="1"/>
-<connect gate="G$1" pin="IN" pad="3"/>
-<connect gate="G$1" pin="OUT" pad="2 4"/>
+<connect gate="G$1" pin="GND" pad="2 4"/>
+<connect gate="G$1" pin="IN" pad="1"/>
+<connect gate="G$1" pin="OUT" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -565,9 +565,9 @@ MAX voltage in: 35V</description>
 </device>
 <device name="LM340T-5.0/NOPB" package="TO-220">
 <connects>
-<connect gate="G$1" pin="GND" pad="1"/>
-<connect gate="G$1" pin="IN" pad="3"/>
-<connect gate="G$1" pin="OUT" pad="2"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="IN" pad="1"/>
+<connect gate="G$1" pin="OUT" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -575,9 +575,9 @@ MAX voltage in: 35V</description>
 </device>
 <device name="LM340T-5.0/NOPB_SINK" package="TO-220-SINK">
 <connects>
-<connect gate="G$1" pin="GND" pad="1"/>
-<connect gate="G$1" pin="IN" pad="3"/>
-<connect gate="G$1" pin="OUT" pad="2"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="IN" pad="1"/>
+<connect gate="G$1" pin="OUT" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
