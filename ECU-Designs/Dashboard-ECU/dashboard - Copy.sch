@@ -256,6 +256,29 @@ Source: http://www.molex.com</description>
 <pad name="2" x="0" y="0" drill="1" diameter="1.8796"/>
 <pad name="3" x="2.54" y="0" drill="1" diameter="1.8796"/>
 </package>
+<package name="SOT223">
+<description>&lt;b&gt;SOT-223&lt;/b&gt;
+&lt;br&gt;
+&lt;a href="https://github.com/sparkfun/SparkFun-Eagle-Libraries"&gt;Source: Sparkfun Eagle Library</description>
+<wire x1="3.2766" y1="1.651" x2="3.2766" y2="-1.651" width="0.2032" layer="21"/>
+<wire x1="3.2766" y1="-1.651" x2="-3.2766" y2="-1.651" width="0.2032" layer="21"/>
+<wire x1="-3.2766" y1="-1.651" x2="-3.2766" y2="1.651" width="0.2032" layer="21"/>
+<wire x1="-3.2766" y1="1.651" x2="3.2766" y2="1.651" width="0.2032" layer="21"/>
+<rectangle x1="-1.6002" y1="1.8034" x2="1.6002" y2="3.6576" layer="51"/>
+<rectangle x1="-0.4318" y1="-3.6576" x2="0.4318" y2="-1.8034" layer="51"/>
+<rectangle x1="-2.7432" y1="-3.6576" x2="-1.8796" y2="-1.8034" layer="51"/>
+<rectangle x1="1.8796" y1="-3.6576" x2="2.7432" y2="-1.8034" layer="51"/>
+<rectangle x1="-1.6002" y1="1.8034" x2="1.6002" y2="3.6576" layer="51"/>
+<rectangle x1="-0.4318" y1="-3.6576" x2="0.4318" y2="-1.8034" layer="51"/>
+<rectangle x1="-2.7432" y1="-3.6576" x2="-1.8796" y2="-1.8034" layer="51"/>
+<rectangle x1="1.8796" y1="-3.6576" x2="2.7432" y2="-1.8034" layer="51"/>
+<smd name="1" x="-2.3114" y="-3.0988" dx="1.2192" dy="2.2352" layer="1"/>
+<smd name="2" x="0" y="-3.0988" dx="1.2192" dy="2.2352" layer="1"/>
+<smd name="3" x="2.3114" y="-3.0988" dx="1.2192" dy="2.2352" layer="1"/>
+<smd name="4" x="0" y="3.099" dx="3.6" dy="2.2" layer="1"/>
+<text x="-0.8255" y="4.5085" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-1.0795" y="-0.1905" size="0.4064" layer="27">&gt;VALUE</text>
+</package>
 <package name="TO-220">
 <pad name="1" x="-2.54" y="0" drill="1" diameter="1.8796" shape="square"/>
 <pad name="2" x="0" y="0" drill="1" diameter="1.8796"/>
@@ -581,10 +604,6 @@ Yageo CFR series &lt;a href="http://www.yageo.com/pdf/yageo/Leaded-R_CFR_2008.pd
 <wire x1="4.9022" y1="-1.8542" x2="4.9022" y2="1.7272" width="0.1524" layer="21"/>
 <wire x1="4.9022" y1="1.7272" x2="-4.9022" y2="1.7272" width="0.1524" layer="21"/>
 <wire x1="-4.9022" y1="1.7272" x2="-4.9022" y2="-1.8542" width="0.1524" layer="21"/>
-<wire x1="-5.144" y1="3.601" x2="-5.144" y2="-3.601" width="0.2" layer="39"/>
-<wire x1="-5.144" y1="-3.601" x2="5.144" y2="-3.601" width="0.2" layer="39"/>
-<wire x1="5.144" y1="-3.601" x2="5.144" y2="3.601" width="0.2" layer="39"/>
-<wire x1="5.144" y1="3.601" x2="-5.144" y2="3.601" width="0.2" layer="39"/>
 <circle x="-4.1148" y="-1.016" radius="0.5334" width="0.1524" layer="21"/>
 <smd name="1" x="-4.445" y="-2.794" dx="0.6096" dy="1.524" layer="1"/>
 <smd name="16" x="-4.445" y="2.667" dx="0.6096" dy="1.524" layer="1"/>
@@ -859,21 +878,32 @@ Source: http://www.molex.com</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="5V_REGULATOR_L7805" prefix="IC" uservalue="yes">
+<deviceset name="5V_REGULATOR_LM340-N" uservalue="yes">
 <description>&lt;b&gt;Voltage Regulator&lt;/b&gt;
 
-&lt;p&gt;Switching 5v regulator
+&lt;p&gt;5v linear voltage regulator
 
-&lt;a href="http://power.murata.com/data/power/oki-78sr.pdf"&gt;Datasheet &lt;/a&gt;
+&lt;a href="http://www.mouser.com/ProductDetail/Texas-Instruments/LM340MPX-50-NOPB/?qs=X1J7HmVL2ZGZwtTFRQ9ItA%3D%3D"&gt;Datasheet &lt;/a&gt;
 &lt;br&gt;
 &lt;br&gt;
-Standard 7805 5V regulator. IGO (Input Ground Output). Spark Fun Electronics SKU : COM-00107
-&lt;a href="http://www.mouser.com/ds/2/308/MC7800-D-94905.pdf"&gt;Datasheet&lt;/a&gt;</description>
+MAX current out: 1.5A
+&lt;br&gt;
+MAX voltage in: 35V</description>
 <gates>
-<gate name="G$1" symbol="VOLTAGE_REGULATOR" x="0" y="0"/>
+<gate name="G$1" symbol="VOLTAGE_REGULATOR" x="5.08" y="5.08"/>
 </gates>
 <devices>
-<device name="LINEAR" package="TO-220-SINK">
+<device name="LM340MPX-5.0/NOPB" package="SOT223">
+<connects>
+<connect gate="G$1" pin="GND" pad="2 4"/>
+<connect gate="G$1" pin="IN" pad="1"/>
+<connect gate="G$1" pin="OUT" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="LM340T-5.0/NOPB" package="TO-220">
 <connects>
 <connect gate="G$1" pin="GND" pad="2"/>
 <connect gate="G$1" pin="IN" pad="1"/>
@@ -883,7 +913,7 @@ Standard 7805 5V regulator. IGO (Input Ground Output). Spark Fun Electronics SKU
 <technology name=""/>
 </technologies>
 </device>
-<device name="SWITCHING" package="TO-220">
+<device name="LM340T-5.0/NOPB_SINK" package="TO-220-SINK">
 <connects>
 <connect gate="G$1" pin="GND" pad="2"/>
 <connect gate="G$1" pin="IN" pad="1"/>
@@ -1365,7 +1395,7 @@ It is replaced by MCP2561.
 <part name="TOBUTTONS" library="HyTechDevices" deviceset="MINIFIT_5566-4" device=""/>
 <part name="TOLEDS" library="HyTechDevices" deviceset="MINIFIT_5566-4" device=""/>
 <part name="U$1" library="HyTechDevices" deviceset="TEENSY_3.2_SIMPLE" device=""/>
-<part name="IC1" library="HyTechDevices" deviceset="5V_REGULATOR_L7805" device="SWITCHING"/>
+<part name="IC1" library="HyTechDevices" deviceset="5V_REGULATOR_LM340-N" device="LM340MPX-5.0/NOPB"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
