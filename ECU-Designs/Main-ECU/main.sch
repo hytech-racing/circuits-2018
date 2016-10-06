@@ -1853,6 +1853,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <pinref part="R5" gate="G$1" pin="1"/>
 <wire x1="152.4" y1="45.72" x2="152.4" y2="35.56" width="0.1524" layer="91"/>
 <junction x="152.4" y="35.56"/>
+<label x="10.16" y="7.62" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CANL" class="0">
