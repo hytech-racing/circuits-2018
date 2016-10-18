@@ -858,24 +858,36 @@ Source: Sonnenschein</description>
 </sheet>
 </sheets>
 </module>
-<module name="DASHBOARD_ECU" prefix="" dx="35.56" dy="40.64">
+<module name="DASHBOARD_ECU" prefix="" dx="35.56" dy="50.8">
 <ports>
 <port name="CANL_1" side="top" coord="-10.16" direction="io"/>
 <port name="CANL_2" side="bottom" coord="-10.16" direction="io"/>
 <port name="CANH_2" side="bottom" coord="-7.62" direction="io"/>
 <port name="CANH_1" side="top" coord="-7.62" direction="io"/>
-<port name="RTDS_POWER" side="right" coord="17.78" direction="out"/>
-<port name="LED_BMS" side="right" coord="15.24" direction="out"/>
-<port name="LED_IMD" side="right" coord="12.7" direction="out"/>
-<port name="BUTTON_START" side="right" coord="-10.16" direction="in"/>
-<port name="BUTTON_TOGGLE" side="right" coord="-7.62" direction="in"/>
-<port name="BUTTON_BOOST" side="right" coord="-5.08" direction="in"/>
-<port name="BUTTON_SELECT" side="right" coord="-2.54" direction="in"/>
-<port name="LED_POWER" side="right" coord="10.16" direction="out"/>
+<port name="RTDS_POWER" side="top" coord="-2.54" direction="out"/>
+<port name="LED_BMS" side="top" coord="2.54" direction="out"/>
+<port name="LED_IMD" side="top" coord="5.08" direction="out"/>
+<port name="BUTTON_START" side="right" coord="-22.86" direction="in"/>
+<port name="BUTTON_TOGGLE" side="right" coord="-15.24" direction="in"/>
+<port name="BUTTON_BOOST" side="right" coord="-20.32" direction="in"/>
+<port name="BUTTON_SELECT" side="right" coord="-12.7" direction="in"/>
+<port name="LED_POWER" side="top" coord="0" direction="out"/>
 <port name="GND_1" side="top" coord="-12.7" direction="in"/>
 <port name="12VSUPPLY_1" side="top" coord="-15.24" direction="out"/>
 <port name="GND_2" side="bottom" coord="-12.7" direction="out"/>
 <port name="12VSUPPLY_2" side="bottom" coord="-15.24" direction="in"/>
+<port name="12VSUPPLY" side="right" coord="10.16" direction="out"/>
+<port name="BUTTON_MARK" side="right" coord="-17.78" direction="in"/>
+<port name="LED_BSPD" side="top" coord="7.62" direction="in"/>
+<port name="LED_START" side="top" coord="10.16" direction="in"/>
+<port name="LED_BOOST" side="top" coord="12.7" direction="in"/>
+<port name="LED_MARK" side="top" coord="15.24" direction="in"/>
+<port name="PI_SI" side="right" coord="0" direction="io"/>
+<port name="PI_SO" side="right" coord="-2.54" direction="io"/>
+<port name="PI_SCK" side="right" coord="-5.08" direction="io"/>
+<port name="PI_CS" side="right" coord="-7.62" direction="io"/>
+<port name="PI_5VSUPPLY" side="right" coord="7.62" direction="out"/>
+<port name="PI_GND" side="right" coord="5.08" direction="in"/>
 </ports>
 <variantdefs>
 </variantdefs>
@@ -1041,14 +1053,37 @@ Source: Sonnenschein</description>
 </sheet>
 </sheets>
 </module>
+<module name="RASPBERRY_PI" prefix="" dx="30.48" dy="17.78">
+<ports>
+<port name="5V" side="left" coord="7.62" direction="in"/>
+<port name="GND" side="left" coord="5.08" direction="out"/>
+<port name="SI" side="left" coord="0" direction="io"/>
+<port name="SO" side="left" coord="-2.54" direction="io"/>
+<port name="SCK" side="left" coord="-5.08" direction="io"/>
+<port name="CS" side="left" coord="-7.62" direction="io"/>
+</ports>
+<variantdefs>
+</variantdefs>
+<parts>
+</parts>
+<sheets>
+<sheet>
+<plain>
+</plain>
+<instances>
+</instances>
+<busses>
+</busses>
+<nets>
+</nets>
+</sheet>
+</sheets>
+</module>
 </modules>
 <parts>
 <part name="RTDS" library="HyTechSymbols" deviceset="BUZZER" device=""/>
-<part name="GND1" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="LED_BMS" library="HyTechSymbols" deviceset="LED" device=""/>
 <part name="LED_IMD" library="HyTechSymbols" deviceset="LED" device=""/>
-<part name="GND2" library="HyTechSymbols" deviceset="GND" device=""/>
-<part name="GND3" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="PED1" library="HyTechSymbols" deviceset="POTENTIOMETER" device=""/>
 <part name="PED2" library="HyTechSymbols" deviceset="POTENTIOMETER" device=""/>
 <part name="PED3" library="HyTechSymbols" deviceset="POTENTIOMETER" device=""/>
@@ -1116,7 +1151,6 @@ Source: Sonnenschein</description>
 <part name="BP6" library="HyTechSymbols" deviceset="BANANA_JACK" device=""/>
 <part name="GND4" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="LED_POWER" library="HyTechSymbols" deviceset="LED" device=""/>
-<part name="GND24" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="SL10" library="HyTechSymbols" deviceset="M04" device=""/>
 <part name="SL12" library="HyTechSymbols" deviceset="M04" device=""/>
 <part name="GND6" library="HyTechSymbols" deviceset="GND" device=""/>
@@ -1144,6 +1178,12 @@ Source: Sonnenschein</description>
 <part name="GND23" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="SL4" library="HyTechSymbols" deviceset="M11" device=""/>
 <part name="SL2" library="HyTechSymbols" deviceset="M11" device=""/>
+<part name="BUTTON_MARK" library="HyTechSymbols" deviceset="SWITCH_SPST_MOM" device=""/>
+<part name="GND1" library="HyTechSymbols" deviceset="GND" device=""/>
+<part name="LED_BSPD" library="HyTechSymbols" deviceset="LED" device=""/>
+<part name="LED_START" library="HyTechSymbols" deviceset="LED" device=""/>
+<part name="LED_BOOST" library="HyTechSymbols" deviceset="LED" device=""/>
+<part name="LED_MARK" library="HyTechSymbols" deviceset="LED" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1155,7 +1195,6 @@ Source: Sonnenschein</description>
 <text x="198.12" y="104.14" size="5.08" layer="91">GLV Battery Box</text>
 <text x="350.52" y="195.58" size="1.778" layer="91">todo add BMS</text>
 <text x="350.52" y="190.5" size="1.778" layer="91">todo add canbus</text>
-<text x="254" y="27.94" size="1.778" layer="91">todo add main power relay?</text>
 <text x="190.5" y="33.02" size="1.778" layer="91" rot="R90">Possible location of Samsung Galaxy</text>
 <text x="314.96" y="114.3" size="1.778" layer="91">Does this need to be isolated from TS?</text>
 <text x="370.84" y="114.3" size="1.778" layer="91">See FH EV12.2.15 </text>
@@ -1164,12 +1203,12 @@ Source: Sonnenschein</description>
 <moduleinst name="PEDAL_BOX_ECU1" module="PEDAL_BOX_ECU" x="795.02" y="162.56" smashed="yes">
 <attribute name="NAME" x="795.02" y="160.02" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
-<moduleinst name="WHEEL_TELEMETRY_ECU1" module="WHEEL_TELEMETRY_ECU" x="718.82" y="243.84" smashed="yes">
-<attribute name="NAME" x="718.82" y="236.22" size="2.032" layer="95" align="bottom-center"/>
+<moduleinst name="WHEEL_TELEMETRY_ECU1" module="WHEEL_TELEMETRY_ECU" x="718.82" y="251.46" smashed="yes">
+<attribute name="NAME" x="718.82" y="243.84" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
-<moduleinst name="DASHBOARD_ECU1" module="DASHBOARD_ECU" x="624.84" y="165.1"/>
-<moduleinst name="WHEEL_TELEMETRY_ECU2" module="WHEEL_TELEMETRY_ECU" x="718.82" y="91.44" smashed="yes" rot="R180">
-<attribute name="NAME" x="718.82" y="99.06" size="2.032" layer="95" rot="R180" align="bottom-center"/>
+<moduleinst name="DASHBOARD_ECU1" module="DASHBOARD_ECU" x="624.84" y="162.56"/>
+<moduleinst name="WHEEL_TELEMETRY_ECU2" module="WHEEL_TELEMETRY_ECU" x="718.82" y="78.74" smashed="yes" rot="R180">
+<attribute name="NAME" x="718.82" y="86.36" size="2.032" layer="95" rot="R180" align="bottom-center"/>
 </moduleinst>
 <moduleinst name="MAIN_ECU1" module="MAIN_ECU" x="243.84" y="76.2"/>
 <moduleinst name="COOLING_ECU1" module="COOLING_ECU" x="485.14" y="261.62"/>
@@ -1182,14 +1221,12 @@ Source: Sonnenschein</description>
 <moduleinst name="HV_ECU1" module="HV_ECU" x="317.5" y="167.64"/>
 <moduleinst name="SAMSUNG_GALAXY1" module="SAMSUNG_GALAXY" x="208.28" y="53.34"/>
 <moduleinst name="CUTOFF1" module="CUTOFF" x="373.38" y="25.4"/>
+<moduleinst name="RASPBERRY_PI1" module="RASPBERRY_PI" x="675.64" y="162.56"/>
 </moduleinsts>
 <instances>
-<instance part="RTDS" gate="1" x="637.54" y="190.5" rot="MR0"/>
-<instance part="GND1" gate="1" x="627.38" y="190.5" rot="R270"/>
-<instance part="LED_BMS" gate="G$1" x="657.86" y="182.88" rot="R90"/>
-<instance part="LED_IMD" gate="G$1" x="670.56" y="182.88" rot="R90"/>
-<instance part="GND2" gate="1" x="655.32" y="195.58" rot="R180"/>
-<instance part="GND3" gate="1" x="668.02" y="195.58" rot="R180"/>
+<instance part="RTDS" gate="1" x="721.36" y="195.58" rot="R90"/>
+<instance part="LED_BMS" gate="G$1" x="703.58" y="177.8" rot="R90"/>
+<instance part="LED_IMD" gate="G$1" x="693.42" y="177.8" rot="R90"/>
 <instance part="PED1" gate="G$1" x="835.66" y="187.96" rot="R270"/>
 <instance part="PED2" gate="G$1" x="835.66" y="175.26" rot="R270"/>
 <instance part="PED3" gate="G$1" x="835.66" y="162.56" rot="R270"/>
@@ -1202,9 +1239,9 @@ Source: Sonnenschein</description>
 <instance part="EMRAX_207_MED" gate="G$1" x="36.83" y="165.1" rot="R90"/>
 <instance part="LED1" gate="G$1" x="2.54" y="160.02" rot="R90"/>
 <instance part="GND5" gate="1" x="0" y="172.72" rot="R180"/>
-<instance part="BOTS" gate="SPST" x="756.92" y="213.36" rot="R270"/>
-<instance part="INERTIA_SW" gate="SPST" x="647.7" y="213.36" rot="R270"/>
-<instance part="COCKPIT_BRB" gate="SPST" x="627.38" y="213.36" rot="R270"/>
+<instance part="BOTS" gate="SPST" x="756.92" y="223.52" rot="R270"/>
+<instance part="INERTIA_SW" gate="SPST" x="647.7" y="223.52" rot="R270"/>
+<instance part="COCKPIT_BRB" gate="SPST" x="627.38" y="223.52" rot="R270"/>
 <instance part="FH_BMS_TEST_PORT" gate="G$1" x="391.16" y="76.2" rot="MR180"/>
 <instance part="RIGHT_TSVP" gate="G$1" x="424.18" y="81.28" rot="R270"/>
 <instance part="LEFT_TSVP" gate="G$1" x="421.64" y="332.74"/>
@@ -1226,14 +1263,14 @@ Source: Sonnenschein</description>
 <instance part="GND11" gate="1" x="439.42" y="195.58" rot="R180"/>
 <instance part="MOLEX_IMPERIUM_2" gate="G$1" x="180.34" y="208.28" rot="R180"/>
 <instance part="MOLEX_IMPERIUM_1" gate="G$1" x="190.5" y="205.74"/>
-<instance part="BUTTON_START" gate="SPST_MOM" x="652.78" y="147.32" rot="R180"/>
-<instance part="BUTTON_TOGGLE" gate="SPST_MOM" x="665.48" y="147.32" rot="R180"/>
-<instance part="BUTTON_BOOST" gate="SPST_MOM" x="678.18" y="147.32" rot="R180"/>
-<instance part="BUTTON_SELECT" gate="SPST_MOM" x="690.88" y="147.32" rot="R180"/>
-<instance part="GND12" gate="1" x="652.78" y="137.16" rot="R90"/>
-<instance part="GND13" gate="1" x="665.48" y="137.16" rot="R90"/>
-<instance part="GND14" gate="1" x="678.18" y="137.16" rot="R90"/>
-<instance part="GND15" gate="1" x="690.88" y="137.16" rot="R90"/>
+<instance part="BUTTON_START" gate="SPST_MOM" x="652.78" y="129.54" rot="R180"/>
+<instance part="BUTTON_TOGGLE" gate="SPST_MOM" x="690.88" y="129.54" rot="R180"/>
+<instance part="BUTTON_BOOST" gate="SPST_MOM" x="665.48" y="129.54" rot="R180"/>
+<instance part="BUTTON_SELECT" gate="SPST_MOM" x="703.58" y="129.54" rot="R180"/>
+<instance part="GND12" gate="1" x="652.78" y="119.38" rot="R90"/>
+<instance part="GND13" gate="1" x="690.88" y="119.38" rot="R90"/>
+<instance part="GND14" gate="1" x="665.48" y="119.38" rot="R90"/>
+<instance part="GND15" gate="1" x="703.58" y="119.38" rot="R90"/>
 <instance part="SL3" gate="G$1" x="180.34" y="175.26" rot="R180"/>
 <instance part="U$2" gate="G$1" x="215.9" y="144.78"/>
 <instance part="GND16" gate="1" x="269.24" y="170.18" rot="R180"/>
@@ -1262,8 +1299,7 @@ Source: Sonnenschein</description>
 <instance part="BP5" gate="G$1" x="289.56" y="33.02"/>
 <instance part="BP6" gate="G$1" x="299.72" y="33.02" rot="R180"/>
 <instance part="GND4" gate="1" x="317.5" y="38.1" rot="R90"/>
-<instance part="LED_POWER" gate="G$1" x="683.26" y="182.88" rot="R90"/>
-<instance part="GND24" gate="1" x="680.72" y="195.58" rot="R180"/>
+<instance part="LED_POWER" gate="G$1" x="713.74" y="177.8" rot="R90"/>
 <instance part="SL10" gate="G$1" x="302.26" y="71.12"/>
 <instance part="SL12" gate="G$1" x="287.02" y="73.66" rot="R180"/>
 <instance part="GND6" gate="1" x="347.98" y="172.72" rot="R90"/>
@@ -1291,35 +1327,41 @@ Source: Sonnenschein</description>
 <instance part="GND23" gate="1" x="233.68" y="220.98"/>
 <instance part="SL4" gate="G$1" x="411.48" y="139.7" rot="R90"/>
 <instance part="SL2" gate="G$1" x="411.48" y="124.46" rot="R270"/>
+<instance part="BUTTON_MARK" gate="SPST_MOM" x="678.18" y="129.54" rot="R180"/>
+<instance part="GND1" gate="1" x="678.18" y="119.38" rot="R90"/>
+<instance part="LED_BSPD" gate="G$1" x="683.26" y="177.8" rot="R90"/>
+<instance part="LED_START" gate="G$1" x="673.1" y="177.8" rot="R90"/>
+<instance part="LED_BOOST" gate="G$1" x="662.94" y="177.8" rot="R90"/>
+<instance part="LED_MARK" gate="G$1" x="652.78" y="177.8" rot="R90"/>
 </instances>
 <busses>
 <bus name="12VSUPPLY,GND,CANL,CANH">
 <segment>
-<wire x1="609.6" y1="193.04" x2="613.41" y2="193.04" width="0.762" layer="92"/>
-<wire x1="613.41" y1="193.04" x2="617.22" y2="193.04" width="0.762" layer="92"/>
-<wire x1="613.41" y1="193.04" x2="613.41" y2="229.87" width="0.762" layer="92"/>
-<wire x1="688.34" y1="233.68" x2="688.34" y2="229.87" width="0.762" layer="92"/>
-<wire x1="688.34" y1="229.87" x2="688.34" y2="226.06" width="0.762" layer="92"/>
-<wire x1="613.41" y1="229.87" x2="688.34" y2="229.87" width="0.762" layer="92"/>
-<label x="635" y="231.14" size="1.778" layer="95"/>
+<wire x1="609.6" y1="195.58" x2="613.41" y2="195.58" width="0.762" layer="92"/>
+<wire x1="613.41" y1="195.58" x2="617.22" y2="195.58" width="0.762" layer="92"/>
+<wire x1="613.41" y1="195.58" x2="613.41" y2="237.49" width="0.762" layer="92"/>
+<wire x1="688.34" y1="241.3" x2="688.34" y2="237.49" width="0.762" layer="92"/>
+<wire x1="688.34" y1="237.49" x2="688.34" y2="233.68" width="0.762" layer="92"/>
+<wire x1="613.41" y1="237.49" x2="688.34" y2="237.49" width="0.762" layer="92"/>
+<label x="635" y="238.76" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="749.3" y1="233.68" x2="749.3" y2="229.87" width="0.762" layer="92"/>
-<wire x1="749.3" y1="229.87" x2="749.3" y2="226.06" width="0.762" layer="92"/>
+<wire x1="749.3" y1="241.3" x2="749.3" y2="237.49" width="0.762" layer="92"/>
+<wire x1="749.3" y1="237.49" x2="749.3" y2="233.68" width="0.762" layer="92"/>
 <wire x1="782.32" y1="195.58" x2="786.13" y2="195.58" width="0.762" layer="92"/>
 <wire x1="786.13" y1="195.58" x2="789.94" y2="195.58" width="0.762" layer="92"/>
-<wire x1="749.3" y1="229.87" x2="786.13" y2="229.87" width="0.762" layer="92"/>
-<wire x1="786.13" y1="229.87" x2="786.13" y2="195.58" width="0.762" layer="92"/>
-<label x="751.84" y="231.14" size="1.778" layer="95"/>
+<wire x1="749.3" y1="237.49" x2="786.13" y2="237.49" width="0.762" layer="92"/>
+<wire x1="786.13" y1="237.49" x2="786.13" y2="195.58" width="0.762" layer="92"/>
+<label x="751.84" y="238.76" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="782.32" y1="129.54" x2="786.13" y2="129.54" width="0.762" layer="92"/>
 <wire x1="786.13" y1="129.54" x2="789.94" y2="129.54" width="0.762" layer="92"/>
-<wire x1="749.3" y1="109.22" x2="749.3" y2="105.41" width="0.762" layer="92"/>
-<wire x1="749.3" y1="105.41" x2="749.3" y2="101.6" width="0.762" layer="92"/>
-<wire x1="786.13" y1="129.54" x2="786.13" y2="105.41" width="0.762" layer="92"/>
-<wire x1="786.13" y1="105.41" x2="749.3" y2="105.41" width="0.762" layer="92"/>
-<label x="751.84" y="106.68" size="1.778" layer="95"/>
+<wire x1="749.3" y1="96.52" x2="749.3" y2="92.71" width="0.762" layer="92"/>
+<wire x1="749.3" y1="92.71" x2="749.3" y2="88.9" width="0.762" layer="92"/>
+<wire x1="786.13" y1="129.54" x2="786.13" y2="92.71" width="0.762" layer="92"/>
+<wire x1="786.13" y1="92.71" x2="749.3" y2="92.71" width="0.762" layer="92"/>
+<label x="751.84" y="93.98" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="309.88" y1="93.98" x2="309.88" y2="90.17" width="0.762" layer="92"/>
@@ -1327,9 +1369,9 @@ Source: Sonnenschein</description>
 <wire x1="309.88" y1="90.17" x2="334.01" y2="90.17" width="0.762" layer="92"/>
 <wire x1="334.01" y1="90.17" x2="334.01" y2="104.14" width="0.762" layer="92"/>
 <wire x1="334.01" y1="104.14" x2="613.41" y2="104.14" width="0.762" layer="92"/>
-<wire x1="609.6" y1="137.16" x2="613.41" y2="137.16" width="0.762" layer="92"/>
-<wire x1="613.41" y1="137.16" x2="617.22" y2="137.16" width="0.762" layer="92"/>
-<wire x1="613.41" y1="104.14" x2="613.41" y2="137.16" width="0.762" layer="92"/>
+<wire x1="609.6" y1="129.54" x2="613.41" y2="129.54" width="0.762" layer="92"/>
+<wire x1="613.41" y1="129.54" x2="617.22" y2="129.54" width="0.762" layer="92"/>
+<wire x1="613.41" y1="104.14" x2="613.41" y2="129.54" width="0.762" layer="92"/>
 <label x="513.08" y="106.68" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -1383,31 +1425,16 @@ Source: Sonnenschein</description>
 <nets>
 <net name="GND" class="0">
 <segment>
-<pinref part="RTDS" gate="1" pin="2"/>
-<pinref part="GND1" gate="1" pin="GND"/>
-<wire x1="629.92" y1="190.5" x2="632.46" y2="190.5" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="LED_BMS" gate="G$1" pin="C"/>
-<pinref part="GND2" gate="1" pin="GND"/>
-<wire x1="655.32" y1="193.04" x2="655.32" y2="190.5" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="LED_IMD" gate="G$1" pin="C"/>
-<pinref part="GND3" gate="1" pin="GND"/>
-<wire x1="668.02" y1="193.04" x2="668.02" y2="190.5" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <portref moduleinst="WHEEL_TELEMETRY_ECU1" port="GND_1"/>
-<wire x1="690.88" y1="231.14" x2="688.34" y2="231.14" width="0.1524" layer="91"/>
+<wire x1="690.88" y1="238.76" x2="688.34" y2="238.76" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <portref moduleinst="WHEEL_TELEMETRY_ECU1" port="GND_2"/>
-<wire x1="749.3" y1="231.14" x2="746.76" y2="231.14" width="0.1524" layer="91"/>
+<wire x1="749.3" y1="238.76" x2="746.76" y2="238.76" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <portref moduleinst="WHEEL_TELEMETRY_ECU2" port="GND_1"/>
-<wire x1="746.76" y1="104.14" x2="749.3" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="746.76" y1="91.44" x2="749.3" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <portref moduleinst="WHEEL_TELEMETRY_ECU4" port="GND_1"/>
@@ -1473,22 +1500,22 @@ Source: Sonnenschein</description>
 <segment>
 <pinref part="BUTTON_START" gate="SPST_MOM" pin="S"/>
 <pinref part="GND12" gate="1" pin="GND"/>
-<wire x1="650.24" y1="137.16" x2="650.24" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="650.24" y1="119.38" x2="650.24" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="BUTTON_TOGGLE" gate="SPST_MOM" pin="S"/>
 <pinref part="GND13" gate="1" pin="GND"/>
-<wire x1="662.94" y1="137.16" x2="662.94" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="688.34" y1="119.38" x2="688.34" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="BUTTON_BOOST" gate="SPST_MOM" pin="S"/>
 <pinref part="GND14" gate="1" pin="GND"/>
-<wire x1="675.64" y1="137.16" x2="675.64" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="662.94" y1="119.38" x2="662.94" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="BUTTON_SELECT" gate="SPST_MOM" pin="S"/>
 <pinref part="GND15" gate="1" pin="GND"/>
-<wire x1="688.34" y1="137.16" x2="688.34" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="701.04" y1="119.38" x2="701.04" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="P1-GND"/>
@@ -1531,17 +1558,8 @@ Source: Sonnenschein</description>
 <junction x="231.14" y="43.18"/>
 </segment>
 <segment>
-<pinref part="GND24" gate="1" pin="GND"/>
-<pinref part="LED_POWER" gate="G$1" pin="C"/>
-<wire x1="680.72" y1="193.04" x2="680.72" y2="190.5" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <portref moduleinst="DASHBOARD_ECU1" port="GND_1"/>
-<wire x1="612.14" y1="190.5" x2="612.14" y2="193.04" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<portref moduleinst="DASHBOARD_ECU1" port="GND_2"/>
-<wire x1="612.14" y1="139.7" x2="612.14" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="612.14" y1="195.58" x2="612.14" y2="193.04" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <portref moduleinst="HV_ECU1" port="GND"/>
@@ -1582,21 +1600,14 @@ Source: Sonnenschein</description>
 <pinref part="GND23" gate="1" pin="GND"/>
 <wire x1="233.68" y1="223.52" x2="233.68" y2="226.06" width="0.1524" layer="91"/>
 </segment>
-</net>
-<net name="N$1" class="0">
 <segment>
-<portref moduleinst="DASHBOARD_ECU1" port="RTDS_POWER"/>
-<wire x1="647.7" y1="182.88" x2="647.7" y2="190.5" width="0.1524" layer="91"/>
-<pinref part="RTDS" gate="1" pin="1"/>
-<wire x1="647.7" y1="190.5" x2="642.62" y2="190.5" width="0.1524" layer="91"/>
+<pinref part="BUTTON_MARK" gate="SPST_MOM" pin="S"/>
+<pinref part="GND1" gate="1" pin="GND"/>
+<wire x1="675.64" y1="119.38" x2="675.64" y2="124.46" width="0.1524" layer="91"/>
 </segment>
-</net>
-<net name="N$3" class="0">
 <segment>
-<portref moduleinst="DASHBOARD_ECU1" port="LED_IMD"/>
-<wire x1="647.7" y1="177.8" x2="668.02" y2="177.8" width="0.1524" layer="91"/>
-<pinref part="LED_IMD" gate="G$1" pin="A"/>
-<wire x1="668.02" y1="177.8" x2="668.02" y2="182.88" width="0.1524" layer="91"/>
+<portref moduleinst="DASHBOARD_ECU1" port="GND_2"/>
+<wire x1="612.14" y1="132.08" x2="612.14" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -1687,15 +1698,15 @@ Source: Sonnenschein</description>
 <net name="12VSUPPLY" class="0">
 <segment>
 <portref moduleinst="WHEEL_TELEMETRY_ECU1" port="12VSUPPLY_1"/>
-<wire x1="690.88" y1="233.68" x2="688.34" y2="233.68" width="0.1524" layer="91"/>
+<wire x1="690.88" y1="241.3" x2="688.34" y2="241.3" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <portref moduleinst="WHEEL_TELEMETRY_ECU1" port="12VSUPPLY_2"/>
-<wire x1="749.3" y1="233.68" x2="746.76" y2="233.68" width="0.1524" layer="91"/>
+<wire x1="749.3" y1="241.3" x2="746.76" y2="241.3" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <portref moduleinst="WHEEL_TELEMETRY_ECU2" port="12VSUPPLY_1"/>
-<wire x1="746.76" y1="101.6" x2="749.3" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="746.76" y1="88.9" x2="749.3" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <portref moduleinst="WHEEL_TELEMETRY_ECU4" port="12VSUPPLY_1"/>
@@ -1766,33 +1777,29 @@ Source: Sonnenschein</description>
 </segment>
 <segment>
 <portref moduleinst="DASHBOARD_ECU1" port="12VSUPPLY_1"/>
-<wire x1="609.6" y1="190.5" x2="609.6" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="609.6" y1="195.58" x2="609.6" y2="193.04" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <portref moduleinst="DASHBOARD_ECU1" port="12VSUPPLY_2"/>
-<wire x1="609.6" y1="139.7" x2="609.6" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="609.6" y1="132.08" x2="609.6" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="CANH" class="0">
 <segment>
 <portref moduleinst="DASHBOARD_ECU1" port="CANH_1"/>
-<wire x1="617.22" y1="190.5" x2="617.22" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="617.22" y1="195.58" x2="617.22" y2="193.04" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <portref moduleinst="WHEEL_TELEMETRY_ECU1" port="CANH_1"/>
-<wire x1="690.88" y1="226.06" x2="688.34" y2="226.06" width="0.1524" layer="91"/>
+<wire x1="690.88" y1="233.68" x2="688.34" y2="233.68" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <portref moduleinst="WHEEL_TELEMETRY_ECU1" port="CANH_2"/>
-<wire x1="746.76" y1="226.06" x2="749.3" y2="226.06" width="0.1524" layer="91"/>
+<wire x1="746.76" y1="233.68" x2="749.3" y2="233.68" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <portref moduleinst="WHEEL_TELEMETRY_ECU2" port="CANH_1"/>
-<wire x1="746.76" y1="109.22" x2="749.3" y2="109.22" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<portref moduleinst="DASHBOARD_ECU1" port="CANH_2"/>
-<wire x1="617.22" y1="139.7" x2="617.22" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="746.76" y1="96.52" x2="749.3" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <portref moduleinst="WHEEL_TELEMETRY_ECU4" port="CANH_1"/>
@@ -1846,27 +1853,27 @@ Source: Sonnenschein</description>
 <pinref part="SL6" gate="G$1" pin="1"/>
 <wire x1="307.34" y1="86.36" x2="309.88" y2="86.36" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<portref moduleinst="DASHBOARD_ECU1" port="CANH_2"/>
+<wire x1="617.22" y1="132.08" x2="617.22" y2="129.54" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="CANL" class="0">
 <segment>
 <portref moduleinst="DASHBOARD_ECU1" port="CANL_1"/>
-<wire x1="614.68" y1="190.5" x2="614.68" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="614.68" y1="195.58" x2="614.68" y2="193.04" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <portref moduleinst="WHEEL_TELEMETRY_ECU1" port="CANL_1"/>
-<wire x1="690.88" y1="228.6" x2="688.34" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="690.88" y1="236.22" x2="688.34" y2="236.22" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <portref moduleinst="WHEEL_TELEMETRY_ECU1" port="CANL_2"/>
-<wire x1="746.76" y1="228.6" x2="749.3" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="746.76" y1="236.22" x2="749.3" y2="236.22" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <portref moduleinst="WHEEL_TELEMETRY_ECU2" port="CANL_1"/>
-<wire x1="746.76" y1="106.68" x2="749.3" y2="106.68" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<portref moduleinst="DASHBOARD_ECU1" port="CANL_2"/>
-<wire x1="614.68" y1="139.7" x2="614.68" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="746.76" y1="93.98" x2="749.3" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <portref moduleinst="WHEEL_TELEMETRY_ECU4" port="CANL_1"/>
@@ -1920,13 +1927,9 @@ Source: Sonnenschein</description>
 <pinref part="SL6" gate="G$1" pin="2"/>
 <wire x1="307.34" y1="88.9" x2="309.88" y2="88.9" width="0.1524" layer="91"/>
 </segment>
-</net>
-<net name="N$2" class="0">
 <segment>
-<pinref part="LED_BMS" gate="G$1" pin="A"/>
-<portref moduleinst="DASHBOARD_ECU1" port="LED_BMS"/>
-<wire x1="647.7" y1="180.34" x2="655.32" y2="180.34" width="0.1524" layer="91"/>
-<wire x1="655.32" y1="180.34" x2="655.32" y2="182.88" width="0.1524" layer="91"/>
+<portref moduleinst="DASHBOARD_ECU1" port="CANL_2"/>
+<wire x1="614.68" y1="132.08" x2="614.68" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$14" class="0">
@@ -2017,26 +2020,26 @@ Source: Sonnenschein</description>
 <segment>
 <pinref part="BOTS" gate="SPST" pin="O"/>
 <portref moduleinst="PEDAL_BOX_ECU1" port="SHUTDOWN_IN"/>
-<wire x1="762" y1="215.9" x2="795.02" y2="215.9" width="0.1524" layer="91"/>
-<wire x1="795.02" y1="215.9" x2="795.02" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="762" y1="226.06" x2="795.02" y2="226.06" width="0.1524" layer="91"/>
+<wire x1="795.02" y1="226.06" x2="795.02" y2="193.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$30" class="0">
 <segment>
 <pinref part="INERTIA_SW" gate="SPST" pin="P"/>
 <pinref part="COCKPIT_BRB" gate="SPST" pin="O"/>
-<wire x1="635" y1="213.36" x2="642.62" y2="213.36" width="0.1524" layer="91"/>
-<wire x1="632.46" y1="215.9" x2="635" y2="215.9" width="0.1524" layer="91"/>
-<wire x1="635" y1="215.9" x2="635" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="635" y1="223.52" x2="642.62" y2="223.52" width="0.1524" layer="91"/>
+<wire x1="632.46" y1="226.06" x2="635" y2="226.06" width="0.1524" layer="91"/>
+<wire x1="635" y1="226.06" x2="635" y2="223.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$31" class="0">
 <segment>
 <pinref part="BOTS" gate="SPST" pin="P"/>
-<wire x1="655.32" y1="213.36" x2="751.84" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="655.32" y1="223.52" x2="751.84" y2="223.52" width="0.1524" layer="91"/>
 <pinref part="INERTIA_SW" gate="SPST" pin="O"/>
-<wire x1="652.78" y1="215.9" x2="655.32" y2="215.9" width="0.1524" layer="91"/>
-<wire x1="655.32" y1="215.9" x2="655.32" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="652.78" y1="226.06" x2="655.32" y2="226.06" width="0.1524" layer="91"/>
+<wire x1="655.32" y1="226.06" x2="655.32" y2="223.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$33" class="0">
@@ -2065,20 +2068,20 @@ Source: Sonnenschein</description>
 </net>
 <net name="SHUTDOWN_CIRCUIT" class="0">
 <segment>
-<wire x1="795.02" y1="119.38" x2="619.76" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="619.76" y1="119.38" x2="619.76" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="795.02" y1="106.68" x2="619.76" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="619.76" y1="106.68" x2="619.76" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="COOLANT_PRESSURE_SW" gate="SPST" pin="P"/>
 <wire x1="619.76" y1="93.98" x2="464.82" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="464.82" y1="93.98" x2="464.82" y2="76.2" width="0.1524" layer="91"/>
-<label x="652.78" y="119.38" size="1.778" layer="95"/>
+<label x="652.78" y="106.68" size="1.778" layer="95"/>
 <label x="513.08" y="93.98" size="1.778" layer="95"/>
 <portref moduleinst="PEDAL_BOX_ECU1" port="SHUTDOWN_OUT"/>
-<wire x1="795.02" y1="132.08" x2="795.02" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="795.02" y1="132.08" x2="795.02" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="COCKPIT_BRB" gate="SPST" pin="P"/>
-<wire x1="622.3" y1="213.36" x2="596.9" y2="213.36" width="0.1524" layer="91"/>
-<wire x1="596.9" y1="213.36" x2="596.9" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="622.3" y1="223.52" x2="596.9" y2="223.52" width="0.1524" layer="91"/>
+<wire x1="596.9" y1="223.52" x2="596.9" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="596.9" y1="96.52" x2="459.74" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="459.74" y1="96.52" x2="459.74" y2="0" width="0.1524" layer="91"/>
 <wire x1="459.74" y1="0" x2="340.36" y2="0" width="0.1524" layer="91"/>
@@ -2207,32 +2210,32 @@ Source: Sonnenschein</description>
 <segment>
 <pinref part="BUTTON_START" gate="SPST_MOM" pin="P"/>
 <portref moduleinst="DASHBOARD_ECU1" port="BUTTON_START"/>
-<wire x1="647.7" y1="154.94" x2="652.78" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="652.78" y1="154.94" x2="652.78" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="647.7" y1="139.7" x2="652.78" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="652.78" y1="139.7" x2="652.78" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$48" class="0">
 <segment>
 <pinref part="BUTTON_TOGGLE" gate="SPST_MOM" pin="P"/>
 <portref moduleinst="DASHBOARD_ECU1" port="BUTTON_TOGGLE"/>
-<wire x1="647.7" y1="157.48" x2="665.48" y2="157.48" width="0.1524" layer="91"/>
-<wire x1="665.48" y1="157.48" x2="665.48" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="647.7" y1="147.32" x2="690.88" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="690.88" y1="147.32" x2="690.88" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$49" class="0">
 <segment>
 <pinref part="BUTTON_BOOST" gate="SPST_MOM" pin="P"/>
 <portref moduleinst="DASHBOARD_ECU1" port="BUTTON_BOOST"/>
-<wire x1="647.7" y1="160.02" x2="678.18" y2="160.02" width="0.1524" layer="91"/>
-<wire x1="678.18" y1="160.02" x2="678.18" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="647.7" y1="142.24" x2="665.48" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="665.48" y1="142.24" x2="665.48" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$50" class="0">
 <segment>
 <pinref part="BUTTON_SELECT" gate="SPST_MOM" pin="P"/>
 <portref moduleinst="DASHBOARD_ECU1" port="BUTTON_SELECT"/>
-<wire x1="647.7" y1="162.56" x2="690.88" y2="162.56" width="0.1524" layer="91"/>
-<wire x1="690.88" y1="162.56" x2="690.88" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="647.7" y1="149.86" x2="703.58" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="703.58" y1="149.86" x2="703.58" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$44" class="0">
@@ -2355,14 +2358,6 @@ Source: Sonnenschein</description>
 <portref moduleinst="MAIN_ECU1" port="BMS_DISCHARGE_OK"/>
 <wire x1="266.7" y1="73.66" x2="281.94" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="SL12" gate="G$1" pin="2"/>
-</segment>
-</net>
-<net name="N$74" class="0">
-<segment>
-<pinref part="LED_POWER" gate="G$1" pin="A"/>
-<portref moduleinst="DASHBOARD_ECU1" port="LED_POWER"/>
-<wire x1="647.7" y1="175.26" x2="680.72" y2="175.26" width="0.1524" layer="91"/>
-<wire x1="680.72" y1="175.26" x2="680.72" y2="182.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$27" class="0">
@@ -2690,10 +2685,10 @@ Source: Sonnenschein</description>
 <segment>
 <wire x1="421.64" y1="119.38" x2="421.64" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="421.64" y1="91.44" x2="622.3" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="622.3" y1="91.44" x2="622.3" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="622.3" y1="116.84" x2="797.56" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="797.56" y1="116.84" x2="797.56" y2="132.08" width="0.1524" layer="91"/>
-<label x="652.78" y="116.84" size="1.778" layer="95"/>
+<wire x1="622.3" y1="91.44" x2="622.3" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="622.3" y1="104.14" x2="797.56" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="797.56" y1="104.14" x2="797.56" y2="132.08" width="0.1524" layer="91"/>
+<label x="652.78" y="104.14" size="1.778" layer="95"/>
 <label x="513.08" y="91.44" size="1.778" layer="95"/>
 <pinref part="SL2" gate="G$1" pin="10"/>
 <portref moduleinst="PEDAL_BOX_ECU1" port="BSPD_CUR_FAULT"/>
@@ -2713,6 +2708,163 @@ Source: Sonnenschein</description>
 <pinref part="SL4" gate="G$1" pin="10"/>
 <wire x1="269.24" y1="147.32" x2="401.32" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="401.32" y1="147.32" x2="401.32" y2="144.78" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<portref moduleinst="DASHBOARD_ECU1" port="RTDS_POWER"/>
+<wire x1="622.3" y1="193.04" x2="622.3" y2="210.82" width="0.1524" layer="91"/>
+<pinref part="RTDS" gate="1" pin="2"/>
+<wire x1="622.3" y1="210.82" x2="721.36" y2="210.82" width="0.1524" layer="91"/>
+<wire x1="721.36" y1="210.82" x2="721.36" y2="200.66" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<portref moduleinst="DASHBOARD_ECU1" port="LED_POWER"/>
+<wire x1="624.84" y1="193.04" x2="624.84" y2="208.28" width="0.1524" layer="91"/>
+<wire x1="624.84" y1="208.28" x2="711.2" y2="208.28" width="0.1524" layer="91"/>
+<wire x1="711.2" y1="208.28" x2="711.2" y2="185.42" width="0.1524" layer="91"/>
+<pinref part="LED_POWER" gate="G$1" pin="C"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<portref moduleinst="DASHBOARD_ECU1" port="LED_IMD"/>
+<wire x1="629.92" y1="193.04" x2="629.92" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="629.92" y1="203.2" x2="690.88" y2="203.2" width="0.1524" layer="91"/>
+<pinref part="LED_IMD" gate="G$1" pin="C"/>
+<wire x1="690.88" y1="203.2" x2="690.88" y2="185.42" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$74" class="0">
+<segment>
+<portref moduleinst="DASHBOARD_ECU1" port="LED_BMS"/>
+<wire x1="627.38" y1="193.04" x2="627.38" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="627.38" y1="205.74" x2="701.04" y2="205.74" width="0.1524" layer="91"/>
+<pinref part="LED_BMS" gate="G$1" pin="C"/>
+<wire x1="701.04" y1="205.74" x2="701.04" y2="185.42" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$81" class="0">
+<segment>
+<portref moduleinst="DASHBOARD_ECU1" port="12VSUPPLY"/>
+<pinref part="RTDS" gate="1" pin="1"/>
+<wire x1="721.36" y1="190.5" x2="721.36" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="721.36" y1="172.72" x2="711.2" y2="172.72" width="0.1524" layer="91"/>
+<pinref part="LED_MARK" gate="G$1" pin="A"/>
+<wire x1="711.2" y1="172.72" x2="701.04" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="701.04" y1="172.72" x2="690.88" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="690.88" y1="172.72" x2="680.72" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="680.72" y1="172.72" x2="670.56" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="670.56" y1="172.72" x2="660.4" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="660.4" y1="172.72" x2="650.24" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="650.24" y1="172.72" x2="647.7" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="650.24" y1="177.8" x2="650.24" y2="172.72" width="0.1524" layer="91"/>
+<junction x="650.24" y="172.72"/>
+<pinref part="LED_BOOST" gate="G$1" pin="A"/>
+<wire x1="660.4" y1="177.8" x2="660.4" y2="172.72" width="0.1524" layer="91"/>
+<junction x="660.4" y="172.72"/>
+<pinref part="LED_START" gate="G$1" pin="A"/>
+<wire x1="670.56" y1="177.8" x2="670.56" y2="172.72" width="0.1524" layer="91"/>
+<junction x="670.56" y="172.72"/>
+<pinref part="LED_BSPD" gate="G$1" pin="A"/>
+<wire x1="680.72" y1="177.8" x2="680.72" y2="172.72" width="0.1524" layer="91"/>
+<junction x="680.72" y="172.72"/>
+<pinref part="LED_IMD" gate="G$1" pin="A"/>
+<wire x1="690.88" y1="177.8" x2="690.88" y2="172.72" width="0.1524" layer="91"/>
+<junction x="690.88" y="172.72"/>
+<pinref part="LED_BMS" gate="G$1" pin="A"/>
+<wire x1="701.04" y1="177.8" x2="701.04" y2="172.72" width="0.1524" layer="91"/>
+<junction x="701.04" y="172.72"/>
+<pinref part="LED_POWER" gate="G$1" pin="A"/>
+<wire x1="711.2" y1="177.8" x2="711.2" y2="172.72" width="0.1524" layer="91"/>
+<junction x="711.2" y="172.72"/>
+</segment>
+</net>
+<net name="N$83" class="0">
+<segment>
+<pinref part="BUTTON_MARK" gate="SPST_MOM" pin="P"/>
+<portref moduleinst="DASHBOARD_ECU1" port="BUTTON_MARK"/>
+<wire x1="647.7" y1="144.78" x2="678.18" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="678.18" y1="144.78" x2="678.18" y2="134.62" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$82" class="0">
+<segment>
+<portref moduleinst="DASHBOARD_ECU1" port="LED_MARK"/>
+<wire x1="640.08" y1="193.04" x2="650.24" y2="193.04" width="0.1524" layer="91"/>
+<pinref part="LED_MARK" gate="G$1" pin="C"/>
+<wire x1="650.24" y1="193.04" x2="650.24" y2="185.42" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$84" class="0">
+<segment>
+<portref moduleinst="DASHBOARD_ECU1" port="LED_BOOST"/>
+<wire x1="637.54" y1="193.04" x2="637.54" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="637.54" y1="195.58" x2="660.4" y2="195.58" width="0.1524" layer="91"/>
+<pinref part="LED_BOOST" gate="G$1" pin="C"/>
+<wire x1="660.4" y1="195.58" x2="660.4" y2="185.42" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$85" class="0">
+<segment>
+<portref moduleinst="DASHBOARD_ECU1" port="LED_START"/>
+<wire x1="635" y1="193.04" x2="635" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="635" y1="198.12" x2="670.56" y2="198.12" width="0.1524" layer="91"/>
+<pinref part="LED_START" gate="G$1" pin="C"/>
+<wire x1="670.56" y1="198.12" x2="670.56" y2="185.42" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$86" class="0">
+<segment>
+<portref moduleinst="DASHBOARD_ECU1" port="LED_BSPD"/>
+<wire x1="632.46" y1="193.04" x2="632.46" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="632.46" y1="200.66" x2="680.72" y2="200.66" width="0.1524" layer="91"/>
+<pinref part="LED_BSPD" gate="G$1" pin="C"/>
+<wire x1="680.72" y1="200.66" x2="680.72" y2="185.42" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$87" class="0">
+<segment>
+<portref moduleinst="DASHBOARD_ECU1" port="PI_5VSUPPLY"/>
+<portref moduleinst="RASPBERRY_PI1" port="5V"/>
+<wire x1="647.7" y1="170.18" x2="655.32" y2="170.18" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$88" class="0">
+<segment>
+<portref moduleinst="RASPBERRY_PI1" port="GND"/>
+<portref moduleinst="DASHBOARD_ECU1" port="PI_GND"/>
+<wire x1="655.32" y1="167.64" x2="647.7" y2="167.64" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$89" class="0">
+<segment>
+<portref moduleinst="DASHBOARD_ECU1" port="PI_SI"/>
+<portref moduleinst="RASPBERRY_PI1" port="SI"/>
+<wire x1="647.7" y1="162.56" x2="655.32" y2="162.56" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$90" class="0">
+<segment>
+<portref moduleinst="RASPBERRY_PI1" port="SO"/>
+<portref moduleinst="DASHBOARD_ECU1" port="PI_SO"/>
+<wire x1="655.32" y1="160.02" x2="647.7" y2="160.02" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$91" class="0">
+<segment>
+<portref moduleinst="DASHBOARD_ECU1" port="PI_SCK"/>
+<portref moduleinst="RASPBERRY_PI1" port="SCK"/>
+<wire x1="647.7" y1="157.48" x2="655.32" y2="157.48" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$92" class="0">
+<segment>
+<portref moduleinst="RASPBERRY_PI1" port="CS"/>
+<portref moduleinst="DASHBOARD_ECU1" port="PI_CS"/>
+<wire x1="655.32" y1="154.94" x2="647.7" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
