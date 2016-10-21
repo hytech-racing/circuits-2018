@@ -625,31 +625,6 @@ Source: http://www.molex.com</description>
 <text x="-1.27" y="-6.985" size="1.27" layer="25">&gt;NAME</text>
 <text x="-2.54" y="6.985" size="1.27" layer="27">&gt;VALUE</text>
 </package>
-<package name="MINIFIT_5566-10">
-<description>&lt;b&gt;Mini FIT connector 10 pol&lt;/b&gt;&lt;p&gt;
-Source: http://www.molex.com</description>
-<wire x1="-11" y1="4.5" x2="11" y2="4.5" width="0.254" layer="21"/>
-<wire x1="11" y1="4.5" x2="11" y2="-2.2" width="0.254" layer="21"/>
-<wire x1="11" y1="-3.3" x2="11" y2="-4.9" width="0.254" layer="21"/>
-<wire x1="11" y1="-4.9" x2="-11" y2="-4.9" width="0.254" layer="21"/>
-<wire x1="-11" y1="-4.9" x2="-11" y2="4.5" width="0.254" layer="21"/>
-<wire x1="11" y1="-2.2" x2="11" y2="-3.3" width="0.254" layer="21" curve="-180"/>
-<wire x1="-2.1" y1="6.3" x2="2.1" y2="6.3" width="0.254" layer="27"/>
-<wire x1="-2.1" y1="6.3" x2="-2.1" y2="4.6" width="0.254" layer="27"/>
-<wire x1="2.1" y1="6.3" x2="2.1" y2="4.6" width="0.254" layer="27"/>
-<pad name="1" x="8.4" y="-2.75" drill="1.4" shape="square"/>
-<pad name="2" x="4.2" y="-2.75" drill="1.4" shape="square"/>
-<pad name="3" x="0" y="-2.75" drill="1.4" shape="square"/>
-<pad name="4" x="-4.2" y="-2.75" drill="1.4" shape="square"/>
-<pad name="5" x="-8.4" y="-2.75" drill="1.4" shape="square"/>
-<pad name="6" x="8.4" y="2.75" drill="1.4" shape="square"/>
-<pad name="7" x="4.2" y="2.75" drill="1.4" shape="square"/>
-<pad name="8" x="0" y="2.75" drill="1.4" shape="square"/>
-<pad name="9" x="-4.2" y="2.75" drill="1.4" shape="square"/>
-<pad name="10" x="-8.4" y="2.75" drill="1.4" shape="square"/>
-<text x="5.715" y="-6.985" size="1.27" layer="25">&gt;NAME</text>
-<text x="-10.16" y="-6.985" size="1.27" layer="27">&gt;VALUE</text>
-</package>
 <package name="MINIFIT_5566-2">
 <description>&lt;b&gt;Mini FIT connector 2 pol&lt;/b&gt;&lt;p&gt;
 Source: http://www.molex.com</description>
@@ -663,6 +638,29 @@ Source: http://www.molex.com</description>
 <pad name="2" x="0" y="2.75" drill="1.4" shape="square"/>
 <text x="-1.27" y="5.08" size="1.27" layer="25">&gt;NAME</text>
 <text x="-2.54" y="-6.35" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="MINIFIT_5566-8">
+<description>&lt;b&gt;Mini FIT connector 8 pol&lt;/b&gt;&lt;p&gt;
+Source: http://www.molex.com</description>
+<wire x1="-8.9" y1="4.5" x2="8.9" y2="4.5" width="0.254" layer="21"/>
+<wire x1="8.9" y1="4.5" x2="8.9" y2="-2.2" width="0.254" layer="21"/>
+<wire x1="8.9" y1="-3.3" x2="8.9" y2="-4.9" width="0.254" layer="21"/>
+<wire x1="8.9" y1="-4.9" x2="-8.9" y2="-4.9" width="0.254" layer="21"/>
+<wire x1="-8.9" y1="-4.9" x2="-8.9" y2="4.5" width="0.254" layer="21"/>
+<wire x1="8.9" y1="-2.2" x2="8.9" y2="-3.3" width="0.254" layer="21" curve="-180"/>
+<wire x1="-2.1" y1="6.3" x2="2.1" y2="6.3" width="0.254" layer="27"/>
+<wire x1="-2.1" y1="6.3" x2="-2.1" y2="4.6" width="0.254" layer="27"/>
+<wire x1="2.1" y1="6.3" x2="2.1" y2="4.6" width="0.254" layer="27"/>
+<pad name="1" x="6.3" y="-2.75" drill="1.4" shape="square"/>
+<pad name="2" x="2.1" y="-2.75" drill="1.4" shape="square"/>
+<pad name="3" x="-2.1" y="-2.75" drill="1.4" shape="square"/>
+<pad name="4" x="-6.3" y="-2.75" drill="1.4" shape="square"/>
+<pad name="5" x="6.3" y="2.75" drill="1.4" shape="square"/>
+<pad name="6" x="2.1" y="2.75" drill="1.4" shape="square"/>
+<pad name="7" x="-2.1" y="2.75" drill="1.4" shape="square"/>
+<pad name="8" x="-6.3" y="2.75" drill="1.4" shape="square"/>
+<text x="2.54" y="-6.985" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.54" y="6.985" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -1016,46 +1014,6 @@ Source: http://www.molex.com</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="MINIFIT_5566-10" prefix="X">
-<description>&lt;b&gt;Mini FIT Junior connector 10 pole&lt;/b&gt;&lt;p&gt;
-Source: http://www.molex.com</description>
-<gates>
-<gate name="-1" symbol="MV" x="0" y="10.16" addlevel="always"/>
-<gate name="-2" symbol="M" x="0" y="7.62" addlevel="always"/>
-<gate name="-3" symbol="M" x="0" y="5.08" addlevel="always"/>
-<gate name="-4" symbol="M" x="0" y="2.54" addlevel="always"/>
-<gate name="-5" symbol="M" x="0" y="0" addlevel="always"/>
-<gate name="-6" symbol="M" x="0" y="-2.54" addlevel="always"/>
-<gate name="-7" symbol="M" x="0" y="-5.08" addlevel="always"/>
-<gate name="-8" symbol="M" x="0" y="-7.62" addlevel="always"/>
-<gate name="-9" symbol="M" x="0" y="-10.16" addlevel="always"/>
-<gate name="-10" symbol="M" x="0" y="-12.7" addlevel="always"/>
-</gates>
-<devices>
-<device name="" package="MINIFIT_5566-10">
-<connects>
-<connect gate="-1" pin="S" pad="1"/>
-<connect gate="-10" pin="S" pad="10"/>
-<connect gate="-2" pin="S" pad="2"/>
-<connect gate="-3" pin="S" pad="3"/>
-<connect gate="-4" pin="S" pad="4"/>
-<connect gate="-5" pin="S" pad="5"/>
-<connect gate="-6" pin="S" pad="6"/>
-<connect gate="-7" pin="S" pad="7"/>
-<connect gate="-8" pin="S" pad="8"/>
-<connect gate="-9" pin="S" pad="9"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="MINIFIT_5566-2" prefix="X">
 <description>&lt;b&gt;Mini FIT Junior connector 2 pole&lt;/b&gt;&lt;p&gt;
 Source: http://www.molex.com</description>
@@ -1074,6 +1032,42 @@ Source: http://www.molex.com</description>
 <attribute name="MF" value="" constant="no"/>
 <attribute name="MPN" value="" constant="no"/>
 <attribute name="OC_FARNELL" value="1822072" constant="no"/>
+<attribute name="OC_NEWARK" value="unknown" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MINIFIT_5566-8" prefix="X">
+<description>&lt;b&gt;Mini FIT Junior connector 8 pole&lt;/b&gt;&lt;p&gt;
+Source: http://www.molex.com</description>
+<gates>
+<gate name="-1" symbol="MV" x="0" y="7.62" addlevel="always"/>
+<gate name="-2" symbol="M" x="0" y="5.08" addlevel="always"/>
+<gate name="-3" symbol="M" x="0" y="2.54" addlevel="always"/>
+<gate name="-4" symbol="M" x="0" y="0" addlevel="always"/>
+<gate name="-5" symbol="M" x="0" y="-2.54" addlevel="always"/>
+<gate name="-6" symbol="M" x="0" y="-5.08" addlevel="always"/>
+<gate name="-7" symbol="M" x="0" y="-7.62" addlevel="always"/>
+<gate name="-8" symbol="M" x="0" y="-10.16" addlevel="always"/>
+</gates>
+<devices>
+<device name="" package="MINIFIT_5566-8">
+<connects>
+<connect gate="-1" pin="S" pad="1"/>
+<connect gate="-2" pin="S" pad="2"/>
+<connect gate="-3" pin="S" pad="3"/>
+<connect gate="-4" pin="S" pad="4"/>
+<connect gate="-5" pin="S" pad="5"/>
+<connect gate="-6" pin="S" pad="6"/>
+<connect gate="-7" pin="S" pad="7"/>
+<connect gate="-8" pin="S" pad="8"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OC_FARNELL" value="unknown" constant="no"/>
 <attribute name="OC_NEWARK" value="unknown" constant="no"/>
 </technology>
 </technologies>
@@ -1150,10 +1144,10 @@ Source: http://www.molex.com</description>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="X2" library="HyTechDevices" deviceset="MINIFIT_5566-6" device=""/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
-<part name="X3" library="HyTechDevices" deviceset="MINIFIT_5566-10" device=""/>
 <part name="BUZZER" library="HyTechDevices" deviceset="MINIFIT_5566-2" device=""/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
+<part name="X1" library="HyTechDevices" deviceset="MINIFIT_5566-8" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1190,20 +1184,18 @@ Source: http://www.molex.com</description>
 <instance part="X2" gate="-5" x="-27.94" y="7.62" rot="R180"/>
 <instance part="X2" gate="-6" x="-27.94" y="10.16" rot="R180"/>
 <instance part="GND6" gate="1" x="-17.78" y="10.16" rot="R90"/>
-<instance part="X3" gate="-1" x="15.24" y="53.34" rot="R90"/>
-<instance part="X3" gate="-2" x="17.78" y="53.34" rot="R90"/>
-<instance part="X3" gate="-3" x="20.32" y="53.34" rot="R90"/>
-<instance part="X3" gate="-4" x="22.86" y="53.34" rot="R90"/>
-<instance part="X3" gate="-5" x="25.4" y="53.34" rot="R90"/>
-<instance part="X3" gate="-6" x="27.94" y="53.34" rot="R90"/>
-<instance part="X3" gate="-7" x="30.48" y="53.34" rot="R90"/>
-<instance part="X3" gate="-8" x="33.02" y="53.34" rot="R90"/>
-<instance part="X3" gate="-9" x="35.56" y="58.42" rot="R90"/>
-<instance part="X3" gate="-10" x="38.1" y="58.42" rot="R90"/>
 <instance part="BUZZER" gate="-2" x="76.2" y="50.8"/>
 <instance part="BUZZER" gate="-1" x="76.2" y="53.34"/>
 <instance part="GND7" gate="1" x="55.88" y="40.64" rot="R180"/>
 <instance part="GND5" gate="1" x="48.26" y="-25.4"/>
+<instance part="X1" gate="-1" x="15.24" y="63.5" rot="R90"/>
+<instance part="X1" gate="-2" x="17.78" y="63.5" rot="R90"/>
+<instance part="X1" gate="-3" x="20.32" y="63.5" rot="R90"/>
+<instance part="X1" gate="-4" x="22.86" y="63.5" rot="R90"/>
+<instance part="X1" gate="-5" x="25.4" y="63.5" rot="R90"/>
+<instance part="X1" gate="-6" x="27.94" y="63.5" rot="R90"/>
+<instance part="X1" gate="-7" x="30.48" y="63.5" rot="R90"/>
+<instance part="X1" gate="-8" x="33.02" y="63.5" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -1262,8 +1254,8 @@ Source: http://www.molex.com</description>
 <pinref part="LED_MARK" gate="LED" pin="C"/>
 <wire x1="-5.08" y1="35.56" x2="-5.08" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="-5.08" y1="43.18" x2="15.24" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="43.18" x2="15.24" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="X3" gate="-1" pin="S"/>
+<pinref part="X1" gate="-1" pin="S"/>
+<wire x1="15.24" y1="43.18" x2="15.24" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -1271,8 +1263,8 @@ Source: http://www.molex.com</description>
 <pinref part="LED_BOOST" gate="LED" pin="C"/>
 <wire x1="5.08" y1="35.56" x2="5.08" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="5.08" y1="40.64" x2="17.78" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="40.64" x2="17.78" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="X3" gate="-2" pin="S"/>
+<pinref part="X1" gate="-2" pin="S"/>
+<wire x1="17.78" y1="60.96" x2="17.78" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -1280,8 +1272,8 @@ Source: http://www.molex.com</description>
 <pinref part="LED_START" gate="LED" pin="C"/>
 <wire x1="15.24" y1="35.56" x2="15.24" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="38.1" x2="20.32" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="38.1" x2="20.32" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="X3" gate="-3" pin="S"/>
+<wire x1="20.32" y1="38.1" x2="20.32" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="X1" gate="-3" pin="S"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -1289,8 +1281,8 @@ Source: http://www.molex.com</description>
 <pinref part="LED_BSPD" gate="LED" pin="C"/>
 <wire x1="25.4" y1="35.56" x2="25.4" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="38.1" x2="22.86" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="38.1" x2="22.86" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="X3" gate="-4" pin="S"/>
+<wire x1="22.86" y1="38.1" x2="22.86" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="X1" gate="-4" pin="S"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -1298,8 +1290,8 @@ Source: http://www.molex.com</description>
 <pinref part="LED_IMD" gate="LED" pin="C"/>
 <wire x1="35.56" y1="35.56" x2="35.56" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="40.64" x2="25.4" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="40.64" x2="25.4" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="X3" gate="-5" pin="S"/>
+<pinref part="X1" gate="-5" pin="S"/>
+<wire x1="25.4" y1="60.96" x2="25.4" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$13" class="0">
@@ -1307,8 +1299,8 @@ Source: http://www.molex.com</description>
 <pinref part="LED_BMS" gate="LED" pin="C"/>
 <wire x1="45.72" y1="35.56" x2="45.72" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="43.18" x2="27.94" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="43.18" x2="27.94" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="X3" gate="-6" pin="S"/>
+<pinref part="X1" gate="-6" pin="S"/>
+<wire x1="27.94" y1="60.96" x2="27.94" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -1403,22 +1395,26 @@ Source: http://www.molex.com</description>
 <junction x="25.4" y="12.7"/>
 <junction x="15.24" y="12.7"/>
 <wire x1="68.58" y1="12.7" x2="55.88" y2="12.7" width="0.1524" layer="91"/>
-<pinref part="X3" gate="-8" pin="S"/>
 <wire x1="33.02" y1="50.8" x2="33.02" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="BUZZER" gate="-2" pin="S"/>
 <wire x1="73.66" y1="50.8" x2="68.58" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="50.8" x2="68.58" y2="48.26" width="0.1524" layer="91"/>
 <junction x="68.58" y="48.26"/>
+<wire x1="33.02" y1="50.8" x2="30.48" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="X1" gate="-7" pin="S"/>
+<wire x1="30.48" y1="50.8" x2="30.48" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$8" class="0">
 <segment>
-<pinref part="X3" gate="-9" pin="S"/>
 <wire x1="35.56" y1="55.88" x2="35.56" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="50.8" x2="66.04" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="50.8" x2="66.04" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="BUZZER" gate="-1" pin="S"/>
 <wire x1="66.04" y1="53.34" x2="73.66" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="X1" gate="-8" pin="S"/>
+<wire x1="35.56" y1="55.88" x2="33.02" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="55.88" x2="33.02" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$19" class="0">
