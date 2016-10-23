@@ -1427,20 +1427,20 @@ Source: http://www.alphapotentiometers.net/html/16mm_pot_2.html</description>
 <part name="GND5" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="GND6" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="GND7" library="HyTechSymbols" deviceset="GND" device=""/>
-<part name="R5" library="HyTechDevices" deviceset="RESISTOR" device="EZ"/>
-<part name="R6" library="HyTechDevices" deviceset="RESISTOR" device="EZ"/>
-<part name="R7" library="HyTechDevices" deviceset="RESISTOR" device="EZ"/>
-<part name="R8" library="HyTechDevices" deviceset="RESISTOR" device="EZ"/>
-<part name="R9" library="HyTechDevices" deviceset="RESISTOR" device="EZ"/>
-<part name="R10" library="HyTechDevices" deviceset="RESISTOR" device="EZ"/>
+<part name="R5" library="HyTechDevices" deviceset="RESISTOR" device="EZ" value="10k"/>
+<part name="R6" library="HyTechDevices" deviceset="RESISTOR" device="EZ" value="10k"/>
+<part name="R7" library="HyTechDevices" deviceset="RESISTOR" device="EZ" value="10k"/>
+<part name="R8" library="HyTechDevices" deviceset="RESISTOR" device="EZ" value="10k"/>
+<part name="R9" library="HyTechDevices" deviceset="RESISTOR" device="EZ" value="10k"/>
+<part name="R10" library="HyTechDevices" deviceset="RESISTOR" device="EZ" value="10k"/>
 <part name="GND8" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="GND9" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="LED1" library="HyTechDevices" deviceset="LED" device="-5MM"/>
 <part name="LED2" library="HyTechDevices" deviceset="LED" device="-5MM"/>
 <part name="LED3" library="HyTechDevices" deviceset="LED" device="-5MM"/>
-<part name="R11" library="HyTechDevices" deviceset="RESISTOR" device="EZ"/>
-<part name="R12" library="HyTechDevices" deviceset="RESISTOR" device="EZ"/>
-<part name="R13" library="HyTechDevices" deviceset="RESISTOR" device="EZ"/>
+<part name="R11" library="HyTechDevices" deviceset="RESISTOR" device="EZ" value="nc"/>
+<part name="R12" library="HyTechDevices" deviceset="RESISTOR" device="EZ" value="nc"/>
+<part name="R13" library="HyTechDevices" deviceset="RESISTOR" device="EZ" value="nc"/>
 <part name="R14" library="HyTechDevices" deviceset="RESISTOR" device="EZ" value="0"/>
 <part name="R15" library="HyTechDevices" deviceset="RESISTOR" device="EZ" value="0"/>
 <part name="R16" library="HyTechDevices" deviceset="RESISTOR" device="EZ" value="0"/>
