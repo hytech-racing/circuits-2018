@@ -1198,6 +1198,9 @@ Source: Sonnenschein</description>
 <text x="190.5" y="33.02" size="1.778" layer="91" rot="R90">Possible location of Samsung Galaxy</text>
 <text x="314.96" y="114.3" size="1.778" layer="91">Does this need to be isolated from TS?</text>
 <text x="370.84" y="114.3" size="1.778" layer="91">See FH EV12.2.15 </text>
+<text x="124.46" y="137.16" size="1.778" layer="91" rot="R90">TODO: add fault code detector,
+serial port to side panel</text>
+<text x="254" y="142.24" size="1.778" layer="91">TODO: add 12VSupply</text>
 </plain>
 <moduleinsts>
 <moduleinst name="PEDAL_BOX_ECU1" module="PEDAL_BOX_ECU" x="795.02" y="162.56" smashed="yes">
