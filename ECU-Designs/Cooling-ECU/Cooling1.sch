@@ -191,6 +191,29 @@
 <pad name="2" x="0" y="0" drill="1" diameter="1.8796"/>
 <pad name="3" x="2.54" y="0" drill="1" diameter="1.8796"/>
 </package>
+<package name="SOT223">
+<description>&lt;b&gt;SOT-223&lt;/b&gt;
+&lt;br&gt;
+&lt;a href="https://github.com/sparkfun/SparkFun-Eagle-Libraries"&gt;Source: Sparkfun Eagle Library</description>
+<wire x1="3.2766" y1="1.651" x2="3.2766" y2="-1.651" width="0.2032" layer="21"/>
+<wire x1="3.2766" y1="-1.651" x2="-3.2766" y2="-1.651" width="0.2032" layer="21"/>
+<wire x1="-3.2766" y1="-1.651" x2="-3.2766" y2="1.651" width="0.2032" layer="21"/>
+<wire x1="-3.2766" y1="1.651" x2="3.2766" y2="1.651" width="0.2032" layer="21"/>
+<rectangle x1="-1.6002" y1="1.8034" x2="1.6002" y2="3.6576" layer="51"/>
+<rectangle x1="-0.4318" y1="-3.6576" x2="0.4318" y2="-1.8034" layer="51"/>
+<rectangle x1="-2.7432" y1="-3.6576" x2="-1.8796" y2="-1.8034" layer="51"/>
+<rectangle x1="1.8796" y1="-3.6576" x2="2.7432" y2="-1.8034" layer="51"/>
+<rectangle x1="-1.6002" y1="1.8034" x2="1.6002" y2="3.6576" layer="51"/>
+<rectangle x1="-0.4318" y1="-3.6576" x2="0.4318" y2="-1.8034" layer="51"/>
+<rectangle x1="-2.7432" y1="-3.6576" x2="-1.8796" y2="-1.8034" layer="51"/>
+<rectangle x1="1.8796" y1="-3.6576" x2="2.7432" y2="-1.8034" layer="51"/>
+<smd name="1" x="-2.3114" y="-3.0988" dx="1.2192" dy="2.2352" layer="1"/>
+<smd name="2" x="0" y="-3.0988" dx="1.2192" dy="2.2352" layer="1"/>
+<smd name="3" x="2.3114" y="-3.0988" dx="1.2192" dy="2.2352" layer="1"/>
+<smd name="4" x="0" y="3.099" dx="3.6" dy="2.2" layer="1"/>
+<text x="-0.8255" y="4.5085" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-1.0795" y="-0.1905" size="0.4064" layer="27">&gt;VALUE</text>
+</package>
 <package name="TO-220">
 <pad name="1" x="-2.54" y="0" drill="1" diameter="1.8796" shape="square"/>
 <pad name="2" x="0" y="0" drill="1" diameter="1.8796"/>
@@ -199,6 +222,22 @@
 <wire x1="5.08" y1="3.81" x2="5.08" y2="-3.81" width="0.127" layer="21"/>
 <wire x1="5.08" y1="-3.81" x2="-5.08" y2="-3.81" width="0.127" layer="21"/>
 <wire x1="-5.08" y1="-3.81" x2="-5.08" y2="3.81" width="0.127" layer="21"/>
+</package>
+<package name="SOIC08">
+<smd name="1" x="0" y="0" dx="0.6" dy="1.55" layer="1"/>
+<smd name="7" x="1.27" y="5.4" dx="0.6" dy="1.55" layer="1"/>
+<smd name="6" x="2.54" y="5.4" dx="0.6" dy="1.55" layer="1"/>
+<smd name="5" x="3.81" y="5.4" dx="0.6" dy="1.55" layer="1"/>
+<smd name="8" x="0" y="5.4" dx="0.6" dy="1.55" layer="1"/>
+<smd name="2" x="1.27" y="0" dx="0.6" dy="1.55" layer="1"/>
+<smd name="3" x="2.54" y="0" dx="0.6" dy="1.55" layer="1"/>
+<smd name="4" x="3.81" y="0" dx="0.6" dy="1.55" layer="1"/>
+<wire x1="-0.25" y1="4.54" x2="4.07" y2="4.54" width="0.127" layer="20"/>
+<wire x1="4.07" y1="4.54" x2="4.07" y2="0.81" width="0.127" layer="20"/>
+<wire x1="-0.25" y1="4.54" x2="-0.25" y2="3.3" width="0.127" layer="20"/>
+<wire x1="-0.25" y1="0.81" x2="-0.25" y2="2.053334375" width="0.127" layer="20"/>
+<wire x1="-0.25" y1="0.81" x2="4.07" y2="0.81" width="0.127" layer="20"/>
+<wire x1="-0.254" y1="2.032" x2="-0.254" y2="3.302" width="0.127" layer="20" curve="180"/>
 </package>
 <package name="DIL08">
 <description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
@@ -489,30 +528,6 @@ Source: http://www.molex.com</description>
 <text x="-1.27" y="-6.985" size="1.27" layer="25">&gt;NAME</text>
 <text x="-3.81" y="6.985" size="1.27" layer="27">&gt;VALUE</text>
 </package>
-<package name="TO-264_MAX247">
-<description>&lt;b&gt;TO−3BPL (TO−264)&lt;/b&gt;
-&lt;br&gt;250VDC &lt;br&gt;16A Continuous
-&lt;p&gt;
-&lt;a href="http://www.mouser.com/ds/2/308/MJL21193-D-95048.pdf"&gt;MJL21194 Datasheet&lt;/a&gt;
-&lt;/p&gt;
-
-&lt;p&gt;
-&lt;b&gt;MAX247&lt;/b&gt;
-&lt;br&gt;710V &lt;br&gt;130A Continuous
-&lt;p&gt;
-&lt;a href="http://www.st.com/web/en/resource/technical/document/datasheet/DM00048681.pdf"&gt;STY139N65M5 Datasheet&lt;/a&gt;
-&lt;/p&gt;</description>
-<text x="-11.43" y="2.54" size="1.27" layer="21">&gt;NAME</text>
-<text x="2.54" y="2.54" size="1.27" layer="21">&gt;VALUE</text>
-<pad name="P2" x="0" y="0" drill="1.5" diameter="2.54"/>
-<pad name="P3" x="5.461" y="0" drill="1.5" diameter="2.54"/>
-<pad name="P1" x="-5.461" y="0" drill="1.5" diameter="2.54"/>
-<wire x1="-11.43" y1="2.54" x2="10.16" y2="2.54" width="0.127" layer="21"/>
-<wire x1="10.16" y1="2.54" x2="10.16" y2="-2.54" width="0.127" layer="21"/>
-<wire x1="10.16" y1="-2.54" x2="-11.43" y2="-2.54" width="0.127" layer="21"/>
-<wire x1="-11.43" y1="-2.54" x2="-11.43" y2="2.54" width="0.127" layer="21"/>
-<text x="-7.62" y="-1.27" size="1.27" layer="21">1</text>
-</package>
 <package name="TEENSY_3.2_SIMPLE">
 <pad name="AGND" x="16.51" y="31.75" drill="0.8" shape="long"/>
 <pad name="D13" x="16.51" y="1.27" drill="0.8" shape="long"/>
@@ -555,9 +570,23 @@ Source: http://www.molex.com</description>
 <wire x1="5.08" y1="30.48" x2="12.7" y2="30.48" width="0.127" layer="51"/>
 <wire x1="12.7" y1="30.48" x2="12.7" y2="35.56" width="0.127" layer="51"/>
 </package>
+<package name="MINIFIT_5566-2">
+<description>&lt;b&gt;Mini FIT connector 2 pol&lt;/b&gt;&lt;p&gt;
+Source: http://www.molex.com</description>
+<wire x1="-2.6" y1="4.5" x2="2.6" y2="4.5" width="0.254" layer="21"/>
+<wire x1="2.6" y1="4.5" x2="2.6" y2="-2.2" width="0.254" layer="21"/>
+<wire x1="2.6" y1="-3.3" x2="2.6" y2="-4.9" width="0.254" layer="21"/>
+<wire x1="2.6" y1="-4.9" x2="-2.6" y2="-4.9" width="0.254" layer="21"/>
+<wire x1="-2.6" y1="-4.9" x2="-2.6" y2="4.5" width="0.254" layer="21"/>
+<wire x1="2.6" y1="-2.2" x2="2.6" y2="-3.3" width="0.254" layer="21" curve="-180"/>
+<pad name="1" x="0" y="-2.75" drill="1.4" shape="square"/>
+<pad name="2" x="0" y="2.75" drill="1.4" shape="square"/>
+<text x="-1.27" y="5.08" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.54" y="-6.35" size="1.27" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
-<symbol name="78XX">
+<symbol name="VOLTAGE_REGULATOR">
 <wire x1="-5.08" y1="-5.08" x2="5.08" y2="-5.08" width="0.4064" layer="94"/>
 <wire x1="5.08" y1="-5.08" x2="5.08" y2="2.54" width="0.4064" layer="94"/>
 <wire x1="5.08" y1="2.54" x2="-5.08" y2="2.54" width="0.4064" layer="94"/>
@@ -595,6 +624,7 @@ Source: http://www.molex.com</description>
 <text x="13.97" y="3.81" size="1.27" layer="94" rot="R180">CANL</text>
 <text x="13.97" y="8.89" size="1.27" layer="94" rot="R180">RS</text>
 <text x="13.97" y="6.35" size="1.27" layer="94" rot="R180">CANH</text>
+<text x="1.27" y="5.08" size="1.27" layer="94">VSS</text>
 </symbol>
 <symbol name="RESISTOR">
 <wire x1="-2.54" y1="0" x2="-2.159" y2="1.016" width="0.1524" layer="94"/>
@@ -621,24 +651,6 @@ Source: http://www.molex.com</description>
 <wire x1="1.27" y1="0" x2="0" y2="0" width="0.6096" layer="94"/>
 <pin name="S" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
 <text x="2.54" y="-0.762" size="1.524" layer="95">&gt;NAME</text>
-</symbol>
-<symbol name="NPN_BJT">
-<wire x1="2.54" y1="2.54" x2="0.508" y2="1.524" width="0.1524" layer="94"/>
-<wire x1="1.778" y1="-1.524" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="-2.54" x2="1.27" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="1.27" y1="-2.54" x2="1.778" y2="-1.524" width="0.1524" layer="94"/>
-<wire x1="1.54" y1="-2.04" x2="0.308" y2="-1.424" width="0.1524" layer="94"/>
-<wire x1="1.524" y1="-2.413" x2="2.286" y2="-2.413" width="0.254" layer="94"/>
-<wire x1="2.286" y1="-2.413" x2="1.778" y2="-1.778" width="0.254" layer="94"/>
-<wire x1="1.778" y1="-1.778" x2="1.524" y2="-2.286" width="0.254" layer="94"/>
-<wire x1="1.524" y1="-2.286" x2="1.905" y2="-2.286" width="0.254" layer="94"/>
-<wire x1="1.905" y1="-2.286" x2="1.778" y2="-2.032" width="0.254" layer="94"/>
-<text x="5.08" y="0" size="1.778" layer="95">&gt;NAME</text>
-<text x="5.08" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
-<rectangle x1="-0.254" y1="-2.54" x2="0.508" y2="2.54" layer="94"/>
-<pin name="BASE" x="-2.54" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
-<pin name="EMITTER" x="2.54" y="-5.08" visible="off" length="short" direction="pas" swaplevel="3" rot="R90"/>
-<pin name="COLLECTOR" x="2.54" y="5.08" visible="off" length="short" direction="pas" swaplevel="2" rot="R270"/>
 </symbol>
 <symbol name="TEENSY_3.2_SIMPLE">
 <pin name="D0(RX1)" x="-2.54" y="35.56" visible="pin" length="short"/>
@@ -675,37 +687,66 @@ Source: http://www.molex.com</description>
 <pin name="VIN" x="22.86" y="38.1" visible="pin" length="short" rot="R180"/>
 <pin name="AGND" x="22.86" y="35.56" visible="pin" length="short" rot="R180"/>
 </symbol>
+<symbol name="N-CHANNEL_MOSFET">
+<wire x1="-2.54" y1="-2.54" x2="-1.2192" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="0.762" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="0" y1="3.683" x2="0" y2="1.397" width="0.254" layer="94"/>
+<wire x1="1.905" y1="0.635" x2="0.635" y2="0" width="0.254" layer="94"/>
+<wire x1="1.905" y1="-0.635" x2="0.635" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0.635" y2="0" width="0.1524" layer="94"/>
+<wire x1="0.635" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="-1.397" x2="0" y2="-3.683" width="0.254" layer="94"/>
+<wire x1="-1.143" y1="2.54" x2="-1.143" y2="-2.54" width="0.254" layer="94"/>
+<text x="-11.43" y="2.54" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-11.43" y="5.08" size="1.778" layer="95">&gt;NAME</text>
+<pin name="D" x="5.08" y="2.54" visible="off" length="middle" direction="pas" rot="R180"/>
+<pin name="S" x="5.08" y="-2.54" visible="off" length="middle" direction="pas" rot="R180"/>
+<pin name="G" x="-5.08" y="-2.54" visible="off" length="short" direction="pas"/>
+</symbol>
 </symbols>
 <devicesets>
-<deviceset name="5V_REGULATOR" prefix="IC" uservalue="yes">
+<deviceset name="5V_REGULATOR_LM340-N" uservalue="yes">
 <description>&lt;b&gt;Voltage Regulator&lt;/b&gt;
 
-&lt;p&gt;Switching 5v regulator
+&lt;p&gt;5v linear voltage regulator
 
-&lt;a href="http://power.murata.com/data/power/oki-78sr.pdf"&gt;Datasheet &lt;/a&gt;
+&lt;a href="http://www.mouser.com/ProductDetail/Texas-Instruments/LM340MPX-50-NOPB/?qs=X1J7HmVL2ZGZwtTFRQ9ItA%3D%3D"&gt;Datasheet &lt;/a&gt;
 &lt;br&gt;
 &lt;br&gt;
-Standard 7805 5V regulator. IGO (Input Ground Output). Spark Fun Electronics SKU : COM-00107
-&lt;a href="http://www.mouser.com/ds/2/308/MC7800-D-94905.pdf"&gt;Datasheet&lt;/a&gt;</description>
+MAX current out: 1.5A
+&lt;br&gt;
+MAX voltage in: 35V</description>
 <gates>
-<gate name="G$1" symbol="78XX" x="0" y="0"/>
+<gate name="G$1" symbol="VOLTAGE_REGULATOR" x="5.08" y="5.08"/>
 </gates>
 <devices>
-<device name="LINEAR" package="TO-220-SINK">
+<device name="LM340MPX-5.0/NOPB" package="SOT223">
 <connects>
-<connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="IN" pad="1"/>
-<connect gate="G$1" pin="OUT" pad="3"/>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="IN" pad="3"/>
+<connect gate="G$1" pin="OUT" pad="2 4"/>
 </connects>
 <technologies>
 <technology name=""/>
 </technologies>
 </device>
-<device name="SWITCHING" package="TO-220">
+<device name="LM340T-5.0/NOPB" package="TO-220">
 <connects>
-<connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="IN" pad="1"/>
-<connect gate="G$1" pin="OUT" pad="3"/>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="IN" pad="3"/>
+<connect gate="G$1" pin="OUT" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="LM340T-5.0/NOPB_SINK" package="TO-220-SINK">
+<connects>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="IN" pad="3"/>
+<connect gate="G$1" pin="OUT" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -735,7 +776,22 @@ It is replaced by MCP2561.
 <gate name="G$1" symbol="MCP2551" x="0" y="-12.7"/>
 </gates>
 <devices>
-<device name="" package="DIL08">
+<device name="DIL" package="DIL08">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SOIC" package="SOIC08">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -942,70 +998,6 @@ Source: http://www.molex.com</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="BJT_NPN" prefix="Q" uservalue="yes">
-<description>&lt;b&gt;Generic NPN BJT&lt;/b&gt; 
-&lt;p&gt;
-MMBT2222A - TRANS-08049 (SOT-23, 1A 40V)&lt;br&gt;
-MPSA42 - TRANS-09116 (SOT-23, 500mA 300V)&lt;br&gt;
-MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
-&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;
-    BC547 - 
-    &lt;a href="http://www.sparkfun.com/products/8928"&gt;COM-08928&lt;/a&gt;
-    (TO-92 45V 100mA) (1.Collector 2.Base 3.Emitter)
-  &lt;/li&gt;
-  &lt;li&gt;
-    2N3904 - 
-    &lt;a href="http://www.sparkfun.com/products/521"&gt;COM-00521&lt;/a&gt;
-    (TO-92 40V 200mA) (1.Emitter 2.Base 3.Collector)
-  &lt;/li&gt;
-  &lt;li&gt;
-    P2N2222A - 
-    &lt;a href="http://www.sparkfun.com/products/12852"&gt;COM-12852&lt;/a&gt;
-    (TO-92 40V 600mA) (1.Collector 2.Base 3.Emitter)
-  &lt;/li&gt;
-
-&lt;/ul&gt;
-&lt;br&gt;
-&lt;br&gt;
-&lt;a href="https://github.com/sparkfun/SparkFun-Eagle-Libraries"&gt;Source: Sparkfun&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="NPN_BJT" x="0" y="0"/>
-</gates>
-<devices>
-<device name="MJL21194G" package="TO-264_MAX247">
-<connects>
-<connect gate="G$1" pin="BASE" pad="P1"/>
-<connect gate="G$1" pin="COLLECTOR" pad="P2"/>
-<connect gate="G$1" pin="EMITTER" pad="P3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="TIP120(SINK)" package="TO-220-SINK">
-<connects>
-<connect gate="G$1" pin="BASE" pad="1"/>
-<connect gate="G$1" pin="COLLECTOR" pad="2"/>
-<connect gate="G$1" pin="EMITTER" pad="3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="TIP120" package="TO-220">
-<connects>
-<connect gate="G$1" pin="BASE" pad="1"/>
-<connect gate="G$1" pin="COLLECTOR" pad="2"/>
-<connect gate="G$1" pin="EMITTER" pad="3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="TEENSY_3.2_SIMPLE">
 <description>Simple version of the Teensy 3.2 board that only uses the 2 main rows of pins, not the inner pins or the pins opposite the usb port.</description>
 <gates>
@@ -1049,6 +1041,44 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
 </device>
 </devices>
 </deviceset>
+<deviceset name="MINIFIT_5566-2" prefix="X">
+<description>&lt;b&gt;Mini FIT Junior connector 2 pole&lt;/b&gt;&lt;p&gt;
+Source: http://www.molex.com</description>
+<gates>
+<gate name="-1" symbol="MV" x="0" y="2.54" addlevel="always"/>
+<gate name="-2" symbol="M" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MINIFIT_5566-2">
+<connects>
+<connect gate="-1" pin="S" pad="1"/>
+<connect gate="-2" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OC_FARNELL" value="1822072" constant="no"/>
+<attribute name="OC_NEWARK" value="unknown" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="N-CHANNEL_MOSFET">
+<gates>
+<gate name="G$1" symbol="N-CHANNEL_MOSFET" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="">
+<attribute name="_EXTERNAL_" value="1" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="supply1">
@@ -1084,6 +1114,32 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
 </deviceset>
 </devicesets>
 </library>
+<library name="HyTechSymbols">
+<packages>
+</packages>
+<symbols>
+<symbol name="GND">
+<wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="GND" prefix="GND">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="GND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1094,25 +1150,37 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
 </class>
 </classes>
 <parts>
-<part name="IC1" library="HyTechDevices" deviceset="5V_REGULATOR" device="SWITCHING"/>
+<part name="IC1" library="HyTechDevices" deviceset="5V_REGULATOR_LM340-N" device="LM340MPX-5.0/NOPB"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
-<part name="U$2" library="HyTechDevices" deviceset="MCP2551" device=""/>
-<part name="R1" library="HyTechDevices" deviceset="RESISTOR" device="PTH-1/2W"/>
+<part name="U$2" library="HyTechDevices" deviceset="MCP2551" device="SOIC"/>
+<part name="R1" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES"/>
 <part name="IN" library="HyTechDevices" deviceset="MINIFIT_5566-4" device=""/>
-<part name="Q1" library="HyTechDevices" deviceset="BJT_NPN" device="TIP120(SINK)"/>
-<part name="R2" library="HyTechDevices" deviceset="RESISTOR" device="PTH-1/2W"/>
-<part name="Q2" library="HyTechDevices" deviceset="BJT_NPN" device="TIP120(SINK)"/>
-<part name="R3" library="HyTechDevices" deviceset="RESISTOR" device="PTH-1/2W"/>
-<part name="Q3" library="HyTechDevices" deviceset="BJT_NPN" device="TIP120(SINK)"/>
-<part name="R4" library="HyTechDevices" deviceset="RESISTOR" device="PTH-1/2W"/>
+<part name="R2" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES"/>
+<part name="R3" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES"/>
+<part name="R4" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES"/>
 <part name="OUT" library="HyTechDevices" deviceset="MINIFIT_5566-4" device=""/>
 <part name="FAN/PUMP" library="HyTechDevices" deviceset="MINIFIT_5566-4" device=""/>
-<part name="X1" library="HyTechDevices" deviceset="MINIFIT_5566-4" device=""/>
 <part name="U$1" library="HyTechDevices" deviceset="TEENSY_3.2_SIMPLE" device=""/>
+<part name="12V_COOLING_SUPPLY" library="HyTechDevices" deviceset="MINIFIT_5566-2" device=""/>
+<part name="GND2" library="HyTechSymbols" deviceset="GND" device=""/>
+<part name="U$3" library="HyTechDevices" deviceset="N-CHANNEL_MOSFET" device="" value=""/>
+<part name="U$4" library="HyTechDevices" deviceset="N-CHANNEL_MOSFET" device="" value=""/>
+<part name="U$5" library="HyTechDevices" deviceset="N-CHANNEL_MOSFET" device="" value=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
+<text x="-66.04" y="48.26" size="1.778" layer="91">12V</text>
+<text x="-66.04" y="30.48" size="1.778" layer="91">12V</text>
+<text x="-66.04" y="45.72" size="1.778" layer="91">GND</text>
+<text x="-66.04" y="27.94" size="1.778" layer="91">GND</text>
+<text x="-66.04" y="43.18" size="1.778" layer="91">CANL</text>
+<text x="-66.04" y="25.4" size="1.778" layer="91">CANL</text>
+<text x="-66.04" y="40.64" size="1.778" layer="91">CANH</text>
+<text x="-66.04" y="22.86" size="1.778" layer="91">CANH</text>
+<text x="91.44" y="71.12" size="1.778" layer="91">FAN1</text>
+<text x="111.76" y="63.5" size="1.778" layer="91">FAN2</text>
+<text x="132.08" y="73.66" size="1.778" layer="91">PUMP</text>
 </plain>
 <instances>
 <instance part="IC1" gate="G$1" x="-7.62" y="71.12"/>
@@ -1123,24 +1191,22 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
 <instance part="IN" gate="-2" x="-43.18" y="45.72" rot="MR0"/>
 <instance part="IN" gate="-3" x="-43.18" y="43.18" rot="MR0"/>
 <instance part="IN" gate="-4" x="-43.18" y="40.64" rot="MR0"/>
-<instance part="Q1" gate="G$1" x="124.46" y="55.88"/>
 <instance part="R2" gate="G$1" x="88.9" y="55.88"/>
-<instance part="Q2" gate="G$1" x="116.84" y="53.34"/>
 <instance part="R3" gate="G$1" x="99.06" y="53.34" rot="R180"/>
-<instance part="Q3" gate="G$1" x="109.22" y="50.8"/>
 <instance part="R4" gate="G$1" x="83.82" y="50.8" rot="R180"/>
 <instance part="OUT" gate="-1" x="-43.18" y="30.48" rot="MR0"/>
 <instance part="OUT" gate="-2" x="-43.18" y="27.94" rot="MR0"/>
 <instance part="OUT" gate="-3" x="-43.18" y="25.4" rot="MR0"/>
 <instance part="OUT" gate="-4" x="-43.18" y="22.86" rot="MR0"/>
-<instance part="FAN/PUMP" gate="-1" x="104.14" y="22.86" rot="MR0"/>
-<instance part="FAN/PUMP" gate="-2" x="104.14" y="20.32" rot="MR0"/>
-<instance part="FAN/PUMP" gate="-3" x="104.14" y="17.78" rot="MR0"/>
-<instance part="X1" gate="-1" x="101.6" y="83.82" rot="MR0"/>
-<instance part="X1" gate="-2" x="101.6" y="81.28" rot="MR0"/>
-<instance part="X1" gate="-3" x="101.6" y="78.74" rot="MR0"/>
-<instance part="X1" gate="-4" x="101.6" y="76.2" rot="MR0"/>
+<instance part="FAN/PUMP" gate="-1" x="106.68" y="73.66" rot="MR0"/>
+<instance part="FAN/PUMP" gate="-2" x="114.3" y="66.04" rot="MR0"/>
+<instance part="FAN/PUMP" gate="-3" x="129.54" y="76.2" rot="MR0"/>
 <instance part="U$1" gate="G$1" x="50.8" y="25.4"/>
+<instance part="12V_COOLING_SUPPLY" gate="-1" x="101.6" y="83.82" rot="MR0"/>
+<instance part="GND2" gate="1" x="109.22" y="33.02"/>
+<instance part="U$3" gate="G$1" x="104.14" y="48.26"/>
+<instance part="U$4" gate="G$1" x="114.3" y="55.88"/>
+<instance part="U$5" gate="G$1" x="127" y="63.5"/>
 </instances>
 <busses>
 </busses>
@@ -1167,6 +1233,21 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
 <wire x1="-30.48" y1="27.94" x2="-40.64" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="GND2" gate="1" pin="GND"/>
+<wire x1="132.08" y1="38.1" x2="119.38" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="38.1" x2="109.22" y2="38.1" width="0.1524" layer="91"/>
+<junction x="109.22" y="38.1"/>
+<wire x1="109.22" y1="38.1" x2="109.22" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="38.1" x2="132.08" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="U$5" gate="G$1" pin="S"/>
+<junction x="132.08" y="60.96"/>
+<pinref part="U$4" gate="G$1" pin="S"/>
+<wire x1="119.38" y1="53.34" x2="119.38" y2="38.1" width="0.1524" layer="91"/>
+<junction x="119.38" y="38.1"/>
+<pinref part="U$3" gate="G$1" pin="S"/>
+<wire x1="109.22" y1="45.72" x2="109.22" y2="38.1" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="5V" class="0">
 <segment>
@@ -1179,6 +1260,7 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
 <junction x="38.1" y="71.12"/>
 <label x="12.7" y="73.66" size="1.778" layer="95" rot="MR0"/>
 <pinref part="U$1" gate="G$1" pin="VIN"/>
+<pinref part="IC1" gate="G$1" pin="OUT"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -1195,22 +1277,6 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
 <pinref part="U$2" gate="G$1" pin="4"/>
 <wire x1="40.64" y1="45.72" x2="33.02" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="D4(CANRX)"/>
-</segment>
-</net>
-<net name="N$7" class="0">
-<segment>
-<pinref part="R2" gate="G$1" pin="2"/>
-<pinref part="Q1" gate="G$1" pin="BASE"/>
-<wire x1="93.98" y1="55.88" x2="121.92" y2="55.88" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="PUMP" class="0">
-<segment>
-<pinref part="Q1" gate="G$1" pin="EMITTER"/>
-<wire x1="127" y1="50.8" x2="127" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="FAN/PUMP" gate="-3" pin="S"/>
-<wire x1="106.68" y1="17.78" x2="127" y2="17.78" width="0.1524" layer="91"/>
-<label x="127" y="33.02" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -1243,44 +1309,36 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
 </net>
 <net name="12V_COOLING_SUPPLY" class="0">
 <segment>
-<pinref part="Q1" gate="G$1" pin="COLLECTOR"/>
-<wire x1="127" y1="60.96" x2="127" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="Q2" gate="G$1" pin="COLLECTOR"/>
-<wire x1="119.38" y1="58.42" x2="119.38" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="71.12" x2="127" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="111.76" y1="71.12" x2="119.38" y2="71.12" width="0.1524" layer="91"/>
-<junction x="119.38" y="71.12"/>
-<pinref part="Q3" gate="G$1" pin="COLLECTOR"/>
-<wire x1="111.76" y1="55.88" x2="111.76" y2="71.12" width="0.1524" layer="91"/>
-<label x="124.46" y="71.12" size="1.778" layer="95"/>
-<wire x1="119.38" y1="71.12" x2="119.38" y2="83.82" width="0.1524" layer="91"/>
-<pinref part="X1" gate="-1" pin="S"/>
+<wire x1="109.22" y1="81.28" x2="119.38" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="U$5" gate="G$1" pin="D"/>
+<wire x1="119.38" y1="81.28" x2="132.08" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="76.2" x2="132.08" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="FAN/PUMP" gate="-3" pin="S"/>
+<junction x="132.08" y="76.2"/>
+<wire x1="132.08" y1="81.28" x2="132.08" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="FAN/PUMP" gate="-1" pin="S"/>
+<pinref part="U$3" gate="G$1" pin="D"/>
+<wire x1="109.22" y1="50.8" x2="109.22" y2="81.28" width="0.1524" layer="91"/>
+<junction x="109.22" y="81.28"/>
+<wire x1="109.22" y1="81.28" x2="109.22" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="83.82" x2="119.38" y2="83.82" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="FAN2" class="0">
-<segment>
-<pinref part="Q2" gate="G$1" pin="EMITTER"/>
-<wire x1="119.38" y1="48.26" x2="119.38" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="12V_COOLING_SUPPLY" gate="-1" pin="S"/>
+<pinref part="U$4" gate="G$1" pin="D"/>
+<wire x1="119.38" y1="66.04" x2="119.38" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="66.04" x2="119.38" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="FAN/PUMP" gate="-2" pin="S"/>
-<wire x1="119.38" y1="20.32" x2="106.68" y2="20.32" width="0.1524" layer="91"/>
-<label x="114.3" y="33.02" size="1.778" layer="95"/>
+<wire x1="119.38" y1="83.82" x2="119.38" y2="81.28" width="0.1524" layer="91"/>
+<junction x="119.38" y="66.04"/>
+<junction x="119.38" y="81.28"/>
+<wire x1="119.38" y1="81.28" x2="119.38" y2="66.04" width="0.1524" layer="91"/>
+<junction x="132.08" y="81.28"/>
 </segment>
 </net>
 <net name="N$17" class="0">
 <segment>
-<pinref part="Q2" gate="G$1" pin="BASE"/>
 <pinref part="R3" gate="G$1" pin="1"/>
-<wire x1="104.14" y1="53.34" x2="114.3" y2="53.34" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="FAN1" class="0">
-<segment>
-<pinref part="Q3" gate="G$1" pin="EMITTER"/>
-<wire x1="111.76" y1="45.72" x2="111.76" y2="22.86" width="0.1524" layer="91"/>
-<pinref part="FAN/PUMP" gate="-1" pin="S"/>
-<wire x1="111.76" y1="22.86" x2="106.68" y2="22.86" width="0.1524" layer="91"/>
-<label x="104.14" y="33.02" size="1.778" layer="95"/>
+<wire x1="104.14" y1="53.34" x2="109.22" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="U$4" gate="G$1" pin="G"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -1288,13 +1346,6 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
 <pinref part="R4" gate="G$1" pin="2"/>
 <wire x1="73.66" y1="50.8" x2="78.74" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="A7"/>
-</segment>
-</net>
-<net name="N$6" class="0">
-<segment>
-<pinref part="R4" gate="G$1" pin="1"/>
-<pinref part="Q3" gate="G$1" pin="BASE"/>
-<wire x1="88.9" y1="50.8" x2="106.68" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -1332,6 +1383,24 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
 <wire x1="-25.4" y1="50.8" x2="-15.24" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="-25.4" y1="22.86" x2="-25.4" y2="40.64" width="0.1524" layer="91"/>
 <junction x="-25.4" y="40.64"/>
+<junction x="-15.24" y="50.8"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="R2" gate="G$1" pin="2"/>
+<wire x1="93.98" y1="55.88" x2="99.06" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="55.88" x2="99.06" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="60.96" x2="121.92" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="U$5" gate="G$1" pin="G"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="R4" gate="G$1" pin="1"/>
+<wire x1="88.9" y1="50.8" x2="99.06" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="50.8" x2="99.06" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="G"/>
 </segment>
 </net>
 </nets>

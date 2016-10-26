@@ -6068,6 +6068,21 @@ Source: http://www.alphapotentiometers.net/html/16mm_pot_2.html</description>
 <pad name="P$15" x="8.5" y="-1" drill="0.8" shape="long" rot="R90"/>
 <pad name="P$16" x="6.5" y="-1" drill="0.8" shape="long" rot="R90"/>
 </package>
+<package name="LFPAK33">
+<smd name="MB" x="1.175" y="-1.545" dx="2.25" dy="1.85" layer="1" rot="R180"/>
+<smd name="MB1" x="0.2" y="-0.375" dx="0.4" dy="0.75" layer="1"/>
+<smd name="MB2" x="0.85" y="-0.375" dx="0.4" dy="0.75" layer="1"/>
+<smd name="MB4" x="2.15" y="-0.375" dx="0.4" dy="0.75" layer="1"/>
+<smd name="MB3" x="1.5" y="-0.375" dx="0.4" dy="0.75" layer="1"/>
+<smd name="1" x="0.2" y="-3.9" dx="0.4" dy="0.83" layer="1"/>
+<smd name="2" x="0.85" y="-3.9" dx="0.4" dy="0.83" layer="1"/>
+<smd name="4" x="2.15" y="-3.9" dx="0.4" dy="0.83" layer="1"/>
+<smd name="3" x="1.5" y="-3.9" dx="0.4" dy="0.83" layer="1"/>
+<wire x1="-0.5" y1="-1" x2="2.7" y2="-1" width="0.127" layer="21"/>
+<wire x1="2.7" y1="-1" x2="2.7" y2="-3.6" width="0.127" layer="21"/>
+<wire x1="2.7" y1="-3.6" x2="-0.5" y2="-3.6" width="0.127" layer="21"/>
+<wire x1="-0.5" y1="-3.6" x2="-0.5" y2="-1" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ARDUINO_NANO">
@@ -11776,6 +11791,26 @@ Integrated TCP/IP Control Stack</description>
 <connect gate="G$1" pin="RXD" pad="P$15"/>
 <connect gate="G$1" pin="TXD" pad="P$16"/>
 <connect gate="G$1" pin="VCC" pad="P$8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PSMN075_MOSFET">
+<description>&lt;B&gt; NXP - PSMN075-100MSE &lt;/B&gt;
+
+&lt;P&gt; Link to data sheet: http://www.mouser.com/ds/2/302/PSMN075-100MSE-842937.pdf</description>
+<gates>
+<gate name="G$1" symbol="N-CHANNEL_MOSFET" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="LFPAK33">
+<connects>
+<connect gate="G$1" pin="D" pad="MB MB1 MB2 MB3 MB4"/>
+<connect gate="G$1" pin="G" pad="4"/>
+<connect gate="G$1" pin="S" pad="1 2 3"/>
 </connects>
 <technologies>
 <technology name=""/>

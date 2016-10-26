@@ -191,6 +191,29 @@
 <pad name="2" x="0" y="0" drill="1" diameter="1.8796"/>
 <pad name="3" x="2.54" y="0" drill="1" diameter="1.8796"/>
 </package>
+<package name="SOT223">
+<description>&lt;b&gt;SOT-223&lt;/b&gt;
+&lt;br&gt;
+&lt;a href="https://github.com/sparkfun/SparkFun-Eagle-Libraries"&gt;Source: Sparkfun Eagle Library</description>
+<wire x1="3.2766" y1="1.651" x2="3.2766" y2="-1.651" width="0.2032" layer="21"/>
+<wire x1="3.2766" y1="-1.651" x2="-3.2766" y2="-1.651" width="0.2032" layer="21"/>
+<wire x1="-3.2766" y1="-1.651" x2="-3.2766" y2="1.651" width="0.2032" layer="21"/>
+<wire x1="-3.2766" y1="1.651" x2="3.2766" y2="1.651" width="0.2032" layer="21"/>
+<rectangle x1="-1.6002" y1="1.8034" x2="1.6002" y2="3.6576" layer="51"/>
+<rectangle x1="-0.4318" y1="-3.6576" x2="0.4318" y2="-1.8034" layer="51"/>
+<rectangle x1="-2.7432" y1="-3.6576" x2="-1.8796" y2="-1.8034" layer="51"/>
+<rectangle x1="1.8796" y1="-3.6576" x2="2.7432" y2="-1.8034" layer="51"/>
+<rectangle x1="-1.6002" y1="1.8034" x2="1.6002" y2="3.6576" layer="51"/>
+<rectangle x1="-0.4318" y1="-3.6576" x2="0.4318" y2="-1.8034" layer="51"/>
+<rectangle x1="-2.7432" y1="-3.6576" x2="-1.8796" y2="-1.8034" layer="51"/>
+<rectangle x1="1.8796" y1="-3.6576" x2="2.7432" y2="-1.8034" layer="51"/>
+<smd name="1" x="-2.3114" y="-3.0988" dx="1.2192" dy="2.2352" layer="1"/>
+<smd name="2" x="0" y="-3.0988" dx="1.2192" dy="2.2352" layer="1"/>
+<smd name="3" x="2.3114" y="-3.0988" dx="1.2192" dy="2.2352" layer="1"/>
+<smd name="4" x="0" y="3.099" dx="3.6" dy="2.2" layer="1"/>
+<text x="-0.8255" y="4.5085" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-1.0795" y="-0.1905" size="0.4064" layer="27">&gt;VALUE</text>
+</package>
 <package name="TO-220">
 <pad name="1" x="-2.54" y="0" drill="1" diameter="1.8796" shape="square"/>
 <pad name="2" x="0" y="0" drill="1" diameter="1.8796"/>
@@ -199,6 +222,22 @@
 <wire x1="5.08" y1="3.81" x2="5.08" y2="-3.81" width="0.127" layer="21"/>
 <wire x1="5.08" y1="-3.81" x2="-5.08" y2="-3.81" width="0.127" layer="21"/>
 <wire x1="-5.08" y1="-3.81" x2="-5.08" y2="3.81" width="0.127" layer="21"/>
+</package>
+<package name="SOIC08">
+<smd name="1" x="0" y="0" dx="0.6" dy="1.55" layer="1"/>
+<smd name="7" x="1.27" y="5.4" dx="0.6" dy="1.55" layer="1"/>
+<smd name="6" x="2.54" y="5.4" dx="0.6" dy="1.55" layer="1"/>
+<smd name="5" x="3.81" y="5.4" dx="0.6" dy="1.55" layer="1"/>
+<smd name="8" x="0" y="5.4" dx="0.6" dy="1.55" layer="1"/>
+<smd name="2" x="1.27" y="0" dx="0.6" dy="1.55" layer="1"/>
+<smd name="3" x="2.54" y="0" dx="0.6" dy="1.55" layer="1"/>
+<smd name="4" x="3.81" y="0" dx="0.6" dy="1.55" layer="1"/>
+<wire x1="-0.25" y1="4.54" x2="4.07" y2="4.54" width="0.127" layer="20"/>
+<wire x1="4.07" y1="4.54" x2="4.07" y2="0.81" width="0.127" layer="20"/>
+<wire x1="-0.25" y1="4.54" x2="-0.25" y2="3.3" width="0.127" layer="20"/>
+<wire x1="-0.25" y1="0.81" x2="-0.25" y2="2.053334375" width="0.127" layer="20"/>
+<wire x1="-0.25" y1="0.81" x2="4.07" y2="0.81" width="0.127" layer="20"/>
+<wire x1="-0.254" y1="2.032" x2="-0.254" y2="3.302" width="0.127" layer="20" curve="180"/>
 </package>
 <package name="DIL08">
 <description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
@@ -571,7 +610,7 @@ Source: http://www.molex.com</description>
 </package>
 </packages>
 <symbols>
-<symbol name="78XX">
+<symbol name="VOLTAGE_REGULATOR">
 <wire x1="-5.08" y1="-5.08" x2="5.08" y2="-5.08" width="0.4064" layer="94"/>
 <wire x1="5.08" y1="-5.08" x2="5.08" y2="2.54" width="0.4064" layer="94"/>
 <wire x1="5.08" y1="2.54" x2="-5.08" y2="2.54" width="0.4064" layer="94"/>
@@ -609,6 +648,7 @@ Source: http://www.molex.com</description>
 <text x="13.97" y="3.81" size="1.27" layer="94" rot="R180">CANL</text>
 <text x="13.97" y="8.89" size="1.27" layer="94" rot="R180">RS</text>
 <text x="13.97" y="6.35" size="1.27" layer="94" rot="R180">CANH</text>
+<text x="1.27" y="5.08" size="1.27" layer="94">VSS</text>
 </symbol>
 <symbol name="RESISTOR">
 <wire x1="-2.54" y1="0" x2="-2.159" y2="1.016" width="0.1524" layer="94"/>
@@ -691,35 +731,46 @@ Source: http://www.molex.com</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="5V_REGULATOR" prefix="IC" uservalue="yes">
+<deviceset name="5V_REGULATOR_LM340-N" uservalue="yes">
 <description>&lt;b&gt;Voltage Regulator&lt;/b&gt;
 
-&lt;p&gt;Switching 5v regulator
+&lt;p&gt;5v linear voltage regulator
 
-&lt;a href="http://power.murata.com/data/power/oki-78sr.pdf"&gt;Datasheet &lt;/a&gt;
+&lt;a href="http://www.mouser.com/ProductDetail/Texas-Instruments/LM340MPX-50-NOPB/?qs=X1J7HmVL2ZGZwtTFRQ9ItA%3D%3D"&gt;Datasheet &lt;/a&gt;
 &lt;br&gt;
 &lt;br&gt;
-Standard 7805 5V regulator. IGO (Input Ground Output). Spark Fun Electronics SKU : COM-00107
-&lt;a href="http://www.mouser.com/ds/2/308/MC7800-D-94905.pdf"&gt;Datasheet&lt;/a&gt;</description>
+MAX current out: 1.5A
+&lt;br&gt;
+MAX voltage in: 35V</description>
 <gates>
-<gate name="G$1" symbol="78XX" x="0" y="0"/>
+<gate name="G$1" symbol="VOLTAGE_REGULATOR" x="5.08" y="5.08"/>
 </gates>
 <devices>
-<device name="LINEAR" package="TO-220-SINK">
+<device name="LM340MPX-5.0/NOPB" package="SOT223">
 <connects>
-<connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="IN" pad="1"/>
-<connect gate="G$1" pin="OUT" pad="3"/>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="IN" pad="3"/>
+<connect gate="G$1" pin="OUT" pad="2 4"/>
 </connects>
 <technologies>
 <technology name=""/>
 </technologies>
 </device>
-<device name="SWITCHING" package="TO-220">
+<device name="LM340T-5.0/NOPB" package="TO-220">
 <connects>
-<connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="IN" pad="1"/>
-<connect gate="G$1" pin="OUT" pad="3"/>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="IN" pad="3"/>
+<connect gate="G$1" pin="OUT" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="LM340T-5.0/NOPB_SINK" package="TO-220-SINK">
+<connects>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="IN" pad="3"/>
+<connect gate="G$1" pin="OUT" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -749,7 +800,22 @@ It is replaced by MCP2561.
 <gate name="G$1" symbol="MCP2551" x="0" y="-12.7"/>
 </gates>
 <devices>
-<device name="" package="DIL08">
+<device name="DIL" package="DIL08">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SOIC" package="SOIC08">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -1132,17 +1198,17 @@ Source: http://www.molex.com</description>
 </class>
 </classes>
 <parts>
-<part name="IC1" library="HyTechDevices" deviceset="5V_REGULATOR" device="SWITCHING"/>
+<part name="IC1" library="HyTechDevices" deviceset="5V_REGULATOR_LM340-N" device="LM340MPX-5.0/NOPB"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
-<part name="U$2" library="HyTechDevices" deviceset="MCP2551" device=""/>
-<part name="R1" library="HyTechDevices" deviceset="RESISTOR" device="PTH-1/2W"/>
+<part name="U$2" library="HyTechDevices" deviceset="MCP2551" device="SOIC"/>
+<part name="R1" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES"/>
 <part name="IN" library="HyTechDevices" deviceset="MINIFIT_5566-4" device=""/>
 <part name="Q1" library="HyTechDevices" deviceset="BJT_NPN" device="TIP120(SINK)"/>
-<part name="R2" library="HyTechDevices" deviceset="RESISTOR" device="PTH-1/2W"/>
+<part name="R2" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES"/>
 <part name="Q2" library="HyTechDevices" deviceset="BJT_NPN" device="TIP120(SINK)"/>
-<part name="R3" library="HyTechDevices" deviceset="RESISTOR" device="PTH-1/2W"/>
+<part name="R3" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES"/>
 <part name="Q3" library="HyTechDevices" deviceset="BJT_NPN" device="TIP120(SINK)"/>
-<part name="R4" library="HyTechDevices" deviceset="RESISTOR" device="PTH-1/2W"/>
+<part name="R4" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES"/>
 <part name="OUT" library="HyTechDevices" deviceset="MINIFIT_5566-4" device=""/>
 <part name="FAN/PUMP" library="HyTechDevices" deviceset="MINIFIT_5566-4" device=""/>
 <part name="U$1" library="HyTechDevices" deviceset="TEENSY_3.2_SIMPLE" device=""/>
