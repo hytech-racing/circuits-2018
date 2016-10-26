@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -6083,6 +6083,9 @@ Source: http://www.alphapotentiometers.net/html/16mm_pot_2.html</description>
 <wire x1="2.7" y1="-3.6" x2="-0.5" y2="-3.6" width="0.127" layer="21"/>
 <wire x1="-0.5" y1="-3.6" x2="-0.5" y2="-1" width="0.127" layer="21"/>
 </package>
+<package name="S1791-42R">
+<smd name="P$1" x="0" y="0" dx="7.5" dy="3" layer="1"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ARDUINO_NANO">
@@ -7993,6 +7996,15 @@ Source: http://www.alphapotentiometers.net/html/16mm_pot_2.html</description>
 <pin name="TXD" x="25.4" y="0" visible="pin" length="short" direction="pas" rot="R180"/>
 <pin name="VCC" x="-2.54" y="-17.78" visible="pin" length="short" direction="pas"/>
 <pin name="GND" x="25.4" y="-17.78" visible="pin" length="short" direction="pas" rot="R180"/>
+</symbol>
+<symbol name="FUSE">
+<description>Generic Fuse Symbol</description>
+<wire x1="0" y1="0" x2="-2.54" y2="0" width="0.254" layer="94" curve="-180"/>
+<wire x1="0" y1="0" x2="2.54" y2="0" width="0.254" layer="94" curve="-180"/>
+<pin name="1" x="-5.08" y="0" visible="off" length="short"/>
+<pin name="2" x="5.08" y="0" visible="off" length="short" rot="R180"/>
+<text x="-5.08" y="1.27" size="1.27" layer="95">&gt;Name</text>
+<text x="2.54" y="1.27" size="1.27" layer="96">&gt;Value</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -11811,6 +11823,42 @@ Integrated TCP/IP Control Stack</description>
 <connect gate="G$1" pin="D" pad="MB MB1 MB2 MB3 MB4"/>
 <connect gate="G$1" pin="G" pad="4"/>
 <connect gate="G$1" pin="S" pad="1 2 3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SPRING_CONTACT">
+<description>&lt;B&gt; Harwin Surface Mount Spring Contact &lt;/B&gt;
+
+&lt;P&gt; &lt;a href="http://www.mouser.com/ds/2/181/S1791-42R-351038.pdf"&gt;Datasheet</description>
+<gates>
+<gate name="G$1" symbol="MV" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="S1791-42R">
+<connects>
+<connect gate="G$1" pin="S" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="C1Q_FUSE">
+<description>&lt;B&gt; Bel Fuse C1Q Fast Blow SMD Fuse &lt;/B&gt;
+&lt;P&gt; &lt;a href="http://www.mouser.com/ds/2/643/C1Q-526702.pdf"&gt;Datasheet</description>
+<gates>
+<gate name="G$1" symbol="FUSE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="1206">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
