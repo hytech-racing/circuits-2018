@@ -584,6 +584,18 @@ Source: http://www.molex.com</description>
 <text x="-1.27" y="5.08" size="1.27" layer="25">&gt;NAME</text>
 <text x="-2.54" y="-6.35" size="1.27" layer="27">&gt;VALUE</text>
 </package>
+<package name="SOT669">
+<smd name="MB2" x="0" y="2.75" dx="4.7" dy="1.5" layer="1"/>
+<smd name="MB" x="0" y="0.45" dx="4.2" dy="3.1" layer="1"/>
+<smd name="1" x="-1.905" y="-2.725" dx="0.7" dy="1.15" layer="1"/>
+<smd name="2" x="-0.635" y="-2.725" dx="0.7" dy="1.15" layer="1"/>
+<smd name="3" x="0.635" y="-2.725" dx="0.7" dy="1.15" layer="1"/>
+<smd name="4" x="1.905" y="-2.725" dx="0.7" dy="1.15" layer="1"/>
+<wire x1="-2.45" y1="1.975" x2="2.45" y2="1.975" width="0.127" layer="21"/>
+<wire x1="2.45" y1="1.975" x2="2.45" y2="-1.975" width="0.127" layer="21"/>
+<wire x1="2.45" y1="-1.975" x2="-2.45" y2="-1.975" width="0.127" layer="21"/>
+<wire x1="-2.45" y1="-1.975" x2="-2.45" y2="1.975" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="VOLTAGE_REGULATOR">
@@ -699,8 +711,7 @@ Source: http://www.molex.com</description>
 <wire x1="2.54" y1="0" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
 <wire x1="0" y1="-1.397" x2="0" y2="-3.683" width="0.254" layer="94"/>
 <wire x1="-1.143" y1="2.54" x2="-1.143" y2="-2.54" width="0.254" layer="94"/>
-<text x="-11.43" y="2.54" size="1.778" layer="96">&gt;VALUE</text>
-<text x="-11.43" y="5.08" size="1.778" layer="95">&gt;NAME</text>
+<text x="-3.81" y="5.08" size="1.778" layer="95">&gt;NAME</text>
 <pin name="D" x="5.08" y="2.54" visible="off" length="middle" direction="pas" rot="R180"/>
 <pin name="S" x="5.08" y="-2.54" visible="off" length="middle" direction="pas" rot="R180"/>
 <pin name="G" x="-5.08" y="-2.54" visible="off" length="short" direction="pas"/>
@@ -1065,16 +1076,22 @@ Source: http://www.molex.com</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="N-CHANNEL_MOSFET">
+<deviceset name="PSMN011_MOSFET">
+<description>&lt;B&gt; PSMN011_MOSFET &lt;/B&gt;
+
+&lt;P&gt; &lt;a href="http://www.nxp.com/documents/data_sheet/PSMN011-30YLC.pdf"&gt; Datasheet</description>
 <gates>
-<gate name="G$1" symbol="N-CHANNEL_MOSFET" x="0" y="0"/>
+<gate name="G$1" symbol="N-CHANNEL_MOSFET" x="-12.7" y="5.08"/>
 </gates>
 <devices>
-<device name="">
+<device name="" package="SOT669">
+<connects>
+<connect gate="G$1" pin="D" pad="MB MB2"/>
+<connect gate="G$1" pin="G" pad="4"/>
+<connect gate="G$1" pin="S" pad="1 2 3"/>
+</connects>
 <technologies>
-<technology name="">
-<attribute name="_EXTERNAL_" value="1" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -1163,9 +1180,9 @@ Source: http://www.molex.com</description>
 <part name="U$1" library="HyTechDevices" deviceset="TEENSY_3.2_SIMPLE" device=""/>
 <part name="12V_COOLING_SUPPLY" library="HyTechDevices" deviceset="MINIFIT_5566-2" device=""/>
 <part name="GND2" library="HyTechSymbols" deviceset="GND" device=""/>
-<part name="U$3" library="HyTechDevices" deviceset="N-CHANNEL_MOSFET" device="" value=""/>
-<part name="U$4" library="HyTechDevices" deviceset="N-CHANNEL_MOSFET" device="" value=""/>
-<part name="U$5" library="HyTechDevices" deviceset="N-CHANNEL_MOSFET" device="" value=""/>
+<part name="U$3" library="HyTechDevices" deviceset="PSMN011_MOSFET" device=""/>
+<part name="U$4" library="HyTechDevices" deviceset="PSMN011_MOSFET" device=""/>
+<part name="U$5" library="HyTechDevices" deviceset="PSMN011_MOSFET" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1205,7 +1222,7 @@ Source: http://www.molex.com</description>
 <instance part="12V_COOLING_SUPPLY" gate="-1" x="101.6" y="83.82" rot="MR0"/>
 <instance part="GND2" gate="1" x="109.22" y="33.02"/>
 <instance part="U$3" gate="G$1" x="104.14" y="48.26"/>
-<instance part="U$4" gate="G$1" x="114.3" y="55.88"/>
+<instance part="U$4" gate="G$1" x="116.84" y="55.88"/>
 <instance part="U$5" gate="G$1" x="127" y="63.5"/>
 </instances>
 <busses>
@@ -1235,18 +1252,17 @@ Source: http://www.molex.com</description>
 </segment>
 <segment>
 <pinref part="GND2" gate="1" pin="GND"/>
-<wire x1="132.08" y1="38.1" x2="119.38" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="38.1" x2="109.22" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="38.1" x2="121.92" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="38.1" x2="109.22" y2="38.1" width="0.1524" layer="91"/>
 <junction x="109.22" y="38.1"/>
 <wire x1="109.22" y1="38.1" x2="109.22" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="38.1" x2="132.08" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="U$5" gate="G$1" pin="S"/>
-<junction x="132.08" y="60.96"/>
-<pinref part="U$4" gate="G$1" pin="S"/>
-<wire x1="119.38" y1="53.34" x2="119.38" y2="38.1" width="0.1524" layer="91"/>
-<junction x="119.38" y="38.1"/>
-<pinref part="U$3" gate="G$1" pin="S"/>
+<wire x1="121.92" y1="53.34" x2="121.92" y2="38.1" width="0.1524" layer="91"/>
+<junction x="121.92" y="38.1"/>
 <wire x1="109.22" y1="45.72" x2="109.22" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="S"/>
+<pinref part="U$4" gate="G$1" pin="S"/>
+<pinref part="U$5" gate="G$1" pin="S"/>
 </segment>
 </net>
 <net name="5V" class="0">
@@ -1309,36 +1325,36 @@ Source: http://www.molex.com</description>
 </net>
 <net name="12V_COOLING_SUPPLY" class="0">
 <segment>
-<wire x1="109.22" y1="81.28" x2="119.38" y2="81.28" width="0.1524" layer="91"/>
-<pinref part="U$5" gate="G$1" pin="D"/>
-<wire x1="119.38" y1="81.28" x2="132.08" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="81.28" x2="121.92" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="81.28" x2="132.08" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="76.2" x2="132.08" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="FAN/PUMP" gate="-3" pin="S"/>
 <junction x="132.08" y="76.2"/>
 <wire x1="132.08" y1="81.28" x2="132.08" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="FAN/PUMP" gate="-1" pin="S"/>
-<pinref part="U$3" gate="G$1" pin="D"/>
-<wire x1="109.22" y1="50.8" x2="109.22" y2="81.28" width="0.1524" layer="91"/>
 <junction x="109.22" y="81.28"/>
+<wire x1="109.22" y1="50.8" x2="109.22" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="81.28" x2="109.22" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="83.82" x2="119.38" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="83.82" x2="121.92" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="12V_COOLING_SUPPLY" gate="-1" pin="S"/>
-<pinref part="U$4" gate="G$1" pin="D"/>
-<wire x1="119.38" y1="66.04" x2="119.38" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="116.84" y1="66.04" x2="119.38" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="66.04" x2="121.92" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="66.04" x2="121.92" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="FAN/PUMP" gate="-2" pin="S"/>
-<wire x1="119.38" y1="83.82" x2="119.38" y2="81.28" width="0.1524" layer="91"/>
-<junction x="119.38" y="66.04"/>
-<junction x="119.38" y="81.28"/>
-<wire x1="119.38" y1="81.28" x2="119.38" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="83.82" x2="121.92" y2="81.28" width="0.1524" layer="91"/>
+<junction x="121.92" y="66.04"/>
+<junction x="121.92" y="81.28"/>
+<wire x1="121.92" y1="81.28" x2="121.92" y2="66.04" width="0.1524" layer="91"/>
 <junction x="132.08" y="81.28"/>
+<pinref part="U$3" gate="G$1" pin="D"/>
+<pinref part="U$4" gate="G$1" pin="D"/>
+<pinref part="U$5" gate="G$1" pin="D"/>
 </segment>
 </net>
 <net name="N$17" class="0">
 <segment>
 <pinref part="R3" gate="G$1" pin="1"/>
-<wire x1="104.14" y1="53.34" x2="109.22" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="U$4" gate="G$1" pin="G"/>
+<wire x1="104.14" y1="53.34" x2="111.76" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
