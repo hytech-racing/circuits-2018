@@ -1177,10 +1177,10 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="U$2" library="HyTechDevices" deviceset="OPTOCOUPLER_QUAD_TLP291-4" device=""/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
-<part name="R1" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="100"/>
-<part name="R2" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="100"/>
-<part name="R3" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="100"/>
-<part name="R4" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="100"/>
+<part name="R1" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="220"/>
+<part name="R2" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="220"/>
+<part name="R3" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="220"/>
+<part name="R4" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="220"/>
 </parts>
 <sheets>
 <sheet>
