@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="7.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -6086,6 +6086,18 @@ Source: http://www.alphapotentiometers.net/html/16mm_pot_2.html</description>
 <package name="S1791-42R">
 <smd name="P$1" x="0" y="0" dx="7.5" dy="3" layer="1"/>
 </package>
+<package name="SOT669">
+<smd name="MB2" x="0" y="2.75" dx="4.7" dy="1.5" layer="1"/>
+<smd name="MB" x="0" y="0.45" dx="4.2" dy="3.1" layer="1"/>
+<smd name="1" x="-1.905" y="-2.725" dx="0.7" dy="1.15" layer="1"/>
+<smd name="2" x="-0.635" y="-2.725" dx="0.7" dy="1.15" layer="1"/>
+<smd name="3" x="0.635" y="-2.725" dx="0.7" dy="1.15" layer="1"/>
+<smd name="4" x="1.905" y="-2.725" dx="0.7" dy="1.15" layer="1"/>
+<wire x1="-2.45" y1="1.975" x2="2.45" y2="1.975" width="0.127" layer="21"/>
+<wire x1="2.45" y1="1.975" x2="2.45" y2="-1.975" width="0.127" layer="21"/>
+<wire x1="2.45" y1="-1.975" x2="-2.45" y2="-1.975" width="0.127" layer="21"/>
+<wire x1="-2.45" y1="-1.975" x2="-2.45" y2="1.975" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ARDUINO_NANO">
@@ -11859,6 +11871,26 @@ Integrated TCP/IP Control Stack</description>
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PSMN011_MOSFET">
+<description>&lt;B&gt; PSMN011_MOSFET &lt;/B&gt;
+
+&lt;P&gt; &lt;a href="http://www.nxp.com/documents/data_sheet/PSMN011-30YLC.pdf"&gt; Datasheet</description>
+<gates>
+<gate name="G$1" symbol="N-CHANNEL_MOSFET" x="-12.7" y="5.08"/>
+</gates>
+<devices>
+<device name="" package="SOT669">
+<connects>
+<connect gate="G$1" pin="D" pad="MB MB2"/>
+<connect gate="G$1" pin="G" pad="4"/>
+<connect gate="G$1" pin="S" pad="1 2 3"/>
 </connects>
 <technologies>
 <technology name=""/>
