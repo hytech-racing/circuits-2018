@@ -530,9 +530,9 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="BMS" library="HyTechDevices" package="AXIAL-0.3EZ" value="" x="43.18" y="71.12" rot="R270"/>
-<element name="BOOST" library="HyTechDevices" package="AXIAL-0.3EZ" value="" x="41.91" y="60.96" rot="R90"/>
-<element name="BSPD" library="HyTechDevices" package="AXIAL-0.3EZ" value="" x="27.94" y="74.93"/>
+<element name="BMS680" library="HyTechDevices" package="AXIAL-0.3EZ" value="" x="43.18" y="71.12" rot="R270"/>
+<element name="BOOST680" library="HyTechDevices" package="AXIAL-0.3EZ" value="" x="41.91" y="60.96" rot="R90"/>
+<element name="BSPD680" library="HyTechDevices" package="AXIAL-0.3EZ" value="" x="27.94" y="74.93"/>
 <element name="BUTTON_BOOST" library="HyTechDevices" package="B3F-10XX" value="" x="62.23" y="60.96" rot="R270">
 <attribute name="MPN" value="B3F-1000" x="62.23" y="60.96" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="OC_NEWARK" value="36M3542" x="62.23" y="60.96" size="1.778" layer="27" rot="R270" display="off"/>
@@ -569,7 +569,7 @@ design rules under a new name.</description>
 <attribute name="MF" value="" x="12.7" y="46.99" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="1822072" x="12.7" y="46.99" size="1.778" layer="27" display="off"/>
 </element>
-<element name="IMD" library="HyTechDevices" package="AXIAL-0.3EZ" value="" x="16.51" y="74.93" rot="R180"/>
+<element name="IMD680" library="HyTechDevices" package="AXIAL-0.3EZ" value="" x="16.51" y="74.93" rot="R180"/>
 <element name="LED_BMS" library="HyTechDevices" package="LED-5MM" value="" x="49.53" y="71.12"/>
 <element name="LED_BOOST" library="HyTechDevices" package="LED-5MM" value="" x="49.53" y="60.96"/>
 <element name="LED_BSPD" library="HyTechDevices" package="LED-5MM" value="" x="26.67" y="69.85"/>
@@ -577,9 +577,9 @@ design rules under a new name.</description>
 <element name="LED_MARK" library="HyTechDevices" package="LED-5MM" value="" x="49.53" y="48.26"/>
 <element name="LED_POWER" library="HyTechDevices" package="LED-5MM" value="" x="49.276" y="25.4"/>
 <element name="LED_START" library="HyTechDevices" package="LED-5MM" value="" x="49.53" y="35.56"/>
-<element name="MARK" library="HyTechDevices" package="AXIAL-0.3EZ" value="" x="43.18" y="49.53" rot="R90"/>
-<element name="POWER" library="HyTechDevices" package="AXIAL-0.3EZ" value="" x="41.91" y="25.4" rot="R270"/>
-<element name="START" library="HyTechDevices" package="AXIAL-0.3EZ" value="" x="43.18" y="35.56" rot="R270"/>
+<element name="MARK680" library="HyTechDevices" package="AXIAL-0.3EZ" value="" x="43.18" y="49.53" rot="R90"/>
+<element name="POWER680" library="HyTechDevices" package="AXIAL-0.3EZ" value="" x="41.91" y="25.4" rot="R270"/>
+<element name="START680" library="HyTechDevices" package="AXIAL-0.3EZ" value="" x="43.18" y="35.56" rot="R270"/>
 <element name="X2" library="HyTechDevices" package="MINIFIT_5566-6" value="MINIFIT_5566-6" x="74.93" y="41.91" rot="R270">
 <attribute name="MPN" value="95566-61002" x="74.93" y="41.91" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="OC_NEWARK" value="22K8620" x="74.93" y="41.91" size="1.778" layer="27" rot="R270" display="off"/>
@@ -595,45 +595,45 @@ design rules under a new name.</description>
 </elements>
 <signals>
 <signal name="N$1">
-<contactref element="POWER" pad="P$1"/>
+<contactref element="POWER680" pad="P$1"/>
 <contactref element="LED_POWER" pad="A"/>
 <wire x1="48.006" y1="25.4" x2="48.26" y2="29.21" width="0.4064" layer="16"/>
 <wire x1="48.26" y1="29.21" x2="41.91" y2="29.21" width="0.4064" layer="16"/>
 </signal>
 <signal name="N$2">
-<contactref element="BMS" pad="P$1"/>
+<contactref element="BMS680" pad="P$1"/>
 <contactref element="LED_BMS" pad="A"/>
 <wire x1="43.18" y1="74.93" x2="48.26" y2="74.894746875" width="0.4064" layer="16"/>
 <wire x1="48.26" y1="74.894746875" x2="48.26" y2="71.12" width="0.4064" layer="16"/>
 </signal>
 <signal name="LED_IMD">
-<contactref element="IMD" pad="P$1"/>
+<contactref element="IMD680" pad="P$1"/>
 <contactref element="LED_IMD" pad="A"/>
 <wire x1="20.32" y1="74.93" x2="20.32" y2="72.39" width="0.4064" layer="16"/>
 <wire x1="20.32" y1="72.39" x2="15.24" y2="72.39" width="0.4064" layer="16"/>
 <wire x1="15.24" y1="72.39" x2="15.24" y2="69.85" width="0.4064" layer="16"/>
 </signal>
 <signal name="N$4">
-<contactref element="BSPD" pad="P$1"/>
+<contactref element="BSPD680" pad="P$1"/>
 <contactref element="LED_BSPD" pad="A"/>
 <wire x1="25.4" y1="69.85" x2="24.13" y2="69.85" width="0.4064" layer="16"/>
 <wire x1="24.13" y1="69.85" x2="24.13" y2="74.93" width="0.4064" layer="16"/>
 </signal>
 <signal name="N$10">
 <contactref element="LED_MARK" pad="A"/>
-<contactref element="MARK" pad="P$2"/>
+<contactref element="MARK680" pad="P$2"/>
 <wire x1="48.26" y1="48.26" x2="48.26" y2="53.34" width="0.4064" layer="16"/>
 <wire x1="48.26" y1="53.34" x2="43.18" y2="53.34" width="0.4064" layer="16"/>
 </signal>
 <signal name="N$11">
 <contactref element="LED_BOOST" pad="A"/>
-<contactref element="BOOST" pad="P$2"/>
+<contactref element="BOOST680" pad="P$2"/>
 <wire x1="48.26" y1="60.96" x2="48.26" y2="64.77" width="0.4064" layer="16"/>
 <wire x1="48.26" y1="64.77" x2="41.91" y2="64.77" width="0.4064" layer="16"/>
 </signal>
 <signal name="N$12">
 <contactref element="LED_START" pad="A"/>
-<contactref element="START" pad="P$2"/>
+<contactref element="START680" pad="P$2"/>
 <wire x1="48.26" y1="35.56" x2="48.26" y2="31.75" width="0.4064" layer="16"/>
 <wire x1="48.26" y1="31.75" x2="43.18" y2="31.75" width="0.4064" layer="16"/>
 </signal>
@@ -769,13 +769,13 @@ design rules under a new name.</description>
 <wire x1="86.6394" y1="55.88" x2="86.6394" y2="55.1688" width="0.4064" layer="16"/>
 </signal>
 <signal name="20">
-<contactref element="POWER" pad="P$2"/>
-<contactref element="BMS" pad="P$2"/>
-<contactref element="IMD" pad="P$2"/>
-<contactref element="BSPD" pad="P$2"/>
-<contactref element="MARK" pad="P$1"/>
-<contactref element="BOOST" pad="P$1"/>
-<contactref element="START" pad="P$1"/>
+<contactref element="POWER680" pad="P$2"/>
+<contactref element="BMS680" pad="P$2"/>
+<contactref element="IMD680" pad="P$2"/>
+<contactref element="BSPD680" pad="P$2"/>
+<contactref element="MARK680" pad="P$1"/>
+<contactref element="BOOST680" pad="P$1"/>
+<contactref element="START680" pad="P$1"/>
 <contactref element="BUZZER" pad="2"/>
 <wire x1="43.18" y1="39.37" x2="43.18" y2="45.72" width="0.4064" layer="16"/>
 <wire x1="31.75" y1="67.31" x2="39.37" y2="67.31" width="0.4064" layer="16"/>

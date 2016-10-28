@@ -1128,16 +1128,16 @@ Source: http://www.molex.com</description>
 <part name="LED_BSPD" library="HyTechDevices" deviceset="LED" device="-5MM"/>
 <part name="LED_POWER" library="HyTechDevices" deviceset="LED" device="-5MM"/>
 <part name="LED_BMS" library="HyTechDevices" deviceset="LED" device="-5MM"/>
-<part name="POWER" library="HyTechDevices" deviceset="RESISTOR" device="EZ"/>
-<part name="BMS" library="HyTechDevices" deviceset="RESISTOR" device="EZ"/>
-<part name="IMD" library="HyTechDevices" deviceset="RESISTOR" device="EZ"/>
-<part name="BSPD" library="HyTechDevices" deviceset="RESISTOR" device="EZ"/>
+<part name="POWER680" library="HyTechDevices" deviceset="RESISTOR" device="EZ"/>
+<part name="BMS680" library="HyTechDevices" deviceset="RESISTOR" device="EZ"/>
+<part name="IMD680" library="HyTechDevices" deviceset="RESISTOR" device="EZ"/>
+<part name="BSPD680" library="HyTechDevices" deviceset="RESISTOR" device="EZ"/>
 <part name="LED_MARK" library="HyTechDevices" deviceset="LED" device="-5MM"/>
 <part name="LED_BOOST" library="HyTechDevices" deviceset="LED" device="-5MM"/>
 <part name="LED_START" library="HyTechDevices" deviceset="LED" device="-5MM"/>
-<part name="MARK" library="HyTechDevices" deviceset="RESISTOR" device="EZ"/>
-<part name="BOOST" library="HyTechDevices" deviceset="RESISTOR" device="EZ"/>
-<part name="START" library="HyTechDevices" deviceset="RESISTOR" device="EZ"/>
+<part name="MARK680" library="HyTechDevices" deviceset="RESISTOR" device="EZ"/>
+<part name="BOOST680" library="HyTechDevices" deviceset="RESISTOR" device="EZ"/>
+<part name="START680" library="HyTechDevices" deviceset="RESISTOR" device="EZ"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
@@ -1163,16 +1163,16 @@ Source: http://www.molex.com</description>
 <instance part="LED_BSPD" gate="LED" x="25.4" y="30.48" rot="R180"/>
 <instance part="LED_POWER" gate="LED" x="55.88" y="30.48" rot="R180"/>
 <instance part="LED_BMS" gate="LED" x="45.72" y="30.48" rot="R180"/>
-<instance part="POWER" gate="G$1" x="55.88" y="17.78" rot="R270"/>
-<instance part="BMS" gate="G$1" x="45.72" y="17.78" rot="R270"/>
-<instance part="IMD" gate="G$1" x="35.56" y="17.78" rot="R270"/>
-<instance part="BSPD" gate="G$1" x="25.4" y="17.78" rot="R270"/>
+<instance part="POWER680" gate="G$1" x="55.88" y="17.78" rot="R270"/>
+<instance part="BMS680" gate="G$1" x="45.72" y="17.78" rot="R270"/>
+<instance part="IMD680" gate="G$1" x="35.56" y="17.78" rot="R270"/>
+<instance part="BSPD680" gate="G$1" x="25.4" y="17.78" rot="R270"/>
 <instance part="LED_MARK" gate="LED" x="-5.08" y="30.48" rot="R180"/>
 <instance part="LED_BOOST" gate="LED" x="5.08" y="30.48" rot="R180"/>
 <instance part="LED_START" gate="LED" x="15.24" y="30.48" rot="R180"/>
-<instance part="MARK" gate="G$1" x="-5.08" y="17.78" rot="R90"/>
-<instance part="BOOST" gate="G$1" x="5.08" y="17.78" rot="R90"/>
-<instance part="START" gate="G$1" x="15.24" y="17.78" rot="R90"/>
+<instance part="MARK680" gate="G$1" x="-5.08" y="17.78" rot="R90"/>
+<instance part="BOOST680" gate="G$1" x="5.08" y="17.78" rot="R90"/>
+<instance part="START680" gate="G$1" x="15.24" y="17.78" rot="R90"/>
 <instance part="GND1" gate="1" x="-10.16" y="-25.4"/>
 <instance part="GND2" gate="1" x="5.08" y="-25.4"/>
 <instance part="GND3" gate="1" x="20.32" y="-25.4"/>
@@ -1202,28 +1202,28 @@ Source: http://www.molex.com</description>
 <nets>
 <net name="N$1" class="0">
 <segment>
-<pinref part="POWER" gate="G$1" pin="1"/>
+<pinref part="POWER680" gate="G$1" pin="1"/>
 <pinref part="LED_POWER" gate="LED" pin="A"/>
 <wire x1="55.88" y1="22.86" x2="55.88" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="BMS" gate="G$1" pin="1"/>
+<pinref part="BMS680" gate="G$1" pin="1"/>
 <pinref part="LED_BMS" gate="LED" pin="A"/>
 <wire x1="45.72" y1="22.86" x2="45.72" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LED_IMD" class="0">
 <segment>
-<pinref part="IMD" gate="G$1" pin="1"/>
+<pinref part="IMD680" gate="G$1" pin="1"/>
 <pinref part="LED_IMD" gate="LED" pin="A"/>
 <wire x1="35.56" y1="22.86" x2="35.56" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="BSPD" gate="G$1" pin="1"/>
+<pinref part="BSPD680" gate="G$1" pin="1"/>
 <pinref part="LED_BSPD" gate="LED" pin="A"/>
 <wire x1="25.4" y1="22.86" x2="25.4" y2="27.94" width="0.1524" layer="91"/>
 </segment>
@@ -1231,21 +1231,21 @@ Source: http://www.molex.com</description>
 <net name="N$10" class="0">
 <segment>
 <pinref part="LED_MARK" gate="LED" pin="A"/>
-<pinref part="MARK" gate="G$1" pin="2"/>
+<pinref part="MARK680" gate="G$1" pin="2"/>
 <wire x1="-5.08" y1="27.94" x2="-5.08" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$11" class="0">
 <segment>
 <pinref part="LED_BOOST" gate="LED" pin="A"/>
-<pinref part="BOOST" gate="G$1" pin="2"/>
+<pinref part="BOOST680" gate="G$1" pin="2"/>
 <wire x1="5.08" y1="27.94" x2="5.08" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$12" class="0">
 <segment>
 <pinref part="LED_START" gate="LED" pin="A"/>
-<pinref part="START" gate="G$1" pin="2"/>
+<pinref part="START680" gate="G$1" pin="2"/>
 <wire x1="15.24" y1="27.94" x2="15.24" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -1376,19 +1376,19 @@ Source: http://www.molex.com</description>
 <segment>
 <wire x1="33.02" y1="48.26" x2="68.58" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="48.26" x2="68.58" y2="12.7" width="0.1524" layer="91"/>
-<pinref part="POWER" gate="G$1" pin="2"/>
-<pinref part="BMS" gate="G$1" pin="2"/>
+<pinref part="POWER680" gate="G$1" pin="2"/>
+<pinref part="BMS680" gate="G$1" pin="2"/>
 <wire x1="55.88" y1="12.7" x2="45.72" y2="12.7" width="0.1524" layer="91"/>
-<pinref part="IMD" gate="G$1" pin="2"/>
+<pinref part="IMD680" gate="G$1" pin="2"/>
 <wire x1="45.72" y1="12.7" x2="35.56" y2="12.7" width="0.1524" layer="91"/>
 <junction x="45.72" y="12.7"/>
-<pinref part="BSPD" gate="G$1" pin="2"/>
+<pinref part="BSPD680" gate="G$1" pin="2"/>
 <wire x1="35.56" y1="12.7" x2="25.4" y2="12.7" width="0.1524" layer="91"/>
 <junction x="35.56" y="12.7"/>
-<pinref part="MARK" gate="G$1" pin="1"/>
-<pinref part="BOOST" gate="G$1" pin="1"/>
+<pinref part="MARK680" gate="G$1" pin="1"/>
+<pinref part="BOOST680" gate="G$1" pin="1"/>
 <wire x1="-5.08" y1="12.7" x2="5.08" y2="12.7" width="0.1524" layer="91"/>
-<pinref part="START" gate="G$1" pin="1"/>
+<pinref part="START680" gate="G$1" pin="1"/>
 <wire x1="5.08" y1="12.7" x2="15.24" y2="12.7" width="0.1524" layer="91"/>
 <junction x="5.08" y="12.7"/>
 <wire x1="25.4" y1="12.7" x2="15.24" y2="12.7" width="0.1524" layer="91"/>
