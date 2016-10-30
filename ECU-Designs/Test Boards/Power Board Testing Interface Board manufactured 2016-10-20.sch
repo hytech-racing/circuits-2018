@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1861,10 +1861,10 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <part name="GND1" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="U$1" library="HyTechDevices" deviceset="TERMINAL_BLOCK_DG301-02P" device=""/>
 <part name="GND2" library="HyTechSymbols" deviceset="GND" device=""/>
-<part name="R1" library="HyTechDevices" deviceset="RESISTOR" device="EZ" value="600"/>
+<part name="R1" library="HyTechDevices" deviceset="RESISTOR" device="EZ" value="560"/>
 <part name="LED_BRAKE_LIGHT" library="HyTechDevices" deviceset="LED" device="-5MM"/>
 <part name="GND3" library="HyTechSymbols" deviceset="GND" device=""/>
-<part name="R2" library="HyTechDevices" deviceset="RESISTOR" device="EZ" value="600"/>
+<part name="R2" library="HyTechDevices" deviceset="RESISTOR" device="EZ" value="560"/>
 <part name="LED_SHUTDOWN_CIRCUIT" library="HyTechDevices" deviceset="LED" device="-5MM"/>
 <part name="GND4" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="5VSUPPLY" library="HyTechDevices" deviceset="5V_REGULATOR_L7805" device="SWITCHING"/>
@@ -1883,10 +1883,10 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <part name="GND8" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="GND9" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="GND10" library="HyTechSymbols" deviceset="GND" device=""/>
-<part name="R7" library="HyTechDevices" deviceset="RESISTOR" device="EZ" value="250"/>
+<part name="R7" library="HyTechDevices" deviceset="RESISTOR" device="EZ" value="220"/>
 <part name="LED_DISCHARGE_OK" library="HyTechDevices" deviceset="LED" device="-5MM"/>
 <part name="GND11" library="HyTechSymbols" deviceset="GND" device=""/>
-<part name="R8" library="HyTechDevices" deviceset="RESISTOR" device="EZ" value="600"/>
+<part name="R8" library="HyTechDevices" deviceset="RESISTOR" device="EZ" value="560"/>
 <part name="LED_OKHS" library="HyTechDevices" deviceset="LED" device="-5MM"/>
 <part name="GND12" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="PNP" library="HyTechDevices" deviceset="BJT_PNP" device="" value=""/>
