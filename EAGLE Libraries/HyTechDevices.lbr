@@ -7406,29 +7406,29 @@ Source: http://www.alphapotentiometers.net/html/16mm_pot_2.html</description>
 <pin name="GPIO_21" x="25.4" y="-17.78" length="short" rot="R180"/>
 <text x="-7.62" y="-12.7" size="2.54" layer="95">RasPi Zero</text>
 </symbol>
-<symbol name="OPTOCOUPLER_QUAD_TLP291-4">
-<wire x1="-5.08" y1="10.16" x2="-5.08" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="-12.7" x2="12.7" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-12.7" x2="12.7" y2="10.16" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="10.16" x2="12.7" y2="10.16" width="0.254" layer="94"/>
-<text x="-4.445" y="10.795" size="1.778" layer="95">&gt;NAME</text>
-<text x="-4.445" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="VCC1" x="-7.62" y="7.62" visible="pin" length="short" direction="pas"/>
-<pin name="GND1" x="-7.62" y="5.08" visible="pin" length="short" direction="pas"/>
-<pin name="VCC2" x="-7.62" y="2.54" visible="pin" length="short" direction="pas"/>
-<pin name="GND2" x="-7.62" y="0" visible="pin" length="short" direction="pas"/>
-<pin name="VCC3" x="-7.62" y="-2.54" visible="pin" length="short" direction="pas"/>
-<pin name="GND3" x="-7.62" y="-5.08" visible="pin" length="short" direction="pas"/>
-<pin name="VCC4" x="-7.62" y="-7.62" visible="pin" length="short" direction="pas"/>
-<pin name="GND4" x="-7.62" y="-10.16" visible="pin" length="short" direction="pas"/>
-<pin name="EM4" x="15.24" y="-10.16" visible="pin" length="short" direction="pas" rot="R180"/>
-<pin name="C4" x="15.24" y="-7.62" visible="pin" length="short" direction="pas" rot="R180"/>
-<pin name="EM3" x="15.24" y="-5.08" visible="pin" length="short" direction="pas" rot="R180"/>
-<pin name="C3" x="15.24" y="-2.54" visible="pin" length="short" direction="pas" rot="R180"/>
-<pin name="EM2" x="15.24" y="0" visible="pin" length="short" direction="pas" rot="R180"/>
-<pin name="C2" x="15.24" y="2.54" visible="pin" length="short" direction="pas" rot="R180"/>
-<pin name="EM1" x="15.24" y="5.08" visible="pin" length="short" direction="pas" rot="R180"/>
-<pin name="C1" x="15.24" y="7.62" visible="pin" length="short" direction="pas" rot="R180"/>
+<symbol name="TLP291-4">
+<wire x1="0" y1="0" x2="0" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="0" y1="-22.86" x2="17.78" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-22.86" x2="17.78" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="17.78" y2="0" width="0.254" layer="94"/>
+<text x="0.635" y="0.635" size="1.778" layer="95">&gt;NAME</text>
+<text x="0.635" y="-25.4" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="VCC1" x="-2.54" y="-2.54" visible="pin" length="short" direction="pas"/>
+<pin name="GND1" x="-2.54" y="-5.08" visible="pin" length="short" direction="pas"/>
+<pin name="VCC2" x="-2.54" y="-7.62" visible="pin" length="short" direction="pas"/>
+<pin name="GND2" x="-2.54" y="-10.16" visible="pin" length="short" direction="pas"/>
+<pin name="VCC3" x="-2.54" y="-12.7" visible="pin" length="short" direction="pas"/>
+<pin name="GND3" x="-2.54" y="-15.24" visible="pin" length="short" direction="pas"/>
+<pin name="VCC4" x="-2.54" y="-17.78" visible="pin" length="short" direction="pas"/>
+<pin name="GND4" x="-2.54" y="-20.32" visible="pin" length="short" direction="pas"/>
+<pin name="EM4" x="20.32" y="-20.32" visible="pin" length="short" direction="pas" rot="R180"/>
+<pin name="C4" x="20.32" y="-17.78" visible="pin" length="short" direction="pas" rot="R180"/>
+<pin name="EM3" x="20.32" y="-15.24" visible="pin" length="short" direction="pas" rot="R180"/>
+<pin name="C3" x="20.32" y="-12.7" visible="pin" length="short" direction="pas" rot="R180"/>
+<pin name="EM2" x="20.32" y="-10.16" visible="pin" length="short" direction="pas" rot="R180"/>
+<pin name="C2" x="20.32" y="-7.62" visible="pin" length="short" direction="pas" rot="R180"/>
+<pin name="EM1" x="20.32" y="-5.08" visible="pin" length="short" direction="pas" rot="R180"/>
+<pin name="C1" x="20.32" y="-2.54" visible="pin" length="short" direction="pas" rot="R180"/>
 </symbol>
 <symbol name="LTC6804-1">
 <wire x1="20.32" y1="0" x2="20.32" y2="-63.5" width="0.254" layer="94"/>
@@ -10870,9 +10870,10 @@ MAX voltage in: 35V</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="OPTOCOUPLER_QUAD_TLP291-4">
+<deviceset name="TLP291-4">
+<description>&lt;b&gt;Toshiba Quad Channel Optocoupler TLP291-4&lt;/b&gt;</description>
 <gates>
-<gate name="G$1" symbol="OPTOCOUPLER_QUAD_TLP291-4" x="5.08" y="12.7"/>
+<gate name="G$1" symbol="TLP291-4" x="5.08" y="12.7"/>
 </gates>
 <devices>
 <device name="" package="SOIC-16">
