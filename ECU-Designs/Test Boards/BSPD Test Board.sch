@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1760,8 +1760,8 @@ Source: http://www.molex.com</description>
 <part name="BRAKE" library="HyTechDevices" deviceset="TRIMPOT_3296" device="C"/>
 <part name="R1" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES"/>
 <part name="R2" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES"/>
-<part name="R5" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="430k"/>
-<part name="C1" library="HyTechDevices" deviceset="CAP" device="0805" value=".47u"/>
+<part name="R5" library="HyTechDevices" deviceset="RESISTOR" device="EZ" value="430k"/>
+<part name="C1" library="HyTechDevices" deviceset="CAP" device="EZ" value=".47u"/>
 <part name="U$4" library="HyTechDevices" deviceset="LM293" device="DG4"/>
 <part name="CALIBRATE3" library="HyTechDevices" deviceset="TRIMPOT_3296" device="C"/>
 <part name="GND12" library="HyTechSymbols" deviceset="GND" device=""/>
