@@ -1754,13 +1754,13 @@ Source: http://www.molex.com</description>
 <part name="FAULT" library="HyTechDevices" deviceset="LED" device="-5MM"/>
 <part name="GND9" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="GND10" library="HyTechSymbols" deviceset="GND" device=""/>
-<part name="R4" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES"/>
+<part name="R4" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="430"/>
 <part name="AIR" library="HyTechDevices" deviceset="LED" device="-5MM"/>
 <part name="CURRENT" library="HyTechDevices" deviceset="TRIMPOT_3296" device="C"/>
 <part name="BRAKE" library="HyTechDevices" deviceset="TRIMPOT_3296" device="C"/>
-<part name="R1" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES"/>
-<part name="R2" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES"/>
-<part name="R5" library="HyTechDevices" deviceset="RESISTOR" device="EZ" value="430k"/>
+<part name="R1" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="330"/>
+<part name="R2" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="680"/>
+<part name="R5" library="HyTechDevices" deviceset="RESISTOR" device="EZ" value="680k"/>
 <part name="C1" library="HyTechDevices" deviceset="CAP" device="EZ" value=".47u"/>
 <part name="U$4" library="HyTechDevices" deviceset="LM293" device="DG4"/>
 <part name="CALIBRATE3" library="HyTechDevices" deviceset="TRIMPOT_3296" device="C"/>
