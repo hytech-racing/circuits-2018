@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -4308,7 +4308,7 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <rectangle x1="17.4879" y1="-0.2921" x2="18.0721" y2="0.2921" layer="51"/>
 </package>
 <package name="MINIFIT_5566-2">
-<description>&lt;b&gt;Mini FIT connector 2 pol&lt;/b&gt;&lt;p&gt;
+<description>&lt;b&gt;Mini-Fit Junior connector 2 pole&lt;/b&gt;&lt;p&gt;
 Source: http://www.molex.com</description>
 <wire x1="-2.6" y1="4.5" x2="2.6" y2="4.5" width="0.254" layer="21"/>
 <wire x1="2.6" y1="4.5" x2="2.6" y2="-2.2" width="0.254" layer="21"/>
@@ -4322,7 +4322,7 @@ Source: http://www.molex.com</description>
 <text x="-2.54" y="-6.35" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 <package name="MINIFIT_5566-4">
-<description>&lt;b&gt;Mini FIT connector 4 pol&lt;/b&gt;&lt;p&gt;
+<description>&lt;b&gt;Mini-Fit Junior connector 4 pole&lt;/b&gt;&lt;p&gt;
 Source: http://www.molex.com</description>
 <wire x1="-4.7" y1="4.5" x2="4.7" y2="4.5" width="0.254" layer="21"/>
 <wire x1="4.7" y1="4.5" x2="4.7" y2="-2.2" width="0.254" layer="21"/>
@@ -4341,7 +4341,7 @@ Source: http://www.molex.com</description>
 <text x="-3.81" y="6.985" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 <package name="MINIFIT_5566-6">
-<description>&lt;b&gt;Mini FIT connector 6 pol&lt;/b&gt;&lt;p&gt;
+<description>&lt;b&gt;Mini-Fit Junior connector 6 pole&lt;/b&gt;&lt;p&gt;
 Source: http://www.molex.com</description>
 <wire x1="-6.8" y1="4.5" x2="6.8" y2="4.5" width="0.254" layer="21"/>
 <wire x1="6.8" y1="4.5" x2="6.8" y2="-2.2" width="0.254" layer="21"/>
@@ -4390,7 +4390,7 @@ diameter 2.54 mm, horizontal, grid 10.16 mm</description>
 <text x="-2.032" y="-2.794" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
 <package name="MINIFIT_5566-12">
-<description>&lt;b&gt;Mini FIT connector 12 pol&lt;/b&gt;&lt;p&gt;
+<description>&lt;b&gt;Mini-Fit Junior connector 12 pole&lt;/b&gt;&lt;p&gt;
 Source: http://www.molex.com</description>
 <wire x1="-13.1" y1="4.5" x2="13.1" y2="4.5" width="0.254" layer="21"/>
 <wire x1="13.1" y1="4.5" x2="13.1" y2="-2.2" width="0.254" layer="21"/>
@@ -4417,7 +4417,7 @@ Source: http://www.molex.com</description>
 <text x="-11.43" y="-6.985" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 <package name="MINIFIT_5566-8">
-<description>&lt;b&gt;Mini FIT connector 8 pol&lt;/b&gt;&lt;p&gt;
+<description>&lt;b&gt;Mini-Fit Junior connector 8 pole&lt;/b&gt;&lt;p&gt;
 Source: http://www.molex.com</description>
 <wire x1="-8.9" y1="4.5" x2="8.9" y2="4.5" width="0.254" layer="21"/>
 <wire x1="8.9" y1="4.5" x2="8.9" y2="-2.2" width="0.254" layer="21"/>
@@ -4440,7 +4440,7 @@ Source: http://www.molex.com</description>
 <text x="-2.54" y="6.985" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 <package name="MINIFIT_5566-10">
-<description>&lt;b&gt;Mini FIT connector 10 pol&lt;/b&gt;&lt;p&gt;
+<description>&lt;b&gt;Mini-Fit Junior connector 10 pole&lt;/b&gt;&lt;p&gt;
 Source: http://www.molex.com</description>
 <wire x1="-11" y1="4.5" x2="11" y2="4.5" width="0.254" layer="21"/>
 <wire x1="11" y1="4.5" x2="11" y2="-2.2" width="0.254" layer="21"/>
