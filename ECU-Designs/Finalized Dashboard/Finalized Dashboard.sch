@@ -260,7 +260,7 @@
 <rectangle x1="-2.1501" y1="2" x2="-1.6599" y2="3.1001" layer="51"/>
 </package>
 <package name="MINIFIT_5566-4">
-<description>&lt;b&gt;Mini FIT connector 4 pol&lt;/b&gt;&lt;p&gt;
+<description>&lt;b&gt;Mini-Fit Junior connector 4 pole&lt;/b&gt;&lt;p&gt;
 Source: http://www.molex.com</description>
 <wire x1="-4.7" y1="4.5" x2="4.7" y2="4.5" width="0.254" layer="21"/>
 <wire x1="4.7" y1="4.5" x2="4.7" y2="-2.2" width="0.254" layer="21"/>
@@ -741,36 +741,6 @@ Yageo CFR series &lt;a href="http://www.yageo.com/pdf/yageo/Leaded-R_CFR_2008.pd
 <rectangle x1="0.175" y1="-0.65" x2="0.275" y2="-0.55" layer="51"/>
 <rectangle x1="-0.125" y1="0" x2="0.125" y2="0.25" layer="21"/>
 </package>
-<package name="XBEE">
-<description>&lt;a href="https://github.com/adafruit/Adafruit-Eagle-Library"&gt;Source: Adafruit&lt;/a&gt;</description>
-<wire x1="-12.5" y1="-14" x2="12.5" y2="-14" width="0.127" layer="21"/>
-<wire x1="12.5" y1="-14" x2="12.5" y2="7" width="0.127" layer="21"/>
-<wire x1="12.5" y1="7" x2="4.5" y2="13.5" width="0.127" layer="21"/>
-<wire x1="4.5" y1="13.5" x2="-5" y2="13.5" width="0.127" layer="21"/>
-<wire x1="-5" y1="13.5" x2="-12.5" y2="7" width="0.127" layer="21"/>
-<wire x1="-12.5" y1="7" x2="-12.5" y2="-14" width="0.127" layer="21"/>
-<pad name="10" x="-11" y="-12.5" drill="0.7" diameter="1.4224"/>
-<pad name="9" x="-11" y="-10.5" drill="0.7" diameter="1.4224"/>
-<pad name="8" x="-11" y="-8.5" drill="0.7" diameter="1.4224"/>
-<pad name="7" x="-11" y="-6.5" drill="0.7" diameter="1.4224"/>
-<pad name="6" x="-11" y="-4.5" drill="0.7" diameter="1.4224"/>
-<pad name="5" x="-11" y="-2.5" drill="0.7" diameter="1.4224"/>
-<pad name="4" x="-11" y="-0.5" drill="0.7" diameter="1.4224"/>
-<pad name="3" x="-11" y="1.5" drill="0.7" diameter="1.4224"/>
-<pad name="2" x="-11" y="3.5" drill="0.7" diameter="1.4224"/>
-<pad name="1" x="-11" y="5.5" drill="0.7" diameter="1.4224" shape="square"/>
-<pad name="11" x="11" y="-12.5" drill="0.7" diameter="1.4224"/>
-<pad name="12" x="11" y="-10.5" drill="0.7" diameter="1.4224"/>
-<pad name="13" x="11" y="-8.5" drill="0.7" diameter="1.4224"/>
-<pad name="14" x="11" y="-6.5" drill="0.7" diameter="1.4224"/>
-<pad name="15" x="11" y="-4.5" drill="0.7" diameter="1.4224"/>
-<pad name="16" x="11" y="-2.5" drill="0.7" diameter="1.4224"/>
-<pad name="17" x="11" y="-0.5" drill="0.7" diameter="1.4224"/>
-<pad name="18" x="11" y="1.5" drill="0.7" diameter="1.4224"/>
-<pad name="19" x="11" y="3.5" drill="0.7" diameter="1.4224"/>
-<pad name="20" x="11" y="5.5" drill="0.7" diameter="1.4224"/>
-<text x="-3" y="-16" size="1.27" layer="25">&gt;NAME</text>
-</package>
 <package name="B3F-10XX">
 <description>&lt;b&gt;OMRON SWITCH&lt;/b&gt;</description>
 <wire x1="3.302" y1="-0.762" x2="3.048" y2="-0.762" width="0.1524" layer="21"/>
@@ -835,7 +805,7 @@ Yageo CFR series &lt;a href="http://www.yageo.com/pdf/yageo/Leaded-R_CFR_2008.pd
 <text x="3.556" y="-2.794" size="1.27" layer="51" ratio="10">4</text>
 </package>
 <package name="MINIFIT_5566-2">
-<description>&lt;b&gt;Mini FIT connector 2 pol&lt;/b&gt;&lt;p&gt;
+<description>&lt;b&gt;Mini-Fit Junior connector 2 pole&lt;/b&gt;&lt;p&gt;
 Source: http://www.molex.com</description>
 <wire x1="-2.6" y1="4.5" x2="2.6" y2="4.5" width="0.254" layer="21"/>
 <wire x1="2.6" y1="4.5" x2="2.6" y2="-2.2" width="0.254" layer="21"/>
@@ -1194,37 +1164,6 @@ It has reduced top mask to make it harder to put the component on the wrong side
 <vertex x="-2.413" y="-2.921"/>
 </polygon>
 </symbol>
-<symbol name="XBEE">
-<description>&lt;a href="https://github.com/adafruit/Adafruit-Eagle-Library"&gt;Source: Adafruit&lt;/a&gt;</description>
-<wire x1="-17.78" y1="12.7" x2="-17.78" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="-17.78" y1="-15.24" x2="20.32" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="20.32" y1="-15.24" x2="20.32" y2="12.7" width="0.254" layer="94"/>
-<wire x1="20.32" y1="12.7" x2="10.16" y2="22.86" width="0.254" layer="94"/>
-<wire x1="10.16" y1="22.86" x2="-7.62" y2="22.86" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="22.86" x2="-17.78" y2="12.7" width="0.254" layer="94"/>
-<text x="-2.54" y="17.78" size="1.9304" layer="94">XBee</text>
-<text x="-2.54" y="-17.78" size="1.9304" layer="95">&gt;NAME</text>
-<pin name="VCC" x="-22.86" y="10.16" length="middle" direction="sup"/>
-<pin name="DOUT" x="-22.86" y="7.62" length="middle" direction="out"/>
-<pin name="DIN" x="-22.86" y="5.08" length="middle" direction="in"/>
-<pin name="DO8" x="-22.86" y="2.54" length="middle" direction="out"/>
-<pin name="RESET" x="-22.86" y="0" length="middle" direction="in"/>
-<pin name="PWM0/RSSI" x="-22.86" y="-2.54" length="middle" direction="out"/>
-<pin name="PWM1" x="-22.86" y="-5.08" length="middle" direction="out"/>
-<pin name="RESERVED" x="-22.86" y="-7.62" length="middle" direction="nc"/>
-<pin name="DTR/DI8" x="-22.86" y="-10.16" length="middle" direction="in"/>
-<pin name="GND" x="-22.86" y="-12.7" length="middle" direction="sup"/>
-<pin name="AD4/DIO4" x="25.4" y="-12.7" length="middle" rot="R180"/>
-<pin name="CTS/DIO7" x="25.4" y="-10.16" length="middle" rot="R180"/>
-<pin name="ON/SLEEP" x="25.4" y="-7.62" length="middle" direction="out" rot="R180"/>
-<pin name="VREF" x="25.4" y="-5.08" length="middle" direction="in" rot="R180"/>
-<pin name="ASC/AD5/DIO5" x="25.4" y="-2.54" length="middle" rot="R180"/>
-<pin name="RTS/AD6/DIO6" x="25.4" y="0" length="middle" rot="R180"/>
-<pin name="AD3/DIO3" x="25.4" y="2.54" length="middle" rot="R180"/>
-<pin name="AD2/DIO2" x="25.4" y="5.08" length="middle" rot="R180"/>
-<pin name="AD1/DIO1" x="25.4" y="7.62" length="middle" rot="R180"/>
-<pin name="AD0/DIO0" x="25.4" y="10.16" length="middle" rot="R180"/>
-</symbol>
 <symbol name="TS2">
 <wire x1="0" y1="1.905" x2="0" y2="2.54" width="0.254" layer="94"/>
 <wire x1="-4.445" y1="1.905" x2="-3.175" y2="1.905" width="0.254" layer="94"/>
@@ -1356,7 +1295,7 @@ It is replaced by MCP2561.
 </devices>
 </deviceset>
 <deviceset name="MINIFIT_5566-4" prefix="X">
-<description>&lt;b&gt;Mini FIT Junior connector 4 pole&lt;/b&gt;&lt;p&gt;
+<description>&lt;b&gt;Mini-Fit Junior connector 4 pole&lt;/b&gt;&lt;p&gt;
 Source: http://www.molex.com</description>
 <gates>
 <gate name="-1" symbol="MV" x="0" y="5.08" addlevel="always"/>
@@ -1678,41 +1617,6 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </device>
 </devices>
 </deviceset>
-<deviceset name="XBEE">
-<description>&lt;a href="https://github.com/adafruit/Adafruit-Eagle-Library"&gt;Source: Adafruit&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="XBEE" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="XBEE">
-<connects>
-<connect gate="G$1" pin="AD0/DIO0" pad="20"/>
-<connect gate="G$1" pin="AD1/DIO1" pad="19"/>
-<connect gate="G$1" pin="AD2/DIO2" pad="18"/>
-<connect gate="G$1" pin="AD3/DIO3" pad="17"/>
-<connect gate="G$1" pin="AD4/DIO4" pad="11"/>
-<connect gate="G$1" pin="ASC/AD5/DIO5" pad="15"/>
-<connect gate="G$1" pin="CTS/DIO7" pad="12"/>
-<connect gate="G$1" pin="DIN" pad="3"/>
-<connect gate="G$1" pin="DO8" pad="4"/>
-<connect gate="G$1" pin="DOUT" pad="2"/>
-<connect gate="G$1" pin="DTR/DI8" pad="9"/>
-<connect gate="G$1" pin="GND" pad="10"/>
-<connect gate="G$1" pin="ON/SLEEP" pad="13"/>
-<connect gate="G$1" pin="PWM0/RSSI" pad="6"/>
-<connect gate="G$1" pin="PWM1" pad="7"/>
-<connect gate="G$1" pin="RESERVED" pad="8"/>
-<connect gate="G$1" pin="RESET" pad="5"/>
-<connect gate="G$1" pin="RTS/AD6/DIO6" pad="16"/>
-<connect gate="G$1" pin="VCC" pad="1"/>
-<connect gate="G$1" pin="VREF" pad="14"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="BTN_10-XX" prefix="S" uservalue="yes">
 <description>&lt;b&gt;OMRON SWITCH&lt;/b&gt;</description>
 <gates>
@@ -1738,7 +1642,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </devices>
 </deviceset>
 <deviceset name="MINIFIT_5566-2" prefix="X">
-<description>&lt;b&gt;Mini FIT Junior connector 2 pole&lt;/b&gt;&lt;p&gt;
+<description>&lt;b&gt;Mini-Fit Junior connector 2 pole&lt;/b&gt;&lt;p&gt;
 Source: http://www.molex.com</description>
 <gates>
 <gate name="-1" symbol="MV" x="0" y="2.54" addlevel="always"/>
@@ -1981,7 +1885,6 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <part name="R14" library="HyTechDevices" deviceset="RESISTOR" device="AXIAL-0.3"/>
 <part name="R15" library="HyTechDevices" deviceset="RESISTOR" device="AXIAL-0.3"/>
 <part name="R16" library="HyTechDevices" deviceset="RESISTOR" device="AXIAL-0.3"/>
-<part name="U$6" library="HyTechDevices" deviceset="XBEE" device=""/>
 <part name="BUTTON_MARK1" library="HyTechDevices" deviceset="BTN_10-XX" device=""/>
 <part name="BUTTON_MARK2" library="HyTechDevices" deviceset="BTN_10-XX" device=""/>
 <part name="BUTTON_MARK4" library="HyTechDevices" deviceset="BTN_10-XX" device=""/>
@@ -1996,6 +1899,7 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <part name="X2" library="HyTechDevices" deviceset="MINIFIT_5566-2" device=""/>
 <part name="C1" library="HyTechDevices" deviceset="CAP" device="EZ"/>
 <part name="R17" library="HyTechDevices" deviceset="RESISTOR" device="AXIAL-0.3"/>
+<part name="X4" library="HyTechDevices" deviceset="MINIFIT_5566-4" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2006,6 +1910,7 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <text x="53.34" y="27.94" size="1.778" layer="91">0.1 uF</text>
 <text x="170.18" y="127" size="1.778" layer="91">Out to PI</text>
 <text x="101.6" y="0" size="1.778" layer="91">Out to Speaker</text>
+<text x="162.56" y="86.36" size="1.778" layer="91">Out to XBee</text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="76.2" y="40.64"/>
@@ -2061,7 +1966,6 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <instance part="R14" gate="G$1" x="-55.88" y="99.06"/>
 <instance part="R15" gate="G$1" x="-55.88" y="93.98"/>
 <instance part="R16" gate="G$1" x="-55.88" y="88.9"/>
-<instance part="U$6" gate="G$1" x="152.4" y="91.44"/>
 <instance part="BUTTON_MARK1" gate="1" x="132.08" y="55.88" rot="R270"/>
 <instance part="BUTTON_MARK2" gate="1" x="132.08" y="43.18" rot="R270"/>
 <instance part="BUTTON_MARK4" gate="1" x="132.08" y="30.48" rot="R270"/>
@@ -2080,6 +1984,10 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <instance part="X2" gate="-1" x="104.14" y="7.62"/>
 <instance part="C1" gate="G$1" x="30.48" y="27.94"/>
 <instance part="R17" gate="G$1" x="5.08" y="27.94"/>
+<instance part="X4" gate="-1" x="152.4" y="91.44"/>
+<instance part="X4" gate="-2" x="152.4" y="88.9"/>
+<instance part="X4" gate="-3" x="152.4" y="86.36"/>
+<instance part="X4" gate="-4" x="152.4" y="83.82"/>
 </instances>
 <busses>
 </busses>
@@ -2249,15 +2157,7 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <wire x1="137.16" y1="5.08" x2="139.7" y2="5.08" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="X5" gate="-2" pin="S"/>
-<wire x1="165.1" y1="68.58" x2="127" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="127" y1="68.58" x2="104.14" y2="68.58" width="0.1524" layer="91"/>
-<junction x="127" y="68.58"/>
-<wire x1="127" y1="76.2" x2="127" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="U$6" gate="G$1" pin="GND"/>
-<wire x1="129.54" y1="78.74" x2="129.54" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="129.54" y1="76.2" x2="127" y2="76.2" width="0.1524" layer="91"/>
-<junction x="127" y="76.2"/>
+<wire x1="127" y1="83.82" x2="127" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="AGND"/>
 <wire x1="99.06" y1="76.2" x2="109.22" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="76.2" x2="127" y2="76.2" width="0.1524" layer="91"/>
@@ -2266,7 +2166,11 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <pinref part="X1" gate="-2" pin="S"/>
 <wire x1="154.94" y1="127" x2="109.22" y2="127" width="0.1524" layer="91"/>
 <label x="149.86" y="127" size="1.778" layer="95"/>
+<label x="129.54" y="83.82" size="1.778" layer="95"/>
+<pinref part="X5" gate="-2" pin="S"/>
+<wire x1="165.1" y1="68.58" x2="127" y2="68.58" width="0.1524" layer="91"/>
 <label x="160.02" y="68.58" size="1.778" layer="95"/>
+<wire x1="127" y1="68.58" x2="104.14" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="68.58" x2="104.14" y2="15.24" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="GND"/>
 <wire x1="60.96" y1="78.74" x2="73.66" y2="78.74" width="0.1524" layer="91"/>
@@ -2299,6 +2203,11 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <wire x1="91.44" y1="5.08" x2="101.6" y2="5.08" width="0.1524" layer="91"/>
 <label x="96.52" y="5.08" size="1.778" layer="95"/>
 <pinref part="C1" gate="G$1" pin="2"/>
+<wire x1="127" y1="76.2" x2="127" y2="68.58" width="0.1524" layer="91"/>
+<junction x="127" y="76.2"/>
+<junction x="127" y="68.58"/>
+<pinref part="X4" gate="-4" pin="S"/>
+<wire x1="149.86" y1="83.82" x2="127" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -2594,13 +2503,13 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="U$6" gate="G$1" pin="DOUT"/>
-<wire x1="129.54" y1="99.06" x2="121.92" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="99.06" x2="121.92" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="88.9" x2="121.92" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="86.36" x2="68.58" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="86.36" x2="68.58" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="D1(TX1)"/>
 <wire x1="68.58" y1="73.66" x2="73.66" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="X4" gate="-2" pin="S"/>
+<wire x1="149.86" y1="88.9" x2="121.92" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="5V" class="0">
@@ -2619,24 +2528,24 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <junction x="101.6" y="78.74"/>
 <pinref part="U$3" gate="G$1" pin="OUT"/>
 <wire x1="101.6" y1="78.74" x2="119.38" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="78.74" x2="119.38" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="101.6" x2="129.54" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="U$6" gate="G$1" pin="VCC"/>
+<wire x1="119.38" y1="78.74" x2="119.38" y2="91.44" width="0.1524" layer="91"/>
 <label x="99.06" y="78.74" size="1.778" layer="95"/>
 <label x="33.02" y="33.02" size="1.778" layer="95"/>
 <pinref part="C1" gate="G$1" pin="1"/>
 <junction x="30.48" y="33.02"/>
+<pinref part="X4" gate="-1" pin="S"/>
+<wire x1="119.38" y1="91.44" x2="149.86" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$13" class="0">
 <segment>
-<pinref part="U$6" gate="G$1" pin="DIN"/>
-<wire x1="129.54" y1="96.52" x2="124.46" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="96.52" x2="124.46" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="86.36" x2="124.46" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="83.82" x2="71.12" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="83.82" x2="71.12" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="D0(RX1)"/>
 <wire x1="71.12" y1="76.2" x2="73.66" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="X4" gate="-3" pin="S"/>
+<wire x1="124.46" y1="86.36" x2="149.86" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$42" class="0">
