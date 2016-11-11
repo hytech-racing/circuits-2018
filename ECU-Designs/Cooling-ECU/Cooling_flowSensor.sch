@@ -1201,6 +1201,7 @@ Source: http://www.molex.com</description>
 <part name="GND2" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="GND6" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="GND7" library="HyTechSymbols" deviceset="GND" device=""/>
+<part name="X2" library="HyTechDevices" deviceset="MINIFIT_5566-4" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1255,6 +1256,10 @@ Source: http://www.molex.com</description>
 <instance part="GND2" gate="1" x="81.28" y="55.88" rot="R90"/>
 <instance part="GND6" gate="1" x="81.28" y="43.18" rot="R90"/>
 <instance part="GND7" gate="1" x="81.28" y="30.48" rot="R90"/>
+<instance part="X2" gate="-1" x="60.96" y="76.2" rot="MR0"/>
+<instance part="X2" gate="-2" x="60.96" y="73.66" rot="MR0"/>
+<instance part="X2" gate="-3" x="60.96" y="71.12" rot="MR0"/>
+<instance part="X2" gate="-4" x="60.96" y="68.58" rot="MR0"/>
 </instances>
 <busses>
 </busses>
@@ -1433,41 +1438,6 @@ Source: http://www.molex.com</description>
 <wire x1="63.5" y1="30.48" x2="68.58" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="12V" class="0">
-<segment>
-<pinref part="OUT" gate="-1" pin="S"/>
-<pinref part="IC1" gate="G$1" pin="IN"/>
-<wire x1="-30.48" y1="71.12" x2="-35.56" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="-35.56" y1="71.12" x2="-35.56" y2="78.74" width="0.1524" layer="91"/>
-<junction x="-35.56" y="71.12"/>
-<pinref part="IN" gate="-1" pin="S"/>
-<wire x1="-40.64" y1="48.26" x2="-35.56" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="-35.56" y1="48.26" x2="-35.56" y2="71.12" width="0.1524" layer="91"/>
-<junction x="-35.56" y="48.26"/>
-<wire x1="-35.56" y1="48.26" x2="-35.56" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="-35.56" y1="30.48" x2="-40.64" y2="30.48" width="0.1524" layer="91"/>
-<pinref part="FLOW_SENSOR" gate="-1" pin="S"/>
-<wire x1="-40.64" y1="15.24" x2="-35.56" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="-35.56" y1="15.24" x2="-35.56" y2="30.48" width="0.1524" layer="91"/>
-<junction x="-35.56" y="30.48"/>
-<wire x1="-35.56" y1="78.74" x2="81.28" y2="78.74" width="0.1524" layer="91"/>
-<pinref part="X1" gate="-1" pin="S"/>
-<wire x1="81.28" y1="78.74" x2="101.6" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="78.74" x2="81.28" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="X1" gate="-3" pin="S"/>
-<wire x1="81.28" y1="73.66" x2="101.6" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="73.66" x2="81.28" y2="68.58" width="0.1524" layer="91"/>
-<junction x="81.28" y="73.66"/>
-<pinref part="X1" gate="-5" pin="S"/>
-<wire x1="81.28" y1="68.58" x2="101.6" y2="68.58" width="0.1524" layer="91"/>
-<label x="-40.64" y="48.26" size="1.778" layer="95"/>
-<label x="-40.64" y="30.48" size="1.778" layer="95"/>
-<label x="-40.64" y="15.24" size="1.778" layer="95"/>
-<label x="96.52" y="78.74" size="1.778" layer="95"/>
-<label x="96.52" y="73.66" size="1.778" layer="95"/>
-<label x="96.52" y="68.58" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="N$19" class="0">
 <segment>
 <pinref part="X1" gate="-2" pin="S"/>
@@ -1493,6 +1463,53 @@ Source: http://www.molex.com</description>
 <wire x1="93.98" y1="66.04" x2="93.98" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="U$5" gate="G$1" pin="D"/>
 <wire x1="93.98" y1="35.56" x2="78.74" y2="35.56" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="12V" class="0">
+<segment>
+<pinref part="OUT" gate="-1" pin="S"/>
+<pinref part="IC1" gate="G$1" pin="IN"/>
+<wire x1="-30.48" y1="71.12" x2="-35.56" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="IN" gate="-1" pin="S"/>
+<wire x1="-40.64" y1="48.26" x2="-35.56" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="-35.56" y1="48.26" x2="-35.56" y2="71.12" width="0.1524" layer="91"/>
+<junction x="-35.56" y="48.26"/>
+<wire x1="-35.56" y1="48.26" x2="-35.56" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="-35.56" y1="30.48" x2="-40.64" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="FLOW_SENSOR" gate="-1" pin="S"/>
+<wire x1="-40.64" y1="15.24" x2="-35.56" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="-35.56" y1="15.24" x2="-35.56" y2="30.48" width="0.1524" layer="91"/>
+<junction x="-35.56" y="30.48"/>
+<label x="-40.64" y="48.26" size="1.778" layer="95"/>
+<label x="-40.64" y="30.48" size="1.778" layer="95"/>
+<label x="-40.64" y="15.24" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="AUX_12V_1" class="0">
+<segment>
+<pinref part="X1" gate="-1" pin="S"/>
+<pinref part="X2" gate="-1" pin="S"/>
+<wire x1="101.6" y1="78.74" x2="63.5" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="78.74" x2="63.5" y2="76.2" width="0.1524" layer="91"/>
+<label x="68.58" y="78.74" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="AUX_12V_2" class="0">
+<segment>
+<pinref part="X1" gate="-3" pin="S"/>
+<wire x1="101.6" y1="73.66" x2="63.5" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="73.66" x2="63.5" y2="73.66" width="0.1524" layer="91"/>
+<label x="68.58" y="73.66" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="AUX_12V_3" class="0">
+<segment>
+<pinref part="X1" gate="-5" pin="S"/>
+<wire x1="101.6" y1="68.58" x2="66.04" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="68.58" x2="66.04" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="X2" gate="-3" pin="S"/>
+<wire x1="66.04" y1="71.12" x2="63.5" y2="71.12" width="0.1524" layer="91"/>
+<label x="68.58" y="68.58" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
