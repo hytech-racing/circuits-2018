@@ -2176,6 +2176,14 @@ Verify Enable Pins</text>
 <wire x1="-114.3" y1="66.04" x2="-104.14" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="-104.14" y1="66.04" x2="-104.14" y2="71.12" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="F2" gate="G$1" pin="2"/>
+<wire x1="-104.14" y1="35.56" x2="-119.38" y2="35.56" width="0.1524" layer="91"/>
+<label x="-116.84" y="35.56" size="1.778" layer="95"/>
+<wire x1="-104.14" y1="35.56" x2="-104.14" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="TEST_PORT" gate="-3" pin="S"/>
+<wire x1="-114.3" y1="63.5" x2="-104.14" y2="63.5" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="N$30" class="0">
 <segment>
@@ -2830,16 +2838,6 @@ Verify Enable Pins</text>
 <pinref part="CONTACT10" gate="G$1" pin="S"/>
 <wire x1="-132.08" y1="15.24" x2="-129.54" y2="15.24" width="0.1524" layer="91"/>
 <pinref part="F10" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="N$3" class="0">
-<segment>
-<pinref part="F2" gate="G$1" pin="2"/>
-<wire x1="-104.14" y1="35.56" x2="-119.38" y2="35.56" width="0.1524" layer="91"/>
-<label x="-116.84" y="35.56" size="1.778" layer="95"/>
-<wire x1="-104.14" y1="35.56" x2="-104.14" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="TEST_PORT" gate="-3" pin="S"/>
-<wire x1="-114.3" y1="63.5" x2="-104.14" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
