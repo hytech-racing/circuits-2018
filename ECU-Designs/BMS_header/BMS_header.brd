@@ -479,17 +479,17 @@ design rules under a new name.</description>
 <attribute name="OC_NEWARK" value="unknown" x="29.21" y="58.42" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="" x="29.21" y="58.42" size="1.778" layer="27" display="off"/>
 </element>
-<element name="X4" library="HyTechDevices" package="MINIFIT_5566-2" value="MINIFIT_5566-2" x="29.21" y="46.99">
-<attribute name="OC_FARNELL" value="1822072" x="29.21" y="46.99" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="" x="29.21" y="46.99" size="1.778" layer="27" display="off"/>
-<attribute name="OC_NEWARK" value="unknown" x="29.21" y="46.99" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="" x="29.21" y="46.99" size="1.778" layer="27" display="off"/>
+<element name="X4" library="HyTechDevices" package="MINIFIT_5566-2" value="MINIFIT_5566-2" x="29.21" y="48.26">
+<attribute name="OC_FARNELL" value="1822072" x="29.21" y="48.26" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="29.21" y="48.26" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="29.21" y="48.26" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="" x="29.21" y="48.26" size="1.778" layer="27" display="off"/>
 </element>
-<element name="X5" library="HyTechDevices" package="MINIFIT_5566-2" value="MINIFIT_5566-2" x="17.78" y="38.1" rot="R270">
-<attribute name="OC_FARNELL" value="1822072" x="17.78" y="38.1" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MPN" value="" x="17.78" y="38.1" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="OC_NEWARK" value="unknown" x="17.78" y="38.1" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MF" value="" x="17.78" y="38.1" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="X5" library="HyTechDevices" package="MINIFIT_5566-2" value="MINIFIT_5566-2" x="16.51" y="38.1" rot="R270">
+<attribute name="OC_FARNELL" value="1822072" x="16.51" y="38.1" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="" x="16.51" y="38.1" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="16.51" y="38.1" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="" x="16.51" y="38.1" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="X6" library="HyTechDevices" package="MINIFIT_5566-2" value="MINIFIT_5566-2" x="10.16" y="50.8">
 <attribute name="OC_FARNELL" value="1822072" x="10.16" y="50.8" size="1.778" layer="27" display="off"/>
@@ -660,7 +660,6 @@ design rules under a new name.</description>
 <signal name="N$36">
 <via x="17.78" y="50.8" extent="1-16" drill="1" shape="square"/>
 <wire x1="17.78" y1="50.8" x2="29.21" y2="50.8" width="0.6096" layer="16"/>
-<wire x1="29.21" y1="50.8" x2="29.21" y2="49.53" width="0.6096" layer="16"/>
 </signal>
 <signal name="N$37">
 <via x="17.78" y="48.26" extent="1-16" drill="1" shape="square"/>
@@ -677,17 +676,16 @@ design rules under a new name.</description>
 <signal name="N$40">
 <via x="17.78" y="45.72" extent="1-16" drill="1" shape="square"/>
 <wire x1="17.78" y1="45.72" x2="29.21" y2="45.72" width="0.6096" layer="16"/>
-<wire x1="29.21" y1="45.72" x2="29.21" y2="44.45" width="0.6096" layer="16"/>
 </signal>
 <signal name="N$38">
 <via x="17.78" y="43.18" extent="1-16" drill="1" shape="square"/>
-<wire x1="17.78" y1="43.18" x2="21.59" y2="43.18" width="0.6096" layer="16"/>
-<wire x1="21.59" y1="43.18" x2="21.59" y2="38.1" width="0.6096" layer="16"/>
-<wire x1="21.59" y1="38.1" x2="20.32" y2="38.1" width="0.6096" layer="16"/>
+<wire x1="17.78" y1="43.18" x2="19.05" y2="43.18" width="0.6096" layer="16"/>
+<wire x1="19.05" y1="43.18" x2="19.05" y2="38.1" width="0.6096" layer="16"/>
 </signal>
 <signal name="N$41">
 <via x="15.24" y="43.18" extent="1-16" drill="1" shape="square"/>
-<wire x1="15.24" y1="43.18" x2="15.24" y2="38.1" width="0.6096" layer="16"/>
+<wire x1="15.24" y1="43.18" x2="13.97" y2="43.18" width="0.6096" layer="16"/>
+<wire x1="13.97" y1="43.18" x2="13.97" y2="38.1" width="0.6096" layer="16"/>
 </signal>
 </signals>
 </board>
