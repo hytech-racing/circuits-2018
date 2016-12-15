@@ -309,6 +309,7 @@ It has a reduced top mask to make it harder to install upside-down.</description
 <rectangle x1="0.3899" y1="2" x2="0.8801" y2="3.1001" layer="51"/>
 <rectangle x1="-0.8801" y1="2" x2="-0.3899" y2="3.1001" layer="51"/>
 <rectangle x1="-2.1501" y1="2" x2="-1.6599" y2="3.1001" layer="51"/>
+<circle x="-1.905" y="-0.889" radius="0.254" width="0.0508" layer="21"/>
 </package>
 <package name="SOT223">
 <description>&lt;b&gt;SOT-223&lt;/b&gt;
@@ -366,7 +367,7 @@ It has a reduced top mask to make it harder to install upside-down.</description
 <pad name="COIL-" x="25.019" y="7.493" drill="1.5" shape="square"/>
 </package>
 <package name="MINIFIT_5566-2">
-<description>&lt;b&gt;Mini FIT connector 2 pol&lt;/b&gt;&lt;p&gt;
+<description>&lt;b&gt;Mini-Fit Junior connector 2 pole&lt;/b&gt;&lt;p&gt;
 Source: http://www.molex.com</description>
 <wire x1="-2.6" y1="4.5" x2="2.6" y2="4.5" width="0.254" layer="21"/>
 <wire x1="2.6" y1="4.5" x2="2.6" y2="-2.2" width="0.254" layer="21"/>
@@ -593,7 +594,7 @@ design rules under a new name.</description>
 <attribute name="OC_FARNELL" value="1822072" x="7.62" y="10.16" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="" x="7.62" y="10.16" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="R6" library="HyTechDevices" package="0805" value="470" x="22.606" y="12.7" rot="MR180"/>
+<element name="R6" library="HyTechDevices" package="0805" value="680" x="22.606" y="12.7" rot="MR180"/>
 </elements>
 <signals>
 <signal name="GND">

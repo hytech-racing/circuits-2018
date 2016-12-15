@@ -201,6 +201,7 @@
 <rectangle x1="0.3899" y1="2" x2="0.8801" y2="3.1001" layer="51"/>
 <rectangle x1="-0.8801" y1="2" x2="-0.3899" y2="3.1001" layer="51"/>
 <rectangle x1="-2.1501" y1="2" x2="-1.6599" y2="3.1001" layer="51"/>
+<circle x="-1.905" y="-0.889" radius="0.254" width="0.0508" layer="21"/>
 </package>
 <package name="SOT223">
 <description>&lt;b&gt;SOT-223&lt;/b&gt;
@@ -881,7 +882,7 @@ It has reduced top mask to make it harder to put the component on the wrong side
 <circle x="2.54" y="0" radius="0.40160625" width="0" layer="29"/>
 </package>
 <package name="MINIFIT_5566-2">
-<description>&lt;b&gt;Mini FIT connector 2 pol&lt;/b&gt;&lt;p&gt;
+<description>&lt;b&gt;Mini-Fit Junior connector 2 pole&lt;/b&gt;&lt;p&gt;
 Source: http://www.molex.com</description>
 <wire x1="-2.6" y1="4.5" x2="2.6" y2="4.5" width="0.254" layer="21"/>
 <wire x1="2.6" y1="4.5" x2="2.6" y2="-2.2" width="0.254" layer="21"/>
@@ -896,7 +897,7 @@ Source: http://www.molex.com</description>
 </package>
 </packages>
 <symbols>
-<symbol name="VOLTAGE_MONITOR_MC34161DG">
+<symbol name="MC34161DG">
 <wire x1="0" y1="12.7" x2="0" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="17.78" y2="0" width="0.254" layer="94"/>
 <wire x1="17.78" y1="0" x2="17.78" y2="12.7" width="0.254" layer="94"/>
@@ -1067,13 +1068,8 @@ Source: http://www.molex.com</description>
 <description>LED
 &lt;br&gt;
 &lt;a href="https://github.com/DangerousPrototypes/Eagle_Part_Library"&gt;Source: Dangerous Prototypes Eagle Library&lt;/a&gt;</description>
-<wire x1="1.27" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="-2.54" x2="-1.27" y2="0" width="0.254" layer="94"/>
 <wire x1="1.27" y1="-2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="0" y1="-2.54" x2="-1.27" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="1.27" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="-1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="-2.54" width="0.1524" layer="94"/>
 <wire x1="-2.032" y1="-0.762" x2="-3.429" y2="-2.159" width="0.1524" layer="94"/>
 <wire x1="-1.905" y1="-1.905" x2="-3.302" y2="-3.302" width="0.1524" layer="94"/>
 <text x="3.556" y="-4.572" size="1.778" layer="95" rot="R90">&gt;NAME</text>
@@ -1089,6 +1085,11 @@ Source: http://www.molex.com</description>
 <vertex x="-3.302" y="-3.302"/>
 <vertex x="-2.921" y="-2.413"/>
 <vertex x="-2.413" y="-2.921"/>
+</polygon>
+<polygon width="0.254" layer="94">
+<vertex x="-1.27" y="0"/>
+<vertex x="1.27" y="0"/>
+<vertex x="0" y="-2.54"/>
 </polygon>
 </symbol>
 <symbol name="CAP">
@@ -1162,10 +1163,10 @@ Source: http://www.molex.com</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="VOLTAGE_MONITOR_MC34161DG" prefix="IC" uservalue="yes">
-<description>&lt;b&gt;Dual In Line / Socket&lt;/b&gt;</description>
+<deviceset name="MC34161DG" prefix="IC" uservalue="yes">
+<description>&lt;b&gt;ON Semiconductor MC34161 Dual Channel Voltage Monitor&lt;/b&gt;</description>
 <gates>
-<gate name="G$1" symbol="VOLTAGE_MONITOR_MC34161DG" x="5.08" y="7.62"/>
+<gate name="G$1" symbol="MC34161DG" x="5.08" y="7.62"/>
 </gates>
 <devices>
 <device name="" package="SOIC-08">
@@ -1737,7 +1738,7 @@ Source: http://www.molex.com</description>
 </class>
 </classes>
 <parts>
-<part name="MC34161DG" library="HyTechDevices" deviceset="VOLTAGE_MONITOR_MC34161DG" device=""/>
+<part name="MC34161DG" library="HyTechDevices" deviceset="MC34161DG" device=""/>
 <part name="GND1" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="GND2" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="GND3" library="HyTechSymbols" deviceset="GND" device=""/>
@@ -1768,7 +1769,7 @@ Source: http://www.molex.com</description>
 <part name="GND11" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="GND13" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="POWER" library="HyTechDevices" deviceset="MINIFIT_5566-2" device=""/>
-<part name="R6" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="470"/>
+<part name="R6" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="680"/>
 <part name="GND14" library="HyTechSymbols" deviceset="GND" device=""/>
 </parts>
 <sheets>
