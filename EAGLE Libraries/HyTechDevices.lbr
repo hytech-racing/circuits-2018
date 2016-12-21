@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -11913,7 +11913,12 @@ MAX voltage in: 35V</description>
 <gate name="G$1" symbol="N-CHANNEL_MOSFET" x="0" y="0"/>
 </gates>
 <devices>
-<device name="">
+<device name="GENERIC" package="TO-220-SINK">
+<connects>
+<connect gate="G$1" pin="D" pad="2"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="3"/>
+</connects>
 <technologies>
 <technology name="">
 <attribute name="_EXTERNAL_" value="1" constant="no"/>
