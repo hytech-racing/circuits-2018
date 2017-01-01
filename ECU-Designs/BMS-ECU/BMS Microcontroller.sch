@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -834,6 +834,7 @@ It has reduced top mask to make it harder to put the component on the wrong side
 <smd name="14" x="-4.318" y="1.905" dx="1.905" dy="0.762" layer="1"/>
 <smd name="15" x="-4.318" y="3.175" dx="1.905" dy="0.762" layer="1"/>
 <smd name="16" x="-4.318" y="4.445" dx="1.905" dy="0.762" layer="1"/>
+<circle x="2.54" y="5.715" radius="0.635" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -1718,6 +1719,7 @@ depending on SPI mode (see page 11 for details)</text>
 <instance part="BMS_OK_SIGNAL" gate="-2" x="-58.42" y="-2.54" rot="R180"/>
 <instance part="BMS_OK_SIGNAL" gate="-1" x="-58.42" y="0" rot="R180"/>
 <instance part="GND9" gate="1" x="48.26" y="15.24"/>
+<instance part="TRANSFORMER-" gate="T" x="91.44" y="-68.58"/>
 </instances>
 <busses>
 </busses>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -299,6 +299,7 @@ Source: http://www.molex.com</description>
 <smd name="14" x="-4.318" y="1.905" dx="1.905" dy="0.762" layer="1"/>
 <smd name="15" x="-4.318" y="3.175" dx="1.905" dy="0.762" layer="1"/>
 <smd name="16" x="-4.318" y="4.445" dx="1.905" dy="0.762" layer="1"/>
+<circle x="2.54" y="5.715" radius="0.635" width="0.127" layer="21"/>
 </package>
 <package name="LTC6820">
 <smd name="1" x="-1.75" y="-2.14" dx="0.305" dy="0.889" layer="1" rot="R180" stop="no"/>
