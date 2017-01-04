@@ -304,16 +304,16 @@
 <pin name="C" x="71.12" y="25.4" length="middle" rot="R180"/>
 <pin name="DC+" x="-5.08" y="12.7" length="middle"/>
 <pin name="DC-" x="-5.08" y="22.86" length="middle"/>
-<pin name="J1-11/CAN_L" x="20.32" y="33.02" length="short" rot="R270"/>
-<pin name="J1-33/CAN_H" x="17.78" y="33.02" length="short" rot="R270"/>
+<pin name="J1-11/CAN_L" x="17.78" y="33.02" length="short" rot="R270"/>
+<pin name="J1-33/CAN_H" x="15.24" y="33.02" length="short" rot="R270"/>
 <text x="63.5" y="7.62" size="5.08" layer="95" rot="R180">Rinehart PM100DX</text>
-<pin name="J2-8/BATT+" x="10.16" y="33.02" length="short" rot="R270"/>
-<pin name="J2-6/GND" x="12.7" y="33.02" length="short" rot="R270"/>
-<pin name="J1-12/TXD" x="25.4" y="33.02" length="short" rot="R270"/>
-<pin name="J1-35/RXD" x="27.94" y="33.02" length="short" rot="R270"/>
-<pin name="J1-7/PROG_ENA" x="33.02" y="33.02" length="short" rot="R270"/>
+<pin name="J2-8/BATT+" x="7.62" y="33.02" length="short" rot="R270"/>
+<pin name="J2-6/GND" x="10.16" y="33.02" length="short" rot="R270"/>
+<pin name="J1-12/TXD" x="22.86" y="33.02" length="short" rot="R270"/>
+<pin name="J1-35/RXD" x="25.4" y="33.02" length="short" rot="R270"/>
+<pin name="J1-7/PROG_ENA" x="30.48" y="33.02" length="short" rot="R270"/>
 <pin name="J2-22/FAULT_INDIC" x="35.56" y="33.02" length="short" rot="R270"/>
-<pin name="J1-22/GND" x="30.48" y="33.02" length="short" rot="R270"/>
+<pin name="J1-22/GND" x="27.94" y="33.02" length="short" rot="R270"/>
 <pin name="J2-17/EXC" x="43.18" y="33.02" length="short" rot="R270"/>
 <pin name="J2-3/GND" x="45.72" y="33.02" length="short" rot="R270"/>
 <pin name="G2-11/SIN+" x="48.26" y="33.02" length="short" rot="R270"/>
@@ -322,6 +322,7 @@
 <pin name="J2-12/COS-" x="55.88" y="33.02" length="short" rot="R270"/>
 <pin name="J2-19/GND" x="58.42" y="33.02" length="short" rot="R270"/>
 <pin name="J1-24/AIN2_TEMP" x="40.64" y="33.02" length="short" rot="R270"/>
+<pin name="J1-28/XDCR_PWR" x="33.02" y="33.02" length="short" rot="R270"/>
 </symbol>
 <symbol name="MOTOR_AC">
 <circle x="0" y="0" radius="20.32" width="0.254" layer="94"/>
@@ -508,24 +509,6 @@ Precharger</text>
 <pin name="4" x="5.08" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="5" x="5.08" y="5.08" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="6" x="5.08" y="7.62" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-</symbol>
-<symbol name="M05">
-<wire x1="3.81" y1="-7.62" x2="-2.54" y2="-7.62" width="0.4064" layer="94"/>
-<wire x1="1.27" y1="0" x2="2.54" y2="0" width="0.6096" layer="94"/>
-<wire x1="1.27" y1="-2.54" x2="2.54" y2="-2.54" width="0.6096" layer="94"/>
-<wire x1="1.27" y1="-5.08" x2="2.54" y2="-5.08" width="0.6096" layer="94"/>
-<wire x1="-2.54" y1="7.62" x2="-2.54" y2="-7.62" width="0.4064" layer="94"/>
-<wire x1="3.81" y1="-7.62" x2="3.81" y2="7.62" width="0.4064" layer="94"/>
-<wire x1="-2.54" y1="7.62" x2="3.81" y2="7.62" width="0.4064" layer="94"/>
-<wire x1="1.27" y1="5.08" x2="2.54" y2="5.08" width="0.6096" layer="94"/>
-<wire x1="1.27" y1="2.54" x2="2.54" y2="2.54" width="0.6096" layer="94"/>
-<text x="-2.54" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
-<text x="-2.54" y="8.382" size="1.778" layer="95">&gt;NAME</text>
-<pin name="1" x="7.62" y="-5.08" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="2" x="7.62" y="-2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="3" x="7.62" y="0" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="4" x="7.62" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="5" x="7.62" y="5.08" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -826,21 +809,6 @@ Source: Sonnenschein</description>
 <description>Generic 6-pin connector</description>
 <gates>
 <gate name="G$1" symbol="M06" x="-2.54" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name="">
-<attribute name="_EXTERNAL_" value="" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="M05" prefix="SL" uservalue="yes">
-<description>Generic 5-pin connector</description>
-<gates>
-<gate name="G$1" symbol="M05" x="-2.54" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -1273,7 +1241,7 @@ Source: Sonnenschein</description>
 <part name="SL2" library="HyTechSymbols" deviceset="M12" device=""/>
 <part name="SL8" library="HyTechSymbols" deviceset="M06" device=""/>
 <part name="SL11" library="HyTechSymbols" deviceset="M06" device=""/>
-<part name="SL10" library="HyTechSymbols" deviceset="M05" device=""/>
+<part name="SL10" library="HyTechSymbols" deviceset="M06" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1326,7 +1294,7 @@ Source: Sonnenschein</description>
 <instance part="GLVMS" gate="SPST" x="365.76" y="43.18" rot="R270"/>
 <instance part="F1" gate="G$1" x="403.86" y="40.64"/>
 <instance part="F2" gate="G$1" x="403.86" y="30.48"/>
-<instance part="U$1" gate="G$1" x="88.9" y="200.66" rot="R270"/>
+<instance part="U$1" gate="G$1" x="88.9" y="198.12" rot="R270"/>
 <instance part="EMRAX_207_MED" gate="G$1" x="36.83" y="165.1" rot="R90"/>
 <instance part="LED1" gate="G$1" x="2.54" y="160.02" rot="R90"/>
 <instance part="GND5" gate="1" x="0" y="172.72" rot="R180"/>
@@ -1404,7 +1372,7 @@ Source: Sonnenschein</description>
 <instance part="SL2" gate="G$1" x="411.48" y="124.46" rot="R270"/>
 <instance part="SL8" gate="G$1" x="287.02" y="71.12" rot="R180"/>
 <instance part="SL11" gate="G$1" x="302.26" y="68.58"/>
-<instance part="SL10" gate="G$1" x="132.08" y="170.18" rot="R180"/>
+<instance part="SL10" gate="G$1" x="129.54" y="170.18" rot="R180"/>
 </instances>
 <busses>
 <bus name="12VSUPPLY,GND,CANL,CANH">
@@ -1492,10 +1460,10 @@ Source: Sonnenschein</description>
 </bus>
 <bus name="MOTOR_TEMP,EXC+,EXC-,SIN+,SIN-,COS+,COS-,GND">
 <segment>
-<wire x1="124.46" y1="160.02" x2="124.46" y2="151.13" width="0.762" layer="92"/>
-<wire x1="124.46" y1="151.13" x2="124.46" y2="142.24" width="0.762" layer="92"/>
-<wire x1="124.46" y1="151.13" x2="137.16" y2="151.13" width="0.762" layer="92"/>
-<wire x1="137.16" y1="151.13" x2="137.16" y2="111.76" width="0.762" layer="92"/>
+<wire x1="124.46" y1="157.48" x2="124.46" y2="148.59" width="0.762" layer="92"/>
+<wire x1="124.46" y1="148.59" x2="124.46" y2="139.7" width="0.762" layer="92"/>
+<wire x1="124.46" y1="148.59" x2="137.16" y2="148.59" width="0.762" layer="92"/>
+<wire x1="137.16" y1="148.59" x2="137.16" y2="111.76" width="0.762" layer="92"/>
 <wire x1="137.16" y1="111.76" x2="50.8" y2="111.76" width="0.762" layer="92"/>
 <wire x1="50.8" y1="111.76" x2="50.8" y2="149.86" width="0.762" layer="92"/>
 </segment>
@@ -1680,7 +1648,7 @@ Source: Sonnenschein</description>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="J2-19/GND"/>
-<wire x1="121.92" y1="142.24" x2="124.46" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="139.7" x2="124.46" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -2055,13 +2023,13 @@ Source: Sonnenschein</description>
 <wire x1="77.47" y1="177.8" x2="77.47" y2="119.38" width="0.3048" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="C"/>
 <wire x1="77.47" y1="119.38" x2="114.3" y2="119.38" width="0.3048" layer="91"/>
-<wire x1="114.3" y1="119.38" x2="114.3" y2="129.54" width="0.3048" layer="91"/>
+<wire x1="114.3" y1="119.38" x2="114.3" y2="127" width="0.3048" layer="91"/>
 </segment>
 </net>
 <net name="N$24" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="B"/>
-<wire x1="106.68" y1="129.54" x2="106.68" y2="123.19" width="0.3048" layer="91"/>
+<wire x1="106.68" y1="127" x2="106.68" y2="123.19" width="0.3048" layer="91"/>
 <wire x1="106.68" y1="123.19" x2="73.66" y2="123.19" width="0.3048" layer="91"/>
 <wire x1="73.66" y1="123.19" x2="73.66" y2="165.1" width="0.3048" layer="91"/>
 <pinref part="EMRAX_207_MED" gate="G$1" pin="B"/>
@@ -2071,7 +2039,6 @@ Source: Sonnenschein</description>
 <net name="N$25" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="A"/>
-<wire x1="99.06" y1="129.54" x2="99.06" y2="127" width="0.3048" layer="91"/>
 <wire x1="99.06" y1="127" x2="69.85" y2="127" width="0.3048" layer="91"/>
 <wire x1="69.85" y1="127" x2="69.85" y2="152.4" width="0.3048" layer="91"/>
 <pinref part="EMRAX_207_MED" gate="G$1" pin="A"/>
@@ -2247,7 +2214,7 @@ Source: Sonnenschein</description>
 <pinref part="MOLEX_IMPERIUM_2" gate="G$1" pin="1"/>
 <pinref part="U$1" gate="G$1" pin="DC+"/>
 <wire x1="172.72" y1="208.28" x2="101.6" y2="208.28" width="0.3048" layer="91"/>
-<wire x1="101.6" y1="208.28" x2="101.6" y2="205.74" width="0.3048" layer="91"/>
+<wire x1="101.6" y1="208.28" x2="101.6" y2="203.2" width="0.3048" layer="91"/>
 <label x="116.84" y="208.28" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -2261,9 +2228,10 @@ Source: Sonnenschein</description>
 <net name="HV-" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="DC-"/>
-<wire x1="111.76" y1="205.74" x2="172.72" y2="205.74" width="0.3048" layer="91"/>
 <pinref part="MOLEX_IMPERIUM_2" gate="G$1" pin="2"/>
 <label x="116.84" y="205.74" size="1.778" layer="95"/>
+<wire x1="172.72" y1="205.74" x2="111.76" y2="205.74" width="0.3048" layer="91"/>
+<wire x1="111.76" y1="205.74" x2="111.76" y2="203.2" width="0.3048" layer="91"/>
 </segment>
 <segment>
 <wire x1="220.98" y1="193.04" x2="302.26" y2="193.04" width="0.1524" layer="91"/>
@@ -2730,43 +2698,43 @@ Source: Sonnenschein</description>
 <net name="MOTOR_TEMP" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="J1-24/AIN2_TEMP"/>
-<wire x1="121.92" y1="160.02" x2="124.46" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="157.48" x2="124.46" y2="157.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="EXC+" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="J2-17/EXC"/>
-<wire x1="121.92" y1="157.48" x2="124.46" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="154.94" x2="124.46" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="EXC-" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="J2-3/GND"/>
-<wire x1="121.92" y1="154.94" x2="124.46" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="152.4" x2="124.46" y2="152.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SIN+" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="G2-11/SIN+"/>
-<wire x1="121.92" y1="152.4" x2="124.46" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="149.86" x2="124.46" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SIN-" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="J2-18/SIN-"/>
-<wire x1="121.92" y1="149.86" x2="124.46" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="147.32" x2="124.46" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="COS+" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="J2-4/COS+"/>
-<wire x1="121.92" y1="147.32" x2="124.46" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="144.78" x2="124.46" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="COS-" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="J2-12/COS-"/>
-<wire x1="121.92" y1="144.78" x2="124.46" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="142.24" x2="124.46" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -2903,37 +2871,44 @@ Source: Sonnenschein</description>
 </net>
 <net name="N$32" class="0">
 <segment>
-<pinref part="SL10" gate="G$1" pin="1"/>
 <pinref part="U$1" gate="G$1" pin="J1-12/TXD"/>
 <wire x1="124.46" y1="175.26" x2="121.92" y2="175.26" width="0.1524" layer="91"/>
+<pinref part="SL10" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$43" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="J1-35/RXD"/>
-<pinref part="SL10" gate="G$1" pin="2"/>
 <wire x1="124.46" y1="172.72" x2="121.92" y2="172.72" width="0.1524" layer="91"/>
+<pinref part="SL10" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$63" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="J1-22/GND"/>
-<pinref part="SL10" gate="G$1" pin="3"/>
 <wire x1="124.46" y1="170.18" x2="121.92" y2="170.18" width="0.1524" layer="91"/>
+<pinref part="SL10" gate="G$1" pin="3"/>
 </segment>
 </net>
 <net name="N$69" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="J1-7/PROG_ENA"/>
-<pinref part="SL10" gate="G$1" pin="4"/>
 <wire x1="124.46" y1="167.64" x2="121.92" y2="167.64" width="0.1524" layer="91"/>
+<pinref part="SL10" gate="G$1" pin="4"/>
 </segment>
 </net>
 <net name="N$71" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="J2-22/FAULT_INDIC"/>
 <pinref part="SL10" gate="G$1" pin="5"/>
+<pinref part="U$1" gate="G$1" pin="J1-28/XDCR_PWR"/>
 <wire x1="124.46" y1="165.1" x2="121.92" y2="165.1" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$72" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="J2-22/FAULT_INDIC"/>
+<pinref part="SL10" gate="G$1" pin="6"/>
+<wire x1="121.92" y1="162.56" x2="124.46" y2="162.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
