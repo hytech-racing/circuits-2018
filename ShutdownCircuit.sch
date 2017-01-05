@@ -679,8 +679,8 @@ Source: Sonnenschein</description>
 <part name="U$2" library="HyTechSymbols" deviceset="BENDER_IR155-3204" device=""/>
 <part name="GND2" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="COCKPIT_BRB" library="HyTechSymbols" deviceset="SWITCH_SPST" device="" value="Normally Closed"/>
-<part name="INERTIA_SWITCH" library="HyTechSymbols" deviceset="SWITCH_SPST" device="" value="Normally Closed"/>
-<part name="BRAKE_OVER_TRAVEL" library="HyTechSymbols" deviceset="SWITCH_SPST" device="" value="Normally Closed"/>
+<part name="INERTIA" library="HyTechSymbols" deviceset="SWITCH_SPST" device="" value="Normally Closed"/>
+<part name="BOTS" library="HyTechSymbols" deviceset="SWITCH_SPST" device="" value="Normally Closed"/>
 <part name="TSMS" library="HyTechSymbols" deviceset="SWITCH_SPST" device="" value="Normally Open"/>
 <part name="HVD_INTERLOCK" library="HyTechSymbols" deviceset="SWITCH_SPST" device="" value="Normally Open"/>
 <part name="SEGMENT1" library="HyTechSymbols" deviceset="BATTERY_1_CELL" device=""/>
@@ -709,7 +709,8 @@ Source: Sonnenschein</description>
 <part name="GND3" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="GLV_SYSTEMS1" library="HyTechSymbols" deviceset="VIN" device="" value="VCC"/>
 <part name="GND9" library="HyTechSymbols" deviceset="GND" device=""/>
-<part name="SOFTWARE_SHUTOFF" library="HyTechSymbols" deviceset="SWITCH_SPST" device="" value="Normally Closed"/>
+<part name="SOFTWARE_SHUTOFF" library="HyTechSymbols" deviceset="SWITCH_SPST" device="" value="Normally Open"/>
+<part name="BSPD" library="HyTechSymbols" deviceset="SWITCH_SPST" device="" value="Normally Closed"/>
 </parts>
 <sheets>
 <sheet>
@@ -742,9 +743,9 @@ Battery Pack</text>
 <instance part="U$2" gate="G$1" x="147.32" y="73.66" rot="R180"/>
 <instance part="GND2" gate="1" x="88.9" y="50.8" rot="R270"/>
 <instance part="COCKPIT_BRB" gate="SPST" x="101.6" y="91.44" rot="MR270"/>
-<instance part="INERTIA_SWITCH" gate="SPST" x="22.86" y="91.44" rot="MR270"/>
-<instance part="BRAKE_OVER_TRAVEL" gate="SPST" x="81.28" y="91.44" rot="MR270"/>
-<instance part="TSMS" gate="SPST" x="0" y="91.44" rot="MR270"/>
+<instance part="INERTIA" gate="SPST" x="12.7" y="91.44" rot="MR270"/>
+<instance part="BOTS" gate="SPST" x="81.28" y="91.44" rot="MR270"/>
+<instance part="TSMS" gate="SPST" x="-7.62" y="91.44" rot="MR270"/>
 <instance part="HVD_INTERLOCK" gate="SPST" x="20.32" y="76.2" rot="R270"/>
 <instance part="SEGMENT1" gate="G$1" x="30.48" y="17.78" rot="R90"/>
 <instance part="SEGMENT2" gate="G$1" x="55.88" y="17.78" rot="R90"/>
@@ -772,7 +773,8 @@ Battery Pack</text>
 <instance part="GND3" gate="1" x="104.14" y="134.62" rot="MR180"/>
 <instance part="GLV_SYSTEMS1" gate="G$1" x="88.9" y="55.88" rot="R90"/>
 <instance part="GND9" gate="1" x="88.9" y="63.5" rot="R270"/>
-<instance part="SOFTWARE_SHUTOFF" gate="SPST" x="50.8" y="91.44" rot="MR270"/>
+<instance part="SOFTWARE_SHUTOFF" gate="SPST" x="60.96" y="91.44" rot="MR270"/>
+<instance part="BSPD" gate="SPST" x="33.02" y="91.44" rot="MR270"/>
 </instances>
 <busses>
 </busses>
@@ -884,26 +886,26 @@ Battery Pack</text>
 <pinref part="COCKPIT_BRB" gate="SPST" pin="O"/>
 <wire x1="96.52" y1="93.98" x2="93.98" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="93.98" y1="93.98" x2="93.98" y2="91.44" width="0.1524" layer="91"/>
-<pinref part="BRAKE_OVER_TRAVEL" gate="SPST" pin="P"/>
+<pinref part="BOTS" gate="SPST" pin="P"/>
 <wire x1="93.98" y1="91.44" x2="86.36" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$10" class="0">
 <segment>
-<pinref part="BRAKE_OVER_TRAVEL" gate="SPST" pin="O"/>
-<wire x1="76.2" y1="93.98" x2="66.04" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="93.98" x2="66.04" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="BOTS" gate="SPST" pin="O"/>
+<wire x1="76.2" y1="93.98" x2="73.66" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="93.98" x2="73.66" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="SOFTWARE_SHUTOFF" gate="SPST" pin="P"/>
-<wire x1="66.04" y1="91.44" x2="55.88" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="91.44" x2="66.04" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$11" class="0">
 <segment>
-<pinref part="INERTIA_SWITCH" gate="SPST" pin="O"/>
-<wire x1="17.78" y1="93.98" x2="15.24" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="93.98" x2="15.24" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="INERTIA" gate="SPST" pin="O"/>
+<wire x1="7.62" y1="93.98" x2="5.08" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="93.98" x2="5.08" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="TSMS" gate="SPST" pin="P"/>
-<wire x1="15.24" y1="91.44" x2="5.08" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="91.44" x2="-2.54" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VIN" class="0">
@@ -945,10 +947,10 @@ Battery Pack</text>
 <net name="N$12" class="0">
 <segment>
 <pinref part="TSMS" gate="SPST" pin="S"/>
-<wire x1="-5.08" y1="88.9" x2="-12.7" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="-12.7" y1="88.9" x2="-12.7" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="88.9" x2="-20.32" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="-20.32" y1="88.9" x2="-20.32" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="HVD_INTERLOCK" gate="SPST" pin="P"/>
-<wire x1="-12.7" y1="76.2" x2="15.24" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="-20.32" y1="76.2" x2="15.24" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SHUTDOWN_CIRCUIT" class="0">
@@ -1158,11 +1160,20 @@ Battery Pack</text>
 </net>
 <net name="N$7" class="0">
 <segment>
-<pinref part="INERTIA_SWITCH" gate="SPST" pin="P"/>
-<wire x1="27.94" y1="91.44" x2="43.18" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="91.44" x2="43.18" y2="93.98" width="0.1524" layer="91"/>
-<pinref part="SOFTWARE_SHUTOFF" gate="SPST" pin="O"/>
-<wire x1="43.18" y1="93.98" x2="45.72" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="BSPD" gate="SPST" pin="P"/>
+<wire x1="53.34" y1="91.44" x2="38.1" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="91.44" x2="53.34" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="SOFTWARE_SHUTOFF" gate="SPST" pin="S"/>
+<wire x1="53.34" y1="88.9" x2="55.88" y2="88.9" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$17" class="0">
+<segment>
+<pinref part="BSPD" gate="SPST" pin="O"/>
+<wire x1="27.94" y1="93.98" x2="25.4" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="93.98" x2="25.4" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="INERTIA" gate="SPST" pin="P"/>
+<wire x1="25.4" y1="91.44" x2="17.78" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
