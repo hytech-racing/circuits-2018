@@ -915,7 +915,7 @@ Source: Sonnenschein</description>
 <port name="CANL_2" side="bottom" coord="-10.16" direction="io"/>
 <port name="CANH_2" side="bottom" coord="-7.62" direction="io"/>
 <port name="CANH_1" side="top" coord="-7.62" direction="io"/>
-<port name="RTDS_POWER" side="top" coord="0" direction="out"/>
+<port name="RTDS_POWER" side="top" coord="-2.54" direction="out"/>
 <port name="BUTTON_START" side="right" coord="-22.86" direction="in"/>
 <port name="BUTTON_TOGGLE" side="right" coord="-20.32" direction="in"/>
 <port name="BUTTON_SELECT" side="right" coord="-17.78" direction="in"/>
@@ -923,11 +923,14 @@ Source: Sonnenschein</description>
 <port name="12VSUPPLY_1" side="top" coord="-15.24" direction="out"/>
 <port name="GND_2" side="bottom" coord="-12.7" direction="out"/>
 <port name="12VSUPPLY_2" side="bottom" coord="-15.24" direction="in"/>
-<port name="RTDS_SINK" side="top" coord="15.24" direction="in"/>
 <port name="12VSUPPLY_3" side="right" coord="-2.54" direction="out"/>
 <port name="GND_3" side="right" coord="-5.08" direction="in"/>
 <port name="CANH_3" side="right" coord="-10.16" direction="io"/>
 <port name="CANL_3" side="right" coord="-7.62" direction="io"/>
+<port name="LED_POWER" side="top" coord="0" direction="out"/>
+<port name="LED_BMS" side="top" coord="2.54" direction="out"/>
+<port name="LED_IMD" side="top" coord="5.08" direction="out"/>
+<port name="GND" side="top" coord="15.24" direction="in"/>
 </ports>
 <variantdefs>
 </variantdefs>
@@ -1242,6 +1245,9 @@ Source: Sonnenschein</description>
 <part name="SL8" library="HyTechSymbols" deviceset="M06" device=""/>
 <part name="SL11" library="HyTechSymbols" deviceset="M06" device=""/>
 <part name="SL10" library="HyTechSymbols" deviceset="M06" device=""/>
+<part name="LED_BMS" library="HyTechSymbols" deviceset="LED" device=""/>
+<part name="LED_IMD" library="HyTechSymbols" deviceset="LED" device=""/>
+<part name="LED_POWER" library="HyTechSymbols" deviceset="LED" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1285,7 +1291,7 @@ Source: Sonnenschein</description>
 <moduleinst name="STEERING_WHEEL_BOARD" module="STEERING_WHEEL_BOARD" x="675.64" y="167.64"/>
 </moduleinsts>
 <instances>
-<instance part="RTDS" gate="1" x="632.46" y="195.58"/>
+<instance part="RTDS" gate="1" x="622.3" y="208.28" rot="R90"/>
 <instance part="PED1" gate="G$1" x="835.66" y="187.96" rot="R270"/>
 <instance part="PED2" gate="G$1" x="835.66" y="175.26" rot="R270"/>
 <instance part="PED3" gate="G$1" x="835.66" y="162.56" rot="R270"/>
@@ -1373,6 +1379,9 @@ Source: Sonnenschein</description>
 <instance part="SL8" gate="G$1" x="287.02" y="71.12" rot="R180"/>
 <instance part="SL11" gate="G$1" x="302.26" y="68.58"/>
 <instance part="SL10" gate="G$1" x="129.54" y="170.18" rot="R180"/>
+<instance part="LED_BMS" gate="G$1" x="645.16" y="203.2" rot="R90"/>
+<instance part="LED_IMD" gate="G$1" x="655.32" y="203.2" rot="R90"/>
+<instance part="LED_POWER" gate="G$1" x="635" y="203.2" rot="R90"/>
 </instances>
 <busses>
 <bus name="12VSUPPLY,GND,CANL,CANH">
@@ -2682,17 +2691,8 @@ Source: Sonnenschein</description>
 <net name="N$1" class="0">
 <segment>
 <portref moduleinst="DASHBOARD_BOARD" port="RTDS_POWER"/>
-<wire x1="624.84" y1="193.04" x2="624.84" y2="195.58" width="0.1524" layer="91"/>
 <pinref part="RTDS" gate="1" pin="1"/>
-<wire x1="624.84" y1="195.58" x2="627.38" y2="195.58" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$2" class="0">
-<segment>
-<pinref part="RTDS" gate="1" pin="2"/>
-<portref moduleinst="DASHBOARD_BOARD" port="RTDS_SINK"/>
-<wire x1="637.54" y1="195.58" x2="640.08" y2="195.58" width="0.1524" layer="91"/>
-<wire x1="640.08" y1="195.58" x2="640.08" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="622.3" y1="193.04" x2="622.3" y2="203.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MOTOR_TEMP" class="0">
@@ -2909,6 +2909,55 @@ Source: Sonnenschein</description>
 <pinref part="U$1" gate="G$1" pin="J2-22/FAULT_INDIC"/>
 <pinref part="SL10" gate="G$1" pin="6"/>
 <wire x1="121.92" y1="162.56" x2="124.46" y2="162.56" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<portref moduleinst="DASHBOARD_BOARD" port="LED_POWER"/>
+<wire x1="624.84" y1="193.04" x2="624.84" y2="200.66" width="0.1524" layer="91"/>
+<pinref part="LED_POWER" gate="G$1" pin="A"/>
+<wire x1="624.84" y1="200.66" x2="632.46" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="632.46" y1="200.66" x2="632.46" y2="203.2" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$75" class="0">
+<segment>
+<portref moduleinst="DASHBOARD_BOARD" port="LED_BMS"/>
+<wire x1="627.38" y1="193.04" x2="627.38" y2="198.12" width="0.1524" layer="91"/>
+<pinref part="LED_BMS" gate="G$1" pin="A"/>
+<wire x1="627.38" y1="198.12" x2="642.62" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="642.62" y1="198.12" x2="642.62" y2="203.2" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$91" class="0">
+<segment>
+<portref moduleinst="DASHBOARD_BOARD" port="LED_IMD"/>
+<wire x1="629.92" y1="193.04" x2="629.92" y2="195.58" width="0.1524" layer="91"/>
+<pinref part="LED_IMD" gate="G$1" pin="A"/>
+<wire x1="629.92" y1="195.58" x2="652.78" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="652.78" y1="195.58" x2="652.78" y2="203.2" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$92" class="0">
+<segment>
+<pinref part="RTDS" gate="1" pin="2"/>
+<wire x1="622.3" y1="213.36" x2="622.3" y2="218.44" width="0.1524" layer="91"/>
+<pinref part="LED_POWER" gate="G$1" pin="C"/>
+<wire x1="622.3" y1="218.44" x2="632.46" y2="218.44" width="0.1524" layer="91"/>
+<wire x1="632.46" y1="218.44" x2="632.46" y2="210.82" width="0.1524" layer="91"/>
+<pinref part="LED_BMS" gate="G$1" pin="C"/>
+<wire x1="632.46" y1="218.44" x2="642.62" y2="218.44" width="0.1524" layer="91"/>
+<wire x1="642.62" y1="218.44" x2="642.62" y2="210.82" width="0.1524" layer="91"/>
+<junction x="632.46" y="218.44"/>
+<pinref part="LED_IMD" gate="G$1" pin="C"/>
+<wire x1="642.62" y1="218.44" x2="652.78" y2="218.44" width="0.1524" layer="91"/>
+<wire x1="652.78" y1="218.44" x2="652.78" y2="210.82" width="0.1524" layer="91"/>
+<junction x="642.62" y="218.44"/>
+<wire x1="652.78" y1="218.44" x2="657.86" y2="218.44" width="0.1524" layer="91"/>
+<wire x1="657.86" y1="218.44" x2="657.86" y2="193.04" width="0.1524" layer="91"/>
+<junction x="652.78" y="218.44"/>
+<portref moduleinst="DASHBOARD_BOARD" port="GND"/>
+<wire x1="657.86" y1="193.04" x2="640.08" y2="193.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
