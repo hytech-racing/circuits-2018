@@ -2677,10 +2677,10 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="U$5" library="HyTechDevices" deviceset="HV_DCDC_VI-J71-CZ" device=""/>
 <part name="SUPPLY1" library="supply2" deviceset="V&lt;--" device="" value="TSAL+"/>
 <part name="SUPPLY3" library="supply2" deviceset="V&lt;--" device="" value="TSVP+"/>
-<part name="FUSE+" library="HyTechDevices" deviceset="0751.0110_FUSE_CLIP" device=""/>
-<part name="FUSE-" library="HyTechDevices" deviceset="0751.0110_FUSE_CLIP" device=""/>
-<part name="HVIN+" library="HyTechDevices" deviceset="MINIFIT_5566-2" device="" value="MINIFIT_5566-2"/>
-<part name="HVIN-" library="HyTechDevices" deviceset="MINIFIT_5566-2" device="" value="MINIFIT_5566-2"/>
+<part name="FUSE+" library="HyTechDevices" deviceset="0751.0110_FUSE_CLIP" device="" value=""/>
+<part name="FUSE-" library="HyTechDevices" deviceset="0751.0110_FUSE_CLIP" device="" value=""/>
+<part name="HVIN+" library="HyTechDevices" deviceset="MINIFIT_5566-2" device="" value=""/>
+<part name="HVIN-" library="HyTechDevices" deviceset="MINIFIT_5566-2" device="" value=""/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
 <part name="SUPPLY4" library="supply2" deviceset="VDD" device=""/>
 <part name="TRIM+" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES"/>
@@ -2787,6 +2787,8 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="RELAYS" library="HyTechDevices" deviceset="MINIFIT_5566-2" device="" value="MINIFIT_5566-2"/>
 <part name="FANF" library="HyTechDevices" deviceset="MINIFIT_5566-2" device="" value="MINIFIT_5566-2"/>
 <part name="FANR" library="HyTechDevices" deviceset="MINIFIT_5566-2" device="" value="MINIFIT_5566-2"/>
+<part name="F1" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="2.0"/>
+<part name="F2" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="2.0"/>
 </parts>
 <sheets>
 <sheet>
@@ -2835,9 +2837,9 @@ With pulldown resistors if necessary
 <rectangle x1="165.1" y1="-284.48" x2="172.72" y2="66.04" layer="90"/>
 <text x="160.02" y="83.82" size="12.7" layer="90" rot="R180">GLV</text>
 <text x="177.8" y="71.12" size="12.7" layer="90">TS</text>
-<wire x1="177.8" y1="58.42" x2="350.52" y2="58.42" width="0.1524" layer="90"/>
-<wire x1="350.52" y1="58.42" x2="350.52" y2="-10.16" width="0.1524" layer="90"/>
-<wire x1="350.52" y1="-10.16" x2="177.8" y2="-10.16" width="0.1524" layer="90"/>
+<wire x1="177.8" y1="58.42" x2="363.22" y2="58.42" width="0.1524" layer="90"/>
+<wire x1="363.22" y1="58.42" x2="363.22" y2="-10.16" width="0.1524" layer="90"/>
+<wire x1="363.22" y1="-10.16" x2="177.8" y2="-10.16" width="0.1524" layer="90"/>
 <wire x1="177.8" y1="-10.16" x2="177.8" y2="58.42" width="0.1524" layer="90"/>
 <text x="177.8" y="58.42" size="5.08" layer="90">HV DC/DC Converter</text>
 <wire x1="177.8" y1="-20.32" x2="243.84" y2="-20.32" width="0.1524" layer="90"/>
@@ -2860,6 +2862,8 @@ With pulldown resistors if necessary
 <wire x1="266.7" y1="-246.38" x2="177.8" y2="-246.38" width="0.1524" layer="90"/>
 <wire x1="177.8" y1="-246.38" x2="177.8" y2="-203.2" width="0.1524" layer="90"/>
 <text x="177.8" y="-203.2" size="5.08" layer="90">Accumulator Voltage Present Indicator</text>
+<text x="203.2" y="35.56" size="1.778" layer="97">1/8W 0805
+Limiting to 250mA</text>
 </plain>
 <instances>
 <instance part="OUT" gate="-1" x="12.7" y="22.86" rot="R180"/>
@@ -2887,19 +2891,19 @@ With pulldown resistors if necessary
 <instance part="P+5" gate="1" x="71.12" y="5.08" rot="R90"/>
 <instance part="GND10" gate="1" x="68.58" y="7.62" rot="R270"/>
 <instance part="GND11" gate="1" x="104.14" y="-2.54"/>
-<instance part="U$5" gate="G$1" x="256.54" y="25.4"/>
+<instance part="U$5" gate="G$1" x="269.24" y="25.4"/>
 <instance part="SUPPLY1" gate="G$1" x="58.42" y="50.8"/>
 <instance part="SUPPLY3" gate="G$1" x="58.42" y="48.26"/>
-<instance part="FUSE+" gate="G$1" x="210.82" y="45.72"/>
-<instance part="FUSE-" gate="G$1" x="210.82" y="2.54"/>
+<instance part="FUSE+" gate="G$1" x="223.52" y="45.72"/>
+<instance part="FUSE-" gate="G$1" x="223.52" y="2.54"/>
 <instance part="HVIN+" gate="-2" x="198.12" y="45.72" rot="R180"/>
 <instance part="HVIN+" gate="-1" x="198.12" y="43.18" rot="R180"/>
 <instance part="HVIN-" gate="-2" x="198.12" y="2.54" rot="R180"/>
 <instance part="HVIN-" gate="-1" x="198.12" y="0" rot="R180"/>
-<instance part="GND12" gate="1" x="322.58" y="-5.08"/>
-<instance part="SUPPLY4" gate="G$1" x="322.58" y="48.26"/>
-<instance part="TRIM+" gate="G$1" x="314.96" y="30.48"/>
-<instance part="TRIM-" gate="G$1" x="314.96" y="20.32"/>
+<instance part="GND12" gate="1" x="335.28" y="-5.08"/>
+<instance part="SUPPLY4" gate="G$1" x="335.28" y="48.26"/>
+<instance part="TRIM+" gate="G$1" x="327.66" y="30.48"/>
+<instance part="TRIM-" gate="G$1" x="327.66" y="20.32"/>
 <instance part="FROMBMS" gate="-1" x="142.24" y="45.72"/>
 <instance part="FROMBMS" gate="-2" x="142.24" y="43.18"/>
 <instance part="FROMBMS" gate="-3" x="142.24" y="40.64"/>
@@ -2919,8 +2923,8 @@ With pulldown resistors if necessary
 <instance part="INDICATOR" gate="-2" x="248.92" y="-210.82"/>
 <instance part="INDICATOR" gate="-1" x="248.92" y="-208.28"/>
 <instance part="U$6" gate="G$1" x="187.96" y="-208.28" rot="R90"/>
-<instance part="U$7" gate="G$1" x="220.98" y="45.72"/>
-<instance part="SUPPLY5" gate="G$1" x="347.98" y="45.72"/>
+<instance part="U$7" gate="G$1" x="233.68" y="45.72"/>
+<instance part="SUPPLY5" gate="G$1" x="360.68" y="45.72"/>
 <instance part="SUPPLY8" gate="G$1" x="58.42" y="27.94"/>
 <instance part="HV_REG1" gate="G$1" x="195.58" y="-144.78"/>
 <instance part="C2" gate="G$1" x="228.6" y="-144.78"/>
@@ -2938,7 +2942,7 @@ With pulldown resistors if necessary
 <instance part="SUPPLY2" gate="G$1" x="309.88" y="-139.7"/>
 <instance part="U$8" gate="G$1" x="200.66" y="-180.34"/>
 <instance part="U$9" gate="G$1" x="200.66" y="-236.22"/>
-<instance part="U$11" gate="G$1" x="220.98" y="2.54"/>
+<instance part="U$11" gate="G$1" x="233.68" y="2.54"/>
 <instance part="U$13" gate="G$1" x="246.38" y="-149.86"/>
 <instance part="SUPPLY9" gate="G$1" x="231.14" y="-106.68" rot="R270"/>
 <instance part="GND14" gate="1" x="218.44" y="-99.06"/>
@@ -3027,6 +3031,8 @@ With pulldown resistors if necessary
 <instance part="FANR" gate="-1" x="111.76" y="-264.16" rot="R270"/>
 <instance part="FANF" gate="-2" x="83.82" y="-264.16" rot="R270"/>
 <instance part="FANF" gate="-1" x="86.36" y="-264.16" rot="R270"/>
+<instance part="F1" gate="G$1" x="210.82" y="45.72" rot="R180"/>
+<instance part="F2" gate="G$1" x="210.82" y="2.54" rot="R180"/>
 </instances>
 <busses>
 <bus name="D[0..12]">
@@ -3085,16 +3091,16 @@ With pulldown resistors if necessary
 <segment>
 <pinref part="U$5" gate="G$1" pin="9VOUT-"/>
 <pinref part="GND12" gate="1" pin="GND"/>
-<wire x1="302.26" y1="2.54" x2="322.58" y2="2.54" width="0.1524" layer="91"/>
-<wire x1="322.58" y1="2.54" x2="322.58" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="314.96" y1="2.54" x2="335.28" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="335.28" y1="2.54" x2="335.28" y2="-2.54" width="0.1524" layer="91"/>
 <pinref part="U$5" gate="G$1" pin="8SENSE-"/>
-<wire x1="302.26" y1="12.7" x2="322.58" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="322.58" y1="12.7" x2="322.58" y2="2.54" width="0.1524" layer="91"/>
-<junction x="322.58" y="2.54"/>
+<wire x1="314.96" y1="12.7" x2="335.28" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="335.28" y1="12.7" x2="335.28" y2="2.54" width="0.1524" layer="91"/>
+<junction x="335.28" y="2.54"/>
 <pinref part="TRIM-" gate="G$1" pin="2"/>
-<wire x1="320.04" y1="20.32" x2="322.58" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="322.58" y1="20.32" x2="322.58" y2="12.7" width="0.1524" layer="91"/>
-<junction x="322.58" y="12.7"/>
+<wire x1="332.74" y1="20.32" x2="335.28" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="335.28" y1="20.32" x2="335.28" y2="12.7" width="0.1524" layer="91"/>
+<junction x="335.28" y="12.7"/>
 </segment>
 <segment>
 <pinref part="FROMBMS" gate="-2" pin="S"/>
@@ -3455,10 +3461,10 @@ With pulldown resistors if necessary
 <segment>
 <pinref part="FUSE+" gate="G$1" pin="2"/>
 <pinref part="U$5" gate="G$1" pin="1VIN+"/>
-<wire x1="215.9" y1="45.72" x2="220.98" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="45.72" x2="233.68" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="U$7" gate="G$1" pin="HV+"/>
-<wire x1="220.98" y1="45.72" x2="233.68" y2="45.72" width="0.1524" layer="91"/>
-<junction x="220.98" y="45.72"/>
+<wire x1="233.68" y1="45.72" x2="246.38" y2="45.72" width="0.1524" layer="91"/>
+<junction x="233.68" y="45.72"/>
 </segment>
 <segment>
 <pinref part="HV_REG2" gate="G$1" pin="IN"/>
@@ -3500,7 +3506,7 @@ With pulldown resistors if necessary
 <pinref part="HVIN-" gate="-1" pin="S"/>
 <pinref part="HVIN-" gate="-2" pin="S"/>
 <wire x1="200.66" y1="0" x2="200.66" y2="2.54" width="0.1524" layer="91"/>
-<pinref part="FUSE-" gate="G$1" pin="1"/>
+<pinref part="F2" gate="G$1" pin="2"/>
 <wire x1="200.66" y1="2.54" x2="205.74" y2="2.54" width="0.1524" layer="91"/>
 <junction x="200.66" y="2.54"/>
 </segment>
@@ -3510,8 +3516,8 @@ With pulldown resistors if necessary
 <pinref part="HVIN+" gate="-1" pin="S"/>
 <pinref part="HVIN+" gate="-2" pin="S"/>
 <wire x1="200.66" y1="43.18" x2="200.66" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="FUSE+" gate="G$1" pin="1"/>
-<wire x1="200.66" y1="45.72" x2="205.74" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="F1" gate="G$1" pin="2"/>
+<wire x1="205.74" y1="45.72" x2="200.66" y2="45.72" width="0.1524" layer="91"/>
 <junction x="200.66" y="45.72"/>
 </segment>
 </net>
@@ -3519,16 +3525,16 @@ With pulldown resistors if necessary
 <segment>
 <pinref part="U$5" gate="G$1" pin="5VOUT+"/>
 <pinref part="SUPPLY4" gate="G$1" pin="VDD"/>
-<wire x1="302.26" y1="45.72" x2="322.58" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="314.96" y1="45.72" x2="335.28" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="U$5" gate="G$1" pin="6SENSE+"/>
-<wire x1="302.26" y1="38.1" x2="322.58" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="322.58" y1="38.1" x2="322.58" y2="45.72" width="0.1524" layer="91"/>
-<junction x="322.58" y="45.72"/>
+<wire x1="314.96" y1="38.1" x2="335.28" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="335.28" y1="38.1" x2="335.28" y2="45.72" width="0.1524" layer="91"/>
+<junction x="335.28" y="45.72"/>
 <pinref part="TRIM+" gate="G$1" pin="2"/>
-<wire x1="320.04" y1="30.48" x2="322.58" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="322.58" y1="30.48" x2="322.58" y2="38.1" width="0.1524" layer="91"/>
-<junction x="322.58" y="38.1"/>
-<wire x1="322.58" y1="45.72" x2="332.74" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="332.74" y1="30.48" x2="335.28" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="335.28" y1="30.48" x2="335.28" y2="38.1" width="0.1524" layer="91"/>
+<junction x="335.28" y="38.1"/>
+<wire x1="335.28" y1="45.72" x2="345.44" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="OUT" gate="-11" pin="S"/>
@@ -3540,11 +3546,11 @@ With pulldown resistors if necessary
 <segment>
 <pinref part="U$5" gate="G$1" pin="7TRIM"/>
 <pinref part="TRIM-" gate="G$1" pin="1"/>
-<wire x1="302.26" y1="25.4" x2="309.88" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="309.88" y1="25.4" x2="309.88" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="314.96" y1="25.4" x2="322.58" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="322.58" y1="25.4" x2="322.58" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="TRIM+" gate="G$1" pin="1"/>
-<wire x1="309.88" y1="25.4" x2="309.88" y2="30.48" width="0.1524" layer="91"/>
-<junction x="309.88" y="25.4"/>
+<wire x1="322.58" y1="25.4" x2="322.58" y2="30.48" width="0.1524" layer="91"/>
+<junction x="322.58" y="25.4"/>
 </segment>
 </net>
 <net name="CANL_IN" class="0">
@@ -3723,10 +3729,10 @@ With pulldown resistors if necessary
 <segment>
 <pinref part="FUSE-" gate="G$1" pin="2"/>
 <pinref part="U$5" gate="G$1" pin="4VIN-"/>
-<wire x1="215.9" y1="2.54" x2="220.98" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="2.54" x2="233.68" y2="2.54" width="0.1524" layer="91"/>
 <pinref part="U$11" gate="G$1" pin="HV-"/>
-<wire x1="220.98" y1="2.54" x2="233.68" y2="2.54" width="0.1524" layer="91"/>
-<junction x="220.98" y="2.54"/>
+<wire x1="233.68" y1="2.54" x2="246.38" y2="2.54" width="0.1524" layer="91"/>
+<junction x="233.68" y="2.54"/>
 </segment>
 <segment>
 <pinref part="U$17" gate="G$1" pin="HV-"/>
@@ -4036,6 +4042,20 @@ With pulldown resistors if necessary
 <pinref part="IC3" gate="G$1" pin="VINB-"/>
 <wire x1="48.26" y1="-121.92" x2="30.48" y2="-121.92" width="0.1524" layer="91"/>
 <label x="33.02" y="-121.92" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="F2" gate="G$1" pin="1"/>
+<pinref part="FUSE-" gate="G$1" pin="1"/>
+<wire x1="215.9" y1="2.54" x2="218.44" y2="2.54" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="F1" gate="G$1" pin="1"/>
+<pinref part="FUSE+" gate="G$1" pin="1"/>
+<wire x1="215.9" y1="45.72" x2="218.44" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
