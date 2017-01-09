@@ -218,41 +218,6 @@
 <text x="0" y="0.7239" size="0.3048" layer="25" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-0.7112" size="0.3048" layer="27" align="top-center">&gt;VALUE</text>
 </package>
-<package name="TO-220-SINK">
-<wire x1="5.08" y1="-1.905" x2="-5.08" y2="-1.905" width="0.2032" layer="21"/>
-<wire x1="-5.08" y1="-1.905" x2="-5.08" y2="1.905" width="0.2032" layer="21"/>
-<wire x1="-5.08" y1="1.905" x2="-5.08" y2="2.54" width="0.2032" layer="21"/>
-<wire x1="-5.08" y1="2.54" x2="5.08" y2="2.54" width="0.2032" layer="21"/>
-<wire x1="5.08" y1="2.54" x2="5.08" y2="1.905" width="0.2032" layer="21"/>
-<wire x1="5.08" y1="1.905" x2="5.08" y2="-1.905" width="0.2032" layer="21"/>
-<wire x1="5.08" y1="1.905" x2="-5.08" y2="1.905" width="0.2032" layer="21"/>
-<wire x1="5.08" y1="2.54" x2="8.255" y2="2.54" width="0.2032" layer="51"/>
-<wire x1="8.255" y1="2.54" x2="8.255" y2="-5.715" width="0.2032" layer="51"/>
-<wire x1="8.255" y1="-5.715" x2="9.525" y2="-5.715" width="0.2032" layer="51"/>
-<wire x1="9.525" y1="-5.715" x2="9.525" y2="3.81" width="0.2032" layer="51"/>
-<wire x1="9.525" y1="3.81" x2="-9.525" y2="3.81" width="0.2032" layer="51"/>
-<wire x1="-9.525" y1="3.81" x2="-9.525" y2="-5.715" width="0.2032" layer="51"/>
-<wire x1="-9.525" y1="-5.715" x2="-8.255" y2="-5.715" width="0.2032" layer="51"/>
-<wire x1="-8.255" y1="-5.715" x2="-8.255" y2="2.54" width="0.2032" layer="51"/>
-<wire x1="-8.255" y1="2.54" x2="-5.08" y2="2.54" width="0.2032" layer="51"/>
-<pad name="1" x="-2.54" y="0" drill="1" diameter="1.8796" shape="square"/>
-<pad name="2" x="0" y="0" drill="1" diameter="1.8796"/>
-<pad name="3" x="2.54" y="0" drill="1" diameter="1.8796"/>
-</package>
-<package name="SOT23-6">
-<smd name="1" x="0" y="0" dx="1.0668" dy="0.6604" layer="1" rot="R90"/>
-<smd name="2" x="0.9398" y="0" dx="1.0668" dy="0.6604" layer="1" rot="R90"/>
-<smd name="3" x="1.8796" y="0" dx="1.0668" dy="0.6604" layer="1" rot="R90"/>
-<smd name="6" x="0" y="2.2098" dx="1.0668" dy="0.6604" layer="1" rot="R90"/>
-<smd name="5" x="0.9398" y="2.2098" dx="1.0668" dy="0.6604" layer="1" rot="R90"/>
-<smd name="4" x="1.8796" y="2.2098" dx="1.0668" dy="0.6604" layer="1" rot="R90"/>
-<wire x1="-0.6096" y1="-0.396240625" x2="2.4892" y2="-0.396240625" width="0.127" layer="21"/>
-<wire x1="2.4892" y1="-0.396240625" x2="2.4892" y2="2.606040625" width="0.127" layer="21"/>
-<wire x1="2.4892" y1="2.606040625" x2="-0.6096" y2="2.606040625" width="0.127" layer="21"/>
-<wire x1="-0.6096" y1="2.606040625" x2="-0.6096" y2="-0.396240625" width="0.127" layer="21"/>
-<text x="-1.27" y="-0.635" size="0.6096" layer="21" rot="R90">&gt;NAME</text>
-<text x="-0.762" y="0" size="0.3048" layer="21" rot="R90">1</text>
-</package>
 <package name="MINIFIT_5566-4">
 <description>&lt;b&gt;Mini-Fit Junior connector 4 pole&lt;/b&gt;&lt;p&gt;
 Source: http://www.molex.com</description>
@@ -366,33 +331,6 @@ Source: http://www.molex.com</description>
 <wire x1="-0.127" y1="-0.127" x2="-0.2794" y2="-0.0254" width="0.0508" layer="21"/>
 <wire x1="-0.5842" y1="0.254" x2="-0.5842" y2="-0.254" width="0.1524" layer="21"/>
 <wire x1="0.5842" y1="0.254" x2="0.5842" y2="-0.254" width="0.1524" layer="21"/>
-</package>
-<package name="MINIFIT_5566-12">
-<description>&lt;b&gt;Mini-Fit Junior connector 12 pole&lt;/b&gt;&lt;p&gt;
-Source: http://www.molex.com</description>
-<wire x1="-13.1" y1="4.5" x2="13.1" y2="4.5" width="0.254" layer="21"/>
-<wire x1="13.1" y1="4.5" x2="13.1" y2="-2.2" width="0.254" layer="21"/>
-<wire x1="13.1" y1="-3.3" x2="13.1" y2="-4.9" width="0.254" layer="21"/>
-<wire x1="13.1" y1="-4.9" x2="-13.1" y2="-4.9" width="0.254" layer="21"/>
-<wire x1="-13.1" y1="-4.9" x2="-13.1" y2="4.5" width="0.254" layer="21"/>
-<wire x1="13.1" y1="-2.2" x2="13.1" y2="-3.3" width="0.254" layer="21" curve="-180"/>
-<wire x1="-2.1" y1="6.3" x2="2.1" y2="6.3" width="0.254" layer="27"/>
-<wire x1="-2.1" y1="6.3" x2="-2.1" y2="4.6" width="0.254" layer="27"/>
-<wire x1="2.1" y1="6.3" x2="2.1" y2="4.6" width="0.254" layer="27"/>
-<pad name="1" x="10.5" y="-2.75" drill="1.4" shape="square"/>
-<pad name="2" x="6.3" y="-2.75" drill="1.4" shape="square"/>
-<pad name="3" x="2.1" y="-2.75" drill="1.4" shape="square"/>
-<pad name="4" x="-2.1" y="-2.75" drill="1.4" shape="square"/>
-<pad name="5" x="-6.3" y="-2.75" drill="1.4" shape="square"/>
-<pad name="6" x="-10.5" y="-2.75" drill="1.4" shape="square"/>
-<pad name="7" x="10.5" y="2.75" drill="1.4" shape="square"/>
-<pad name="8" x="6.3" y="2.75" drill="1.4" shape="square"/>
-<pad name="9" x="2.1" y="2.75" drill="1.4" shape="square"/>
-<pad name="10" x="-2.1" y="2.75" drill="1.4" shape="square"/>
-<pad name="11" x="-6.3" y="2.75" drill="1.4" shape="square"/>
-<pad name="12" x="-10.5" y="2.75" drill="1.4" shape="square"/>
-<text x="8.255" y="-5.08" size="1.27" layer="25" align="top-center">&gt;NAME</text>
-<text x="-8.89" y="-5.08" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
 </package>
 <package name="SOP04">
 <description>&lt;b&gt;SOP 04 - 4.3x4.4mm RM 2.54mm&lt;/b&gt; AQY21, AQY22, AQY61 Series NAiS&lt;p&gt;Source: http://www.mew-europe.com/..  pti_en.pdf</description>
@@ -586,6 +524,56 @@ Source: http://www.molex.com</description>
 <text x="2.2225" y="0.635" size="1.016" layer="51" ratio="12">1</text>
 <text x="-0.635" y="0.635" size="1.016" layer="51" ratio="12">2</text>
 <text x="-3.175" y="0.635" size="1.016" layer="51" ratio="12">3</text>
+</package>
+<package name="MINIFIT_5566-12">
+<description>&lt;b&gt;Mini-Fit Junior connector 12 pole&lt;/b&gt;&lt;p&gt;
+Source: http://www.molex.com</description>
+<wire x1="-13.1" y1="4.5" x2="13.1" y2="4.5" width="0.254" layer="21"/>
+<wire x1="13.1" y1="4.5" x2="13.1" y2="-2.2" width="0.254" layer="21"/>
+<wire x1="13.1" y1="-3.3" x2="13.1" y2="-4.9" width="0.254" layer="21"/>
+<wire x1="13.1" y1="-4.9" x2="-13.1" y2="-4.9" width="0.254" layer="21"/>
+<wire x1="-13.1" y1="-4.9" x2="-13.1" y2="4.5" width="0.254" layer="21"/>
+<wire x1="13.1" y1="-2.2" x2="13.1" y2="-3.3" width="0.254" layer="21" curve="-180"/>
+<wire x1="-2.1" y1="6.3" x2="2.1" y2="6.3" width="0.254" layer="27"/>
+<wire x1="-2.1" y1="6.3" x2="-2.1" y2="4.6" width="0.254" layer="27"/>
+<wire x1="2.1" y1="6.3" x2="2.1" y2="4.6" width="0.254" layer="27"/>
+<pad name="1" x="10.5" y="-2.75" drill="1.4" shape="square"/>
+<pad name="2" x="6.3" y="-2.75" drill="1.4" shape="square"/>
+<pad name="3" x="2.1" y="-2.75" drill="1.4" shape="square"/>
+<pad name="4" x="-2.1" y="-2.75" drill="1.4" shape="square"/>
+<pad name="5" x="-6.3" y="-2.75" drill="1.4" shape="square"/>
+<pad name="6" x="-10.5" y="-2.75" drill="1.4" shape="square"/>
+<pad name="7" x="10.5" y="2.75" drill="1.4" shape="square"/>
+<pad name="8" x="6.3" y="2.75" drill="1.4" shape="square"/>
+<pad name="9" x="2.1" y="2.75" drill="1.4" shape="square"/>
+<pad name="10" x="-2.1" y="2.75" drill="1.4" shape="square"/>
+<pad name="11" x="-6.3" y="2.75" drill="1.4" shape="square"/>
+<pad name="12" x="-10.5" y="2.75" drill="1.4" shape="square"/>
+<text x="8.255" y="-5.08" size="1.27" layer="25" align="top-center">&gt;NAME</text>
+<text x="-8.89" y="-5.08" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+</package>
+<package name="MINIFIT_5566-8">
+<description>&lt;b&gt;Mini-Fit Junior connector 8 pole&lt;/b&gt;&lt;p&gt;
+Source: http://www.molex.com</description>
+<wire x1="-8.9" y1="4.5" x2="8.9" y2="4.5" width="0.254" layer="21"/>
+<wire x1="8.9" y1="4.5" x2="8.9" y2="-2.2" width="0.254" layer="21"/>
+<wire x1="8.9" y1="-3.3" x2="8.9" y2="-4.9" width="0.254" layer="21"/>
+<wire x1="8.9" y1="-4.9" x2="-8.9" y2="-4.9" width="0.254" layer="21"/>
+<wire x1="-8.9" y1="-4.9" x2="-8.9" y2="4.5" width="0.254" layer="21"/>
+<wire x1="8.9" y1="-2.2" x2="8.9" y2="-3.3" width="0.254" layer="21" curve="-180"/>
+<wire x1="-2.1" y1="6.3" x2="2.1" y2="6.3" width="0.254" layer="27"/>
+<wire x1="-2.1" y1="6.3" x2="-2.1" y2="4.6" width="0.254" layer="27"/>
+<wire x1="2.1" y1="6.3" x2="2.1" y2="4.6" width="0.254" layer="27"/>
+<pad name="1" x="6.3" y="-2.75" drill="1.4" shape="square"/>
+<pad name="2" x="2.1" y="-2.75" drill="1.4" shape="square"/>
+<pad name="3" x="-2.1" y="-2.75" drill="1.4" shape="square"/>
+<pad name="4" x="-6.3" y="-2.75" drill="1.4" shape="square"/>
+<pad name="5" x="6.3" y="2.75" drill="1.4" shape="square"/>
+<pad name="6" x="2.1" y="2.75" drill="1.4" shape="square"/>
+<pad name="7" x="-2.1" y="2.75" drill="1.4" shape="square"/>
+<pad name="8" x="-6.3" y="2.75" drill="1.4" shape="square"/>
+<text x="8.89" y="-5.08" size="1.27" layer="25" align="top-right">&gt;NAME</text>
+<text x="0" y="6.35" size="1.27" layer="27" align="bottom-center">&gt;VALUE</text>
 </package>
 </packages>
 </library>
@@ -781,16 +769,6 @@ design rules under a new name.</description>
 <element name="C1" library="HyTechDevices" package="0805" value="1uF" x="86.868" y="40.005" rot="MR270"/>
 <element name="C2" library="HyTechDevices" package="0805" value="1uF" x="92.583" y="6.35" rot="MR270"/>
 <element name="C3" library="HyTechDevices" package="0805" value="1uF" x="1.905" y="56.007" rot="MR270"/>
-<element name="FAN" library="HyTechDevices" package="TO-220-SINK" value="IRF540A" x="22.098" y="24.257" rot="R270">
-<attribute name="_EXTERNAL_" value="1" x="22.098" y="24.257" size="1.778" layer="27" rot="R270" display="off"/>
-</element>
-<element name="FAN_DRIVE" library="HyTechDevices" package="SOT23-6" value="GATE_DRIVEZXGD3003E6TA" x="26.543" y="40.259" rot="MR270"/>
-<element name="FROMBMS" library="HyTechDevices" package="MINIFIT_5566-4" value="" x="29.083" y="8.128" rot="R180">
-<attribute name="OC_NEWARK" value="unknown" x="29.083" y="8.128" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="" x="29.083" y="8.128" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MF" value="" x="29.083" y="8.128" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="OC_FARNELL" value="unknown" x="29.083" y="8.128" size="1.778" layer="27" rot="R180" display="off"/>
-</element>
 <element name="FUSE+" library="HyTechDevices" package="0751.0110" value="" x="180.848" y="52.324" rot="R180"/>
 <element name="FUSE-" library="HyTechDevices" package="0751.0110" value="" x="180.848" y="59.69" rot="R180"/>
 <element name="HVIN+" library="HyTechDevices" package="MINIFIT_5566-2" value="" x="214.63" y="48.895" rot="R270">
@@ -822,12 +800,6 @@ design rules under a new name.</description>
 <attribute name="MF" value="" x="11.938" y="8.128" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_FARNELL" value="1822072" x="11.938" y="8.128" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="OUT" library="HyTechDevices" package="MINIFIT_5566-12" value="" x="6.35" y="27.94" rot="R90">
-<attribute name="OC_NEWARK" value="unknown" x="6.35" y="27.94" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="" x="6.35" y="27.94" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MF" value="" x="6.35" y="27.94" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="OC_FARNELL" value="unknown" x="6.35" y="27.94" size="1.778" layer="27" rot="R90" display="off"/>
-</element>
 <element name="R1" library="HyTechDevices" package="0805" value="3.3k" x="92.583" y="47.625" rot="MR90"/>
 <element name="R10" library="HyTechDevices" package="0805" value="" x="27.305" y="55.88" rot="MR90"/>
 <element name="R13" library="HyTechDevices" package="0805" value="" x="20.955" y="35.56" rot="MR90"/>
@@ -841,18 +813,10 @@ design rules under a new name.</description>
 <element name="R4" library="HyTechDevices" package="0805" value="22k" x="93.853" y="10.795" rot="MR90"/>
 <element name="R5" library="HyTechDevices" package="0805" value="1.5m" x="91.313" y="15.875" rot="MR0"/>
 <element name="R6" library="HyTechDevices" package="0805" value="120k" x="89.154" y="13.462" rot="MR90"/>
-<element name="R7" library="HyTechDevices" package="0805" value="10k" x="17.145" y="48.26" rot="MR90"/>
 <element name="R8" library="HyTechDevices" package="0805" value="1.8k" x="86.868" y="3.175" rot="MR0"/>
 <element name="R9" library="HyTechDevices" package="0805" value="" x="29.845" y="55.88" rot="MR90"/>
-<element name="T1" library="HyTechDevices" package="0805" value="120" x="29.083" y="8.128" rot="MR0"/>
-<element name="T2" library="HyTechDevices" package="0805" value="120" x="40.513" y="8.128" rot="MR180"/>
+<element name="T2" library="HyTechDevices" package="0805" value="120" x="29.083" y="8.128" rot="MR0"/>
 <element name="THRESHOLD" library="HyTechDevices" package="TO-252" value="AOD1N60" x="80.518" y="13.335" rot="MR0"/>
-<element name="TOBMS" library="HyTechDevices" package="MINIFIT_5566-4" value="" x="40.513" y="8.128" rot="R180">
-<attribute name="OC_NEWARK" value="unknown" x="40.513" y="8.128" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="" x="40.513" y="8.128" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MF" value="" x="40.513" y="8.128" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="OC_FARNELL" value="unknown" x="40.513" y="8.128" size="1.778" layer="27" rot="R180" display="off"/>
-</element>
 <element name="TRIM+" library="HyTechDevices" package="0805" value="" x="55.753" y="27.305" rot="MR270"/>
 <element name="TRIM-" library="HyTechDevices" package="0805" value="" x="55.753" y="34.925" rot="MR90"/>
 <element name="TSAL_SSR" library="HyTechDevices" package="SOP04" value="CPC1002N" x="80.518" y="5.08" rot="MR270"/>
@@ -923,20 +887,27 @@ design rules under a new name.</description>
 <attribute name="MF" value="" x="4.445" y="8.128" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_FARNELL" value="1822072" x="4.445" y="8.128" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="FANF" library="HyTechDevices" package="MINIFIT_5566-2" value="MINIFIT_5566-2" x="19.431" y="8.128" rot="R180">
-<attribute name="OC_NEWARK" value="unknown" x="19.431" y="8.128" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="" x="19.431" y="8.128" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MF" value="" x="19.431" y="8.128" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="OC_FARNELL" value="1822072" x="19.431" y="8.128" size="1.778" layer="27" rot="R180" display="off"/>
-</element>
-<element name="FANR" library="HyTechDevices" package="MINIFIT_5566-2" value="MINIFIT_5566-2" x="40.005" y="33.147" rot="R90">
-<attribute name="OC_NEWARK" value="unknown" x="40.005" y="33.147" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="" x="40.005" y="33.147" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MF" value="" x="40.005" y="33.147" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="OC_FARNELL" value="1822072" x="40.005" y="33.147" size="1.778" layer="27" rot="R90" display="off"/>
-</element>
 <element name="F1" library="HyTechDevices" package="0805" value="2.0" x="200.66" y="48.895"/>
 <element name="F2" library="HyTechDevices" package="0805" value="2.0" x="200.66" y="59.69"/>
+<element name="POWER" library="HyTechDevices" package="MINIFIT_5566-4" value="" x="-6.35" y="7.62">
+<attribute name="OC_NEWARK" value="unknown" x="-6.35" y="7.62" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="-6.35" y="7.62" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="" x="-6.35" y="7.62" size="1.778" layer="27" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="-6.35" y="7.62" size="1.778" layer="27" display="off"/>
+</element>
+<element name="T1" library="HyTechDevices" package="0805" value="120" x="-11.43" y="-2.54"/>
+<element name="MAIN" library="HyTechDevices" package="MINIFIT_5566-12" value="" x="-15.24" y="-11.43">
+<attribute name="OC_NEWARK" value="unknown" x="-15.24" y="-11.43" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="-15.24" y="-11.43" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="" x="-15.24" y="-11.43" size="1.778" layer="27" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="-15.24" y="-11.43" size="1.778" layer="27" display="off"/>
+</element>
+<element name="X1" library="HyTechDevices" package="MINIFIT_5566-8" value="MINIFIT_5566-8" x="-19.05" y="-26.67">
+<attribute name="OC_NEWARK" value="unknown" x="-19.05" y="-26.67" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="-19.05" y="-26.67" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="" x="-19.05" y="-26.67" size="1.778" layer="27" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="-19.05" y="-26.67" size="1.778" layer="27" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -948,12 +919,6 @@ design rules under a new name.</description>
 <contactref element="U$5" pad="9VOUT-"/>
 <contactref element="U$5" pad="8SENSE-"/>
 <contactref element="TRIM-" pad="2"/>
-<contactref element="FROMBMS" pad="2"/>
-<contactref element="TOBMS" pad="2"/>
-<contactref element="OUT" pad="2"/>
-<contactref element="FAN" pad="3"/>
-<contactref element="FAN_DRIVE" pad="3"/>
-<contactref element="R7" pad="2"/>
 <contactref element="CURRENT1" pad="4"/>
 <contactref element="R9" pad="1"/>
 <contactref element="R10" pad="1"/>
@@ -970,38 +935,37 @@ design rules under a new name.</description>
 <contactref element="IC3" pad="4"/>
 <contactref element="5KW_TRIM" pad="3"/>
 <contactref element="RELAYS" pad="2"/>
+<contactref element="POWER" pad="2"/>
+<contactref element="CAN1" pad="8"/>
+<contactref element="X1" pad="2"/>
 <wire x1="55.753" y1="35.825" x2="182.118" y2="8.128" width="0" layer="19" extent="16-16"/>
 <wire x1="55.753" y1="38.735" x2="55.753" y2="35.825" width="0" layer="19" extent="16-16"/>
 <wire x1="55.753" y1="48.895" x2="55.753" y2="38.735" width="0" layer="19" extent="1-1"/>
 <wire x1="39.429" y1="59.392" x2="55.753" y2="48.895" width="0" layer="19" extent="1-1"/>
 <wire x1="29.845" y1="54.98" x2="39.429" y2="59.392" width="0" layer="19" extent="16-16"/>
 <wire x1="27.305" y1="54.98" x2="29.845" y2="54.98" width="0" layer="19" extent="16-16"/>
-<wire x1="20.32" y1="52.765" x2="27.305" y2="54.98" width="0" layer="19" extent="16-16"/>
-<wire x1="17.145" y1="49.16" x2="20.32" y2="52.765" width="0" layer="19" extent="16-16"/>
-<wire x1="22.86" y1="47.565" x2="20.32" y2="52.765" width="0" layer="19" extent="16-16"/>
+<wire x1="24.13" y1="52.765" x2="27.305" y2="54.98" width="0" layer="19" extent="16-16"/>
+<wire x1="20.32" y1="52.765" x2="24.13" y2="52.765" width="0" layer="19" extent="16-16"/>
+<wire x1="22.86" y1="47.565" x2="24.13" y2="52.765" width="0" layer="19" extent="16-16"/>
 <wire x1="14.351" y1="54.98" x2="20.32" y2="52.765" width="0" layer="19" extent="16-16"/>
 <wire x1="9.525" y1="54.98" x2="14.351" y2="54.98" width="0" layer="19" extent="16-16"/>
 <wire x1="29.845" y1="47.565" x2="22.86" y2="47.565" width="0" layer="19" extent="16-16"/>
 <wire x1="1.905" y1="55.107" x2="9.525" y2="54.98" width="0" layer="19" extent="16-16"/>
-<wire x1="26.543" y1="38.3794" x2="29.845" y2="47.565" width="0" layer="19" extent="16-16"/>
-<wire x1="20.955" y1="34.66" x2="26.543" y2="38.3794" width="0" layer="19" extent="16-16"/>
+<wire x1="1.905" y1="44.45" x2="1.905" y2="55.107" width="0" layer="19" extent="16-16"/>
+<wire x1="20.955" y1="34.66" x2="22.86" y2="47.565" width="0" layer="19" extent="16-16"/>
 <wire x1="17.145" y1="34.66" x2="20.955" y2="34.66" width="0" layer="19" extent="16-16"/>
 <wire x1="13.335" y1="34.66" x2="17.145" y2="34.66" width="0" layer="19" extent="16-16"/>
-<wire x1="9.1" y1="34.24" x2="13.335" y2="34.66" width="0" layer="19" extent="16-16"/>
 <wire x1="18.475" y1="28.575" x2="17.145" y2="34.66" width="0" layer="19" extent="16-16"/>
 <wire x1="15.621" y1="21.463" x2="18.475" y2="28.575" width="0" layer="19" extent="16-16"/>
-<wire x1="22.098" y1="21.717" x2="15.621" y2="21.463" width="0" layer="19" extent="1-1"/>
-<wire x1="28.448" y1="20.447" x2="22.098" y2="21.717" width="0" layer="19" extent="1-1"/>
+<wire x1="28.448" y1="20.447" x2="18.475" y2="28.575" width="0" layer="19" extent="16-16"/>
 <wire x1="37.636" y1="18.279" x2="28.448" y2="20.447" width="0" layer="19" extent="1-1"/>
 <wire x1="43.136" y1="18.279" x2="37.636" y2="18.279" width="0" layer="19" extent="1-1"/>
-<wire x1="42.613" y1="10.878" x2="43.136" y2="18.279" width="0" layer="19" extent="1-1"/>
 <wire x1="37.636" y1="26.679" x2="37.636" y2="18.279" width="0" layer="19" extent="1-1"/>
-<wire x1="31.183" y1="10.878" x2="37.636" y2="18.279" width="0" layer="19" extent="1-1"/>
-<wire x1="1.905" y1="44.45" x2="1.905" y2="55.107" width="0" layer="19" extent="16-16"/>
 <wire x1="4.445" y1="5.378" x2="15.621" y2="21.463" width="0" layer="19" extent="1-1"/>
+<wire x1="-8.45" y1="4.87" x2="4.445" y2="5.378" width="0" layer="19" extent="1-1"/>
+<wire x1="-16.95" y1="-29.42" x2="-8.45" y2="4.87" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SHUTDOWN_IN">
-<contactref element="OUT" pad="3"/>
 <contactref element="TSAL_SSR" pad="4"/>
 <contactref element="FH-JUMPER" pad="1"/>
 <contactref element="INTERLOCKS" pad="1"/>
@@ -1009,28 +973,19 @@ design rules under a new name.</description>
 <contactref element="D1" pad="A"/>
 <wire x1="77.518" y1="6.35" x2="207.518" y2="8.128" width="0" layer="19" extent="16-16"/>
 <wire x1="42.755" y1="39.624" x2="77.518" y2="6.35" width="0" layer="19" extent="16-16"/>
-<wire x1="9.1" y1="30.04" x2="42.755" y2="39.624" width="0" layer="19" extent="1-1"/>
-<wire x1="11.938" y1="10.878" x2="9.1" y2="30.04" width="0" layer="19" extent="1-1"/>
-<wire x1="7.239" y1="51.805" x2="9.1" y2="30.04" width="0" layer="19" extent="16-16"/>
+<wire x1="7.239" y1="51.805" x2="42.755" y2="39.624" width="0" layer="19" extent="16-16"/>
+<wire x1="11.938" y1="10.878" x2="7.239" y2="51.805" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="+12V">
-<contactref element="OUT" pad="1"/>
 <contactref element="IC1" pad="1"/>
-<contactref element="FROMBMS" pad="1"/>
-<contactref element="TOBMS" pad="1"/>
-<contactref element="FAN_DRIVE" pad="1"/>
 <contactref element="IC2" pad="8"/>
 <contactref element="IMD_BMS" pad="2"/>
-<contactref element="FANR" pad="1"/>
-<contactref element="FANF" pad="1"/>
-<wire x1="37.636" y1="22.479" x2="42.755" y2="33.147" width="0" layer="19" extent="1-1"/>
-<wire x1="38.413" y1="10.878" x2="37.636" y2="22.479" width="0" layer="19" extent="1-1"/>
-<wire x1="26.983" y1="10.878" x2="38.413" y2="10.878" width="0" layer="19" extent="1-1"/>
-<wire x1="19.431" y1="10.878" x2="26.983" y2="10.878" width="0" layer="19" extent="1-1"/>
-<wire x1="15.621" y1="18.923" x2="19.431" y2="10.878" width="0" layer="19" extent="1-1"/>
+<contactref element="POWER" pad="1"/>
+<contactref element="X1" pad="1"/>
+<wire x1="15.621" y1="18.923" x2="37.636" y2="22.479" width="0" layer="19" extent="1-1"/>
 <wire x1="13.275" y1="32.385" x2="15.621" y2="18.923" width="0" layer="19" extent="16-16"/>
-<wire x1="9.1" y1="38.44" x2="13.275" y2="32.385" width="0" layer="19" extent="16-16"/>
-<wire x1="26.543" y1="40.259" x2="13.275" y2="32.385" width="0" layer="19" extent="16-16"/>
+<wire x1="-4.25" y1="4.87" x2="15.621" y2="18.923" width="0" layer="19" extent="1-1"/>
+<wire x1="-12.75" y1="-29.42" x2="-4.25" y2="4.87" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+5V">
 <contactref element="IC1" pad="3"/>
@@ -1070,18 +1025,6 @@ design rules under a new name.</description>
 </signal>
 <signal name="D5">
 <contactref element="U$2" pad="D5"/>
-<contactref element="FAN" pad="1"/>
-<contactref element="FAN_DRIVE" pad="6"/>
-<contactref element="FAN_DRIVE" pad="4"/>
-<contactref element="FAN_DRIVE" pad="2"/>
-<contactref element="FAN_DRIVE" pad="5"/>
-<contactref element="R7" pad="1"/>
-<wire x1="24.3332" y1="39.3192" x2="26.543" y2="39.3192" width="0" layer="19" extent="16-16"/>
-<wire x1="24.3332" y1="40.259" x2="24.3332" y2="39.3192" width="0" layer="19" extent="16-16"/>
-<wire x1="24.3332" y1="38.3794" x2="24.3332" y2="39.3192" width="0" layer="19" extent="16-16"/>
-<wire x1="17.145" y1="44.45" x2="24.3332" y2="40.259" width="0" layer="19" extent="16-16"/>
-<wire x1="17.145" y1="47.36" x2="17.145" y2="44.45" width="0" layer="19" extent="16-16"/>
-<wire x1="22.098" y1="26.797" x2="24.3332" y2="38.3794" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="D6">
 <contactref element="U$2" pad="D6"/>
@@ -1151,10 +1094,8 @@ design rules under a new name.</description>
 <contactref element="U$5" pad="5VOUT+"/>
 <contactref element="U$5" pad="6SENSE+"/>
 <contactref element="TRIM+" pad="2"/>
-<contactref element="OUT" pad="11"/>
 <wire x1="55.753" y1="23.495" x2="55.753" y2="26.405" width="0" layer="19" extent="16-16"/>
 <wire x1="55.753" y1="13.335" x2="55.753" y2="23.495" width="0" layer="19" extent="1-1"/>
-<wire x1="3.6" y1="21.64" x2="55.753" y2="23.495" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="TRIM">
 <contactref element="U$5" pad="7TRIM"/>
@@ -1164,36 +1105,36 @@ design rules under a new name.</description>
 <wire x1="55.753" y1="28.205" x2="55.753" y2="31.115" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="CANL_IN">
-<contactref element="OUT" pad="6"/>
-<contactref element="TOBMS" pad="3"/>
 <contactref element="CAN1" pad="6"/>
-<contactref element="T2" pad="1"/>
-<wire x1="9.1" y1="17.44" x2="21.59" y2="52.765" width="0" layer="19" extent="16-16"/>
-<wire x1="38.413" y1="5.378" x2="9.1" y2="17.44" width="0" layer="19" extent="1-1"/>
-<wire x1="39.613" y1="8.128" x2="38.413" y2="5.378" width="0" layer="19" extent="16-16"/>
+<contactref element="POWER" pad="3"/>
+<contactref element="T1" pad="2"/>
+<contactref element="X1" pad="5"/>
+<wire x1="-4.25" y1="10.37" x2="21.59" y2="52.765" width="0" layer="19" extent="16-16"/>
+<wire x1="-10.53" y1="-2.54" x2="-4.25" y2="10.37" width="0" layer="19" extent="1-1"/>
+<wire x1="-12.75" y1="-23.92" x2="-10.53" y2="-2.54" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="CANH_IN">
-<contactref element="OUT" pad="5"/>
-<contactref element="TOBMS" pad="4"/>
 <contactref element="CAN1" pad="7"/>
-<contactref element="T2" pad="2"/>
-<wire x1="9.1" y1="21.64" x2="22.86" y2="52.765" width="0" layer="19" extent="16-16"/>
-<wire x1="41.413" y1="8.128" x2="9.1" y2="21.64" width="0" layer="19" extent="16-16"/>
-<wire x1="42.613" y1="5.378" x2="41.413" y2="8.128" width="0" layer="19" extent="16-16"/>
+<contactref element="POWER" pad="4"/>
+<contactref element="T1" pad="1"/>
+<contactref element="X1" pad="6"/>
+<wire x1="-8.45" y1="10.37" x2="22.86" y2="52.765" width="0" layer="19" extent="16-16"/>
+<wire x1="-12.33" y1="-2.54" x2="-8.45" y2="10.37" width="0" layer="19" extent="1-1"/>
+<wire x1="-16.95" y1="-23.92" x2="-12.33" y2="-2.54" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="CANL_OUT">
-<contactref element="OUT" pad="8"/>
-<contactref element="FROMBMS" pad="3"/>
-<contactref element="T1" pad="2"/>
-<wire x1="28.183" y1="8.128" x2="3.6" y2="34.24" width="0" layer="19" extent="16-16"/>
-<wire x1="26.983" y1="5.378" x2="28.183" y2="8.128" width="0" layer="19" extent="16-16"/>
+<contactref element="T2" pad="2"/>
+<contactref element="X1" pad="3"/>
+<contactref element="MAIN" pad="7"/>
+<wire x1="-4.74" y1="-8.68" x2="-21.15" y2="-29.42" width="0" layer="19" extent="1-1"/>
+<wire x1="28.183" y1="8.128" x2="-4.74" y2="-8.68" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="CANH_OUT">
-<contactref element="OUT" pad="7"/>
-<contactref element="FROMBMS" pad="4"/>
-<contactref element="T1" pad="1"/>
-<wire x1="29.983" y1="8.128" x2="3.6" y2="38.44" width="0" layer="19" extent="16-16"/>
-<wire x1="31.183" y1="5.378" x2="29.983" y2="8.128" width="0" layer="19" extent="16-16"/>
+<contactref element="T2" pad="1"/>
+<contactref element="X1" pad="4"/>
+<contactref element="MAIN" pad="8"/>
+<wire x1="-8.94" y1="-8.68" x2="-25.35" y2="-29.42" width="0" layer="19" extent="1-1"/>
+<wire x1="29.983" y1="8.128" x2="-8.94" y2="-8.68" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$1">
 <contactref element="HV_REG2" pad="2(TAB)"/>
@@ -1230,11 +1171,9 @@ design rules under a new name.</description>
 <wire x1="78.232" y1="26.035" x2="93.853" y2="11.695" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="TSAL+">
-<contactref element="OUT" pad="12"/>
 <contactref element="TSAL_SSR" pad="3"/>
 <contactref element="FH-JUMPER" pad="2"/>
 <wire x1="11.938" y1="5.378" x2="77.518" y2="3.81" width="0" layer="19" extent="16-16"/>
-<wire x1="3.6" y1="17.44" x2="11.938" y2="5.378" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$36">
 <contactref element="R5" pad="1"/>
@@ -1301,13 +1240,6 @@ design rules under a new name.</description>
 <wire x1="191.262" y1="34.163" x2="215.475" y2="34.163" width="0.8128" layer="16"/>
 <wire x1="215.475" y1="34.163" x2="215.9" y2="33.738" width="0.8128" layer="16"/>
 </signal>
-<signal name="N$40">
-<contactref element="FAN" pad="2"/>
-<contactref element="FANR" pad="2"/>
-<contactref element="FANF" pad="2"/>
-<wire x1="22.098" y1="24.257" x2="37.255" y2="33.147" width="0" layer="19" extent="1-1"/>
-<wire x1="19.431" y1="5.378" x2="22.098" y2="24.257" width="0" layer="19" extent="1-1"/>
-</signal>
 <signal name="N$35">
 <contactref element="R8" pad="1"/>
 <contactref element="THRESHOLD" pad="2(TAB)"/>
@@ -1367,14 +1299,9 @@ design rules under a new name.</description>
 <contactref element="U$2" pad="A0"/>
 </signal>
 <signal name="OKHS_OUT">
-<contactref element="OUT" pad="10"/>
 <contactref element="IC2" pad="3"/>
 <contactref element="IMD_BMS" pad="5"/>
 <wire x1="18.475" y1="29.845" x2="43.136" y2="22.479" width="0" layer="19" extent="16-16"/>
-<wire x1="3.6" y1="25.84" x2="18.475" y2="29.845" width="0" layer="19" extent="16-16"/>
-</signal>
-<signal name="BMS_OK">
-<contactref element="OUT" pad="9"/>
 </signal>
 <signal name="BMSOK">
 <contactref element="IC2" pad="5"/>
@@ -1427,11 +1354,6 @@ design rules under a new name.</description>
 <contactref element="R17" pad="2"/>
 <wire x1="12.065" y1="54.98" x2="12.065" y2="53.605" width="0" layer="19" extent="16-16"/>
 </signal>
-<signal name="CURRENT_CHECK">
-<contactref element="OUT" pad="4"/>
-<contactref element="IC3" pad="7"/>
-<wire x1="9.1" y1="25.84" x2="32.385" y2="52.765" width="0" layer="19" extent="16-16"/>
-</signal>
 <signal name="5KW_TRIG">
 <contactref element="5KW_TRIM" pad="2"/>
 <contactref element="IC3" pad="6"/>
@@ -1454,6 +1376,9 @@ design rules under a new name.</description>
 <via x="195.5546" y="52.324" extent="1-16" drill="0.9" diameter="1.9304"/>
 <wire x1="195.5546" y1="52.324" x2="199.76" y2="48.895" width="0.8128" layer="1"/>
 <wire x1="190.848" y1="52.324" x2="185.848" y2="52.324" width="0.8128" layer="16"/>
+</signal>
+<signal name="BSPD_CURRENT">
+<contactref element="IC3" pad="7"/>
 </signal>
 </signals>
 </board>
