@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.05" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -364,10 +364,10 @@
 <wire x1="-1.27" y1="5.08" x2="0" y2="5.08" width="0.6096" layer="94"/>
 <text x="-5.08" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
 <text x="-5.08" y="8.382" size="1.778" layer="95">&gt;NAME</text>
-<pin name="1" x="5.08" y="-2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="2" x="5.08" y="0" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="3" x="5.08" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="4" x="5.08" y="5.08" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="5.08" y="-2.54" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="2" x="5.08" y="0" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="3" x="5.08" y="2.54" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="4" x="5.08" y="5.08" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 </symbol>
 <symbol name="BANANA_JACK">
 <circle x="0" y="0" radius="1.2951" width="0.254" layer="94"/>
@@ -376,16 +376,16 @@
 <text x="-1.016" y="-3.048" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="M02">
-<wire x1="3.81" y1="-2.54" x2="-2.54" y2="-2.54" width="0.4064" layer="94"/>
-<wire x1="1.27" y1="2.54" x2="2.54" y2="2.54" width="0.6096" layer="94"/>
-<wire x1="1.27" y1="0" x2="2.54" y2="0" width="0.6096" layer="94"/>
-<wire x1="-2.54" y1="5.08" x2="-2.54" y2="-2.54" width="0.4064" layer="94"/>
-<wire x1="3.81" y1="-2.54" x2="3.81" y2="5.08" width="0.4064" layer="94"/>
-<wire x1="-2.54" y1="5.08" x2="3.81" y2="5.08" width="0.4064" layer="94"/>
-<text x="-2.54" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
-<text x="-2.54" y="5.842" size="1.778" layer="95">&gt;NAME</text>
-<pin name="1" x="7.62" y="0" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="2" x="7.62" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<wire x1="1.27" y1="-5.08" x2="-5.08" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="-1.27" y1="0" x2="0" y2="0" width="0.6096" layer="94"/>
+<wire x1="-1.27" y1="-2.54" x2="0" y2="-2.54" width="0.6096" layer="94"/>
+<wire x1="-5.08" y1="2.54" x2="-5.08" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="-5.08" x2="1.27" y2="2.54" width="0.4064" layer="94"/>
+<wire x1="-5.08" y1="2.54" x2="1.27" y2="2.54" width="0.4064" layer="94"/>
+<text x="-5.08" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-5.08" y="3.302" size="1.778" layer="95">&gt;NAME</text>
+<pin name="1" x="5.08" y="-2.54" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="2" x="5.08" y="0" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 </symbol>
 <symbol name="BENDER_IR155-3204">
 <pin name="P1-GND" x="53.34" y="20.32" length="middle" rot="R180"/>
@@ -477,18 +477,18 @@ Precharger</text>
 <wire x1="-1.27" y1="12.7" x2="0" y2="12.7" width="0.6096" layer="94"/>
 <text x="-5.08" y="-20.32" size="1.778" layer="96">&gt;VALUE</text>
 <text x="-5.08" y="16.002" size="1.778" layer="95">&gt;NAME</text>
-<pin name="1" x="5.08" y="-15.24" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="2" x="5.08" y="-12.7" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="3" x="5.08" y="-10.16" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="4" x="5.08" y="-7.62" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="5" x="5.08" y="-5.08" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="6" x="5.08" y="-2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="7" x="5.08" y="0" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="8" x="5.08" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="9" x="5.08" y="5.08" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="10" x="5.08" y="7.62" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="11" x="5.08" y="10.16" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="12" x="5.08" y="12.7" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="5.08" y="-15.24" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="2" x="5.08" y="-12.7" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="3" x="5.08" y="-10.16" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="4" x="5.08" y="-7.62" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="5" x="5.08" y="-5.08" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="6" x="5.08" y="-2.54" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="7" x="5.08" y="0" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="8" x="5.08" y="2.54" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="9" x="5.08" y="5.08" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="10" x="5.08" y="7.62" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="11" x="5.08" y="10.16" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="12" x="5.08" y="12.7" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 </symbol>
 <symbol name="M06">
 <wire x1="1.27" y1="-7.62" x2="-5.08" y2="-7.62" width="0.4064" layer="94"/>
@@ -525,14 +525,14 @@ Precharger</text>
 <wire x1="-1.27" y1="10.16" x2="0" y2="10.16" width="0.6096" layer="94"/>
 <text x="-5.08" y="-12.7" size="1.778" layer="96">&gt;VALUE</text>
 <text x="-5.08" y="13.462" size="1.778" layer="95">&gt;NAME</text>
-<pin name="1" x="5.08" y="-7.62" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="2" x="5.08" y="-5.08" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="3" x="5.08" y="-2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="4" x="5.08" y="0" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="5" x="5.08" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="6" x="5.08" y="5.08" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="7" x="5.08" y="7.62" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="8" x="5.08" y="10.16" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="5.08" y="-7.62" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="2" x="5.08" y="-5.08" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="3" x="5.08" y="-2.54" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="4" x="5.08" y="0" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="5" x="5.08" y="2.54" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="6" x="5.08" y="5.08" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="7" x="5.08" y="7.62" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="8" x="5.08" y="10.16" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1286,6 +1286,7 @@ Source: Sonnenschein</description>
 <part name="SL11" library="HyTechSymbols" deviceset="M04" device=""/>
 <part name="SL12" library="HyTechSymbols" deviceset="M04" device=""/>
 <part name="GND2" library="HyTechSymbols" deviceset="GND" device=""/>
+<part name="ENERGYMETER" library="HyTechSymbols" deviceset="M04" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1413,6 +1414,7 @@ Source: Sonnenschein</description>
 <instance part="SL11" gate="G$1" x="38.1" y="185.42"/>
 <instance part="SL12" gate="G$1" x="25.4" y="187.96" rot="R180"/>
 <instance part="GND2" gate="1" x="238.76" y="-66.04"/>
+<instance part="ENERGYMETER" gate="G$1" x="76.2" y="162.56" rot="R180"/>
 </instances>
 <busses>
 <bus name="12VSUPPLY,GND,CANL,CANH">
@@ -1702,6 +1704,11 @@ Source: Sonnenschein</description>
 <portref moduleinst="COOLING_BOARD" port="COOLING_GND"/>
 <wire x1="464.82" y1="281.94" x2="464.82" y2="347.98" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="ENERGYMETER" gate="G$1" pin="2"/>
+<wire x1="45.72" y1="162.56" x2="71.12" y2="162.56" width="0.1524" layer="91"/>
+<label x="50.8" y="162.56" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="N$4" class="0">
 <segment>
@@ -1878,6 +1885,11 @@ Source: Sonnenschein</description>
 <pinref part="SL8" gate="G$1" pin="1"/>
 <wire x1="175.26" y1="-48.26" x2="208.28" y2="-48.26" width="0.1524" layer="91"/>
 <label x="177.8" y="-48.26" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="ENERGYMETER" gate="G$1" pin="1"/>
+<wire x1="45.72" y1="165.1" x2="71.12" y2="165.1" width="0.1524" layer="91"/>
+<label x="50.8" y="165.1" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CANH" class="0">
@@ -2149,6 +2161,11 @@ Source: Sonnenschein</description>
 <label x="370.84" y="-55.88" size="1.778" layer="95"/>
 <label x="342.9" y="-50.8" size="1.778" layer="95" rot="R180"/>
 </segment>
+<segment>
+<pinref part="SL2" gate="G$1" pin="3"/>
+<wire x1="347.98" y1="119.38" x2="347.98" y2="81.28" width="0.1524" layer="91"/>
+<label x="347.98" y="88.9" size="1.778" layer="95" rot="R90"/>
+</segment>
 </net>
 <net name="SHUTDOWN_CIRCUIT" class="0">
 <segment>
@@ -2168,21 +2185,6 @@ Source: Sonnenschein</description>
 </segment>
 </net>
 <net name="TSVP_POWER" class="0">
-<segment>
-<pinref part="RIGHT_TSVP" gate="G$1" pin="A"/>
-<wire x1="355.6" y1="-22.86" x2="355.6" y2="-25.4" width="0.1524" layer="91"/>
-<wire x1="408.94" y1="-45.72" x2="345.44" y2="-45.72" width="0.1524" layer="91"/>
-<wire x1="355.6" y1="-22.86" x2="345.44" y2="-22.86" width="0.1524" layer="91"/>
-<wire x1="345.44" y1="-22.86" x2="345.44" y2="-45.72" width="0.1524" layer="91"/>
-<label x="370.84" y="-45.72" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="H1" gate="G$1" pin="4"/>
-<pinref part="LEFT_TSVP" gate="G$1" pin="A"/>
-<wire x1="421.64" y1="381" x2="398.78" y2="381" width="0.1524" layer="91"/>
-<wire x1="398.78" y1="381" x2="398.78" y2="317.5" width="0.1524" layer="91"/>
-<label x="398.78" y="320.04" size="1.778" layer="95" rot="R90"/>
-</segment>
 <segment>
 <pinref part="H2" gate="G$1" pin="4"/>
 <wire x1="398.78" y1="289.56" x2="398.78" y2="294.64" width="0.1524" layer="91"/>
@@ -2208,7 +2210,7 @@ Source: Sonnenschein</description>
 <segment>
 <pinref part="MOLEX_IMPERIUM_2" gate="G$1" pin="1"/>
 <pinref part="U$1" gate="G$1" pin="DC+"/>
-<wire x1="101.6" y1="208.28" x2="-10.16" y2="208.28" width="0.3048" layer="91"/>
+<wire x1="104.14" y1="210.82" x2="-10.16" y2="208.28" width="0.3048" layer="91"/>
 <wire x1="-10.16" y1="208.28" x2="-10.16" y2="203.2" width="0.3048" layer="91"/>
 <label x="5.08" y="208.28" size="1.778" layer="95"/>
 </segment>
@@ -2225,7 +2227,7 @@ Source: Sonnenschein</description>
 <pinref part="U$1" gate="G$1" pin="DC-"/>
 <pinref part="MOLEX_IMPERIUM_2" gate="G$1" pin="2"/>
 <label x="5.08" y="205.74" size="1.778" layer="95"/>
-<wire x1="101.6" y1="205.74" x2="0" y2="205.74" width="0.3048" layer="91"/>
+<wire x1="104.14" y1="208.28" x2="0" y2="205.74" width="0.3048" layer="91"/>
 <wire x1="0" y1="205.74" x2="0" y2="203.2" width="0.3048" layer="91"/>
 </segment>
 <segment>
@@ -2364,6 +2366,11 @@ Source: Sonnenschein</description>
 <wire x1="330.2" y1="119.38" x2="330.2" y2="81.28" width="0.1524" layer="91"/>
 <label x="330.2" y="88.9" size="1.778" layer="95" rot="R90"/>
 </segment>
+<segment>
+<pinref part="SL8" gate="G$1" pin="3"/>
+<wire x1="175.26" y1="-43.18" x2="208.28" y2="-43.18" width="0.1524" layer="91"/>
+<label x="177.8" y="-43.18" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="INVERTER_SUPPLY" class="0">
 <segment>
@@ -2452,7 +2459,7 @@ Source: Sonnenschein</description>
 <pinref part="AIR2" gate="1" pin="S"/>
 <wire x1="342.9" y1="218.44" x2="345.44" y2="218.44" width="0.3048" layer="91"/>
 <wire x1="345.44" y1="218.44" x2="345.44" y2="205.74" width="0.3048" layer="91"/>
-<wire x1="345.44" y1="205.74" x2="127" y2="205.74" width="0.3048" layer="91"/>
+<wire x1="345.44" y1="205.74" x2="124.46" y2="203.2" width="0.3048" layer="91"/>
 <pinref part="MOLEX_IMPERIUM_1" gate="G$1" pin="1"/>
 </segment>
 </net>
@@ -2513,7 +2520,7 @@ Source: Sonnenschein</description>
 <pinref part="AIR1" gate="1" pin="P"/>
 <wire x1="220.98" y1="215.9" x2="223.52" y2="215.9" width="0.3048" layer="91"/>
 <pinref part="MOLEX_IMPERIUM_1" gate="G$1" pin="2"/>
-<wire x1="127" y1="208.28" x2="213.36" y2="208.28" width="0.3048" layer="91"/>
+<wire x1="124.46" y1="205.74" x2="213.36" y2="208.28" width="0.3048" layer="91"/>
 <wire x1="213.36" y1="208.28" x2="220.98" y2="208.28" width="0.3048" layer="91"/>
 <wire x1="220.98" y1="208.28" x2="220.98" y2="215.9" width="0.3048" layer="91"/>
 <pinref part="U$3" gate="G$1" pin="CTCS-"/>
@@ -2934,6 +2941,21 @@ Source: Sonnenschein</description>
 <wire x1="350.52" y1="119.38" x2="350.52" y2="81.28" width="0.1524" layer="91"/>
 <label x="350.52" y="88.9" size="1.778" layer="95" rot="R90"/>
 </segment>
+<segment>
+<pinref part="H1" gate="G$1" pin="4"/>
+<pinref part="LEFT_TSVP" gate="G$1" pin="A"/>
+<wire x1="421.64" y1="381" x2="398.78" y2="381" width="0.1524" layer="91"/>
+<wire x1="398.78" y1="381" x2="398.78" y2="317.5" width="0.1524" layer="91"/>
+<label x="398.78" y="320.04" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="RIGHT_TSVP" gate="G$1" pin="A"/>
+<wire x1="355.6" y1="-22.86" x2="355.6" y2="-25.4" width="0.1524" layer="91"/>
+<wire x1="408.94" y1="-45.72" x2="345.44" y2="-45.72" width="0.1524" layer="91"/>
+<wire x1="355.6" y1="-22.86" x2="345.44" y2="-22.86" width="0.1524" layer="91"/>
+<wire x1="345.44" y1="-22.86" x2="345.44" y2="-45.72" width="0.1524" layer="91"/>
+<label x="370.84" y="-45.72" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="TSAL+" class="0">
 <segment>
@@ -2948,11 +2970,6 @@ Source: Sonnenschein</description>
 </segment>
 </net>
 <net name="SHUTDOWN" class="0">
-<segment>
-<pinref part="SL2" gate="G$1" pin="3"/>
-<wire x1="347.98" y1="119.38" x2="347.98" y2="81.28" width="0.1524" layer="91"/>
-<label x="347.98" y="88.9" size="1.778" layer="95" rot="R90"/>
-</segment>
 <segment>
 <pinref part="SL8" gate="G$1" pin="6"/>
 <wire x1="208.28" y1="-35.56" x2="175.26" y2="-35.56" width="0.1524" layer="91"/>
