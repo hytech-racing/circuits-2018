@@ -285,17 +285,17 @@
 <text x="-7.62" y="-5.08" size="12.7" layer="94">M</text>
 </symbol>
 <symbol name="SMART_PRECHARGER">
-<wire x1="0" y1="0" x2="0" y2="22.86" width="0.254" layer="94"/>
-<wire x1="0" y1="22.86" x2="38.1" y2="22.86" width="0.254" layer="94"/>
-<wire x1="38.1" y1="22.86" x2="38.1" y2="0" width="0.254" layer="94"/>
-<wire x1="38.1" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<pin name="COIL+" x="43.18" y="20.32" length="middle" rot="R180"/>
-<pin name="COIL-" x="43.18" y="15.24" length="middle" rot="R180"/>
-<pin name="CTCS-" x="43.18" y="7.62" length="middle" rot="R180"/>
-<pin name="CTCS+" x="43.18" y="2.54" length="middle" rot="R180"/>
-<pin name="12V" x="-5.08" y="12.7" length="middle"/>
-<pin name="GND" x="-5.08" y="10.16" length="middle"/>
-<text x="19.05" y="11.43" size="1.778" layer="95" align="center">Smart
+<wire x1="0" y1="0" x2="0" y2="17.78" width="0.254" layer="94"/>
+<wire x1="0" y1="17.78" x2="30.48" y2="17.78" width="0.254" layer="94"/>
+<wire x1="30.48" y1="17.78" x2="30.48" y2="0" width="0.254" layer="94"/>
+<wire x1="30.48" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<pin name="COIL+" x="35.56" y="15.24" length="middle" rot="R180"/>
+<pin name="COIL-" x="35.56" y="12.7" length="middle" rot="R180"/>
+<pin name="CTCS-" x="35.56" y="5.08" length="middle" rot="R180"/>
+<pin name="CTCS+" x="35.56" y="2.54" length="middle" rot="R180"/>
+<pin name="12V" x="-5.08" y="10.16" length="middle"/>
+<pin name="GND" x="-5.08" y="7.62" length="middle"/>
+<text x="15.24" y="8.89" size="2.032" layer="95" align="center">Smart
 Precharger</text>
 </symbol>
 <symbol name="EV_DRIVER_CONTROLS">
@@ -1055,6 +1055,16 @@ Precharger</text>
 <wire x1="1.27" y1="0" x2="0" y2="0" width="0.6096" layer="94"/>
 <pin name="S" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
 </symbol>
+<symbol name="CRASH_SENSOR">
+<wire x1="0" y1="0" x2="0" y2="12.7" width="0.254" layer="94"/>
+<wire x1="0" y1="12.7" x2="20.32" y2="12.7" width="0.254" layer="94"/>
+<wire x1="20.32" y1="12.7" x2="20.32" y2="0" width="0.254" layer="94"/>
+<wire x1="20.32" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<pin name="N.C" x="7.62" y="-5.08" length="middle" rot="R90"/>
+<pin name="N.O" x="10.16" y="-5.08" length="middle" rot="R90"/>
+<pin name="C" x="12.7" y="-5.08" length="middle" rot="R90"/>
+<text x="10.16" y="10.16" size="2.032" layer="95" align="center">Crash Sensor</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="VIN" prefix="SUPPLY">
@@ -1714,6 +1724,23 @@ Source: Sonnenschein</description>
 <deviceset name="PIN">
 <gates>
 <gate name="G$1" symbol="PIN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="">
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CRASH_SENSOR">
+<description>Sensata Crash Sensor
+&lt;br&gt;
+&lt;a href="http://www.sensata.com/download/resettable-crash.pdf"&gt;http://www.sensata.com/download/resettable-crash.pdf&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="CRASH_SENSOR" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">

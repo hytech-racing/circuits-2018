@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -911,14 +911,14 @@ design rules under a new name.</description>
 <element name="R11" library="HyTechDevices" package="0805" value="470" x="14.224" y="33.02" rot="R180"/>
 <element name="R12" library="HyTechDevices" package="0805" value="470" x="20.828" y="33.02"/>
 <element name="R13" library="HyTechDevices" package="0805" value="470" x="75.692" y="68.58" rot="MR0"/>
-<element name="R2" library="HyTechDevices" package="0805" value="" x="51.308" y="58.42" rot="MR180"/>
-<element name="R3" library="HyTechDevices" package="0805" value="" x="51.308" y="55.88" rot="MR180"/>
-<element name="R4" library="HyTechDevices" package="0805" value="" x="51.308" y="53.34" rot="MR180"/>
-<element name="R5" library="HyTechDevices" package="0805" value="" x="51.308" y="50.8" rot="MR180"/>
-<element name="R6" library="HyTechDevices" package="0805" value="" x="51.308" y="48.26" rot="MR180"/>
-<element name="R7" library="HyTechDevices" package="0805" value="" x="51.308" y="45.72" rot="MR180"/>
-<element name="R8" library="HyTechDevices" package="0805" value="" x="51.308" y="43.18" rot="MR180"/>
-<element name="R9" library="HyTechDevices" package="0805" value="" x="51.308" y="40.64" rot="MR180"/>
+<element name="R2" library="HyTechDevices" package="0805" value="270" x="51.308" y="58.42" rot="MR180"/>
+<element name="R3" library="HyTechDevices" package="0805" value="270" x="51.308" y="55.88" rot="MR180"/>
+<element name="R4" library="HyTechDevices" package="0805" value="270" x="51.308" y="53.34" rot="MR180"/>
+<element name="R5" library="HyTechDevices" package="0805" value="270" x="51.308" y="50.8" rot="MR180"/>
+<element name="R6" library="HyTechDevices" package="0805" value="270" x="51.308" y="48.26" rot="MR180"/>
+<element name="R7" library="HyTechDevices" package="0805" value="270" x="51.308" y="45.72" rot="MR180"/>
+<element name="R8" library="HyTechDevices" package="0805" value="270" x="51.308" y="43.18" rot="MR180"/>
+<element name="R9" library="HyTechDevices" package="0805" value="270" x="51.308" y="40.64" rot="MR180"/>
 <element name="S1" library="HyTechDevices" package="B3F-10XX" value="" x="44.704" y="4.826" rot="R180">
 <attribute name="MF" value="" x="44.704" y="4.826" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_FARNELL" value="176432" x="44.704" y="4.826" size="1.778" layer="27" rot="R180" display="off"/>

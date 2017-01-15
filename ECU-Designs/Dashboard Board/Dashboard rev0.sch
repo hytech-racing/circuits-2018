@@ -2144,14 +2144,14 @@ Note: The Sparkfun version includes many other packages including surface mount 
 <part name="GND15" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="GND16" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="U$7" library="HyTechDevices" deviceset="ADXL335" device=""/>
-<part name="R2" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES"/>
-<part name="R3" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES"/>
-<part name="R4" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES"/>
-<part name="R5" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES"/>
-<part name="R6" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES"/>
-<part name="R7" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES"/>
-<part name="R8" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES"/>
-<part name="R9" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES"/>
+<part name="R2" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="270"/>
+<part name="R3" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="270"/>
+<part name="R4" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="270"/>
+<part name="R5" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="270"/>
+<part name="R6" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="270"/>
+<part name="R7" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="270"/>
+<part name="R8" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="270"/>
+<part name="R9" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="270"/>
 <part name="GND17" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="S1" library="HyTechDevices" deviceset="BTN_10-XX" device=""/>
 <part name="GND19" library="HyTechSymbols" deviceset="GND" device=""/>
