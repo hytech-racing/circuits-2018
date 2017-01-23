@@ -6715,6 +6715,10 @@ Source: transistor-fet.lbr</description>
 <pad name="2" x="0" y="0" drill="1"/>
 <pad name="3" x="2.54" y="0" drill="1"/>
 </package>
+<package name="KEYSTONE5222">
+<smd name="P$1" x="0" y="0" dx="12.7" dy="12.7" layer="1"/>
+<text x="0" y="-6.604" size="0.508" layer="25" align="top-center">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="ARDUINO_NANO">
@@ -13322,6 +13326,21 @@ Source: Adafruit</description>
 <connect gate="G$1" pin="VOUTA" pad="1"/>
 <connect gate="G$1" pin="VOUTB" pad="7"/>
 <connect gate="G$1" pin="VSS" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BATTERY_SPRING">
+<gates>
+<gate name="G$1" symbol="MV" x="0" y="0" addlevel="always"/>
+</gates>
+<devices>
+<device name="_KEYSTONE5222" package="KEYSTONE5222">
+<connects>
+<connect gate="G$1" pin="S" pad="P$1"/>
 </connects>
 <technologies>
 <technology name=""/>
