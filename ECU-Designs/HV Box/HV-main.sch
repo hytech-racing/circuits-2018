@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.05" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -2695,8 +2695,8 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="T2" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="120"/>
 <part name="HV_REG2" library="HyTechDevices" deviceset="HV_LIN_REG_LR8" device="SMD" value="LR8"/>
 <part name="C1" library="HyTechDevices" deviceset="CAP" device="0805" value="1uF"/>
-<part name="R1" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="3.3k"/>
-<part name="R2" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="47k"/>
+<part name="R1" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="1.8k"/>
+<part name="R2" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="68k"/>
 <part name="INDICATOR" library="HyTechDevices" deviceset="MINIFIT_5566-2" device="" value="MINIFIT_5566-2"/>
 <part name="U$6" library="supply2" deviceset="HV+" device=""/>
 <part name="U$7" library="supply2" deviceset="HV+" device=""/>
