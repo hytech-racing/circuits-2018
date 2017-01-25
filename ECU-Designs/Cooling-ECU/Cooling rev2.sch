@@ -1468,6 +1468,7 @@ Source: http://www.molex.com</description>
 <part name="G1" library="HyTechDevices" deviceset="GATE_DRIVE" device="ZXGD3003E6TA"/>
 <part name="G2" library="HyTechDevices" deviceset="GATE_DRIVE" device="ZXGD3003E6TA"/>
 <part name="G3" library="HyTechDevices" deviceset="GATE_DRIVE" device="ZXGD3003E6TA"/>
+<part name="GND13" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1537,6 +1538,7 @@ Source: http://www.molex.com</description>
 <instance part="G1" gate="G$1" x="152.4" y="45.72"/>
 <instance part="G2" gate="G$1" x="152.4" y="20.32"/>
 <instance part="G3" gate="G$1" x="152.4" y="-5.08"/>
+<instance part="GND13" gate="1" x="-12.7" y="53.34" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -1623,6 +1625,11 @@ Source: http://www.molex.com</description>
 <pinref part="X1" gate="-8" pin="S"/>
 <pinref part="GND12" gate="1" pin="GND"/>
 <wire x1="243.84" y1="50.8" x2="228.6" y2="50.8" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND13" gate="1" pin="GND"/>
+<pinref part="U$2" gate="G$1" pin="8"/>
+<wire x1="-10.16" y1="53.34" x2="-5.08" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">

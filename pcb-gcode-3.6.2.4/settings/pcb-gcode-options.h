@@ -32,4 +32,4 @@ string STENCIL_FILE_NAME = "stencil";
 string TOP_FILE_NAME = "top";
 string BOT_FILE_NAME = "bot";
 string DEFAULT_EXTENSION = "nc";
-string DEFAULT_DRILL_FILE = "C:/Users/Ding/Documents/GitHub/circuits-2017/ECU-Designs/Cooling-ECU/hytech.drl";
+string DEFAULT_DRILL_FILE = "C:/Users/jeffd/Documents/GitHub/circuits-2017/pcb-gcode-3.6.2.4/hytech.drl";

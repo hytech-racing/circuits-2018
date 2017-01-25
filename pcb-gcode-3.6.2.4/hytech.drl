@@ -1,0 +1,32 @@
+# -*- Mode: Eagle -*-
+#
+# Sample drill rack file.
+#
+# drill_size is the size of the drill bit.
+# minimum is the smallest hole the bit will be used for.
+# maximum is the largest hole the bit will be used for.
+#
+# Each value can have a "unit of measure" added to it,
+# such as 0.500mm . If you do not provide the unit of measure,
+# values over 0.250 are considered millimeters, and
+# values under 0.250 are considered inches. For example:
+# 0.400 would be considered 0.400 mm.
+# 0.125 would be considered 0.125 inches.
+#
+# Please note that you must use a TAB character
+# between each setting on a line.
+# 
+# Tip: Set the TAB size of your editor to 12 characters.
+#
+tool	drill_size	minimum	maximum	length
+T8	0.2mm	0.0mm	0.2mm	0.100in
+T9	0.8mm	0.2mm	0.8mm	0.125in
+T10	1.0mm	0.8mm	1.0mm	0.125in
+T11	1.2mm	1.0mm	1.2mm	0.125in
+T12	1.4mm	1.2mm	1.4mm	0.125in
+T13	1.6mm	1.4mm	1.6mm	0.125in
+T14	1.8mm	1.6mm	1.8mm	0.125in
+T15	2.0mm	1.8mm	2.0mm	0.125in
+T16	2.2mm	2.0mm	2.2mm	0.125in
+T17	2.4mm	2.2mm	2.4mm	0.125in
+T18	3.175mm	2.4mm	5.0mm	0.125in
