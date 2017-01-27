@@ -2208,8 +2208,14 @@ Source: http://www.molex.com</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="ORWH-SH-112D1F">
-<description>TE SPST relay</description>
+<deviceset name="G5LE">
+<description>Omron G5LE SPST Relay
+&lt;br&gt;
+5 VDC, 12VDC, 24VDC models
+&lt;br&gt;
+Coil voltage: 75% - 170% of nominal voltage
+&lt;br&gt;
+&lt;a href="https://www.omron.com/ecb/products/pdf/en-g5le.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="ZF112" x="2.54" y="2.54"/>
 </gates>
@@ -2300,12 +2306,33 @@ general purpose rectifier</description>
 <text x="-2.54" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
 <pin name="+5V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
+<symbol name="+12V">
+<wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-0.635" x2="0" y2="1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="1.27" x2="-1.27" y2="-0.635" width="0.254" layer="94"/>
+<text x="-2.54" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="+12V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="+5V" prefix="P+">
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="1" symbol="+5V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+12V" prefix="P+">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="+12V" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -2375,9 +2402,9 @@ general purpose rectifier</description>
 <part name="R1" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="10k"/>
 <part name="GND2" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="P+5" library="supply1" deviceset="+5V" device=""/>
-<part name="U$1" library="HyTechDevices" deviceset="ORWH-SH-112D1F" device=""/>
-<part name="P+9" library="supply1" deviceset="+5V" device=""/>
+<part name="U$1" library="HyTechDevices" deviceset="G5LE" device=""/>
 <part name="GND3" library="HyTechSymbols" deviceset="GND" device=""/>
+<part name="P+10" library="supply1" deviceset="+12V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2400,7 +2427,7 @@ general purpose rectifier</description>
 <instance part="U$4" gate="G$1" x="33.02" y="50.8"/>
 <instance part="CALIBRATE3" gate="G$1" x="20.32" y="60.96" rot="MR270"/>
 <instance part="GND12" gate="1" x="27.94" y="40.64" rot="MR0"/>
-<instance part="R3" gate="G$1" x="-20.32" y="25.4"/>
+<instance part="R3" gate="G$1" x="-38.1" y="25.4" rot="R180"/>
 <instance part="GND11" gate="1" x="-45.72" y="40.64" rot="MR90"/>
 <instance part="GND13" gate="1" x="10.16" y="60.96" rot="MR90"/>
 <instance part="R6" gate="G$1" x="60.96" y="50.8"/>
@@ -2408,19 +2435,19 @@ general purpose rectifier</description>
 <instance part="P+3" gate="1" x="33.02" y="60.96" rot="R270"/>
 <instance part="P+4" gate="1" x="127" y="43.18" rot="R270"/>
 <instance part="P+1" gate="1" x="96.52" y="50.8" rot="MR90"/>
-<instance part="P+6" gate="1" x="22.86" y="20.32" rot="R90"/>
+<instance part="P+6" gate="1" x="27.94" y="17.78" rot="R90"/>
 <instance part="P+7" gate="1" x="53.34" y="40.64" rot="R180"/>
 <instance part="P+8" gate="1" x="-7.62" y="40.64" rot="R270"/>
 <instance part="U$10" gate="G$1" x="-38.1" y="10.16"/>
 <instance part="P+2" gate="1" x="-17.78" y="10.16" rot="R270"/>
-<instance part="GND1" gate="1" x="-45.72" y="2.54" rot="R270"/>
+<instance part="GND1" gate="1" x="-40.64" y="0"/>
 <instance part="U$12" gate="G$1" x="-2.54" y="35.56"/>
-<instance part="R1" gate="G$1" x="30.48" y="25.4" rot="R180"/>
+<instance part="R1" gate="G$1" x="30.48" y="22.86" rot="R180"/>
 <instance part="GND2" gate="1" x="-5.08" y="25.4"/>
 <instance part="P+5" gate="1" x="17.78" y="35.56" rot="R270"/>
 <instance part="U$1" gate="G$1" x="119.38" y="5.08" rot="R90"/>
-<instance part="P+9" gate="1" x="129.54" y="10.16" rot="R270"/>
 <instance part="GND3" gate="1" x="106.68" y="5.08" rot="MR0"/>
+<instance part="P+10" gate="1" x="129.54" y="10.16" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -2471,7 +2498,6 @@ general purpose rectifier</description>
 <segment>
 <pinref part="U$10" gate="G$1" pin="VSS"/>
 <pinref part="GND1" gate="1" pin="GND"/>
-<wire x1="-43.18" y1="2.54" x2="-40.64" y2="2.54" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$12" gate="G$1" pin="VSS"/>
@@ -2546,14 +2572,13 @@ general purpose rectifier</description>
 <wire x1="-30.48" y1="40.64" x2="-30.48" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="U$4" gate="G$1" pin="1IN+"/>
 <wire x1="-30.48" y1="45.72" x2="30.48" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="-30.48" y1="25.4" x2="-30.48" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="-30.48" y1="25.4" x2="-30.48" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="R3" gate="G$1" pin="1"/>
-<wire x1="-30.48" y1="25.4" x2="-25.4" y2="25.4" width="0.1524" layer="91"/>
-<junction x="-30.48" y="25.4"/>
-<wire x1="-30.48" y1="25.4" x2="-43.18" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="-43.18" y1="25.4" x2="-43.18" y2="5.08" width="0.1524" layer="91"/>
-<pinref part="U$10" gate="G$1" pin="VINA+"/>
-<wire x1="-43.18" y1="5.08" x2="-40.64" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="-30.48" y1="30.48" x2="-30.48" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="-30.48" y1="25.4" x2="-33.02" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="U$12" gate="G$1" pin="VINA+"/>
+<wire x1="-30.48" y1="30.48" x2="-5.08" y2="30.48" width="0.1524" layer="91"/>
+<junction x="-30.48" y="30.48"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -2583,11 +2608,12 @@ general purpose rectifier</description>
 <segment>
 <pinref part="MC34161DG" gate="G$1" pin="VCC"/>
 <pinref part="P+6" gate="1" pin="+5V"/>
-<wire x1="25.4" y1="20.32" x2="35.56" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="17.78" x2="35.56" y2="17.78" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="35.56" y1="20.32" x2="43.18" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="25.4" x2="35.56" y2="20.32" width="0.1524" layer="91"/>
-<junction x="35.56" y="20.32"/>
+<wire x1="35.56" y1="22.86" x2="35.56" y2="17.78" width="0.1524" layer="91"/>
+<junction x="35.56" y="17.78"/>
+<wire x1="35.56" y1="17.78" x2="43.18" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="17.78" x2="43.18" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$4" gate="G$1" pin="VCC"/>
@@ -2612,11 +2638,6 @@ general purpose rectifier</description>
 <pinref part="U$12" gate="G$1" pin="VDD"/>
 <pinref part="P+5" gate="1" pin="+5V"/>
 <wire x1="15.24" y1="35.56" x2="12.7" y2="35.56" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="U$1" gate="G$1" pin="COIL-"/>
-<pinref part="P+9" gate="1" pin="+5V"/>
-<wire x1="127" y1="10.16" x2="124.46" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -2648,15 +2669,14 @@ general purpose rectifier</description>
 </net>
 <net name="READ_CHARGE" class="0">
 <segment>
-<wire x1="12.7" y1="5.08" x2="22.86" y2="5.08" width="0.1524" layer="91"/>
-<pinref part="U$10" gate="G$1" pin="VOUTA"/>
-<wire x1="-40.64" y1="10.16" x2="-40.64" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="-40.64" y1="15.24" x2="12.7" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="12.7" y1="15.24" x2="12.7" y2="5.08" width="0.1524" layer="91"/>
-<pinref part="U$10" gate="G$1" pin="VINA-"/>
-<wire x1="-40.64" y1="10.16" x2="-40.64" y2="7.62" width="0.1524" layer="91"/>
-<junction x="-40.64" y="10.16"/>
-<label x="22.86" y="5.08" size="1.778" layer="95" xref="yes"/>
+<wire x1="-10.16" y1="5.08" x2="0" y2="5.08" width="0.1524" layer="91"/>
+<label x="0" y="5.08" size="1.778" layer="95" xref="yes"/>
+<wire x1="-10.16" y1="5.08" x2="-10.16" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="U$12" gate="G$1" pin="VOUTA"/>
+<pinref part="U$12" gate="G$1" pin="VINA-"/>
+<wire x1="-5.08" y1="33.02" x2="-5.08" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="-10.16" y1="35.56" x2="-5.08" y2="35.56" width="0.1524" layer="91"/>
+<junction x="-5.08" y="35.56"/>
 </segment>
 </net>
 <net name="READ_SWITCH" class="0">
@@ -2664,46 +2684,11 @@ general purpose rectifier</description>
 <pinref part="U$10" gate="G$1" pin="VOUTB"/>
 <pinref part="U$10" gate="G$1" pin="VINB-"/>
 <wire x1="-22.86" y1="7.62" x2="-22.86" y2="5.08" width="0.1524" layer="91"/>
-<wire x1="-22.86" y1="7.62" x2="10.16" y2="7.62" width="0.1524" layer="91"/>
-<wire x1="10.16" y1="7.62" x2="10.16" y2="0" width="0.1524" layer="91"/>
+<wire x1="-22.86" y1="7.62" x2="-12.7" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="7.62" x2="-12.7" y2="0" width="0.1524" layer="91"/>
 <junction x="-22.86" y="7.62"/>
-<wire x1="10.16" y1="0" x2="22.86" y2="0" width="0.1524" layer="91"/>
-<label x="22.86" y="0" size="1.778" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="N$3" class="0">
-<segment>
-<pinref part="U$12" gate="G$1" pin="VINA-"/>
-<pinref part="U$12" gate="G$1" pin="VOUTA"/>
-<wire x1="-5.08" y1="33.02" x2="-5.08" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="R3" gate="G$1" pin="2"/>
-<wire x1="-5.08" y1="35.56" x2="-15.24" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="-15.24" y1="35.56" x2="-15.24" y2="25.4" width="0.1524" layer="91"/>
-<junction x="-5.08" y="35.56"/>
-</segment>
-</net>
-<net name="N$4" class="0">
-<segment>
-<pinref part="U$10" gate="G$1" pin="VINB+"/>
-<pinref part="MC34161DG" gate="G$1" pin="OUT2"/>
-<wire x1="43.18" y1="27.94" x2="40.64" y2="27.94" width="0.1524" layer="91"/>
-<pinref part="MC34161DG" gate="G$1" pin="OUT1"/>
-<wire x1="40.64" y1="25.4" x2="43.18" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="25.4" x2="40.64" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="27.94" x2="25.4" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="27.94" x2="20.32" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="27.94" x2="20.32" y2="17.78" width="0.1524" layer="91"/>
-<junction x="40.64" y="27.94"/>
-<wire x1="20.32" y1="17.78" x2="-10.16" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="-10.16" y1="17.78" x2="-10.16" y2="30.48" width="0.1524" layer="91"/>
-<pinref part="U$12" gate="G$1" pin="VINA+"/>
-<wire x1="-10.16" y1="30.48" x2="-5.08" y2="30.48" width="0.1524" layer="91"/>
-<pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="25.4" y1="25.4" x2="25.4" y2="27.94" width="0.1524" layer="91"/>
-<junction x="25.4" y="27.94"/>
-<wire x1="-22.86" y1="2.54" x2="-10.16" y2="2.54" width="0.1524" layer="91"/>
-<wire x1="-10.16" y1="2.54" x2="-10.16" y2="17.78" width="0.1524" layer="91"/>
-<junction x="-10.16" y="17.78"/>
+<wire x1="-12.7" y1="0" x2="0" y2="0" width="0.1524" layer="91"/>
+<label x="0" y="0" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="READ_FAULT" class="0">
@@ -2712,10 +2697,12 @@ general purpose rectifier</description>
 <pinref part="U$12" gate="G$1" pin="VOUTB"/>
 <wire x1="12.7" y1="30.48" x2="12.7" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="12.7" y1="33.02" x2="15.24" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="33.02" x2="15.24" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="33.02" x2="15.24" y2="20.32" width="0.1524" layer="91"/>
 <junction x="12.7" y="33.02"/>
-<wire x1="15.24" y1="10.16" x2="22.86" y2="10.16" width="0.1524" layer="91"/>
-<label x="22.86" y="10.16" size="1.778" layer="95" xref="yes"/>
+<label x="0" y="10.16" size="1.778" layer="95" xref="yes"/>
+<wire x1="15.24" y1="20.32" x2="-2.54" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="-2.54" y1="20.32" x2="-2.54" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="-2.54" y1="10.16" x2="0" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -2725,6 +2712,48 @@ general purpose rectifier</description>
 <wire x1="101.6" y1="35.56" x2="101.6" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="S"/>
 <wire x1="101.6" y1="22.86" x2="109.22" y2="22.86" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="+12V" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="COIL-"/>
+<pinref part="P+10" gate="1" pin="+12V"/>
+<wire x1="127" y1="10.16" x2="124.46" y2="10.16" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<pinref part="MC34161DG" gate="G$1" pin="OUT2"/>
+<wire x1="43.18" y1="27.94" x2="40.64" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="MC34161DG" gate="G$1" pin="OUT1"/>
+<wire x1="40.64" y1="25.4" x2="43.18" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="25.4" x2="40.64" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="27.94" x2="25.4" y2="27.94" width="0.1524" layer="91"/>
+<junction x="40.64" y="27.94"/>
+<wire x1="25.4" y1="-5.08" x2="-15.24" y2="-5.08" width="0.1524" layer="91"/>
+<pinref part="R1" gate="G$1" pin="2"/>
+<wire x1="25.4" y1="22.86" x2="25.4" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="22.86" x2="25.4" y2="-5.08" width="0.1524" layer="91"/>
+<junction x="25.4" y="22.86"/>
+<pinref part="U$10" gate="G$1" pin="VINB+"/>
+<wire x1="-22.86" y1="2.54" x2="-15.24" y2="2.54" width="0.1524" layer="91"/>
+<pinref part="U$10" gate="G$1" pin="VINA+"/>
+<wire x1="-40.64" y1="5.08" x2="-45.72" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="-45.72" y1="5.08" x2="-45.72" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="-45.72" y1="-5.08" x2="-15.24" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="-15.24" y1="-5.08" x2="-15.24" y2="2.54" width="0.1524" layer="91"/>
+<junction x="-15.24" y="-5.08"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="U$10" gate="G$1" pin="VOUTA"/>
+<pinref part="U$10" gate="G$1" pin="VINA-"/>
+<wire x1="-40.64" y1="7.62" x2="-40.64" y2="10.16" width="0.1524" layer="91"/>
+<pinref part="R3" gate="G$1" pin="2"/>
+<wire x1="-40.64" y1="10.16" x2="-43.18" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="-43.18" y1="10.16" x2="-43.18" y2="25.4" width="0.1524" layer="91"/>
+<junction x="-40.64" y="10.16"/>
 </segment>
 </net>
 </nets>
@@ -2762,7 +2791,7 @@ general purpose rectifier</description>
 <part name="R5" library="HyTechDevices" deviceset="RESISTOR" device="PTH-1/4W-VERT" value="JMP"/>
 <part name="X3" library="HyTechDevices" deviceset="MINIFIT_5566-10" device=""/>
 <part name="GND9" library="HyTechSymbols" deviceset="GND" device=""/>
-<part name="U$4" library="HyTechDevices" deviceset="ORWH-SH-112D1F" device=""/>
+<part name="U$4" library="HyTechDevices" deviceset="G5LE" device=""/>
 <part name="GND10" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="U$5" library="HyTechDevices" deviceset="CPC1002N" device=""/>
 <part name="R6" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="100"/>
@@ -2777,12 +2806,14 @@ general purpose rectifier</description>
 <part name="GND14" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="GND13" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="D1" library="HyTechDevices" deviceset="DIODE" device="0805"/>
+<part name="P+6" library="supply1" deviceset="+12V" device=""/>
+<part name="P+7" library="supply1" deviceset="+12V" device=""/>
+<part name="P+8" library="supply1" deviceset="+12V" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 <text x="10.16" y="-12.7" size="1.778" layer="91">Voltage dividers</text>
-<text x="-38.1" y="7.62" size="1.778" layer="91">TODO check FSAE EV5.1.6</text>
 </plain>
 <moduleinsts>
 <moduleinst name="BSPD1" module="BSPD" x="76.2" y="55.88"/>
@@ -2856,36 +2887,13 @@ general purpose rectifier</description>
 <instance part="GND14" gate="1" x="25.4" y="-5.08"/>
 <instance part="GND13" gate="1" x="17.78" y="-5.08"/>
 <instance part="D1" gate="1" x="53.34" y="-7.62" rot="MR0"/>
+<instance part="P+6" gate="1" x="-25.4" y="78.74"/>
+<instance part="P+7" gate="1" x="124.46" y="55.88" rot="R180"/>
+<instance part="P+8" gate="1" x="91.44" y="15.24" rot="R90"/>
 </instances>
 <busses>
 </busses>
 <nets>
-<net name="12VSUPPLY" class="0">
-<segment>
-<pinref part="X1" gate="-1" pin="S"/>
-<wire x1="-27.94" y1="68.58" x2="-25.4" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="-25.4" y1="68.58" x2="-25.4" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="X2" gate="-1" pin="S"/>
-<wire x1="-25.4" y1="53.34" x2="-27.94" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="IN"/>
-<wire x1="-25.4" y1="68.58" x2="-12.7" y2="68.58" width="0.1524" layer="91"/>
-<junction x="-25.4" y="68.58"/>
-<wire x1="-25.4" y1="68.58" x2="-25.4" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="-25.4" y1="86.36" x2="132.08" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="132.08" y1="86.36" x2="132.08" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="132.08" y1="60.96" x2="132.08" y2="2.54" width="0.1524" layer="91"/>
-<wire x1="132.08" y1="2.54" x2="78.74" y2="2.54" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="2.54" x2="78.74" y2="15.24" width="0.1524" layer="91"/>
-<pinref part="X3" gate="-9" pin="S"/>
-<wire x1="78.74" y1="15.24" x2="99.06" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="60.96" x2="132.08" y2="60.96" width="0.1524" layer="91"/>
-<junction x="132.08" y="60.96"/>
-<pinref part="U$5" gate="G$1" pin="DC+"/>
-<label x="53.34" y="86.36" size="1.778" layer="95"/>
-<label x="81.28" y="2.54" size="1.778" layer="95"/>
-<label x="132.08" y="25.4" size="1.778" layer="95" rot="R90"/>
-</segment>
-</net>
 <net name="N$3" class="0">
 <segment>
 <pinref part="X1" gate="-3" pin="S"/>
@@ -3078,7 +3086,7 @@ general purpose rectifier</description>
 <junction x="33.02" y="7.62"/>
 </segment>
 </net>
-<net name="FAULT_INDICATE" class="0">
+<net name="READ_FAULT" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="A7"/>
 <wire x1="30.48" y1="40.64" x2="48.26" y2="40.64" width="0.1524" layer="91"/>
@@ -3134,7 +3142,7 @@ general purpose rectifier</description>
 <pinref part="R5" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="READ_IMPED" class="0">
+<net name="READ_SWITCH" class="0">
 <segment>
 <pinref part="LED1" gate="LED" pin="A"/>
 <wire x1="33.02" y1="60.96" x2="43.18" y2="60.96" width="0.1524" layer="91"/>
@@ -3294,6 +3302,30 @@ general purpose rectifier</description>
 <wire x1="48.26" y1="-2.54" x2="48.26" y2="-7.62" width="0.1524" layer="91"/>
 <pinref part="D1" gate="1" pin="C"/>
 <wire x1="48.26" y1="-7.62" x2="50.8" y2="-7.62" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="+12V" class="0">
+<segment>
+<pinref part="X2" gate="-1" pin="S"/>
+<pinref part="P+6" gate="1" pin="+12V"/>
+<pinref part="U$2" gate="G$1" pin="IN"/>
+<pinref part="X1" gate="-1" pin="S"/>
+<wire x1="-27.94" y1="68.58" x2="-25.4" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="-25.4" y1="68.58" x2="-12.7" y2="68.58" width="0.1524" layer="91"/>
+<junction x="-25.4" y="68.58"/>
+<wire x1="-25.4" y1="68.58" x2="-25.4" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="-25.4" y1="68.58" x2="-25.4" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="-25.4" y1="53.34" x2="-27.94" y2="53.34" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="X3" gate="-9" pin="S"/>
+<pinref part="P+8" gate="1" pin="+12V"/>
+<wire x1="93.98" y1="15.24" x2="99.06" y2="15.24" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$5" gate="G$1" pin="DC+"/>
+<pinref part="P+7" gate="1" pin="+12V"/>
+<wire x1="124.46" y1="58.42" x2="124.46" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

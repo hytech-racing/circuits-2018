@@ -11768,9 +11768,7 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 </devices>
 </deviceset>
 <deviceset name="BTN_10-XX" prefix="S" uservalue="yes">
-<description>&lt;b&gt;OMRON SWITCH&lt;/b&gt;
-&lt;br&gt;
-Momentary button</description>
+<description>Small momentary tactile push button</description>
 <gates>
 <gate name="1" symbol="TS2" x="0" y="0"/>
 </gates>
@@ -13412,6 +13410,32 @@ Source: Adafruit</description>
 <connect gate="G$1" pin="O" pad="P$1"/>
 <connect gate="G$1" pin="P" pad="P$2"/>
 <connect gate="G$1" pin="S" pad="P$3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="G5LE">
+<description>Omron G5LE SPST Relay
+&lt;br&gt;
+5 VDC, 12VDC, 24VDC models
+&lt;br&gt;
+Coil voltage: 75% - 170% of nominal voltage
+&lt;br&gt;
+&lt;a href="https://www.omron.com/ecb/products/pdf/en-g5le.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="ZF112" x="2.54" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="ZF112">
+<connects>
+<connect gate="G$1" pin="COIL+" pad="1"/>
+<connect gate="G$1" pin="COIL-" pad="2"/>
+<connect gate="G$1" pin="O" pad="O"/>
+<connect gate="G$1" pin="P" pad="P"/>
+<connect gate="G$1" pin="S" pad="S"/>
 </connects>
 <technologies>
 <technology name=""/>
