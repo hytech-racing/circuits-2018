@@ -2358,13 +2358,13 @@ general purpose rectifier</description>
 <ports>
 <port name="GND" side="left" coord="12.7" direction="out"/>
 <port name="+5V" side="left" coord="15.24" direction="in"/>
-<port name="SIGNAL_A" side="left" coord="-7.62" direction="in"/>
-<port name="SIGNAL_B" side="left" coord="-5.08" direction="in"/>
 <port name="READ_CHARGE" side="left" coord="7.62" direction="out"/>
 <port name="SHUTDOWN_B" side="left" coord="-15.24" direction="in"/>
 <port name="READ_SWITCH" side="left" coord="5.08" direction="out"/>
 <port name="READ_FAULT" side="left" coord="10.16" direction="out"/>
 <port name="SHUTDOWN_D" side="left" coord="-12.7" direction="out"/>
+<port name="SIGNAL_BRAKE" side="left" coord="-5.08" direction="in"/>
+<port name="SIGNAL_CURRENT" side="left" coord="-7.62" direction="in"/>
 </ports>
 <variantdefs>
 </variantdefs>
@@ -2409,7 +2409,7 @@ general purpose rectifier</description>
 <sheets>
 <sheet>
 <plain>
-<text x="104.14" y="0" size="1.778" layer="91">Normally Open Relay -&gt; FSAE EV5.1.6</text>
+<text x="111.76" y="0" size="1.778" layer="91">Normally Open Relay -&gt; FSAE EV5.1.6</text>
 </plain>
 <instances>
 <instance part="MC34161DG" gate="G$1" x="63.5" y="30.48" rot="R180"/>
@@ -2445,9 +2445,9 @@ general purpose rectifier</description>
 <instance part="R1" gate="G$1" x="30.48" y="22.86" rot="R180"/>
 <instance part="GND2" gate="1" x="-5.08" y="25.4"/>
 <instance part="P+5" gate="1" x="17.78" y="35.56" rot="R270"/>
-<instance part="U$1" gate="G$1" x="119.38" y="5.08" rot="R90"/>
-<instance part="GND3" gate="1" x="106.68" y="5.08" rot="MR0"/>
-<instance part="P+10" gate="1" x="129.54" y="10.16" rot="R270"/>
+<instance part="U$1" gate="G$1" x="127" y="5.08" rot="R90"/>
+<instance part="GND3" gate="1" x="114.3" y="5.08" rot="MR0"/>
+<instance part="P+10" gate="1" x="137.16" y="10.16" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -2506,24 +2506,23 @@ general purpose rectifier</description>
 <segment>
 <pinref part="U$1" gate="G$1" pin="COIL+"/>
 <pinref part="GND3" gate="1" pin="GND"/>
-<wire x1="109.22" y1="10.16" x2="106.68" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="10.16" x2="106.68" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="10.16" x2="114.3" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="10.16" x2="114.3" y2="7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="SENSE_B" class="0">
+<net name="SIGNAL_CURRENT" class="0">
 <segment>
 <pinref part="CALIBRATE1" gate="G$1" pin="1"/>
-<wire x1="88.9" y1="7.62" x2="76.2" y2="7.62" width="0.1524" layer="91"/>
-<label x="88.9" y="7.62" size="1.778" layer="95" xref="yes"/>
+<wire x1="86.36" y1="7.62" x2="76.2" y2="7.62" width="0.1524" layer="91"/>
+<label x="86.36" y="7.62" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="SENSE_A" class="0">
+<net name="SIGNAL_BRAKE" class="0">
 <segment>
 <pinref part="CALIBRATE2" gate="G$1" pin="1"/>
 <wire x1="76.2" y1="25.4" x2="86.36" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="25.4" x2="86.36" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="12.7" x2="88.9" y2="12.7" width="0.1524" layer="91"/>
-<label x="88.9" y="12.7" size="1.778" layer="95" xref="yes"/>
+<label x="86.36" y="12.7" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -2662,9 +2661,9 @@ general purpose rectifier</description>
 </net>
 <net name="SHUTDOWN_B" class="0">
 <segment>
-<wire x1="124.46" y1="20.32" x2="127" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="20.32" x2="134.62" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="P"/>
-<label x="127" y="20.32" size="1.778" layer="95" xref="yes"/>
+<label x="134.62" y="20.32" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="READ_CHARGE" class="0">
@@ -2705,20 +2704,20 @@ general purpose rectifier</description>
 <wire x1="-2.54" y1="10.16" x2="0" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="SHUTDOWN_C" class="0">
 <segment>
 <pinref part="U$3" gate="-1" pin="6"/>
 <wire x1="104.14" y1="35.56" x2="101.6" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="101.6" y1="35.56" x2="101.6" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="S"/>
-<wire x1="101.6" y1="22.86" x2="109.22" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="22.86" x2="116.84" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+12V" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="COIL-"/>
 <pinref part="P+10" gate="1" pin="+12V"/>
-<wire x1="127" y1="10.16" x2="124.46" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="10.16" x2="132.08" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$10" class="0">
@@ -2789,9 +2788,9 @@ general purpose rectifier</description>
 <part name="R4" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES"/>
 <part name="GND8" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="R5" library="HyTechDevices" deviceset="RESISTOR" device="PTH-1/4W-VERT" value="JMP"/>
-<part name="X3" library="HyTechDevices" deviceset="MINIFIT_5566-10" device=""/>
+<part name="BSPD" library="HyTechDevices" deviceset="MINIFIT_5566-10" device=""/>
 <part name="GND9" library="HyTechSymbols" deviceset="GND" device=""/>
-<part name="U$4" library="HyTechDevices" deviceset="G5LE" device=""/>
+<part name="SOFTWARE_SHUTOFF" library="HyTechDevices" deviceset="G5LE" device=""/>
 <part name="GND10" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="U$5" library="HyTechDevices" deviceset="CPC1002N" device=""/>
 <part name="R6" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="100"/>
@@ -2861,18 +2860,18 @@ general purpose rectifier</description>
 <instance part="R4" gate="G$1" x="17.78" y="76.2"/>
 <instance part="GND8" gate="1" x="12.7" y="81.28" rot="R180"/>
 <instance part="R5" gate="G$1" x="53.34" y="15.24"/>
-<instance part="X3" gate="-1" x="101.6" y="35.56"/>
-<instance part="X3" gate="-2" x="101.6" y="33.02"/>
-<instance part="X3" gate="-3" x="101.6" y="30.48"/>
-<instance part="X3" gate="-4" x="101.6" y="27.94"/>
-<instance part="X3" gate="-5" x="101.6" y="25.4"/>
-<instance part="X3" gate="-6" x="101.6" y="22.86"/>
-<instance part="X3" gate="-7" x="101.6" y="20.32"/>
-<instance part="X3" gate="-8" x="101.6" y="17.78"/>
-<instance part="X3" gate="-9" x="101.6" y="15.24"/>
-<instance part="X3" gate="-10" x="101.6" y="12.7"/>
+<instance part="BSPD" gate="-1" x="101.6" y="35.56"/>
+<instance part="BSPD" gate="-2" x="101.6" y="33.02"/>
+<instance part="BSPD" gate="-3" x="101.6" y="30.48"/>
+<instance part="BSPD" gate="-4" x="101.6" y="27.94"/>
+<instance part="BSPD" gate="-5" x="101.6" y="25.4"/>
+<instance part="BSPD" gate="-6" x="101.6" y="22.86"/>
+<instance part="BSPD" gate="-7" x="101.6" y="20.32"/>
+<instance part="BSPD" gate="-8" x="101.6" y="17.78"/>
+<instance part="BSPD" gate="-9" x="101.6" y="15.24"/>
+<instance part="BSPD" gate="-10" x="101.6" y="12.7"/>
 <instance part="GND9" gate="1" x="99.06" y="7.62"/>
-<instance part="U$4" gate="G$1" x="101.6" y="66.04" rot="R270"/>
+<instance part="SOFTWARE_SHUTOFF" gate="G$1" x="106.68" y="66.04" rot="MR270"/>
 <instance part="GND10" gate="1" x="93.98" y="63.5" rot="R180"/>
 <instance part="U$5" gate="G$1" x="121.92" y="71.12" rot="R270"/>
 <instance part="R6" gate="G$1" x="111.76" y="81.28"/>
@@ -2988,14 +2987,9 @@ general purpose rectifier</description>
 <junction x="12.7" y="68.58"/>
 </segment>
 <segment>
-<pinref part="X3" gate="-10" pin="S"/>
+<pinref part="BSPD" gate="-10" pin="S"/>
 <pinref part="GND9" gate="1" pin="GND"/>
 <wire x1="99.06" y1="10.16" x2="99.06" y2="12.7" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="U$4" gate="G$1" pin="COIL-"/>
-<pinref part="GND10" gate="1" pin="GND"/>
-<wire x1="96.52" y1="60.96" x2="93.98" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R6" gate="G$1" pin="1"/>
@@ -3014,6 +3008,11 @@ general purpose rectifier</description>
 <pinref part="R12" gate="G$1" pin="1"/>
 <pinref part="GND12" gate="1" pin="GND"/>
 <wire x1="58.42" y1="-2.54" x2="55.88" y2="-2.54" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SOFTWARE_SHUTOFF" gate="G$1" pin="COIL+"/>
+<pinref part="GND10" gate="1" pin="GND"/>
+<wire x1="96.52" y1="60.96" x2="93.98" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -3097,7 +3096,7 @@ general purpose rectifier</description>
 <wire x1="38.1" y1="66.04" x2="48.26" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="40.64" x2="48.26" y2="25.4" width="0.1524" layer="91"/>
 <junction x="48.26" y="40.64"/>
-<pinref part="X3" gate="-5" pin="S"/>
+<pinref part="BSPD" gate="-5" pin="S"/>
 <wire x1="48.26" y1="25.4" x2="99.06" y2="25.4" width="0.1524" layer="91"/>
 <label x="66.04" y="25.4" size="1.778" layer="95"/>
 <portref moduleinst="BSPD1" port="READ_FAULT"/>
@@ -3129,10 +3128,8 @@ general purpose rectifier</description>
 <net name="SIGNAL_BRAKE" class="0">
 <segment>
 <wire x1="50.8" y1="50.8" x2="50.8" y2="38.1" width="0.1524" layer="91"/>
-<portref moduleinst="BSPD1" port="SIGNAL_B"/>
 <wire x1="50.8" y1="38.1" x2="50.8" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="58.42" y1="50.8" x2="50.8" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="X3" gate="-4" pin="S"/>
+<pinref part="BSPD" gate="-4" pin="S"/>
 <wire x1="99.06" y1="27.94" x2="50.8" y2="27.94" width="0.1524" layer="91"/>
 <label x="66.04" y="27.94" size="1.778" layer="95"/>
 <wire x1="50.8" y1="38.1" x2="40.64" y2="38.1" width="0.1524" layer="91"/>
@@ -3140,6 +3137,8 @@ general purpose rectifier</description>
 <wire x1="40.64" y1="38.1" x2="40.64" y2="15.24" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="15.24" x2="48.26" y2="15.24" width="0.1524" layer="91"/>
 <pinref part="R5" gate="G$1" pin="1"/>
+<portref moduleinst="BSPD1" port="SIGNAL_BRAKE"/>
+<wire x1="50.8" y1="50.8" x2="58.42" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="READ_SWITCH" class="0">
@@ -3151,7 +3150,7 @@ general purpose rectifier</description>
 <wire x1="30.48" y1="45.72" x2="43.18" y2="45.72" width="0.1524" layer="91"/>
 <junction x="43.18" y="45.72"/>
 <wire x1="43.18" y1="45.72" x2="43.18" y2="20.32" width="0.1524" layer="91"/>
-<pinref part="X3" gate="-7" pin="S"/>
+<pinref part="BSPD" gate="-7" pin="S"/>
 <wire x1="43.18" y1="20.32" x2="99.06" y2="20.32" width="0.1524" layer="91"/>
 <label x="66.04" y="20.32" size="1.778" layer="95"/>
 <portref moduleinst="BSPD1" port="READ_SWITCH"/>
@@ -3173,35 +3172,35 @@ general purpose rectifier</description>
 <wire x1="45.72" y1="43.18" x2="45.72" y2="63.5" width="0.1524" layer="91"/>
 <junction x="45.72" y="43.18"/>
 <wire x1="45.72" y1="43.18" x2="45.72" y2="22.86" width="0.1524" layer="91"/>
-<pinref part="X3" gate="-6" pin="S"/>
+<pinref part="BSPD" gate="-6" pin="S"/>
 <wire x1="99.06" y1="22.86" x2="45.72" y2="22.86" width="0.1524" layer="91"/>
 <label x="66.04" y="22.86" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SIGNAL_CURRENT" class="0">
 <segment>
-<portref moduleinst="BSPD1" port="SIGNAL_A"/>
-<wire x1="58.42" y1="48.26" x2="53.34" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="53.34" y1="48.26" x2="53.34" y2="30.48" width="0.1524" layer="91"/>
-<pinref part="X3" gate="-3" pin="S"/>
+<pinref part="BSPD" gate="-3" pin="S"/>
 <wire x1="53.34" y1="30.48" x2="99.06" y2="30.48" width="0.1524" layer="91"/>
 <label x="66.04" y="30.48" size="1.778" layer="95"/>
+<portref moduleinst="BSPD1" port="SIGNAL_CURRENT"/>
+<wire x1="53.34" y1="48.26" x2="58.42" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SHUTDOWN_B" class="0">
 <segment>
 <wire x1="58.42" y1="35.56" x2="91.44" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="35.56" x2="91.44" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="50.8" x2="96.52" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="G$1" pin="P"/>
+<wire x1="91.44" y1="35.56" x2="91.44" y2="48.26" width="0.1524" layer="91"/>
 <label x="66.04" y="35.56" size="1.778" layer="95"/>
 <portref moduleinst="BSPD1" port="SHUTDOWN_B"/>
 <wire x1="58.42" y1="35.56" x2="58.42" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="SOFTWARE_SHUTOFF" gate="G$1" pin="S"/>
+<wire x1="96.52" y1="48.26" x2="91.44" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="SHUTDOWN_C" class="0">
+<net name="SHUTDOWN_D" class="0">
 <segment>
-<pinref part="X3" gate="-2" pin="S"/>
+<pinref part="BSPD" gate="-2" pin="S"/>
 <wire x1="99.06" y1="33.02" x2="55.88" y2="33.02" width="0.1524" layer="91"/>
 <label x="66.04" y="33.02" size="1.778" layer="95"/>
 <wire x1="55.88" y1="43.18" x2="55.88" y2="33.02" width="0.1524" layer="91"/>
@@ -3211,21 +3210,14 @@ general purpose rectifier</description>
 </net>
 <net name="SHUTDOWN_A" class="0">
 <segment>
-<pinref part="X3" gate="-1" pin="S"/>
+<pinref part="BSPD" gate="-1" pin="S"/>
 <wire x1="99.06" y1="35.56" x2="93.98" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="93.98" y1="35.56" x2="93.98" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="93.98" y1="43.18" x2="114.3" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="43.18" x2="114.3" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="48.26" x2="111.76" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="G$1" pin="S"/>
+<wire x1="114.3" y1="43.18" x2="114.3" y2="50.8" width="0.1524" layer="91"/>
 <label x="93.98" y="43.18" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$18" class="0">
-<segment>
-<pinref part="U$5" gate="G$1" pin="DC-"/>
-<pinref part="U$4" gate="G$1" pin="COIL+"/>
-<wire x1="119.38" y1="60.96" x2="111.76" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="SOFTWARE_SHUTOFF" gate="G$1" pin="P"/>
+<wire x1="114.3" y1="50.8" x2="111.76" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SHUTDOWN_RELAY_CTRL" class="0">
@@ -3318,7 +3310,7 @@ general purpose rectifier</description>
 <wire x1="-25.4" y1="53.34" x2="-27.94" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="X3" gate="-9" pin="S"/>
+<pinref part="BSPD" gate="-9" pin="S"/>
 <pinref part="P+8" gate="1" pin="+12V"/>
 <wire x1="93.98" y1="15.24" x2="99.06" y2="15.24" width="0.1524" layer="91"/>
 </segment>
@@ -3326,6 +3318,13 @@ general purpose rectifier</description>
 <pinref part="U$5" gate="G$1" pin="DC+"/>
 <pinref part="P+7" gate="1" pin="+12V"/>
 <wire x1="124.46" y1="58.42" x2="124.46" y2="60.96" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$12" class="0">
+<segment>
+<pinref part="SOFTWARE_SHUTOFF" gate="G$1" pin="COIL-"/>
+<pinref part="U$5" gate="G$1" pin="DC-"/>
+<wire x1="111.76" y1="60.96" x2="119.38" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
