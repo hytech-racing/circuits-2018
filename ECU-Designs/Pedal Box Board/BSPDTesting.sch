@@ -427,23 +427,6 @@ Source: transistor-fet.lbr</description>
 <rectangle x1="0.175" y1="-0.65" x2="0.275" y2="-0.55" layer="51"/>
 <rectangle x1="-0.125" y1="0" x2="0.125" y2="0.25" layer="21"/>
 </package>
-<package name="MINIFIT_5566-2">
-<description>&lt;b&gt;Mini-Fit Junior connector 2 pole&lt;/b&gt;&lt;p&gt;
-Source: http://www.molex.com</description>
-<wire x1="-2.6" y1="4.5" x2="2.6" y2="4.5" width="0.254" layer="21"/>
-<wire x1="2.6" y1="4.5" x2="2.6" y2="-2.2" width="0.254" layer="21"/>
-<wire x1="2.6" y1="-3.3" x2="2.6" y2="-4.9" width="0.254" layer="21"/>
-<wire x1="2.6" y1="-4.9" x2="-2.6" y2="-4.9" width="0.254" layer="21"/>
-<wire x1="-2.6" y1="-4.9" x2="-2.6" y2="4.5" width="0.254" layer="21"/>
-<wire x1="2.6" y1="-2.2" x2="2.6" y2="-3.3" width="0.254" layer="21" curve="-180"/>
-<pad name="1" x="0" y="-2.75" drill="1.4" shape="square"/>
-<pad name="2" x="0" y="2.75" drill="1.4" shape="square"/>
-<text x="0" y="-5.207" size="0.8128" layer="25" rot="R180" align="bottom-center">&gt;NAME</text>
-<text x="0" y="6.858" size="0.8128" layer="27" align="bottom-center">&gt;VALUE</text>
-<wire x1="-2.1" y1="6.3" x2="2.1" y2="6.3" width="0.254" layer="27"/>
-<wire x1="-2.1" y1="6.3" x2="-2.1" y2="4.6" width="0.254" layer="27"/>
-<wire x1="2.1" y1="6.3" x2="2.1" y2="4.6" width="0.254" layer="27"/>
-</package>
 <package name="0402-RES">
 <description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
 chip</description>
@@ -703,25 +686,6 @@ Yageo CFR series &lt;a href="http://www.yageo.com/pdf/yageo/Leaded-R_CFR_2008.pd
 <pad name="1" x="-3.81" y="0" drill="1.3"/>
 <pad name="2" x="52.07" y="0" drill="1.3"/>
 <text x="15.24" y="0" size="1.27" layer="21">POWER RESISTOR</text>
-</package>
-<package name="MINIFIT_5566-4">
-<description>&lt;b&gt;Mini-Fit Junior connector 4 pole&lt;/b&gt;&lt;p&gt;
-Source: http://www.molex.com</description>
-<wire x1="-4.7" y1="4.5" x2="4.7" y2="4.5" width="0.254" layer="21"/>
-<wire x1="4.7" y1="4.5" x2="4.7" y2="-2.2" width="0.254" layer="21"/>
-<wire x1="4.7" y1="-3.3" x2="4.7" y2="-4.9" width="0.254" layer="21"/>
-<wire x1="4.7" y1="-4.9" x2="-4.7" y2="-4.9" width="0.254" layer="21"/>
-<wire x1="-4.7" y1="-4.9" x2="-4.7" y2="4.5" width="0.254" layer="21"/>
-<wire x1="4.7" y1="-2.2" x2="4.7" y2="-3.3" width="0.254" layer="21" curve="-180"/>
-<wire x1="-2.1" y1="6.3" x2="2.1" y2="6.3" width="0.254" layer="27"/>
-<wire x1="-2.1" y1="6.3" x2="-2.1" y2="4.6" width="0.254" layer="27"/>
-<wire x1="2.1" y1="6.3" x2="2.1" y2="4.6" width="0.254" layer="27"/>
-<pad name="1" x="2.1" y="-2.75" drill="1.4" shape="square"/>
-<pad name="2" x="-2.1" y="-2.75" drill="1.4" shape="square"/>
-<pad name="3" x="2.1" y="2.75" drill="1.4" shape="square"/>
-<pad name="4" x="-2.1" y="2.75" drill="1.4" shape="square"/>
-<text x="0" y="-5.08" size="1.27" layer="25" align="top-center">&gt;NAME</text>
-<text x="0" y="6.35" size="1.27" layer="27" align="bottom-center">&gt;VALUE</text>
 </package>
 <package name="MINIFIT_5566-10">
 <description>&lt;b&gt;Mini-Fit Junior connector 10 pole&lt;/b&gt;&lt;p&gt;
@@ -1021,30 +985,6 @@ Standard 7805 5V regulator. IGO (Input Ground Output). Spark Fun Electronics SKU
 </device>
 </devices>
 </deviceset>
-<deviceset name="MINIFIT_5566-2" prefix="X">
-<description>&lt;b&gt;Mini-Fit Junior connector 2 pole&lt;/b&gt;&lt;p&gt;
-Source: http://www.molex.com</description>
-<gates>
-<gate name="-1" symbol="MV" x="0" y="2.54" addlevel="always"/>
-<gate name="-2" symbol="M" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="MINIFIT_5566-2">
-<connects>
-<connect gate="-1" pin="S" pad="1"/>
-<connect gate="-2" pin="S" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="1822072" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="RESISTOR" prefix="R" uservalue="yes">
 <description>&lt;b&gt;Resistor&lt;/b&gt;
 Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</description>
@@ -1216,34 +1156,6 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </device>
 </devices>
 </deviceset>
-<deviceset name="MINIFIT_5566-4" prefix="X">
-<description>&lt;b&gt;Mini-Fit Junior connector 4 pole&lt;/b&gt;&lt;p&gt;
-Source: http://www.molex.com</description>
-<gates>
-<gate name="-1" symbol="MV" x="0" y="5.08" addlevel="always"/>
-<gate name="-2" symbol="M" x="0" y="2.54" addlevel="always"/>
-<gate name="-3" symbol="M" x="0" y="0" addlevel="always"/>
-<gate name="-4" symbol="M" x="0" y="-2.54" addlevel="always"/>
-</gates>
-<devices>
-<device name="" package="MINIFIT_5566-4">
-<connects>
-<connect gate="-1" pin="S" pad="1"/>
-<connect gate="-2" pin="S" pad="2"/>
-<connect gate="-3" pin="S" pad="3"/>
-<connect gate="-4" pin="S" pad="4"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="MINIFIT_5566-10" prefix="X">
 <description>&lt;b&gt;Mini-Fit Junior connector 10 pole&lt;/b&gt;&lt;p&gt;
 Source: http://www.molex.com</description>
@@ -1321,12 +1233,33 @@ Source: http://www.molex.com</description>
 <text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
 </symbol>
+<symbol name="+12V">
+<wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-0.635" x2="0" y2="1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="1.27" x2="-1.27" y2="-0.635" width="0.254" layer="94"/>
+<text x="-2.54" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="+12V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="GND" prefix="GND">
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="1" symbol="GND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+12V" prefix="P+">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="+12V" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -1348,8 +1281,8 @@ Source: http://www.molex.com</description>
 </class>
 </classes>
 <parts>
-<part name="R1" library="HyTechDevices" deviceset="3RP/1610N" device=""/>
-<part name="R2" library="HyTechDevices" deviceset="3RP/1610N" device=""/>
+<part name="BRAKE" library="HyTechDevices" deviceset="3RP/1610N" device=""/>
+<part name="CURRENT" library="HyTechDevices" deviceset="3RP/1610N" device=""/>
 <part name="IC1" library="HyTechDevices" deviceset="5VREG_L7805" device="_HOR"/>
 <part name="TRIPPED" library="HyTechDevices" deviceset="LED" device="-3MM"/>
 <part name="FAULT" library="HyTechDevices" deviceset="LED" device="-3MM"/>
@@ -1359,50 +1292,40 @@ Source: http://www.molex.com</description>
 <part name="R4" library="HyTechDevices" deviceset="RESISTOR" device="AXIAL-0.3"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
-<part name="TESTINGLEDS" library="HyTechDevices" deviceset="MINIFIT_5566-4" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
-<part name="X1" library="HyTechDevices" deviceset="MINIFIT_5566-2" device=""/>
-<part name="X2" library="HyTechDevices" deviceset="MINIFIT_5566-2" device=""/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="BSPDTESTING" library="HyTechDevices" deviceset="MINIFIT_5566-10" device=""/>
-<part name="U$1" library="HyTechDevices" deviceset="0S102011MS2QS1" device=""/>
-<part name="U$2" library="HyTechDevices" deviceset="0S102011MS2QS1" device=""/>
-<part name="U$3" library="HyTechDevices" deviceset="0S102011MS2QS1" device=""/>
+<part name="POWER_SWITCH" library="HyTechDevices" deviceset="0S102011MS2QS1" device=""/>
+<part name="R5" library="HyTechDevices" deviceset="RESISTOR" device="AXIAL-0.3"/>
+<part name="R6" library="HyTechDevices" deviceset="RESISTOR" device="AXIAL-0.3"/>
+<part name="P+1" library="supply1" deviceset="+12V" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
-<instance part="R1" gate="G$1" x="58.42" y="38.1" rot="R90"/>
-<instance part="R2" gate="G$1" x="58.42" y="53.34" rot="R90"/>
+<instance part="BRAKE" gate="G$1" x="20.32" y="38.1"/>
+<instance part="CURRENT" gate="G$1" x="30.48" y="58.42"/>
 <instance part="IC1" gate="G$1" x="86.36" y="71.12" rot="R180"/>
-<instance part="TRIPPED" gate="LED" x="91.44" y="58.42" rot="R270"/>
-<instance part="FAULT" gate="LED" x="27.94" y="60.96" rot="R90"/>
-<instance part="SWITCH" gate="LED" x="38.1" y="63.5" rot="R90"/>
-<instance part="CHARGE" gate="LED" x="17.78" y="58.42" rot="R90"/>
-<instance part="R3" gate="G$1" x="104.14" y="58.42"/>
-<instance part="R4" gate="G$1" x="88.9" y="33.02" rot="R180"/>
+<instance part="TRIPPED" gate="LED" x="76.2" y="60.96" rot="R270"/>
+<instance part="FAULT" gate="LED" x="73.66" y="25.4"/>
+<instance part="SWITCH" gate="LED" x="66.04" y="25.4"/>
+<instance part="CHARGE" gate="LED" x="81.28" y="25.4"/>
+<instance part="R3" gate="G$1" x="88.9" y="58.42"/>
+<instance part="R4" gate="G$1" x="66.04" y="45.72" rot="R270"/>
 <instance part="GND1" gate="1" x="86.36" y="86.36" rot="R180"/>
-<instance part="GND2" gate="1" x="12.7" y="48.26" rot="R90"/>
-<instance part="TESTINGLEDS" gate="-1" x="7.62" y="58.42" rot="R180"/>
-<instance part="TESTINGLEDS" gate="-2" x="7.62" y="60.96" rot="R180"/>
-<instance part="TESTINGLEDS" gate="-3" x="7.62" y="63.5" rot="R180"/>
-<instance part="TESTINGLEDS" gate="-4" x="7.62" y="66.04" rot="R180"/>
-<instance part="GND3" gate="1" x="50.8" y="60.96" rot="R90"/>
-<instance part="GND4" gate="1" x="43.18" y="58.42" rot="R90"/>
-<instance part="GND5" gate="1" x="58.42" y="63.5" rot="R90"/>
-<instance part="GND6" gate="1" x="63.5" y="66.04" rot="R90"/>
-<instance part="X1" gate="-2" x="22.86" y="17.78" rot="R180"/>
-<instance part="X1" gate="-1" x="22.86" y="15.24" rot="R180"/>
-<instance part="X2" gate="-2" x="22.86" y="7.62" rot="R180"/>
-<instance part="X2" gate="-1" x="22.86" y="5.08" rot="R180"/>
-<instance part="GND7" gate="1" x="106.68" y="38.1" rot="R270"/>
-<instance part="GND8" gate="1" x="78.74" y="58.42" rot="R270"/>
+<instance part="GND2" gate="1" x="30.48" y="45.72"/>
+<instance part="GND3" gate="1" x="73.66" y="15.24"/>
+<instance part="GND4" gate="1" x="81.28" y="15.24"/>
+<instance part="GND5" gate="1" x="66.04" y="15.24"/>
+<instance part="GND6" gate="1" x="20.32" y="25.4"/>
+<instance part="GND7" gate="1" x="114.3" y="25.4"/>
+<instance part="GND8" gate="1" x="66.04" y="60.96" rot="R270"/>
 <instance part="BSPDTESTING" gate="-1" x="116.84" y="60.96"/>
 <instance part="BSPDTESTING" gate="-2" x="116.84" y="58.42"/>
 <instance part="BSPDTESTING" gate="-3" x="116.84" y="55.88"/>
@@ -1413,64 +1336,54 @@ Source: http://www.molex.com</description>
 <instance part="BSPDTESTING" gate="-8" x="116.84" y="43.18"/>
 <instance part="BSPDTESTING" gate="-9" x="116.84" y="40.64"/>
 <instance part="BSPDTESTING" gate="-10" x="116.84" y="38.1"/>
-<instance part="U$1" gate="G$1" x="101.6" y="71.12" rot="R90"/>
-<instance part="U$2" gate="G$1" x="96.52" y="53.34" rot="R90"/>
-<instance part="U$3" gate="G$1" x="73.66" y="45.72" rot="R90"/>
+<instance part="POWER_SWITCH" gate="G$1" x="104.14" y="71.12" rot="R90"/>
+<instance part="R5" gate="G$1" x="73.66" y="43.18" rot="R270"/>
+<instance part="R6" gate="G$1" x="81.28" y="35.56" rot="R270"/>
+<instance part="P+1" gate="1" x="106.68" y="33.02"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="GND" class="0">
 <segment>
-<pinref part="CHARGE" gate="LED" pin="C"/>
-<pinref part="GND4" gate="1" pin="GND"/>
-<wire x1="22.86" y1="58.42" x2="40.64" y2="58.42" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="FAULT" gate="LED" pin="C"/>
-<pinref part="GND3" gate="1" pin="GND"/>
-<wire x1="33.02" y1="60.96" x2="48.26" y2="60.96" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="SWITCH" gate="LED" pin="C"/>
-<pinref part="GND5" gate="1" pin="GND"/>
-<wire x1="43.18" y1="63.5" x2="55.88" y2="63.5" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="TRIPPED" gate="LED" pin="C"/>
-<wire x1="86.36" y1="58.42" x2="81.28" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="GND8" gate="1" pin="GND"/>
+<wire x1="68.58" y1="60.96" x2="71.12" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="BSPDTESTING" gate="-10" pin="S"/>
 <pinref part="GND7" gate="1" pin="GND"/>
-<wire x1="114.3" y1="38.1" x2="109.22" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="38.1" x2="114.3" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="GND"/>
 <pinref part="GND1" gate="1" pin="GND"/>
 <wire x1="86.36" y1="78.74" x2="86.36" y2="83.82" width="0.1524" layer="91"/>
 </segment>
-</net>
-<net name="N$8" class="0">
 <segment>
-<pinref part="TESTINGLEDS" gate="-1" pin="S"/>
-<pinref part="CHARGE" gate="LED" pin="A"/>
-<wire x1="10.16" y1="58.42" x2="15.24" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="GND5" gate="1" pin="GND"/>
+<pinref part="SWITCH" gate="LED" pin="C"/>
+<wire x1="66.04" y1="17.78" x2="66.04" y2="20.32" width="0.1524" layer="91"/>
 </segment>
-</net>
-<net name="N$9" class="0">
 <segment>
-<pinref part="TESTINGLEDS" gate="-2" pin="S"/>
-<pinref part="FAULT" gate="LED" pin="A"/>
-<wire x1="10.16" y1="60.96" x2="25.4" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="FAULT" gate="LED" pin="C"/>
+<pinref part="GND3" gate="1" pin="GND"/>
+<wire x1="73.66" y1="20.32" x2="73.66" y2="17.78" width="0.1524" layer="91"/>
 </segment>
-</net>
-<net name="N$10" class="0">
 <segment>
-<pinref part="TESTINGLEDS" gate="-3" pin="S"/>
-<pinref part="SWITCH" gate="LED" pin="A"/>
-<wire x1="10.16" y1="63.5" x2="35.56" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="GND4" gate="1" pin="GND"/>
+<pinref part="CHARGE" gate="LED" pin="C"/>
+<wire x1="81.28" y1="17.78" x2="81.28" y2="20.32" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND6" gate="1" pin="GND"/>
+<pinref part="BRAKE" gate="G$1" pin="A"/>
+<wire x1="20.32" y1="27.94" x2="20.32" y2="33.02" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND2" gate="1" pin="GND"/>
+<pinref part="CURRENT" gate="G$1" pin="A"/>
+<wire x1="30.48" y1="48.26" x2="30.48" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -1478,45 +1391,112 @@ Source: http://www.molex.com</description>
 <pinref part="BSPDTESTING" gate="-1" pin="S"/>
 <wire x1="114.3" y1="60.96" x2="111.76" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="60.96" x2="111.76" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="P"/>
-<wire x1="111.76" y1="73.66" x2="106.68" y2="73.66" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$2" class="0">
-<segment>
-<pinref part="BSPDTESTING" gate="-2" pin="S"/>
-<pinref part="R3" gate="G$1" pin="2"/>
-<wire x1="114.3" y1="58.42" x2="109.22" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="POWER_SWITCH" gate="G$1" pin="P"/>
+<wire x1="111.76" y1="73.66" x2="109.22" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
 <segment>
 <pinref part="R3" gate="G$1" pin="1"/>
 <pinref part="TRIPPED" gate="LED" pin="A"/>
-<wire x1="99.06" y1="58.42" x2="93.98" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="58.42" x2="78.74" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="O"/>
+<pinref part="POWER_SWITCH" gate="G$1" pin="O"/>
 <pinref part="IC1" gate="G$1" pin="IN"/>
-<wire x1="96.52" y1="71.12" x2="93.98" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="71.12" x2="93.98" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$5" class="0">
-<segment>
-<pinref part="BSPDTESTING" gate="-3" pin="S"/>
-<pinref part="U$2" gate="G$1" pin="P"/>
-<wire x1="114.3" y1="55.88" x2="101.6" y2="55.88" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$6" class="0">
+<net name="SIGNAL_BRAKE" class="0">
 <segment>
 <pinref part="BSPDTESTING" gate="-4" pin="S"/>
-<wire x1="114.3" y1="53.34" x2="101.6" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="53.34" x2="101.6" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="P"/>
-<wire x1="101.6" y1="50.8" x2="78.74" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="53.34" x2="53.34" y2="53.34" width="0.1524" layer="91"/>
+<label x="91.44" y="53.34" size="1.778" layer="95"/>
+<wire x1="53.34" y1="43.18" x2="53.34" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="38.1" x2="38.1" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="38.1" x2="38.1" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="43.18" x2="38.1" y2="43.18" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="R4" gate="G$1" pin="1"/>
+<pinref part="BSPDTESTING" gate="-5" pin="S"/>
+<wire x1="66.04" y1="50.8" x2="114.3" y2="50.8" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<pinref part="BSPDTESTING" gate="-6" pin="S"/>
+<pinref part="R5" gate="G$1" pin="1"/>
+<wire x1="114.3" y1="48.26" x2="73.66" y2="48.26" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$13" class="0">
+<segment>
+<pinref part="CHARGE" gate="LED" pin="A"/>
+<pinref part="R6" gate="G$1" pin="2"/>
+<wire x1="81.28" y1="27.94" x2="81.28" y2="30.48" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$14" class="0">
+<segment>
+<pinref part="BSPDTESTING" gate="-7" pin="S"/>
+<wire x1="81.28" y1="45.72" x2="114.3" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="R6" gate="G$1" pin="1"/>
+<wire x1="81.28" y1="45.72" x2="81.28" y2="40.64" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$15" class="0">
+<segment>
+<pinref part="CURRENT" gate="G$1" pin="E"/>
+<wire x1="30.48" y1="71.12" x2="30.48" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="71.12" x2="20.32" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="71.12" x2="20.32" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="BRAKE" gate="G$1" pin="E"/>
+<pinref part="IC1" gate="G$1" pin="OUT"/>
+<wire x1="78.74" y1="71.12" x2="30.48" y2="71.12" width="0.1524" layer="91"/>
+<junction x="30.48" y="71.12"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="R5" gate="G$1" pin="2"/>
+<pinref part="FAULT" gate="LED" pin="A"/>
+<wire x1="73.66" y1="38.1" x2="73.66" y2="27.94" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$12" class="0">
+<segment>
+<pinref part="R4" gate="G$1" pin="2"/>
+<pinref part="SWITCH" gate="LED" pin="A"/>
+<wire x1="66.04" y1="40.64" x2="66.04" y2="27.94" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="+12V" class="0">
+<segment>
+<pinref part="P+1" gate="1" pin="+12V"/>
+<wire x1="106.68" y1="30.48" x2="106.68" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="BSPDTESTING" gate="-9" pin="S"/>
+<wire x1="106.68" y1="40.64" x2="114.3" y2="40.64" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="SIGNAL_CURRENT" class="0">
+<segment>
+<wire x1="58.42" y1="55.88" x2="58.42" y2="58.42" width="0.1524" layer="91"/>
+<label x="93.98" y="55.88" size="1.778" layer="95"/>
+<pinref part="BSPDTESTING" gate="-3" pin="S"/>
+<wire x1="114.3" y1="55.88" x2="58.42" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="58.42" x2="58.42" y2="58.42" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="BSPDTESTING" gate="-2" pin="S"/>
+<pinref part="R3" gate="G$1" pin="2"/>
+<wire x1="114.3" y1="58.42" x2="93.98" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
