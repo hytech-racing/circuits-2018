@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -215,20 +215,6 @@
 <wire x1="0" y1="43.18" x2="5.08" y2="43.18" width="0.127" layer="51"/>
 <wire x1="12.7" y1="43.18" x2="17.78" y2="43.18" width="0.127" layer="51"/>
 <text x="10.16" y="10.16" size="2.54" layer="51" rot="R90">Arduino Nano</text>
-</package>
-<package name="FUSE_HOLDER">
-<description>MOUSER PART NUMBER 
-&lt;BR&gt;
-534-3568</description>
-<wire x1="-3.81" y1="-2.54" x2="-3.81" y2="6.35" width="0.127" layer="21"/>
-<wire x1="-3.81" y1="6.35" x2="13.97" y2="6.35" width="0.127" layer="21"/>
-<wire x1="13.97" y1="-2.54" x2="13.97" y2="6.35" width="0.127" layer="21"/>
-<wire x1="-3.81" y1="-2.54" x2="13.97" y2="-2.54" width="0.127" layer="21"/>
-<pad name="L1" x="0" y="3.4036" drill="1.6" diameter="2.54"/>
-<pad name="L2" x="0" y="0" drill="1.6" diameter="2.54"/>
-<pad name="R1" x="9.906" y="3.4036" drill="1.6" diameter="2.54"/>
-<pad name="R2" x="9.906" y="0" drill="1.6" diameter="2.54"/>
-<text x="2.54" y="1.27" size="1.27" layer="21">FUSE</text>
 </package>
 <package name="TO-220-SINK">
 <wire x1="5.08" y1="-1.905" x2="-5.08" y2="-1.905" width="0.2032" layer="21"/>
@@ -6164,6 +6150,19 @@ Source: http://www.alphapotentiometers.net/html/16mm_pot_2.html</description>
 <wire x1="-12" y1="-3.5" x2="12" y2="-3.5" width="0.127" layer="21"/>
 <wire x1="12" y1="-3.5" x2="12" y2="3.5" width="0.127" layer="21"/>
 <wire x1="12" y1="3.5" x2="-12" y2="3.5" width="0.127" layer="21"/>
+<wire x1="-11.43" y1="2.54" x2="-3.81" y2="2.54" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="2.54" x2="-2.54" y2="1.905" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="1.905" x2="2.54" y2="1.905" width="0.127" layer="21"/>
+<wire x1="2.54" y1="1.905" x2="3.81" y2="2.54" width="0.127" layer="21"/>
+<wire x1="3.81" y1="2.54" x2="11.43" y2="2.54" width="0.127" layer="21"/>
+<wire x1="11.43" y1="2.54" x2="11.43" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="11.43" y1="-2.54" x2="3.81" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="3.81" y1="-2.54" x2="2.54" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="2.54" y1="-1.905" x2="-2.54" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-1.905" x2="-3.81" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="-2.54" x2="-11.43" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="-11.43" y1="-2.54" x2="-11.43" y2="2.54" width="0.127" layer="21"/>
+<text x="0" y="0" size="1.016" layer="21" align="center">5x20mm</text>
 </package>
 <package name="1X20">
 <wire x1="14.605" y1="1.27" x2="15.875" y2="1.27" width="0.1524" layer="21"/>
@@ -6763,6 +6762,48 @@ Source: transistor-fet.lbr</description>
 <pad name="7" x="10.0076" y="7.493" drill="1.5" shape="square"/>
 <pad name="COIL+" x="25.019" y="0" drill="1.5" shape="square"/>
 <pad name="COIL-" x="25.019" y="7.493" drill="1.5" shape="square"/>
+</package>
+<package name="MINI-BLADE_FUSE_HOLDER">
+<description>MOUSER PART NUMBER 
+&lt;BR&gt;
+534-3568</description>
+<wire x1="-3.81" y1="-2.54" x2="-3.81" y2="6.35" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="6.35" x2="13.97" y2="6.35" width="0.127" layer="21"/>
+<wire x1="13.97" y1="-2.54" x2="13.97" y2="6.35" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="-2.54" x2="13.97" y2="-2.54" width="0.127" layer="21"/>
+<pad name="L1" x="0" y="3.4036" drill="1.6" diameter="2.54"/>
+<pad name="L2" x="0" y="0" drill="1.6" diameter="2.54"/>
+<pad name="R1" x="9.906" y="3.4036" drill="1.6" diameter="2.54"/>
+<pad name="R2" x="9.906" y="0" drill="1.6" diameter="2.54"/>
+<text x="5.08" y="1.27" size="1.016" layer="21" align="center">Mini-Blade
+FUSE</text>
+</package>
+<package name="1A3400_38.1MM">
+<pad name="P1" x="0" y="0" drill="2.413" diameter="3.81"/>
+<pad name="P2" x="10.287" y="0" drill="2.413" diameter="3.81"/>
+<pad name="N3" x="30.988" y="0" drill="2.413" diameter="3.81"/>
+<pad name="N4" x="41.275" y="0" drill="2.413" diameter="3.81"/>
+<wire x1="-3.81" y1="5.08" x2="13.97" y2="5.08" width="0.127" layer="21"/>
+<wire x1="13.97" y1="5.08" x2="13.97" y2="-5.08" width="0.127" layer="21"/>
+<wire x1="13.97" y1="-5.08" x2="-3.81" y2="-5.08" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="-5.08" x2="-3.81" y2="5.08" width="0.127" layer="21"/>
+<wire x1="26.67" y1="5.08" x2="45.72" y2="5.08" width="0.127" layer="21"/>
+<wire x1="45.72" y1="5.08" x2="45.72" y2="-5.08" width="0.127" layer="21"/>
+<wire x1="45.72" y1="-5.08" x2="26.67" y2="-5.08" width="0.127" layer="21"/>
+<wire x1="26.67" y1="-5.08" x2="26.67" y2="5.08" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="3.81" x2="-2.54" y2="-3.81" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-3.81" x2="12.7" y2="-3.81" width="0.127" layer="21"/>
+<wire x1="12.7" y1="-3.81" x2="13.335" y2="-3.175" width="0.127" layer="21"/>
+<wire x1="13.335" y1="-3.175" x2="27.305" y2="-3.175" width="0.127" layer="21"/>
+<wire x1="27.305" y1="-3.175" x2="27.94" y2="-3.81" width="0.127" layer="21"/>
+<wire x1="27.94" y1="-3.81" x2="44.45" y2="-3.81" width="0.127" layer="21"/>
+<wire x1="44.45" y1="-3.81" x2="44.45" y2="3.81" width="0.127" layer="21"/>
+<wire x1="44.45" y1="3.81" x2="27.94" y2="3.81" width="0.127" layer="21"/>
+<wire x1="27.94" y1="3.81" x2="27.305" y2="3.175" width="0.127" layer="21"/>
+<wire x1="27.305" y1="3.175" x2="13.335" y2="3.175" width="0.127" layer="21"/>
+<wire x1="13.335" y1="3.175" x2="12.7" y2="3.81" width="0.127" layer="21"/>
+<wire x1="12.7" y1="3.81" x2="-2.54" y2="3.81" width="0.127" layer="21"/>
+<text x="20.32" y="0" size="1.016" layer="21" align="center">MIDGET FUSE</text>
 </package>
 </packages>
 <symbols>
@@ -9019,6 +9060,18 @@ DC/DC</text>
 <wire x1="-2.54" y1="-2.54" x2="-2.54" y2="7.62" width="0.254" layer="94"/>
 <text x="33.02" y="-3.81" size="1.778" layer="94" rot="R90">&gt;VALUE</text>
 </symbol>
+<symbol name="FUSE_HOLDER-1">
+<wire x1="0" y1="0" x2="-5.08" y2="0" width="0.254" layer="94" curve="-180"/>
+<wire x1="0" y1="0" x2="5.08" y2="0" width="0.254" layer="94" curve="-180"/>
+<wire x1="-7.62" y1="-2.54" x2="-7.62" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="2.54" x2="7.62" y2="2.54" width="0.254" layer="94"/>
+<wire x1="7.62" y1="2.54" x2="7.62" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-2.54" x2="-7.62" y2="-2.54" width="0.254" layer="94"/>
+<pin name="P1" x="-10.16" y="0" visible="off" length="middle" swaplevel="1"/>
+<pin name="P2" x="10.16" y="0" visible="off" length="middle" swaplevel="1" rot="R180"/>
+<text x="-10.16" y="3.81" size="1.27" layer="95">&gt;Name</text>
+<text x="5.08" y="3.81" size="1.27" layer="96">&gt;Value</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="ARDUINO_NANO">
@@ -9063,27 +9116,6 @@ DC/DC</text>
 <connect gate="G$1" pin="RST" pad="RST"/>
 <connect gate="G$1" pin="RST1" pad="RST1"/>
 <connect gate="G$1" pin="VIN" pad="VIN"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="FUSE_HOLDER" uservalue="yes">
-<description>Keystone Electronics 3568 Fuse
-&lt;br&gt;
-&lt;a href="http://www.mouser.com/ProductDetail/Keystone-Electronics/3568"&gt;Mouser Part&lt;/a&gt;
-&lt;br&gt;
-&lt;a href="http://www.mouser.com/ds/2/215/568-742601.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="FUSE_HOLDER" x="7.62" y="0"/>
-</gates>
-<devices>
-<device name="" package="FUSE_HOLDER">
-<connects>
-<connect gate="G$1" pin="1" pad="L1 L2"/>
-<connect gate="G$1" pin="2" pad="R1 R2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -12960,24 +12992,6 @@ Integrated TCP/IP Control Stack</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="C1Q_FUSE">
-<description>&lt;B&gt; Bel Fuse C1Q Fast Blow SMD Fuse &lt;/B&gt;
-&lt;P&gt; &lt;a href="http://www.mouser.com/ds/2/643/C1Q-526702.pdf"&gt;Datasheet</description>
-<gates>
-<gate name="G$1" symbol="FUSE" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="1206">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="PSMN011_MOSFET">
 <description>&lt;B&gt; PSMN011_MOSFET &lt;/B&gt;
 
@@ -13033,24 +13047,6 @@ Integrated TCP/IP Control Stack</description>
 <connect gate="G$1" pin="2OUT" pad="7"/>
 <connect gate="G$1" pin="GND" pad="4"/>
 <connect gate="G$1" pin="VCC" pad="8"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="0751.0110_FUSE_CLIP">
-<description>&lt;B&gt; Schurter 0751.0110 Brass Fuse Clip &lt;/B&gt;
-&lt;P&gt;&lt;a href="http://www.mouser.com/ds/2/358/typ_OG__Clip__5x20-2553.pdf"&gt; Datasheet</description>
-<gates>
-<gate name="G$1" symbol="FUSE" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="0751.0110">
-<connects>
-<connect gate="G$1" pin="1" pad="L1 L2"/>
-<connect gate="G$1" pin="2" pad="R1 R2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -13458,6 +13454,66 @@ Contact Amperage: 8A at 30VDC
 <connect gate="G$1" pin="7" pad="7"/>
 <connect gate="G$1" pin="COIL+" pad="COIL+"/>
 <connect gate="G$1" pin="COIL-" pad="COIL-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FUSE" uservalue="yes">
+<description>Fuse/Fuseclips
+&lt;br&gt;
+Keystone Electronics 3568 Fuse
+&lt;br&gt;
+&lt;a href="http://www.mouser.com/ProductDetail/Keystone-Electronics/3568"&gt;Mouser Part&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="http://www.mouser.com/ds/2/215/568-742601.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;
+&lt;br&gt;
+Bussman/Eaton Midget Fuse Clip
+&lt;br&gt;
+&lt;a href="http://www.mouser.com/ProductDetail/Bussmann-Eaton/BK-1A3400-09-R/?qs=sGAEpiMZZMuG%252bgnN5hGYGzzlAelq2OxnKqVSMVjq8I4%3d"&gt;1A3400&lt;/a&gt;
+&lt;br&gt;
+&lt;br&gt;
+Schurter 0751.0110 Brass Fuse Clip
+&lt;br&gt;
+&lt;a href="http://www.mouser.com/ds/2/358/typ_OG__Clip__5x20-2553.pdf"&gt; Datasheet</description>
+<gates>
+<gate name="G$1" symbol="FUSE_HOLDER-1" x="7.62" y="0"/>
+</gates>
+<devices>
+<device name="_MINIBLADE" package="MINI-BLADE_FUSE_HOLDER">
+<connects>
+<connect gate="G$1" pin="P1" pad="L1 L2"/>
+<connect gate="G$1" pin="P2" pad="R1 R2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_MIDGET" package="1A3400_38.1MM">
+<connects>
+<connect gate="G$1" pin="P1" pad="P1 P2"/>
+<connect gate="G$1" pin="P2" pad="N3 N4" route="any"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_C1Q1206" package="1206">
+<connects>
+<connect gate="G$1" pin="P1" pad="1"/>
+<connect gate="G$1" pin="P2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_5X20MM" package="0751.0110">
+<connects>
+<connect gate="G$1" pin="P1" pad="L1 L2"/>
+<connect gate="G$1" pin="P2" pad="R1 R2"/>
 </connects>
 <technologies>
 <technology name=""/>
