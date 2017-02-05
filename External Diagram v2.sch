@@ -203,13 +203,8 @@
 <pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
 </symbol>
 <symbol name="LED">
-<wire x1="2.54" y1="3.81" x2="5.08" y2="2.54" width="0.254" layer="94"/>
-<wire x1="5.08" y1="2.54" x2="2.54" y2="1.27" width="0.254" layer="94"/>
 <wire x1="5.08" y1="3.81" x2="5.08" y2="2.54" width="0.254" layer="94"/>
 <wire x1="5.08" y1="2.54" x2="5.08" y2="1.27" width="0.254" layer="94"/>
-<wire x1="2.54" y1="3.81" x2="2.54" y2="2.54" width="0.254" layer="94"/>
-<wire x1="2.54" y1="2.54" x2="2.54" y2="1.27" width="0.254" layer="94"/>
-<wire x1="2.54" y1="2.54" x2="5.08" y2="2.54" width="0.1524" layer="94"/>
 <wire x1="3.302" y1="0.508" x2="4.699" y2="-0.889" width="0.1524" layer="94"/>
 <wire x1="4.445" y1="0.635" x2="5.842" y2="-0.762" width="0.1524" layer="94"/>
 <text x="-0.508" y="6.731" size="1.778" layer="95">&gt;NAME</text>
@@ -225,6 +220,11 @@
 <vertex x="5.842" y="-0.762"/>
 <vertex x="4.953" y="-0.381"/>
 <vertex x="5.461" y="0.127"/>
+</polygon>
+<polygon width="0.254" layer="94">
+<vertex x="2.54" y="3.81"/>
+<vertex x="2.54" y="1.27"/>
+<vertex x="5.08" y="2.54"/>
 </polygon>
 </symbol>
 <symbol name="POTENTIOMETER">
@@ -1298,9 +1298,11 @@ Source: Sonnenschein</description>
 <text x="279.4" y="195.58" size="1.778" layer="91">todo add BMS</text>
 <text x="279.4" y="190.5" size="1.778" layer="91">todo add canbus</text>
 <text x="243.84" y="114.3" size="1.778" layer="91">Does this need to be isolated from TS?</text>
-<text x="299.72" y="-15.24" size="1.778" layer="91">See FH EV12.2.15 </text>
+<text x="299.72" y="119.38" size="1.778" layer="91">See FH EV12.2.15 </text>
 <text x="182.88" y="142.24" size="1.778" layer="91">TODO: add 12VSupply</text>
 <text x="30.48" y="157.48" size="1.778" layer="91" rot="R90">Maintenance plug</text>
+<text x="241.3" y="-73.66" size="1.778" layer="91">12AWG grounding
+per FH EV4.1.4</text>
 </plain>
 <moduleinsts>
 <moduleinst name="PEDAL_BOX_BOARD" module="PEDAL_BOX_BOARD" x="795.02" y="162.56" smashed="yes">
@@ -1342,24 +1344,24 @@ Source: Sonnenschein</description>
 <instance part="BOTS" gate="SPST" x="759.46" y="228.6" rot="R270"/>
 <instance part="INERTIA_SW" gate="SPST" x="650.24" y="228.6" rot="R270"/>
 <instance part="COCKPIT_BRB" gate="SPST" x="629.92" y="228.6" rot="R270"/>
-<instance part="RIGHT_TSVP" gate="G$1" x="363.22" y="-43.18" rot="R90"/>
+<instance part="RIGHT_TSVP" gate="G$1" x="355.6" y="-33.02" rot="R180"/>
 <instance part="LEFT_TSVP" gate="G$1" x="421.64" y="378.46"/>
 <instance part="GND8" gate="1" x="434.34" y="381" rot="R90"/>
-<instance part="GND9" gate="1" x="360.68" y="-27.94" rot="R180"/>
-<instance part="TSMP+" gate="G$1" x="302.26" y="-25.4"/>
-<instance part="TSMP-" gate="G$1" x="302.26" y="-30.48"/>
-<instance part="MEASURE_GND" gate="G$1" x="302.26" y="-35.56"/>
-<instance part="MEASURE_12V" gate="G$1" x="302.26" y="-40.64"/>
+<instance part="GND9" gate="1" x="340.36" y="-35.56" rot="R270"/>
+<instance part="TSMP+" gate="G$1" x="302.26" y="-38.1"/>
+<instance part="TSMP-" gate="G$1" x="302.26" y="-43.18"/>
+<instance part="MEASURE_GND" gate="G$1" x="302.26" y="-48.26"/>
+<instance part="MEASURE_12V" gate="G$1" x="302.26" y="-53.34"/>
 <instance part="SL1" gate="G$1" x="365.76" y="228.6"/>
-<instance part="TSMS" gate="SPST" x="353.06" y="-50.8" rot="MR270"/>
+<instance part="TSMS" gate="SPST" x="353.06" y="-45.72" rot="MR270"/>
 <instance part="TSMP+2" gate="G$1" x="297.18" y="127" rot="R90"/>
 <instance part="TSMP-2" gate="G$1" x="292.1" y="127" rot="R90"/>
 <instance part="TSMP-1" gate="G$1" x="292.1" y="139.7" rot="MR270"/>
 <instance part="TSMP+1" gate="G$1" x="297.18" y="139.7" rot="MR270"/>
-<instance part="GND10" gate="1" x="294.64" y="-35.56" rot="R270"/>
+<instance part="GND10" gate="1" x="294.64" y="-48.26" rot="R270"/>
 <instance part="TSAL/TSEL" gate="G$1" x="396.24" y="170.18" rot="R90"/>
 <instance part="GND11" gate="1" x="393.7" y="182.88" rot="R180"/>
-<instance part="MOLEX_IMPERIUM_2" gate="G$1" x="106.68" y="205.74" rot="R180"/>
+<instance part="MOLEX_IMPERIUM_2" gate="G$1" x="106.68" y="210.82" rot="R180"/>
 <instance part="MOLEX_IMPERIUM_1" gate="G$1" x="121.92" y="213.36"/>
 <instance part="BUTTON_START" gate="SPST_MOM" x="652.78" y="129.54" rot="R180"/>
 <instance part="BUTTON_TOGGLE" gate="SPST_MOM" x="665.48" y="129.54" rot="R180"/>
@@ -1558,7 +1560,7 @@ Source: Sonnenschein</description>
 <segment>
 <pinref part="RIGHT_TSVP" gate="G$1" pin="C"/>
 <pinref part="GND9" gate="1" pin="GND"/>
-<wire x1="360.68" y1="-30.48" x2="360.68" y2="-35.56" width="0.1524" layer="91"/>
+<wire x1="342.9" y1="-35.56" x2="347.98" y2="-35.56" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <portref moduleinst="COOLING_BOARD" port="GND_2"/>
@@ -1579,7 +1581,7 @@ Source: Sonnenschein</description>
 <segment>
 <pinref part="MEASURE_GND" gate="G$1" pin="1"/>
 <pinref part="GND10" gate="1" pin="GND"/>
-<wire x1="297.18" y1="-35.56" x2="299.72" y2="-35.56" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="-48.26" x2="299.72" y2="-48.26" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="TSAL/TSEL" gate="G$1" pin="C"/>
@@ -2025,10 +2027,10 @@ Source: Sonnenschein</description>
 </net>
 <net name="N$14" class="0">
 <segment>
-<wire x1="287.02" y1="-17.78" x2="287.02" y2="-88.9" width="1.27" layer="91"/>
+<wire x1="287.02" y1="-27.94" x2="287.02" y2="-88.9" width="1.27" layer="91"/>
 <wire x1="287.02" y1="-88.9" x2="365.76" y2="-88.9" width="1.27" layer="91"/>
-<wire x1="365.76" y1="-88.9" x2="365.76" y2="-17.78" width="1.27" layer="91"/>
-<wire x1="365.76" y1="-17.78" x2="287.02" y2="-17.78" width="1.27" layer="91"/>
+<wire x1="365.76" y1="-88.9" x2="365.76" y2="-27.94" width="1.27" layer="91"/>
+<wire x1="365.76" y1="-27.94" x2="287.02" y2="-27.94" width="1.27" layer="91"/>
 </segment>
 </net>
 <net name="N$16" class="0">
@@ -2154,9 +2156,9 @@ Source: Sonnenschein</description>
 <net name="SHUTDOWN6" class="0">
 <segment>
 <pinref part="TSMS" gate="SPST" pin="S"/>
-<wire x1="347.98" y1="-53.34" x2="342.9" y2="-53.34" width="0.1524" layer="91"/>
-<wire x1="342.9" y1="-53.34" x2="342.9" y2="-55.88" width="0.1524" layer="91"/>
-<wire x1="342.9" y1="-55.88" x2="416.56" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="347.98" y1="-48.26" x2="337.82" y2="-48.26" width="0.1524" layer="91"/>
+<wire x1="337.82" y1="-48.26" x2="337.82" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="337.82" y1="-55.88" x2="416.56" y2="-55.88" width="0.1524" layer="91"/>
 <label x="370.84" y="-55.88" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -2189,26 +2191,26 @@ Source: Sonnenschein</description>
 <net name="N$20" class="0">
 <segment>
 <pinref part="TSMP+2" gate="G$1" pin="1"/>
-<wire x1="297.18" y1="124.46" x2="297.18" y2="-25.4" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="124.46" x2="297.18" y2="-38.1" width="0.1524" layer="91"/>
 <pinref part="TSMP+" gate="G$1" pin="1"/>
-<wire x1="297.18" y1="-25.4" x2="299.72" y2="-25.4" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="-38.1" x2="299.72" y2="-38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$38" class="0">
 <segment>
 <pinref part="TSMP-" gate="G$1" pin="1"/>
 <pinref part="TSMP-2" gate="G$1" pin="1"/>
-<wire x1="299.72" y1="-30.48" x2="292.1" y2="-30.48" width="0.1524" layer="91"/>
-<wire x1="292.1" y1="-30.48" x2="292.1" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="299.72" y1="-43.18" x2="292.1" y2="-43.18" width="0.1524" layer="91"/>
+<wire x1="292.1" y1="-43.18" x2="292.1" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="HV+" class="0">
 <segment>
 <pinref part="MOLEX_IMPERIUM_2" gate="G$1" pin="1"/>
 <pinref part="U$1" gate="G$1" pin="DC+"/>
-<wire x1="101.6" y1="208.28" x2="-10.16" y2="208.28" width="0.3048" layer="91"/>
-<wire x1="-10.16" y1="208.28" x2="-10.16" y2="203.2" width="0.3048" layer="91"/>
-<label x="5.08" y="208.28" size="1.778" layer="95"/>
+<wire x1="101.6" y1="213.36" x2="-10.16" y2="213.36" width="0.3048" layer="91"/>
+<wire x1="-10.16" y1="213.36" x2="-10.16" y2="203.2" width="0.3048" layer="91"/>
+<label x="5.08" y="213.36" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="152.4" y1="190.5" x2="228.6" y2="190.5" width="0.1524" layer="91"/>
@@ -2222,9 +2224,9 @@ Source: Sonnenschein</description>
 <segment>
 <pinref part="U$1" gate="G$1" pin="DC-"/>
 <pinref part="MOLEX_IMPERIUM_2" gate="G$1" pin="2"/>
-<label x="5.08" y="205.74" size="1.778" layer="95"/>
-<wire x1="101.6" y1="205.74" x2="0" y2="205.74" width="0.3048" layer="91"/>
-<wire x1="0" y1="205.74" x2="0" y2="203.2" width="0.3048" layer="91"/>
+<label x="5.08" y="210.82" size="1.778" layer="95"/>
+<wire x1="101.6" y1="210.82" x2="0" y2="210.82" width="0.3048" layer="91"/>
+<wire x1="0" y1="210.82" x2="0" y2="203.2" width="0.3048" layer="91"/>
 </segment>
 <segment>
 <wire x1="149.86" y1="193.04" x2="231.14" y2="193.04" width="0.1524" layer="91"/>
@@ -2413,10 +2415,10 @@ Source: Sonnenschein</description>
 <wire x1="299.72" y1="-66.04" x2="320.04" y2="-66.04" width="0.1524" layer="91"/>
 <wire x1="320.04" y1="-66.04" x2="320.04" y2="-78.74" width="0.1524" layer="91"/>
 <pinref part="MEASURE_12V" gate="G$1" pin="1"/>
-<wire x1="299.72" y1="-40.64" x2="292.1" y2="-40.64" width="0.1524" layer="91"/>
-<wire x1="292.1" y1="-40.64" x2="292.1" y2="-55.88" width="0.1524" layer="91"/>
-<wire x1="292.1" y1="-55.88" x2="320.04" y2="-55.88" width="0.1524" layer="91"/>
-<wire x1="320.04" y1="-66.04" x2="320.04" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="299.72" y1="-53.34" x2="292.1" y2="-53.34" width="0.1524" layer="91"/>
+<wire x1="292.1" y1="-53.34" x2="292.1" y2="-58.42" width="0.1524" layer="91"/>
+<wire x1="292.1" y1="-58.42" x2="320.04" y2="-58.42" width="0.1524" layer="91"/>
+<wire x1="320.04" y1="-66.04" x2="320.04" y2="-58.42" width="0.1524" layer="91"/>
 <junction x="320.04" y="-66.04"/>
 </segment>
 </net>
@@ -2922,9 +2924,8 @@ Source: Sonnenschein</description>
 </segment>
 <segment>
 <pinref part="RIGHT_TSVP" gate="G$1" pin="A"/>
-<wire x1="416.56" y1="-45.72" x2="360.68" y2="-45.72" width="0.1524" layer="91"/>
-<wire x1="360.68" y1="-43.18" x2="360.68" y2="-45.72" width="0.1524" layer="91"/>
-<label x="370.84" y="-45.72" size="1.778" layer="95"/>
+<wire x1="416.56" y1="-35.56" x2="355.6" y2="-35.56" width="0.1524" layer="91"/>
+<label x="370.84" y="-35.56" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TSAL+" class="0">
@@ -2964,8 +2965,8 @@ Source: Sonnenschein</description>
 </segment>
 <segment>
 <pinref part="TSMS" gate="SPST" pin="P"/>
-<wire x1="416.56" y1="-50.8" x2="358.14" y2="-50.8" width="0.1524" layer="91"/>
-<label x="370.84" y="-50.8" size="1.778" layer="95"/>
+<wire x1="416.56" y1="-45.72" x2="358.14" y2="-45.72" width="0.1524" layer="91"/>
+<label x="370.84" y="-45.72" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$18" class="0">

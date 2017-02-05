@@ -484,6 +484,20 @@ Source: Sonnenschein</description>
 <text x="-2.413" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 <text x="-4.064" y="-2.921" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
 </package>
+<package name="G2RL-2">
+<wire x1="-1.2954" y1="-2.6543" x2="-1.2954" y2="10.16" width="0.127" layer="21"/>
+<wire x1="-1.2954" y1="-2.6543" x2="27.3558" y2="-2.6543" width="0.127" layer="21"/>
+<wire x1="27.3558" y1="-2.6543" x2="27.3558" y2="10.16" width="0.127" layer="21"/>
+<wire x1="27.3558" y1="10.16" x2="-1.2954" y2="10.16" width="0.127" layer="21"/>
+<pad name="2" x="10.0076" y="0" drill="1.5" shape="square"/>
+<pad name="3" x="5.0038" y="0" drill="1.5" shape="square"/>
+<pad name="4" x="0" y="0" drill="1.5" shape="square"/>
+<pad name="5" x="0" y="7.493" drill="1.5" shape="square"/>
+<pad name="6" x="5.0038" y="7.493" drill="1.5" shape="square"/>
+<pad name="7" x="10.0076" y="7.493" drill="1.5" shape="square"/>
+<pad name="COIL+" x="25.019" y="0" drill="1.5" shape="square"/>
+<pad name="COIL-" x="25.019" y="7.493" drill="1.5" shape="square"/>
+</package>
 </packages>
 <symbols>
 <symbol name="DPDT_RELAY_PANASONIC_JW2SN-DC9V">
@@ -595,7 +609,7 @@ Source: Sonnenschein</description>
 <vertex x="2.794" y="-0.762"/>
 </polygon>
 </symbol>
-<symbol name="DPDT_RELAY_PANASONIC_JW2SN-DC5V">
+<symbol name="G2RL-2">
 <circle x="15.24" y="0" radius="0.635" width="0.254" layer="94"/>
 <circle x="17.78" y="5.08" radius="0.635" width="0.254" layer="94"/>
 <circle x="12.7" y="5.08" radius="0.635" width="0.254" layer="94"/>
@@ -643,7 +657,7 @@ Source: Sonnenschein</description>
 <wire x1="30.48" y1="7.62" x2="30.48" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="30.48" y1="-2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="-2.54" y1="-2.54" x2="-2.54" y2="7.62" width="0.254" layer="94"/>
-<text x="33.02" y="-5.08" size="1.778" layer="94" rot="R90">JW2SN-DC5V</text>
+<text x="33.02" y="-3.81" size="1.778" layer="94" rot="R90">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -704,27 +718,28 @@ Source: Sonnenschein</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="DPDT_RELAY_PANASONIC_JW2SN-DC5V">
-<description>Double Pull Double Throw Relay 5VDC
+<deviceset name="G2RL-2-DC5">
+<description>Omron G2RL-2 Double Pull Double Throw Relay
 &lt;br&gt;
+Coil Voltage: 5VDC (3.5-7.5VDC @60ºC)
 &lt;br&gt;
-&lt;a href="http://www.mouser.com/ds/2/316/jw-catalog-461998.pdf"&gt;Datasheet&lt;/a&gt;
+Contact Amperage: 8A at 30VDC
 &lt;br&gt;
-&lt;a href="http://www.mouser.com/ProductDetail/Panasonic-Industrial-Devices/JW2SN-DC5V"&gt;Product Page&lt;/a&gt;</description>
+&lt;a href="https://www.omron.com/ecb/products/pdf/en-g2rl.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
-<gate name="-1" symbol="DPDT_RELAY_PANASONIC_JW2SN-DC5V" x="-17.78" y="-7.62"/>
+<gate name="G$1" symbol="G2RL-2" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="DPDT_RELAY_PANASONIC_JW2SN">
+<device name="" package="G2RL-2">
 <connects>
-<connect gate="-1" pin="2" pad="2"/>
-<connect gate="-1" pin="3" pad="3"/>
-<connect gate="-1" pin="4" pad="4"/>
-<connect gate="-1" pin="5" pad="5"/>
-<connect gate="-1" pin="6" pad="6"/>
-<connect gate="-1" pin="7" pad="7"/>
-<connect gate="-1" pin="COIL+" pad="COIL+"/>
-<connect gate="-1" pin="COIL-" pad="COIL-"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="COIL+" pad="COIL+"/>
+<connect gate="G$1" pin="COIL-" pad="COIL-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -789,9 +804,9 @@ Source: Sonnenschein</description>
 <part name="GND9" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="SOFTWARE_SHUTOFF" library="HyTechSymbols" deviceset="SWITCH_SPST" device="" value="Normally Open"/>
 <part name="BSPD" library="HyTechSymbols" deviceset="SWITCH_SPST" device="" value="Normally Closed"/>
-<part name="U$4" library="HyTechDevices" deviceset="DPDT_RELAY_PANASONIC_JW2SN-DC5V" device=""/>
 <part name="GND10" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="GLV_SYSTEMS2" library="HyTechSymbols" deviceset="VIN" device="" value="VCC"/>
+<part name="U$4" library="HyTechDevices" deviceset="G2RL-2-DC5" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -856,9 +871,9 @@ Battery Pack</text>
 <instance part="GND9" gate="1" x="88.9" y="63.5" rot="R270"/>
 <instance part="SOFTWARE_SHUTOFF" gate="SPST" x="71.12" y="91.44" rot="MR270"/>
 <instance part="BSPD" gate="SPST" x="43.18" y="91.44" rot="MR270"/>
-<instance part="U$4" gate="-1" x="104.14" y="132.08" rot="R270"/>
 <instance part="GND10" gate="1" x="114.3" y="132.08" rot="MR180"/>
 <instance part="GLV_SYSTEMS2" gate="G$1" x="124.46" y="104.14" rot="R90"/>
+<instance part="U$4" gate="G$1" x="104.14" y="132.08" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -931,9 +946,9 @@ Battery Pack</text>
 <wire x1="91.44" y1="53.34" x2="91.44" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$4" gate="-1" pin="COIL+"/>
 <pinref part="GND10" gate="1" pin="GND"/>
 <wire x1="114.3" y1="129.54" x2="114.3" y2="127" width="0.1524" layer="91"/>
+<pinref part="U$4" gate="G$1" pin="COIL+"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -1123,12 +1138,12 @@ Battery Pack</text>
 <pinref part="AMS_SOFTWARE_LATCH" gate="G$1" pin="IO1"/>
 <wire x1="129.54" y1="127" x2="116.84" y2="127" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="127" x2="116.84" y2="114.3" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="-1" pin="4"/>
 <wire x1="116.84" y1="114.3" x2="114.3" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="AMS_RELAY_DRIVE" gate="G$1" pin="IO2"/>
 <wire x1="124.46" y1="109.22" x2="116.84" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="109.22" x2="116.84" y2="114.3" width="0.1524" layer="91"/>
 <junction x="116.84" y="114.3"/>
+<pinref part="U$4" gate="G$1" pin="4"/>
 </segment>
 </net>
 <net name="N$14" class="0">
@@ -1257,25 +1272,23 @@ Battery Pack</text>
 </net>
 <net name="N$5" class="0">
 <segment>
-<pinref part="U$4" gate="-1" pin="6"/>
 <pinref part="U$1" gate="G$1" pin="5"/>
 <wire x1="88.9" y1="106.68" x2="99.06" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="U$4" gate="G$1" pin="6"/>
 </segment>
 </net>
 <net name="N$8" class="0">
 <segment>
 <pinref part="COCKPIT_BRB" gate="SPST" pin="P"/>
 <wire x1="116.84" y1="91.44" x2="116.84" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="-1" pin="5"/>
 <wire x1="116.84" y1="104.14" x2="114.3" y2="104.14" width="0.1524" layer="91"/>
+<pinref part="U$4" gate="G$1" pin="5"/>
 </segment>
 </net>
 <net name="N$16" class="0">
 <segment>
-<pinref part="U$4" gate="-1" pin="3"/>
 <wire x1="99.06" y1="116.84" x2="96.52" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="116.84" x2="96.52" y2="127" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="-1" pin="COIL-"/>
 <wire x1="96.52" y1="127" x2="99.06" y2="127" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="127" x2="96.52" y2="137.16" width="0.1524" layer="91"/>
 <junction x="96.52" y="127"/>
@@ -1283,6 +1296,8 @@ Battery Pack</text>
 <wire x1="124.46" y1="137.16" x2="124.46" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="AMS_SOFTWARE_LATCH" gate="G$1" pin="IO2"/>
 <wire x1="124.46" y1="132.08" x2="129.54" y2="132.08" width="0.1524" layer="91"/>
+<pinref part="U$4" gate="G$1" pin="3"/>
+<pinref part="U$4" gate="G$1" pin="COIL-"/>
 </segment>
 </net>
 </nets>

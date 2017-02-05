@@ -3541,7 +3541,7 @@ VI-J71-CZ</text>
 <smd name="P$1" x="0" y="0" dx="6.35" dy="3.175" layer="1"/>
 <text x="-3.175" y="-3.175" size="1.27" layer="25">&gt;NAME</text>
 </package>
-<package name="DPDT_RELAY_PANASONIC_JW2SN">
+<package name="JW2SN">
 <wire x1="-1.2954" y1="-2.6543" x2="-1.2954" y2="10.16" width="0.127" layer="21"/>
 <wire x1="-1.2954" y1="-2.6543" x2="27.3558" y2="-2.6543" width="0.127" layer="21"/>
 <wire x1="27.3558" y1="-2.6543" x2="27.3558" y2="10.16" width="0.127" layer="21"/>
@@ -6750,6 +6750,20 @@ Source: transistor-fet.lbr</description>
 <text x="-4" y="-2" size="1.27" layer="21">1</text>
 <text x="3" y="-2" size="1.27" layer="21">2</text>
 </package>
+<package name="G2RL-2">
+<wire x1="-1.2954" y1="-2.6543" x2="-1.2954" y2="10.16" width="0.127" layer="21"/>
+<wire x1="-1.2954" y1="-2.6543" x2="27.3558" y2="-2.6543" width="0.127" layer="21"/>
+<wire x1="27.3558" y1="-2.6543" x2="27.3558" y2="10.16" width="0.127" layer="21"/>
+<wire x1="27.3558" y1="10.16" x2="-1.2954" y2="10.16" width="0.127" layer="21"/>
+<pad name="2" x="10.0076" y="0" drill="1.5" shape="square"/>
+<pad name="3" x="5.0038" y="0" drill="1.5" shape="square"/>
+<pad name="4" x="0" y="0" drill="1.5" shape="square"/>
+<pad name="5" x="0" y="7.493" drill="1.5" shape="square"/>
+<pad name="6" x="5.0038" y="7.493" drill="1.5" shape="square"/>
+<pad name="7" x="10.0076" y="7.493" drill="1.5" shape="square"/>
+<pad name="COIL+" x="25.019" y="0" drill="1.5" shape="square"/>
+<pad name="COIL-" x="25.019" y="7.493" drill="1.5" shape="square"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ARDUINO_NANO">
@@ -7147,57 +7161,7 @@ DC/DC</text>
 <rectangle x1="0" y1="0" x2="5.08" y2="5.08" layer="94"/>
 <pin name="P$1" x="-2.54" y="2.54" length="middle"/>
 </symbol>
-<symbol name="DPDT_RELAY_PANASONIC_JW2SN-DC9V">
-<circle x="15.24" y="0" radius="0.635" width="0.254" layer="94"/>
-<circle x="17.78" y="5.08" radius="0.635" width="0.254" layer="94"/>
-<circle x="12.7" y="5.08" radius="0.635" width="0.254" layer="94"/>
-<circle x="25.4" y="0" radius="0.635" width="0.254" layer="94"/>
-<circle x="27.94" y="5.08" radius="0.635" width="0.254" layer="94"/>
-<circle x="22.86" y="5.08" radius="0.635" width="0.254" layer="94"/>
-<wire x1="0" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
-<wire x1="5.08" y1="5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
-<wire x1="7.62" y1="5.08" x2="10.16" y2="5.08" width="0.254" layer="94"/>
-<wire x1="10.16" y1="5.08" x2="10.16" y2="0" width="0.254" layer="94"/>
-<wire x1="10.16" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
-<wire x1="5.08" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
-<wire x1="2.54" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="5.08" width="0.254" layer="94"/>
-<wire x1="2.54" y1="0" x2="7.62" y2="5.08" width="0.254" layer="94"/>
-<wire x1="5.08" y1="5.08" x2="5.08" y2="10.16" width="0.254" layer="94"/>
-<wire x1="5.08" y1="0" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="15.24" y1="-5.08" x2="15.24" y2="-0.762" width="0.254" layer="94"/>
-<wire x1="17.78" y1="10.16" x2="17.78" y2="5.842" width="0.254" layer="94"/>
-<wire x1="12.7" y1="10.16" x2="12.7" y2="5.842" width="0.254" layer="94"/>
-<wire x1="14.9225" y1="0.635" x2="13.0175" y2="4.445" width="0.254" layer="94"/>
-<wire x1="25.4" y1="-5.08" x2="25.4" y2="-0.762" width="0.254" layer="94"/>
-<wire x1="27.94" y1="10.16" x2="27.94" y2="5.842" width="0.254" layer="94"/>
-<wire x1="22.86" y1="10.16" x2="22.86" y2="5.842" width="0.254" layer="94"/>
-<wire x1="25.0825" y1="0.635" x2="23.1775" y2="4.445" width="0.254" layer="94"/>
-<pin name="2" x="12.7" y="10.16" visible="off" length="point" swaplevel="2"/>
-<pin name="3" x="15.24" y="-5.08" visible="off" length="point" swaplevel="3"/>
-<pin name="4" x="17.78" y="10.16" visible="off" length="point" swaplevel="4"/>
-<pin name="5" x="27.94" y="10.16" visible="off" length="point" swaplevel="5"/>
-<pin name="6" x="25.4" y="-5.08" visible="off" length="point" swaplevel="6"/>
-<pin name="7" x="22.86" y="10.16" visible="off" length="point" swaplevel="7"/>
-<pin name="COIL+" x="5.08" y="10.16" visible="off" length="point" swaplevel="1" rot="R180"/>
-<pin name="COIL-" x="5.08" y="-5.08" visible="off" length="point" swaplevel="8" rot="R180"/>
-<polygon width="0.0254" layer="94">
-<vertex x="12.954" y="3.556"/>
-<vertex x="13.716" y="4.064"/>
-<vertex x="12.954" y="4.572"/>
-</polygon>
-<polygon width="0.0254" layer="94">
-<vertex x="23.114" y="3.556"/>
-<vertex x="23.876" y="4.064"/>
-<vertex x="23.114" y="4.572"/>
-</polygon>
-<text x="33.02" y="-5.08" size="1.778" layer="94" rot="R90">JW2SN-DC9V</text>
-<wire x1="-2.54" y1="7.62" x2="30.48" y2="7.62" width="0.254" layer="94"/>
-<wire x1="30.48" y1="7.62" x2="30.48" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="30.48" y1="-2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="7.62" width="0.254" layer="94"/>
-</symbol>
-<symbol name="DPDT_RELAY_PANASONIC_JW2SN-DC12V">
+<symbol name="JW2SN">
 <circle x="15.24" y="0" radius="0.635" width="0.254" layer="94"/>
 <circle x="17.78" y="5.08" radius="0.635" width="0.254" layer="94"/>
 <circle x="12.7" y="5.08" radius="0.635" width="0.254" layer="94"/>
@@ -7245,57 +7209,7 @@ DC/DC</text>
 <wire x1="30.48" y1="7.62" x2="30.48" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="30.48" y1="-2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="-2.54" y1="-2.54" x2="-2.54" y2="7.62" width="0.254" layer="94"/>
-<text x="33.02" y="-6.35" size="1.778" layer="94" rot="R90">JW2SN-DC12V</text>
-</symbol>
-<symbol name="DPDT_RELAY_PANASONIC_JW2SN-DC5V">
-<circle x="15.24" y="0" radius="0.635" width="0.254" layer="94"/>
-<circle x="17.78" y="5.08" radius="0.635" width="0.254" layer="94"/>
-<circle x="12.7" y="5.08" radius="0.635" width="0.254" layer="94"/>
-<circle x="25.4" y="0" radius="0.635" width="0.254" layer="94"/>
-<circle x="27.94" y="5.08" radius="0.635" width="0.254" layer="94"/>
-<circle x="22.86" y="5.08" radius="0.635" width="0.254" layer="94"/>
-<wire x1="0" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
-<wire x1="5.08" y1="5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
-<wire x1="7.62" y1="5.08" x2="10.16" y2="5.08" width="0.254" layer="94"/>
-<wire x1="10.16" y1="5.08" x2="10.16" y2="0" width="0.254" layer="94"/>
-<wire x1="10.16" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
-<wire x1="5.08" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
-<wire x1="2.54" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="5.08" width="0.254" layer="94"/>
-<wire x1="2.54" y1="0" x2="7.62" y2="5.08" width="0.254" layer="94"/>
-<wire x1="5.08" y1="5.08" x2="5.08" y2="10.16" width="0.254" layer="94"/>
-<wire x1="5.08" y1="0" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="15.24" y1="-5.08" x2="15.24" y2="-0.762" width="0.254" layer="94"/>
-<wire x1="17.78" y1="10.16" x2="17.78" y2="5.842" width="0.254" layer="94"/>
-<wire x1="12.7" y1="10.16" x2="12.7" y2="5.842" width="0.254" layer="94"/>
-<wire x1="14.9225" y1="0.635" x2="13.0175" y2="4.445" width="0.254" layer="94"/>
-<wire x1="25.4" y1="-5.08" x2="25.4" y2="-0.762" width="0.254" layer="94"/>
-<wire x1="27.94" y1="10.16" x2="27.94" y2="5.842" width="0.254" layer="94"/>
-<wire x1="22.86" y1="10.16" x2="22.86" y2="5.842" width="0.254" layer="94"/>
-<wire x1="25.0825" y1="0.635" x2="23.1775" y2="4.445" width="0.254" layer="94"/>
-<pin name="2" x="12.7" y="10.16" visible="off" length="point" swaplevel="2"/>
-<pin name="3" x="15.24" y="-5.08" visible="off" length="point" swaplevel="3"/>
-<pin name="4" x="17.78" y="10.16" visible="off" length="point" swaplevel="4"/>
-<pin name="5" x="27.94" y="10.16" visible="off" length="point" swaplevel="5"/>
-<pin name="6" x="25.4" y="-5.08" visible="off" length="point" swaplevel="6"/>
-<pin name="7" x="22.86" y="10.16" visible="off" length="point" swaplevel="7"/>
-<pin name="COIL+" x="5.08" y="10.16" visible="off" length="point" swaplevel="1" rot="R180"/>
-<pin name="COIL-" x="5.08" y="-5.08" visible="off" length="point" swaplevel="8" rot="R180"/>
-<polygon width="0.0254" layer="94">
-<vertex x="12.954" y="3.556"/>
-<vertex x="13.716" y="4.064"/>
-<vertex x="12.954" y="4.572"/>
-</polygon>
-<polygon width="0.0254" layer="94">
-<vertex x="23.114" y="3.556"/>
-<vertex x="23.876" y="4.064"/>
-<vertex x="23.114" y="4.572"/>
-</polygon>
-<wire x1="-2.54" y1="7.62" x2="30.48" y2="7.62" width="0.254" layer="94"/>
-<wire x1="30.48" y1="7.62" x2="30.48" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="30.48" y1="-2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="7.62" width="0.254" layer="94"/>
-<text x="33.02" y="-5.08" size="1.778" layer="94" rot="R90">JW2SN-DC5V</text>
+<text x="33.02" y="-5.08" size="1.778" layer="94" rot="R90">&gt;VALUE</text>
 </symbol>
 <symbol name="DC/DC-EIGHTH_BRICK">
 <description>&lt;H2&gt;Eighth Brick DC/DC 8 pin&lt;/h2&gt;</description>
@@ -9055,6 +8969,56 @@ DC/DC</text>
 <pin name="S" x="5.08" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
 <pin name="O" x="0" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
 </symbol>
+<symbol name="G2RL-2">
+<circle x="15.24" y="0" radius="0.635" width="0.254" layer="94"/>
+<circle x="17.78" y="5.08" radius="0.635" width="0.254" layer="94"/>
+<circle x="12.7" y="5.08" radius="0.635" width="0.254" layer="94"/>
+<circle x="25.4" y="0" radius="0.635" width="0.254" layer="94"/>
+<circle x="27.94" y="5.08" radius="0.635" width="0.254" layer="94"/>
+<circle x="22.86" y="5.08" radius="0.635" width="0.254" layer="94"/>
+<wire x1="0" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="10.16" y2="5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="5.08" x2="10.16" y2="0" width="0.254" layer="94"/>
+<wire x1="10.16" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="5.08" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="5.08" y2="10.16" width="0.254" layer="94"/>
+<wire x1="5.08" y1="0" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-5.08" x2="15.24" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="17.78" y1="10.16" x2="17.78" y2="5.842" width="0.254" layer="94"/>
+<wire x1="12.7" y1="10.16" x2="12.7" y2="5.842" width="0.254" layer="94"/>
+<wire x1="14.9225" y1="0.635" x2="13.0175" y2="4.445" width="0.254" layer="94"/>
+<wire x1="25.4" y1="-5.08" x2="25.4" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="27.94" y1="10.16" x2="27.94" y2="5.842" width="0.254" layer="94"/>
+<wire x1="22.86" y1="10.16" x2="22.86" y2="5.842" width="0.254" layer="94"/>
+<wire x1="25.0825" y1="0.635" x2="23.1775" y2="4.445" width="0.254" layer="94"/>
+<pin name="2" x="12.7" y="10.16" visible="off" length="point" swaplevel="2"/>
+<pin name="3" x="15.24" y="-5.08" visible="off" length="point" swaplevel="3"/>
+<pin name="4" x="17.78" y="10.16" visible="off" length="point" swaplevel="4"/>
+<pin name="5" x="27.94" y="10.16" visible="off" length="point" swaplevel="5"/>
+<pin name="6" x="25.4" y="-5.08" visible="off" length="point" swaplevel="6"/>
+<pin name="7" x="22.86" y="10.16" visible="off" length="point" swaplevel="7"/>
+<pin name="COIL+" x="5.08" y="10.16" visible="off" length="point" swaplevel="1" rot="R180"/>
+<pin name="COIL-" x="5.08" y="-5.08" visible="off" length="point" swaplevel="8" rot="R180"/>
+<polygon width="0.0254" layer="94">
+<vertex x="12.954" y="3.556"/>
+<vertex x="13.716" y="4.064"/>
+<vertex x="12.954" y="4.572"/>
+</polygon>
+<polygon width="0.0254" layer="94">
+<vertex x="23.114" y="3.556"/>
+<vertex x="23.876" y="4.064"/>
+<vertex x="23.114" y="4.572"/>
+</polygon>
+<wire x1="-2.54" y1="7.62" x2="30.48" y2="7.62" width="0.254" layer="94"/>
+<wire x1="30.48" y1="7.62" x2="30.48" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="30.48" y1="-2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="7.62" width="0.254" layer="94"/>
+<text x="33.02" y="-3.81" size="1.778" layer="94" rot="R90">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="ARDUINO_NANO">
@@ -9871,18 +9835,18 @@ Standard 7805 5V regulator. IGO (Input Ground Output). Spark Fun Electronics SKU
 </device>
 </devices>
 </deviceset>
-<deviceset name="DPDT_RELAY_PANASONIC_JW2SN-DC9V">
-<description>Double Pull Double Throw Relay 9VDC
+<deviceset name="JW2SN-DC9V">
+<description>Panasonic Double Pull Double Throw Relay 9VDC
 &lt;br&gt;
 &lt;br&gt;
 &lt;a href="http://www.mouser.com/ds/2/316/jw-catalog-461998.pdf"&gt;Datasheet&lt;/a&gt;
 &lt;br&gt;
 &lt;a href="http://www.mouser.com/ProductDetail/Panasonic-Industrial-Devices/JW2SN-DC9V"&gt;Product Page&lt;/a&gt;</description>
 <gates>
-<gate name="G$1" symbol="DPDT_RELAY_PANASONIC_JW2SN-DC9V" x="-17.78" y="-7.62"/>
+<gate name="G$1" symbol="JW2SN" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="DPDT_RELAY_PANASONIC_JW2SN">
+<device name="" package="JW2SN">
 <connects>
 <connect gate="G$1" pin="2" pad="2"/>
 <connect gate="G$1" pin="3" pad="3"/>
@@ -9899,27 +9863,27 @@ Standard 7805 5V regulator. IGO (Input Ground Output). Spark Fun Electronics SKU
 </device>
 </devices>
 </deviceset>
-<deviceset name="DPDT_RELAY_PANASONIC_JW2SN-DC12V">
-<description>Double Pull Double Throw Relay 12VDC
+<deviceset name="JW2SN-DC12V">
+<description>Panasonic Double Pull Double Throw Relay 12VDC
 &lt;br&gt;
 &lt;br&gt;
 &lt;a href="http://www.mouser.com/ds/2/316/jw-catalog-461998.pdf"&gt;Datasheet&lt;/a&gt;
 &lt;br&gt;
 &lt;a href="http://www.mouser.com/ProductDetail/Panasonic-Industrial-Devices/JW2SN-DC12V"&gt;Product Page&lt;/a&gt;</description>
 <gates>
-<gate name="-1" symbol="DPDT_RELAY_PANASONIC_JW2SN-DC12V" x="-17.78" y="-7.62"/>
+<gate name="G$1" symbol="JW2SN" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="DPDT_RELAY_PANASONIC_JW2SN">
+<device name="" package="JW2SN">
 <connects>
-<connect gate="-1" pin="2" pad="2"/>
-<connect gate="-1" pin="3" pad="3"/>
-<connect gate="-1" pin="4" pad="4"/>
-<connect gate="-1" pin="5" pad="5"/>
-<connect gate="-1" pin="6" pad="6"/>
-<connect gate="-1" pin="7" pad="7"/>
-<connect gate="-1" pin="COIL+" pad="COIL+"/>
-<connect gate="-1" pin="COIL-" pad="COIL-"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="COIL+" pad="COIL+"/>
+<connect gate="G$1" pin="COIL-" pad="COIL-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -9927,18 +9891,18 @@ Standard 7805 5V regulator. IGO (Input Ground Output). Spark Fun Electronics SKU
 </device>
 </devices>
 </deviceset>
-<deviceset name="DPDT_RELAY_PANASONIC_JW2SN-DC5V">
-<description>Double Pull Double Throw Relay 5VDC
+<deviceset name="JW2SN-DC5V">
+<description>Panasonic Double Pull Double Throw Relay 5VDC
 &lt;br&gt;
 &lt;br&gt;
 &lt;a href="http://www.mouser.com/ds/2/316/jw-catalog-461998.pdf"&gt;Datasheet&lt;/a&gt;
 &lt;br&gt;
 &lt;a href="http://www.mouser.com/ProductDetail/Panasonic-Industrial-Devices/JW2SN-DC5V"&gt;Product Page&lt;/a&gt;</description>
 <gates>
-<gate name="-1" symbol="DPDT_RELAY_PANASONIC_JW2SN-DC5V" x="-17.78" y="-7.62"/>
+<gate name="-1" symbol="JW2SN" x="-17.78" y="-7.62"/>
 </gates>
 <devices>
-<device name="" package="DPDT_RELAY_PANASONIC_JW2SN">
+<device name="" package="JW2SN">
 <connects>
 <connect gate="-1" pin="2" pad="2"/>
 <connect gate="-1" pin="3" pad="3"/>
@@ -13436,6 +13400,64 @@ Coil voltage: 75% - 170% of nominal voltage
 <connect gate="G$1" pin="O" pad="O"/>
 <connect gate="G$1" pin="P" pad="P"/>
 <connect gate="G$1" pin="S" pad="S"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="G2RL-2-DC12">
+<description>Omron G2RL-2 Double Pull Double Throw Relay
+&lt;br&gt;
+Coil Voltage: 12VDC (8.4-18VDC @60ºC)
+&lt;br&gt;
+Contact Amperage: 8A at 30VDC
+&lt;br&gt;
+&lt;a href="https://www.omron.com/ecb/products/pdf/en-g2rl.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="G2RL-2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="G2RL-2">
+<connects>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="COIL+" pad="COIL+"/>
+<connect gate="G$1" pin="COIL-" pad="COIL-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="G2RL-2-DC5">
+<description>Omron G2RL-2 Double Pull Double Throw Relay
+&lt;br&gt;
+Coil Voltage: 5VDC (3.5-7.5VDC @60ºC)
+&lt;br&gt;
+Contact Amperage: 8A at 30VDC
+&lt;br&gt;
+&lt;a href="https://www.omron.com/ecb/products/pdf/en-g2rl.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="G2RL-2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="G2RL-2">
+<connects>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="COIL+" pad="COIL+"/>
+<connect gate="G$1" pin="COIL-" pad="COIL-"/>
 </connects>
 <technologies>
 <technology name=""/>
