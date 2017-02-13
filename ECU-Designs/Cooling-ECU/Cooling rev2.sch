@@ -205,29 +205,6 @@
 <pad name="2" x="0" y="0" drill="1" diameter="1.8796"/>
 <pad name="3" x="2.54" y="0" drill="1" diameter="1.8796"/>
 </package>
-<package name="SOT223">
-<description>&lt;b&gt;SOT-223&lt;/b&gt;
-&lt;br&gt;
-&lt;a href="https://github.com/sparkfun/SparkFun-Eagle-Libraries"&gt;Source: Sparkfun Eagle Library</description>
-<wire x1="3.2766" y1="1.651" x2="3.2766" y2="-1.651" width="0.2032" layer="21"/>
-<wire x1="3.2766" y1="-1.651" x2="-3.2766" y2="-1.651" width="0.2032" layer="21"/>
-<wire x1="-3.2766" y1="-1.651" x2="-3.2766" y2="1.651" width="0.2032" layer="21"/>
-<wire x1="-3.2766" y1="1.651" x2="3.2766" y2="1.651" width="0.2032" layer="21"/>
-<rectangle x1="-1.6002" y1="1.8034" x2="1.6002" y2="3.6576" layer="51"/>
-<rectangle x1="-0.4318" y1="-3.6576" x2="0.4318" y2="-1.8034" layer="51"/>
-<rectangle x1="-2.7432" y1="-3.6576" x2="-1.8796" y2="-1.8034" layer="51"/>
-<rectangle x1="1.8796" y1="-3.6576" x2="2.7432" y2="-1.8034" layer="51"/>
-<rectangle x1="-1.6002" y1="1.8034" x2="1.6002" y2="3.6576" layer="51"/>
-<rectangle x1="-0.4318" y1="-3.6576" x2="0.4318" y2="-1.8034" layer="51"/>
-<rectangle x1="-2.7432" y1="-3.6576" x2="-1.8796" y2="-1.8034" layer="51"/>
-<rectangle x1="1.8796" y1="-3.6576" x2="2.7432" y2="-1.8034" layer="51"/>
-<smd name="1" x="-2.3114" y="-3.0988" dx="1.2192" dy="2.2352" layer="1"/>
-<smd name="2" x="0" y="-3.0988" dx="1.2192" dy="2.2352" layer="1"/>
-<smd name="3" x="2.3114" y="-3.0988" dx="1.2192" dy="2.2352" layer="1"/>
-<smd name="4" x="0" y="3.099" dx="3.6" dy="2.2" layer="1"/>
-<text x="-0.8255" y="4.5085" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-1.0795" y="-0.1905" size="0.4064" layer="27">&gt;VALUE</text>
-</package>
 <package name="TO-220">
 <pad name="1" x="-2.54" y="0" drill="1" diameter="1.8796" shape="square"/>
 <pad name="2" x="0" y="0" drill="1" diameter="1.8796"/>
@@ -710,6 +687,29 @@ Source: http://www.molex.com</description>
 <text x="-1.27" y="-0.635" size="0.6096" layer="21" rot="R90">&gt;NAME</text>
 <text x="-0.762" y="0" size="0.3048" layer="21" rot="R90">1</text>
 </package>
+<package name="SOT223">
+<description>&lt;b&gt;SOT-223&lt;/b&gt;
+&lt;br&gt;
+&lt;a href="https://github.com/sparkfun/SparkFun-Eagle-Libraries"&gt;Source: Sparkfun Eagle Library</description>
+<wire x1="3.2766" y1="1.651" x2="3.2766" y2="-1.651" width="0.2032" layer="21"/>
+<wire x1="3.2766" y1="-1.651" x2="-3.2766" y2="-1.651" width="0.2032" layer="21"/>
+<wire x1="-3.2766" y1="-1.651" x2="-3.2766" y2="1.651" width="0.2032" layer="21"/>
+<wire x1="-3.2766" y1="1.651" x2="3.2766" y2="1.651" width="0.2032" layer="21"/>
+<rectangle x1="-1.6002" y1="1.8034" x2="1.6002" y2="3.6576" layer="51"/>
+<rectangle x1="-0.4318" y1="-3.6576" x2="0.4318" y2="-1.8034" layer="51"/>
+<rectangle x1="-2.7432" y1="-3.6576" x2="-1.8796" y2="-1.8034" layer="51"/>
+<rectangle x1="1.8796" y1="-3.6576" x2="2.7432" y2="-1.8034" layer="51"/>
+<rectangle x1="-1.6002" y1="1.8034" x2="1.6002" y2="3.6576" layer="51"/>
+<rectangle x1="-0.4318" y1="-3.6576" x2="0.4318" y2="-1.8034" layer="51"/>
+<rectangle x1="-2.7432" y1="-3.6576" x2="-1.8796" y2="-1.8034" layer="51"/>
+<rectangle x1="1.8796" y1="-3.6576" x2="2.7432" y2="-1.8034" layer="51"/>
+<smd name="1" x="-2.3" y="-3.15" dx="1.5" dy="2.2352" layer="1"/>
+<smd name="2" x="0" y="-3.15" dx="1.5" dy="2.2352" layer="1"/>
+<smd name="3" x="2.3" y="-3.15" dx="1.5" dy="2.2352" layer="1"/>
+<smd name="4" x="0" y="3.15" dx="3.8" dy="2.2" layer="1"/>
+<text x="-0.8255" y="4.5085" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-1.0795" y="-0.1905" size="0.4064" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="VOLTAGE_REGULATOR">
@@ -870,53 +870,6 @@ Source: http://www.molex.com</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="5V_REGULATOR_LM340-N" uservalue="yes">
-<description>&lt;b&gt;Voltage Regulator&lt;/b&gt;
-
-&lt;p&gt;5v linear voltage regulator
-
-&lt;a href="http://www.mouser.com/ProductDetail/Texas-Instruments/LM340MPX-50-NOPB/?qs=X1J7HmVL2ZGZwtTFRQ9ItA%3D%3D"&gt;Datasheet &lt;/a&gt;
-&lt;br&gt;
-&lt;br&gt;
-MAX current out: 1.5A
-&lt;br&gt;
-MAX voltage in: 35V</description>
-<gates>
-<gate name="G$1" symbol="VOLTAGE_REGULATOR" x="5.08" y="5.08"/>
-</gates>
-<devices>
-<device name="LM340MPX-5.0/NOPB" package="SOT223">
-<connects>
-<connect gate="G$1" pin="GND" pad="1"/>
-<connect gate="G$1" pin="IN" pad="3"/>
-<connect gate="G$1" pin="OUT" pad="2 4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="LM340T-5.0/NOPB" package="TO-220">
-<connects>
-<connect gate="G$1" pin="GND" pad="1"/>
-<connect gate="G$1" pin="IN" pad="3"/>
-<connect gate="G$1" pin="OUT" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="LM340T-5.0/NOPB_SINK" package="TO-220-SINK">
-<connects>
-<connect gate="G$1" pin="GND" pad="1"/>
-<connect gate="G$1" pin="IN" pad="3"/>
-<connect gate="G$1" pin="OUT" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="MCP2551">
 <description>MCP2551 High-Speed CAN Transceiver
 &lt;br&gt;
@@ -1345,6 +1298,53 @@ Source: http://www.molex.com</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="5VREG_LM340-N" uservalue="yes">
+<description>&lt;b&gt;Voltage Regulator&lt;/b&gt;
+
+&lt;p&gt;5v linear voltage regulator
+
+&lt;a href="http://www.mouser.com/ProductDetail/Texas-Instruments/LM340MPX-50-NOPB/?qs=X1J7HmVL2ZGZwtTFRQ9ItA%3D%3D"&gt;Datasheet &lt;/a&gt;
+&lt;br&gt;
+&lt;br&gt;
+MAX current out: 1.5A
+&lt;br&gt;
+MAX voltage in: 35V</description>
+<gates>
+<gate name="G$1" symbol="VOLTAGE_REGULATOR" x="5.08" y="5.08"/>
+</gates>
+<devices>
+<device name="LM340MPX-5.0/NOPB" package="SOT223">
+<connects>
+<connect gate="G$1" pin="GND" pad="2 4"/>
+<connect gate="G$1" pin="IN" pad="1"/>
+<connect gate="G$1" pin="OUT" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="LM340T-5.0/NOPB" package="TO-220">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="IN" pad="1"/>
+<connect gate="G$1" pin="OUT" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="LM340T-5.0/NOPB_SINK" package="TO-220-SINK">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="IN" pad="1"/>
+<connect gate="G$1" pin="OUT" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="supply1">
@@ -1430,7 +1430,6 @@ Source: http://www.molex.com</description>
 </class>
 </classes>
 <parts>
-<part name="5V_REG" library="HyTechDevices" deviceset="5V_REGULATOR_LM340-N" device="LM340MPX-5.0/NOPB"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="U$2" library="HyTechDevices" deviceset="MCP2551" device=""/>
 <part name="R1" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="120"/>
@@ -1469,6 +1468,7 @@ Source: http://www.molex.com</description>
 <part name="G2" library="HyTechDevices" deviceset="GATE_DRIVE" device="ZXGD3003E6TA"/>
 <part name="G3" library="HyTechDevices" deviceset="GATE_DRIVE" device="ZXGD3003E6TA"/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
+<part name="U$4" library="HyTechDevices" deviceset="5VREG_LM340-N" device="LM340MPX-5.0/NOPB"/>
 </parts>
 <sheets>
 <sheet>
@@ -1483,7 +1483,6 @@ Source: http://www.molex.com</description>
 <text x="-66.04" y="22.86" size="1.778" layer="91">CANH</text>
 </plain>
 <instances>
-<instance part="5V_REG" gate="G$1" x="-25.4" y="71.12"/>
 <instance part="GND1" gate="1" x="-25.4" y="58.42"/>
 <instance part="U$2" gate="G$1" x="12.7" y="45.72" rot="MR0"/>
 <instance part="R1" gate="G$1" x="-15.24" y="45.72" rot="R90"/>
@@ -1539,16 +1538,15 @@ Source: http://www.molex.com</description>
 <instance part="G2" gate="G$1" x="152.4" y="20.32"/>
 <instance part="G3" gate="G$1" x="152.4" y="-5.08"/>
 <instance part="GND13" gate="1" x="-12.7" y="53.34" rot="R270"/>
+<instance part="U$4" gate="G$1" x="-25.4" y="71.12"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="GND" class="0">
 <segment>
-<pinref part="5V_REG" gate="G$1" pin="GND"/>
 <pinref part="GND1" gate="1" pin="GND"/>
 <wire x1="-25.4" y1="63.5" x2="-25.4" y2="60.96" width="0.1524" layer="91"/>
-<junction x="-25.4" y="63.5"/>
 <pinref part="IN" gate="-2" pin="S"/>
 <wire x1="-40.64" y1="45.72" x2="-30.48" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="-30.48" y1="45.72" x2="-30.48" y2="63.5" width="0.1524" layer="91"/>
@@ -1557,6 +1555,8 @@ Source: http://www.molex.com</description>
 <junction x="-30.48" y="45.72"/>
 <pinref part="OUT" gate="-2" pin="S"/>
 <wire x1="-30.48" y1="27.94" x2="-40.64" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="U$4" gate="G$1" pin="GND"/>
+<junction x="-25.4" y="63.5"/>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="2"/>
@@ -1688,10 +1688,10 @@ Source: http://www.molex.com</description>
 </net>
 <net name="+5V" class="0">
 <segment>
-<pinref part="5V_REG" gate="G$1" pin="OUT"/>
 <wire x1="-10.16" y1="71.12" x2="-17.78" y2="71.12" width="0.1524" layer="91"/>
 <label x="-15.24" y="71.12" size="1.778" layer="95" rot="MR0"/>
 <pinref part="P+1" gate="1" pin="+5V"/>
+<pinref part="U$4" gate="G$1" pin="OUT"/>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="3"/>
@@ -1787,7 +1787,6 @@ Source: http://www.molex.com</description>
 <label x="231.14" y="68.58" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="5V_REG" gate="G$1" pin="IN"/>
 <wire x1="-33.02" y1="71.12" x2="-35.56" y2="71.12" width="0.1524" layer="91"/>
 <label x="-35.56" y="71.12" size="1.778" layer="95"/>
 <pinref part="IN" gate="-1" pin="S"/>
@@ -1797,6 +1796,7 @@ Source: http://www.molex.com</description>
 <junction x="-35.56" y="48.26"/>
 <pinref part="OUT" gate="-1" pin="S"/>
 <wire x1="-35.56" y1="30.48" x2="-40.64" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="U$4" gate="G$1" pin="IN"/>
 </segment>
 </net>
 <net name="FAN1-" class="0">
