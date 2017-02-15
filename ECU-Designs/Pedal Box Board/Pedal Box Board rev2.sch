@@ -2455,6 +2455,8 @@ general purpose rectifier</description>
 <sheet>
 <plain>
 <text x="111.76" y="0" size="1.778" layer="91">Normally Open Relay -&gt; FSAE EV5.1.6</text>
+<text x="-78.74" y="5.08" size="1.778" layer="91">TODO this might need
+to be driven by op-amp</text>
 </plain>
 <instances>
 <instance part="MC34161DG" gate="G$1" x="63.5" y="30.48" rot="R180"/>
@@ -3415,4 +3417,10 @@ general purpose rectifier</description>
 </sheets>
 </schematic>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
