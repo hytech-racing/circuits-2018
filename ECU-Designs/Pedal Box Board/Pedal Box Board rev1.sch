@@ -2783,9 +2783,9 @@ general purpose rectifier</description>
 <part name="LED1" library="HyTechDevices" deviceset="LED" device="-0805"/>
 <part name="LED2" library="HyTechDevices" deviceset="LED" device="-0805"/>
 <part name="LED3" library="HyTechDevices" deviceset="LED" device="-0805"/>
-<part name="R2" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES"/>
-<part name="R3" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES"/>
-<part name="R4" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES"/>
+<part name="R2" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="150"/>
+<part name="R3" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="150"/>
+<part name="R4" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="150"/>
 <part name="GND8" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="R5" library="HyTechDevices" deviceset="RESISTOR" device="PTH-1/4W-VERT" value="JMP"/>
 <part name="BSPD" library="HyTechDevices" deviceset="MINIFIT_5566-10" device=""/>
