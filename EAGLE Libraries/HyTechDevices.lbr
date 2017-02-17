@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="7.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -6805,6 +6805,10 @@ FUSE</text>
 <wire x1="12.7" y1="3.81" x2="-2.54" y2="3.81" width="0.127" layer="21"/>
 <text x="20.32" y="0" size="1.016" layer="21" align="center">MIDGET FUSE</text>
 </package>
+<package name="TEST_POINT_COMPACT_THM">
+<circle x="0" y="0" radius="3.18" width="0.127" layer="21"/>
+<pad name="P$1" x="0" y="0" drill="1.6" diameter="1.6" rot="R90"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ARDUINO_NANO">
@@ -9071,6 +9075,11 @@ DC/DC</text>
 <pin name="P2" x="10.16" y="0" visible="off" length="middle" swaplevel="1" rot="R180"/>
 <text x="-10.16" y="3.81" size="1.27" layer="95">&gt;Name</text>
 <text x="5.08" y="3.81" size="1.27" layer="96">&gt;Value</text>
+</symbol>
+<symbol name="TEST_POINT_COMPACT_THM">
+<circle x="0" y="0" radius="1.27" width="0.254" layer="94"/>
+<pin name="." x="-3.81" y="0" length="short"/>
+<circle x="0" y="0" radius="1.27" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -13514,6 +13523,21 @@ Schurter 0751.0110 Brass Fuse Clip
 <connects>
 <connect gate="G$1" pin="P1" pad="L1 L2"/>
 <connect gate="G$1" pin="P2" pad="R1 R2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TEST_POINT_COMPACT_THM">
+<gates>
+<gate name="G$1" symbol="TEST_POINT_COMPACT_THM" x="2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="TEST_POINT_COMPACT_THM">
+<connects>
+<connect gate="G$1" pin="." pad="P$1"/>
 </connects>
 <technologies>
 <technology name=""/>
