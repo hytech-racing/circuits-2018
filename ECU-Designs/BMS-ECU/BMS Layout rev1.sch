@@ -270,6 +270,14 @@
 <text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
 </symbol>
+<symbol name="FUSE">
+<wire x1="0" y1="0" x2="-2.54" y2="0" width="0.254" layer="94" curve="-180"/>
+<wire x1="0" y1="0" x2="2.54" y2="0" width="0.254" layer="94" curve="-180"/>
+<pin name="1" x="-5.08" y="0" visible="pad" length="short"/>
+<pin name="2" x="5.08" y="0" visible="pad" length="short" rot="R180"/>
+<text x="-5.08" y="1.27" size="1.27" layer="95">&gt;Name</text>
+<text x="2.54" y="1.27" size="1.27" layer="96">&gt;Value</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="BATTERY_1_CELL" prefix="G">
@@ -374,6 +382,21 @@ Source: Sonnenschein</description>
 <device name="">
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FUSE" prefix="F" uservalue="yes">
+<description>Generic Fuse</description>
+<gates>
+<gate name="G$1" symbol="FUSE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="">
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -535,7 +558,6 @@ Source: Sonnenschein</description>
 <part name="G70" library="HyTechSymbols" deviceset="BATTERY_1_CELL" device=""/>
 <part name="G71" library="HyTechSymbols" deviceset="BATTERY_1_CELL" device=""/>
 <part name="G72" library="HyTechSymbols" deviceset="BATTERY_1_CELL" device=""/>
-<part name="HVD" library="HyTechSymbols" deviceset="SWITCH_SPST" device="" value=""/>
 <part name="SMD-2" library="HyTechSymbols" deviceset="RELAY" device="" value=""/>
 <part name="AIR-1" library="HyTechSymbols" deviceset="RELAY" device="" value=""/>
 <part name="AIR-2" library="HyTechSymbols" deviceset="RELAY" device="" value=""/>
@@ -580,16 +602,19 @@ Source: Sonnenschein</description>
 <part name="GND2" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="GND3" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="GND4" library="HyTechSymbols" deviceset="GND" device=""/>
+<part name="AIR-3" library="HyTechSymbols" deviceset="RELAY" device="" value=""/>
+<part name="HV_FUSE" library="HyTechSymbols" deviceset="FUSE" device=""/>
+<part name="GND5" library="HyTechSymbols" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="-116.84" y="68.58" size="2.54" layer="91">ACCUMULATOR SEGMENT 1</text>
-<text x="119.38" y="68.58" size="2.54" layer="91">ACCUMULATOR SEGMENT 2</text>
-<text x="-116.84" y="-81.28" size="2.54" layer="91">ACCUMULATOR SEGMENT 3</text>
-<text x="119.38" y="-81.28" size="2.54" layer="91">ACCUMULATOR SEGMENT 4</text>
-<wire x1="-322.58" y1="22.86" x2="-218.44" y2="22.86" width="0.6096" layer="156"/>
-<wire x1="-223.52" y1="20.32" x2="-322.58" y2="20.32" width="0.6096" layer="156"/>
+<text x="-119.38" y="68.58" size="2.54" layer="91">ACCUMULATOR SEGMENT 1</text>
+<text x="116.84" y="68.58" size="2.54" layer="91">ACCUMULATOR SEGMENT 2</text>
+<text x="-119.38" y="-81.28" size="2.54" layer="91">ACCUMULATOR SEGMENT 3</text>
+<text x="116.84" y="-81.28" size="2.54" layer="91">ACCUMULATOR SEGMENT 4</text>
+<wire x1="-327.66" y1="22.86" x2="-218.44" y2="22.86" width="0.6096" layer="156"/>
+<wire x1="-228.6" y1="20.32" x2="-327.66" y2="20.32" width="0.6096" layer="156"/>
 <wire x1="-205.74" y1="20.32" x2="-205.74" y2="22.86" width="0.6096" layer="156"/>
 <wire x1="-205.74" y1="22.86" x2="-200.66" y2="22.86" width="0.6096" layer="156"/>
 <wire x1="-109.22" y1="22.86" x2="-93.98" y2="22.86" width="0.6096" layer="156"/>
@@ -602,22 +627,25 @@ Source: Sonnenschein</description>
 <wire x1="233.68" y1="22.86" x2="248.92" y2="22.86" width="0.6096" layer="156"/>
 <wire x1="248.92" y1="22.86" x2="248.92" y2="0" width="0.6096" layer="156"/>
 <wire x1="248.92" y1="0" x2="91.44" y2="0" width="0.6096" layer="156"/>
-<wire x1="81.28" y1="2.54" x2="-205.74" y2="2.54" width="0.6096" layer="156"/>
+<wire x1="81.28" y1="0" x2="-223.52" y2="0" width="0.6096" layer="156"/>
 <wire x1="-2.54" y1="-127" x2="17.78" y2="-127" width="0.6096" layer="156"/>
 <wire x1="27.94" y1="-124.46" x2="30.48" y2="-124.46" width="0.6096" layer="156"/>
 <wire x1="30.48" y1="-124.46" x2="30.48" y2="-127" width="0.6096" layer="156"/>
 <wire x1="30.48" y1="-127" x2="35.56" y2="-127" width="0.6096" layer="156"/>
-<wire x1="-205.74" y1="2.54" x2="-205.74" y2="-127" width="0.6096" layer="156"/>
+<wire x1="-223.52" y1="0" x2="-223.52" y2="-127" width="0.6096" layer="156"/>
 <wire x1="233.68" y1="-127" x2="254" y2="-127" width="0.6096" layer="156"/>
 <wire x1="264.16" y1="-124.46" x2="266.7" y2="-124.46" width="0.6096" layer="156"/>
 <wire x1="266.7" y1="-124.46" x2="266.7" y2="-149.86" width="0.6096" layer="156"/>
-<wire x1="-223.52" y1="20.32" x2="-223.52" y2="-149.86" width="0.6096" layer="156"/>
-<wire x1="-223.52" y1="-149.86" x2="266.7" y2="-149.86" width="0.6096" layer="156"/>
+<wire x1="-228.6" y1="20.32" x2="-228.6" y2="-149.86" width="0.6096" layer="156"/>
+<wire x1="-228.6" y1="-149.86" x2="266.7" y2="-149.86" width="0.6096" layer="156"/>
 <wire x1="142.24" y1="-127" x2="127" y2="-127" width="0.6096" layer="156"/>
 <wire x1="-93.98" y1="-127" x2="-109.22" y2="-127" width="0.6096" layer="156"/>
+<text x="-335.28" y="-99.06" size="5.08" layer="91">TODO add BMS test port</text>
+<text x="-335.28" y="-109.22" size="5.08" layer="91">TODO add current sensor</text>
 <wire x1="-200.66" y1="-127" x2="-205.74" y2="-127" width="0.6096" layer="156"/>
-<text x="-330.2" y="-99.06" size="5.08" layer="91">TODO add BMS test port</text>
-<text x="-330.2" y="-109.22" size="5.08" layer="91">TODO add current sensor</text>
+<wire x1="-205.74" y1="-127" x2="-205.74" y2="-124.46" width="0.6096" layer="156"/>
+<wire x1="-205.74" y1="-124.46" x2="-208.28" y2="-124.46" width="0.6096" layer="156"/>
+<wire x1="-218.44" y1="-127" x2="-223.52" y2="-127" width="0.6096" layer="156"/>
 </plain>
 <moduleinsts>
 <moduleinst name="BMS_SEGMENT1" module="BMS_SEGMENT" x="-149.86" y="78.74"/>
@@ -628,7 +656,7 @@ Source: Sonnenschein</description>
 <moduleinst name="BMS_SEGMENT6" module="BMS_SEGMENT" x="193.04" y="78.74"/>
 <moduleinst name="BMS_SEGMENT7" module="BMS_SEGMENT" x="86.36" y="-71.12"/>
 <moduleinst name="BMS_SEGMENT8" module="BMS_SEGMENT" x="193.04" y="-71.12"/>
-<moduleinst name="BMS_MICROCONTROLLER1" module="BMS_MICROCONTROLLER" x="-261.62" y="-50.8" rot="MR180"/>
+<moduleinst name="BMS_MICROCONTROLLER1" module="BMS_MICROCONTROLLER" x="-266.7" y="-50.8" rot="MR180"/>
 </moduleinsts>
 <instances>
 <instance part="G1" gate="G$1" x="-195.58" y="22.86" rot="MR0"/>
@@ -704,7 +732,6 @@ Source: Sonnenschein</description>
 <instance part="G70" gate="G$1" x="208.28" y="-127" rot="MR0"/>
 <instance part="G71" gate="G$1" x="218.44" y="-127" rot="MR0"/>
 <instance part="G72" gate="G$1" x="228.6" y="-127" rot="MR0"/>
-<instance part="HVD" gate="SPST" x="86.36" y="0" rot="R90"/>
 <instance part="SMD-2" gate="1" x="22.86" y="-116.84" rot="R270"/>
 <instance part="AIR-1" gate="1" x="-213.36" y="12.7" rot="MR90"/>
 <instance part="AIR-2" gate="1" x="259.08" y="-116.84" rot="R270"/>
@@ -804,10 +831,10 @@ Source: Sonnenschein</description>
 <attribute name="NAME" x="188.722" y="-134.366" size="1.524" layer="95"/>
 <attribute name="VALUE" x="196.723" y="-132.842" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="MOLEX_IMPERIUM" gate="G$1" x="-330.2" y="20.32"/>
-<instance part="SHUTDOWN_CIRCUIT" gate="G$1" x="-330.2" y="-25.4"/>
-<instance part="CAN/POWER_IN" gate="G$1" x="-327.66" y="-60.96"/>
-<instance part="CAN/POWER_OUT" gate="G$1" x="-327.66" y="-78.74"/>
+<instance part="MOLEX_IMPERIUM" gate="G$1" x="-335.28" y="20.32"/>
+<instance part="SHUTDOWN_CIRCUIT" gate="G$1" x="-335.28" y="-25.4"/>
+<instance part="CAN/POWER_IN" gate="G$1" x="-332.74" y="-60.96"/>
+<instance part="CAN/POWER_OUT" gate="G$1" x="-332.74" y="-78.74"/>
 <instance part="THERM4" gate="G$1" x="-124.46" y="17.78" smashed="yes" rot="R90">
 <attribute name="NAME" x="-133.858" y="15.494" size="1.524" layer="95"/>
 <attribute name="VALUE" x="-125.857" y="17.018" size="1.778" layer="96" rot="R90"/>
@@ -840,11 +867,14 @@ Source: Sonnenschein</description>
 <attribute name="NAME" x="209.042" y="-134.366" size="1.524" layer="95"/>
 <attribute name="VALUE" x="217.043" y="-132.842" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="S1" gate="SPST" x="-322.58" y="10.16" rot="MR270"/>
+<instance part="S1" gate="SPST" x="-327.66" y="10.16" rot="MR270"/>
 <instance part="GND1" gate="1" x="-205.74" y="12.7" rot="R90"/>
 <instance part="GND2" gate="1" x="30.48" y="12.7" rot="R90"/>
 <instance part="GND3" gate="1" x="266.7" y="-116.84" rot="R90"/>
 <instance part="GND4" gate="1" x="30.48" y="-116.84" rot="R90"/>
+<instance part="AIR-3" gate="1" x="-213.36" y="-116.84" rot="R270"/>
+<instance part="HV_FUSE" gate="G$1" x="86.36" y="0"/>
+<instance part="GND5" gate="1" x="-205.74" y="-116.84" rot="R90"/>
 </instances>
 <busses>
 <bus name="B$1">
@@ -901,13 +931,13 @@ Source: Sonnenschein</description>
 </bus>
 <bus name="B$3">
 <segment>
-<wire x1="-264.16" y1="-27.94" x2="-261.62" y2="-27.94" width="0.762" layer="92"/>
+<wire x1="-269.24" y1="-27.94" x2="-266.7" y2="-27.94" width="0.762" layer="92"/>
 </segment>
 </bus>
 <bus name="B$4">
 <segment>
-<wire x1="-262.89" y1="-27.686" x2="-262.89" y2="85.09" width="0.762" layer="92"/>
-<wire x1="-262.89" y1="85.09" x2="-182.88" y2="85.09" width="0.762" layer="92"/>
+<wire x1="-267.97" y1="-27.686" x2="-267.97" y2="85.09" width="0.762" layer="92"/>
+<wire x1="-267.97" y1="85.09" x2="-182.88" y2="85.09" width="0.762" layer="92"/>
 <wire x1="-182.88" y1="85.09" x2="-182.88" y2="86.36" width="0.762" layer="92"/>
 <wire x1="-182.88" y1="85.09" x2="-182.88" y2="83.82" width="0.762" layer="92"/>
 </segment>
@@ -929,28 +959,28 @@ Source: Sonnenschein</description>
 </bus>
 <bus name="B$5">
 <segment>
-<wire x1="-289.56" y1="-55.88" x2="-289.56" y2="-59.69" width="0.762" layer="92"/>
-<wire x1="-289.56" y1="-59.69" x2="-289.56" y2="-63.5" width="0.762" layer="92"/>
-<wire x1="-289.56" y1="-59.69" x2="-320.04" y2="-59.69" width="0.762" layer="92"/>
+<wire x1="-294.64" y1="-55.88" x2="-294.64" y2="-59.69" width="0.762" layer="92"/>
+<wire x1="-294.64" y1="-59.69" x2="-294.64" y2="-63.5" width="0.762" layer="92"/>
+<wire x1="-294.64" y1="-59.69" x2="-325.12" y2="-59.69" width="0.762" layer="92"/>
 </segment>
 </bus>
 <bus name="B$6">
 <segment>
-<wire x1="-233.68" y1="-55.88" x2="-233.68" y2="-59.69" width="0.762" layer="92"/>
-<wire x1="-233.68" y1="-59.69" x2="-233.68" y2="-63.5" width="0.762" layer="92"/>
-<wire x1="-233.68" y1="-59.69" x2="-228.6" y2="-59.69" width="0.762" layer="92"/>
-<wire x1="-228.6" y1="-59.69" x2="-228.6" y2="-77.47" width="0.762" layer="92"/>
-<wire x1="-228.6" y1="-77.47" x2="-320.04" y2="-77.47" width="0.762" layer="92"/>
+<wire x1="-238.76" y1="-55.88" x2="-238.76" y2="-59.69" width="0.762" layer="92"/>
+<wire x1="-238.76" y1="-59.69" x2="-238.76" y2="-63.5" width="0.762" layer="92"/>
+<wire x1="-238.76" y1="-59.69" x2="-233.68" y2="-59.69" width="0.762" layer="92"/>
+<wire x1="-233.68" y1="-59.69" x2="-233.68" y2="-77.47" width="0.762" layer="92"/>
+<wire x1="-233.68" y1="-77.47" x2="-325.12" y2="-77.47" width="0.762" layer="92"/>
 </segment>
 </bus>
 <bus name="B$7">
 <segment>
-<wire x1="-320.04" y1="-55.88" x2="-320.04" y2="-63.5" width="0.762" layer="92"/>
+<wire x1="-325.12" y1="-55.88" x2="-325.12" y2="-63.5" width="0.762" layer="92"/>
 </segment>
 </bus>
 <bus name="B$8">
 <segment>
-<wire x1="-320.04" y1="-73.66" x2="-320.04" y2="-81.28" width="0.762" layer="92"/>
+<wire x1="-325.12" y1="-73.66" x2="-325.12" y2="-81.28" width="0.762" layer="92"/>
 </segment>
 </bus>
 </busses>
@@ -2010,13 +2040,13 @@ Source: Sonnenschein</description>
 <net name="SHUTDOWN_OUT" class="0">
 <segment>
 <pinref part="SHUTDOWN_CIRCUIT" gate="G$1" pin="1"/>
-<wire x1="-294.64" y1="-25.4" x2="-322.58" y2="-25.4" width="0.1524" layer="91"/>
-<wire x1="-294.64" y1="-30.48" x2="-294.64" y2="-25.4" width="0.1524" layer="91"/>
-<wire x1="-337.82" y1="-30.48" x2="-294.64" y2="-30.48" width="0.1524" layer="91"/>
-<wire x1="-337.82" y1="12.7" x2="-337.82" y2="-30.48" width="0.1524" layer="91"/>
+<wire x1="-299.72" y1="-25.4" x2="-327.66" y2="-25.4" width="0.1524" layer="91"/>
+<wire x1="-299.72" y1="-30.48" x2="-299.72" y2="-25.4" width="0.1524" layer="91"/>
+<wire x1="-342.9" y1="-30.48" x2="-299.72" y2="-30.48" width="0.1524" layer="91"/>
+<wire x1="-342.9" y1="12.7" x2="-342.9" y2="-30.48" width="0.1524" layer="91"/>
 <pinref part="S1" gate="SPST" pin="O"/>
-<wire x1="-327.66" y1="12.7" x2="-337.82" y2="12.7" width="0.1524" layer="91"/>
-<label x="-317.5" y="-25.4" size="1.778" layer="95"/>
+<wire x1="-332.74" y1="12.7" x2="-342.9" y2="12.7" width="0.1524" layer="91"/>
+<label x="-322.58" y="-25.4" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="B$1" class="0">
@@ -2148,97 +2178,97 @@ Source: Sonnenschein</description>
 </segment>
 <segment>
 <portref moduleinst="BMS_MICROCONTROLLER1" port="CANH_IN"/>
-<wire x1="-289.56" y1="-55.88" x2="-287.02" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="-294.64" y1="-55.88" x2="-292.1" y2="-55.88" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <portref moduleinst="BMS_MICROCONTROLLER1" port="CANL_IN"/>
-<wire x1="-287.02" y1="-58.42" x2="-289.56" y2="-58.42" width="0.1524" layer="91"/>
+<wire x1="-292.1" y1="-58.42" x2="-294.64" y2="-58.42" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <portref moduleinst="BMS_MICROCONTROLLER1" port="GND_IN"/>
-<wire x1="-287.02" y1="-60.96" x2="-289.56" y2="-60.96" width="0.1524" layer="91"/>
+<wire x1="-292.1" y1="-60.96" x2="-294.64" y2="-60.96" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <portref moduleinst="BMS_MICROCONTROLLER1" port="12V_SUPPLY_IN"/>
-<wire x1="-287.02" y1="-63.5" x2="-289.56" y2="-63.5" width="0.1524" layer="91"/>
+<wire x1="-292.1" y1="-63.5" x2="-294.64" y2="-63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="B$3" class="0">
 <segment>
 <portref moduleinst="BMS_MICROCONTROLLER1" port="ISOSPI-P"/>
-<wire x1="-264.16" y1="-30.48" x2="-264.16" y2="-27.94" width="0.1524" layer="91"/>
+<wire x1="-269.24" y1="-30.48" x2="-269.24" y2="-27.94" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <portref moduleinst="BMS_MICROCONTROLLER1" port="ISOPSI-M"/>
-<wire x1="-261.62" y1="-30.48" x2="-261.62" y2="-27.94" width="0.1524" layer="91"/>
+<wire x1="-266.7" y1="-30.48" x2="-266.7" y2="-27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="B$6" class="0">
 <segment>
 <portref moduleinst="BMS_MICROCONTROLLER1" port="CANH_OUT"/>
-<wire x1="-236.22" y1="-55.88" x2="-233.68" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="-241.3" y1="-55.88" x2="-238.76" y2="-55.88" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <portref moduleinst="BMS_MICROCONTROLLER1" port="CANL_OUT"/>
-<wire x1="-236.22" y1="-58.42" x2="-233.68" y2="-58.42" width="0.1524" layer="91"/>
+<wire x1="-241.3" y1="-58.42" x2="-238.76" y2="-58.42" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <portref moduleinst="BMS_MICROCONTROLLER1" port="GND_OUT"/>
-<wire x1="-236.22" y1="-60.96" x2="-233.68" y2="-60.96" width="0.1524" layer="91"/>
+<wire x1="-241.3" y1="-60.96" x2="-238.76" y2="-60.96" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <portref moduleinst="BMS_MICROCONTROLLER1" port="12V_SUPPLY_OUT"/>
-<wire x1="-236.22" y1="-63.5" x2="-233.68" y2="-63.5" width="0.1524" layer="91"/>
+<wire x1="-241.3" y1="-63.5" x2="-238.76" y2="-63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="B$7" class="0">
 <segment>
 <pinref part="CAN/POWER_IN" gate="G$1" pin="4"/>
-<wire x1="-322.58" y1="-55.88" x2="-320.04" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="-327.66" y1="-55.88" x2="-325.12" y2="-55.88" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="CAN/POWER_IN" gate="G$1" pin="3"/>
-<wire x1="-322.58" y1="-58.42" x2="-320.04" y2="-58.42" width="0.1524" layer="91"/>
+<wire x1="-327.66" y1="-58.42" x2="-325.12" y2="-58.42" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="CAN/POWER_IN" gate="G$1" pin="2"/>
-<wire x1="-322.58" y1="-60.96" x2="-320.04" y2="-60.96" width="0.1524" layer="91"/>
+<wire x1="-327.66" y1="-60.96" x2="-325.12" y2="-60.96" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="CAN/POWER_IN" gate="G$1" pin="1"/>
-<wire x1="-322.58" y1="-63.5" x2="-320.04" y2="-63.5" width="0.1524" layer="91"/>
+<wire x1="-327.66" y1="-63.5" x2="-325.12" y2="-63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="B$8" class="0">
 <segment>
 <pinref part="CAN/POWER_OUT" gate="G$1" pin="4"/>
-<wire x1="-322.58" y1="-73.66" x2="-320.04" y2="-73.66" width="0.1524" layer="91"/>
+<wire x1="-327.66" y1="-73.66" x2="-325.12" y2="-73.66" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="CAN/POWER_OUT" gate="G$1" pin="3"/>
-<wire x1="-322.58" y1="-76.2" x2="-320.04" y2="-76.2" width="0.1524" layer="91"/>
+<wire x1="-327.66" y1="-76.2" x2="-325.12" y2="-76.2" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="CAN/POWER_OUT" gate="G$1" pin="2"/>
-<wire x1="-322.58" y1="-78.74" x2="-320.04" y2="-78.74" width="0.1524" layer="91"/>
+<wire x1="-327.66" y1="-78.74" x2="-325.12" y2="-78.74" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="CAN/POWER_OUT" gate="G$1" pin="1"/>
-<wire x1="-322.58" y1="-81.28" x2="-320.04" y2="-81.28" width="0.1524" layer="91"/>
+<wire x1="-327.66" y1="-81.28" x2="-325.12" y2="-81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SHUTDOWN_IN" class="0">
 <segment>
 <pinref part="SHUTDOWN_CIRCUIT" gate="G$1" pin="2"/>
-<wire x1="-322.58" y1="-22.86" x2="-294.64" y2="-22.86" width="0.1524" layer="91"/>
-<label x="-317.5" y="-22.86" size="1.778" layer="95"/>
-<wire x1="-294.64" y1="-22.86" x2="-294.64" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="-327.66" y1="-22.86" x2="-299.72" y2="-22.86" width="0.1524" layer="91"/>
+<label x="-322.58" y="-22.86" size="1.778" layer="95"/>
+<wire x1="-299.72" y1="-22.86" x2="-299.72" y2="10.16" width="0.1524" layer="91"/>
 <pinref part="S1" gate="SPST" pin="P"/>
-<wire x1="-294.64" y1="10.16" x2="-317.5" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="-299.72" y1="10.16" x2="-322.58" y2="10.16" width="0.1524" layer="91"/>
 <pinref part="AIR-1" gate="1" pin="2"/>
-<wire x1="-294.64" y1="-22.86" x2="-218.44" y2="-22.86" width="0.1524" layer="91"/>
+<wire x1="-299.72" y1="-22.86" x2="-218.44" y2="-22.86" width="0.1524" layer="91"/>
 <wire x1="-218.44" y1="-22.86" x2="-218.44" y2="12.7" width="0.1524" layer="91"/>
-<junction x="-294.64" y="-22.86"/>
+<junction x="-299.72" y="-22.86"/>
 <pinref part="SMD-1" gate="1" pin="2"/>
 <wire x1="-218.44" y1="-22.86" x2="17.78" y2="-22.86" width="0.1524" layer="91"/>
 <wire x1="17.78" y1="-22.86" x2="17.78" y2="12.7" width="0.1524" layer="91"/>
@@ -2251,6 +2281,8 @@ Source: Sonnenschein</description>
 <wire x1="254" y1="-22.86" x2="254" y2="-116.84" width="0.1524" layer="91"/>
 <label x="-116.84" y="-22.86" size="1.778" layer="95"/>
 <label x="119.38" y="-22.86" size="1.778" layer="95"/>
+<pinref part="AIR-3" gate="1" pin="2"/>
+<wire x1="-218.44" y1="-116.84" x2="-218.44" y2="-22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -2408,6 +2440,10 @@ Source: Sonnenschein</description>
 <segment>
 <pinref part="SMD-2" gate="1" pin="1"/>
 <pinref part="GND4" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="AIR-3" gate="1" pin="1"/>
+<pinref part="GND5" gate="1" pin="GND"/>
 </segment>
 </net>
 </nets>
