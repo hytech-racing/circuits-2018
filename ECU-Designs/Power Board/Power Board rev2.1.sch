@@ -357,7 +357,7 @@ Source: http://www.molex.com</description>
 <text x="-2.413" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 <text x="-4.064" y="-2.921" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
 </package>
-<package name="DPDT_RELAY_PANASONIC_JW2SN">
+<package name="G2RL-2">
 <wire x1="-1.2954" y1="-2.6543" x2="-1.2954" y2="10.16" width="0.127" layer="21"/>
 <wire x1="-1.2954" y1="-2.6543" x2="27.3558" y2="-2.6543" width="0.127" layer="21"/>
 <wire x1="27.3558" y1="-2.6543" x2="27.3558" y2="10.16" width="0.127" layer="21"/>
@@ -1361,7 +1361,7 @@ diameter 2.54 mm, horizontal, grid 10.16 mm</description>
 <vertex x="2.794" y="-0.762"/>
 </polygon>
 </symbol>
-<symbol name="DPDT_RELAY_PANASONIC_JW2SN-DC9V">
+<symbol name="G2RL-2">
 <circle x="15.24" y="0" radius="0.635" width="0.254" layer="94"/>
 <circle x="17.78" y="5.08" radius="0.635" width="0.254" layer="94"/>
 <circle x="12.7" y="5.08" radius="0.635" width="0.254" layer="94"/>
@@ -1405,11 +1405,11 @@ diameter 2.54 mm, horizontal, grid 10.16 mm</description>
 <vertex x="23.876" y="4.064"/>
 <vertex x="23.114" y="4.572"/>
 </polygon>
-<text x="33.02" y="-5.08" size="1.778" layer="94" rot="R90">JW2SN-DC9V</text>
 <wire x1="-2.54" y1="7.62" x2="30.48" y2="7.62" width="0.254" layer="94"/>
 <wire x1="30.48" y1="7.62" x2="30.48" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="30.48" y1="-2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="-2.54" y1="-2.54" x2="-2.54" y2="7.62" width="0.254" layer="94"/>
+<text x="33.02" y="-3.81" size="1.778" layer="94" rot="R90">&gt;VALUE</text>
 </symbol>
 <symbol name="FUSE_HOLDER-1">
 <wire x1="0" y1="0" x2="-5.08" y2="0" width="0.254" layer="94" curve="-180"/>
@@ -1759,18 +1759,19 @@ It is replaced by MCP2561.
 </device>
 </devices>
 </deviceset>
-<deviceset name="DPDT_RELAY_PANASONIC_JW2SN-DC9V">
-<description>Double Pull Double Throw Relay 9VDC
+<deviceset name="G2RL-2-DC12">
+<description>Omron G2RL-2 Double Pull Double Throw Relay
 &lt;br&gt;
+Coil Voltage: 12VDC (8.4-18VDC @60ºC)
 &lt;br&gt;
-&lt;a href="http://www.mouser.com/ds/2/316/jw-catalog-461998.pdf"&gt;Datasheet&lt;/a&gt;
+Contact Amperage: 8A at 30VDC
 &lt;br&gt;
-&lt;a href="http://www.mouser.com/ProductDetail/Panasonic-Industrial-Devices/JW2SN-DC9V"&gt;Product Page&lt;/a&gt;</description>
+&lt;a href="https://www.omron.com/ecb/products/pdf/en-g2rl.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
-<gate name="G$1" symbol="DPDT_RELAY_PANASONIC_JW2SN-DC9V" x="-17.78" y="-7.62"/>
+<gate name="G$1" symbol="G2RL-2" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="DPDT_RELAY_PANASONIC_JW2SN">
+<device name="" package="G2RL-2">
 <connects>
 <connect gate="G$1" pin="2" pad="2"/>
 <connect gate="G$1" pin="3" pad="3"/>
@@ -2251,8 +2252,14 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="ORWH-SH-112D1F">
-<description>TE SPST relay</description>
+<deviceset name="G5LE">
+<description>Omron G5LE SPST Relay
+&lt;br&gt;
+5 VDC, 12VDC, 24VDC models
+&lt;br&gt;
+Coil voltage: 75% - 170% of nominal voltage
+&lt;br&gt;
+&lt;a href="https://www.omron.com/ecb/products/pdf/en-g5le.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="ZF112" x="2.54" y="2.54"/>
 </gates>
@@ -2375,12 +2382,33 @@ general purpose rectifier</description>
 <text x="-2.54" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
 <pin name="+5V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
+<symbol name="+12V">
+<wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-0.635" x2="0" y2="1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="1.27" x2="-1.27" y2="-0.635" width="0.254" layer="94"/>
+<text x="-2.54" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="+12V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="+5V" prefix="P+">
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="1" symbol="+5V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+12V" prefix="P+">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="+12V" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -2412,7 +2440,7 @@ general purpose rectifier</description>
 <part name="GND12" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="IMD_LATCH_SSR" library="HyTechDevices" deviceset="CPC1002N" device=""/>
 <part name="GND14" library="HyTechSymbols" deviceset="GND" device=""/>
-<part name="IMD_SHUTDOWN" library="HyTechDevices" deviceset="DPDT_RELAY_PANASONIC_JW2SN-DC9V" device=""/>
+<part name="IMD_SHUTDOWN" library="HyTechDevices" deviceset="G2RL-2-DC12" device=""/>
 <part name="GND13" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="POWER" library="HyTechDevices" deviceset="MINIFIT_5566-2" device=""/>
 <part name="BUS2" library="HyTechDevices" deviceset="MINIFIT_5566-4" device=""/>
@@ -2448,13 +2476,13 @@ general purpose rectifier</description>
 <part name="LED3" library="HyTechDevices" deviceset="LED" device="-0805"/>
 <part name="LED4" library="HyTechDevices" deviceset="LED" device="-0805"/>
 <part name="LED5" library="HyTechDevices" deviceset="LED" device="-0805"/>
-<part name="R14" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="430"/>
+<part name="R14" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="820"/>
 <part name="GND6" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="R15" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="120"/>
 <part name="C1" library="HyTechDevices" deviceset="CAP" device="0805" value=".22uF"/>
 <part name="C2" library="HyTechDevices" deviceset="CAP" device="0805" value=".1uF"/>
 <part name="GND7" library="HyTechSymbols" deviceset="GND" device=""/>
-<part name="U$1" library="HyTechDevices" deviceset="ORWH-SH-112D1F" device=""/>
+<part name="U$1" library="HyTechDevices" deviceset="G5LE" device=""/>
 <part name="GND8" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="X2" library="HyTechDevices" deviceset="MINIFIT_5566-6" device=""/>
 <part name="D1" library="HyTechDevices" deviceset="DIODE" device="0805"/>
@@ -2465,16 +2493,15 @@ general purpose rectifier</description>
 <part name="LED6" library="HyTechDevices" deviceset="LED" device="-0805"/>
 <part name="GND9" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="R16" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="100"/>
-<part name="IMD_SHUTDOWN1" library="HyTechDevices" deviceset="DPDT_RELAY_PANASONIC_JW2SN-DC9V" device=""/>
+<part name="IMD_SHUTDOWN1" library="HyTechDevices" deviceset="G2RL-2-DC12" device=""/>
 <part name="GND19" library="HyTechSymbols" deviceset="GND" device=""/>
-<part name="R17" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="430"/>
+<part name="R17" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="820"/>
 <part name="LED7" library="HyTechDevices" deviceset="LED" device="-0805"/>
 <part name="GND20" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" deviceset="+5V" device=""/>
 <part name="P+2" library="supply1" deviceset="+5V" device=""/>
 <part name="P+3" library="supply1" deviceset="+5V" device=""/>
 <part name="P+4" library="supply1" deviceset="+5V" device=""/>
-<part name="P+5" library="supply1" deviceset="+5V" device=""/>
 <part name="GND21" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="R19" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="10k"/>
 <part name="R18" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="2.2k"/>
@@ -2483,6 +2510,19 @@ general purpose rectifier</description>
 <part name="R20" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="270"/>
 <part name="GND23" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="P+6" library="supply1" deviceset="+5V" device=""/>
+<part name="IMD_SSR" library="HyTechDevices" deviceset="CPC1002N" device=""/>
+<part name="LED9" library="HyTechDevices" deviceset="LED" device="-0805"/>
+<part name="GND24" library="HyTechSymbols" deviceset="GND" device=""/>
+<part name="R21" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="680"/>
+<part name="P+7" library="supply1" deviceset="+12V" device=""/>
+<part name="P+8" library="supply1" deviceset="+12V" device=""/>
+<part name="P+9" library="supply1" deviceset="+12V" device=""/>
+<part name="P+10" library="supply1" deviceset="+12V" device=""/>
+<part name="P+11" library="supply1" deviceset="+12V" device=""/>
+<part name="P+12" library="supply1" deviceset="+12V" device=""/>
+<part name="P+13" library="supply1" deviceset="+12V" device=""/>
+<part name="P+14" library="supply1" deviceset="+12V" device=""/>
+<part name="P+5" library="supply1" deviceset="+12V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2502,17 +2542,17 @@ general purpose rectifier</description>
 <instance part="GND12" gate="1" x="73.66" y="83.82" rot="R90"/>
 <instance part="IMD_LATCH_SSR" gate="G$1" x="50.8" y="63.5" rot="MR0"/>
 <instance part="GND14" gate="1" x="73.66" y="58.42" rot="R90"/>
-<instance part="IMD_SHUTDOWN" gate="G$1" x="38.1" y="22.86" rot="R180"/>
-<instance part="GND13" gate="1" x="30.48" y="10.16" rot="R270"/>
-<instance part="POWER" gate="-2" x="0" y="106.68" rot="MR0"/>
-<instance part="POWER" gate="-1" x="0" y="109.22" rot="MR0"/>
+<instance part="IMD_SHUTDOWN" gate="G$1" x="27.94" y="22.86" rot="R180"/>
+<instance part="GND13" gate="1" x="20.32" y="10.16" rot="R270"/>
+<instance part="POWER" gate="-2" x="-5.08" y="106.68" rot="MR0"/>
+<instance part="POWER" gate="-1" x="-5.08" y="109.22" rot="MR0"/>
 <instance part="BUS2" gate="-1" x="134.62" y="127"/>
 <instance part="BUS2" gate="-2" x="134.62" y="124.46"/>
 <instance part="BUS2" gate="-3" x="134.62" y="121.92"/>
 <instance part="BUS2" gate="-4" x="134.62" y="119.38"/>
 <instance part="FUSE_BUS_1" gate="G$1" x="20.32" y="127"/>
 <instance part="FUSE_BUS_2" gate="G$1" x="114.3" y="127"/>
-<instance part="GND2" gate="1" x="7.62" y="106.68" rot="R90"/>
+<instance part="GND2" gate="1" x="0" y="104.14"/>
 <instance part="GND15" gate="1" x="7.62" y="124.46" rot="R90"/>
 <instance part="GND16" gate="1" x="127" y="124.46" rot="R270"/>
 <instance part="BRAKE_LIGHT_SSR" gate="G$1" x="142.24" y="12.7"/>
@@ -2541,15 +2581,15 @@ general purpose rectifier</description>
 <instance part="LED2" gate="LED" x="83.82" y="43.18" rot="R90"/>
 <instance part="LED3" gate="LED" x="121.92" y="0" rot="R90"/>
 <instance part="LED4" gate="LED" x="127" y="10.16" rot="R270"/>
-<instance part="LED5" gate="LED" x="45.72" y="22.86" rot="R180"/>
+<instance part="LED5" gate="LED" x="45.72" y="20.32" rot="R180"/>
 <instance part="R14" gate="G$1" x="45.72" y="12.7" rot="R90"/>
-<instance part="GND6" gate="1" x="40.64" y="30.48" rot="R270"/>
+<instance part="GND6" gate="1" x="38.1" y="27.94" rot="R270"/>
 <instance part="R15" gate="G$1" x="93.98" y="114.3"/>
 <instance part="C1" gate="G$1" x="48.26" y="111.76"/>
 <instance part="C2" gate="G$1" x="73.66" y="111.76"/>
 <instance part="GND7" gate="1" x="83.82" y="111.76"/>
-<instance part="U$1" gate="G$1" x="-2.54" y="88.9" rot="R270"/>
-<instance part="GND8" gate="1" x="-10.16" y="86.36" rot="R180"/>
+<instance part="U$1" gate="G$1" x="-7.62" y="88.9" rot="R270"/>
+<instance part="GND8" gate="1" x="-15.24" y="86.36" rot="R180"/>
 <instance part="X2" gate="-1" x="177.8" y="35.56"/>
 <instance part="X2" gate="-2" x="177.8" y="33.02"/>
 <instance part="X2" gate="-3" x="177.8" y="30.48"/>
@@ -2573,7 +2613,6 @@ general purpose rectifier</description>
 <instance part="P+2" gate="1" x="124.46" y="111.76"/>
 <instance part="P+3" gate="1" x="73.66" y="104.14" rot="R180"/>
 <instance part="P+4" gate="1" x="116.84" y="101.6" rot="R270"/>
-<instance part="P+5" gate="1" x="101.6" y="12.7" rot="R270"/>
 <instance part="GND21" gate="1" x="116.84" y="53.34" rot="R180"/>
 <instance part="R19" gate="G$1" x="116.84" y="43.18" rot="R90"/>
 <instance part="R18" gate="G$1" x="109.22" y="43.18" rot="R90"/>
@@ -2582,6 +2621,19 @@ general purpose rectifier</description>
 <instance part="R20" gate="G$1" x="149.86" y="111.76"/>
 <instance part="GND23" gate="1" x="170.18" y="111.76" rot="R90"/>
 <instance part="P+6" gate="1" x="139.7" y="111.76" rot="R90"/>
+<instance part="IMD_SSR" gate="G$1" x="35.56" y="48.26" rot="MR0"/>
+<instance part="LED9" gate="LED" x="38.1" y="35.56" rot="R270"/>
+<instance part="GND24" gate="1" x="27.94" y="35.56" rot="R270"/>
+<instance part="R21" gate="G$1" x="50.8" y="43.18" rot="R90"/>
+<instance part="P+7" gate="1" x="7.62" y="109.22" rot="R270"/>
+<instance part="P+8" gate="1" x="-15.24" y="73.66" rot="R90"/>
+<instance part="P+9" gate="1" x="7.62" y="78.74" rot="R90"/>
+<instance part="P+10" gate="1" x="15.24" y="50.8" rot="R90"/>
+<instance part="P+11" gate="1" x="2.54" y="33.02"/>
+<instance part="P+12" gate="1" x="162.56" y="15.24" rot="R270"/>
+<instance part="P+13" gate="1" x="162.56" y="40.64" rot="R180"/>
+<instance part="P+14" gate="1" x="30.48" y="109.22" rot="R90"/>
+<instance part="P+5" gate="1" x="101.6" y="12.7" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -2613,12 +2665,12 @@ general purpose rectifier</description>
 <segment>
 <pinref part="IMD_SHUTDOWN" gate="G$1" pin="COIL+"/>
 <pinref part="GND13" gate="1" pin="GND"/>
-<wire x1="33.02" y1="10.16" x2="33.02" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="10.16" x2="22.86" y2="12.7" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="POWER" gate="-2" pin="S"/>
-<wire x1="2.54" y1="106.68" x2="5.08" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="GND2" gate="1" pin="GND"/>
+<wire x1="0" y1="106.68" x2="-2.54" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="BUS1" gate="-2" pin="S"/>
@@ -2672,8 +2724,8 @@ general purpose rectifier</description>
 <segment>
 <pinref part="GND6" gate="1" pin="GND"/>
 <pinref part="LED5" gate="LED" pin="C"/>
-<wire x1="43.18" y1="30.48" x2="45.72" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="30.48" x2="45.72" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="27.94" x2="45.72" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="27.94" x2="45.72" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C1" gate="G$1" pin="1"/>
@@ -2687,7 +2739,7 @@ general purpose rectifier</description>
 <segment>
 <pinref part="U$1" gate="G$1" pin="COIL-"/>
 <pinref part="GND8" gate="1" pin="GND"/>
-<wire x1="-10.16" y1="83.82" x2="-7.62" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="-15.24" y1="83.82" x2="-12.7" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="LED6" gate="LED" pin="C"/>
@@ -2719,6 +2771,11 @@ general purpose rectifier</description>
 <pinref part="GND23" gate="1" pin="GND"/>
 <wire x1="167.64" y1="111.76" x2="165.1" y2="111.76" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="LED9" gate="LED" pin="C"/>
+<pinref part="GND24" gate="1" pin="GND"/>
+<wire x1="33.02" y1="35.56" x2="30.48" y2="35.56" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="N$2" class="0">
 <segment>
@@ -2739,17 +2796,17 @@ general purpose rectifier</description>
 <net name="N$6" class="0">
 <segment>
 <pinref part="IMD_SHUTDOWN" gate="G$1" pin="COIL-"/>
-<wire x1="33.02" y1="27.94" x2="33.02" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="27.94" x2="22.86" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="IMD_SHUTDOWN" gate="G$1" pin="4"/>
-<wire x1="20.32" y1="12.7" x2="20.32" y2="5.08" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="5.08" x2="45.72" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="12.7" x2="10.16" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="5.08" x2="45.72" y2="5.08" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="5.08" x2="50.8" y2="5.08" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="33.02" x2="50.8" y2="5.08" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="60.96" x2="33.02" y2="33.02" width="0.1524" layer="91"/>
-<junction x="33.02" y="33.02"/>
+<wire x1="50.8" y1="30.48" x2="50.8" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="60.96" x2="22.86" y2="30.48" width="0.1524" layer="91"/>
+<junction x="22.86" y="30.48"/>
 <pinref part="IMD_LATCH_SSR" gate="G$1" pin="DC-"/>
-<wire x1="33.02" y1="60.96" x2="40.64" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="33.02" x2="33.02" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="60.96" x2="40.64" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="30.48" x2="22.86" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="R14" gate="G$1" pin="1"/>
 <wire x1="45.72" y1="7.62" x2="45.72" y2="5.08" width="0.1524" layer="91"/>
 <junction x="45.72" y="5.08"/>
@@ -2826,51 +2883,6 @@ general purpose rectifier</description>
 <wire x1="86.36" y1="68.58" x2="83.82" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="68.58" x2="83.82" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="60.96" x2="124.46" y2="60.96" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="12VSUPPLY" class="0">
-<segment>
-<pinref part="IMD_SHUTDOWN" gate="G$1" pin="6"/>
-<pinref part="POWER" gate="-1" pin="S"/>
-<pinref part="FUSE_BUS_2" gate="G$1" pin="P1"/>
-<pinref part="FUSE_BUS_1" gate="G$1" pin="P2"/>
-<wire x1="104.14" y1="127" x2="33.02" y2="127" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="127" x2="30.48" y2="127" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="127" x2="33.02" y2="109.22" width="0.1524" layer="91"/>
-<junction x="33.02" y="127"/>
-<wire x1="33.02" y1="109.22" x2="12.7" y2="109.22" width="0.1524" layer="91"/>
-<pinref part="REG" gate="G$1" pin="IN"/>
-<wire x1="12.7" y1="109.22" x2="2.54" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="12.7" y1="27.94" x2="12.7" y2="35.56" width="0.1524" layer="91"/>
-<junction x="12.7" y="109.22"/>
-<wire x1="12.7" y1="35.56" x2="12.7" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="12.7" y1="78.74" x2="12.7" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="12.7" y1="96.52" x2="12.7" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="12.7" y1="35.56" x2="2.54" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="2.54" y1="35.56" x2="2.54" y2="-17.78" width="0.1524" layer="91"/>
-<junction x="12.7" y="35.56"/>
-<wire x1="2.54" y1="-17.78" x2="162.56" y2="-17.78" width="0.1524" layer="91"/>
-<label x="127" y="-17.78" size="1.778" layer="95"/>
-<label x="66.04" y="127" size="1.778" layer="95"/>
-<wire x1="33.02" y1="109.22" x2="48.26" y2="109.22" width="0.1524" layer="91"/>
-<junction x="33.02" y="109.22"/>
-<wire x1="48.26" y1="109.22" x2="55.88" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="-17.78" x2="162.56" y2="15.24" width="0.1524" layer="91"/>
-<pinref part="C1" gate="G$1" pin="2"/>
-<junction x="48.26" y="109.22"/>
-<pinref part="BRAKE_LIGHT_SSR" gate="G$1" pin="IO1"/>
-<wire x1="162.56" y1="15.24" x2="152.4" y2="15.24" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="P"/>
-<wire x1="-7.62" y1="73.66" x2="-15.24" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="-15.24" y1="73.66" x2="-15.24" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="-15.24" y1="96.52" x2="12.7" y2="96.52" width="0.1524" layer="91"/>
-<junction x="12.7" y="96.52"/>
-<wire x1="162.56" y1="15.24" x2="162.56" y2="45.72" width="0.1524" layer="91"/>
-<junction x="162.56" y="15.24"/>
-<pinref part="D4" gate="1" pin="A"/>
-<pinref part="INVERTER_SSR" gate="G$1" pin="DC+"/>
-<wire x1="15.24" y1="78.74" x2="12.7" y2="78.74" width="0.1524" layer="91"/>
-<junction x="12.7" y="78.74"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -2971,18 +2983,14 @@ general purpose rectifier</description>
 <wire x1="175.26" y1="35.56" x2="139.7" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="139.7" y1="35.56" x2="139.7" y2="45.72" width="0.1524" layer="91"/>
 <junction x="139.7" y="35.56"/>
-<pinref part="IMD_SHUTDOWN" gate="G$1" pin="3"/>
-<wire x1="22.86" y1="66.04" x2="22.86" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="IMD_LATCH_SSR" gate="G$1" pin="DC+"/>
-<wire x1="22.86" y1="35.56" x2="22.86" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="66.04" x2="22.86" y2="66.04" width="0.1524" layer="91"/>
-<junction x="22.86" y="35.56"/>
-<label x="66.04" y="35.56" size="1.778" layer="95"/>
 <wire x1="139.7" y1="35.56" x2="109.22" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="R18" gate="G$1" pin="1"/>
-<wire x1="109.22" y1="35.56" x2="22.86" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="38.1" x2="109.22" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="35.56" x2="50.8" y2="35.56" width="0.1524" layer="91"/>
 <junction x="109.22" y="35.56"/>
+<label x="66.04" y="35.56" size="1.778" layer="95"/>
+<pinref part="R21" gate="G$1" pin="1"/>
+<wire x1="50.8" y1="38.1" x2="50.8" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -3025,7 +3033,6 @@ general purpose rectifier</description>
 <segment>
 <pinref part="R14" gate="G$1" pin="2"/>
 <pinref part="LED5" gate="LED" pin="A"/>
-<wire x1="45.72" y1="20.32" x2="45.72" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$21" class="0">
@@ -3043,15 +3050,14 @@ general purpose rectifier</description>
 <net name="INVERTER_SUPPLY" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="S"/>
-<wire x1="7.62" y1="71.12" x2="10.16" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="10.16" y1="71.12" x2="10.16" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="10.16" y1="38.1" x2="0" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="0" y1="38.1" x2="0" y2="-20.32" width="0.1524" layer="91"/>
-<wire x1="0" y1="-20.32" x2="167.64" y2="-20.32" width="0.1524" layer="91"/>
-<wire x1="167.64" y1="-20.32" x2="167.64" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="71.12" x2="2.54" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="38.1" x2="-10.16" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="-10.16" y1="38.1" x2="-10.16" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="-10.16" y1="-12.7" x2="167.64" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="-12.7" x2="167.64" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="X2" gate="-5" pin="S"/>
 <wire x1="167.64" y1="25.4" x2="175.26" y2="25.4" width="0.1524" layer="91"/>
-<label x="127" y="-20.32" size="1.778" layer="95"/>
+<label x="127" y="-12.7" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$20" class="0">
@@ -3095,7 +3101,7 @@ general purpose rectifier</description>
 <segment>
 <pinref part="INVERTER_SSR" gate="G$1" pin="DC-"/>
 <pinref part="U$1" gate="G$1" pin="COIL+"/>
-<wire x1="15.24" y1="83.82" x2="7.62" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="83.82" x2="2.54" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$27" class="0">
@@ -3180,8 +3186,8 @@ general purpose rectifier</description>
 <segment>
 <pinref part="IMD_SHUTDOWN1" gate="G$1" pin="6"/>
 <pinref part="IMD_SHUTDOWN" gate="G$1" pin="5"/>
-<wire x1="10.16" y1="12.7" x2="10.16" y2="0" width="0.1524" layer="91"/>
-<wire x1="10.16" y1="0" x2="58.42" y2="0" width="0.1524" layer="91"/>
+<wire x1="0" y1="12.7" x2="0" y2="0" width="0.1524" layer="91"/>
+<wire x1="0" y1="0" x2="58.42" y2="0" width="0.1524" layer="91"/>
 <label x="20.32" y="0" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -3217,12 +3223,6 @@ general purpose rectifier</description>
 <pinref part="P+2" gate="1" pin="+5V"/>
 </segment>
 <segment>
-<pinref part="BMS_SSR" gate="G$1" pin="DC+"/>
-<pinref part="P+5" gate="1" pin="+5V"/>
-<wire x1="99.06" y1="12.7" x2="96.52" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="12.7" x2="96.52" y2="5.08" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="R20" gate="G$1" pin="1"/>
 <pinref part="P+6" gate="1" pin="+5V"/>
 <wire x1="144.78" y1="111.76" x2="142.24" y2="111.76" width="0.1524" layer="91"/>
@@ -3233,6 +3233,92 @@ general purpose rectifier</description>
 <pinref part="LED8" gate="LED" pin="A"/>
 <pinref part="R20" gate="G$1" pin="2"/>
 <wire x1="154.94" y1="111.76" x2="157.48" y2="111.76" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$30" class="0">
+<segment>
+<pinref part="IMD_SHUTDOWN" gate="G$1" pin="3"/>
+<pinref part="IMD_LATCH_SSR" gate="G$1" pin="DC+"/>
+<wire x1="40.64" y1="66.04" x2="12.7" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="66.04" x2="12.7" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="IMD_SSR" gate="G$1" pin="DC-"/>
+<wire x1="12.7" y1="45.72" x2="12.7" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="45.72" x2="12.7" y2="45.72" width="0.1524" layer="91"/>
+<junction x="12.7" y="45.72"/>
+</segment>
+</net>
+<net name="N$34" class="0">
+<segment>
+<pinref part="LED9" gate="LED" pin="A"/>
+<pinref part="IMD_SSR" gate="G$1" pin="CONTROL-"/>
+<wire x1="40.64" y1="35.56" x2="45.72" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="35.56" x2="45.72" y2="45.72" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$31" class="0">
+<segment>
+<pinref part="IMD_SSR" gate="G$1" pin="CONTROL+"/>
+<wire x1="50.8" y1="50.8" x2="45.72" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="R21" gate="G$1" pin="2"/>
+<wire x1="50.8" y1="50.8" x2="50.8" y2="48.26" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="+12V" class="0">
+<segment>
+<pinref part="POWER" gate="-1" pin="S"/>
+<wire x1="5.08" y1="109.22" x2="-2.54" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="P+7" gate="1" pin="+12V"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="P"/>
+<pinref part="P+8" gate="1" pin="+12V"/>
+</segment>
+<segment>
+<pinref part="INVERTER_SSR" gate="G$1" pin="DC+"/>
+<pinref part="P+9" gate="1" pin="+12V"/>
+<wire x1="10.16" y1="78.74" x2="15.24" y2="78.74" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="IMD_SSR" gate="G$1" pin="DC+"/>
+<wire x1="25.4" y1="50.8" x2="17.78" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="P+10" gate="1" pin="+12V"/>
+</segment>
+<segment>
+<pinref part="IMD_SHUTDOWN" gate="G$1" pin="6"/>
+<pinref part="P+11" gate="1" pin="+12V"/>
+<wire x1="2.54" y1="30.48" x2="2.54" y2="27.94" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="BRAKE_LIGHT_SSR" gate="G$1" pin="IO1"/>
+<pinref part="P+12" gate="1" pin="+12V"/>
+<wire x1="160.02" y1="15.24" x2="152.4" y2="15.24" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="D4" gate="1" pin="A"/>
+<pinref part="P+13" gate="1" pin="+12V"/>
+<wire x1="162.56" y1="43.18" x2="162.56" y2="45.72" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="REG" gate="G$1" pin="IN"/>
+<wire x1="48.26" y1="109.22" x2="55.88" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="C1" gate="G$1" pin="2"/>
+<junction x="48.26" y="109.22"/>
+<pinref part="FUSE_BUS_1" gate="G$1" pin="P2"/>
+<pinref part="FUSE_BUS_2" gate="G$1" pin="P1"/>
+<wire x1="104.14" y1="127" x2="33.02" y2="127" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="127" x2="30.48" y2="127" width="0.1524" layer="91"/>
+<junction x="33.02" y="127"/>
+<wire x1="33.02" y1="127" x2="33.02" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="109.22" x2="48.26" y2="109.22" width="0.1524" layer="91"/>
+<label x="66.04" y="127" size="1.778" layer="95"/>
+<pinref part="P+14" gate="1" pin="+12V"/>
+<junction x="33.02" y="109.22"/>
+</segment>
+<segment>
+<pinref part="BMS_SSR" gate="G$1" pin="DC+"/>
+<wire x1="99.06" y1="12.7" x2="96.52" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="12.7" x2="96.52" y2="5.08" width="0.1524" layer="91"/>
+<pinref part="P+5" gate="1" pin="+12V"/>
 </segment>
 </net>
 </nets>
