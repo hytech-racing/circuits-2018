@@ -558,7 +558,7 @@ Source: Sonnenschein</description>
 <part name="G70" library="HyTechSymbols" deviceset="BATTERY_1_CELL" device=""/>
 <part name="G71" library="HyTechSymbols" deviceset="BATTERY_1_CELL" device=""/>
 <part name="G72" library="HyTechSymbols" deviceset="BATTERY_1_CELL" device=""/>
-<part name="SMD-2" library="HyTechSymbols" deviceset="RELAY" device="" value=""/>
+<part name="SMD-3" library="HyTechSymbols" deviceset="RELAY" device="" value=""/>
 <part name="AIR-1" library="HyTechSymbols" deviceset="RELAY" device="" value=""/>
 <part name="AIR-2" library="HyTechSymbols" deviceset="RELAY" device="" value=""/>
 <part name="THERM1" library="HyTechSymbols" deviceset="THERMISTOR" device="" value=""/>
@@ -602,7 +602,7 @@ Source: Sonnenschein</description>
 <part name="GND2" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="GND3" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="GND4" library="HyTechSymbols" deviceset="GND" device=""/>
-<part name="AIR-3" library="HyTechSymbols" deviceset="RELAY" device="" value=""/>
+<part name="SMD-2" library="HyTechSymbols" deviceset="RELAY" device="" value=""/>
 <part name="HV_FUSE" library="HyTechSymbols" deviceset="FUSE" device=""/>
 <part name="GND5" library="HyTechSymbols" deviceset="GND" device=""/>
 </parts>
@@ -732,7 +732,7 @@ Source: Sonnenschein</description>
 <instance part="G70" gate="G$1" x="208.28" y="-127" rot="MR0"/>
 <instance part="G71" gate="G$1" x="218.44" y="-127" rot="MR0"/>
 <instance part="G72" gate="G$1" x="228.6" y="-127" rot="MR0"/>
-<instance part="SMD-2" gate="1" x="22.86" y="-116.84" rot="R270"/>
+<instance part="SMD-3" gate="1" x="22.86" y="-116.84" rot="R270"/>
 <instance part="AIR-1" gate="1" x="-213.36" y="12.7" rot="MR90"/>
 <instance part="AIR-2" gate="1" x="259.08" y="-116.84" rot="R270"/>
 <instance part="THERM1" gate="G$1" x="-185.42" y="17.78" smashed="yes" rot="R90">
@@ -872,7 +872,7 @@ Source: Sonnenschein</description>
 <instance part="GND2" gate="1" x="30.48" y="12.7" rot="R90"/>
 <instance part="GND3" gate="1" x="266.7" y="-116.84" rot="R90"/>
 <instance part="GND4" gate="1" x="30.48" y="-116.84" rot="R90"/>
-<instance part="AIR-3" gate="1" x="-213.36" y="-116.84" rot="R270"/>
+<instance part="SMD-2" gate="1" x="-213.36" y="-116.84" rot="R270"/>
 <instance part="HV_FUSE" gate="G$1" x="86.36" y="0"/>
 <instance part="GND5" gate="1" x="-205.74" y="-116.84" rot="R90"/>
 </instances>
@@ -2273,7 +2273,7 @@ Source: Sonnenschein</description>
 <wire x1="-218.44" y1="-22.86" x2="17.78" y2="-22.86" width="0.1524" layer="91"/>
 <wire x1="17.78" y1="-22.86" x2="17.78" y2="12.7" width="0.1524" layer="91"/>
 <junction x="-218.44" y="-22.86"/>
-<pinref part="SMD-2" gate="1" pin="2"/>
+<pinref part="SMD-3" gate="1" pin="2"/>
 <wire x1="17.78" y1="-116.84" x2="17.78" y2="-22.86" width="0.1524" layer="91"/>
 <junction x="17.78" y="-22.86"/>
 <pinref part="AIR-2" gate="1" pin="2"/>
@@ -2281,7 +2281,7 @@ Source: Sonnenschein</description>
 <wire x1="254" y1="-22.86" x2="254" y2="-116.84" width="0.1524" layer="91"/>
 <label x="-116.84" y="-22.86" size="1.778" layer="95"/>
 <label x="119.38" y="-22.86" size="1.778" layer="95"/>
-<pinref part="AIR-3" gate="1" pin="2"/>
+<pinref part="SMD-2" gate="1" pin="2"/>
 <wire x1="-218.44" y1="-116.84" x2="-218.44" y2="-22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -2438,11 +2438,11 @@ Source: Sonnenschein</description>
 <pinref part="GND3" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="SMD-2" gate="1" pin="1"/>
+<pinref part="SMD-3" gate="1" pin="1"/>
 <pinref part="GND4" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="AIR-3" gate="1" pin="1"/>
+<pinref part="SMD-2" gate="1" pin="1"/>
 <pinref part="GND5" gate="1" pin="GND"/>
 </segment>
 </net>
