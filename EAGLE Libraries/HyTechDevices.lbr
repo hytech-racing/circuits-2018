@@ -6834,6 +6834,26 @@ FUSE</text>
 <wire x1="-0.254" y1="-0.508" x2="-0.254" y2="2.54" width="0.127" layer="52"/>
 <wire x1="-0.254" y1="2.54" x2="-2.54" y2="2.54" width="0.127" layer="52"/>
 </package>
+<package name="NANO-FIT_RIGHT_ANGLE-8">
+<pad name="P$1" x="1.25" y="2.5" drill="1.2" shape="square"/>
+<pad name="P$2" x="3.75" y="2.5" drill="1.2" shape="square"/>
+<pad name="P$3" x="3.75" y="0" drill="1.2" shape="square"/>
+<pad name="P$4" x="1.25" y="0" drill="1.2" shape="square"/>
+<pad name="P$5" x="-1.25" y="0" drill="1.2" shape="square"/>
+<pad name="P$6" x="-1.25" y="2.5" drill="1.2" shape="square"/>
+<pad name="P$7" x="-3.75" y="2.5" drill="1.2" shape="square"/>
+<pad name="P$8" x="-3.75" y="0" drill="1.2" shape="square"/>
+<hole x="-3.75" y="-7.49" drill="1.7"/>
+<hole x="3.75" y="-7.49" drill="1.7"/>
+<wire x1="-5" y1="4" x2="5" y2="4" width="0.127" layer="21"/>
+<wire x1="5" y1="4" x2="5" y2="-2" width="0.127" layer="21"/>
+<wire x1="5" y1="-2" x2="5.74" y2="-2" width="0.127" layer="21"/>
+<wire x1="5.74" y1="-2" x2="5.74" y2="-10" width="0.127" layer="21"/>
+<wire x1="5.74" y1="-10" x2="-5.74" y2="-10" width="0.127" layer="21"/>
+<wire x1="-5.74" y1="-10" x2="-5.74" y2="-2" width="0.127" layer="21"/>
+<wire x1="-5.74" y1="-2" x2="-5" y2="-2" width="0.127" layer="21"/>
+<wire x1="-5" y1="-2" x2="-5" y2="4" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ARDUINO_NANO">
@@ -13734,6 +13754,35 @@ Schurter 0751.0110 Brass Fuse Clip
 <connect gate="G$1" pin="VCC" pad="VCC"/>
 <connect gate="G$1" pin="WDI" pad="WDI"/>
 <connect gate="G$1" pin="WDO" pad="WDO"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NANO-FIT_RIGHT_ANGLE-8">
+<gates>
+<gate name="G$1" symbol="M" x="-2.54" y="17.78"/>
+<gate name="G$2" symbol="M" x="-2.54" y="12.7"/>
+<gate name="G$3" symbol="M" x="-2.54" y="7.62"/>
+<gate name="G$4" symbol="M" x="-2.54" y="2.54"/>
+<gate name="G$5" symbol="M" x="-2.54" y="-2.54"/>
+<gate name="G$6" symbol="M" x="-2.54" y="-7.62"/>
+<gate name="G$7" symbol="M" x="-2.54" y="-12.7"/>
+<gate name="G$8" symbol="M" x="-2.54" y="-17.78"/>
+</gates>
+<devices>
+<device name="NA" package="NANO-FIT_RIGHT_ANGLE-8">
+<connects>
+<connect gate="G$1" pin="S" pad="P$1"/>
+<connect gate="G$2" pin="S" pad="P$2"/>
+<connect gate="G$3" pin="S" pad="P$3"/>
+<connect gate="G$4" pin="S" pad="P$4"/>
+<connect gate="G$5" pin="S" pad="P$5"/>
+<connect gate="G$6" pin="S" pad="P$6"/>
+<connect gate="G$7" pin="S" pad="P$7"/>
+<connect gate="G$8" pin="S" pad="P$8"/>
 </connects>
 <technologies>
 <technology name=""/>
