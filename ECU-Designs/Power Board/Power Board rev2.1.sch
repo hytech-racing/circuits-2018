@@ -2518,11 +2518,11 @@ general purpose rectifier</description>
 <part name="P+8" library="supply1" deviceset="+12V" device=""/>
 <part name="P+9" library="supply1" deviceset="+12V" device=""/>
 <part name="P+10" library="supply1" deviceset="+12V" device=""/>
-<part name="P+11" library="supply1" deviceset="+12V" device=""/>
 <part name="P+12" library="supply1" deviceset="+12V" device=""/>
 <part name="P+13" library="supply1" deviceset="+12V" device=""/>
 <part name="P+14" library="supply1" deviceset="+12V" device=""/>
 <part name="P+5" library="supply1" deviceset="+12V" device=""/>
+<part name="X1" library="HyTechDevices" deviceset="MINIFIT_5566-2" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2544,15 +2544,15 @@ general purpose rectifier</description>
 <instance part="GND14" gate="1" x="73.66" y="58.42" rot="R90"/>
 <instance part="IMD_SHUTDOWN" gate="G$1" x="27.94" y="22.86" rot="R180"/>
 <instance part="GND13" gate="1" x="20.32" y="10.16" rot="R270"/>
-<instance part="POWER" gate="-2" x="-5.08" y="106.68" rot="MR0"/>
-<instance part="POWER" gate="-1" x="-5.08" y="109.22" rot="MR0"/>
+<instance part="POWER" gate="-2" x="-7.62" y="109.22" rot="MR0"/>
+<instance part="POWER" gate="-1" x="-7.62" y="111.76" rot="MR0"/>
 <instance part="BUS2" gate="-1" x="134.62" y="127"/>
 <instance part="BUS2" gate="-2" x="134.62" y="124.46"/>
 <instance part="BUS2" gate="-3" x="134.62" y="121.92"/>
 <instance part="BUS2" gate="-4" x="134.62" y="119.38"/>
 <instance part="FUSE_BUS_1" gate="G$1" x="20.32" y="127"/>
 <instance part="FUSE_BUS_2" gate="G$1" x="114.3" y="127"/>
-<instance part="GND2" gate="1" x="0" y="104.14"/>
+<instance part="GND2" gate="1" x="-2.54" y="106.68"/>
 <instance part="GND15" gate="1" x="7.62" y="124.46" rot="R90"/>
 <instance part="GND16" gate="1" x="127" y="124.46" rot="R270"/>
 <instance part="BRAKE_LIGHT_SSR" gate="G$1" x="142.24" y="12.7"/>
@@ -2625,15 +2625,16 @@ general purpose rectifier</description>
 <instance part="LED9" gate="LED" x="38.1" y="35.56" rot="R270"/>
 <instance part="GND24" gate="1" x="27.94" y="35.56" rot="R270"/>
 <instance part="R21" gate="G$1" x="50.8" y="43.18" rot="R90"/>
-<instance part="P+7" gate="1" x="7.62" y="109.22" rot="R270"/>
+<instance part="P+7" gate="1" x="5.08" y="111.76" rot="R270"/>
 <instance part="P+8" gate="1" x="-15.24" y="73.66" rot="R90"/>
 <instance part="P+9" gate="1" x="7.62" y="78.74" rot="R90"/>
 <instance part="P+10" gate="1" x="15.24" y="50.8" rot="R90"/>
-<instance part="P+11" gate="1" x="2.54" y="33.02"/>
 <instance part="P+12" gate="1" x="162.56" y="15.24" rot="R270"/>
 <instance part="P+13" gate="1" x="162.56" y="40.64" rot="R180"/>
 <instance part="P+14" gate="1" x="30.48" y="109.22" rot="R90"/>
 <instance part="P+5" gate="1" x="101.6" y="12.7" rot="R270"/>
+<instance part="X1" gate="-2" x="-7.62" y="99.06" rot="MR0"/>
+<instance part="X1" gate="-1" x="-7.62" y="101.6" rot="MR0"/>
 </instances>
 <busses>
 </busses>
@@ -2670,7 +2671,7 @@ general purpose rectifier</description>
 <segment>
 <pinref part="POWER" gate="-2" pin="S"/>
 <pinref part="GND2" gate="1" pin="GND"/>
-<wire x1="0" y1="106.68" x2="-2.54" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="-2.54" y1="109.22" x2="-5.08" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="BUS1" gate="-2" pin="S"/>
@@ -3058,6 +3059,7 @@ general purpose rectifier</description>
 <pinref part="X2" gate="-5" pin="S"/>
 <wire x1="167.64" y1="25.4" x2="175.26" y2="25.4" width="0.1524" layer="91"/>
 <label x="127" y="-12.7" size="1.778" layer="95"/>
+<label x="2.54" y="43.18" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="N$20" class="0">
@@ -3266,7 +3268,7 @@ general purpose rectifier</description>
 <net name="+12V" class="0">
 <segment>
 <pinref part="POWER" gate="-1" pin="S"/>
-<wire x1="5.08" y1="109.22" x2="-2.54" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="111.76" x2="-5.08" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="P+7" gate="1" pin="+12V"/>
 </segment>
 <segment>
@@ -3282,11 +3284,6 @@ general purpose rectifier</description>
 <pinref part="IMD_SSR" gate="G$1" pin="DC+"/>
 <wire x1="25.4" y1="50.8" x2="17.78" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="P+10" gate="1" pin="+12V"/>
-</segment>
-<segment>
-<pinref part="IMD_SHUTDOWN" gate="G$1" pin="6"/>
-<pinref part="P+11" gate="1" pin="+12V"/>
-<wire x1="2.54" y1="30.48" x2="2.54" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="BRAKE_LIGHT_SSR" gate="G$1" pin="IO1"/>
@@ -3319,6 +3316,17 @@ general purpose rectifier</description>
 <wire x1="99.06" y1="12.7" x2="96.52" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="12.7" x2="96.52" y2="5.08" width="0.1524" layer="91"/>
 <pinref part="P+5" gate="1" pin="+12V"/>
+</segment>
+</net>
+<net name="SHUTDOWN_POWER" class="0">
+<segment>
+<wire x1="5.08" y1="101.6" x2="5.08" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="IMD_SHUTDOWN" gate="G$1" pin="6"/>
+<wire x1="5.08" y1="35.56" x2="2.54" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="35.56" x2="2.54" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="X1" gate="-1" pin="S"/>
+<wire x1="-5.08" y1="101.6" x2="5.08" y2="101.6" width="0.1524" layer="91"/>
+<label x="5.08" y="43.18" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 </nets>
