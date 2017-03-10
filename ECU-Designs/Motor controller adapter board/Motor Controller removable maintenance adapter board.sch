@@ -1208,6 +1208,7 @@ D = Direct mounting &lt;p&gt;
 <part name="GND1" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="X2" library="con-subd" deviceset="F09HP" device=""/>
 <part name="U$1" library="HyTechDevices" deviceset="0S102011MS2QS1" device=""/>
+<part name="GND2" library="HyTechSymbols" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1231,6 +1232,7 @@ D = Direct mounting &lt;p&gt;
 <instance part="GND1" gate="1" x="33.02" y="53.34" rot="R90"/>
 <instance part="X2" gate="G$1" x="-22.86" y="68.58"/>
 <instance part="U$1" gate="G$1" x="20.32" y="50.8" rot="R90"/>
+<instance part="GND2" gate="1" x="10.16" y="50.8" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -1270,6 +1272,11 @@ D = Direct mounting &lt;p&gt;
 <pinref part="GND1" gate="1" pin="GND"/>
 <wire x1="30.48" y1="53.34" x2="25.4" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="P"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="O"/>
+<pinref part="GND2" gate="1" pin="GND"/>
+<wire x1="12.7" y1="50.8" x2="15.24" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
