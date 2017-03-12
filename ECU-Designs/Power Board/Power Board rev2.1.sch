@@ -2465,7 +2465,7 @@ general purpose rectifier</description>
 <part name="R8" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="12k"/>
 <part name="BOARD_TEMP" library="HyTechDevices" deviceset="THERMISTOR_NCP21" device=""/>
 <part name="R9" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="10k"/>
-<part name="R10" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="200"/>
+<part name="R10" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="100"/>
 <part name="R11" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="100"/>
 <part name="R12" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="100"/>
 <part name="BMS_LATCH_SSR" library="HyTechDevices" deviceset="CPC1002N" device=""/>
@@ -2488,7 +2488,6 @@ general purpose rectifier</description>
 <part name="D1" library="HyTechDevices" deviceset="DIODE" device="0805"/>
 <part name="D2" library="HyTechDevices" deviceset="DIODE" device="0805"/>
 <part name="D3" library="HyTechDevices" deviceset="DIODE" device="0805"/>
-<part name="D4" library="HyTechDevices" deviceset="DIODE" device="0805"/>
 <part name="INVERTER_SSR" library="HyTechDevices" deviceset="CPC1002N" device=""/>
 <part name="LED6" library="HyTechDevices" deviceset="LED" device="-0805"/>
 <part name="GND9" library="HyTechSymbols" deviceset="GND" device=""/>
@@ -2523,6 +2522,7 @@ general purpose rectifier</description>
 <part name="P+14" library="supply1" deviceset="+12V" device=""/>
 <part name="P+5" library="supply1" deviceset="+12V" device=""/>
 <part name="X1" library="HyTechDevices" deviceset="MINIFIT_5566-2" device=""/>
+<part name="GND25" library="HyTechSymbols" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2599,7 +2599,6 @@ general purpose rectifier</description>
 <instance part="D1" gate="1" x="139.7" y="50.8" rot="R90"/>
 <instance part="D2" gate="1" x="147.32" y="50.8" rot="R90"/>
 <instance part="D3" gate="1" x="154.94" y="50.8" rot="R90"/>
-<instance part="D4" gate="1" x="162.56" y="50.8" rot="R90"/>
 <instance part="INVERTER_SSR" gate="G$1" x="25.4" y="81.28" rot="R180"/>
 <instance part="LED6" gate="LED" x="30.48" y="96.52" rot="R270"/>
 <instance part="GND9" gate="1" x="20.32" y="96.52" rot="R270"/>
@@ -2630,11 +2629,12 @@ general purpose rectifier</description>
 <instance part="P+9" gate="1" x="7.62" y="78.74" rot="R90"/>
 <instance part="P+10" gate="1" x="15.24" y="50.8" rot="R90"/>
 <instance part="P+12" gate="1" x="162.56" y="15.24" rot="R270"/>
-<instance part="P+13" gate="1" x="162.56" y="40.64" rot="R180"/>
+<instance part="P+13" gate="1" x="162.56" y="50.8" rot="R180"/>
 <instance part="P+14" gate="1" x="30.48" y="109.22" rot="R90"/>
 <instance part="P+5" gate="1" x="101.6" y="12.7" rot="R270"/>
 <instance part="X1" gate="-2" x="-7.62" y="99.06" rot="MR0"/>
 <instance part="X1" gate="-1" x="-7.62" y="101.6" rot="MR0"/>
+<instance part="GND25" gate="1" x="-2.54" y="96.52"/>
 </instances>
 <busses>
 </busses>
@@ -2777,6 +2777,11 @@ general purpose rectifier</description>
 <pinref part="GND24" gate="1" pin="GND"/>
 <wire x1="33.02" y1="35.56" x2="30.48" y2="35.56" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="X1" gate="-2" pin="S"/>
+<pinref part="GND25" gate="1" pin="GND"/>
+<wire x1="-2.54" y1="99.06" x2="-5.08" y2="99.06" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="N$2" class="0">
 <segment>
@@ -2862,14 +2867,14 @@ general purpose rectifier</description>
 <junction x="88.9" y="119.38"/>
 </segment>
 </net>
-<net name="N$10" class="0">
+<net name="12V_F1" class="0">
 <segment>
 <pinref part="FUSE_BUS_1" gate="G$1" pin="P1"/>
 <pinref part="BUS1" gate="-1" pin="S"/>
 <wire x1="10.16" y1="127" x2="2.54" y2="127" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$11" class="0">
+<net name="12V_F2" class="0">
 <segment>
 <pinref part="FUSE_BUS_2" gate="G$1" pin="P2"/>
 <pinref part="BUS2" gate="-1" pin="S"/>
@@ -3092,13 +3097,6 @@ general purpose rectifier</description>
 <wire x1="154.94" y1="60.96" x2="154.94" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$25" class="0">
-<segment>
-<pinref part="R7" gate="G$1" pin="1"/>
-<wire x1="162.56" y1="60.96" x2="162.56" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="D4" gate="1" pin="C"/>
-</segment>
-</net>
 <net name="N$26" class="0">
 <segment>
 <pinref part="INVERTER_SSR" gate="G$1" pin="DC-"/>
@@ -3291,9 +3289,9 @@ general purpose rectifier</description>
 <wire x1="160.02" y1="15.24" x2="152.4" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="D4" gate="1" pin="A"/>
 <pinref part="P+13" gate="1" pin="+12V"/>
-<wire x1="162.56" y1="43.18" x2="162.56" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="R7" gate="G$1" pin="1"/>
+<wire x1="162.56" y1="60.96" x2="162.56" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="REG" gate="G$1" pin="IN"/>
