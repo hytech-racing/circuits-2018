@@ -1537,8 +1537,6 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <port name="IMD_GND" side="left" coord="-22.86" direction="in"/>
 <port name="IMD_HV+" side="left" coord="-15.24" direction="nc"/>
 <port name="IMD_HV-" side="left" coord="-12.7" direction="nc"/>
-<port name="INDICATOR+" side="bottom" coord="0" direction="out"/>
-<port name="INDICATOR-" side="bottom" coord="-2.54" direction="in"/>
 <port name="BMS_POWER" side="left" coord="22.86" direction="out"/>
 <port name="BMS_GND" side="left" coord="20.32" direction="in"/>
 <port name="BMS_OK" side="left" coord="7.62" direction="in"/>
@@ -1566,6 +1564,10 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <port name="SHUTDOWN7_EXT_OUT" side="right" coord="-7.62" direction="out"/>
 <port name="TEMP_SENSE" side="right" coord="10.16" direction="in"/>
 <port name="TEMP_SENSE_OUT" side="left" coord="5.08" direction="out"/>
+<port name="INDIC+" side="bottom" coord="0" direction="out"/>
+<port name="INDIC-" side="bottom" coord="7.62" direction="in"/>
+<port name="DISCHARGE+" side="bottom" coord="-7.62" direction="out"/>
+<port name="DISCHARGE-" side="bottom" coord="-5.08" direction="in"/>
 </ports>
 <variantdefs>
 </variantdefs>
@@ -1856,6 +1858,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="MOLEX_IMPERIUM_2" library="HyTechSymbols" deviceset="M02" device=""/>
 <part name="SL3" library="HyTechSymbols" deviceset="M10" device=""/>
 <part name="SL8" library="HyTechSymbols" deviceset="M10" device=""/>
+<part name="DISCHARGE" library="HyTechDevices" deviceset="RESISTOR" device="10W"/>
 </parts>
 <sheets>
 <sheet>
@@ -1920,8 +1923,8 @@ for FSAE</text>
 <text x="33.02" y="228.6" size="1.778" layer="91">FSAE Energy Meter</text>
 <text x="180.34" y="193.04" size="1.778" layer="91">TODO bms current sensor</text>
 <text x="309.88" y="182.88" size="1.778" layer="91">TODO bspd current sensor</text>
-<text x="-7.62" y="243.84" size="5.08" layer="91">Wire Key
-Thick: High Voltage wires
+<text x="-12.7" y="243.84" size="5.08" layer="91">Wire Key
+Thick: Tractive System wires
 Orange: High Current path
 Blue: Buses</text>
 <text x="624.84" y="127" size="1.27" layer="91">TODO Add aux CAN port?</text>
@@ -1996,7 +1999,7 @@ Power for FSAE (EV5.1.4)</text>
 <instance part="GND15" gate="1" x="604.52" y="119.38" rot="R90"/>
 <instance part="U$2" gate="G$1" x="165.1" y="144.78"/>
 <instance part="U$3" gate="G$1" x="157.48" y="236.22"/>
-<instance part="ACCUMULATOR_INDICATOR" gate="G$1" x="284.48" y="127" rot="R180"/>
+<instance part="ACCUMULATOR_INDICATOR" gate="G$1" x="287.02" y="127" rot="R180"/>
 <instance part="SL5" gate="G$1" x="88.9" y="-15.24" rot="R180"/>
 <instance part="SL6" gate="G$1" x="182.88" y="-17.78"/>
 <instance part="F3" gate="G$1" x="269.24" y="-63.5"/>
@@ -2045,6 +2048,7 @@ Power for FSAE (EV5.1.4)</text>
 <instance part="MOLEX_IMPERIUM_2" gate="G$1" x="106.68" y="223.52" rot="MR0"/>
 <instance part="SL3" gate="G$1" x="167.64" y="-43.18" rot="R180"/>
 <instance part="SL8" gate="G$1" x="182.88" y="-40.64"/>
+<instance part="DISCHARGE" gate="G$1" x="259.08" y="137.16"/>
 </instances>
 <busses>
 <bus name="12VSUPPLY,GND,CANL,CANH">
@@ -3368,8 +3372,8 @@ Power for FSAE (EV5.1.4)</text>
 <net name="N$67" class="0">
 <segment>
 <pinref part="ACCUMULATOR_INDICATOR" gate="G$1" pin="C"/>
-<wire x1="276.86" y1="124.46" x2="276.86" y2="137.16" width="0.1524" layer="91"/>
-<portref moduleinst="HV_PCB" port="INDICATOR-"/>
+<wire x1="279.4" y1="124.46" x2="279.4" y2="137.16" width="0.1524" layer="91"/>
+<portref moduleinst="HV_PCB" port="INDIC+"/>
 </segment>
 </net>
 <net name="IMD_SUPPLY" class="0">
@@ -3419,10 +3423,9 @@ Power for FSAE (EV5.1.4)</text>
 </net>
 <net name="N$22" class="0">
 <segment>
-<portref moduleinst="HV_PCB" port="INDICATOR+"/>
-<wire x1="279.4" y1="137.16" x2="284.48" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="284.48" y1="137.16" x2="284.48" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="ACCUMULATOR_INDICATOR" gate="G$1" pin="A"/>
+<wire x1="287.02" y1="137.16" x2="287.02" y2="124.46" width="0.1524" layer="91"/>
+<portref moduleinst="HV_PCB" port="INDIC-"/>
 </segment>
 </net>
 <net name="BMS_POWER" class="0">
@@ -3616,6 +3619,22 @@ Power for FSAE (EV5.1.4)</text>
 <segment>
 <portref moduleinst="BMS_CONTROL" port="TEMP_SENSE"/>
 <wire x1="175.26" y1="193.04" x2="175.26" y2="190.5" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$24" class="0">
+<segment>
+<pinref part="DISCHARGE" gate="G$1" pin="1"/>
+<wire x1="254" y1="137.16" x2="254" y2="134.62" width="0.381" layer="91"/>
+<portref moduleinst="HV_PCB" port="DISCHARGE-"/>
+<wire x1="254" y1="134.62" x2="274.32" y2="134.62" width="0.381" layer="91"/>
+<wire x1="274.32" y1="134.62" x2="274.32" y2="137.16" width="0.381" layer="91"/>
+</segment>
+</net>
+<net name="N$25" class="0">
+<segment>
+<pinref part="DISCHARGE" gate="G$1" pin="2"/>
+<portref moduleinst="HV_PCB" port="DISCHARGE+"/>
+<wire x1="271.78" y1="137.16" x2="264.16" y2="137.16" width="0.381" layer="91"/>
 </segment>
 </net>
 </nets>
