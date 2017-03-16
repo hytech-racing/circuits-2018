@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.0.2">
+<eagle version="8.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.05" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -1794,8 +1794,8 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="SENSE_LINES" library="HyTechDevices" deviceset="MINIFIT_5566-4" device=""/>
 <part name="U$2" library="HyTechDevices" deviceset="LTC6804-1" device=""/>
 <part name="R1" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="120Ω"/>
-<part name="C6" library="HyTechDevices" deviceset="CAP" device="0805" value="100pF"/>
-<part name="C7" library="HyTechDevices" deviceset="CAP" device="0805" value="100pF"/>
+<part name="C6" library="HyTechDevices" deviceset="CAP" device="0805" value="25pF"/>
+<part name="C7" library="HyTechDevices" deviceset="CAP" device="0805" value="25pF"/>
 <part name="S1" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="100Ω"/>
 <part name="SC2" library="HyTechDevices" deviceset="CAP" device="0805" value="0.1uF"/>
 <part name="TRANSFORMER-" library="HyTechDevices" deviceset="TRANSFORMER_749010013" device="" value="350uH"/>
