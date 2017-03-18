@@ -2532,11 +2532,13 @@ general purpose rectifier</description>
 <part name="U$6" library="HyTechDevices" deviceset="SN74LVC1G07" device=""/>
 <part name="P+12" library="supply1" deviceset="+5V" device=""/>
 <part name="GND4" library="HyTechSymbols" deviceset="GND" device=""/>
+<part name="D1" library="HyTechDevices" deviceset="DIODE" device="0805"/>
+<part name="D2" library="HyTechDevices" deviceset="DIODE" device="0805"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="111.76" y="0" size="1.778" layer="91">Normally Open Relay -&gt; FSAE EV5.1.6</text>
+<text x="111.76" y="-10.16" size="1.778" layer="91">Normally Open Relay -&gt; FSAE EV5.1.6</text>
 </plain>
 <instances>
 <instance part="MC34161DG" gate="G$1" x="63.5" y="30.48" rot="R180"/>
@@ -2573,7 +2575,7 @@ general purpose rectifier</description>
 <instance part="GND2" gate="1" x="-5.08" y="25.4"/>
 <instance part="P+5" gate="1" x="17.78" y="35.56" rot="R270"/>
 <instance part="U$1" gate="G$1" x="127" y="5.08" rot="R90"/>
-<instance part="GND3" gate="1" x="114.3" y="5.08" rot="MR0"/>
+<instance part="GND3" gate="1" x="114.3" y="12.7" rot="MR180"/>
 <instance part="P+10" gate="1" x="137.16" y="10.16" rot="R270"/>
 <instance part="R4" gate="G$1" x="91.44" y="25.4" rot="R180"/>
 <instance part="R7" gate="G$1" x="81.28" y="2.54" rot="R270"/>
@@ -2582,6 +2584,8 @@ general purpose rectifier</description>
 <instance part="U$6" gate="G$1" x="-58.42" y="20.32"/>
 <instance part="P+12" gate="1" x="-38.1" y="20.32" rot="R270"/>
 <instance part="GND4" gate="1" x="-60.96" y="12.7"/>
+<instance part="D1" gate="1" x="111.76" y="68.58" rot="R180"/>
+<instance part="D2" gate="1" x="124.46" y="-2.54"/>
 </instances>
 <busses>
 </busses>
@@ -2604,6 +2608,10 @@ general purpose rectifier</description>
 <pinref part="U$3" gate="-1" pin="COIL+"/>
 <pinref part="GND10" gate="1" pin="GND"/>
 <wire x1="121.92" y1="55.88" x2="119.38" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="55.88" x2="119.38" y2="68.58" width="0.1524" layer="91"/>
+<junction x="119.38" y="55.88"/>
+<pinref part="D1" gate="1" pin="A"/>
+<wire x1="119.38" y1="68.58" x2="116.84" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$4" gate="G$1" pin="GND"/>
@@ -2641,7 +2649,10 @@ general purpose rectifier</description>
 <pinref part="U$1" gate="G$1" pin="COIL+"/>
 <pinref part="GND3" gate="1" pin="GND"/>
 <wire x1="116.84" y1="10.16" x2="114.3" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="10.16" x2="114.3" y2="7.62" width="0.1524" layer="91"/>
+<pinref part="D2" gate="1" pin="A"/>
+<wire x1="119.38" y1="-2.54" x2="116.84" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="-2.54" x2="116.84" y2="10.16" width="0.1524" layer="91"/>
+<junction x="116.84" y="10.16"/>
 </segment>
 <segment>
 <pinref part="U$6" gate="G$1" pin="3"/>
@@ -2814,6 +2825,10 @@ general purpose rectifier</description>
 <wire x1="17.78" y1="33.02" x2="17.78" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="U$12" gate="G$1" pin="VINB+"/>
 <wire x1="17.78" y1="27.94" x2="12.7" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="D1" gate="1" pin="C"/>
+<wire x1="109.22" y1="68.58" x2="104.14" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="68.58" x2="104.14" y2="55.88" width="0.1524" layer="91"/>
+<junction x="104.14" y="55.88"/>
 </segment>
 </net>
 <net name="SHUTDOWN_B" class="0">
@@ -2875,6 +2890,10 @@ general purpose rectifier</description>
 <pinref part="U$1" gate="G$1" pin="COIL-"/>
 <pinref part="P+10" gate="1" pin="+12V"/>
 <wire x1="134.62" y1="10.16" x2="132.08" y2="10.16" width="0.1524" layer="91"/>
+<pinref part="D2" gate="1" pin="C"/>
+<wire x1="127" y1="-2.54" x2="132.08" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="-2.54" x2="132.08" y2="10.16" width="0.1524" layer="91"/>
+<junction x="132.08" y="10.16"/>
 </segment>
 </net>
 <net name="N$10" class="0">
@@ -2967,6 +2986,7 @@ general purpose rectifier</description>
 <part name="R13" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="43k"/>
 <part name="R14" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="12k"/>
 <part name="GND15" library="HyTechSymbols" deviceset="GND" device=""/>
+<part name="D3" library="HyTechDevices" deviceset="DIODE" device="0805"/>
 </parts>
 <sheets>
 <sheet>
@@ -3031,7 +3051,7 @@ general purpose rectifier</description>
 <instance part="BSPD" gate="-10" x="101.6" y="12.7"/>
 <instance part="GND9" gate="1" x="99.06" y="7.62"/>
 <instance part="SOFTWARE_SHUTOFF" gate="G$1" x="106.68" y="66.04" rot="MR270"/>
-<instance part="GND10" gate="1" x="93.98" y="63.5" rot="R180"/>
+<instance part="GND10" gate="1" x="93.98" y="60.96" rot="R270"/>
 <instance part="U$5" gate="G$1" x="121.92" y="71.12" rot="R270"/>
 <instance part="R6" gate="G$1" x="111.76" y="81.28"/>
 <instance part="GND11" gate="1" x="101.6" y="81.28" rot="R270"/>
@@ -3053,6 +3073,7 @@ general purpose rectifier</description>
 <instance part="R13" gate="G$1" x="127" y="7.62" rot="R90"/>
 <instance part="R14" gate="G$1" x="127" y="-7.62" rot="R90"/>
 <instance part="GND15" gate="1" x="127" y="-15.24"/>
+<instance part="D3" gate="1" x="104.14" y="73.66" rot="MR180"/>
 </instances>
 <busses>
 </busses>
@@ -3176,7 +3197,10 @@ general purpose rectifier</description>
 <segment>
 <pinref part="SOFTWARE_SHUTOFF" gate="G$1" pin="COIL+"/>
 <pinref part="GND10" gate="1" pin="GND"/>
-<wire x1="96.52" y1="60.96" x2="93.98" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="D3" gate="1" pin="A"/>
+<wire x1="99.06" y1="73.66" x2="96.52" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="73.66" x2="96.52" y2="60.96" width="0.1524" layer="91"/>
+<junction x="96.52" y="60.96"/>
 </segment>
 <segment>
 <pinref part="R14" gate="G$1" pin="1"/>
@@ -3505,6 +3529,10 @@ general purpose rectifier</description>
 <pinref part="SOFTWARE_SHUTOFF" gate="G$1" pin="COIL-"/>
 <pinref part="U$5" gate="G$1" pin="DC-"/>
 <wire x1="111.76" y1="60.96" x2="119.38" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="60.96" x2="111.76" y2="73.66" width="0.1524" layer="91"/>
+<junction x="111.76" y="60.96"/>
+<pinref part="D3" gate="1" pin="C"/>
+<wire x1="111.76" y1="73.66" x2="106.68" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="READ_UPSTREAM_SHUTDOWN" class="0">
