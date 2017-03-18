@@ -2424,10 +2424,11 @@ C12</text>
 <segment>
 <wire x1="-213.36" y1="114.3" x2="-213.36" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="-213.36" y1="66.04" x2="-213.36" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="-213.36" y1="40.64" x2="-259.08" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="-213.36" y1="40.64" x2="-256.54" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="F9" gate="G$1" pin="2"/>
 <label x="-248.92" y="40.64" size="1.778" layer="95"/>
 <portref moduleinst="DRAIN9" port="CELL+"/>
+<wire x1="-256.54" y1="40.64" x2="-259.08" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="-180.34" y1="66.04" x2="-213.36" y2="66.04" width="0.1524" layer="91"/>
 <junction x="-213.36" y="66.04"/>
 <label x="-193.04" y="66.04" size="1.778" layer="95"/>
@@ -2444,6 +2445,15 @@ C12</text>
 <pinref part="GLV_CONTROL" gate="G$1" pin="DC+"/>
 <wire x1="-213.36" y1="114.3" x2="-167.64" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="-167.64" y1="114.3" x2="-167.64" y2="119.38" width="0.1524" layer="91"/>
+<pinref part="X2" gate="-1" pin="S"/>
+<wire x1="-289.56" y1="55.88" x2="-287.02" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="X2" gate="-2" pin="S"/>
+<wire x1="-289.56" y1="58.42" x2="-287.02" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="-287.02" y1="58.42" x2="-287.02" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="-287.02" y1="55.88" x2="-256.54" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="-256.54" y1="55.88" x2="-256.54" y2="40.64" width="0.1524" layer="91"/>
+<junction x="-287.02" y="55.88"/>
+<junction x="-256.54" y="40.64"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -2530,19 +2540,10 @@ C12</text>
 </net>
 <net name="CC9" class="0">
 <segment>
-<wire x1="-289.56" y1="40.64" x2="-287.02" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="F9" gate="G$1" pin="1"/>
 <pinref part="CELL9" gate="G$1" pin="S"/>
 <label x="-281.94" y="40.64" size="1.778" layer="95"/>
-<pinref part="X2" gate="-1" pin="S"/>
-<wire x1="-287.02" y1="40.64" x2="-269.24" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="-289.56" y1="55.88" x2="-287.02" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="-287.02" y1="55.88" x2="-287.02" y2="40.64" width="0.1524" layer="91"/>
-<junction x="-287.02" y="40.64"/>
-<pinref part="X2" gate="-2" pin="S"/>
-<wire x1="-289.56" y1="58.42" x2="-287.02" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="-287.02" y1="58.42" x2="-287.02" y2="55.88" width="0.1524" layer="91"/>
-<junction x="-287.02" y="55.88"/>
+<wire x1="-289.56" y1="40.64" x2="-269.24" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="CC8" class="0">
@@ -2862,7 +2863,7 @@ C12</text>
 <label x="-17.78" y="48.26" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="SUPPLY_INTER" class="0">
 <segment>
 <pinref part="GLV_CONTROL" gate="G$1" pin="DC-"/>
 <pinref part="S2" gate="G$1" pin="1"/>
@@ -2963,15 +2964,7 @@ C12</text>
 <junction x="22.86" y="15.24"/>
 </segment>
 </net>
-<net name="N$10" class="0">
-<segment>
-<pinref part="GLV_CONTROL" gate="G$1" pin="CONTROL-"/>
-<pinref part="G1" gate="G$1" pin="1"/>
-<wire x1="-162.56" y1="139.7" x2="-162.56" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="-162.56" y1="142.24" x2="-157.48" y2="142.24" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$11" class="0">
+<net name="SSR+" class="0">
 <segment>
 <pinref part="X1" gate="-1" pin="S"/>
 <pinref part="GLV_CONTROL" gate="G$1" pin="CONTROL+"/>
@@ -3030,6 +3023,14 @@ C12</text>
 <wire x1="-261.62" y1="-43.18" x2="-223.52" y2="-43.18" width="0.1524" layer="91"/>
 <wire x1="-223.52" y1="-43.18" x2="-223.52" y2="-55.88" width="0.1524" layer="91"/>
 <label x="-248.92" y="-43.18" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SSR-" class="0">
+<segment>
+<pinref part="GLV_CONTROL" gate="G$1" pin="CONTROL-"/>
+<pinref part="G1" gate="G$1" pin="1"/>
+<wire x1="-162.56" y1="139.7" x2="-162.56" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="-162.56" y1="142.24" x2="-157.48" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
