@@ -1267,54 +1267,6 @@ diameter 2.54 mm, horizontal, grid 10.16 mm</description>
 <pin name="1" x="0" y="5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
 <pin name="2" x="0" y="-2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
 </symbol>
-<symbol name="LM293">
-<wire x1="0" y1="1.27" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="-2.54" x2="0" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="0" y1="-5.08" x2="0" y2="-8.89" width="0.254" layer="94"/>
-<wire x1="0" y1="-8.89" x2="12.7" y2="-8.89" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-8.89" x2="12.7" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-7.62" x2="12.7" y2="1.27" width="0.254" layer="94"/>
-<wire x1="0" y1="1.27" x2="12.7" y2="1.27" width="0.254" layer="94"/>
-<text x="0.635" y="1.905" size="1.778" layer="95">&gt;NAME</text>
-<text x="0.635" y="-11.43" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="1OUT" x="-2.54" y="0" visible="pad" length="short" direction="pas"/>
-<pin name="1IN-" x="-2.54" y="-2.54" visible="pad" length="short" direction="pas"/>
-<pin name="1IN+" x="-2.54" y="-5.08" visible="pad" length="short" direction="pas"/>
-<pin name="GND" x="-2.54" y="-7.62" length="short" direction="pas"/>
-<pin name="2IN+" x="15.24" y="-7.62" visible="pad" length="short" direction="pas" rot="R180"/>
-<pin name="2IN-" x="15.24" y="-5.08" visible="pad" length="short" direction="pas" rot="R180"/>
-<pin name="2OUT" x="15.24" y="-2.54" visible="pad" length="short" direction="pas" rot="R180"/>
-<pin name="VCC" x="15.24" y="0" length="short" direction="pas" rot="R180"/>
-<wire x1="1.016" y1="-1.27" x2="1.016" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="1.016" y1="-2.54" x2="1.016" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="1.016" y1="-5.08" x2="1.016" y2="-6.35" width="0.254" layer="94"/>
-<wire x1="1.016" y1="-6.35" x2="4.572" y2="-3.81" width="0.254" layer="94"/>
-<wire x1="4.572" y1="-3.81" x2="1.016" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="5.08" y2="0" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="0" x2="5.08" y2="-3.81" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="-3.81" x2="4.572" y2="-3.81" width="0.1524" layer="94"/>
-<wire x1="0" y1="-2.54" x2="1.016" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="0" y1="-5.08" x2="1.016" y2="-5.08" width="0.1524" layer="94"/>
-<wire x1="1.778" y1="-4.826" x2="1.778" y2="-5.08" width="0.1524" layer="94"/>
-<wire x1="1.778" y1="-5.08" x2="1.778" y2="-5.334" width="0.1524" layer="94"/>
-<wire x1="1.778" y1="-5.08" x2="1.524" y2="-5.08" width="0.1524" layer="94"/>
-<wire x1="1.524" y1="-2.54" x2="2.032" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="1.778" y1="-5.08" x2="2.032" y2="-5.08" width="0.1524" layer="94"/>
-<wire x1="11.684" y1="-6.35" x2="11.684" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="11.684" y1="-5.08" x2="11.684" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="11.684" y1="-2.54" x2="11.684" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="11.684" y1="-1.27" x2="8.128" y2="-3.81" width="0.254" layer="94"/>
-<wire x1="8.128" y1="-3.81" x2="11.684" y2="-6.35" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-3.81" x2="8.128" y2="-3.81" width="0.1524" layer="94"/>
-<wire x1="12.7" y1="-5.08" x2="11.684" y2="-5.08" width="0.1524" layer="94"/>
-<wire x1="12.7" y1="-2.54" x2="11.684" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="11.176" y1="-5.08" x2="10.668" y2="-5.08" width="0.1524" layer="94"/>
-<wire x1="11.176" y1="-2.54" x2="10.668" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="10.922" y1="-4.826" x2="10.922" y2="-5.334" width="0.1524" layer="94"/>
-<wire x1="12.7" y1="-7.62" x2="7.62" y2="-7.62" width="0.1524" layer="94"/>
-<wire x1="7.62" y1="-7.62" x2="7.62" y2="-3.81" width="0.1524" layer="94"/>
-</symbol>
 <symbol name="TEENSY_3.2_SIMPLE">
 <pin name="D0(RX1)" x="-2.54" y="35.56" visible="pin" length="short"/>
 <pin name="D1(TX1)" x="-2.54" y="33.02" visible="pin" length="short"/>
@@ -1976,29 +1928,6 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="LM293">
-<description>&lt;b&gt;Texas Instruments LM293 Dual Differential Comparator&lt;/b&gt;</description>
-<gates>
-<gate name="G$1" symbol="LM293" x="0" y="0"/>
-</gates>
-<devices>
-<device name="DG4" package="SOIC-08">
-<connects>
-<connect gate="G$1" pin="1IN+" pad="3"/>
-<connect gate="G$1" pin="1IN-" pad="2"/>
-<connect gate="G$1" pin="1OUT" pad="1"/>
-<connect gate="G$1" pin="2IN+" pad="5"/>
-<connect gate="G$1" pin="2IN-" pad="6"/>
-<connect gate="G$1" pin="2OUT" pad="7"/>
-<connect gate="G$1" pin="GND" pad="4"/>
-<connect gate="G$1" pin="VCC" pad="8"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="TEENSY_3.2_SIMPLE">
 <description>Simple version of the Teensy 3.2 board that only uses the 2 main rows of pins, not the inner pins or the pins opposite the usb port.</description>
 <gates>
@@ -2501,7 +2430,7 @@ general purpose rectifier</description>
 <part name="GND10" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="R5" library="HyTechDevices" deviceset="RESISTOR" device="EZ" value="680k"/>
 <part name="C1" library="HyTechDevices" deviceset="CAP" device="EZ" value=".47u"/>
-<part name="U$4" library="HyTechDevices" deviceset="LM293" device="DG4"/>
+<part name="U$4" library="HyTechDevices" deviceset="MCP6002" device="SOIC"/>
 <part name="CALIBRATE3" library="HyTechDevices" deviceset="TRIMPOT_3296" device="C"/>
 <part name="GND12" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="R3" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="330"/>
@@ -2559,7 +2488,7 @@ general purpose rectifier</description>
 <instance part="R3" gate="G$1" x="-30.48" y="22.86" rot="R270"/>
 <instance part="GND11" gate="1" x="-45.72" y="40.64" rot="MR90"/>
 <instance part="GND13" gate="1" x="10.16" y="60.96" rot="MR90"/>
-<instance part="R6" gate="G$1" x="60.96" y="50.8"/>
+<instance part="R6" gate="G$1" x="58.42" y="55.88"/>
 <instance part="GND14" gate="1" x="40.64" y="22.86" rot="R270"/>
 <instance part="P+3" gate="1" x="33.02" y="60.96" rot="R270"/>
 <instance part="P+4" gate="1" x="127" y="43.18" rot="R270"/>
@@ -2614,7 +2543,7 @@ general purpose rectifier</description>
 <wire x1="119.38" y1="68.58" x2="116.84" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$4" gate="G$1" pin="GND"/>
+<pinref part="U$4" gate="G$1" pin="VSS"/>
 <pinref part="GND12" gate="1" pin="GND"/>
 <wire x1="27.94" y1="43.18" x2="30.48" y2="43.18" width="0.1524" layer="91"/>
 </segment>
@@ -2697,15 +2626,11 @@ general purpose rectifier</description>
 </net>
 <net name="N$9" class="0">
 <segment>
-<pinref part="U$4" gate="G$1" pin="1OUT"/>
+<pinref part="U$4" gate="G$1" pin="VOUTA"/>
 <wire x1="30.48" y1="50.8" x2="27.94" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="50.8" x2="27.94" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="CONTROL+"/>
-<wire x1="27.94" y1="55.88" x2="66.04" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="R6" gate="G$1" pin="2"/>
-<wire x1="66.04" y1="55.88" x2="66.04" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="71.12" y1="50.8" x2="66.04" y2="50.8" width="0.1524" layer="91"/>
-<junction x="66.04" y="50.8"/>
+<wire x1="27.94" y1="55.88" x2="53.34" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="R6" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="SHUTDOWN_D" class="0">
@@ -2723,7 +2648,7 @@ general purpose rectifier</description>
 <wire x1="-30.48" y1="40.64" x2="-33.02" y2="40.64" width="0.1524" layer="91"/>
 <junction x="-30.48" y="40.64"/>
 <wire x1="-30.48" y1="40.64" x2="-30.48" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="G$1" pin="1IN+"/>
+<pinref part="U$4" gate="G$1" pin="VINA+"/>
 <wire x1="-30.48" y1="45.72" x2="30.48" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="-30.48" y1="27.94" x2="-30.48" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="R3" gate="G$1" pin="1"/>
@@ -2735,7 +2660,7 @@ general purpose rectifier</description>
 </net>
 <net name="N$7" class="0">
 <segment>
-<pinref part="U$4" gate="G$1" pin="1IN-"/>
+<pinref part="U$4" gate="G$1" pin="VINA-"/>
 <pinref part="CALIBRATE3" gate="G$1" pin="2"/>
 <wire x1="30.48" y1="48.26" x2="20.32" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="20.32" y1="48.26" x2="20.32" y2="55.88" width="0.1524" layer="91"/>
@@ -2768,13 +2693,10 @@ general purpose rectifier</description>
 <wire x1="43.18" y1="17.78" x2="43.18" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$4" gate="G$1" pin="VCC"/>
-<pinref part="R6" gate="G$1" pin="1"/>
-<wire x1="55.88" y1="50.8" x2="53.34" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="U$4" gate="G$1" pin="VDD"/>
 <pinref part="P+7" gate="1" pin="+5V"/>
 <wire x1="53.34" y1="50.8" x2="48.26" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="53.34" y1="50.8" x2="53.34" y2="43.18" width="0.1524" layer="91"/>
-<junction x="53.34" y="50.8"/>
 </segment>
 <segment>
 <pinref part="R5" gate="G$1" pin="2"/>
@@ -2926,6 +2848,14 @@ general purpose rectifier</description>
 <wire x1="-43.18" y1="15.24" x2="-30.48" y2="15.24" width="0.1524" layer="91"/>
 <wire x1="-30.48" y1="15.24" x2="-30.48" y2="17.78" width="0.1524" layer="91"/>
 <pinref part="U$6" gate="G$1" pin="4"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="R6" gate="G$1" pin="2"/>
+<pinref part="U$2" gate="G$1" pin="CONTROL+"/>
+<wire x1="71.12" y1="50.8" x2="63.5" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="50.8" x2="63.5" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
