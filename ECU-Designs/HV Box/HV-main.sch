@@ -2665,11 +2665,12 @@ general purpose rectifier</description>
 <part name="R22" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="500k"/>
 <part name="R23" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="40k"/>
 <part name="R24" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="40k"/>
+<part name="AI_SSR" library="HyTechDevices" deviceset="CPC1002N" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="297.18" y="-170.18" size="1.778" layer="97">Jumper used for Formula Hybrid
+<text x="294.64" y="-170.18" size="1.778" layer="97">Jumper used for Formula Hybrid
 Used to bypass 60V threshold</text>
 <text x="30.48" y="-106.68" size="1.778" layer="97">Current sensor 1: ISB-100-A-600
 With pullup resistors if necessary
@@ -2695,7 +2696,7 @@ With pullup resistors if necessary
 <wire x1="106.68" y1="-142.24" x2="20.32" y2="-142.24" width="0.1524" layer="90"/>
 <wire x1="20.32" y1="-142.24" x2="20.32" y2="-119.38" width="0.1524" layer="90"/>
 <text x="20.32" y="-119.38" size="5.08" layer="90">AIR Power Distribution</text>
-<rectangle x1="165.1" y1="-238.76" x2="172.72" y2="63.5" layer="90"/>
+<rectangle x1="165.1" y1="-208.28" x2="172.72" y2="63.5" layer="90"/>
 <text x="160.02" y="83.82" size="12.7" layer="90" rot="R180">GLV</text>
 <text x="177.8" y="71.12" size="12.7" layer="90">TS</text>
 <wire x1="177.8" y1="7.62" x2="327.66" y2="7.62" width="0.1524" layer="90"/>
@@ -2707,22 +2708,17 @@ With pullup resistors if necessary
 <wire x1="322.58" y1="-71.12" x2="322.58" y2="-114.3" width="0.1524" layer="90"/>
 <wire x1="322.58" y1="-114.3" x2="177.8" y2="-114.3" width="0.1524" layer="90"/>
 <text x="177.8" y="-71.12" size="5.08" layer="90">Discharge Circuitry</text>
-<wire x1="177.8" y1="-124.46" x2="335.28" y2="-124.46" width="0.1524" layer="90"/>
-<wire x1="335.28" y1="-124.46" x2="335.28" y2="-180.34" width="0.1524" layer="90"/>
-<wire x1="335.28" y1="-180.34" x2="177.8" y2="-180.34" width="0.1524" layer="90"/>
-<wire x1="177.8" y1="-180.34" x2="177.8" y2="-124.46" width="0.1524" layer="90"/>
-<text x="177.8" y="-124.46" size="5.08" layer="90">TSAL/TSEL Control</text>
-<wire x1="177.8" y1="-190.5" x2="266.7" y2="-190.5" width="0.1524" layer="90"/>
-<wire x1="266.7" y1="-190.5" x2="266.7" y2="-233.68" width="0.1524" layer="90"/>
-<wire x1="266.7" y1="-233.68" x2="177.8" y2="-233.68" width="0.1524" layer="90"/>
-<wire x1="177.8" y1="-233.68" x2="177.8" y2="-190.5" width="0.1524" layer="90"/>
-<text x="177.8" y="-190.5" size="5.08" layer="90">Accumulator Voltage Present Indicator</text>
+<wire x1="177.8" y1="-124.46" x2="332.74" y2="-124.46" width="0.1524" layer="90"/>
+<wire x1="332.74" y1="-124.46" x2="332.74" y2="-200.66" width="0.1524" layer="90"/>
+<wire x1="332.74" y1="-200.66" x2="177.8" y2="-200.66" width="0.1524" layer="90"/>
+<wire x1="177.8" y1="-200.66" x2="177.8" y2="-124.46" width="0.1524" layer="90"/>
+<text x="177.8" y="-124.46" size="5.08" layer="90">TSAL/TSEL Control, Accumulator Voltage Indicator</text>
 <wire x1="177.8" y1="-71.12" x2="177.8" y2="-114.3" width="0.1524" layer="90"/>
 <text x="205.74" y="-111.76" size="1.778" layer="97">Unfused connection
 used at FSAE/FN</text>
 <text x="205.74" y="-91.44" size="1.778" layer="97">Unfused connection
 used at FSAE/FN</text>
-<text x="299.72" y="-132.08" size="1.778" layer="97">Jumper used for FSAE/FN
+<text x="297.18" y="-132.08" size="1.778" layer="97">Jumper used for FSAE/FN
 Used to enforce 60V threshold</text>
 <wire x1="177.8" y1="55.88" x2="254" y2="55.88" width="0.1524" layer="90"/>
 <wire x1="177.8" y1="17.78" x2="177.8" y2="55.88" width="0.1524" layer="90"/>
@@ -2733,15 +2729,12 @@ Used to enforce 60V threshold</text>
 <text x="182.88" y="33.02" size="1.778" layer="97">Main HV+ and HV-
 (Externally Fused)</text>
 <text x="71.12" y="-101.6" size="1.778" layer="97">TODO pulldown or pullup</text>
-<text x="302.26" y="-119.38" size="1.778" layer="97">TODO test this fix (turn on at 60VDC)</text>
-<text x="302.26" y="-121.92" size="1.778" layer="97">TODO HVD disconnect TSAL reqs</text>
 <text x="124.46" y="48.26" size="1.27" layer="97">TODO change to 5V?</text>
-<text x="241.3" y="-160.02" size="1.778" layer="97" rot="R180">~4.5v Gate threshold
+<text x="226.06" y="-160.02" size="1.778" layer="97" rot="R180">~4.5v Gate threshold
  corresponds to 60V
  on tractive system</text>
 <text x="259.08" y="35.56" size="3.048" layer="97">Thick wires: Isolated Tractive System</text>
-<text x="93.98" y="-53.34" size="1.778" layer="97">TODO comparator instead of Op-amp?</text>
-<text x="269.24" y="-198.12" size="1.778" layer="97">TODO jumper for 30V/60V voltage indicator?</text>
+<text x="93.98" y="-53.34" size="1.778" layer="97">TODO comparator instead of MCP6002?</text>
 </plain>
 <instances>
 <instance part="IC1" gate="G$1" x="132.08" y="-30.48"/>
@@ -2757,14 +2750,14 @@ Used to enforce 60V threshold</text>
 <instance part="TRIM+" gate="G$1" x="294.64" y="-17.78"/>
 <instance part="TRIM-" gate="G$1" x="294.64" y="-27.94"/>
 <instance part="T2" gate="G$1" x="66.04" y="30.48" rot="R180"/>
-<instance part="HV_REG2" gate="G$1" x="208.28" y="-200.66"/>
-<instance part="R1" gate="G$1" x="231.14" y="-203.2" rot="R90"/>
-<instance part="R2" gate="G$1" x="213.36" y="-215.9" rot="R90"/>
-<instance part="INDICATOR" gate="-2" x="248.92" y="-198.12"/>
-<instance part="INDICATOR" gate="-1" x="248.92" y="-195.58"/>
+<instance part="HV_REG2" gate="G$1" x="205.74" y="-187.96"/>
+<instance part="R1" gate="G$1" x="228.6" y="-190.5" rot="MR90"/>
+<instance part="R2" gate="G$1" x="203.2" y="-195.58" rot="MR180"/>
+<instance part="INDICATOR" gate="-2" x="309.88" y="-182.88"/>
+<instance part="INDICATOR" gate="-1" x="309.88" y="-180.34"/>
 <instance part="U$12" gate="G$1" x="228.6" y="-73.66"/>
-<instance part="FH_JUMP_T" gate="-2" x="309.88" y="-157.48"/>
-<instance part="FH_JUMP_T" gate="-1" x="309.88" y="-154.94"/>
+<instance part="FH_JUMP_T" gate="-2" x="307.34" y="-157.48"/>
+<instance part="FH_JUMP_T" gate="-1" x="307.34" y="-154.94"/>
 <instance part="GND14" gate="1" x="246.38" y="-99.06"/>
 <instance part="DISCH+" gate="-2" x="294.64" y="-86.36"/>
 <instance part="DISCH+" gate="-1" x="294.64" y="-83.82"/>
@@ -2817,8 +2810,8 @@ Used to enforce 60V threshold</text>
 <instance part="BMS" gate="-6" x="142.24" y="30.48"/>
 <instance part="BMS" gate="-7" x="142.24" y="27.94"/>
 <instance part="BMS" gate="-8" x="142.24" y="25.4"/>
-<instance part="P+3" gate="1" x="116.84" y="50.8"/>
-<instance part="GND5" gate="1" x="109.22" y="50.8" rot="R180"/>
+<instance part="P+3" gate="1" x="119.38" y="50.8"/>
+<instance part="GND5" gate="1" x="111.76" y="50.8" rot="R180"/>
 <instance part="FUSE" gate="G$1" x="218.44" y="48.26"/>
 <instance part="GND6" gate="1" x="142.24" y="-40.64"/>
 <instance part="FH_JUMP_D+" gate="-2" x="200.66" y="-81.28" rot="MR0"/>
@@ -2829,8 +2822,8 @@ Used to enforce 60V threshold</text>
 <instance part="FH_JUMP_D-" gate="-1" x="200.66" y="-99.06" rot="MR0"/>
 <instance part="HV-UNFUSED" gate="-2" x="200.66" y="-111.76" rot="MR0"/>
 <instance part="HV-UNFUSED" gate="-1" x="200.66" y="-109.22" rot="MR0"/>
-<instance part="FSAE_JUMP_T" gate="-2" x="309.88" y="-144.78"/>
-<instance part="FSAE_JUMP_T" gate="-1" x="309.88" y="-142.24"/>
+<instance part="FSAE_JUMP_T" gate="-2" x="307.34" y="-144.78"/>
+<instance part="FSAE_JUMP_T" gate="-1" x="307.34" y="-142.24"/>
 <instance part="IMD_HV+" gate="-2" x="231.14" y="38.1"/>
 <instance part="IMD_HV+" gate="-1" x="231.14" y="40.64"/>
 <instance part="IMD_HV-" gate="-2" x="231.14" y="27.94"/>
@@ -2858,18 +2851,19 @@ Used to enforce 60V threshold</text>
 <instance part="P+5" gate="1" x="30.48" y="-78.74" rot="MR270"/>
 <instance part="P+6" gate="1" x="30.48" y="-93.98" rot="MR270"/>
 <instance part="D1" gate="1" x="50.8" y="-137.16" rot="R180"/>
-<instance part="HV_REG1" gate="G$1" x="208.28" y="-139.7"/>
-<instance part="R4" gate="G$1" x="203.2" y="-152.4" rot="R90"/>
+<instance part="HV_REG1" gate="G$1" x="205.74" y="-139.7"/>
+<instance part="R4" gate="G$1" x="198.12" y="-152.4" rot="R90"/>
 <instance part="TSAL_SSR" gate="G$1" x="284.48" y="-137.16"/>
-<instance part="THRESHOLD" gate="G$1" x="266.7" y="-157.48"/>
-<instance part="R5" gate="G$1" x="259.08" y="-152.4" rot="R90"/>
-<instance part="R6" gate="G$1" x="259.08" y="-170.18" rot="R90"/>
-<instance part="R8" gate="G$1" x="271.78" y="-147.32" rot="R90"/>
-<instance part="R20" gate="G$1" x="246.38" y="-142.24" rot="R90"/>
-<instance part="R21" gate="G$1" x="248.92" y="-154.94"/>
-<instance part="R22" gate="G$1" x="236.22" y="-154.94" rot="R180"/>
-<instance part="R23" gate="G$1" x="251.46" y="-167.64" rot="R90"/>
-<instance part="R24" gate="G$1" x="243.84" y="-167.64" rot="R90"/>
+<instance part="THRESHOLD" gate="G$1" x="256.54" y="-157.48"/>
+<instance part="R5" gate="G$1" x="233.68" y="-152.4" rot="R90"/>
+<instance part="R6" gate="G$1" x="248.92" y="-167.64" rot="R90"/>
+<instance part="R8" gate="G$1" x="269.24" y="-160.02" rot="R270"/>
+<instance part="R20" gate="G$1" x="228.6" y="-142.24" rot="R90"/>
+<instance part="R21" gate="G$1" x="241.3" y="-152.4" rot="R90"/>
+<instance part="R22" gate="G$1" x="248.92" y="-152.4" rot="R90"/>
+<instance part="R23" gate="G$1" x="241.3" y="-167.64" rot="R90"/>
+<instance part="R24" gate="G$1" x="233.68" y="-167.64" rot="R90"/>
+<instance part="AI_SSR" gate="G$1" x="284.48" y="-177.8"/>
 </instances>
 <busses>
 </busses>
@@ -2940,11 +2934,11 @@ Used to enforce 60V threshold</text>
 <label x="38.1" y="7.62" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="139.7" y1="40.64" x2="109.22" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="40.64" x2="111.76" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="BMS" gate="-2" pin="S"/>
 <label x="124.46" y="40.64" size="1.778" layer="95"/>
 <pinref part="GND5" gate="1" pin="GND"/>
-<wire x1="109.22" y1="48.26" x2="109.22" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="48.26" x2="111.76" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C3" gate="G$1" pin="2"/>
@@ -2986,8 +2980,8 @@ Used to enforce 60V threshold</text>
 </segment>
 <segment>
 <pinref part="P+3" gate="1" pin="+12V"/>
-<wire x1="116.84" y1="43.18" x2="116.84" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="139.7" y1="43.18" x2="116.84" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="43.18" x2="119.38" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="43.18" x2="119.38" y2="43.18" width="0.1524" layer="91"/>
 <label x="124.46" y="43.18" size="1.778" layer="95"/>
 <pinref part="BMS" gate="-1" pin="S"/>
 </segment>
@@ -3125,36 +3119,40 @@ Used to enforce 60V threshold</text>
 <net name="N$1" class="0">
 <segment>
 <pinref part="HV_REG2" gate="G$1" pin="OUT"/>
-<wire x1="220.98" y1="-195.58" x2="231.14" y2="-195.58" width="0.381" layer="91"/>
+<wire x1="218.44" y1="-182.88" x2="228.6" y2="-182.88" width="0.381" layer="91"/>
 <pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="231.14" y1="-198.12" x2="231.14" y2="-195.58" width="0.381" layer="91"/>
-<junction x="231.14" y="-195.58"/>
-<pinref part="INDICATOR" gate="-1" pin="S"/>
-<wire x1="231.14" y1="-195.58" x2="246.38" y2="-195.58" width="0.381" layer="91"/>
+<wire x1="228.6" y1="-185.42" x2="228.6" y2="-182.88" width="0.381" layer="91"/>
+<junction x="228.6" y="-182.88"/>
+<wire x1="261.62" y1="-195.58" x2="330.2" y2="-195.58" width="0.381" layer="91"/>
+<wire x1="330.2" y1="-195.58" x2="330.2" y2="-175.26" width="0.381" layer="91"/>
+<pinref part="AI_SSR" gate="G$1" pin="DC+"/>
+<wire x1="330.2" y1="-175.26" x2="294.64" y2="-175.26" width="0.381" layer="91"/>
+<wire x1="228.6" y1="-182.88" x2="248.92" y2="-182.88" width="0.381" layer="91"/>
+<wire x1="248.92" y1="-182.88" x2="261.62" y2="-195.58" width="0.381" layer="91"/>
 </segment>
 </net>
 <net name="N$15" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="2"/>
 <pinref part="HV_REG2" gate="G$1" pin="ADJ"/>
-<wire x1="213.36" y1="-210.82" x2="213.36" y2="-208.28" width="0.381" layer="91"/>
+<wire x1="208.28" y1="-195.58" x2="210.82" y2="-195.58" width="0.381" layer="91"/>
 <pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="213.36" y1="-208.28" x2="213.36" y2="-203.2" width="0.381" layer="91"/>
-<wire x1="231.14" y1="-208.28" x2="213.36" y2="-208.28" width="0.381" layer="91"/>
-<junction x="213.36" y="-208.28"/>
+<wire x1="210.82" y1="-195.58" x2="210.82" y2="-190.5" width="0.381" layer="91"/>
+<wire x1="228.6" y1="-195.58" x2="210.82" y2="-195.58" width="0.381" layer="91"/>
+<junction x="210.82" y="-195.58"/>
 </segment>
 </net>
 <net name="TSAL+" class="0">
 <segment>
-<wire x1="292.1" y1="-149.86" x2="299.72" y2="-149.86" width="0.1524" layer="91"/>
-<label x="292.1" y="-149.86" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="297.18" y1="-149.86" x2="299.72" y2="-149.86" width="0.1524" layer="91"/>
+<label x="297.18" y="-149.86" size="1.778" layer="95" rot="R180" xref="yes"/>
 <wire x1="299.72" y1="-154.94" x2="299.72" y2="-149.86" width="0.1524" layer="91"/>
 <junction x="299.72" y="-149.86"/>
 <wire x1="299.72" y1="-149.86" x2="299.72" y2="-144.78" width="0.1524" layer="91"/>
 <pinref part="FSAE_JUMP_T" gate="-2" pin="S"/>
-<wire x1="299.72" y1="-144.78" x2="307.34" y2="-144.78" width="0.1524" layer="91"/>
+<wire x1="299.72" y1="-144.78" x2="304.8" y2="-144.78" width="0.1524" layer="91"/>
 <pinref part="FH_JUMP_T" gate="-1" pin="S"/>
-<wire x1="307.34" y1="-154.94" x2="299.72" y2="-154.94" width="0.1524" layer="91"/>
+<wire x1="304.8" y1="-154.94" x2="299.72" y2="-154.94" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="MAIN" gate="-3" pin="S"/>
@@ -3291,9 +3289,9 @@ Used to enforce 60V threshold</text>
 <label x="312.42" y="-2.54" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<label x="304.8" y="-134.62" size="1.778" layer="95" xref="yes"/>
+<label x="302.26" y="-134.62" size="1.778" layer="95" xref="yes"/>
 <pinref part="TSAL_SSR" gate="G$1" pin="DC+"/>
-<wire x1="294.64" y1="-134.62" x2="304.8" y2="-134.62" width="0.1524" layer="91"/>
+<wire x1="294.64" y1="-134.62" x2="302.26" y2="-134.62" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="MAIN" gate="-4" pin="S"/>
@@ -3315,18 +3313,18 @@ Used to enforce 60V threshold</text>
 </segment>
 <segment>
 <pinref part="HV_REG2" gate="G$1" pin="IN"/>
-<wire x1="200.66" y1="-195.58" x2="205.74" y2="-195.58" width="0.381" layer="91"/>
-<label x="200.66" y="-195.58" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="200.66" y1="-182.88" x2="203.2" y2="-182.88" width="0.381" layer="91"/>
+<label x="200.66" y="-182.88" size="1.778" layer="95" rot="MR0" xref="yes"/>
 </segment>
 <segment>
 <pinref part="HV_REG1" gate="G$1" pin="IN"/>
-<wire x1="200.66" y1="-134.62" x2="205.74" y2="-134.62" width="0.381" layer="91"/>
+<wire x1="200.66" y1="-134.62" x2="203.2" y2="-134.62" width="0.381" layer="91"/>
 <label x="200.66" y="-134.62" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="R22" gate="G$1" pin="2"/>
-<wire x1="228.6" y1="-154.94" x2="231.14" y2="-154.94" width="0.381" layer="91"/>
-<label x="228.6" y="-154.94" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="248.92" y1="-142.24" x2="248.92" y2="-147.32" width="0.381" layer="91"/>
+<label x="248.92" y="-142.24" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="HV+FUSED" class="0">
@@ -3402,25 +3400,30 @@ Used to enforce 60V threshold</text>
 </segment>
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>
-<wire x1="246.38" y1="-220.98" x2="213.36" y2="-220.98" width="0.381" layer="91"/>
-<pinref part="INDICATOR" gate="-2" pin="S"/>
-<wire x1="246.38" y1="-198.12" x2="246.38" y2="-220.98" width="0.381" layer="91"/>
-<wire x1="213.36" y1="-220.98" x2="200.66" y2="-220.98" width="0.381" layer="91"/>
-<junction x="213.36" y="-220.98"/>
-<label x="200.66" y="-220.98" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="198.12" y1="-195.58" x2="195.58" y2="-195.58" width="0.381" layer="91"/>
+<label x="195.58" y="-195.58" size="1.778" layer="95" rot="MR0" xref="yes"/>
 </segment>
 <segment>
 <pinref part="R4" gate="G$1" pin="1"/>
-<wire x1="203.2" y1="-157.48" x2="203.2" y2="-175.26" width="0.381" layer="91"/>
-<pinref part="R6" gate="G$1" pin="1"/>
-<wire x1="259.08" y1="-175.26" x2="203.2" y2="-175.26" width="0.381" layer="91"/>
+<wire x1="198.12" y1="-157.48" x2="198.12" y2="-175.26" width="0.381" layer="91"/>
+<label x="195.58" y="-175.26" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="198.12" y1="-175.26" x2="195.58" y2="-175.26" width="0.381" layer="91"/>
+<junction x="198.12" y="-175.26"/>
 <pinref part="THRESHOLD" gate="G$1" pin="S"/>
-<wire x1="271.78" y1="-160.02" x2="271.78" y2="-175.26" width="0.381" layer="91"/>
-<wire x1="271.78" y1="-175.26" x2="259.08" y2="-175.26" width="0.381" layer="91"/>
-<junction x="259.08" y="-175.26"/>
-<label x="200.66" y="-175.26" size="1.778" layer="95" rot="R180" xref="yes"/>
-<wire x1="203.2" y1="-175.26" x2="200.66" y2="-175.26" width="0.381" layer="91"/>
-<junction x="203.2" y="-175.26"/>
+<wire x1="261.62" y1="-160.02" x2="264.16" y2="-160.02" width="0.381" layer="91"/>
+<wire x1="264.16" y1="-160.02" x2="264.16" y2="-175.26" width="0.381" layer="91"/>
+<wire x1="198.12" y1="-175.26" x2="248.92" y2="-175.26" width="0.381" layer="91"/>
+<pinref part="R6" gate="G$1" pin="1"/>
+<wire x1="248.92" y1="-175.26" x2="264.16" y2="-175.26" width="0.381" layer="91"/>
+<wire x1="248.92" y1="-172.72" x2="248.92" y2="-175.26" width="0.381" layer="91"/>
+<junction x="248.92" y="-175.26"/>
+</segment>
+<segment>
+<pinref part="INDICATOR" gate="-2" pin="S"/>
+<wire x1="307.34" y1="-182.88" x2="302.26" y2="-182.88" width="0.381" layer="91"/>
+<label x="299.72" y="-190.5" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="299.72" y1="-190.5" x2="302.26" y2="-190.5" width="0.381" layer="91"/>
+<wire x1="302.26" y1="-190.5" x2="302.26" y2="-182.88" width="0.381" layer="91"/>
 </segment>
 </net>
 <net name="BSPD_CUR_FAULT" class="0">
@@ -3444,11 +3447,11 @@ Used to enforce 60V threshold</text>
 <label x="259.08" y="-99.06" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="304.8" y1="-162.56" x2="299.72" y2="-162.56" width="0.1524" layer="91"/>
+<wire x1="302.26" y1="-162.56" x2="299.72" y2="-162.56" width="0.1524" layer="91"/>
 <wire x1="299.72" y1="-157.48" x2="299.72" y2="-162.56" width="0.1524" layer="91"/>
-<label x="304.8" y="-162.56" size="1.778" layer="95" xref="yes"/>
+<label x="302.26" y="-162.56" size="1.778" layer="95" xref="yes"/>
 <pinref part="FH_JUMP_T" gate="-2" pin="S"/>
-<wire x1="307.34" y1="-157.48" x2="299.72" y2="-157.48" width="0.1524" layer="91"/>
+<wire x1="304.8" y1="-157.48" x2="299.72" y2="-157.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="INTERLOCK" gate="-2" pin="S"/>
@@ -3538,88 +3541,99 @@ Used to enforce 60V threshold</text>
 <segment>
 <pinref part="HV_REG1" gate="G$1" pin="OUT"/>
 <pinref part="TSAL_SSR" gate="G$1" pin="CONTROL+"/>
-<wire x1="220.98" y1="-134.62" x2="246.38" y2="-134.62" width="0.381" layer="91"/>
+<wire x1="218.44" y1="-134.62" x2="228.6" y2="-134.62" width="0.381" layer="91"/>
 <pinref part="R20" gate="G$1" pin="2"/>
-<wire x1="246.38" y1="-134.62" x2="274.32" y2="-134.62" width="0.381" layer="91"/>
-<wire x1="246.38" y1="-137.16" x2="246.38" y2="-134.62" width="0.381" layer="91"/>
-<junction x="246.38" y="-134.62"/>
+<wire x1="228.6" y1="-134.62" x2="274.32" y2="-134.62" width="0.381" layer="91"/>
+<wire x1="228.6" y1="-137.16" x2="228.6" y2="-134.62" width="0.381" layer="91"/>
+<junction x="228.6" y="-134.62"/>
 </segment>
 </net>
 <net name="N$36" class="0">
 <segment>
 <pinref part="R5" gate="G$1" pin="1"/>
 <pinref part="THRESHOLD" gate="G$1" pin="G"/>
-<wire x1="259.08" y1="-160.02" x2="259.08" y2="-157.48" width="0.381" layer="91"/>
-<wire x1="261.62" y1="-160.02" x2="259.08" y2="-160.02" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="-160.02" x2="233.68" y2="-157.48" width="0.381" layer="91"/>
+<wire x1="251.46" y1="-160.02" x2="233.68" y2="-160.02" width="0.381" layer="91"/>
 <pinref part="R24" gate="G$1" pin="2"/>
-<wire x1="259.08" y1="-160.02" x2="243.84" y2="-160.02" width="0.381" layer="91"/>
-<wire x1="243.84" y1="-160.02" x2="243.84" y2="-162.56" width="0.381" layer="91"/>
-<junction x="259.08" y="-160.02"/>
+<wire x1="233.68" y1="-160.02" x2="233.68" y2="-162.56" width="0.381" layer="91"/>
+<junction x="233.68" y="-160.02"/>
 </segment>
 </net>
 <net name="N$35" class="0">
 <segment>
 <pinref part="R8" gate="G$1" pin="1"/>
 <pinref part="THRESHOLD" gate="G$1" pin="D"/>
-<wire x1="271.78" y1="-152.4" x2="271.78" y2="-154.94" width="0.381" layer="91"/>
-</segment>
-</net>
-<net name="N$41" class="0">
-<segment>
-<pinref part="R8" gate="G$1" pin="2"/>
-<wire x1="271.78" y1="-142.24" x2="271.78" y2="-139.7" width="0.381" layer="91"/>
-<pinref part="TSAL_SSR" gate="G$1" pin="CONTROL-"/>
-<wire x1="271.78" y1="-139.7" x2="274.32" y2="-139.7" width="0.381" layer="91"/>
+<wire x1="269.24" y1="-154.94" x2="261.62" y2="-154.94" width="0.381" layer="91"/>
 </segment>
 </net>
 <net name="N$9" class="0">
 <segment>
 <pinref part="R20" gate="G$1" pin="1"/>
 <pinref part="HV_REG1" gate="G$1" pin="ADJ"/>
-<wire x1="213.36" y1="-147.32" x2="213.36" y2="-142.24" width="0.381" layer="91"/>
-<wire x1="246.38" y1="-147.32" x2="213.36" y2="-147.32" width="0.381" layer="91"/>
-<junction x="213.36" y="-147.32"/>
+<wire x1="210.82" y1="-147.32" x2="210.82" y2="-142.24" width="0.381" layer="91"/>
+<wire x1="228.6" y1="-147.32" x2="210.82" y2="-147.32" width="0.381" layer="91"/>
+<junction x="210.82" y="-147.32"/>
 <pinref part="R4" gate="G$1" pin="2"/>
-<wire x1="213.36" y1="-147.32" x2="203.2" y2="-147.32" width="0.381" layer="91"/>
+<wire x1="210.82" y1="-147.32" x2="198.12" y2="-147.32" width="0.381" layer="91"/>
 </segment>
 </net>
 <net name="N$10" class="0">
 <segment>
 <pinref part="R22" gate="G$1" pin="1"/>
 <pinref part="R21" gate="G$1" pin="1"/>
-<wire x1="241.3" y1="-154.94" x2="243.84" y2="-154.94" width="0.381" layer="91"/>
+<wire x1="248.92" y1="-157.48" x2="241.3" y2="-157.48" width="0.381" layer="91"/>
 </segment>
 </net>
 <net name="N$11" class="0">
 <segment>
 <pinref part="R21" gate="G$1" pin="2"/>
-<wire x1="254" y1="-154.94" x2="254" y2="-147.32" width="0.381" layer="91"/>
 <pinref part="R5" gate="G$1" pin="2"/>
-<wire x1="254" y1="-147.32" x2="259.08" y2="-147.32" width="0.381" layer="91"/>
+<wire x1="241.3" y1="-147.32" x2="233.68" y2="-147.32" width="0.381" layer="91"/>
 </segment>
 </net>
 <net name="N$12" class="0">
 <segment>
 <pinref part="R24" gate="G$1" pin="1"/>
 <pinref part="R23" gate="G$1" pin="1"/>
-<wire x1="243.84" y1="-172.72" x2="251.46" y2="-172.72" width="0.381" layer="91"/>
+<wire x1="233.68" y1="-172.72" x2="241.3" y2="-172.72" width="0.381" layer="91"/>
 </segment>
 </net>
 <net name="N$13" class="0">
 <segment>
 <pinref part="R23" gate="G$1" pin="2"/>
 <pinref part="R6" gate="G$1" pin="2"/>
-<wire x1="251.46" y1="-162.56" x2="259.08" y2="-162.56" width="0.381" layer="91"/>
-<wire x1="259.08" y1="-162.56" x2="259.08" y2="-165.1" width="0.381" layer="91"/>
+<wire x1="241.3" y1="-162.56" x2="248.92" y2="-162.56" width="0.381" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
 <pinref part="FSAE_JUMP_T" gate="-1" pin="S"/>
-<wire x1="307.34" y1="-142.24" x2="299.72" y2="-142.24" width="0.1524" layer="91"/>
-<wire x1="299.72" y1="-142.24" x2="299.72" y2="-139.7" width="0.1524" layer="91"/>
+<wire x1="304.8" y1="-142.24" x2="297.18" y2="-142.24" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="-142.24" x2="297.18" y2="-139.7" width="0.1524" layer="91"/>
 <pinref part="TSAL_SSR" gate="G$1" pin="DC-"/>
-<wire x1="299.72" y1="-139.7" x2="294.64" y2="-139.7" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="-139.7" x2="294.64" y2="-139.7" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="AI_SSR" gate="G$1" pin="CONTROL-"/>
+<pinref part="R8" gate="G$1" pin="2"/>
+<wire x1="274.32" y1="-180.34" x2="269.24" y2="-180.34" width="0.381" layer="91"/>
+<wire x1="269.24" y1="-180.34" x2="269.24" y2="-165.1" width="0.381" layer="91"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="AI_SSR" gate="G$1" pin="CONTROL+"/>
+<pinref part="TSAL_SSR" gate="G$1" pin="CONTROL-"/>
+<wire x1="274.32" y1="-175.26" x2="274.32" y2="-139.7" width="0.381" layer="91"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="AI_SSR" gate="G$1" pin="DC-"/>
+<pinref part="INDICATOR" gate="-1" pin="S"/>
+<wire x1="294.64" y1="-180.34" x2="307.34" y2="-180.34" width="0.381" layer="91"/>
 </segment>
 </net>
 </nets>
