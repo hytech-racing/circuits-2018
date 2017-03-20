@@ -235,6 +235,7 @@
 <dimension x1="111.506" y1="45.72" x2="115.062" y2="45.72" x3="113.284" y3="46.482" textsize="1.27" layer="156"/>
 <dimension x1="102.362" y1="42.926" x2="102.362" y2="46.482" x3="102.108" y3="44.704" textsize="1.27" layer="156"/>
 <dimension x1="151.638" y1="9.144" x2="167.386" y2="13.208" x3="159.188859375" y3="12.428159375" textsize="1.27" layer="156"/>
+<dimension x1="90.17" y1="12.954" x2="86.36" y2="12.954" x3="88.265" y3="11.43" textsize="1.778" layer="156"/>
 </plain>
 <libraries>
 <library name="HyTechDevices">
@@ -843,11 +844,11 @@ design rules under a new name.</description>
 </element>
 <element name="IMD-OK" library="HyTechDevices" package="LED-805" value="" x="26.289" y="28.448" rot="R180"/>
 <element name="BMS-OK" library="HyTechDevices" package="LED-805" value="" x="20.447" y="28.448" rot="R180"/>
-<element name="R23" library="HyTechDevices" package="0805" value="2k" x="73.914" y="16.002" rot="MR0"/>
+<element name="R23" library="HyTechDevices" package="0805" value="2k" x="73.914" y="14.478" rot="MR0"/>
 <element name="R7" library="HyTechDevices" package="0805" value="" x="25.273" y="42.545" rot="MR0"/>
 <element name="R3" library="HyTechDevices" package="0805" value="" x="25.4" y="24.765"/>
 <element name="R4" library="HyTechDevices" package="0805" value="" x="21.336" y="24.765"/>
-<element name="R22" library="HyTechDevices" package="0805" value="20k" x="77.47" y="16.002" rot="MR180"/>
+<element name="R22" library="HyTechDevices" package="0805" value="20k" x="78.232" y="14.478" rot="MR180"/>
 <element name="R6" library="HyTechDevices" package="0805" value="" x="25.273" y="34.417" rot="MR90"/>
 <element name="R1" library="HyTechDevices" package="0805" value="120" x="14.224" y="5.207" rot="MR90"/>
 <element name="TRIM+" library="HyTechDevices" package="0805" value="" x="43.053" y="27.94" rot="MR270"/>
@@ -954,10 +955,10 @@ design rules under a new name.</description>
 <element name="AI_SSR" library="HyTechDevices" package="SOP04" value="CPC1002N" x="71.374" y="36.576" rot="MR90"/>
 <element name="R12" library="HyTechDevices" package="0805" value="2k" x="72.39" y="46.99" rot="MR180"/>
 <element name="R11" library="HyTechDevices" package="0805" value="2k" x="75.946" y="46.99" rot="MR0"/>
-<element name="R24" library="HyTechDevices" package="0805" value="2k" x="70.358" y="16.002" rot="MR180"/>
-<element name="R25" library="HyTechDevices" package="0805" value="2k" x="66.802" y="16.002" rot="MR0"/>
-<element name="R21" library="HyTechDevices" package="0805" value="20k" x="81.026" y="16.002" rot="MR0"/>
-<element name="R20" library="HyTechDevices" package="0805" value="20k" x="84.582" y="16.002" rot="MR180"/>
+<element name="R24" library="HyTechDevices" package="0805" value="2k" x="70.358" y="14.478" rot="MR180"/>
+<element name="R25" library="HyTechDevices" package="0805" value="2k" x="66.802" y="14.478" rot="MR0"/>
+<element name="R21" library="HyTechDevices" package="0805" value="20k" x="81.788" y="14.478" rot="MR0"/>
+<element name="R20" library="HyTechDevices" package="0805" value="20k" x="85.09" y="14.478" rot="MR180"/>
 <element name="R10" library="HyTechDevices" package="0805" value="8.2k" x="81.28" y="49.53" rot="MR180"/>
 <element name="R9" library="HyTechDevices" package="0805" value="8.2k" x="84.582" y="49.53" rot="MR0"/>
 <element name="R8" library="HyTechDevices" package="0805" value="8.2k" x="87.884" y="49.53" rot="MR180"/>
@@ -1172,7 +1173,7 @@ design rules under a new name.</description>
 <contactref element="AI_SSR" pad="4"/>
 <contactref element="R25" pad="2"/>
 <wire x1="65.902" y1="24.765" x2="70.9422" y2="24.765" width="0.6096" layer="16"/>
-<wire x1="65.902" y1="24.765" x2="65.902" y2="16.002" width="0.6096" layer="16"/>
+<wire x1="65.902" y1="24.765" x2="65.902" y2="14.478" width="0.6096" layer="16"/>
 <wire x1="70.9422" y1="24.765" x2="70.9422" y2="29.5402" width="0.6096" layer="16"/>
 <wire x1="74.374" y1="32.972" x2="74.374" y2="35.306" width="0.6096" layer="16"/>
 <wire x1="70.9422" y1="29.5402" x2="74.374" y2="32.972" width="0.6096" layer="16"/>
@@ -1181,11 +1182,11 @@ design rules under a new name.</description>
 <contactref element="HV_REG2" pad="3"/>
 <contactref element="R23" pad="1"/>
 <contactref element="R22" pad="1"/>
-<wire x1="76.57" y1="16.002" x2="74.814" y2="16.002" width="0.6096" layer="16"/>
+<wire x1="77.332" y1="14.478" x2="74.814" y2="14.478" width="0.6096" layer="16"/>
 <wire x1="77.724" y1="22.479" x2="77.851" y2="22.479" width="0.6096" layer="16"/>
-<wire x1="77.851" y1="22.479" x2="77.851" y2="19.431" width="0.6096" layer="16"/>
-<wire x1="76.57" y1="18.15" x2="76.57" y2="16.002" width="0.6096" layer="16"/>
-<wire x1="77.851" y1="19.431" x2="76.57" y2="18.15" width="0.6096" layer="16"/>
+<wire x1="77.851" y1="22.479" x2="77.851" y2="17.907" width="0.6096" layer="16"/>
+<wire x1="77.332" y1="17.388" x2="77.332" y2="14.478" width="0.6096" layer="16"/>
+<wire x1="77.851" y1="17.907" x2="77.332" y2="17.388" width="0.6096" layer="16"/>
 </signal>
 <signal name="TSAL+">
 <contactref element="MAIN" pad="3"/>
@@ -1653,22 +1654,22 @@ design rules under a new name.</description>
 <signal name="N$19">
 <contactref element="R24" pad="2"/>
 <contactref element="R23" pad="2"/>
-<wire x1="71.258" y1="16.002" x2="73.014" y2="16.002" width="0.6096" layer="16"/>
+<wire x1="71.258" y1="14.478" x2="73.014" y2="14.478" width="0.6096" layer="16"/>
 </signal>
 <signal name="N$20">
 <contactref element="R24" pad="1"/>
 <contactref element="R25" pad="1"/>
-<wire x1="69.458" y1="16.002" x2="67.702" y2="16.002" width="0.6096" layer="16"/>
+<wire x1="69.458" y1="14.478" x2="67.702" y2="14.478" width="0.6096" layer="16"/>
 </signal>
 <signal name="N$21">
 <contactref element="R22" pad="2"/>
 <contactref element="R21" pad="2"/>
-<wire x1="80.126" y1="16.002" x2="78.37" y2="16.002" width="0.6096" layer="16"/>
+<wire x1="80.888" y1="14.478" x2="79.132" y2="14.478" width="0.6096" layer="16"/>
 </signal>
 <signal name="N$23">
 <contactref element="R21" pad="1"/>
 <contactref element="R20" pad="1"/>
-<wire x1="83.682" y1="16.002" x2="81.926" y2="16.002" width="0.6096" layer="16"/>
+<wire x1="84.19" y1="14.478" x2="82.688" y2="14.478" width="0.6096" layer="16"/>
 </signal>
 <signal name="HV-FUSED250">
 <contactref element="FUSE1" pad="N3" route="any" routetag="G$1.P2"/>
@@ -1679,16 +1680,14 @@ design rules under a new name.</description>
 <contactref element="THRESHOLD" pad="3"/>
 <contactref element="R20" pad="2"/>
 <contactref element="INDICATOR" pad="2"/>
-<wire x1="85.482" y1="16.002" x2="88.784" y2="19.304" width="0.6096" layer="16"/>
 <wire x1="91.694" y1="49.53" x2="91.313" y2="49.53" width="0.6096" layer="16"/>
 <wire x1="91.694" y1="49.53" x2="96.774" y2="49.53" width="0.6096" layer="16"/>
 <wire x1="96.774" y1="49.53" x2="99.568" y2="46.736" width="0.6096" layer="16"/>
 <wire x1="91.313" y1="49.53" x2="88.784" y2="49.53" width="0.6096" layer="16"/>
-<wire x1="88.784" y1="19.304" x2="94.742" y2="19.304" width="0.6096" layer="16"/>
 <wire x1="129.032" y1="55.626" x2="118.745" y2="55.626" width="0.6096" layer="16"/>
 <wire x1="118.745" y1="55.626" x2="118.745" y2="60.96" width="0.6096" layer="16"/>
 <wire x1="118.745" y1="60.96" x2="102.997" y2="60.96" width="0.6096" layer="16"/>
-<wire x1="94.742" y1="19.304" x2="98.552" y2="23.368" width="0.6096" layer="16"/>
+<wire x1="98.552" y1="23.368" x2="94.742" y2="19.304" width="0.6096" layer="16"/>
 <via x="102.108" y="23.368" extent="1-16" drill="0.6" shape="square"/>
 <wire x1="98.552" y1="23.368" x2="102.108" y2="23.368" width="0.6096" layer="16"/>
 <wire x1="106.172" y1="46.736" x2="99.568" y2="46.736" width="0.6096" layer="16"/>
@@ -1703,6 +1702,8 @@ design rules under a new name.</description>
 <wire x1="106.172" y1="36.322" x2="106.172" y2="46.736" width="0.6096" layer="16"/>
 <wire x1="115.824" y1="47.128" x2="115.824" y2="47.382" width="0.6096" layer="16"/>
 <wire x1="115.824" y1="47.382" x2="118.745" y2="50.303" width="0.6096" layer="16"/>
+<wire x1="85.99" y1="19.304" x2="85.99" y2="14.478" width="0.6096" layer="16"/>
+<wire x1="94.742" y1="19.304" x2="85.99" y2="19.304" width="0.6096" layer="16"/>
 </signal>
 </signals>
 </board>
