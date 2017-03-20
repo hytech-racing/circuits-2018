@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="8.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1266,6 +1266,114 @@ diameter 2.54 mm, horizontal, grid 10.16 mm</description>
 <rectangle x1="1" y1="2.1" x2="1.5" y2="3.35" layer="51"/>
 <rectangle x1="-1.54" y1="2.1" x2="-1.04" y2="3.35" layer="51"/>
 </package>
+<package name="TO-220-SPACED">
+<pad name="1" x="-2.54" y="0" drill="1" shape="square"/>
+<pad name="2" x="0" y="0" drill="1"/>
+<pad name="3" x="2.54" y="0" drill="1"/>
+<wire x1="-5.08" y1="3.81" x2="5.08" y2="3.81" width="0.127" layer="21"/>
+<wire x1="5.08" y1="3.81" x2="5.08" y2="-3.81" width="0.127" layer="21"/>
+<wire x1="5.08" y1="-3.81" x2="-5.08" y2="-3.81" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-3.81" x2="-5.08" y2="3.81" width="0.127" layer="21"/>
+</package>
+<package name="DIL08">
+<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
+<wire x1="5.08" y1="2.921" x2="-5.08" y2="2.921" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="-2.921" x2="5.08" y2="-2.921" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="2.921" x2="5.08" y2="-2.921" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="2.921" x2="-5.08" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="-2.921" x2="-5.08" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="1.016" x2="-5.08" y2="-1.016" width="0.1524" layer="21" curve="-180"/>
+<pad name="1" x="-3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="2" x="-1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="3" x="1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="4" x="3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="5" x="3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="6" x="1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="7" x="-1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="8" x="-3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<text x="-5.334" y="-2.921" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="-3.556" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="NANO-FIT_VERTICAL-6">
+<pad name="P$1" x="0" y="0" drill="1.2" shape="square"/>
+<pad name="P$2" x="0" y="2.5" drill="1.2" shape="square"/>
+<pad name="P$3" x="2.5" y="2.5" drill="1.2" shape="square"/>
+<pad name="P$4" x="2.5" y="0" drill="1.2" shape="square"/>
+<pad name="P$5" x="-2.5" y="0" drill="1.2" shape="square"/>
+<pad name="P$6" x="-2.5" y="2.5" drill="1.2" shape="square"/>
+<hole x="-4.67" y="0.29" drill="1.6"/>
+<hole x="4.67" y="0.29" drill="1.6"/>
+<wire x1="-4" y1="4" x2="4" y2="4" width="0.127" layer="21"/>
+<wire x1="4" y1="4" x2="4" y2="2" width="0.127" layer="21"/>
+<wire x1="4" y1="2" x2="6" y2="2" width="0.127" layer="21"/>
+<wire x1="6" y1="2" x2="6" y2="-2" width="0.127" layer="21"/>
+<wire x1="6" y1="-2" x2="-6" y2="-2" width="0.127" layer="21"/>
+<wire x1="-6" y1="-2" x2="-6" y2="2" width="0.127" layer="21"/>
+<wire x1="-6" y1="2" x2="-4" y2="2" width="0.127" layer="21"/>
+<wire x1="-4" y1="2" x2="-4" y2="4" width="0.127" layer="21"/>
+</package>
+<package name="NANO-FIT_VERTICAL-2">
+<description>105309-1202
+
+Nano-Fit™ Vertical Header, Through Hole, Single Row</description>
+<pad name="P$1" x="-1.25" y="0" drill="1.2"/>
+<pad name="P$2" x="1.25" y="0" drill="1.2"/>
+<hole x="0" y="-1.34" drill="1.3"/>
+<wire x1="-3" y1="1.74" x2="3" y2="1.74" width="0.127" layer="21"/>
+<wire x1="3" y1="1.74" x2="3" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="3" y1="-2.5" x2="-3" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="-3" y1="-2.5" x2="-3" y2="1.74" width="0.127" layer="21"/>
+</package>
+<package name="TO-220-SINK-SPACED">
+<wire x1="5.08" y1="-1.905" x2="-5.08" y2="-1.905" width="0.2032" layer="21"/>
+<wire x1="-5.08" y1="-1.905" x2="-5.08" y2="1.905" width="0.2032" layer="21"/>
+<wire x1="-5.08" y1="1.905" x2="-5.08" y2="2.54" width="0.2032" layer="21"/>
+<wire x1="-5.08" y1="2.54" x2="5.08" y2="2.54" width="0.2032" layer="21"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="1.905" width="0.2032" layer="21"/>
+<wire x1="5.08" y1="1.905" x2="5.08" y2="-1.905" width="0.2032" layer="21"/>
+<wire x1="5.08" y1="1.905" x2="-5.08" y2="1.905" width="0.2032" layer="21"/>
+<wire x1="5.08" y1="2.54" x2="8.255" y2="2.54" width="0.2032" layer="51"/>
+<wire x1="8.255" y1="2.54" x2="8.255" y2="-5.715" width="0.2032" layer="51"/>
+<wire x1="8.255" y1="-5.715" x2="9.525" y2="-5.715" width="0.2032" layer="51"/>
+<wire x1="9.525" y1="-5.715" x2="9.525" y2="3.81" width="0.2032" layer="51"/>
+<wire x1="9.525" y1="3.81" x2="-9.525" y2="3.81" width="0.2032" layer="51"/>
+<wire x1="-9.525" y1="3.81" x2="-9.525" y2="-5.715" width="0.2032" layer="51"/>
+<wire x1="-9.525" y1="-5.715" x2="-8.255" y2="-5.715" width="0.2032" layer="51"/>
+<wire x1="-8.255" y1="-5.715" x2="-8.255" y2="2.54" width="0.2032" layer="51"/>
+<wire x1="-8.255" y1="2.54" x2="-5.08" y2="2.54" width="0.2032" layer="51"/>
+<pad name="1" x="-2.54" y="0" drill="1" shape="square"/>
+<pad name="2" x="0" y="0" drill="1"/>
+<pad name="3" x="2.54" y="0" drill="1"/>
+</package>
+<package name="LLS2V221MELZ">
+<circle x="0" y="0" radius="11" width="0.127" layer="21"/>
+<pad name="P$1" x="-5" y="0" drill="2" shape="long" rot="R90"/>
+<pad name="P$2" x="5" y="0" drill="2" shape="long" rot="R90"/>
+</package>
+<package name="1X02">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<wire x1="-1.905" y1="1.27" x2="-0.635" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="0" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="0" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="-0.635" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="0.635" x2="-2.54" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="1.27" x2="-2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="-0.635" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="-1.27" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="0.635" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="1.905" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="1.27" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="0.635" x2="2.54" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="-0.635" x2="1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="-1.27" x2="0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="-1.27" x2="0" y2="-0.635" width="0.1524" layer="21"/>
+<pad name="1" x="-1.27" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="2" x="1.27" y="0" drill="1.016" shape="long" rot="R90"/>
+<text x="-2.6162" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-2.54" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
+<rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="MV">
@@ -1556,6 +1664,12 @@ DC/DC</text>
 <pin name="G" x="-5.08" y="-2.54" visible="off" length="short" direction="pas"/>
 <text x="-3.81" y="-7.62" size="1.778" layer="95">&gt;VALUE</text>
 </symbol>
+<symbol name="JUMPER">
+<wire x1="0" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
+<pin name="P$1" x="0" y="-2.54" visible="off" length="short" rot="R90"/>
+<pin name="P$2" x="5.08" y="-2.54" visible="off" length="short" rot="R90"/>
+<text x="0" y="0.508" size="1.27" layer="94">JUMP</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="5VREG_L7805" prefix="IC" uservalue="yes">
@@ -1593,6 +1707,16 @@ Standard 7805 5V regulator. IGO (Input Ground Output). Spark Fun Electronics SKU
 </technologies>
 </device>
 <device name="_HOR" package="TO-220-H">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="IN" pad="1"/>
+<connect gate="G$1" pin="OUT" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SPACED" package="TO-220-SPACED">
 <connects>
 <connect gate="G$1" pin="GND" pad="2"/>
 <connect gate="G$1" pin="IN" pad="1"/>
@@ -2016,6 +2140,15 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="" package="LLS2V221MELZ">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="5504-12-1-NC">
@@ -2043,7 +2176,22 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <gate name="G$1" symbol="MCP6002" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SOIC-08">
+<device name="SOIC" package="SOIC-08">
+<connects>
+<connect gate="G$1" pin="VDD" pad="8"/>
+<connect gate="G$1" pin="VINA+" pad="3"/>
+<connect gate="G$1" pin="VINA-" pad="2"/>
+<connect gate="G$1" pin="VINB+" pad="5"/>
+<connect gate="G$1" pin="VINB-" pad="6"/>
+<connect gate="G$1" pin="VOUTA" pad="1"/>
+<connect gate="G$1" pin="VOUTB" pad="7"/>
+<connect gate="G$1" pin="VSS" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="PDIP" package="DIL08">
 <connects>
 <connect gate="G$1" pin="VDD" pad="8"/>
 <connect gate="G$1" pin="VINA+" pad="3"/>
@@ -2254,6 +2402,15 @@ Source: http://www.molex.com</description>
 </technology>
 </technologies>
 </device>
+<device name="NANO-FIT_VERTICAL-2" package="NANO-FIT_VERTICAL-2">
+<connects>
+<connect gate="-1" pin="S" pad="P$1"/>
+<connect gate="-2" pin="S" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="CONNECTOR-12" prefix="X">
@@ -2375,6 +2532,19 @@ Source: http://www.molex.com</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="NANO-FIT_VERTICAL-6" package="NANO-FIT_VERTICAL-6">
+<connects>
+<connect gate="-1" pin="S" pad="P$1"/>
+<connect gate="-2" pin="S" pad="P$2"/>
+<connect gate="-3" pin="S" pad="P$3"/>
+<connect gate="-4" pin="S" pad="P$4"/>
+<connect gate="-5" pin="S" pad="P$5"/>
+<connect gate="-6" pin="S" pad="P$6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="DIODE" prefix="D">
@@ -2446,6 +2616,51 @@ general purpose rectifier</description>
 <connect gate="G$1" pin="D" pad="2(TAB)"/>
 <connect gate="G$1" pin="G" pad="1"/>
 <connect gate="G$1" pin="S" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="GENERIC_SPACED" package="TO-220-SINK-SPACED">
+<connects>
+<connect gate="G$1" pin="D" pad="2"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="JUMPER">
+<description>Jumper for changing operation of a device</description>
+<gates>
+<gate name="G$1" symbol="JUMPER" x="2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="0805">
+<connects>
+<connect gate="G$1" pin="P$1" pad="1"/>
+<connect gate="G$1" pin="P$2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name=".1" package="1X02">
+<connects>
+<connect gate="G$1" pin="P$1" pad="1"/>
+<connect gate="G$1" pin="P$2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name=".3" package="AXIAL-0.3">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -2599,7 +2814,6 @@ general purpose rectifier</description>
 <part name="R22" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="20k"/>
 <part name="INDICATOR" library="HyTechDevices" deviceset="MINIFIT_5566-2" device="" value="MINIFIT_5566-2"/>
 <part name="U$12" library="HyTechDevices" deviceset="5504-12-1-NC" device=""/>
-<part name="FH_JUMP_T" library="HyTechDevices" deviceset="MINIFIT_5566-2" device="" value="JUMPER FH"/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
 <part name="DISCH+" library="HyTechDevices" deviceset="MINIFIT_5566-2" device="" value="TO DISCHARGE +"/>
 <part name="DISCH-" library="HyTechDevices" deviceset="MINIFIT_5566-2" device="" value="TO DISCHARGE -"/>
@@ -2609,7 +2823,7 @@ general purpose rectifier</description>
 <part name="GND17" library="supply1" deviceset="GND" device=""/>
 <part name="R6" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES"/>
 <part name="R7" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES"/>
-<part name="IC2" library="HyTechDevices" deviceset="MCP6002" device=""/>
+<part name="IC2" library="HyTechDevices" deviceset="MCP6002" device="SOIC"/>
 <part name="P+12" library="supply1" deviceset="+12V" device=""/>
 <part name="GND21" library="supply1" deviceset="GND" device=""/>
 <part name="IMD-OK" library="HyTechDevices" deviceset="LED" device="-0805"/>
@@ -2623,7 +2837,7 @@ general purpose rectifier</description>
 <part name="R5" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES"/>
 <part name="P+14" library="supply1" deviceset="+5V" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
-<part name="IC3" library="HyTechDevices" deviceset="MCP6002" device=""/>
+<part name="IC3" library="HyTechDevices" deviceset="MCP6002" device="SOIC"/>
 <part name="P+11" library="supply1" deviceset="+5V" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="5KW_TRIM" library="HyTechDevices" deviceset="TRIMPOT_3296" device="C"/>
@@ -2639,17 +2853,14 @@ general purpose rectifier</description>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="FUSE" library="HyTechDevices" deviceset="FUSE" device="_MIDGET" value="250mA"/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
-<part name="FH_JUMP_D+" library="HyTechDevices" deviceset="CONNECTOR-2" device="" value="JUMPER FH"/>
 <part name="HV+UNFUSED" library="HyTechDevices" deviceset="CONNECTOR-2" device="" value="CONNECTOR FSAE"/>
-<part name="FH_JUMP_D-" library="HyTechDevices" deviceset="CONNECTOR-2" device="" value="JUMPER FH"/>
 <part name="HV-UNFUSED" library="HyTechDevices" deviceset="CONNECTOR-2" device="" value="CONNECTOR FSAE"/>
-<part name="FSAE_JUMP_T" library="HyTechDevices" deviceset="MINIFIT_5566-2" device="" value="JUMPER FSAE"/>
-<part name="IMD_HV+" library="HyTechDevices" deviceset="CONNECTOR-2" device="" value=""/>
-<part name="IMD_HV-" library="HyTechDevices" deviceset="CONNECTOR-2" device="" value=""/>
+<part name="IMD_HV+" library="HyTechDevices" deviceset="CONNECTOR-2" device="" value="CONNECTOR-2"/>
+<part name="IMD_HV-" library="HyTechDevices" deviceset="CONNECTOR-2" device="" value="CONNECTOR-2"/>
 <part name="MAIN" library="HyTechDevices" deviceset="CONNECTOR-12" device="" value=""/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="P+4" library="supply1" deviceset="+12V" device=""/>
-<part name="IMD" library="HyTechDevices" deviceset="CONNECTOR-6" device="" value=""/>
+<part name="IMD" library="HyTechDevices" deviceset="CONNECTOR-6" device="" value="CONNECTOR-6"/>
 <part name="P+5" library="supply1" deviceset="+5V" device=""/>
 <part name="P+6" library="supply1" deviceset="+5V" device=""/>
 <part name="D1" library="HyTechDevices" deviceset="DIODE" device="DO-41" value="DIODE"/>
@@ -2674,12 +2885,19 @@ general purpose rectifier</description>
 <part name="R10" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="8.2k"/>
 <part name="R9" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="8.2k"/>
 <part name="R8" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="8.2k"/>
+<part name="C1" library="HyTechDevices" deviceset="CAP" device="" value="220uF"/>
+<part name="U$1" library="HyTechDevices" deviceset="JUMPER" device=".3"/>
+<part name="U$2" library="HyTechDevices" deviceset="JUMPER" device=".3"/>
+<part name="U$3" library="HyTechDevices" deviceset="JUMPER" device=".3"/>
+<part name="U$4" library="HyTechDevices" deviceset="JUMPER" device=".3"/>
+<part name="D2" library="HyTechDevices" deviceset="DIODE" device="0805"/>
+<part name="GND9" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="294.64" y="-170.18" size="1.778" layer="97">Jumper used for Formula Hybrid
-Used to bypass 60V threshold</text>
+<text x="299.72" y="-162.56" size="1.778" layer="97">Formula Hybrid jumper used
+to bypass 60V threshold</text>
 <text x="30.48" y="-106.68" size="1.778" layer="97">Current sensor 1: ISB-100-A-600
 With pullup resistors if necessary
 
@@ -2726,14 +2944,14 @@ With pullup resistors if necessary
 used at FSAE/FN</text>
 <text x="205.74" y="-91.44" size="1.778" layer="97">Unfused connection
 used at FSAE/FN</text>
-<text x="297.18" y="-132.08" size="1.778" layer="97">Jumper used for FSAE/FN
-Used to enforce 60V threshold</text>
+<text x="299.72" y="-137.16" size="1.778" layer="97">FSAE/FN jumper used
+to enforce 60V threshold</text>
 <wire x1="177.8" y1="55.88" x2="254" y2="55.88" width="0.1524" layer="90"/>
 <wire x1="177.8" y1="17.78" x2="177.8" y2="55.88" width="0.1524" layer="90"/>
 <wire x1="254" y1="17.78" x2="254" y2="55.88" width="0.1524" layer="90"/>
 <wire x1="177.8" y1="17.78" x2="254" y2="17.78" width="0.1524" layer="90"/>
 <text x="177.8" y="55.88" size="5.08" layer="90">TS I/O</text>
-<text x="228.6" y="33.02" size="1.778" layer="97">IMD HV+ and HV-</text>
+<text x="228.6" y="22.86" size="1.778" layer="97">IMD HV+ and HV-</text>
 <text x="182.88" y="33.02" size="1.778" layer="97">Main HV+ and HV-
 (Externally Fused)</text>
 <text x="71.12" y="-101.6" size="1.778" layer="97">TODO pulldown or pullup</text>
@@ -2766,9 +2984,7 @@ Thin wires: Grounded Low Voltage</text>
 <instance part="INDICATOR" gate="-2" x="309.88" y="-182.88"/>
 <instance part="INDICATOR" gate="-1" x="309.88" y="-180.34"/>
 <instance part="U$12" gate="G$1" x="228.6" y="-73.66"/>
-<instance part="FH_JUMP_T" gate="-2" x="307.34" y="-157.48"/>
-<instance part="FH_JUMP_T" gate="-1" x="307.34" y="-154.94"/>
-<instance part="GND14" gate="1" x="246.38" y="-99.06"/>
+<instance part="GND14" gate="1" x="246.38" y="-101.6"/>
 <instance part="DISCH+" gate="-2" x="294.64" y="-86.36"/>
 <instance part="DISCH+" gate="-1" x="294.64" y="-83.82"/>
 <instance part="DISCH-" gate="-2" x="294.64" y="-99.06"/>
@@ -2824,16 +3040,10 @@ Thin wires: Grounded Low Voltage</text>
 <instance part="GND5" gate="1" x="111.76" y="50.8" rot="R180"/>
 <instance part="FUSE" gate="G$1" x="218.44" y="48.26"/>
 <instance part="GND6" gate="1" x="142.24" y="-40.64"/>
-<instance part="FH_JUMP_D+" gate="-2" x="200.66" y="-81.28" rot="MR0"/>
-<instance part="FH_JUMP_D+" gate="-1" x="200.66" y="-78.74" rot="MR0"/>
 <instance part="HV+UNFUSED" gate="-2" x="200.66" y="-91.44" rot="MR0"/>
 <instance part="HV+UNFUSED" gate="-1" x="200.66" y="-88.9" rot="MR0"/>
-<instance part="FH_JUMP_D-" gate="-2" x="200.66" y="-101.6" rot="MR0"/>
-<instance part="FH_JUMP_D-" gate="-1" x="200.66" y="-99.06" rot="MR0"/>
 <instance part="HV-UNFUSED" gate="-2" x="200.66" y="-111.76" rot="MR0"/>
 <instance part="HV-UNFUSED" gate="-1" x="200.66" y="-109.22" rot="MR0"/>
-<instance part="FSAE_JUMP_T" gate="-2" x="307.34" y="-144.78"/>
-<instance part="FSAE_JUMP_T" gate="-1" x="307.34" y="-142.24"/>
 <instance part="IMD_HV+" gate="-2" x="231.14" y="38.1"/>
 <instance part="IMD_HV+" gate="-1" x="231.14" y="40.64"/>
 <instance part="IMD_HV-" gate="-2" x="231.14" y="27.94"/>
@@ -2882,6 +3092,13 @@ Thin wires: Grounded Low Voltage</text>
 <instance part="R10" gate="G$1" x="218.44" y="-144.78" rot="R90"/>
 <instance part="R9" gate="G$1" x="210.82" y="-144.78" rot="R90"/>
 <instance part="R8" gate="G$1" x="203.2" y="-144.78" rot="R90"/>
+<instance part="C1" gate="G$1" x="213.36" y="33.02"/>
+<instance part="U$1" gate="G$1" x="307.34" y="-139.7"/>
+<instance part="U$2" gate="G$1" x="312.42" y="-154.94" rot="R180"/>
+<instance part="U$3" gate="G$1" x="198.12" y="-78.74"/>
+<instance part="U$4" gate="G$1" x="198.12" y="-99.06"/>
+<instance part="D2" gate="1" x="271.78" y="-93.98" rot="R180"/>
+<instance part="GND9" gate="1" x="281.94" y="-96.52"/>
 </instances>
 <busses>
 </busses>
@@ -2907,7 +3124,7 @@ Thin wires: Grounded Low Voltage</text>
 </segment>
 <segment>
 <pinref part="GND14" gate="1" pin="GND"/>
-<wire x1="246.38" y1="-96.52" x2="246.38" y2="-91.44" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="-99.06" x2="246.38" y2="-91.44" width="0.1524" layer="91"/>
 <pinref part="U$12" gate="G$1" pin="COIL-"/>
 </segment>
 <segment>
@@ -2977,6 +3194,11 @@ Thin wires: Grounded Low Voltage</text>
 <wire x1="137.16" y1="7.62" x2="137.16" y2="10.16" width="0.1524" layer="91"/>
 <junction x="137.16" y="7.62"/>
 <junction x="137.16" y="10.16"/>
+</segment>
+<segment>
+<pinref part="D2" gate="1" pin="A"/>
+<pinref part="GND9" gate="1" pin="GND"/>
+<wire x1="281.94" y1="-93.98" x2="276.86" y2="-93.98" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+12V" class="0">
@@ -3162,15 +3384,13 @@ Thin wires: Grounded Low Voltage</text>
 </net>
 <net name="TSAL+" class="0">
 <segment>
-<wire x1="297.18" y1="-149.86" x2="299.72" y2="-149.86" width="0.1524" layer="91"/>
-<label x="297.18" y="-149.86" size="1.778" layer="95" rot="R180" xref="yes"/>
-<wire x1="299.72" y1="-154.94" x2="299.72" y2="-149.86" width="0.1524" layer="91"/>
-<junction x="299.72" y="-149.86"/>
-<wire x1="299.72" y1="-149.86" x2="299.72" y2="-144.78" width="0.1524" layer="91"/>
-<pinref part="FSAE_JUMP_T" gate="-2" pin="S"/>
-<wire x1="299.72" y1="-144.78" x2="304.8" y2="-144.78" width="0.1524" layer="91"/>
-<pinref part="FH_JUMP_T" gate="-1" pin="S"/>
-<wire x1="304.8" y1="-154.94" x2="299.72" y2="-154.94" width="0.1524" layer="91"/>
+<wire x1="314.96" y1="-147.32" x2="312.42" y2="-147.32" width="0.1524" layer="91"/>
+<label x="314.96" y="-147.32" size="1.778" layer="95" xref="yes"/>
+<wire x1="312.42" y1="-147.32" x2="312.42" y2="-142.24" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="P$2"/>
+<pinref part="U$2" gate="G$1" pin="P$1"/>
+<wire x1="312.42" y1="-147.32" x2="312.42" y2="-152.4" width="0.1524" layer="91"/>
+<junction x="312.42" y="-147.32"/>
 </segment>
 <segment>
 <pinref part="MAIN" gate="-3" pin="S"/>
@@ -3281,7 +3501,6 @@ Thin wires: Grounded Low Voltage</text>
 <segment>
 <wire x1="203.2" y1="-83.82" x2="226.06" y2="-83.82" width="0.381" layer="91"/>
 <pinref part="U$12" gate="G$1" pin="CONTACT1"/>
-<pinref part="FH_JUMP_D+" gate="-2" pin="S"/>
 <wire x1="203.2" y1="-81.28" x2="203.2" y2="-83.82" width="0.381" layer="91"/>
 <pinref part="HV+UNFUSED" gate="-1" pin="S"/>
 <wire x1="203.2" y1="-88.9" x2="203.2" y2="-83.82" width="0.381" layer="91"/>
@@ -3289,6 +3508,7 @@ Thin wires: Grounded Low Voltage</text>
 <pinref part="HV+UNFUSED" gate="-2" pin="S"/>
 <wire x1="203.2" y1="-88.9" x2="203.2" y2="-91.44" width="0.381" layer="91"/>
 <junction x="203.2" y="-88.9"/>
+<pinref part="U$3" gate="G$1" pin="P$2"/>
 </segment>
 </net>
 <net name="TSVP+" class="0">
@@ -3307,9 +3527,9 @@ Thin wires: Grounded Low Voltage</text>
 <label x="312.42" y="-2.54" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<label x="302.26" y="-134.62" size="1.778" layer="95" xref="yes"/>
+<label x="297.18" y="-129.54" size="1.778" layer="95" xref="yes"/>
 <pinref part="TSAL_SSR" gate="G$1" pin="DC+"/>
-<wire x1="297.18" y1="-134.62" x2="302.26" y2="-134.62" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="-134.62" x2="297.18" y2="-129.54" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="MAIN" gate="-4" pin="S"/>
@@ -3359,20 +3579,23 @@ Thin wires: Grounded Low Voltage</text>
 <pinref part="IMD_HV+" gate="-2" pin="S"/>
 <pinref part="IMD_HV+" gate="-1" pin="S"/>
 <wire x1="228.6" y1="40.64" x2="228.6" y2="38.1" width="0.381" layer="91"/>
-<wire x1="205.74" y1="40.64" x2="228.6" y2="40.64" width="0.381" layer="91"/>
+<wire x1="205.74" y1="40.64" x2="213.36" y2="40.64" width="0.381" layer="91"/>
 <junction x="228.6" y="40.64"/>
+<wire x1="213.36" y1="40.64" x2="228.6" y2="40.64" width="0.381" layer="91"/>
 <wire x1="205.74" y1="40.64" x2="200.66" y2="40.64" width="0.381" layer="91"/>
 <junction x="205.74" y="40.64"/>
+<pinref part="C1" gate="G$1" pin="1"/>
+<wire x1="213.36" y1="40.64" x2="213.36" y2="38.1" width="0.381" layer="91"/>
+<junction x="213.36" y="40.64"/>
 </segment>
 <segment>
-<pinref part="FH_JUMP_D+" gate="-1" pin="S"/>
-<wire x1="203.2" y1="-78.74" x2="205.74" y2="-78.74" width="0.381" layer="91"/>
-<label x="205.74" y="-78.74" size="1.778" layer="95" xref="yes"/>
+<wire x1="198.12" y1="-81.28" x2="195.58" y2="-81.28" width="0.381" layer="91"/>
+<label x="195.58" y="-81.28" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="U$3" gate="G$1" pin="P$1"/>
 </segment>
 </net>
 <net name="DISCHARGE3" class="0">
 <segment>
-<pinref part="FH_JUMP_D-" gate="-2" pin="S"/>
 <pinref part="HV-UNFUSED" gate="-1" pin="S"/>
 <wire x1="203.2" y1="-101.6" x2="203.2" y2="-106.68" width="0.381" layer="91"/>
 <pinref part="DISCH-" gate="-1" pin="S"/>
@@ -3388,13 +3611,14 @@ Thin wires: Grounded Low Voltage</text>
 <pinref part="HV-UNFUSED" gate="-2" pin="S"/>
 <wire x1="203.2" y1="-109.22" x2="203.2" y2="-111.76" width="0.381" layer="91"/>
 <junction x="203.2" y="-109.22"/>
+<pinref part="U$4" gate="G$1" pin="P$2"/>
 </segment>
 </net>
 <net name="HV-FUSED" class="0">
 <segment>
-<pinref part="FH_JUMP_D-" gate="-1" pin="S"/>
-<wire x1="203.2" y1="-99.06" x2="205.74" y2="-99.06" width="0.381" layer="91"/>
-<label x="205.74" y="-99.06" size="1.778" layer="95" xref="yes"/>
+<wire x1="198.12" y1="-101.6" x2="195.58" y2="-101.6" width="0.381" layer="91"/>
+<label x="195.58" y="-101.6" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="U$4" gate="G$1" pin="P$1"/>
 </segment>
 <segment>
 <label x="200.66" y="27.94" size="1.778" layer="95" rot="R180" xref="yes"/>
@@ -3407,9 +3631,13 @@ Thin wires: Grounded Low Voltage</text>
 <pinref part="IMD_HV-" gate="-2" pin="S"/>
 <pinref part="IMD_HV-" gate="-1" pin="S"/>
 <wire x1="228.6" y1="30.48" x2="228.6" y2="27.94" width="0.381" layer="91"/>
-<wire x1="205.74" y1="27.94" x2="228.6" y2="27.94" width="0.381" layer="91"/>
+<wire x1="205.74" y1="27.94" x2="213.36" y2="27.94" width="0.381" layer="91"/>
 <junction x="205.74" y="27.94"/>
 <junction x="228.6" y="27.94"/>
+<pinref part="C1" gate="G$1" pin="2"/>
+<wire x1="213.36" y1="27.94" x2="228.6" y2="27.94" width="0.381" layer="91"/>
+<wire x1="213.36" y1="30.48" x2="213.36" y2="27.94" width="0.381" layer="91"/>
+<junction x="213.36" y="27.94"/>
 </segment>
 <segment>
 <pinref part="U$5" gate="G$1" pin="4VIN-"/>
@@ -3461,16 +3689,18 @@ Thin wires: Grounded Low Voltage</text>
 </net>
 <net name="SHUTDOWN7" class="0">
 <segment>
-<wire x1="259.08" y1="-99.06" x2="259.08" y2="-91.44" width="0.1524" layer="91"/>
+<wire x1="259.08" y1="-101.6" x2="259.08" y2="-93.98" width="0.1524" layer="91"/>
 <pinref part="U$12" gate="G$1" pin="COIL+"/>
-<label x="259.08" y="-99.06" size="1.778" layer="95" xref="yes"/>
+<label x="259.08" y="-101.6" size="1.778" layer="95" xref="yes"/>
+<pinref part="D2" gate="1" pin="C"/>
+<wire x1="259.08" y1="-93.98" x2="259.08" y2="-91.44" width="0.1524" layer="91"/>
+<wire x1="269.24" y1="-93.98" x2="259.08" y2="-93.98" width="0.1524" layer="91"/>
+<junction x="259.08" y="-93.98"/>
 </segment>
 <segment>
-<wire x1="302.26" y1="-162.56" x2="299.72" y2="-162.56" width="0.1524" layer="91"/>
-<wire x1="299.72" y1="-157.48" x2="299.72" y2="-162.56" width="0.1524" layer="91"/>
-<label x="302.26" y="-162.56" size="1.778" layer="95" xref="yes"/>
-<pinref part="FH_JUMP_T" gate="-2" pin="S"/>
-<wire x1="304.8" y1="-157.48" x2="299.72" y2="-157.48" width="0.1524" layer="91"/>
+<label x="302.26" y="-152.4" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="U$2" gate="G$1" pin="P$2"/>
+<wire x1="307.34" y1="-152.4" x2="302.26" y2="-152.4" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="INTERLOCK" gate="-2" pin="S"/>
@@ -3597,10 +3827,10 @@ Thin wires: Grounded Low Voltage</text>
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="FSAE_JUMP_T" gate="-1" pin="S"/>
-<wire x1="304.8" y1="-142.24" x2="297.18" y2="-142.24" width="0.1524" layer="91"/>
+<wire x1="307.34" y1="-142.24" x2="297.18" y2="-142.24" width="0.1524" layer="91"/>
 <wire x1="297.18" y1="-142.24" x2="297.18" y2="-139.7" width="0.1524" layer="91"/>
 <pinref part="TSAL_SSR" gate="G$1" pin="DC-"/>
+<pinref part="U$1" gate="G$1" pin="P$1"/>
 </segment>
 </net>
 <net name="N$5" class="0">
