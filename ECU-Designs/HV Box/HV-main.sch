@@ -2806,7 +2806,7 @@ general purpose rectifier</description>
 <part name="BMS" library="HyTechDevices" deviceset="MINIFIT_5566-8" device=""/>
 <part name="P+3" library="supply1" deviceset="+12V" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
-<part name="FUSE" library="HyTechDevices" deviceset="FUSE" device="_5X20MM" value="250mA"/>
+<part name="FUSE" library="HyTechDevices" deviceset="FUSE" device="_MIDGET" value="250mA"/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="HV+UNFUSED" library="HyTechDevices" deviceset="CONNECTOR-2" device="" value="CONNECTOR FSAE"/>
 <part name="HV-UNFUSED" library="HyTechDevices" deviceset="CONNECTOR-2" device="" value="CONNECTOR FSAE"/>
@@ -2847,7 +2847,7 @@ general purpose rectifier</description>
 <part name="U$4" library="HyTechDevices" deviceset="JUMPER" device=".3"/>
 <part name="D2" library="HyTechDevices" deviceset="DIODE" device="0805"/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
-<part name="FUSE1" library="HyTechDevices" deviceset="FUSE" device="_5X20MM" value="250mA"/>
+<part name="FUSE1" library="HyTechDevices" deviceset="FUSE" device="_MIDGET" value="250mA"/>
 </parts>
 <sheets>
 <sheet>
