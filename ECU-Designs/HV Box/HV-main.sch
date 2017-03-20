@@ -8,34 +8,34 @@
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
-<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
-<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
-<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
-<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
-<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
-<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
-<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
-<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
-<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
-<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
-<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
-<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="yes" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="yes" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="yes" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="yes" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="yes" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="yes" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="yes" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="yes" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="yes" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="yes" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="yes" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="yes" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -44,8 +44,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -53,19 +53,19 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
-<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
-<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
-<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
-<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="yes" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="yes" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="yes" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="yes" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="yes" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -1095,14 +1095,14 @@ FUSE</text>
 <pad name="P2" x="10.287" y="0" drill="2.413" diameter="3.81"/>
 <pad name="N3" x="30.988" y="0" drill="2.413" diameter="3.81"/>
 <pad name="N4" x="41.275" y="0" drill="2.413" diameter="3.81"/>
-<wire x1="-3.81" y1="5.08" x2="13.97" y2="5.08" width="0.127" layer="21"/>
-<wire x1="13.97" y1="5.08" x2="13.97" y2="-5.08" width="0.127" layer="21"/>
-<wire x1="13.97" y1="-5.08" x2="-3.81" y2="-5.08" width="0.127" layer="21"/>
-<wire x1="-3.81" y1="-5.08" x2="-3.81" y2="5.08" width="0.127" layer="21"/>
-<wire x1="26.67" y1="5.08" x2="45.72" y2="5.08" width="0.127" layer="21"/>
-<wire x1="45.72" y1="5.08" x2="45.72" y2="-5.08" width="0.127" layer="21"/>
-<wire x1="45.72" y1="-5.08" x2="26.67" y2="-5.08" width="0.127" layer="21"/>
-<wire x1="26.67" y1="-5.08" x2="26.67" y2="5.08" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="6.35" x2="13.97" y2="6.35" width="0.127" layer="21"/>
+<wire x1="13.97" y1="6.35" x2="13.97" y2="-6.35" width="0.127" layer="21"/>
+<wire x1="13.97" y1="-6.35" x2="-3.81" y2="-6.35" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="-6.35" x2="-3.81" y2="6.35" width="0.127" layer="21"/>
+<wire x1="26.67" y1="6.35" x2="45.72" y2="6.35" width="0.127" layer="21"/>
+<wire x1="45.72" y1="6.35" x2="45.72" y2="-6.35" width="0.127" layer="21"/>
+<wire x1="45.72" y1="-6.35" x2="26.67" y2="-6.35" width="0.127" layer="21"/>
+<wire x1="26.67" y1="-6.35" x2="26.67" y2="6.35" width="0.127" layer="21"/>
 <wire x1="-2.54" y1="3.81" x2="-2.54" y2="-3.81" width="0.127" layer="21"/>
 <wire x1="-2.54" y1="-3.81" x2="12.7" y2="-3.81" width="0.127" layer="21"/>
 <wire x1="12.7" y1="-3.81" x2="13.335" y2="-3.175" width="0.127" layer="21"/>
@@ -2752,51 +2752,6 @@ general purpose rectifier</description>
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<modules>
-<module name="HV_ECU" prefix="" dx="127" dy="30.48">
-<ports>
-<port name="TSMP+" side="top" coord="2.54" direction="out"/>
-<port name="TSVP_POWER" side="left" coord="10.16" direction="out"/>
-<port name="SHUTDOWN_CIRCUIT" side="left" coord="-12.7" direction="in"/>
-<port name="GND" side="left" coord="-10.16" direction="in"/>
-<port name="TSAL/TSEL_POWER" side="left" coord="12.7" direction="out"/>
-<port name="CUR_SENSE" side="right" coord="12.7" direction="in"/>
-<port name="BSPD_CUR_FAULT" side="left" coord="7.62" direction="out"/>
-<port name="HV+" side="top" coord="12.7" direction="pas"/>
-<port name="HV-" side="top" coord="15.24" direction="pas"/>
-<port name="TSMP-" side="top" coord="5.08" direction="out"/>
-<port name="AI-" side="top" coord="-7.62" direction="in"/>
-<port name="AI+" side="top" coord="-10.16" direction="out"/>
-<port name="12V" side="left" coord="-7.62" direction="in"/>
-<port name="BMS_POWER" side="right" coord="10.16" direction="out"/>
-<port name="BMS_CANH" side="right" coord="5.08" direction="io"/>
-<port name="BMS_CANL" side="right" coord="2.54" direction="io"/>
-<port name="CANH" side="left" coord="0" direction="io"/>
-<port name="CANL" side="left" coord="-2.54" direction="io"/>
-<port name="IMD_12V" side="bottom" coord="50.8" direction="out"/>
-<port name="IMD_GND" side="bottom" coord="53.34" direction="out"/>
-<port name="OKHS_OUT" side="left" coord="5.08" direction="out"/>
-<port name="IMD_OKHS" side="bottom" coord="60.96" direction="in"/>
-<port name="BMS_GND" side="right" coord="7.62" direction="out"/>
-</ports>
-<variantdefs>
-</variantdefs>
-<parts>
-</parts>
-<sheets>
-<sheet>
-<plain>
-</plain>
-<instances>
-</instances>
-<busses>
-</busses>
-<nets>
-</nets>
-</sheet>
-</sheets>
-</module>
-</modules>
 <parts>
 <part name="IC1" library="HyTechDevices" deviceset="5VREG_L7805" device="_VERT"/>
 <part name="P+1" library="supply1" deviceset="+5V" device=""/>
@@ -2851,7 +2806,7 @@ general purpose rectifier</description>
 <part name="BMS" library="HyTechDevices" deviceset="MINIFIT_5566-8" device=""/>
 <part name="P+3" library="supply1" deviceset="+12V" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
-<part name="FUSE" library="HyTechDevices" deviceset="FUSE" device="_MIDGET" value="250mA"/>
+<part name="FUSE" library="HyTechDevices" deviceset="FUSE" device="_5X20MM" value="250mA"/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="HV+UNFUSED" library="HyTechDevices" deviceset="CONNECTOR-2" device="" value="CONNECTOR FSAE"/>
 <part name="HV-UNFUSED" library="HyTechDevices" deviceset="CONNECTOR-2" device="" value="CONNECTOR FSAE"/>
@@ -2892,11 +2847,12 @@ general purpose rectifier</description>
 <part name="U$4" library="HyTechDevices" deviceset="JUMPER" device=".3"/>
 <part name="D2" library="HyTechDevices" deviceset="DIODE" device="0805"/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
+<part name="FUSE1" library="HyTechDevices" deviceset="FUSE" device="_5X20MM" value="250mA"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="299.72" y="-162.56" size="1.778" layer="97">Formula Hybrid jumper used
+<text x="299.72" y="-165.1" size="1.778" layer="97">Formula Hybrid jumper used
 to bypass 60V threshold</text>
 <text x="30.48" y="-106.68" size="1.778" layer="97">Current sensor 1: ISB-100-A-600
 With pullup resistors if necessary
@@ -2925,70 +2881,69 @@ With pullup resistors if necessary
 <rectangle x1="165.1" y1="-208.28" x2="172.72" y2="63.5" layer="90"/>
 <text x="160.02" y="83.82" size="12.7" layer="90" rot="R180">GLV</text>
 <text x="177.8" y="71.12" size="12.7" layer="90">TS</text>
-<wire x1="177.8" y1="7.62" x2="327.66" y2="7.62" width="0.1524" layer="90"/>
-<wire x1="327.66" y1="7.62" x2="327.66" y2="-60.96" width="0.1524" layer="90"/>
-<wire x1="327.66" y1="-60.96" x2="177.8" y2="-60.96" width="0.1524" layer="90"/>
-<wire x1="177.8" y1="-60.96" x2="177.8" y2="7.62" width="0.1524" layer="90"/>
-<text x="177.8" y="7.62" size="5.08" layer="90">HV DC/DC Converter</text>
-<wire x1="177.8" y1="-71.12" x2="322.58" y2="-71.12" width="0.1524" layer="90"/>
-<wire x1="322.58" y1="-71.12" x2="322.58" y2="-114.3" width="0.1524" layer="90"/>
-<wire x1="322.58" y1="-114.3" x2="177.8" y2="-114.3" width="0.1524" layer="90"/>
-<text x="177.8" y="-71.12" size="5.08" layer="90">Discharge Circuitry</text>
-<wire x1="177.8" y1="-124.46" x2="332.74" y2="-124.46" width="0.1524" layer="90"/>
-<wire x1="332.74" y1="-124.46" x2="332.74" y2="-203.2" width="0.1524" layer="90"/>
-<wire x1="332.74" y1="-203.2" x2="177.8" y2="-203.2" width="0.1524" layer="90"/>
-<wire x1="177.8" y1="-203.2" x2="177.8" y2="-124.46" width="0.1524" layer="90"/>
-<text x="177.8" y="-124.46" size="5.08" layer="90">TSAL/TSEL Control, Accumulator Voltage Indicator</text>
-<wire x1="177.8" y1="-71.12" x2="177.8" y2="-114.3" width="0.1524" layer="90"/>
-<text x="205.74" y="-111.76" size="1.778" layer="97">Unfused connection
+<wire x1="177.8" y1="5.08" x2="327.66" y2="5.08" width="0.1524" layer="90"/>
+<wire x1="327.66" y1="5.08" x2="327.66" y2="-63.5" width="0.1524" layer="90"/>
+<wire x1="327.66" y1="-63.5" x2="177.8" y2="-63.5" width="0.1524" layer="90"/>
+<wire x1="177.8" y1="-63.5" x2="177.8" y2="5.08" width="0.1524" layer="90"/>
+<text x="177.8" y="5.08" size="5.08" layer="90">HV DC/DC Converter</text>
+<wire x1="177.8" y1="-73.66" x2="322.58" y2="-73.66" width="0.1524" layer="90"/>
+<wire x1="322.58" y1="-73.66" x2="322.58" y2="-116.84" width="0.1524" layer="90"/>
+<wire x1="322.58" y1="-116.84" x2="177.8" y2="-116.84" width="0.1524" layer="90"/>
+<text x="177.8" y="-73.66" size="5.08" layer="90">Discharge Circuitry</text>
+<wire x1="177.8" y1="-127" x2="332.74" y2="-127" width="0.1524" layer="90"/>
+<wire x1="332.74" y1="-127" x2="332.74" y2="-205.74" width="0.1524" layer="90"/>
+<wire x1="332.74" y1="-205.74" x2="177.8" y2="-205.74" width="0.1524" layer="90"/>
+<wire x1="177.8" y1="-205.74" x2="177.8" y2="-127" width="0.1524" layer="90"/>
+<text x="177.8" y="-127" size="5.08" layer="90">TSAL/TSEL Control, Accumulator Voltage Indicator</text>
+<wire x1="177.8" y1="-73.66" x2="177.8" y2="-116.84" width="0.1524" layer="90"/>
+<text x="205.74" y="-114.3" size="1.778" layer="97">Unfused connection
 used at FSAE/FN</text>
-<text x="205.74" y="-91.44" size="1.778" layer="97">Unfused connection
+<text x="205.74" y="-93.98" size="1.778" layer="97">Unfused connection
 used at FSAE/FN</text>
-<text x="299.72" y="-137.16" size="1.778" layer="97">FSAE/FN jumper used
+<text x="299.72" y="-139.7" size="1.778" layer="97">FSAE/FN jumper used
 to enforce 60V threshold</text>
 <wire x1="177.8" y1="55.88" x2="254" y2="55.88" width="0.1524" layer="90"/>
-<wire x1="177.8" y1="17.78" x2="177.8" y2="55.88" width="0.1524" layer="90"/>
-<wire x1="254" y1="17.78" x2="254" y2="55.88" width="0.1524" layer="90"/>
-<wire x1="177.8" y1="17.78" x2="254" y2="17.78" width="0.1524" layer="90"/>
+<wire x1="177.8" y1="15.24" x2="177.8" y2="55.88" width="0.1524" layer="90"/>
+<wire x1="254" y1="15.24" x2="254" y2="55.88" width="0.1524" layer="90"/>
+<wire x1="177.8" y1="15.24" x2="254" y2="15.24" width="0.1524" layer="90"/>
 <text x="177.8" y="55.88" size="5.08" layer="90">TS I/O</text>
-<text x="228.6" y="22.86" size="1.778" layer="97">IMD HV+ and HV-</text>
 <text x="182.88" y="33.02" size="1.778" layer="97">Main HV+ and HV-
 (Externally Fused)</text>
 <text x="71.12" y="-101.6" size="1.778" layer="97">TODO pulldown or pullup</text>
 <text x="124.46" y="48.26" size="1.27" layer="97">TODO change to 5V?</text>
-<text x="205.74" y="-160.02" size="1.778" layer="97">~4.5v Gate threshold
+<text x="205.74" y="-162.56" size="1.778" layer="97">~4.5v Gate threshold
  corresponds to 60V
  on tractive system</text>
 <text x="259.08" y="35.56" size="3.048" layer="97">Thick wires: Isolated Tractive System
 Thin wires: Grounded Low Voltage</text>
-<text x="236.22" y="-132.08" size="1.778" layer="97">Outputs ~6.12V</text>
-<text x="236.22" y="-180.34" size="1.778" layer="97">Outputs ~13.2V</text>
+<text x="236.22" y="-134.62" size="1.778" layer="97">Outputs ~6.12V</text>
+<text x="236.22" y="-182.88" size="1.778" layer="97">Outputs ~13.2V</text>
 </plain>
 <instances>
 <instance part="IC1" gate="G$1" x="132.08" y="-30.48"/>
 <instance part="P+1" gate="1" x="149.86" y="-30.48" rot="R270"/>
 <instance part="P+2" gate="1" x="119.38" y="-30.48" rot="R90"/>
 <instance part="GND8" gate="1" x="132.08" y="-40.64"/>
-<instance part="U$5" gate="G$1" x="236.22" y="-22.86"/>
+<instance part="U$5" gate="G$1" x="236.22" y="-25.4"/>
 <instance part="HV+FUSED" gate="-2" x="198.12" y="48.26" rot="R180"/>
 <instance part="HV+FUSED" gate="-1" x="198.12" y="45.72" rot="R180"/>
 <instance part="HV-FUSED" gate="-2" x="198.12" y="22.86" rot="R180"/>
 <instance part="HV-FUSED" gate="-1" x="198.12" y="20.32" rot="R180"/>
-<instance part="GND12" gate="1" x="302.26" y="-53.34"/>
-<instance part="TRIM+" gate="G$1" x="294.64" y="-17.78"/>
-<instance part="TRIM-" gate="G$1" x="294.64" y="-27.94"/>
+<instance part="GND12" gate="1" x="302.26" y="-55.88"/>
+<instance part="TRIM+" gate="G$1" x="294.64" y="-20.32"/>
+<instance part="TRIM-" gate="G$1" x="294.64" y="-30.48"/>
 <instance part="R1" gate="G$1" x="63.5" y="30.48" rot="R180"/>
-<instance part="HV_REG2" gate="G$1" x="223.52" y="-187.96"/>
-<instance part="R23" gate="G$1" x="246.38" y="-193.04" rot="R90"/>
-<instance part="R22" gate="G$1" x="218.44" y="-193.04" rot="R90"/>
-<instance part="INDICATOR" gate="-2" x="309.88" y="-182.88"/>
-<instance part="INDICATOR" gate="-1" x="309.88" y="-180.34"/>
-<instance part="U$12" gate="G$1" x="228.6" y="-73.66"/>
-<instance part="GND14" gate="1" x="246.38" y="-101.6"/>
-<instance part="DISCH+" gate="-2" x="294.64" y="-86.36"/>
-<instance part="DISCH+" gate="-1" x="294.64" y="-83.82"/>
-<instance part="DISCH-" gate="-2" x="294.64" y="-99.06"/>
-<instance part="DISCH-" gate="-1" x="294.64" y="-96.52"/>
+<instance part="HV_REG2" gate="G$1" x="223.52" y="-190.5"/>
+<instance part="R23" gate="G$1" x="246.38" y="-195.58" rot="R90"/>
+<instance part="R22" gate="G$1" x="218.44" y="-195.58" rot="R90"/>
+<instance part="INDICATOR" gate="-2" x="309.88" y="-185.42"/>
+<instance part="INDICATOR" gate="-1" x="309.88" y="-182.88"/>
+<instance part="U$12" gate="G$1" x="228.6" y="-76.2"/>
+<instance part="GND14" gate="1" x="246.38" y="-104.14"/>
+<instance part="DISCH+" gate="-2" x="294.64" y="-88.9"/>
+<instance part="DISCH+" gate="-1" x="294.64" y="-86.36"/>
+<instance part="DISCH-" gate="-2" x="294.64" y="-101.6"/>
+<instance part="DISCH-" gate="-1" x="294.64" y="-99.06"/>
 <instance part="C3" gate="G$1" x="142.24" y="-35.56"/>
 <instance part="CURRENT1" gate="-1" x="76.2" y="-81.28"/>
 <instance part="CURRENT1" gate="-2" x="76.2" y="-83.82"/>
@@ -3040,10 +2995,10 @@ Thin wires: Grounded Low Voltage</text>
 <instance part="GND5" gate="1" x="111.76" y="50.8" rot="R180"/>
 <instance part="FUSE" gate="G$1" x="218.44" y="48.26"/>
 <instance part="GND6" gate="1" x="142.24" y="-40.64"/>
-<instance part="HV+UNFUSED" gate="-2" x="200.66" y="-91.44" rot="MR0"/>
-<instance part="HV+UNFUSED" gate="-1" x="200.66" y="-88.9" rot="MR0"/>
-<instance part="HV-UNFUSED" gate="-2" x="200.66" y="-111.76" rot="MR0"/>
-<instance part="HV-UNFUSED" gate="-1" x="200.66" y="-109.22" rot="MR0"/>
+<instance part="HV+UNFUSED" gate="-2" x="200.66" y="-93.98" rot="MR0"/>
+<instance part="HV+UNFUSED" gate="-1" x="200.66" y="-91.44" rot="MR0"/>
+<instance part="HV-UNFUSED" gate="-2" x="200.66" y="-114.3" rot="MR0"/>
+<instance part="HV-UNFUSED" gate="-1" x="200.66" y="-111.76" rot="MR0"/>
 <instance part="IMD_HV+" gate="-2" x="231.14" y="38.1"/>
 <instance part="IMD_HV+" gate="-1" x="231.14" y="40.64"/>
 <instance part="IMD_HV-" gate="-2" x="231.14" y="27.94"/>
@@ -3071,34 +3026,35 @@ Thin wires: Grounded Low Voltage</text>
 <instance part="P+5" gate="1" x="30.48" y="-78.74" rot="MR270"/>
 <instance part="P+6" gate="1" x="30.48" y="-93.98" rot="MR270"/>
 <instance part="D1" gate="1" x="50.8" y="-137.16" rot="R180"/>
-<instance part="HV_REG1" gate="G$1" x="223.52" y="-139.7"/>
-<instance part="TSAL_SSR" gate="G$1" x="287.02" y="-137.16"/>
-<instance part="THRESHOLD" gate="G$1" x="259.08" y="-165.1"/>
-<instance part="R16" gate="G$1" x="218.44" y="-167.64" rot="R90"/>
-<instance part="R19" gate="G$1" x="248.92" y="-167.64" rot="R90"/>
-<instance part="R26" gate="G$1" x="271.78" y="-167.64" rot="R90"/>
-<instance part="R13" gate="G$1" x="261.62" y="-144.78" rot="R90"/>
-<instance part="R15" gate="G$1" x="210.82" y="-167.64" rot="R90"/>
-<instance part="R14" gate="G$1" x="203.2" y="-167.64" rot="R90"/>
-<instance part="R18" gate="G$1" x="241.3" y="-167.64" rot="R90"/>
-<instance part="R17" gate="G$1" x="233.68" y="-167.64" rot="R90"/>
-<instance part="AI_SSR" gate="G$1" x="287.02" y="-177.8"/>
-<instance part="R12" gate="G$1" x="254" y="-144.78" rot="R90"/>
-<instance part="R11" gate="G$1" x="246.38" y="-144.78" rot="R90"/>
-<instance part="R24" gate="G$1" x="254" y="-193.04" rot="R90"/>
-<instance part="R25" gate="G$1" x="261.62" y="-193.04" rot="R90"/>
-<instance part="R21" gate="G$1" x="210.82" y="-193.04" rot="R90"/>
-<instance part="R20" gate="G$1" x="203.2" y="-193.04" rot="R90"/>
-<instance part="R10" gate="G$1" x="218.44" y="-144.78" rot="R90"/>
-<instance part="R9" gate="G$1" x="210.82" y="-144.78" rot="R90"/>
-<instance part="R8" gate="G$1" x="203.2" y="-144.78" rot="R90"/>
+<instance part="HV_REG1" gate="G$1" x="223.52" y="-142.24"/>
+<instance part="TSAL_SSR" gate="G$1" x="287.02" y="-139.7"/>
+<instance part="THRESHOLD" gate="G$1" x="259.08" y="-167.64"/>
+<instance part="R16" gate="G$1" x="218.44" y="-170.18" rot="R90"/>
+<instance part="R19" gate="G$1" x="248.92" y="-170.18" rot="R90"/>
+<instance part="R26" gate="G$1" x="271.78" y="-170.18" rot="R90"/>
+<instance part="R13" gate="G$1" x="261.62" y="-147.32" rot="R90"/>
+<instance part="R15" gate="G$1" x="210.82" y="-170.18" rot="R90"/>
+<instance part="R14" gate="G$1" x="203.2" y="-170.18" rot="R90"/>
+<instance part="R18" gate="G$1" x="241.3" y="-170.18" rot="R90"/>
+<instance part="R17" gate="G$1" x="233.68" y="-170.18" rot="R90"/>
+<instance part="AI_SSR" gate="G$1" x="287.02" y="-180.34"/>
+<instance part="R12" gate="G$1" x="254" y="-147.32" rot="R90"/>
+<instance part="R11" gate="G$1" x="246.38" y="-147.32" rot="R90"/>
+<instance part="R24" gate="G$1" x="254" y="-195.58" rot="R90"/>
+<instance part="R25" gate="G$1" x="261.62" y="-195.58" rot="R90"/>
+<instance part="R21" gate="G$1" x="210.82" y="-195.58" rot="R90"/>
+<instance part="R20" gate="G$1" x="203.2" y="-195.58" rot="R90"/>
+<instance part="R10" gate="G$1" x="218.44" y="-147.32" rot="R90"/>
+<instance part="R9" gate="G$1" x="210.82" y="-147.32" rot="R90"/>
+<instance part="R8" gate="G$1" x="203.2" y="-147.32" rot="R90"/>
 <instance part="C1" gate="G$1" x="213.36" y="33.02"/>
-<instance part="U$1" gate="G$1" x="307.34" y="-139.7"/>
-<instance part="U$2" gate="G$1" x="312.42" y="-154.94" rot="R180"/>
-<instance part="U$3" gate="G$1" x="198.12" y="-78.74"/>
-<instance part="U$4" gate="G$1" x="198.12" y="-99.06"/>
-<instance part="D2" gate="1" x="271.78" y="-93.98" rot="R180"/>
-<instance part="GND9" gate="1" x="281.94" y="-96.52"/>
+<instance part="U$1" gate="G$1" x="307.34" y="-142.24"/>
+<instance part="U$2" gate="G$1" x="312.42" y="-157.48" rot="R180"/>
+<instance part="U$3" gate="G$1" x="198.12" y="-81.28"/>
+<instance part="U$4" gate="G$1" x="198.12" y="-101.6"/>
+<instance part="D2" gate="1" x="271.78" y="-96.52" rot="R180"/>
+<instance part="GND9" gate="1" x="281.94" y="-99.06"/>
+<instance part="FUSE1" gate="G$1" x="218.44" y="20.32"/>
 </instances>
 <busses>
 </busses>
@@ -3111,20 +3067,20 @@ Thin wires: Grounded Low Voltage</text>
 <segment>
 <pinref part="U$5" gate="G$1" pin="9VOUT-"/>
 <pinref part="GND12" gate="1" pin="GND"/>
-<wire x1="281.94" y1="-45.72" x2="302.26" y2="-45.72" width="0.1524" layer="91"/>
-<wire x1="302.26" y1="-45.72" x2="302.26" y2="-50.8" width="0.1524" layer="91"/>
+<wire x1="281.94" y1="-48.26" x2="302.26" y2="-48.26" width="0.1524" layer="91"/>
+<wire x1="302.26" y1="-48.26" x2="302.26" y2="-53.34" width="0.1524" layer="91"/>
 <pinref part="U$5" gate="G$1" pin="8SENSE-"/>
-<wire x1="281.94" y1="-35.56" x2="302.26" y2="-35.56" width="0.1524" layer="91"/>
-<wire x1="302.26" y1="-35.56" x2="302.26" y2="-45.72" width="0.1524" layer="91"/>
-<junction x="302.26" y="-45.72"/>
+<wire x1="281.94" y1="-38.1" x2="302.26" y2="-38.1" width="0.1524" layer="91"/>
+<wire x1="302.26" y1="-38.1" x2="302.26" y2="-48.26" width="0.1524" layer="91"/>
+<junction x="302.26" y="-48.26"/>
 <pinref part="TRIM-" gate="G$1" pin="2"/>
-<wire x1="299.72" y1="-27.94" x2="302.26" y2="-27.94" width="0.1524" layer="91"/>
-<wire x1="302.26" y1="-27.94" x2="302.26" y2="-35.56" width="0.1524" layer="91"/>
-<junction x="302.26" y="-35.56"/>
+<wire x1="299.72" y1="-30.48" x2="302.26" y2="-30.48" width="0.1524" layer="91"/>
+<wire x1="302.26" y1="-30.48" x2="302.26" y2="-38.1" width="0.1524" layer="91"/>
+<junction x="302.26" y="-38.1"/>
 </segment>
 <segment>
 <pinref part="GND14" gate="1" pin="GND"/>
-<wire x1="246.38" y1="-99.06" x2="246.38" y2="-91.44" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="-101.6" x2="246.38" y2="-93.98" width="0.1524" layer="91"/>
 <pinref part="U$12" gate="G$1" pin="COIL-"/>
 </segment>
 <segment>
@@ -3198,7 +3154,7 @@ Thin wires: Grounded Low Voltage</text>
 <segment>
 <pinref part="D2" gate="1" pin="A"/>
 <pinref part="GND9" gate="1" pin="GND"/>
-<wire x1="281.94" y1="-93.98" x2="276.86" y2="-93.98" width="0.1524" layer="91"/>
+<wire x1="281.94" y1="-96.52" x2="276.86" y2="-96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+12V" class="0">
@@ -3277,11 +3233,11 @@ Thin wires: Grounded Low Voltage</text>
 <segment>
 <pinref part="U$5" gate="G$1" pin="7TRIM"/>
 <pinref part="TRIM-" gate="G$1" pin="1"/>
-<wire x1="281.94" y1="-22.86" x2="289.56" y2="-22.86" width="0.1524" layer="91"/>
-<wire x1="289.56" y1="-22.86" x2="289.56" y2="-27.94" width="0.1524" layer="91"/>
+<wire x1="281.94" y1="-25.4" x2="289.56" y2="-25.4" width="0.1524" layer="91"/>
+<wire x1="289.56" y1="-25.4" x2="289.56" y2="-30.48" width="0.1524" layer="91"/>
 <pinref part="TRIM+" gate="G$1" pin="1"/>
-<wire x1="289.56" y1="-22.86" x2="289.56" y2="-17.78" width="0.1524" layer="91"/>
-<junction x="289.56" y="-22.86"/>
+<wire x1="289.56" y1="-25.4" x2="289.56" y2="-20.32" width="0.1524" layer="91"/>
+<junction x="289.56" y="-25.4"/>
 </segment>
 </net>
 <net name="CANL_IN" class="0">
@@ -3359,38 +3315,38 @@ Thin wires: Grounded Low Voltage</text>
 <net name="N$1" class="0">
 <segment>
 <pinref part="HV_REG2" gate="G$1" pin="OUT"/>
-<wire x1="279.4" y1="-195.58" x2="330.2" y2="-195.58" width="0.381" layer="91"/>
-<wire x1="330.2" y1="-195.58" x2="330.2" y2="-175.26" width="0.381" layer="91"/>
+<wire x1="279.4" y1="-198.12" x2="330.2" y2="-198.12" width="0.381" layer="91"/>
+<wire x1="330.2" y1="-198.12" x2="330.2" y2="-177.8" width="0.381" layer="91"/>
 <pinref part="AI_SSR" gate="G$1" pin="DC+"/>
-<wire x1="330.2" y1="-175.26" x2="297.18" y2="-175.26" width="0.381" layer="91"/>
-<wire x1="236.22" y1="-182.88" x2="261.62" y2="-182.88" width="0.381" layer="91"/>
-<wire x1="261.62" y1="-182.88" x2="266.7" y2="-182.88" width="0.381" layer="91"/>
-<wire x1="266.7" y1="-182.88" x2="279.4" y2="-195.58" width="0.381" layer="91"/>
+<wire x1="330.2" y1="-177.8" x2="297.18" y2="-177.8" width="0.381" layer="91"/>
+<wire x1="236.22" y1="-185.42" x2="261.62" y2="-185.42" width="0.381" layer="91"/>
+<wire x1="261.62" y1="-185.42" x2="266.7" y2="-185.42" width="0.381" layer="91"/>
+<wire x1="266.7" y1="-185.42" x2="279.4" y2="-198.12" width="0.381" layer="91"/>
 <pinref part="R25" gate="G$1" pin="2"/>
-<wire x1="261.62" y1="-182.88" x2="261.62" y2="-187.96" width="0.381" layer="91"/>
-<junction x="261.62" y="-182.88"/>
+<wire x1="261.62" y1="-185.42" x2="261.62" y2="-190.5" width="0.381" layer="91"/>
+<junction x="261.62" y="-185.42"/>
 </segment>
 </net>
 <net name="N$15" class="0">
 <segment>
 <pinref part="HV_REG2" gate="G$1" pin="ADJ"/>
-<wire x1="228.6" y1="-198.12" x2="228.6" y2="-190.5" width="0.381" layer="91"/>
+<wire x1="228.6" y1="-200.66" x2="228.6" y2="-193.04" width="0.381" layer="91"/>
 <pinref part="R23" gate="G$1" pin="1"/>
-<wire x1="228.6" y1="-198.12" x2="246.38" y2="-198.12" width="0.381" layer="91"/>
+<wire x1="228.6" y1="-200.66" x2="246.38" y2="-200.66" width="0.381" layer="91"/>
 <pinref part="R22" gate="G$1" pin="1"/>
-<wire x1="218.44" y1="-198.12" x2="228.6" y2="-198.12" width="0.381" layer="91"/>
-<junction x="228.6" y="-198.12"/>
+<wire x1="218.44" y1="-200.66" x2="228.6" y2="-200.66" width="0.381" layer="91"/>
+<junction x="228.6" y="-200.66"/>
 </segment>
 </net>
 <net name="TSAL+" class="0">
 <segment>
-<wire x1="314.96" y1="-147.32" x2="312.42" y2="-147.32" width="0.1524" layer="91"/>
-<label x="314.96" y="-147.32" size="1.778" layer="95" xref="yes"/>
-<wire x1="312.42" y1="-147.32" x2="312.42" y2="-142.24" width="0.1524" layer="91"/>
+<wire x1="314.96" y1="-149.86" x2="312.42" y2="-149.86" width="0.1524" layer="91"/>
+<label x="314.96" y="-149.86" size="1.778" layer="95" xref="yes"/>
+<wire x1="312.42" y1="-149.86" x2="312.42" y2="-144.78" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="P$2"/>
 <pinref part="U$2" gate="G$1" pin="P$1"/>
-<wire x1="312.42" y1="-147.32" x2="312.42" y2="-152.4" width="0.1524" layer="91"/>
-<junction x="312.42" y="-147.32"/>
+<wire x1="312.42" y1="-149.86" x2="312.42" y2="-154.94" width="0.1524" layer="91"/>
+<junction x="312.42" y="-149.86"/>
 </segment>
 <segment>
 <pinref part="MAIN" gate="-3" pin="S"/>
@@ -3402,12 +3358,12 @@ Thin wires: Grounded Low Voltage</text>
 <net name="DISCHARGE2" class="0">
 <segment>
 <pinref part="DISCH+" gate="-1" pin="S"/>
-<wire x1="279.4" y1="-83.82" x2="289.56" y2="-83.82" width="0.381" layer="91"/>
+<wire x1="279.4" y1="-86.36" x2="289.56" y2="-86.36" width="0.381" layer="91"/>
 <pinref part="DISCH+" gate="-2" pin="S"/>
-<wire x1="289.56" y1="-83.82" x2="292.1" y2="-83.82" width="0.381" layer="91"/>
-<wire x1="292.1" y1="-86.36" x2="289.56" y2="-86.36" width="0.381" layer="91"/>
-<wire x1="289.56" y1="-86.36" x2="289.56" y2="-83.82" width="0.381" layer="91"/>
-<junction x="289.56" y="-83.82"/>
+<wire x1="289.56" y1="-86.36" x2="292.1" y2="-86.36" width="0.381" layer="91"/>
+<wire x1="292.1" y1="-88.9" x2="289.56" y2="-88.9" width="0.381" layer="91"/>
+<wire x1="289.56" y1="-88.9" x2="289.56" y2="-86.36" width="0.381" layer="91"/>
+<junction x="289.56" y="-86.36"/>
 <pinref part="U$12" gate="G$1" pin="CONTACT2"/>
 </segment>
 </net>
@@ -3499,37 +3455,37 @@ Thin wires: Grounded Low Voltage</text>
 </net>
 <net name="DISCHARGE1" class="0">
 <segment>
-<wire x1="203.2" y1="-83.82" x2="226.06" y2="-83.82" width="0.381" layer="91"/>
+<wire x1="203.2" y1="-86.36" x2="226.06" y2="-86.36" width="0.381" layer="91"/>
 <pinref part="U$12" gate="G$1" pin="CONTACT1"/>
-<wire x1="203.2" y1="-81.28" x2="203.2" y2="-83.82" width="0.381" layer="91"/>
+<wire x1="203.2" y1="-83.82" x2="203.2" y2="-86.36" width="0.381" layer="91"/>
 <pinref part="HV+UNFUSED" gate="-1" pin="S"/>
-<wire x1="203.2" y1="-88.9" x2="203.2" y2="-83.82" width="0.381" layer="91"/>
-<junction x="203.2" y="-83.82"/>
+<wire x1="203.2" y1="-91.44" x2="203.2" y2="-86.36" width="0.381" layer="91"/>
+<junction x="203.2" y="-86.36"/>
 <pinref part="HV+UNFUSED" gate="-2" pin="S"/>
-<wire x1="203.2" y1="-88.9" x2="203.2" y2="-91.44" width="0.381" layer="91"/>
-<junction x="203.2" y="-88.9"/>
+<wire x1="203.2" y1="-91.44" x2="203.2" y2="-93.98" width="0.381" layer="91"/>
+<junction x="203.2" y="-91.44"/>
 <pinref part="U$3" gate="G$1" pin="P$2"/>
 </segment>
 </net>
 <net name="TSVP+" class="0">
 <segment>
 <pinref part="U$5" gate="G$1" pin="5VOUT+"/>
-<wire x1="281.94" y1="-2.54" x2="302.26" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="281.94" y1="-5.08" x2="302.26" y2="-5.08" width="0.1524" layer="91"/>
 <pinref part="U$5" gate="G$1" pin="6SENSE+"/>
-<wire x1="281.94" y1="-10.16" x2="302.26" y2="-10.16" width="0.1524" layer="91"/>
-<wire x1="302.26" y1="-10.16" x2="302.26" y2="-2.54" width="0.1524" layer="91"/>
-<junction x="302.26" y="-2.54"/>
+<wire x1="281.94" y1="-12.7" x2="302.26" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="302.26" y1="-12.7" x2="302.26" y2="-5.08" width="0.1524" layer="91"/>
+<junction x="302.26" y="-5.08"/>
 <pinref part="TRIM+" gate="G$1" pin="2"/>
-<wire x1="299.72" y1="-17.78" x2="302.26" y2="-17.78" width="0.1524" layer="91"/>
-<wire x1="302.26" y1="-17.78" x2="302.26" y2="-10.16" width="0.1524" layer="91"/>
-<junction x="302.26" y="-10.16"/>
-<wire x1="302.26" y1="-2.54" x2="312.42" y2="-2.54" width="0.1524" layer="91"/>
-<label x="312.42" y="-2.54" size="1.778" layer="95" xref="yes"/>
+<wire x1="299.72" y1="-20.32" x2="302.26" y2="-20.32" width="0.1524" layer="91"/>
+<wire x1="302.26" y1="-20.32" x2="302.26" y2="-12.7" width="0.1524" layer="91"/>
+<junction x="302.26" y="-12.7"/>
+<wire x1="302.26" y1="-5.08" x2="312.42" y2="-5.08" width="0.1524" layer="91"/>
+<label x="312.42" y="-5.08" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<label x="297.18" y="-129.54" size="1.778" layer="95" xref="yes"/>
+<label x="297.18" y="-132.08" size="1.778" layer="95" xref="yes"/>
 <pinref part="TSAL_SSR" gate="G$1" pin="DC+"/>
-<wire x1="297.18" y1="-134.62" x2="297.18" y2="-129.54" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="-137.16" x2="297.18" y2="-132.08" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="MAIN" gate="-4" pin="S"/>
@@ -3541,8 +3497,8 @@ Thin wires: Grounded Low Voltage</text>
 <net name="HV+FUSED250" class="0">
 <segment>
 <pinref part="U$5" gate="G$1" pin="1VIN+"/>
-<wire x1="203.2" y1="-2.54" x2="213.36" y2="-2.54" width="0.381" layer="91"/>
-<label x="203.2" y="-2.54" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="203.2" y1="-5.08" x2="213.36" y2="-5.08" width="0.381" layer="91"/>
+<label x="203.2" y="-5.08" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="FUSE" gate="G$1" pin="P2"/>
@@ -3551,18 +3507,18 @@ Thin wires: Grounded Low Voltage</text>
 </segment>
 <segment>
 <pinref part="HV_REG2" gate="G$1" pin="IN"/>
-<wire x1="200.66" y1="-182.88" x2="220.98" y2="-182.88" width="0.381" layer="91"/>
-<label x="200.66" y="-182.88" size="1.778" layer="95" rot="MR0" xref="yes"/>
+<wire x1="200.66" y1="-185.42" x2="220.98" y2="-185.42" width="0.381" layer="91"/>
+<label x="200.66" y="-185.42" size="1.778" layer="95" rot="MR0" xref="yes"/>
 </segment>
 <segment>
 <pinref part="HV_REG1" gate="G$1" pin="IN"/>
-<wire x1="200.66" y1="-134.62" x2="220.98" y2="-134.62" width="0.381" layer="91"/>
-<label x="200.66" y="-134.62" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="200.66" y1="-137.16" x2="220.98" y2="-137.16" width="0.381" layer="91"/>
+<label x="200.66" y="-137.16" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="R14" gate="G$1" pin="2"/>
-<wire x1="200.66" y1="-162.56" x2="203.2" y2="-162.56" width="0.381" layer="91"/>
-<label x="200.66" y="-162.56" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="200.66" y1="-165.1" x2="203.2" y2="-165.1" width="0.381" layer="91"/>
+<label x="200.66" y="-165.1" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="HV+FUSED" class="0">
@@ -3589,35 +3545,35 @@ Thin wires: Grounded Low Voltage</text>
 <junction x="213.36" y="40.64"/>
 </segment>
 <segment>
-<wire x1="198.12" y1="-81.28" x2="195.58" y2="-81.28" width="0.381" layer="91"/>
-<label x="195.58" y="-81.28" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="198.12" y1="-83.82" x2="195.58" y2="-83.82" width="0.381" layer="91"/>
+<label x="195.58" y="-83.82" size="1.778" layer="95" rot="R180" xref="yes"/>
 <pinref part="U$3" gate="G$1" pin="P$1"/>
 </segment>
 </net>
 <net name="DISCHARGE3" class="0">
 <segment>
 <pinref part="HV-UNFUSED" gate="-1" pin="S"/>
-<wire x1="203.2" y1="-101.6" x2="203.2" y2="-106.68" width="0.381" layer="91"/>
+<wire x1="203.2" y1="-104.14" x2="203.2" y2="-109.22" width="0.381" layer="91"/>
 <pinref part="DISCH-" gate="-1" pin="S"/>
-<wire x1="203.2" y1="-106.68" x2="203.2" y2="-109.22" width="0.381" layer="91"/>
-<wire x1="292.1" y1="-96.52" x2="289.56" y2="-96.52" width="0.381" layer="91"/>
-<wire x1="289.56" y1="-96.52" x2="289.56" y2="-99.06" width="0.381" layer="91"/>
-<pinref part="DISCH-" gate="-2" pin="S"/>
-<wire x1="289.56" y1="-99.06" x2="292.1" y2="-99.06" width="0.381" layer="91"/>
-<wire x1="289.56" y1="-99.06" x2="289.56" y2="-106.68" width="0.381" layer="91"/>
-<junction x="289.56" y="-99.06"/>
-<wire x1="203.2" y1="-106.68" x2="289.56" y2="-106.68" width="0.381" layer="91"/>
-<junction x="203.2" y="-106.68"/>
-<pinref part="HV-UNFUSED" gate="-2" pin="S"/>
 <wire x1="203.2" y1="-109.22" x2="203.2" y2="-111.76" width="0.381" layer="91"/>
+<wire x1="292.1" y1="-99.06" x2="289.56" y2="-99.06" width="0.381" layer="91"/>
+<wire x1="289.56" y1="-99.06" x2="289.56" y2="-101.6" width="0.381" layer="91"/>
+<pinref part="DISCH-" gate="-2" pin="S"/>
+<wire x1="289.56" y1="-101.6" x2="292.1" y2="-101.6" width="0.381" layer="91"/>
+<wire x1="289.56" y1="-101.6" x2="289.56" y2="-109.22" width="0.381" layer="91"/>
+<junction x="289.56" y="-101.6"/>
+<wire x1="203.2" y1="-109.22" x2="289.56" y2="-109.22" width="0.381" layer="91"/>
 <junction x="203.2" y="-109.22"/>
+<pinref part="HV-UNFUSED" gate="-2" pin="S"/>
+<wire x1="203.2" y1="-111.76" x2="203.2" y2="-114.3" width="0.381" layer="91"/>
+<junction x="203.2" y="-111.76"/>
 <pinref part="U$4" gate="G$1" pin="P$2"/>
 </segment>
 </net>
 <net name="HV-FUSED" class="0">
 <segment>
-<wire x1="198.12" y1="-101.6" x2="195.58" y2="-101.6" width="0.381" layer="91"/>
-<label x="195.58" y="-101.6" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="198.12" y1="-104.14" x2="195.58" y2="-104.14" width="0.381" layer="91"/>
+<label x="195.58" y="-104.14" size="1.778" layer="95" rot="R180" xref="yes"/>
 <pinref part="U$4" gate="G$1" pin="P$1"/>
 </segment>
 <segment>
@@ -3638,39 +3594,9 @@ Thin wires: Grounded Low Voltage</text>
 <wire x1="213.36" y1="27.94" x2="228.6" y2="27.94" width="0.381" layer="91"/>
 <wire x1="213.36" y1="30.48" x2="213.36" y2="27.94" width="0.381" layer="91"/>
 <junction x="213.36" y="27.94"/>
-</segment>
-<segment>
-<pinref part="U$5" gate="G$1" pin="4VIN-"/>
-<wire x1="213.36" y1="-45.72" x2="203.2" y2="-45.72" width="0.381" layer="91"/>
-<label x="203.2" y="-45.72" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<label x="195.58" y="-175.26" size="1.778" layer="95" rot="R180" xref="yes"/>
-<pinref part="THRESHOLD" gate="G$1" pin="S"/>
-<wire x1="264.16" y1="-167.64" x2="266.7" y2="-167.64" width="0.381" layer="91"/>
-<wire x1="266.7" y1="-167.64" x2="266.7" y2="-175.26" width="0.381" layer="91"/>
-<pinref part="R19" gate="G$1" pin="1"/>
-<wire x1="195.58" y1="-175.26" x2="248.92" y2="-175.26" width="0.381" layer="91"/>
-<wire x1="248.92" y1="-175.26" x2="266.7" y2="-175.26" width="0.381" layer="91"/>
-<wire x1="248.92" y1="-172.72" x2="248.92" y2="-175.26" width="0.381" layer="91"/>
-<junction x="248.92" y="-175.26"/>
-</segment>
-<segment>
-<pinref part="INDICATOR" gate="-2" pin="S"/>
-<wire x1="307.34" y1="-182.88" x2="302.26" y2="-182.88" width="0.381" layer="91"/>
-<label x="299.72" y="-190.5" size="1.778" layer="95" rot="R180" xref="yes"/>
-<wire x1="299.72" y1="-190.5" x2="302.26" y2="-190.5" width="0.381" layer="91"/>
-<wire x1="302.26" y1="-190.5" x2="302.26" y2="-182.88" width="0.381" layer="91"/>
-</segment>
-<segment>
-<pinref part="R8" gate="G$1" pin="2"/>
-<wire x1="203.2" y1="-139.7" x2="195.58" y2="-139.7" width="0.381" layer="91"/>
-<label x="195.58" y="-139.7" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<pinref part="R20" gate="G$1" pin="2"/>
-<wire x1="203.2" y1="-187.96" x2="195.58" y2="-187.96" width="0.381" layer="91"/>
-<label x="195.58" y="-187.96" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="FUSE1" gate="G$1" pin="P1"/>
+<wire x1="200.66" y1="20.32" x2="208.28" y2="20.32" width="0.381" layer="91"/>
+<junction x="200.66" y="20.32"/>
 </segment>
 </net>
 <net name="BSPD_CUR_FAULT" class="0">
@@ -3689,18 +3615,18 @@ Thin wires: Grounded Low Voltage</text>
 </net>
 <net name="SHUTDOWN7" class="0">
 <segment>
-<wire x1="259.08" y1="-101.6" x2="259.08" y2="-93.98" width="0.1524" layer="91"/>
+<wire x1="259.08" y1="-104.14" x2="259.08" y2="-96.52" width="0.1524" layer="91"/>
 <pinref part="U$12" gate="G$1" pin="COIL+"/>
-<label x="259.08" y="-101.6" size="1.778" layer="95" xref="yes"/>
+<label x="259.08" y="-104.14" size="1.778" layer="95" xref="yes"/>
 <pinref part="D2" gate="1" pin="C"/>
-<wire x1="259.08" y1="-93.98" x2="259.08" y2="-91.44" width="0.1524" layer="91"/>
-<wire x1="269.24" y1="-93.98" x2="259.08" y2="-93.98" width="0.1524" layer="91"/>
-<junction x="259.08" y="-93.98"/>
+<wire x1="259.08" y1="-96.52" x2="259.08" y2="-93.98" width="0.1524" layer="91"/>
+<wire x1="269.24" y1="-96.52" x2="259.08" y2="-96.52" width="0.1524" layer="91"/>
+<junction x="259.08" y="-96.52"/>
 </segment>
 <segment>
-<label x="302.26" y="-152.4" size="1.778" layer="95" rot="R180" xref="yes"/>
+<label x="302.26" y="-154.94" size="1.778" layer="95" rot="R180" xref="yes"/>
 <pinref part="U$2" gate="G$1" pin="P$2"/>
-<wire x1="307.34" y1="-152.4" x2="302.26" y2="-152.4" width="0.1524" layer="91"/>
+<wire x1="307.34" y1="-154.94" x2="302.26" y2="-154.94" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="INTERLOCK" gate="-2" pin="S"/>
@@ -3790,45 +3716,45 @@ Thin wires: Grounded Low Voltage</text>
 <segment>
 <pinref part="HV_REG1" gate="G$1" pin="OUT"/>
 <pinref part="TSAL_SSR" gate="G$1" pin="CONTROL+"/>
-<wire x1="236.22" y1="-134.62" x2="261.62" y2="-134.62" width="0.381" layer="91"/>
+<wire x1="236.22" y1="-137.16" x2="261.62" y2="-137.16" width="0.381" layer="91"/>
 <pinref part="R13" gate="G$1" pin="2"/>
-<wire x1="261.62" y1="-134.62" x2="276.86" y2="-134.62" width="0.381" layer="91"/>
-<wire x1="261.62" y1="-139.7" x2="261.62" y2="-134.62" width="0.381" layer="91"/>
-<junction x="261.62" y="-134.62"/>
+<wire x1="261.62" y1="-137.16" x2="276.86" y2="-137.16" width="0.381" layer="91"/>
+<wire x1="261.62" y1="-142.24" x2="261.62" y2="-137.16" width="0.381" layer="91"/>
+<junction x="261.62" y="-137.16"/>
 </segment>
 </net>
 <net name="N$10" class="0">
 <segment>
 <pinref part="R14" gate="G$1" pin="1"/>
 <pinref part="R15" gate="G$1" pin="1"/>
-<wire x1="203.2" y1="-172.72" x2="210.82" y2="-172.72" width="0.381" layer="91"/>
+<wire x1="203.2" y1="-175.26" x2="210.82" y2="-175.26" width="0.381" layer="91"/>
 </segment>
 </net>
 <net name="N$11" class="0">
 <segment>
 <pinref part="R15" gate="G$1" pin="2"/>
 <pinref part="R16" gate="G$1" pin="2"/>
-<wire x1="210.82" y1="-162.56" x2="218.44" y2="-162.56" width="0.381" layer="91"/>
+<wire x1="210.82" y1="-165.1" x2="218.44" y2="-165.1" width="0.381" layer="91"/>
 </segment>
 </net>
 <net name="N$12" class="0">
 <segment>
 <pinref part="R17" gate="G$1" pin="1"/>
 <pinref part="R18" gate="G$1" pin="1"/>
-<wire x1="233.68" y1="-172.72" x2="241.3" y2="-172.72" width="0.381" layer="91"/>
+<wire x1="233.68" y1="-175.26" x2="241.3" y2="-175.26" width="0.381" layer="91"/>
 </segment>
 </net>
 <net name="N$13" class="0">
 <segment>
 <pinref part="R18" gate="G$1" pin="2"/>
 <pinref part="R19" gate="G$1" pin="2"/>
-<wire x1="241.3" y1="-162.56" x2="248.92" y2="-162.56" width="0.381" layer="91"/>
+<wire x1="241.3" y1="-165.1" x2="248.92" y2="-165.1" width="0.381" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
-<wire x1="307.34" y1="-142.24" x2="297.18" y2="-142.24" width="0.1524" layer="91"/>
-<wire x1="297.18" y1="-142.24" x2="297.18" y2="-139.7" width="0.1524" layer="91"/>
+<wire x1="307.34" y1="-144.78" x2="297.18" y2="-144.78" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="-144.78" x2="297.18" y2="-142.24" width="0.1524" layer="91"/>
 <pinref part="TSAL_SSR" gate="G$1" pin="DC-"/>
 <pinref part="U$1" gate="G$1" pin="P$1"/>
 </segment>
@@ -3836,28 +3762,28 @@ Thin wires: Grounded Low Voltage</text>
 <net name="N$5" class="0">
 <segment>
 <pinref part="AI_SSR" gate="G$1" pin="CONTROL-"/>
-<wire x1="276.86" y1="-180.34" x2="271.78" y2="-180.34" width="0.381" layer="91"/>
+<wire x1="276.86" y1="-182.88" x2="271.78" y2="-182.88" width="0.381" layer="91"/>
 <pinref part="R26" gate="G$1" pin="1"/>
-<wire x1="271.78" y1="-180.34" x2="271.78" y2="-172.72" width="0.381" layer="91"/>
+<wire x1="271.78" y1="-182.88" x2="271.78" y2="-175.26" width="0.381" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
 <pinref part="AI_SSR" gate="G$1" pin="CONTROL+"/>
 <pinref part="TSAL_SSR" gate="G$1" pin="CONTROL-"/>
-<wire x1="276.86" y1="-175.26" x2="276.86" y2="-139.7" width="0.381" layer="91"/>
+<wire x1="276.86" y1="-177.8" x2="276.86" y2="-142.24" width="0.381" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
 <segment>
 <pinref part="AI_SSR" gate="G$1" pin="DC-"/>
 <pinref part="INDICATOR" gate="-1" pin="S"/>
-<wire x1="297.18" y1="-180.34" x2="307.34" y2="-180.34" width="0.381" layer="91"/>
+<wire x1="297.18" y1="-182.88" x2="307.34" y2="-182.88" width="0.381" layer="91"/>
 </segment>
 </net>
 <net name="N$14" class="0">
 <segment>
-<wire x1="210.82" y1="-139.7" x2="218.44" y2="-139.7" width="0.381" layer="91"/>
+<wire x1="210.82" y1="-142.24" x2="218.44" y2="-142.24" width="0.381" layer="91"/>
 <pinref part="R10" gate="G$1" pin="2"/>
 <pinref part="R9" gate="G$1" pin="2"/>
 </segment>
@@ -3865,83 +3791,123 @@ Thin wires: Grounded Low Voltage</text>
 <net name="N$18" class="0">
 <segment>
 <pinref part="HV_REG1" gate="G$1" pin="ADJ"/>
-<wire x1="228.6" y1="-149.86" x2="228.6" y2="-142.24" width="0.381" layer="91"/>
-<wire x1="218.44" y1="-149.86" x2="228.6" y2="-149.86" width="0.381" layer="91"/>
+<wire x1="228.6" y1="-152.4" x2="228.6" y2="-144.78" width="0.381" layer="91"/>
+<wire x1="218.44" y1="-152.4" x2="228.6" y2="-152.4" width="0.381" layer="91"/>
 <pinref part="R10" gate="G$1" pin="1"/>
 <pinref part="R11" gate="G$1" pin="1"/>
-<wire x1="228.6" y1="-149.86" x2="246.38" y2="-149.86" width="0.381" layer="91"/>
-<junction x="228.6" y="-149.86"/>
+<wire x1="228.6" y1="-152.4" x2="246.38" y2="-152.4" width="0.381" layer="91"/>
+<junction x="228.6" y="-152.4"/>
 </segment>
 </net>
 <net name="N$8" class="0">
 <segment>
 <pinref part="R9" gate="G$1" pin="1"/>
 <pinref part="R8" gate="G$1" pin="1"/>
-<wire x1="210.82" y1="-149.86" x2="203.2" y2="-149.86" width="0.381" layer="91"/>
+<wire x1="210.82" y1="-152.4" x2="203.2" y2="-152.4" width="0.381" layer="91"/>
 </segment>
 </net>
 <net name="N$22" class="0">
 <segment>
 <pinref part="R17" gate="G$1" pin="2"/>
 <pinref part="R16" gate="G$1" pin="1"/>
-<wire x1="218.44" y1="-172.72" x2="226.06" y2="-172.72" width="0.381" layer="91"/>
-<wire x1="226.06" y1="-172.72" x2="226.06" y2="-162.56" width="0.381" layer="91"/>
-<wire x1="226.06" y1="-162.56" x2="233.68" y2="-162.56" width="0.381" layer="91"/>
+<wire x1="218.44" y1="-175.26" x2="226.06" y2="-175.26" width="0.381" layer="91"/>
+<wire x1="226.06" y1="-175.26" x2="226.06" y2="-165.1" width="0.381" layer="91"/>
+<wire x1="226.06" y1="-165.1" x2="233.68" y2="-165.1" width="0.381" layer="91"/>
 <pinref part="THRESHOLD" gate="G$1" pin="G"/>
-<wire x1="254" y1="-167.64" x2="254" y2="-162.56" width="0.381" layer="91"/>
-<wire x1="254" y1="-162.56" x2="251.46" y2="-160.02" width="0.381" layer="91"/>
-<wire x1="251.46" y1="-160.02" x2="228.6" y2="-160.02" width="0.381" layer="91"/>
-<wire x1="228.6" y1="-160.02" x2="226.06" y2="-162.56" width="0.381" layer="91"/>
-<junction x="226.06" y="-162.56"/>
+<wire x1="254" y1="-170.18" x2="254" y2="-165.1" width="0.381" layer="91"/>
+<wire x1="254" y1="-165.1" x2="251.46" y2="-162.56" width="0.381" layer="91"/>
+<wire x1="251.46" y1="-162.56" x2="228.6" y2="-162.56" width="0.381" layer="91"/>
+<wire x1="228.6" y1="-162.56" x2="226.06" y2="-165.1" width="0.381" layer="91"/>
+<junction x="226.06" y="-165.1"/>
 </segment>
 </net>
 <net name="N$16" class="0">
 <segment>
 <pinref part="R11" gate="G$1" pin="2"/>
 <pinref part="R12" gate="G$1" pin="2"/>
-<wire x1="246.38" y1="-139.7" x2="254" y2="-139.7" width="0.381" layer="91"/>
+<wire x1="246.38" y1="-142.24" x2="254" y2="-142.24" width="0.381" layer="91"/>
 </segment>
 </net>
 <net name="N$17" class="0">
 <segment>
 <pinref part="R12" gate="G$1" pin="1"/>
 <pinref part="R13" gate="G$1" pin="1"/>
-<wire x1="254" y1="-149.86" x2="261.62" y2="-149.86" width="0.381" layer="91"/>
+<wire x1="254" y1="-152.4" x2="261.62" y2="-152.4" width="0.381" layer="91"/>
 </segment>
 </net>
 <net name="N$9" class="0">
 <segment>
 <pinref part="R26" gate="G$1" pin="2"/>
 <pinref part="THRESHOLD" gate="G$1" pin="D"/>
-<wire x1="271.78" y1="-162.56" x2="264.16" y2="-162.56" width="0.381" layer="91"/>
+<wire x1="271.78" y1="-165.1" x2="264.16" y2="-165.1" width="0.381" layer="91"/>
 </segment>
 </net>
 <net name="N$19" class="0">
 <segment>
 <pinref part="R24" gate="G$1" pin="2"/>
 <pinref part="R23" gate="G$1" pin="2"/>
-<wire x1="254" y1="-187.96" x2="246.38" y2="-187.96" width="0.381" layer="91"/>
+<wire x1="254" y1="-190.5" x2="246.38" y2="-190.5" width="0.381" layer="91"/>
 </segment>
 </net>
 <net name="N$20" class="0">
 <segment>
 <pinref part="R24" gate="G$1" pin="1"/>
 <pinref part="R25" gate="G$1" pin="1"/>
-<wire x1="254" y1="-198.12" x2="261.62" y2="-198.12" width="0.381" layer="91"/>
+<wire x1="254" y1="-200.66" x2="261.62" y2="-200.66" width="0.381" layer="91"/>
 </segment>
 </net>
 <net name="N$21" class="0">
 <segment>
 <pinref part="R22" gate="G$1" pin="2"/>
 <pinref part="R21" gate="G$1" pin="2"/>
-<wire x1="218.44" y1="-187.96" x2="210.82" y2="-187.96" width="0.381" layer="91"/>
+<wire x1="218.44" y1="-190.5" x2="210.82" y2="-190.5" width="0.381" layer="91"/>
 </segment>
 </net>
 <net name="N$23" class="0">
 <segment>
 <pinref part="R21" gate="G$1" pin="1"/>
 <pinref part="R20" gate="G$1" pin="1"/>
-<wire x1="210.82" y1="-198.12" x2="203.2" y2="-198.12" width="0.381" layer="91"/>
+<wire x1="210.82" y1="-200.66" x2="203.2" y2="-200.66" width="0.381" layer="91"/>
+</segment>
+</net>
+<net name="HV-FUSED250" class="0">
+<segment>
+<pinref part="FUSE1" gate="G$1" pin="P2"/>
+<wire x1="228.6" y1="20.32" x2="231.14" y2="20.32" width="0.381" layer="91"/>
+<label x="231.14" y="20.32" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$5" gate="G$1" pin="4VIN-"/>
+<wire x1="213.36" y1="-48.26" x2="203.2" y2="-48.26" width="0.381" layer="91"/>
+<label x="203.2" y="-48.26" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R8" gate="G$1" pin="2"/>
+<wire x1="203.2" y1="-142.24" x2="200.66" y2="-142.24" width="0.381" layer="91"/>
+<label x="200.66" y="-142.24" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<label x="200.66" y="-177.8" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="THRESHOLD" gate="G$1" pin="S"/>
+<wire x1="264.16" y1="-170.18" x2="266.7" y2="-170.18" width="0.381" layer="91"/>
+<wire x1="266.7" y1="-170.18" x2="266.7" y2="-177.8" width="0.381" layer="91"/>
+<pinref part="R19" gate="G$1" pin="1"/>
+<wire x1="200.66" y1="-177.8" x2="248.92" y2="-177.8" width="0.381" layer="91"/>
+<wire x1="248.92" y1="-177.8" x2="266.7" y2="-177.8" width="0.381" layer="91"/>
+<wire x1="248.92" y1="-175.26" x2="248.92" y2="-177.8" width="0.381" layer="91"/>
+<junction x="248.92" y="-177.8"/>
+</segment>
+<segment>
+<pinref part="R20" gate="G$1" pin="2"/>
+<wire x1="203.2" y1="-190.5" x2="200.66" y2="-190.5" width="0.381" layer="91"/>
+<label x="200.66" y="-190.5" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="INDICATOR" gate="-2" pin="S"/>
+<wire x1="307.34" y1="-185.42" x2="302.26" y2="-185.42" width="0.381" layer="91"/>
+<label x="299.72" y="-193.04" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="299.72" y1="-193.04" x2="302.26" y2="-193.04" width="0.381" layer="91"/>
+<wire x1="302.26" y1="-193.04" x2="302.26" y2="-185.42" width="0.381" layer="91"/>
 </segment>
 </net>
 </nets>
