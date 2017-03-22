@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="8.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1209,6 +1209,7 @@ D = Direct mounting &lt;p&gt;
 <part name="X2" library="con-subd" deviceset="F09HP" device=""/>
 <part name="U$1" library="HyTechDevices" deviceset="0S102011MS2QS1" device=""/>
 <part name="GND2" library="HyTechSymbols" deviceset="GND" device=""/>
+<part name="GND3" library="HyTechSymbols" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1233,6 +1234,7 @@ D = Direct mounting &lt;p&gt;
 <instance part="X2" gate="G$1" x="-22.86" y="68.58"/>
 <instance part="U$1" gate="G$1" x="20.32" y="50.8" rot="R90"/>
 <instance part="GND2" gate="1" x="10.16" y="50.8" rot="R270"/>
+<instance part="GND3" gate="1" x="-33.02" y="58.42" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -1278,6 +1280,15 @@ D = Direct mounting &lt;p&gt;
 <pinref part="GND2" gate="1" pin="GND"/>
 <wire x1="12.7" y1="50.8" x2="15.24" y2="50.8" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="X1" gate="-3" pin="S"/>
+<wire x1="-45.72" y1="58.42" x2="-35.56" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="-35.56" y1="58.42" x2="-35.56" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="X2" gate="G$1" pin="5"/>
+<wire x1="-35.56" y1="63.5" x2="-30.48" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="GND3" gate="1" pin="GND"/>
+<junction x="-35.56" y="58.42"/>
+</segment>
 </net>
 <net name="N$6" class="0">
 <segment>
@@ -1295,15 +1306,6 @@ D = Direct mounting &lt;p&gt;
 <wire x1="-38.1" y1="60.96" x2="-45.72" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="X2" gate="G$1" pin="3"/>
 <wire x1="-38.1" y1="68.58" x2="-30.48" y2="68.58" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$8" class="0">
-<segment>
-<pinref part="X1" gate="-3" pin="S"/>
-<wire x1="-45.72" y1="58.42" x2="-35.56" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="-35.56" y1="58.42" x2="-35.56" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="X2" gate="G$1" pin="5"/>
-<wire x1="-35.56" y1="63.5" x2="-30.48" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
