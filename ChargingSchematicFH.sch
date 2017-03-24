@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="8.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -420,7 +420,6 @@
 <part name="GND2" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="LED1" library="HyTechSymbols" deviceset="LED" device=""/>
 <part name="GND3" library="HyTechSymbols" deviceset="GND" device=""/>
-<part name="GND4" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="LED2" library="HyTechSymbols" deviceset="LED" device=""/>
 <part name="GND5" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="GND6" library="HyTechSymbols" deviceset="GND" device=""/>
@@ -436,10 +435,6 @@ CAN/power</text>
 with BMS to enter charge mode.
 It also controls the Elcon
 interlock switch.</text>
-<text x="96.52" y="149.86" size="1.778" layer="91">CAP Board has capacitor
-and discharge circuit to
-allow Smart Precharger
-to work during charging.</text>
 <wire x1="119.38" y1="106.68" x2="127" y2="106.68" width="0.381" layer="156"/>
 <wire x1="127" y1="104.14" x2="119.38" y2="104.14" width="0.381" layer="156"/>
 <text x="99.06" y="81.28" size="1.778" layer="91">Charge ECU, CAP Board, PowerSwitch, and Elcon are mounted on MDF sheet</text>
@@ -449,7 +444,6 @@ to work during charging.</text>
 <moduleinst name="ACCUMULATOR" module="ACCUMULATOR" x="96.52" y="111.76"/>
 <moduleinst name="POWERSWITCH" module="POWERSWITCH" x="175.26" y="124.46"/>
 <moduleinst name="CHARGE_ECU" module="CHARGE_ECU" x="60.96" y="101.6"/>
-<moduleinst name="CAP_BOARD" module="CAP_BOARD" x="111.76" y="137.16"/>
 </moduleinsts>
 <instances>
 <instance part="U$1" gate="G$1" x="132.08" y="111.76" rot="MR180"/>
@@ -458,9 +452,8 @@ to work during charging.</text>
 <instance part="GND12" gate="1" x="152.4" y="121.92" rot="MR90"/>
 <instance part="S1" gate="SPST" x="53.34" y="132.08" rot="R270"/>
 <instance part="GND2" gate="1" x="78.74" y="88.9" rot="MR0"/>
-<instance part="LED1" gate="G$1" x="144.78" y="142.24"/>
-<instance part="GND3" gate="1" x="157.48" y="144.78" rot="MR270"/>
-<instance part="GND4" gate="1" x="134.62" y="147.32" rot="MR180"/>
+<instance part="LED1" gate="G$1" x="124.46" y="137.16" rot="R180"/>
+<instance part="GND3" gate="1" x="111.76" y="134.62" rot="MR90"/>
 <instance part="LED2" gate="G$1" x="73.66" y="127"/>
 <instance part="GND5" gate="1" x="86.36" y="129.54" rot="MR270"/>
 <instance part="GND6" gate="1" x="63.5" y="129.54" rot="MR270"/>
@@ -468,20 +461,6 @@ to work during charging.</text>
 <busses>
 </busses>
 <nets>
-<net name="N$3" class="0">
-<segment>
-<portref moduleinst="CAP_BOARD" port="HV+"/>
-<wire x1="121.92" y1="121.92" x2="121.92" y2="104.14" width="0.381" layer="91"/>
-<junction x="121.92" y="104.14"/>
-</segment>
-</net>
-<net name="N$4" class="0">
-<segment>
-<portref moduleinst="CAP_BOARD" port="HV-"/>
-<wire x1="124.46" y1="106.68" x2="124.46" y2="121.92" width="0.381" layer="91"/>
-<junction x="124.46" y="106.68"/>
-</segment>
-</net>
 <net name="GND" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="GND"/>
@@ -504,12 +483,7 @@ to work during charging.</text>
 <segment>
 <pinref part="LED1" gate="G$1" pin="C"/>
 <pinref part="GND3" gate="1" pin="GND"/>
-<wire x1="152.4" y1="144.78" x2="154.94" y2="144.78" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<portref moduleinst="CAP_BOARD" port="GND"/>
-<pinref part="GND4" gate="1" pin="GND"/>
-<wire x1="134.62" y1="144.78" x2="132.08" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="134.62" x2="114.3" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="LED2" gate="G$1" pin="C"/>
@@ -549,15 +523,12 @@ to work during charging.</text>
 <segment>
 <portref moduleinst="ACCUMULATOR" port="SHUTDOWN_CIRCUIT_INT"/>
 <portref moduleinst="POWERSWITCH" port="SW+"/>
-<wire x1="119.38" y1="119.38" x2="144.78" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="119.38" x2="127" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="LED1" gate="G$1" pin="A"/>
-<wire x1="144.78" y1="119.38" x2="154.94" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="144.78" x2="144.78" y2="142.24" width="0.1524" layer="91"/>
-<junction x="144.78" y="119.38"/>
-<portref moduleinst="CAP_BOARD" port="DISCHARGE_DISABLE"/>
-<wire x1="144.78" y1="142.24" x2="144.78" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="132.08" y1="142.24" x2="144.78" y2="142.24" width="0.1524" layer="91"/>
-<junction x="144.78" y="142.24"/>
+<wire x1="127" y1="119.38" x2="154.94" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="134.62" x2="127" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="127" y1="134.62" x2="127" y2="119.38" width="0.1524" layer="91"/>
+<junction x="127" y="119.38"/>
 </segment>
 </net>
 <net name="N$1" class="0">
