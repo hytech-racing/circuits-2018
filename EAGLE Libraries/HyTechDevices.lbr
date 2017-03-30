@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
 <eagle version="7.7.0">
 <drawing>
@@ -7213,6 +7213,182 @@ Nano-Fit™ Vertical Header, Through Hole, Single Row</description>
 <hole x="4.318" y="62.484" drill="5.0038"/>
 <text x="12.7" y="36.83" size="5.08" layer="21">Linear DC1894B</text>
 </package>
+<package name="DURACLIK_RIGHT_ANGLE-10">
+<smd name="1" x="9" y="8.13" dx="3.2" dy="1.2" layer="1" rot="R90"/>
+<smd name="2" x="7" y="8.13" dx="3.2" dy="1.2" layer="1" rot="R90"/>
+<smd name="3" x="5" y="8.13" dx="3.2" dy="1.2" layer="1" rot="R90"/>
+<smd name="4" x="3" y="8.13" dx="3.2" dy="1.2" layer="1" rot="R90"/>
+<smd name="5" x="1" y="8.13" dx="3.2" dy="1.2" layer="1" rot="R90"/>
+<smd name="6" x="-1" y="8.13" dx="3.2" dy="1.2" layer="1" rot="R90"/>
+<smd name="7" x="-3" y="8.13" dx="3.2" dy="1.2" layer="1" rot="R90"/>
+<smd name="8" x="-5" y="8.13" dx="3.2" dy="1.2" layer="1" rot="R90"/>
+<smd name="9" x="-7" y="8.13" dx="3.2" dy="1.2" layer="1" rot="R90"/>
+<smd name="10" x="-9" y="8.13" dx="3.2" dy="1.2" layer="1" rot="R90"/>
+<smd name="P$1" x="11.55" y="2.65" dx="5.3" dy="1.7" layer="1" rot="R90"/>
+<smd name="P$2" x="-11.55" y="2.65" dx="5.3" dy="1.7" layer="1" rot="R90"/>
+<wire x1="13" y1="6" x2="13" y2="-1" width="0.127" layer="21"/>
+<wire x1="13" y1="-1" x2="-13" y2="-1" width="0.127" layer="21"/>
+<wire x1="-13" y1="-1" x2="-13" y2="6" width="0.127" layer="21"/>
+<wire x1="-10" y1="10" x2="-10" y2="6" width="0.127" layer="21"/>
+<wire x1="-10" y1="6" x2="10" y2="6" width="0.127" layer="21"/>
+<wire x1="10" y1="6" x2="10" y2="10" width="0.127" layer="21"/>
+<wire x1="-13" y1="6" x2="-11" y2="10" width="0.127" layer="21"/>
+<wire x1="-11" y1="10" x2="-10" y2="10" width="0.127" layer="21"/>
+<wire x1="10" y1="10" x2="11" y2="10" width="0.127" layer="21"/>
+<wire x1="11" y1="10" x2="13" y2="6" width="0.127" layer="21"/>
+</package>
+<package name="DURACLIK_RIGHT_ANGLE-12">
+<smd name="1" x="11" y="8.13" dx="3.2" dy="1.2" layer="1" rot="R90"/>
+<smd name="2" x="9" y="8.13" dx="3.2" dy="1.2" layer="1" rot="R90"/>
+<smd name="3" x="7" y="8.13" dx="3.2" dy="1.2" layer="1" rot="R90"/>
+<smd name="4" x="5" y="8.13" dx="3.2" dy="1.2" layer="1" rot="R90"/>
+<smd name="5" x="3" y="8.13" dx="3.2" dy="1.2" layer="1" rot="R90"/>
+<smd name="6" x="1" y="8.13" dx="3.2" dy="1.2" layer="1" rot="R90"/>
+<smd name="7" x="-1" y="8.13" dx="3.2" dy="1.2" layer="1" rot="R90"/>
+<smd name="8" x="-3" y="8.13" dx="3.2" dy="1.2" layer="1" rot="R90"/>
+<smd name="9" x="-5" y="8.13" dx="3.2" dy="1.2" layer="1" rot="R90"/>
+<smd name="10" x="-7" y="8.13" dx="3.2" dy="1.2" layer="1" rot="R90"/>
+<smd name="11" x="-9" y="8.13" dx="3.2" dy="1.2" layer="1" rot="R90"/>
+<smd name="12" x="-11" y="8.13" dx="3.2" dy="1.2" layer="1" rot="R90"/>
+<smd name="P$1" x="13.55" y="2.65" dx="5.3" dy="1.7" layer="1" rot="R90"/>
+<smd name="P$2" x="-13.55" y="2.65" dx="5.3" dy="1.7" layer="1" rot="R90"/>
+<wire x1="15" y1="6" x2="15" y2="-1" width="0.127" layer="21"/>
+<wire x1="15" y1="-1" x2="-15" y2="-1" width="0.127" layer="21"/>
+<wire x1="-15" y1="-1" x2="-15" y2="6" width="0.127" layer="21"/>
+<wire x1="-15" y1="6" x2="-13" y2="10" width="0.127" layer="21"/>
+<wire x1="-13" y1="10" x2="-12" y2="10" width="0.127" layer="21"/>
+<wire x1="-12" y1="10" x2="-12" y2="6" width="0.127" layer="21"/>
+<wire x1="-12" y1="6" x2="12" y2="6" width="0.127" layer="21"/>
+<wire x1="12" y1="6" x2="12" y2="10" width="0.127" layer="21"/>
+<wire x1="12" y1="10" x2="13" y2="10" width="0.127" layer="21"/>
+<wire x1="13" y1="10" x2="15" y2="6" width="0.127" layer="21"/>
+</package>
+<package name="DURACLIK_VERTICAL-2">
+<smd name="1" x="1" y="7.68" dx="2.2" dy="1.2" layer="1" rot="R90"/>
+<smd name="2" x="-1" y="7.68" dx="2.2" dy="1.2" layer="1" rot="R90"/>
+<smd name="P$1" x="4.6" y="2.1" dx="4.2" dy="2" layer="1" rot="R90"/>
+<smd name="P$2" x="-4.6" y="2.1" dx="4.2" dy="2" layer="1" rot="R90"/>
+<wire x1="6" y1="5" x2="6" y2="-1" width="0.127" layer="21"/>
+<wire x1="6" y1="-1" x2="-6" y2="-1" width="0.127" layer="21"/>
+<wire x1="-6" y1="-1" x2="-6" y2="5" width="0.127" layer="21"/>
+<wire x1="-6" y1="5" x2="-3" y2="9" width="0.127" layer="21"/>
+<wire x1="-3" y1="9" x2="-2" y2="9" width="0.127" layer="21"/>
+<wire x1="-2" y1="9" x2="-2" y2="6" width="0.127" layer="21"/>
+<wire x1="-2" y1="6" x2="2" y2="6" width="0.127" layer="21"/>
+<wire x1="2" y1="6" x2="2" y2="9" width="0.127" layer="21"/>
+<wire x1="2" y1="9" x2="3" y2="9" width="0.127" layer="21"/>
+<wire x1="3" y1="9" x2="6" y2="5" width="0.127" layer="21"/>
+</package>
+<package name="DURACLIK_VERTICAL-4">
+<smd name="1" x="3" y="7.68" dx="2.2" dy="1.2" layer="1" rot="R90"/>
+<smd name="2" x="1" y="7.68" dx="2.2" dy="1.2" layer="1" rot="R90"/>
+<smd name="3" x="-1" y="7.68" dx="2.2" dy="1.2" layer="1" rot="R90"/>
+<smd name="4" x="-3" y="7.68" dx="2.2" dy="1.2" layer="1" rot="R90"/>
+<smd name="P$1" x="6.6" y="2.1" dx="4.2" dy="2" layer="1" rot="R90"/>
+<smd name="P$2" x="-6.6" y="2.1" dx="4.2" dy="2" layer="1" rot="R90"/>
+<wire x1="8" y1="5" x2="8" y2="-1" width="0.127" layer="21"/>
+<wire x1="8" y1="-1" x2="-8" y2="-1" width="0.127" layer="21"/>
+<wire x1="-8" y1="-1" x2="-8" y2="5" width="0.127" layer="21"/>
+<wire x1="-8" y1="5" x2="-5" y2="9" width="0.127" layer="21"/>
+<wire x1="-5" y1="9" x2="-4" y2="9" width="0.127" layer="21"/>
+<wire x1="-4" y1="9" x2="-4" y2="6" width="0.127" layer="21"/>
+<wire x1="-4" y1="6" x2="4" y2="6" width="0.127" layer="21"/>
+<wire x1="4" y1="6" x2="4" y2="9" width="0.127" layer="21"/>
+<wire x1="4" y1="9" x2="5" y2="9" width="0.127" layer="21"/>
+<wire x1="5" y1="9" x2="8" y2="5" width="0.127" layer="21"/>
+</package>
+<package name="DURACLIK_VERTICAL-6">
+<smd name="1" x="5" y="7.68" dx="2.2" dy="1.2" layer="1" rot="R90"/>
+<smd name="2" x="3" y="7.68" dx="2.2" dy="1.2" layer="1" rot="R90"/>
+<smd name="3" x="1" y="7.68" dx="2.2" dy="1.2" layer="1" rot="R90"/>
+<smd name="4" x="-1" y="7.68" dx="2.2" dy="1.2" layer="1" rot="R90"/>
+<smd name="5" x="-3" y="7.68" dx="2.2" dy="1.2" layer="1" rot="R90"/>
+<smd name="6" x="-5" y="7.68" dx="2.2" dy="1.2" layer="1" rot="R90"/>
+<smd name="P$1" x="8.6" y="2.1" dx="4.2" dy="2" layer="1" rot="R90"/>
+<smd name="P$2" x="-8.6" y="2.1" dx="4.2" dy="2" layer="1" rot="R90"/>
+<wire x1="10" y1="5" x2="10" y2="-1" width="0.127" layer="21"/>
+<wire x1="10" y1="-1" x2="-10" y2="-1" width="0.127" layer="21"/>
+<wire x1="-10" y1="-1" x2="-10" y2="5" width="0.127" layer="21"/>
+<wire x1="-10" y1="5" x2="-7" y2="9" width="0.127" layer="21"/>
+<wire x1="-7" y1="9" x2="-6" y2="9" width="0.127" layer="21"/>
+<wire x1="-6" y1="9" x2="-6" y2="6" width="0.127" layer="21"/>
+<wire x1="-6" y1="6" x2="6" y2="6" width="0.127" layer="21"/>
+<wire x1="6" y1="6" x2="6" y2="9" width="0.127" layer="21"/>
+<wire x1="6" y1="9" x2="7" y2="9" width="0.127" layer="21"/>
+<wire x1="7" y1="9" x2="10" y2="5" width="0.127" layer="21"/>
+</package>
+<package name="DURACLIK_VERTICAL-8">
+<smd name="1" x="7" y="7.68" dx="2.2" dy="1.2" layer="1" rot="R90"/>
+<smd name="2" x="5" y="7.68" dx="2.2" dy="1.2" layer="1" rot="R90"/>
+<smd name="3" x="3" y="7.68" dx="2.2" dy="1.2" layer="1" rot="R90"/>
+<smd name="4" x="1" y="7.68" dx="2.2" dy="1.2" layer="1" rot="R90"/>
+<smd name="5" x="-1" y="7.68" dx="2.2" dy="1.2" layer="1" rot="R90"/>
+<smd name="6" x="-3" y="7.68" dx="2.2" dy="1.2" layer="1" rot="R90"/>
+<smd name="7" x="-5" y="7.68" dx="2.2" dy="1.2" layer="1" rot="R90"/>
+<smd name="8" x="-7" y="7.68" dx="2.2" dy="1.2" layer="1" rot="R90"/>
+<smd name="P$1" x="10.6" y="2.1" dx="4.2" dy="2" layer="1" rot="R90"/>
+<smd name="P$2" x="-10.6" y="2.1" dx="4.2" dy="2" layer="1" rot="R90"/>
+<wire x1="12" y1="5" x2="12" y2="-1" width="0.127" layer="21"/>
+<wire x1="12" y1="-1" x2="-12" y2="-1" width="0.127" layer="21"/>
+<wire x1="-12" y1="-1" x2="-12" y2="5" width="0.127" layer="21"/>
+<wire x1="-12" y1="5" x2="-9" y2="9" width="0.127" layer="21"/>
+<wire x1="-9" y1="9" x2="-8" y2="9" width="0.127" layer="21"/>
+<wire x1="-8" y1="9" x2="-8" y2="6" width="0.127" layer="21"/>
+<wire x1="-8" y1="6" x2="8" y2="6" width="0.127" layer="21"/>
+<wire x1="8" y1="6" x2="8" y2="9" width="0.127" layer="21"/>
+<wire x1="8" y1="9" x2="9" y2="9" width="0.127" layer="21"/>
+<wire x1="9" y1="9" x2="12" y2="5" width="0.127" layer="21"/>
+</package>
+<package name="DURACLIK_VERTICAL-10">
+<smd name="1" x="9" y="7.68" dx="2.2" dy="1.2" layer="1" rot="R90"/>
+<smd name="2" x="7" y="7.68" dx="2.2" dy="1.2" layer="1" rot="R90"/>
+<smd name="3" x="5" y="7.68" dx="2.2" dy="1.2" layer="1" rot="R90"/>
+<smd name="4" x="3" y="7.68" dx="2.2" dy="1.2" layer="1" rot="R90"/>
+<smd name="5" x="1" y="7.68" dx="2.2" dy="1.2" layer="1" rot="R90"/>
+<smd name="6" x="-1" y="7.68" dx="2.2" dy="1.2" layer="1" rot="R90"/>
+<smd name="7" x="-3" y="7.68" dx="2.2" dy="1.2" layer="1" rot="R90"/>
+<smd name="8" x="-5" y="7.68" dx="2.2" dy="1.2" layer="1" rot="R90"/>
+<smd name="9" x="-7" y="7.68" dx="2.2" dy="1.2" layer="1" rot="R90"/>
+<smd name="10" x="-9" y="7.68" dx="2.2" dy="1.2" layer="1" rot="R90"/>
+<smd name="P$1" x="12.6" y="2.1" dx="4.2" dy="2" layer="1" rot="R90"/>
+<smd name="P$2" x="-12.6" y="2.1" dx="4.2" dy="2" layer="1" rot="R90"/>
+<wire x1="14" y1="5" x2="14" y2="-1" width="0.127" layer="21"/>
+<wire x1="14" y1="-1" x2="-14" y2="-1" width="0.127" layer="21"/>
+<wire x1="-14" y1="-1" x2="-14" y2="5" width="0.127" layer="21"/>
+<wire x1="-14" y1="5" x2="-11" y2="9" width="0.127" layer="21"/>
+<wire x1="-11" y1="9" x2="-10" y2="9" width="0.127" layer="21"/>
+<wire x1="-10" y1="9" x2="-10" y2="6" width="0.127" layer="21"/>
+<wire x1="-10" y1="6" x2="10" y2="6" width="0.127" layer="21"/>
+<wire x1="10" y1="6" x2="10" y2="9" width="0.127" layer="21"/>
+<wire x1="10" y1="9" x2="11" y2="9" width="0.127" layer="21"/>
+<wire x1="11" y1="9" x2="14" y2="5" width="0.127" layer="21"/>
+</package>
+<package name="DURACLIK_VERTICAL-12">
+<smd name="1" x="11" y="7.68" dx="2.2" dy="1.2" layer="1" rot="R90"/>
+<smd name="2" x="9" y="7.68" dx="2.2" dy="1.2" layer="1" rot="R90"/>
+<smd name="3" x="7" y="7.68" dx="2.2" dy="1.2" layer="1" rot="R90"/>
+<smd name="4" x="5" y="7.68" dx="2.2" dy="1.2" layer="1" rot="R90"/>
+<smd name="5" x="3" y="7.68" dx="2.2" dy="1.2" layer="1" rot="R90"/>
+<smd name="6" x="1" y="7.68" dx="2.2" dy="1.2" layer="1" rot="R90"/>
+<smd name="7" x="-1" y="7.68" dx="2.2" dy="1.2" layer="1" rot="R90"/>
+<smd name="8" x="-3" y="7.68" dx="2.2" dy="1.2" layer="1" rot="R90"/>
+<smd name="9" x="-5" y="7.68" dx="2.2" dy="1.2" layer="1" rot="R90"/>
+<smd name="10" x="-7" y="7.68" dx="2.2" dy="1.2" layer="1" rot="R90"/>
+<smd name="11" x="-9" y="7.68" dx="2.2" dy="1.2" layer="1" rot="R90"/>
+<smd name="12" x="-11" y="7.68" dx="2.2" dy="1.2" layer="1" rot="R90"/>
+<smd name="P$1" x="14.6" y="2.1" dx="4.2" dy="2" layer="1" rot="R90"/>
+<smd name="P$2" x="-14.6" y="2.1" dx="4.2" dy="2" layer="1" rot="R90"/>
+<wire x1="16" y1="5" x2="16" y2="-1" width="0.127" layer="21"/>
+<wire x1="16" y1="-1" x2="-16" y2="-1" width="0.127" layer="21"/>
+<wire x1="-16" y1="-1" x2="-16" y2="5" width="0.127" layer="21"/>
+<wire x1="-16" y1="5" x2="-13" y2="9" width="0.127" layer="21"/>
+<wire x1="-13" y1="9" x2="-12" y2="9" width="0.127" layer="21"/>
+<wire x1="-12" y1="9" x2="-12" y2="6" width="0.127" layer="21"/>
+<wire x1="-12" y1="6" x2="12" y2="6" width="0.127" layer="21"/>
+<wire x1="12" y1="6" x2="12" y2="9" width="0.127" layer="21"/>
+<wire x1="12" y1="9" x2="13" y2="9" width="0.127" layer="21"/>
+<wire x1="13" y1="9" x2="16" y2="5" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ARDUINO_NANO">
@@ -11494,6 +11670,15 @@ Source: http://www.molex.com</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="DURACLIK_VERTICAL-2" package="DURACLIK_VERTICAL-2">
+<connects>
+<connect gate="-1" pin="S" pad="1"/>
+<connect gate="-2" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="CONNECTOR-4" prefix="X">
@@ -11545,6 +11730,17 @@ Source: http://www.molex.com</description>
 </technologies>
 </device>
 <device name="DURACLIK_RIGHT_ANGLE-4" package="DURACLIK_RIGHT_ANGLE-4">
+<connects>
+<connect gate="-1" pin="S" pad="1"/>
+<connect gate="-2" pin="S" pad="2"/>
+<connect gate="-3" pin="S" pad="3"/>
+<connect gate="-4" pin="S" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="DURACLIK_VERTICAL-4" package="DURACLIK_VERTICAL-4">
 <connects>
 <connect gate="-1" pin="S" pad="1"/>
 <connect gate="-2" pin="S" pad="2"/>
@@ -11627,6 +11823,19 @@ Source: http://www.molex.com</description>
 </technologies>
 </device>
 <device name="DURACLIK_RIGHT_ANGLE-6" package="DURACLIK_RIGHT_ANGLE-6">
+<connects>
+<connect gate="-1" pin="S" pad="1"/>
+<connect gate="-2" pin="S" pad="2"/>
+<connect gate="-3" pin="S" pad="3"/>
+<connect gate="-4" pin="S" pad="4"/>
+<connect gate="-5" pin="S" pad="5"/>
+<connect gate="-6" pin="S" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="DURACLIK_VERTICAL-6" package="DURACLIK_VERTICAL-6">
 <connects>
 <connect gate="-1" pin="S" pad="1"/>
 <connect gate="-2" pin="S" pad="2"/>
@@ -11748,6 +11957,44 @@ Source: http://www.molex.com</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="DURACLIK_RIGHT_ANGLE-12" package="DURACLIK_RIGHT_ANGLE-12">
+<connects>
+<connect gate="-1" pin="S" pad="1"/>
+<connect gate="-10" pin="S" pad="10"/>
+<connect gate="-11" pin="S" pad="11"/>
+<connect gate="-12" pin="S" pad="12"/>
+<connect gate="-2" pin="S" pad="2"/>
+<connect gate="-3" pin="S" pad="3"/>
+<connect gate="-4" pin="S" pad="4"/>
+<connect gate="-5" pin="S" pad="5"/>
+<connect gate="-6" pin="S" pad="6"/>
+<connect gate="-7" pin="S" pad="7"/>
+<connect gate="-8" pin="S" pad="8"/>
+<connect gate="-9" pin="S" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="DURACLIK_VERTICAL-12" package="DURACLIK_VERTICAL-12">
+<connects>
+<connect gate="-1" pin="S" pad="1"/>
+<connect gate="-10" pin="S" pad="10"/>
+<connect gate="-11" pin="S" pad="11"/>
+<connect gate="-12" pin="S" pad="12"/>
+<connect gate="-2" pin="S" pad="2"/>
+<connect gate="-3" pin="S" pad="3"/>
+<connect gate="-4" pin="S" pad="4"/>
+<connect gate="-5" pin="S" pad="5"/>
+<connect gate="-6" pin="S" pad="6"/>
+<connect gate="-7" pin="S" pad="7"/>
+<connect gate="-8" pin="S" pad="8"/>
+<connect gate="-9" pin="S" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="CONNECTOR-8" prefix="X">
@@ -11844,6 +12091,21 @@ Source: http://www.molex.com</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="DURACLIK_VERTICAL-8" package="DURACLIK_VERTICAL-8">
+<connects>
+<connect gate="-1" pin="S" pad="1"/>
+<connect gate="-2" pin="S" pad="2"/>
+<connect gate="-3" pin="S" pad="3"/>
+<connect gate="-4" pin="S" pad="4"/>
+<connect gate="-5" pin="S" pad="5"/>
+<connect gate="-6" pin="S" pad="6"/>
+<connect gate="-7" pin="S" pad="7"/>
+<connect gate="-8" pin="S" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="CONNECTOR-10" prefix="X">
@@ -11902,6 +12164,40 @@ Source: http://www.molex.com</description>
 </technologies>
 </device>
 <device name="NANO-FIT_VERTICAL-10" package="NANO-FIT_VERTICAL-10">
+<connects>
+<connect gate="-1" pin="S" pad="1"/>
+<connect gate="-10" pin="S" pad="10"/>
+<connect gate="-2" pin="S" pad="2"/>
+<connect gate="-3" pin="S" pad="3"/>
+<connect gate="-4" pin="S" pad="4"/>
+<connect gate="-5" pin="S" pad="5"/>
+<connect gate="-6" pin="S" pad="6"/>
+<connect gate="-7" pin="S" pad="7"/>
+<connect gate="-8" pin="S" pad="8"/>
+<connect gate="-9" pin="S" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="DURACLIK_RIGHT_ANGLE-10" package="DURACLIK_RIGHT_ANGLE-10">
+<connects>
+<connect gate="-1" pin="S" pad="1"/>
+<connect gate="-10" pin="S" pad="10"/>
+<connect gate="-2" pin="S" pad="2"/>
+<connect gate="-3" pin="S" pad="3"/>
+<connect gate="-4" pin="S" pad="4"/>
+<connect gate="-5" pin="S" pad="5"/>
+<connect gate="-6" pin="S" pad="6"/>
+<connect gate="-7" pin="S" pad="7"/>
+<connect gate="-8" pin="S" pad="8"/>
+<connect gate="-9" pin="S" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="DURACLIK_VERTICAL-10" package="DURACLIK_VERTICAL-10">
 <connects>
 <connect gate="-1" pin="S" pad="1"/>
 <connect gate="-10" pin="S" pad="10"/>
