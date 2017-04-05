@@ -7037,12 +7037,12 @@ Nano-Fit™ Vertical Header, Through Hole, Single Row</description>
 <wire x1="-3" y1="2.32" x2="-3" y2="4" width="0.127" layer="21"/>
 </package>
 <package name="NANO-FIT_VERTICAL-6">
-<pad name="2" x="0" y="0" drill="1.2" shape="square"/>
-<pad name="5" x="0" y="2.5" drill="1.2" shape="square"/>
-<pad name="4" x="2.5" y="2.5" drill="1.2" shape="square"/>
-<pad name="1" x="2.5" y="0" drill="1.2" shape="square"/>
-<pad name="3" x="-2.5" y="0" drill="1.2" shape="square"/>
-<pad name="6" x="-2.5" y="2.5" drill="1.2" shape="square"/>
+<pad name="P$2" x="0" y="0" drill="1.2" shape="square"/>
+<pad name="P$5" x="0" y="2.5" drill="1.2" shape="square"/>
+<pad name="P$6" x="2.5" y="2.5" drill="1.2" shape="square"/>
+<pad name="P$3" x="2.5" y="0" drill="1.2" shape="square"/>
+<pad name="P$1" x="-2.5" y="0" drill="1.2" shape="square"/>
+<pad name="P$4" x="-2.5" y="2.5" drill="1.2" shape="square"/>
 <hole x="-4.67" y="0.29" drill="1.6"/>
 <hole x="4.67" y="0.29" drill="1.6"/>
 <wire x1="-4" y1="4" x2="4" y2="4" width="0.127" layer="21"/>
@@ -7055,14 +7055,14 @@ Nano-Fit™ Vertical Header, Through Hole, Single Row</description>
 <wire x1="-4" y1="2" x2="-4" y2="4" width="0.127" layer="21"/>
 </package>
 <package name="NANO-FIT_VERTICAL-8">
-<pad name="2" x="1.25" y="0" drill="1.2" shape="square"/>
-<pad name="3" x="-1.25" y="0" drill="1.2" shape="square"/>
-<pad name="7" x="-1.25" y="2.5" drill="1.2" shape="square"/>
-<pad name="6" x="1.25" y="2.5" drill="1.2" shape="square"/>
-<pad name="5" x="3.75" y="2.5" drill="1.2" shape="square"/>
-<pad name="1" x="3.75" y="0" drill="1.2" shape="square"/>
-<pad name="4" x="-3.75" y="0" drill="1.2" shape="square"/>
-<pad name="8" x="-3.75" y="2.5" drill="1.2" shape="square"/>
+<pad name="P$3" x="1.25" y="0" drill="1.2" shape="square"/>
+<pad name="P$2" x="-1.25" y="0" drill="1.2" shape="square"/>
+<pad name="P$6" x="-1.25" y="2.5" drill="1.2" shape="square"/>
+<pad name="P$7" x="1.25" y="2.5" drill="1.2" shape="square"/>
+<pad name="P$8" x="3.75" y="2.5" drill="1.2" shape="square"/>
+<pad name="P$4" x="3.75" y="0" drill="1.2" shape="square"/>
+<pad name="P$1" x="-3.75" y="0" drill="1.2" shape="square"/>
+<pad name="P$5" x="-3.75" y="2.5" drill="1.2" shape="square"/>
 <hole x="-5.92" y="0" drill="1.6"/>
 <hole x="5.92" y="0" drill="1.6"/>
 <wire x1="-5.5" y1="4" x2="5.5" y2="4" width="0.127" layer="21"/>
@@ -7075,16 +7075,16 @@ Nano-Fit™ Vertical Header, Through Hole, Single Row</description>
 <wire x1="-5.5" y1="2" x2="-5.5" y2="4" width="0.127" layer="21"/>
 </package>
 <package name="NANO-FIT_VERTICAL-10">
-<pad name="3" x="0" y="0" drill="1.2" shape="square"/>
-<pad name="8" x="0" y="2.5" drill="1.2" shape="square"/>
-<pad name="7" x="2.5" y="2.5" drill="1.2" shape="square"/>
-<pad name="2" x="2.5" y="0" drill="1.2" shape="square"/>
-<pad name="1" x="5" y="0" drill="1.2" shape="square"/>
-<pad name="6" x="5" y="2.5" drill="1.2" shape="square"/>
-<pad name="9" x="-2.5" y="2.5" drill="1.2" shape="square"/>
-<pad name="4" x="-2.5" y="0" drill="1.2" shape="square"/>
-<pad name="5" x="-5" y="0" drill="1.2" shape="square"/>
-<pad name="10" x="-5" y="2.5" drill="1.2" shape="square"/>
+<pad name="P$3" x="0" y="0" drill="1.2" shape="square"/>
+<pad name="P$8" x="0" y="2.5" drill="1.2" shape="square"/>
+<pad name="P$9" x="2.5" y="2.5" drill="1.2" shape="square"/>
+<pad name="P$4" x="2.5" y="0" drill="1.2" shape="square"/>
+<pad name="P$5" x="5" y="0" drill="1.2" shape="square"/>
+<pad name="P$10" x="5" y="2.5" drill="1.2" shape="square"/>
+<pad name="P$7" x="-2.5" y="2.5" drill="1.2" shape="square"/>
+<pad name="P$2" x="-2.5" y="0" drill="1.2" shape="square"/>
+<pad name="P$1" x="-5" y="0" drill="1.2" shape="square"/>
+<pad name="P$6" x="-5" y="2.5" drill="1.2" shape="square"/>
 <hole x="-7.17" y="0.29" drill="1.6"/>
 <hole x="7.17" y="0.29" drill="1.6"/>
 <wire x1="-7" y1="4" x2="7" y2="4" width="0.127" layer="21"/>
@@ -7097,18 +7097,18 @@ Nano-Fit™ Vertical Header, Through Hole, Single Row</description>
 <wire x1="-7" y1="2" x2="-7" y2="4" width="0.127" layer="21"/>
 </package>
 <package name="NANO-FIT_VERTICAL-12">
-<pad name="3" x="1.25" y="0" drill="1.2" shape="square"/>
-<pad name="9" x="1.25" y="2.5" drill="1.2" shape="square"/>
-<pad name="8" x="3.75" y="2.5" drill="1.2" shape="square"/>
-<pad name="7" x="6.25" y="2.5" drill="1.2" shape="square"/>
-<pad name="10" x="-1.25" y="2.5" drill="1.2" shape="square"/>
-<pad name="11" x="-3.75" y="2.5" drill="1.2" shape="square"/>
-<pad name="12" x="-6.25" y="2.5" drill="1.2" shape="square"/>
-<pad name="2" x="3.75" y="0" drill="1.2" shape="square"/>
-<pad name="1" x="6.25" y="0" drill="1.2" shape="square"/>
-<pad name="4" x="-1.25" y="0" drill="1.2" shape="square"/>
-<pad name="5" x="-3.75" y="0" drill="1.2" shape="square"/>
-<pad name="6" x="-6.25" y="0" drill="1.2" shape="square"/>
+<pad name="P$4" x="1.25" y="0" drill="1.2" shape="square"/>
+<pad name="P$10" x="1.25" y="2.5" drill="1.2" shape="square"/>
+<pad name="P$11" x="3.75" y="2.5" drill="1.2" shape="square"/>
+<pad name="P$12" x="6.25" y="2.5" drill="1.2" shape="square"/>
+<pad name="P$9" x="-1.25" y="2.5" drill="1.2" shape="square"/>
+<pad name="P$8" x="-3.75" y="2.5" drill="1.2" shape="square"/>
+<pad name="P$7" x="-6.25" y="2.5" drill="1.2" shape="square"/>
+<pad name="P$5" x="3.75" y="0" drill="1.2" shape="square"/>
+<pad name="P$6" x="6.25" y="0" drill="1.2" shape="square"/>
+<pad name="P$3" x="-1.25" y="0" drill="1.2" shape="square"/>
+<pad name="P$2" x="-3.75" y="0" drill="1.2" shape="square"/>
+<pad name="P$1" x="-6.25" y="0" drill="1.2" shape="square"/>
 <hole x="-8.42" y="0.29" drill="1.6"/>
 <hole x="8.42" y="0.29" drill="1.6"/>
 <wire x1="-8" y1="4" x2="8" y2="4" width="0.127" layer="21"/>
@@ -11872,12 +11872,12 @@ Source: http://www.molex.com</description>
 </device>
 <device name="NANO-FIT_VERTICAL-6" package="NANO-FIT_VERTICAL-6">
 <connects>
-<connect gate="-1" pin="S" pad="1"/>
-<connect gate="-2" pin="S" pad="2"/>
-<connect gate="-3" pin="S" pad="3"/>
-<connect gate="-4" pin="S" pad="4"/>
-<connect gate="-5" pin="S" pad="5"/>
-<connect gate="-6" pin="S" pad="6"/>
+<connect gate="-1" pin="S" pad="P$1"/>
+<connect gate="-2" pin="S" pad="P$2"/>
+<connect gate="-3" pin="S" pad="P$3"/>
+<connect gate="-4" pin="S" pad="P$4"/>
+<connect gate="-5" pin="S" pad="P$5"/>
+<connect gate="-6" pin="S" pad="P$6"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -11999,25 +11999,6 @@ Source: http://www.molex.com</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="NANO-FIT_VERTICAL-12" package="NANO-FIT_VERTICAL-12">
-<connects>
-<connect gate="-1" pin="S" pad="1"/>
-<connect gate="-10" pin="S" pad="10"/>
-<connect gate="-11" pin="S" pad="11"/>
-<connect gate="-12" pin="S" pad="12"/>
-<connect gate="-2" pin="S" pad="2"/>
-<connect gate="-3" pin="S" pad="3"/>
-<connect gate="-4" pin="S" pad="4"/>
-<connect gate="-5" pin="S" pad="5"/>
-<connect gate="-6" pin="S" pad="6"/>
-<connect gate="-7" pin="S" pad="7"/>
-<connect gate="-8" pin="S" pad="8"/>
-<connect gate="-9" pin="S" pad="9"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
 <device name="DURACLIK_RIGHT_ANGLE-12" package="DURACLIK_RIGHT_ANGLE-12">
 <connects>
 <connect gate="-1" pin="S" pad="1"/>
@@ -12051,6 +12032,25 @@ Source: http://www.molex.com</description>
 <connect gate="-7" pin="S" pad="7"/>
 <connect gate="-8" pin="S" pad="8"/>
 <connect gate="-9" pin="S" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="NANO-FIT_VERTICAL-12" package="NANO-FIT_VERTICAL-12">
+<connects>
+<connect gate="-1" pin="S" pad="P$1"/>
+<connect gate="-10" pin="S" pad="P$10"/>
+<connect gate="-11" pin="S" pad="P$11"/>
+<connect gate="-12" pin="S" pad="P$12"/>
+<connect gate="-2" pin="S" pad="P$2"/>
+<connect gate="-3" pin="S" pad="P$3"/>
+<connect gate="-4" pin="S" pad="P$4"/>
+<connect gate="-5" pin="S" pad="P$5"/>
+<connect gate="-6" pin="S" pad="P$6"/>
+<connect gate="-7" pin="S" pad="P$7"/>
+<connect gate="-8" pin="S" pad="P$8"/>
+<connect gate="-9" pin="S" pad="P$9"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -12124,14 +12124,14 @@ Source: http://www.molex.com</description>
 </device>
 <device name="NANO-FIT_VERTICAL-8" package="NANO-FIT_VERTICAL-8">
 <connects>
-<connect gate="-1" pin="S" pad="1"/>
-<connect gate="-2" pin="S" pad="2"/>
-<connect gate="-3" pin="S" pad="3"/>
-<connect gate="-4" pin="S" pad="4"/>
-<connect gate="-5" pin="S" pad="5"/>
-<connect gate="-6" pin="S" pad="6"/>
-<connect gate="-7" pin="S" pad="7"/>
-<connect gate="-8" pin="S" pad="8"/>
+<connect gate="-1" pin="S" pad="P$1"/>
+<connect gate="-2" pin="S" pad="P$2"/>
+<connect gate="-3" pin="S" pad="P$3"/>
+<connect gate="-4" pin="S" pad="P$4"/>
+<connect gate="-5" pin="S" pad="P$5"/>
+<connect gate="-6" pin="S" pad="P$6"/>
+<connect gate="-7" pin="S" pad="P$7"/>
+<connect gate="-8" pin="S" pad="P$8"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -12226,16 +12226,16 @@ Source: http://www.molex.com</description>
 </device>
 <device name="NANO-FIT_VERTICAL-10" package="NANO-FIT_VERTICAL-10">
 <connects>
-<connect gate="-1" pin="S" pad="1"/>
-<connect gate="-10" pin="S" pad="10"/>
-<connect gate="-2" pin="S" pad="2"/>
-<connect gate="-3" pin="S" pad="3"/>
-<connect gate="-4" pin="S" pad="4"/>
-<connect gate="-5" pin="S" pad="5"/>
-<connect gate="-6" pin="S" pad="6"/>
-<connect gate="-7" pin="S" pad="7"/>
-<connect gate="-8" pin="S" pad="8"/>
-<connect gate="-9" pin="S" pad="9"/>
+<connect gate="-1" pin="S" pad="P$1"/>
+<connect gate="-10" pin="S" pad="P$10"/>
+<connect gate="-2" pin="S" pad="P$2"/>
+<connect gate="-3" pin="S" pad="P$3"/>
+<connect gate="-4" pin="S" pad="P$4"/>
+<connect gate="-5" pin="S" pad="P$5"/>
+<connect gate="-6" pin="S" pad="P$6"/>
+<connect gate="-7" pin="S" pad="P$7"/>
+<connect gate="-8" pin="S" pad="P$8"/>
+<connect gate="-9" pin="S" pad="P$9"/>
 </connects>
 <technologies>
 <technology name=""/>

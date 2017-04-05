@@ -2776,8 +2776,8 @@ general purpose rectifier</description>
 <part name="CURRENT1" library="HyTechDevices" deviceset="MINIFIT_5566-4" device="" value=""/>
 <part name="P+10" library="supply1" deviceset="+5V" device=""/>
 <part name="GND17" library="supply1" deviceset="GND" device=""/>
-<part name="R6" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES"/>
-<part name="R7" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES"/>
+<part name="R6" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="10k"/>
+<part name="R7" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="10k"/>
 <part name="IC2" library="HyTechDevices" deviceset="MCP6002" device="SOIC"/>
 <part name="P+12" library="supply1" deviceset="+12V" device=""/>
 <part name="GND21" library="supply1" deviceset="GND" device=""/>
@@ -2789,7 +2789,7 @@ general purpose rectifier</description>
 <part name="GND25" library="supply1" deviceset="GND" device=""/>
 <part name="INTERLOCK" library="HyTechDevices" deviceset="MINIFIT_5566-2" device="" value="MINIFIT_5566-2"/>
 <part name="ON-LED" library="HyTechDevices" deviceset="LED" device="-0805"/>
-<part name="R5" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES"/>
+<part name="R5" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="100"/>
 <part name="P+14" library="supply1" deviceset="+5V" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="IC3" library="HyTechDevices" deviceset="MCP6002" device="SOIC"/>
@@ -2824,7 +2824,7 @@ general purpose rectifier</description>
 <part name="THRESHOLD" library="HyTechDevices" deviceset="N-CHANNEL_MOSFET" device="AOD1N60" value="AOD1N60"/>
 <part name="R16" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="500k"/>
 <part name="R19" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="40k"/>
-<part name="R26" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="1.8k"/>
+<part name="R26" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="1k"/>
 <part name="R13" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="2k"/>
 <part name="R15" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="500k"/>
 <part name="R14" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="500k"/>
@@ -2854,7 +2854,7 @@ general purpose rectifier</description>
 <plain>
 <text x="299.72" y="-165.1" size="1.778" layer="97">Formula Hybrid jumper used
 to bypass 60V threshold</text>
-<text x="30.48" y="-106.68" size="1.778" layer="97">Current sensor 1: ISB-100-A-600
+<text x="30.48" y="-107.95" size="1.778" layer="97">Current sensor 1: ISB-100-A-600
 With pullup resistors if necessary
 
 5kW threshold output goes to BSPD circuitry</text>
