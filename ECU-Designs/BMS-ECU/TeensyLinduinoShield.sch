@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.1.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -2575,6 +2575,12 @@ Source: http://www.molex.com</description>
 <wire x1="139.7" y1="60.96" x2="139.7" y2="55.88" width="0.1524" layer="91"/>
 <label x="139.7" y="55.88" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="GND"/>
+<wire x1="96.52" y1="63.5" x2="93.98" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="63.5" x2="93.98" y2="68.58" width="0.1524" layer="91"/>
+<label x="93.98" y="68.58" size="1.778" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="CANH-OUT" class="0">
 <segment>
@@ -2611,11 +2617,6 @@ Source: http://www.molex.com</description>
 <label x="96.52" y="99.06" size="1.778" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$4" gate="G$1" pin="CONTROL+"/>
-<wire x1="157.48" y1="63.5" x2="170.18" y2="63.5" width="0.1524" layer="91"/>
-<label x="170.18" y="63.5" size="1.778" layer="95" xref="yes"/>
-</segment>
-<segment>
 <pinref part="U$4" gate="G$1" pin="CONTROL-"/>
 <wire x1="152.4" y1="63.5" x2="152.4" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="68.58" x2="160.02" y2="68.58" width="0.1524" layer="91"/>
@@ -2629,12 +2630,15 @@ Source: http://www.molex.com</description>
 <label x="93.98" y="99.06" size="1.778" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
-<net name="N$15" class="0">
+<net name="N$16" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="GND"/>
-<wire x1="96.52" y1="63.5" x2="93.98" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="63.5" x2="93.98" y2="68.58" width="0.1524" layer="91"/>
-<label x="93.98" y="68.58" size="1.778" layer="95" xref="yes"/>
+<pinref part="U$1" gate="G$1" pin="D8(TX3)"/>
+<wire x1="96.52" y1="40.64" x2="93.98" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="40.64" x2="93.98" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="12.7" x2="208.28" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="12.7" x2="208.28" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="U$4" gate="G$1" pin="CONTROL+"/>
+<wire x1="208.28" y1="63.5" x2="157.48" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
