@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -186,10 +186,10 @@
 <wire x1="57.13" y1="0" x2="57.13" y2="54.28" width="0" layer="20"/>
 <wire x1="57.13" y1="54.28" x2="0" y2="54.28" width="0" layer="20"/>
 <wire x1="0" y1="54.28" x2="0" y2="0" width="0" layer="20"/>
-<hole x="5.08" y="49.53" drill="3.2"/>
-<hole x="3.81" y="5.08" drill="3.2"/>
-<hole x="53.34" y="5.08" drill="3.2"/>
-<hole x="53.34" y="49.53" drill="3.2"/>
+<hole x="5.08" y="49.53" drill="3.3"/>
+<hole x="3.81" y="5.08" drill="3.3"/>
+<hole x="53.34" y="5.08" drill="3.3"/>
+<hole x="53.34" y="49.53" drill="3.3"/>
 </plain>
 <libraries>
 <library name="HyTechDevices">

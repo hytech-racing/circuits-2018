@@ -2767,7 +2767,7 @@ general purpose rectifier</description>
 <part name="HV_REG2" library="HyTechDevices" deviceset="HV_LIN_REG_LR8" device="SMD" value="LR8"/>
 <part name="R23" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="2k"/>
 <part name="R22" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="20k"/>
-<part name="INDICATOR" library="HyTechDevices" deviceset="MINIFIT_5566-2" device="" value="MINIFIT_5566-2"/>
+<part name="INDICATOR" library="HyTechDevices" deviceset="MINIFIT_5566-2" device="" value=""/>
 <part name="U$12" library="HyTechDevices" deviceset="5504-12-1-NC" device=""/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
 <part name="DISCH+" library="HyTechDevices" deviceset="MINIFIT_5566-2" device="" value="TO DISCHARGE +"/>
@@ -2787,7 +2787,7 @@ general purpose rectifier</description>
 <part name="R4" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES"/>
 <part name="GND23" library="supply1" deviceset="GND" device=""/>
 <part name="GND25" library="supply1" deviceset="GND" device=""/>
-<part name="INTERLOCK" library="HyTechDevices" deviceset="MINIFIT_5566-2" device="" value="MINIFIT_5566-2"/>
+<part name="INTERLOCK" library="HyTechDevices" deviceset="MINIFIT_5566-2" device="" value=""/>
 <part name="ON-LED" library="HyTechDevices" deviceset="LED" device="-0805"/>
 <part name="R5" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="100"/>
 <part name="P+14" library="supply1" deviceset="+5V" device=""/>
@@ -2798,24 +2798,24 @@ general purpose rectifier</description>
 <part name="5KW_TRIM" library="HyTechDevices" deviceset="TRIMPOT_3296" device="C"/>
 <part name="P+15" library="supply1" deviceset="+5V" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
-<part name="RELAYS" library="HyTechDevices" deviceset="MINIFIT_5566-2" device="" value="MINIFIT_5566-2"/>
+<part name="RELAYS" library="HyTechDevices" deviceset="MINIFIT_5566-2" device="" value=""/>
 <part name="P+16" library="supply1" deviceset="+12V" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="POWER" library="HyTechDevices" deviceset="MINIFIT_5566-4" device="" value=""/>
 <part name="R2" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="120"/>
-<part name="BMS" library="HyTechDevices" deviceset="MINIFIT_5566-8" device=""/>
+<part name="BMS" library="HyTechDevices" deviceset="MINIFIT_5566-8" device="" value=""/>
 <part name="P+3" library="supply1" deviceset="+12V" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="FUSE" library="HyTechDevices" deviceset="FUSE" device="_MIDGET" value="250mA"/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="HV+UNFUSED" library="HyTechDevices" deviceset="CONNECTOR-2" device="" value="CONNECTOR FSAE"/>
 <part name="HV-UNFUSED" library="HyTechDevices" deviceset="CONNECTOR-2" device="" value="CONNECTOR FSAE"/>
-<part name="IMD_HV+" library="HyTechDevices" deviceset="CONNECTOR-2" device="" value="CONNECTOR-2"/>
-<part name="IMD_HV-" library="HyTechDevices" deviceset="CONNECTOR-2" device="" value="CONNECTOR-2"/>
+<part name="IMD_HV+" library="HyTechDevices" deviceset="CONNECTOR-2" device="" value=""/>
+<part name="IMD_HV-" library="HyTechDevices" deviceset="CONNECTOR-2" device="" value=""/>
 <part name="MAIN" library="HyTechDevices" deviceset="CONNECTOR-12" device="" value=""/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="P+4" library="supply1" deviceset="+12V" device=""/>
-<part name="IMD" library="HyTechDevices" deviceset="CONNECTOR-6" device="" value="CONNECTOR-6"/>
+<part name="IMD" library="HyTechDevices" deviceset="CONNECTOR-6" device="" value=""/>
 <part name="P+5" library="supply1" deviceset="+5V" device=""/>
 <part name="P+6" library="supply1" deviceset="+5V" device=""/>
 <part name="D1" library="HyTechDevices" deviceset="DIODE" device="DO-41" value="DIODE"/>
@@ -2909,8 +2909,6 @@ to enforce 60V threshold</text>
 <text x="177.8" y="55.88" size="5.08" layer="90">TS I/O</text>
 <text x="182.88" y="33.02" size="1.778" layer="97">Main HV+ and HV-
 (Externally Fused)</text>
-<text x="71.12" y="-101.6" size="1.778" layer="97">TODO pulldown or pullup</text>
-<text x="124.46" y="48.26" size="1.27" layer="97">TODO change to 5V?</text>
 <text x="205.74" y="-162.56" size="1.778" layer="97">~4.5v Gate threshold
  corresponds to 60V
  on tractive system</text>

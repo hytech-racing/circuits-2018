@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.001" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -176,10 +176,10 @@
 <wire x1="73.64" y1="0" x2="73.64" y2="70.79" width="0" layer="20"/>
 <wire x1="73.64" y1="70.79" x2="0" y2="70.79" width="0" layer="20"/>
 <wire x1="0" y1="70.79" x2="0" y2="0" width="0" layer="20"/>
-<hole x="3.81" y="67.31" drill="3.2"/>
-<hole x="69.85" y="67.31" drill="3.2"/>
-<hole x="69.85" y="3.81" drill="3.2"/>
-<hole x="3.81" y="3.81" drill="3.2"/>
+<hole x="3.81" y="67.31" drill="3.3"/>
+<hole x="69.85" y="67.31" drill="3.3"/>
+<hole x="69.85" y="3.81" drill="3.3"/>
+<hole x="3.81" y="3.81" drill="3.3"/>
 <text x="35.179" y="61.341" size="1.016" layer="51">SW</text>
 <text x="38.354" y="61.341" size="1.016" layer="51">CH</text>
 <text x="41.275" y="61.341" size="1.016" layer="51">FAULT</text>
@@ -3881,6 +3881,7 @@
 <rectangle x1="67.00011875" y1="16.860521875" x2="67.9958" y2="16.870678125" layer="51"/>
 <text x="1.855215625" y="60.4901" size="1.27" layer="51" font="vector">pedal_board</text>
 <text x="1.855215625" y="58.204353125" size="1.27" layer="51" font="vector">rev2.1</text>
+<text x="1.778" y="62.738" size="1.27" layer="51" font="vector">hytech_2017</text>
 </plain>
 <libraries>
 <library name="HyTechDevices">
