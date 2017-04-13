@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="8.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1859,6 +1859,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="SL3" library="HyTechSymbols" deviceset="M10" device=""/>
 <part name="SL8" library="HyTechSymbols" deviceset="M10" device=""/>
 <part name="DISCHARGE" library="HyTechDevices" deviceset="RESISTOR" device="10W"/>
+<part name="HVD_INTERLOCK" library="HyTechSymbols" deviceset="SWITCH_SPST" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2049,6 +2050,7 @@ Power for FSAE (EV5.1.4)</text>
 <instance part="SL3" gate="G$1" x="167.64" y="-43.18" rot="R180"/>
 <instance part="SL8" gate="G$1" x="182.88" y="-40.64"/>
 <instance part="DISCHARGE" gate="G$1" x="259.08" y="137.16"/>
+<instance part="HVD_INTERLOCK" gate="SPST" x="124.46" y="261.62" rot="R270"/>
 </instances>
 <busses>
 <bus name="12VSUPPLY,GND,CANL,CANH">
@@ -2597,14 +2599,15 @@ Power for FSAE (EV5.1.4)</text>
 <label x="370.84" y="-55.88" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="MOLEX_IMPERIUM_INTERLOCK" gate="SPST" pin="P"/>
-<wire x1="360.68" y1="261.62" x2="116.84" y2="261.62" width="0.1524" layer="91"/>
-<wire x1="116.84" y1="261.62" x2="116.84" y2="238.76" width="0.1524" layer="91"/>
 <label x="271.78" y="261.62" size="1.778" layer="95"/>
 <portref moduleinst="HV_PCB" port="SHUTDOWN6_OUT"/>
 <wire x1="307.34" y1="187.96" x2="360.68" y2="187.96" width="0.1524" layer="91"/>
 <wire x1="360.68" y1="187.96" x2="360.68" y2="261.62" width="0.1524" layer="91"/>
 <label x="312.42" y="187.96" size="1.778" layer="95"/>
+<pinref part="HVD_INTERLOCK" gate="SPST" pin="S"/>
+<wire x1="129.54" y1="259.08" x2="132.08" y2="259.08" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="259.08" x2="132.08" y2="261.62" width="0.1524" layer="91"/>
+<wire x1="360.68" y1="261.62" x2="132.08" y2="261.62" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SL2" gate="G$1" pin="1"/>
@@ -2772,14 +2775,14 @@ Power for FSAE (EV5.1.4)</text>
 </net>
 <net name="SHUTDOWN7" class="0">
 <segment>
-<pinref part="MOLEX_IMPERIUM_INTERLOCK" gate="SPST" pin="O"/>
-<wire x1="358.14" y1="259.08" x2="127" y2="259.08" width="0.1524" layer="91"/>
-<wire x1="127" y1="259.08" x2="127" y2="241.3" width="0.1524" layer="91"/>
 <wire x1="358.14" y1="190.5" x2="358.14" y2="259.08" width="0.1524" layer="91"/>
 <wire x1="307.34" y1="190.5" x2="358.14" y2="190.5" width="0.1524" layer="91"/>
-<label x="271.78" y="259.08" size="1.778" layer="95"/>
 <portref moduleinst="HV_PCB" port="SHUTDOWN7_IN"/>
 <label x="312.42" y="190.5" size="1.778" layer="95"/>
+<pinref part="MOLEX_IMPERIUM_INTERLOCK" gate="SPST" pin="S"/>
+<wire x1="127" y1="236.22" x2="144.78" y2="236.22" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="236.22" x2="144.78" y2="259.08" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="259.08" x2="358.14" y2="259.08" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <portref moduleinst="HV_PCB" port="AIR_PWR2"/>
@@ -2795,6 +2798,7 @@ Power for FSAE (EV5.1.4)</text>
 <junction x="243.84" y="256.54"/>
 <label x="271.78" y="256.54" size="1.778" layer="95"/>
 <label x="312.42" y="193.04" size="1.778" layer="95"/>
+<label x="271.78" y="259.08" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="AIR1" gate="1" pin="1"/>
@@ -3635,6 +3639,14 @@ Power for FSAE (EV5.1.4)</text>
 <pinref part="DISCHARGE" gate="G$1" pin="2"/>
 <portref moduleinst="HV_PCB" port="DISCHARGE+"/>
 <wire x1="271.78" y1="137.16" x2="264.16" y2="137.16" width="0.381" layer="91"/>
+</segment>
+</net>
+<net name="N$61" class="0">
+<segment>
+<pinref part="MOLEX_IMPERIUM_INTERLOCK" gate="SPST" pin="P"/>
+<wire x1="116.84" y1="261.62" x2="116.84" y2="238.76" width="0.1524" layer="91"/>
+<pinref part="HVD_INTERLOCK" gate="SPST" pin="P"/>
+<wire x1="119.38" y1="261.62" x2="116.84" y2="261.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

@@ -201,14 +201,14 @@
 <dimension x1="73.533" y1="18.542" x2="73.533" y2="14.986" x3="77.089" y3="16.764" textsize="1.778" layer="156"/>
 <dimension x1="40.386" y1="125.095" x2="40.386" y2="128.651" x3="36.83" y3="126.873" textsize="1.778" layer="156"/>
 <dimension x1="82.55" y1="122.809" x2="86.106" y2="122.809" x3="84.328" y3="126.365" textsize="1.778" layer="156"/>
-<wire x1="0.508" y1="100.965" x2="18.796" y2="100.965" width="0.6096" layer="51"/>
-<wire x1="18.796" y1="100.965" x2="18.796" y2="66.167" width="0.6096" layer="51"/>
+<wire x1="0.508" y1="98.171" x2="18.796" y2="98.171" width="0.6096" layer="51"/>
+<wire x1="18.796" y1="98.171" x2="18.796" y2="66.167" width="0.6096" layer="51"/>
 <wire x1="18.796" y1="66.167" x2="0.508" y2="66.167" width="0.6096" layer="51"/>
 <text x="17.78" y="82.423" size="2.286" layer="51" rot="R90">GLV</text>
 <text x="22.098" y="82.423" size="2.286" layer="51" rot="R90">TS</text>
 <text x="20.066" y="88.519" size="2.286" layer="52" rot="SMR270" align="top-left">TS</text>
 <text x="15.494" y="88.519" size="2.286" layer="52" rot="SMR270" align="top-left">GLV</text>
-<text x="4.572" y="57.912" size="2.286" layer="51">Danger High Voltage</text>
+<text x="35.56" y="58.166" size="2.032" layer="51" align="bottom-right">Danger High Voltage</text>
 <text x="2.54" y="127.762" size="1.778" layer="51">hytech_2017_bms_segment_lower_rev0</text>
 <rectangle x1="3.6068" y1="5.2324" x2="5.4356" y2="5.334" layer="51"/>
 <rectangle x1="7.6708" y1="5.2324" x2="9.8044" y2="5.334" layer="51"/>
@@ -841,9 +841,12 @@
 <rectangle x1="23.0124" y1="11.8364" x2="23.9268" y2="11.938" layer="51"/>
 <rectangle x1="25.3492" y1="11.8364" x2="25.8572" y2="11.938" layer="51"/>
 <rectangle x1="27.3812" y1="11.8364" x2="27.9908" y2="11.938" layer="51"/>
-<text x="34.036" y="58.166" size="2.286" layer="52" rot="MR0">Danger High Voltage</text>
+<text x="35.56" y="58.166" size="2.032" layer="52" rot="MR0">Danger High Voltage</text>
 <dimension x1="0" y1="130.759" x2="110" y2="130.759" x3="55" y3="131.572" textsize="2.286" layer="156" unit="inch" precision="3"/>
 <dimension x1="0" y1="130.759" x2="0" y2="-0.003" x3="-1.016" y3="65.378" textsize="2.286" layer="156" unit="inch" precision="3"/>
+<wire x1="0.508" y1="98.171" x2="18.796" y2="98.171" width="0.6096" layer="52"/>
+<wire x1="18.796" y1="98.171" x2="18.796" y2="66.167" width="0.6096" layer="52"/>
+<wire x1="18.796" y1="66.167" x2="0.508" y2="66.167" width="0.6096" layer="52"/>
 </plain>
 <libraries>
 <library name="HyTechDevices">

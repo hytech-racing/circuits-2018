@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="8.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -720,6 +720,7 @@ Contact Amperage: 8A at 30VDC
 <part name="IMD_RELAY_DRIVE" library="HyTechDevices" deviceset="SOLID_STATE_RELAY" device="_VO14642AT" value="Normally Open"/>
 <part name="GND11" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="GLV_SYSTEMS3" library="HyTechSymbols" deviceset="VIN" device="" value="VCC"/>
+<part name="IMPERIUM_INTERLOCK" library="HyTechSymbols" deviceset="SWITCH_SPST" device="" value="Normally Open"/>
 </parts>
 <sheets>
 <sheet>
@@ -755,7 +756,7 @@ Battery Pack</text>
 <instance part="INERTIA" gate="SPST" x="22.86" y="91.44" rot="MR270"/>
 <instance part="BOTS" gate="SPST" x="91.44" y="91.44" rot="MR270"/>
 <instance part="TSMS" gate="SPST" x="2.54" y="91.44" rot="MR270"/>
-<instance part="HVD_INTERLOCK" gate="SPST" x="20.32" y="76.2" rot="R270"/>
+<instance part="HVD_INTERLOCK" gate="SPST" x="7.62" y="76.2" rot="R270"/>
 <instance part="SEGMENT1" gate="G$1" x="30.48" y="17.78" rot="R90"/>
 <instance part="SEGMENT2" gate="G$1" x="55.88" y="17.78" rot="R90"/>
 <instance part="SEGMENT3" gate="G$1" x="88.9" y="17.78" rot="R90"/>
@@ -792,6 +793,7 @@ Battery Pack</text>
 <instance part="IMD_RELAY_DRIVE" gate="G$1" x="165.1" y="147.32" rot="R180"/>
 <instance part="GND11" gate="1" x="175.26" y="154.94" rot="R180"/>
 <instance part="GLV_SYSTEMS3" gate="G$1" x="152.4" y="144.78" rot="R90"/>
+<instance part="IMPERIUM_INTERLOCK" gate="SPST" x="30.48" y="76.2" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -966,7 +968,7 @@ Battery Pack</text>
 <wire x1="-2.54" y1="88.9" x2="-12.7" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="-12.7" y1="88.9" x2="-12.7" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="HVD_INTERLOCK" gate="SPST" pin="P"/>
-<wire x1="-12.7" y1="76.2" x2="15.24" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="76.2" x2="2.54" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SHUTDOWN_CIRCUIT" class="0">
@@ -988,12 +990,14 @@ Battery Pack</text>
 <junction x="71.12" y="40.64"/>
 <pinref part="U$3" gate="G$1" pin="12V"/>
 <wire x1="66.04" y1="53.34" x2="60.96" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="HVD_INTERLOCK" gate="SPST" pin="S"/>
-<wire x1="25.4" y1="73.66" x2="66.04" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="73.66" x2="66.04" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="76.2" x2="66.04" y2="53.34" width="0.1524" layer="91"/>
 <junction x="66.04" y="53.34"/>
 <wire x1="66.04" y1="53.34" x2="66.04" y2="40.64" width="0.1524" layer="91"/>
 <junction x="66.04" y="40.64"/>
+<pinref part="IMPERIUM_INTERLOCK" gate="SPST" pin="S"/>
+<wire x1="35.56" y1="73.66" x2="38.1" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="73.66" x2="38.1" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="76.2" x2="66.04" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ISO-" class="0">
@@ -1247,6 +1251,15 @@ Battery Pack</text>
 <wire x1="73.66" y1="111.76" x2="73.66" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="LEFT_BRB" gate="SPST" pin="O"/>
 <wire x1="71.12" y1="111.76" x2="73.66" y2="111.76" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$23" class="0">
+<segment>
+<pinref part="HVD_INTERLOCK" gate="SPST" pin="S"/>
+<wire x1="12.7" y1="73.66" x2="15.24" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="73.66" x2="15.24" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="IMPERIUM_INTERLOCK" gate="SPST" pin="P"/>
+<wire x1="15.24" y1="76.2" x2="25.4" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

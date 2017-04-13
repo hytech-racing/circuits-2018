@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="8.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1129,7 +1129,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <port name="BMS_CANH1" side="right" coord="7.62" direction="io"/>
 <port name="BMS_CANL2" side="right" coord="5.08" direction="io"/>
 <port name="BMS_CANH2" side="right" coord="2.54" direction="io"/>
-<port name="TEMP_SENSE_OUT" side="right" coord="0" direction="out"/>
+<port name="TEMP_SENSE_OUT" side="right" coord="-2.54" direction="out"/>
 <port name="IMD_SUPPLY" side="bottom" coord="2.54" direction="out"/>
 <port name="12VSUPPLY" side="left" coord="-7.62" direction="in"/>
 <port name="GND" side="left" coord="-10.16" direction="out"/>
@@ -1139,6 +1139,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <port name="CUR_GND" side="right" coord="-15.24" direction="in"/>
 <port name="CUR_5V" side="right" coord="-7.62" direction="out"/>
 <port name="TEMP_SENSE" side="right" coord="-12.7" direction="in"/>
+<port name="BMS_OK" side="right" coord="0" direction="in"/>
 </ports>
 <variantdefs>
 </variantdefs>
@@ -1181,17 +1182,18 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </sheet>
 </sheets>
 </module>
-<module name="AMS_CONTROL" prefix="" dx="30.48" dy="22.86">
+<module name="AMS_CONTROL" prefix="" dx="30.48" dy="27.94">
 <ports>
-<port name="ISOSPI2" side="right" coord="1.27" direction="io"/>
-<port name="ISOSPI1" side="right" coord="3.81" direction="io"/>
-<port name="GND" side="left" coord="3.81" direction="out"/>
-<port name="POWER" side="left" coord="6.35" direction="in"/>
-<port name="CANL1" side="left" coord="1.27" direction="io"/>
-<port name="CANL2" side="left" coord="-3.81" direction="io"/>
-<port name="CANH1" side="left" coord="-1.27" direction="io"/>
-<port name="CANH2" side="left" coord="-6.35" direction="io"/>
+<port name="ISOSPI2" side="right" coord="8.89" direction="io"/>
+<port name="ISOSPI1" side="right" coord="6.35" direction="io"/>
+<port name="GND" side="left" coord="6.35" direction="out"/>
+<port name="POWER" side="left" coord="8.89" direction="in"/>
+<port name="CANL1" side="left" coord="3.81" direction="io"/>
+<port name="CANL2" side="left" coord="-1.27" direction="io"/>
+<port name="CANH1" side="left" coord="1.27" direction="io"/>
+<port name="CANH2" side="left" coord="-3.81" direction="io"/>
 <port name="TEMP_SENSE" side="left" coord="-8.89" direction="in"/>
+<port name="BMS_OK" side="left" coord="-6.35" direction="out"/>
 </ports>
 <variantdefs>
 </variantdefs>
@@ -1300,6 +1302,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="DISCHARGE" library="HyTechDevices" deviceset="RESISTOR" device="10W"/>
 <part name="SL2" library="HyTechSymbols" deviceset="M04" device=""/>
 <part name="SL3" library="HyTechSymbols" deviceset="M02" device=""/>
+<part name="HVD_INTERLOCK" library="HyTechSymbols" deviceset="SWITCH_SPST" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1329,7 +1332,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <wire x1="327.66" y1="58.42" x2="332.74" y2="58.42" width="0.381" layer="156"/>
 <wire x1="332.74" y1="58.42" x2="332.74" y2="55.88" width="0.381" layer="156"/>
 <wire x1="335.28" y1="55.88" x2="332.74" y2="55.88" width="0.381" layer="156"/>
-<text x="223.52" y="116.84" size="2.1844" layer="97">Molex Imperium also used for charging</text>
+<text x="205.74" y="137.16" size="2.1844" layer="97">Molex Imperium also used for charging</text>
 <wire x1="345.44" y1="58.42" x2="350.52" y2="58.42" width="0.381" layer="156"/>
 <wire x1="350.52" y1="58.42" x2="350.52" y2="86.36" width="0.381" layer="156"/>
 <wire x1="350.52" y1="86.36" x2="215.9" y2="86.36" width="0.381" layer="156"/>
@@ -1366,7 +1369,7 @@ Blue: VSense, TSense connections</text>
 <moduleinst name="AMS_SEGMENT1" module="AMS_SEGMENT" x="327.66" y="73.66" smashed="yes">
 <attribute name="NAME" x="327.66" y="76.2" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
-<moduleinst name="AMS_CONTROL" module="AMS_CONTROL" x="157.48" y="72.39" smashed="yes">
+<moduleinst name="AMS_CONTROL" module="AMS_CONTROL" x="157.48" y="69.85" smashed="yes">
 <attribute name="NAME" x="157.48" y="81.28" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
 <moduleinst name="CUR_SENSE" module="BSPD_SENSE" x="121.92" y="35.56" smashed="yes">
@@ -1413,6 +1416,7 @@ Blue: VSense, TSense connections</text>
 <instance part="DISCHARGE" gate="G$1" x="40.64" y="91.44"/>
 <instance part="SL2" gate="G$1" x="5.08" y="48.26" rot="MR180"/>
 <instance part="SL3" gate="G$1" x="177.8" y="104.14" rot="R90"/>
+<instance part="HVD_INTERLOCK" gate="SPST" x="256.54" y="114.3" rot="R270"/>
 </instances>
 <busses>
 <bus name="B$1">
@@ -1486,19 +1490,20 @@ Blue: VSense, TSense connections</text>
 </net>
 <net name="N$11" class="0">
 <segment>
-<wire x1="165.1" y1="55.88" x2="180.34" y2="55.88" width="0.381" layer="91"/>
-<junction x="180.34" y="55.88"/>
+<wire x1="165.1" y1="50.8" x2="180.34" y2="50.8" width="0.381" layer="91"/>
 <pinref part="PC_F2" gate="G$1" pin="1"/>
-<wire x1="165.1" y1="40.64" x2="165.1" y2="55.88" width="0.381" layer="91"/>
+<wire x1="165.1" y1="40.64" x2="165.1" y2="50.8" width="0.381" layer="91"/>
+<wire x1="180.34" y1="50.8" x2="180.34" y2="55.88" width="0.381" layer="91"/>
+<junction x="180.34" y="55.88"/>
 </segment>
 </net>
 <net name="SHUTDOWN_CIRCUIT_POST_INTERLOCK" class="0">
 <segment>
 <pinref part="INTERLOCK" gate="SPST" pin="P"/>
 <wire x1="231.14" y1="96.52" x2="231.14" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="231.14" y1="88.9" x2="246.38" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="246.38" y1="88.9" x2="246.38" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="246.38" y1="111.76" x2="355.6" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="88.9" x2="276.86" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="276.86" y1="88.9" x2="276.86" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="276.86" y1="111.76" x2="355.6" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="355.6" y1="111.76" x2="355.6" y2="12.7" width="0.1524" layer="91"/>
 <label x="281.94" y="111.76" size="1.778" layer="95"/>
 <wire x1="355.6" y1="12.7" x2="96.52" y2="12.7" width="0.1524" layer="91"/>
@@ -1547,13 +1552,14 @@ Blue: VSense, TSense connections</text>
 <segment>
 <wire x1="93.98" y1="10.16" x2="358.14" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="358.14" y1="10.16" x2="358.14" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="358.14" y1="114.3" x2="233.68" y2="114.3" width="0.1524" layer="91"/>
-<pinref part="INTERLOCK" gate="SPST" pin="S"/>
-<wire x1="233.68" y1="114.3" x2="233.68" y2="106.68" width="0.1524" layer="91"/>
 <label x="116.84" y="10.16" size="1.778" layer="95"/>
-<label x="281.94" y="114.3" size="1.778" layer="95"/>
 <wire x1="93.98" y1="10.16" x2="93.98" y2="40.64" width="0.1524" layer="91"/>
 <portref moduleinst="HV_PCB" port="SHUTDOWN6_OUT"/>
+<pinref part="HVD_INTERLOCK" gate="SPST" pin="S"/>
+<wire x1="261.62" y1="111.76" x2="264.16" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="264.16" y1="111.76" x2="264.16" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="264.16" y1="114.3" x2="358.14" y2="114.3" width="0.1524" layer="91"/>
+<label x="281.94" y="114.3" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$20" class="0">
@@ -1637,10 +1643,10 @@ Blue: VSense, TSense connections</text>
 <wire x1="198.12" y1="68.58" x2="198.12" y2="58.42" width="0.381" layer="91"/>
 <junction x="198.12" y="58.42"/>
 <wire x1="198.12" y1="68.58" x2="177.8" y2="68.58" width="0.381" layer="91"/>
-<wire x1="177.8" y1="68.58" x2="177.8" y2="58.42" width="0.381" layer="91"/>
-<wire x1="177.8" y1="58.42" x2="160.02" y2="58.42" width="0.381" layer="91"/>
+<wire x1="177.8" y1="68.58" x2="177.8" y2="53.34" width="0.381" layer="91"/>
+<wire x1="177.8" y1="53.34" x2="160.02" y2="53.34" width="0.381" layer="91"/>
 <pinref part="PC_F1" gate="G$1" pin="1"/>
-<wire x1="160.02" y1="58.42" x2="160.02" y2="48.26" width="0.381" layer="91"/>
+<wire x1="160.02" y1="53.34" x2="160.02" y2="48.26" width="0.381" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -1711,22 +1717,22 @@ Blue: VSense, TSense connections</text>
 </net>
 <net name="ISOSPI1" class="0">
 <segment>
-<wire x1="345.44" y1="81.28" x2="185.42" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="185.42" y1="81.28" x2="185.42" y2="76.2" width="0.1524" layer="91"/>
 <portref moduleinst="AMS_CONTROL" port="ISOSPI1"/>
-<wire x1="185.42" y1="76.2" x2="177.8" y2="76.2" width="0.1524" layer="91"/>
 <label x="266.7" y="81.28" size="1.778" layer="95"/>
 <portref moduleinst="AMS_SEGMENT1" port="ISOSPI1"/>
 <wire x1="345.44" y1="81.28" x2="345.44" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="76.2" x2="190.5" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="76.2" x2="190.5" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="81.28" x2="345.44" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ISOSPI2" class="0">
 <segment>
 <wire x1="347.98" y1="71.12" x2="347.98" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="347.98" y1="83.82" x2="187.96" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="187.96" y1="83.82" x2="187.96" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="83.82" x2="187.96" y2="78.74" width="0.1524" layer="91"/>
 <portref moduleinst="AMS_CONTROL" port="ISOSPI2"/>
-<wire x1="187.96" y1="73.66" x2="177.8" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="78.74" x2="177.8" y2="78.74" width="0.1524" layer="91"/>
 <label x="266.7" y="83.82" size="1.778" layer="95"/>
 <portref moduleinst="AMS_SEGMENT1" port="ISOSPI2"/>
 <wire x1="345.44" y1="71.12" x2="347.98" y2="71.12" width="0.1524" layer="91"/>
@@ -1892,7 +1898,7 @@ Blue: VSense, TSense connections</text>
 <segment>
 <portref moduleinst="AMS_CONTROL" port="TEMP_SENSE"/>
 <portref moduleinst="HV_PCB" port="TEMP_SENSE_OUT"/>
-<wire x1="137.16" y1="63.5" x2="132.08" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="60.96" x2="132.08" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$43" class="0">
@@ -1931,39 +1937,34 @@ Blue: VSense, TSense connections</text>
 <wire x1="35.56" y1="86.36" x2="35.56" y2="91.44" width="0.381" layer="91"/>
 </segment>
 </net>
-<net name="N$47" class="0">
-<segment>
-<portref moduleinst="HV_PCB" port="CUR_GND"/>
-<portref moduleinst="CUR_SENSE" port="GND"/>
-<wire x1="132.08" y1="48.26" x2="139.7" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="139.7" y1="48.26" x2="139.7" y2="38.1" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$48" class="0">
 <segment>
-<portref moduleinst="HV_PCB" port="TEMP_SENSE"/>
-<wire x1="132.08" y1="50.8" x2="142.24" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="142.24" y1="50.8" x2="142.24" y2="35.56" width="0.1524" layer="91"/>
 <portref moduleinst="CUR_SENSE" port="TEMP"/>
 <wire x1="142.24" y1="35.56" x2="139.7" y2="35.56" width="0.1524" layer="91"/>
+<portref moduleinst="HV_PCB" port="TEMP_SENSE"/>
+<wire x1="132.08" y1="50.8" x2="137.16" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="50.8" x2="142.24" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="45.72" x2="142.24" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$49" class="0">
 <segment>
-<portref moduleinst="HV_PCB" port="CUR_SENSE"/>
-<wire x1="132.08" y1="53.34" x2="144.78" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="53.34" x2="144.78" y2="33.02" width="0.1524" layer="91"/>
 <portref moduleinst="CUR_SENSE" port="CUR"/>
 <wire x1="144.78" y1="33.02" x2="139.7" y2="33.02" width="0.1524" layer="91"/>
+<portref moduleinst="HV_PCB" port="CUR_SENSE"/>
+<wire x1="132.08" y1="53.34" x2="137.16" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="53.34" x2="144.78" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="45.72" x2="144.78" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$50" class="0">
 <segment>
 <portref moduleinst="CUR_SENSE" port="5V"/>
 <wire x1="139.7" y1="30.48" x2="147.32" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="147.32" y1="30.48" x2="147.32" y2="55.88" width="0.1524" layer="91"/>
 <portref moduleinst="HV_PCB" port="CUR_5V"/>
-<wire x1="147.32" y1="55.88" x2="132.08" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="55.88" x2="137.16" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="55.88" x2="147.32" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="45.72" x2="147.32" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$51" class="0">
@@ -1978,6 +1979,30 @@ Blue: VSense, TSense connections</text>
 <portref moduleinst="ENERGY_METER_BOX" port="12V+"/>
 <pinref part="SL3" gate="G$1" pin="2"/>
 <wire x1="177.8" y1="109.22" x2="177.8" y2="111.76" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$53" class="0">
+<segment>
+<pinref part="INTERLOCK" gate="SPST" pin="S"/>
+<wire x1="233.68" y1="114.3" x2="233.68" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="HVD_INTERLOCK" gate="SPST" pin="P"/>
+<wire x1="233.68" y1="114.3" x2="251.46" y2="114.3" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$54" class="0">
+<segment>
+<portref moduleinst="AMS_CONTROL" port="BMS_OK"/>
+<portref moduleinst="HV_PCB" port="BMS_OK"/>
+<wire x1="137.16" y1="63.5" x2="132.08" y2="63.5" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$47" class="0">
+<segment>
+<portref moduleinst="HV_PCB" port="CUR_GND"/>
+<wire x1="132.08" y1="48.26" x2="137.16" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="48.26" x2="139.7" y2="45.72" width="0.1524" layer="91"/>
+<portref moduleinst="CUR_SENSE" port="GND"/>
+<wire x1="139.7" y1="45.72" x2="139.7" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
