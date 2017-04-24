@@ -292,6 +292,31 @@ Precharger</text>
 <text x="-5.08" y="1.27" size="1.27" layer="95">&gt;Name</text>
 <text x="2.54" y="1.27" size="1.27" layer="96">&gt;Value</text>
 </symbol>
+<symbol name="LED">
+<wire x1="5.08" y1="3.81" x2="5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="1.27" width="0.254" layer="94"/>
+<wire x1="3.302" y1="0.508" x2="4.699" y2="-0.889" width="0.1524" layer="94"/>
+<wire x1="4.445" y1="0.635" x2="5.842" y2="-0.762" width="0.1524" layer="94"/>
+<text x="-0.508" y="6.731" size="1.778" layer="95">&gt;NAME</text>
+<text x="-0.508" y="4.445" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="C" x="7.62" y="2.54" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="A" x="0" y="2.54" visible="off" length="short" direction="pas"/>
+<polygon width="0.1524" layer="94">
+<vertex x="4.699" y="-0.889"/>
+<vertex x="3.81" y="-0.508"/>
+<vertex x="4.318" y="0"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="5.842" y="-0.762"/>
+<vertex x="4.953" y="-0.381"/>
+<vertex x="5.461" y="0.127"/>
+</polygon>
+<polygon width="0.254" layer="94">
+<vertex x="2.54" y="3.81"/>
+<vertex x="2.54" y="1.27"/>
+<vertex x="5.08" y="2.54"/>
+</polygon>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="BATTERY_1_CELL" prefix="G">
@@ -423,6 +448,21 @@ Source: Sonnenschein</description>
 <description>Generic Fuse</description>
 <gates>
 <gate name="G$1" symbol="FUSE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="">
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LED" prefix="LED">
+<description>Generic LED</description>
+<gates>
+<gate name="G$1" symbol="LED" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -721,6 +761,8 @@ Contact Amperage: 8A at 30VDC
 <part name="GND11" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="GLV_SYSTEMS3" library="HyTechSymbols" deviceset="VIN" device="" value="VCC"/>
 <part name="IMPERIUM_INTERLOCK" library="HyTechSymbols" deviceset="SWITCH_SPST" device="" value="Normally Open"/>
+<part name="TSEL" library="HyTechSymbols" deviceset="LED" device=""/>
+<part name="GND12" library="HyTechSymbols" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -733,7 +775,7 @@ Battery Pack</text>
 <wire x1="0" y1="0" x2="0" y2="81.28" width="0.762" layer="97"/>
 <text x="-2.54" y="2.54" size="5.08" layer="97" rot="R90">Accumulator Container</text>
 <text x="157.48" y="2.54" size="1.778" layer="97" rot="R90">To Motor Controller</text>
-<text x="132.08" y="48.26" size="1.778" layer="97" rot="R180">Insulation Monitoring Device</text>
+<text x="132.08" y="45.72" size="1.778" layer="97" rot="R180">Insulation Monitoring Device</text>
 <text x="149.86" y="102.87" size="1.778" layer="95" rot="MR180" align="top-left">AMS OK signal</text>
 <text x="149.86" y="125.73" size="1.778" layer="95" rot="MR180" align="top-left">Software latch signal</text>
 <text x="129.54" y="151.13" size="1.778" layer="95" rot="MR180" align="top-left">Software latch signal</text>
@@ -750,8 +792,8 @@ Battery Pack</text>
 <instance part="AMS_SOFTWARE_LATCH" gate="G$1" x="139.7" y="127" rot="R180"/>
 <instance part="AMS_RELAY_DRIVE" gate="G$1" x="139.7" y="104.14" rot="R180"/>
 <instance part="IMD_SOFTWARE_LATCH" gate="G$1" x="119.38" y="152.4" rot="R180"/>
-<instance part="U$2" gate="G$1" x="147.32" y="73.66" rot="R180"/>
-<instance part="GND2" gate="1" x="88.9" y="50.8" rot="R270"/>
+<instance part="U$2" gate="G$1" x="147.32" y="71.12" rot="R180"/>
+<instance part="GND2" gate="1" x="88.9" y="48.26" rot="R270"/>
 <instance part="COCKPIT_BRB" gate="SPST" x="111.76" y="91.44" rot="MR270"/>
 <instance part="INERTIA" gate="SPST" x="22.86" y="91.44" rot="MR270"/>
 <instance part="BOTS" gate="SPST" x="91.44" y="91.44" rot="MR270"/>
@@ -781,8 +823,8 @@ Battery Pack</text>
 <instance part="GND7" gate="1" x="58.42" y="35.56" rot="R270"/>
 <instance part="GND8" gate="1" x="60.96" y="60.96" rot="R180"/>
 <instance part="GND3" gate="1" x="93.98" y="134.62" rot="MR180"/>
-<instance part="GLV_SYSTEMS1" gate="G$1" x="88.9" y="55.88" rot="R90"/>
-<instance part="GND9" gate="1" x="88.9" y="63.5" rot="R270"/>
+<instance part="GLV_SYSTEMS1" gate="G$1" x="88.9" y="53.34" rot="R90"/>
+<instance part="GND9" gate="1" x="88.9" y="60.96" rot="R270"/>
 <instance part="SOFTWARE_SHUTOFF" gate="SPST" x="71.12" y="91.44" rot="MR270"/>
 <instance part="BSPD" gate="SPST" x="43.18" y="91.44" rot="MR270"/>
 <instance part="GND10" gate="1" x="114.3" y="132.08" rot="MR180"/>
@@ -794,6 +836,8 @@ Battery Pack</text>
 <instance part="GND11" gate="1" x="175.26" y="154.94" rot="R180"/>
 <instance part="GLV_SYSTEMS3" gate="G$1" x="152.4" y="144.78" rot="R90"/>
 <instance part="IMPERIUM_INTERLOCK" gate="SPST" x="30.48" y="76.2" rot="R270"/>
+<instance part="TSEL" gate="G$1" x="132.08" y="83.82"/>
+<instance part="GND12" gate="1" x="144.78" y="86.36" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -850,20 +894,20 @@ Battery Pack</text>
 <wire x1="93.98" y1="132.08" x2="93.98" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="91.44" y1="63.5" x2="91.44" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="P3-GND"/>
 <wire x1="91.44" y1="60.96" x2="91.44" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="58.42" x2="93.98" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="P3-GND"/>
+<wire x1="91.44" y1="58.42" x2="91.44" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="55.88" x2="93.98" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="GND9" gate="1" pin="GND"/>
 <pinref part="U$2" gate="G$1" pin="P4-GND"/>
-<wire x1="93.98" y1="60.96" x2="91.44" y2="60.96" width="0.1524" layer="91"/>
-<junction x="91.44" y="60.96"/>
+<wire x1="93.98" y1="58.42" x2="91.44" y2="58.42" width="0.1524" layer="91"/>
+<junction x="91.44" y="58.42"/>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="P1-GND"/>
 <pinref part="GND2" gate="1" pin="GND"/>
-<wire x1="93.98" y1="53.34" x2="91.44" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="53.34" x2="91.44" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="50.8" x2="91.44" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="50.8" x2="91.44" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND10" gate="1" pin="GND"/>
@@ -874,6 +918,11 @@ Battery Pack</text>
 <pinref part="IMD_RELAY_DRIVE" gate="G$1" pin="LED-"/>
 <pinref part="GND11" gate="1" pin="GND"/>
 <wire x1="175.26" y1="152.4" x2="175.26" y2="149.86" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="TSEL" gate="G$1" pin="C"/>
+<pinref part="GND12" gate="1" pin="GND"/>
+<wire x1="142.24" y1="86.36" x2="139.7" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -945,7 +994,7 @@ Battery Pack</text>
 <segment>
 <pinref part="U$2" gate="G$1" pin="P2-VIN"/>
 <pinref part="GLV_SYSTEMS1" gate="G$1" pin="VIN"/>
-<wire x1="88.9" y1="55.88" x2="93.98" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="53.34" x2="93.98" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="AMS_RELAY_DRIVE" gate="G$1" pin="IO1"/>
@@ -999,6 +1048,11 @@ Battery Pack</text>
 <wire x1="35.56" y1="73.66" x2="38.1" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="73.66" x2="38.1" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="76.2" x2="66.04" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="76.2" x2="129.54" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="76.2" x2="129.54" y2="86.36" width="0.1524" layer="91"/>
+<junction x="66.04" y="76.2"/>
+<pinref part="TSEL" gate="G$1" pin="A"/>
+<wire x1="129.54" y1="86.36" x2="132.08" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ISO-" class="0">
@@ -1010,7 +1064,7 @@ Battery Pack</text>
 <pinref part="HVD" gate="G$1" pin="2"/>
 <pinref part="U$2" gate="G$1" pin="XLA-(HV-)"/>
 <wire x1="142.24" y1="10.16" x2="132.08" y2="10.16" width="0.3048" layer="91"/>
-<wire x1="142.24" y1="45.72" x2="142.24" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="43.18" x2="142.24" y2="10.16" width="0.1524" layer="91"/>
 <junction x="142.24" y="10.16"/>
 </segment>
 </net>
@@ -1095,7 +1149,7 @@ Battery Pack</text>
 <wire x1="142.24" y1="7.62" x2="139.7" y2="7.62" width="0.3048" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="XLA+(HV+)"/>
 <wire x1="139.7" y1="7.62" x2="7.62" y2="7.62" width="0.3048" layer="91"/>
-<wire x1="139.7" y1="45.72" x2="139.7" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="43.18" x2="139.7" y2="7.62" width="0.1524" layer="91"/>
 <junction x="139.7" y="7.62"/>
 </segment>
 </net>
@@ -1181,10 +1235,10 @@ Battery Pack</text>
 <net name="N$4" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="P8-OKHS"/>
-<wire x1="93.98" y1="71.12" x2="91.44" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="71.12" x2="91.44" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="76.2" x2="175.26" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="175.26" y1="76.2" x2="175.26" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="68.58" x2="91.44" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="68.58" x2="91.44" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="73.66" x2="175.26" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="73.66" x2="175.26" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="IMD_RELAY_DRIVE" gate="G$1" pin="LED+"/>
 </segment>
 </net>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="8.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.05" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -176,6 +176,18 @@
 <packages>
 </packages>
 <symbols>
+<symbol name="M02">
+<wire x1="1.27" y1="-5.08" x2="-5.08" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="-1.27" y1="0" x2="0" y2="0" width="0.6096" layer="94"/>
+<wire x1="-1.27" y1="-2.54" x2="0" y2="-2.54" width="0.6096" layer="94"/>
+<wire x1="-5.08" y1="2.54" x2="-5.08" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="-5.08" x2="1.27" y2="2.54" width="0.4064" layer="94"/>
+<wire x1="-5.08" y1="2.54" x2="1.27" y2="2.54" width="0.4064" layer="94"/>
+<text x="-5.08" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-5.08" y="3.302" size="1.778" layer="95">&gt;NAME</text>
+<pin name="1" x="5.08" y="-2.54" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="2" x="5.08" y="0" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+</symbol>
 <symbol name="M04">
 <wire x1="1.27" y1="-5.08" x2="-5.08" y2="-5.08" width="0.4064" layer="94"/>
 <wire x1="-1.27" y1="2.54" x2="0" y2="2.54" width="0.6096" layer="94"/>
@@ -191,50 +203,6 @@
 <pin name="2" x="5.08" y="0" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="3" x="5.08" y="2.54" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="4" x="5.08" y="5.08" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-</symbol>
-<symbol name="M02">
-<wire x1="1.27" y1="-5.08" x2="-5.08" y2="-5.08" width="0.4064" layer="94"/>
-<wire x1="-1.27" y1="0" x2="0" y2="0" width="0.6096" layer="94"/>
-<wire x1="-1.27" y1="-2.54" x2="0" y2="-2.54" width="0.6096" layer="94"/>
-<wire x1="-5.08" y1="2.54" x2="-5.08" y2="-5.08" width="0.4064" layer="94"/>
-<wire x1="1.27" y1="-5.08" x2="1.27" y2="2.54" width="0.4064" layer="94"/>
-<wire x1="-5.08" y1="2.54" x2="1.27" y2="2.54" width="0.4064" layer="94"/>
-<text x="-5.08" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
-<text x="-5.08" y="3.302" size="1.778" layer="95">&gt;NAME</text>
-<pin name="1" x="5.08" y="-2.54" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="2" x="5.08" y="0" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-</symbol>
-<symbol name="M12">
-<wire x1="1.27" y1="-17.78" x2="-5.08" y2="-17.78" width="0.4064" layer="94"/>
-<wire x1="-1.27" y1="-10.16" x2="0" y2="-10.16" width="0.6096" layer="94"/>
-<wire x1="-1.27" y1="-12.7" x2="0" y2="-12.7" width="0.6096" layer="94"/>
-<wire x1="-1.27" y1="-15.24" x2="0" y2="-15.24" width="0.6096" layer="94"/>
-<wire x1="-5.08" y1="15.24" x2="-5.08" y2="-17.78" width="0.4064" layer="94"/>
-<wire x1="1.27" y1="-17.78" x2="1.27" y2="15.24" width="0.4064" layer="94"/>
-<wire x1="-5.08" y1="15.24" x2="1.27" y2="15.24" width="0.4064" layer="94"/>
-<wire x1="-1.27" y1="-5.08" x2="0" y2="-5.08" width="0.6096" layer="94"/>
-<wire x1="-1.27" y1="-7.62" x2="0" y2="-7.62" width="0.6096" layer="94"/>
-<wire x1="-1.27" y1="-2.54" x2="0" y2="-2.54" width="0.6096" layer="94"/>
-<wire x1="-1.27" y1="0" x2="0" y2="0" width="0.6096" layer="94"/>
-<wire x1="-1.27" y1="2.54" x2="0" y2="2.54" width="0.6096" layer="94"/>
-<wire x1="-1.27" y1="5.08" x2="0" y2="5.08" width="0.6096" layer="94"/>
-<wire x1="-1.27" y1="7.62" x2="0" y2="7.62" width="0.6096" layer="94"/>
-<wire x1="-1.27" y1="10.16" x2="0" y2="10.16" width="0.6096" layer="94"/>
-<wire x1="-1.27" y1="12.7" x2="0" y2="12.7" width="0.6096" layer="94"/>
-<text x="-5.08" y="-20.32" size="1.778" layer="96">&gt;VALUE</text>
-<text x="-5.08" y="16.002" size="1.778" layer="95">&gt;NAME</text>
-<pin name="1" x="5.08" y="-15.24" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="2" x="5.08" y="-12.7" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="3" x="5.08" y="-10.16" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="4" x="5.08" y="-7.62" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="5" x="5.08" y="-5.08" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="6" x="5.08" y="-2.54" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="7" x="5.08" y="0" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="8" x="5.08" y="2.54" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="9" x="5.08" y="5.08" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="10" x="5.08" y="7.62" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="11" x="5.08" y="10.16" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="12" x="5.08" y="12.7" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 </symbol>
 <symbol name="M08">
 <wire x1="1.27" y1="-10.16" x2="-5.08" y2="-10.16" width="0.4064" layer="94"/>
@@ -282,21 +250,6 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="M04" prefix="SL" uservalue="yes">
-<description>Generic 4-pin connector</description>
-<gates>
-<gate name="G$1" symbol="M04" x="-2.54" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name="">
-<attribute name="_EXTERNAL_" value="" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="M02" prefix="SL" uservalue="yes">
 <description>Generic 2-pin connector</description>
 <gates>
@@ -312,10 +265,10 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="M12" prefix="SL" uservalue="yes">
-<description>Generic 12-pin connector</description>
+<deviceset name="M04" prefix="SL" uservalue="yes">
+<description>Generic 4-pin connector</description>
 <gates>
-<gate name="G$1" symbol="M12" x="-2.54" y="0"/>
+<gate name="G$1" symbol="M04" x="-2.54" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -368,244 +321,1051 @@
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
+<modules>
+<module name="ACCUMULATOR" prefix="" dx="30.48" dy="55.88">
+<ports>
+<port name="SHUTDOWN6" side="right" coord="25.4" direction="in"/>
+<port name="CHARGE_ENABLE" side="right" coord="22.86" direction="out"/>
+<port name="TSAL+" side="right" coord="20.32" direction="out"/>
+<port name="TSVP+" side="right" coord="17.78" direction="out"/>
+<port name="BSPD_CURRENT" side="right" coord="15.24" direction="out"/>
+<port name="BMS_OK" side="right" coord="12.7" direction="out"/>
+<port name="OKHS_OUT" side="right" coord="10.16" direction="out"/>
+<port name="CANL_MC" side="right" coord="7.62" direction="io"/>
+<port name="CANH_MC" side="right" coord="5.08" direction="io"/>
+<port name="CANL" side="right" coord="-12.7" direction="io"/>
+<port name="CANH" side="right" coord="-15.24" direction="io"/>
+<port name="12V+" side="right" coord="-7.62" direction="in"/>
+<port name="GND" side="right" coord="-10.16" direction="out"/>
+</ports>
+<variantdefs>
+</variantdefs>
 <parts>
-<part name="LEFTPANEL" library="HyTechSymbols" deviceset="M04" device=""/>
-<part name="TSAL" library="HyTechSymbols" deviceset="M02" device=""/>
-<part name="SL4" library="HyTechSymbols" deviceset="M12" device=""/>
-<part name="SL5" library="HyTechSymbols" deviceset="M08" device=""/>
-<part name="BRAKES" library="HyTechSymbols" deviceset="M02" device=""/>
-<part name="INVERTER" library="HyTechSymbols" deviceset="M04" device=""/>
-<part name="BATTERY" library="HyTechSymbols" deviceset="M02" device=""/>
-<part name="ENERGYMETER" library="HyTechSymbols" deviceset="M04" device=""/>
-<part name="FRONT" library="HyTechSymbols" deviceset="M04" device=""/>
-<part name="RIGHTPANEL" library="HyTechSymbols" deviceset="M06" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
-<instance part="LEFTPANEL" gate="G$1" x="116.84" y="215.9" rot="R270"/>
-<instance part="TSAL" gate="G$1" x="203.2" y="147.32" rot="R180"/>
-<instance part="SL4" gate="G$1" x="55.88" y="134.62" rot="MR180"/>
-<instance part="SL5" gate="G$1" x="55.88" y="86.36" rot="MR180"/>
-<instance part="BRAKES" gate="G$1" x="-20.32" y="17.78" rot="MR180"/>
-<instance part="INVERTER" gate="G$1" x="-20.32" y="38.1" rot="MR180"/>
-<instance part="BATTERY" gate="G$1" x="180.34" y="33.02" rot="R180"/>
-<instance part="ENERGYMETER" gate="G$1" x="-20.32" y="60.96" rot="MR180"/>
-<instance part="FRONT" gate="G$1" x="203.2" y="78.74" rot="R180"/>
-<instance part="RIGHTPANEL" gate="G$1" x="127" y="-35.56" rot="MR90"/>
 </instances>
 <busses>
 </busses>
 <nets>
-<net name="12VSUPPLY" class="0">
+</nets>
+</sheet>
+</sheets>
+</module>
+<module name="PCU" prefix="" dx="30.48" dy="60.96">
+<ports>
+<port name="OKHS" side="right" coord="5.08" direction="in"/>
+<port name="BMS_OK" side="right" coord="2.54" direction="in"/>
+<port name="SHUTDOWN" side="right" coord="0" direction="out"/>
+<port name="BRAKE_LIGHT" side="right" coord="-2.54" direction="out"/>
+<port name="INVERTER_SUPPLY" side="right" coord="-5.08" direction="out"/>
+<port name="12V+" side="right" coord="-7.62" direction="in"/>
+<port name="12V+1" side="right" coord="-20.32" direction="out"/>
+<port name="GND1" side="right" coord="-22.86" direction="in"/>
+<port name="CANL1" side="right" coord="-25.4" direction="io"/>
+<port name="CANH1" side="right" coord="-27.94" direction="io"/>
+<port name="GND2" side="right" coord="25.4" direction="in"/>
+<port name="12V+2" side="right" coord="27.94" direction="out"/>
+<port name="CANL2" side="right" coord="22.86" direction="io"/>
+<port name="CANH2" side="right" coord="20.32" direction="io"/>
+<port name="GPIO" side="right" coord="-10.16" direction="io"/>
+</ports>
+<variantdefs>
+</variantdefs>
+<parts>
+</parts>
+<sheets>
+<sheet>
+<plain>
+</plain>
+<instances>
+</instances>
+<busses>
+</busses>
+<nets>
+</nets>
+</sheet>
+</sheets>
+</module>
+<module name="TCU" prefix="" dx="30.48" dy="35.56">
+<ports>
+<port name="CANH1" side="left" coord="-5.08" direction="io"/>
+<port name="CANL1" side="left" coord="-2.54" direction="io"/>
+<port name="12V+1" side="left" coord="2.54" direction="in"/>
+<port name="GND1" side="left" coord="0" direction="out"/>
+<port name="SHUTDOWN5" side="left" coord="-12.7" direction="out"/>
+<port name="BSPD_CUR_FAULT" side="left" coord="-15.24" direction="in"/>
+<port name="SHUTDOWN3" side="left" coord="15.24" direction="in"/>
+</ports>
+<variantdefs>
+</variantdefs>
+<parts>
+</parts>
+<sheets>
+<sheet>
+<plain>
+</plain>
+<instances>
+</instances>
+<busses>
+</busses>
+<nets>
+</nets>
+</sheet>
+</sheets>
+</module>
+<module name="DCU" prefix="" dx="30.48" dy="20.32">
+<ports>
+<port name="GND1" side="left" coord="-2.54" direction="out"/>
+<port name="12V+2" side="right" coord="0" direction="out"/>
+<port name="12V+1" side="left" coord="0" direction="in"/>
+<port name="GND2" side="right" coord="-2.54" direction="in"/>
+<port name="CANL1" side="left" coord="-5.08" direction="io"/>
+<port name="CANH1" side="left" coord="-7.62" direction="io"/>
+<port name="CANL2" side="right" coord="-5.08" direction="io"/>
+<port name="CANH2" side="right" coord="-7.62" direction="io"/>
+</ports>
+<variantdefs>
+</variantdefs>
+<parts>
+</parts>
+<sheets>
+<sheet>
+<plain>
+</plain>
+<instances>
+</instances>
+<busses>
+</busses>
+<nets>
+</nets>
+</sheet>
+</sheets>
+</module>
+<module name="COOLING" prefix="" dx="30.48" dy="40.64">
+<ports>
+<port name="GND1" side="right" coord="-12.7" direction="out"/>
+<port name="12V+1" side="right" coord="-10.16" direction="in"/>
+<port name="CANH1" side="right" coord="-17.78" direction="io"/>
+<port name="CANL1" side="right" coord="-15.24" direction="io"/>
+<port name="CANL2" side="right" coord="7.62" direction="io"/>
+<port name="CANH2" side="right" coord="5.08" direction="io"/>
+<port name="12V+2" side="right" coord="12.7" direction="out"/>
+<port name="GND2" side="right" coord="10.16" direction="in"/>
+<port name="12V+COOLING" side="right" coord="-2.54" direction="in"/>
+</ports>
+<variantdefs>
+</variantdefs>
+<parts>
+</parts>
+<sheets>
+<sheet>
+<plain>
+</plain>
+<instances>
+</instances>
+<busses>
+</busses>
+<nets>
+</nets>
+</sheet>
+</sheets>
+</module>
+<module name="INVERTER" prefix="" dx="30.48" dy="40.64">
+<ports>
+<port name="CANL" side="right" coord="-7.62" direction="io"/>
+<port name="CANH" side="right" coord="-10.16" direction="io"/>
+<port name="12V+" side="right" coord="-5.08" direction="in"/>
+<port name="BRAKE_LIGHT" side="right" coord="-2.54" direction="in"/>
+</ports>
+<variantdefs>
+</variantdefs>
+<parts>
+</parts>
+<sheets>
+<sheet>
+<plain>
+</plain>
+<instances>
+</instances>
+<busses>
+</busses>
+<nets>
+</nets>
+</sheet>
+</sheets>
+</module>
+<module name="LEFT_PANEL" prefix="" dx="30.48" dy="35.56">
+<ports>
+<port name="TSVP+" side="left" coord="5.08" direction="in"/>
+<port name="12V+COOLING_UNSWITCHED" side="left" coord="7.62" direction="in"/>
+<port name="12V+UNSWITCHED" side="left" coord="10.16" direction="in"/>
+<port name="12V+" side="left" coord="15.24" direction="out"/>
+<port name="12V+COOLING" side="left" coord="12.7" direction="out"/>
+</ports>
+<variantdefs>
+</variantdefs>
+<parts>
+</parts>
+<sheets>
+<sheet>
+<plain>
+</plain>
+<instances>
+</instances>
+<busses>
+</busses>
+<nets>
+</nets>
+</sheet>
+</sheets>
+</module>
+<module name="RIGHT_PANEL_BOTTOM" prefix="" dx="35.56" dy="45.72">
+<ports>
+<port name="SHUTDOWN5" side="left" coord="12.7" direction="in"/>
+<port name="SHUTDOWN6" side="left" coord="10.16" direction="out"/>
+<port name="CHARGE_ENABLE" side="left" coord="7.62" direction="in"/>
+<port name="GPIO" side="left" coord="5.08" direction="io"/>
+<port name="12V+COOLING_UNSWITCHED" side="left" coord="15.24" direction="out"/>
+<port name="12V+UNSWITCHED" side="left" coord="17.78" direction="out"/>
+</ports>
+<variantdefs>
+</variantdefs>
+<parts>
+</parts>
+<sheets>
+<sheet>
+<plain>
+</plain>
+<instances>
+</instances>
+<busses>
+</busses>
+<nets>
+</nets>
+</sheet>
+</sheets>
+</module>
+<module name="RIGHT_PANEL_TOP" prefix="" dx="35.56" dy="40.64">
+<ports>
+<port name="TSVP+" side="left" coord="7.62" direction="in"/>
+<port name="12V+COOLING_UNSWITCHED" side="left" coord="15.24" direction="out"/>
+<port name="12V+UNSWITCHED" side="left" coord="17.78" direction="out"/>
+<port name="TSAL" side="left" coord="5.08" direction="in"/>
+<port name="12V+COOLING_UNSWITCHED_IN" side="left" coord="10.16" direction="in"/>
+<port name="12V+UNSWITCHED_IN" side="left" coord="12.7" direction="in"/>
+</ports>
+<variantdefs>
+</variantdefs>
+<parts>
+</parts>
+<sheets>
+<sheet>
+<plain>
+</plain>
+<instances>
+</instances>
+<busses>
+</busses>
+<nets>
+</nets>
+</sheet>
+</sheets>
+</module>
+</modules>
+<parts>
+<part name="BUTTONS" library="HyTechSymbols" deviceset="M02" device=""/>
+<part name="SL13" library="HyTechSymbols" deviceset="M04" device=""/>
+<part name="SL14" library="HyTechSymbols" deviceset="M04" device=""/>
+<part name="SL3" library="HyTechSymbols" deviceset="M08" device=""/>
+<part name="SL4" library="HyTechSymbols" deviceset="M08" device=""/>
+<part name="SL7" library="HyTechSymbols" deviceset="M02" device=""/>
+<part name="SL8" library="HyTechSymbols" deviceset="M02" device=""/>
+<part name="SL2" library="HyTechSymbols" deviceset="M08" device=""/>
+<part name="SL1" library="HyTechSymbols" deviceset="M08" device=""/>
+<part name="SL6" library="HyTechSymbols" deviceset="M06" device=""/>
+<part name="SL9" library="HyTechSymbols" deviceset="M06" device=""/>
+</parts>
+<sheets>
+<sheet>
+<plain>
+</plain>
+<moduleinsts>
+<moduleinst name="ACCUMULATOR1" module="ACCUMULATOR" x="5.08" y="129.54"/>
+<moduleinst name="PCU1" module="PCU" x="5.08" y="200.66"/>
+<moduleinst name="TCU1" module="TCU" x="408.94" y="22.86"/>
+<moduleinst name="DCU1" module="DCU" x="320.04" y="60.96"/>
+<moduleinst name="COOLING1" module="COOLING" x="5.08" y="55.88"/>
+<moduleinst name="INVERTER1" module="INVERTER" x="-119.38" y="109.22"/>
+<moduleinst name="LEFT_PANEL1" module="LEFT_PANEL" x="185.42" y="332.74"/>
+<moduleinst name="RIGHT_PANEL_BOTTOM1" module="RIGHT_PANEL_BOTTOM" x="185.42" y="-66.04"/>
+<moduleinst name="RIGHT_PANEL_TOP1" module="RIGHT_PANEL_TOP" x="238.76" y="-35.56"/>
+</moduleinsts>
+<instances>
+<instance part="BUTTONS" gate="G$1" x="302.26" y="78.74" rot="R180"/>
+<instance part="SL13" gate="G$1" x="71.12" y="289.56"/>
+<instance part="SL14" gate="G$1" x="58.42" y="289.56" rot="MR0"/>
+<instance part="SL3" gate="G$1" x="152.4" y="5.08" rot="R90"/>
+<instance part="SL4" gate="G$1" x="152.4" y="-7.62" rot="MR270"/>
+<instance part="SL7" gate="G$1" x="76.2" y="55.88"/>
+<instance part="SL8" gate="G$1" x="63.5" y="55.88" rot="MR0"/>
+<instance part="SL2" gate="G$1" x="-45.72" y="200.66" rot="MR90"/>
+<instance part="SL1" gate="G$1" x="-45.72" y="187.96" rot="R270"/>
+<instance part="SL6" gate="G$1" x="154.94" y="317.5" rot="R270"/>
+<instance part="SL9" gate="G$1" x="154.94" y="330.2" rot="MR90"/>
+</instances>
+<busses>
+<bus name="B$1">
 <segment>
-<pinref part="LEFTPANEL" gate="G$1" pin="1"/>
-<label x="114.3" y="210.82" size="1.778" layer="95" rot="R270"/>
-<pinref part="SL5" gate="G$1" pin="1"/>
-<wire x1="60.96" y1="93.98" x2="101.6" y2="93.98" width="0.1524" layer="91"/>
-<label x="63.5" y="93.98" size="1.778" layer="95"/>
-<wire x1="101.6" y1="43.18" x2="101.6" y2="93.98" width="0.1524" layer="91"/>
-<pinref part="ENERGYMETER" gate="G$1" pin="1"/>
-<wire x1="-15.24" y1="63.5" x2="50.8" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="63.5" x2="71.12" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="71.12" y1="43.18" x2="101.6" y2="43.18" width="0.1524" layer="91"/>
-<label x="-12.7" y="63.5" size="1.778" layer="95"/>
-<wire x1="114.3" y1="210.82" x2="114.3" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="93.98" x2="101.6" y2="93.98" width="0.1524" layer="91"/>
-<junction x="101.6" y="93.98"/>
+<wire x1="114.3" y1="162.56" x2="162.56" y2="162.56" width="1.27" layer="92"/>
+</segment>
+</bus>
+<bus name="B$2">
+<segment>
+<wire x1="43.18" y1="208.28" x2="43.18" y2="187.96" width="1.27" layer="92"/>
+</segment>
+</bus>
+<bus name="B$3">
+<segment>
+<wire x1="119.38" y1="279.4" x2="162.56" y2="279.4" width="1.27" layer="92"/>
+</segment>
+</bus>
+<bus name="B$4">
+<segment>
+<wire x1="137.16" y1="299.72" x2="162.56" y2="299.72" width="1.27" layer="92"/>
+</segment>
+</bus>
+<bus name="B$5">
+<segment>
+<wire x1="43.18" y1="297.18" x2="43.18" y2="284.48" width="1.27" layer="92"/>
+</segment>
+</bus>
+<bus name="B$6">
+<segment>
+<wire x1="43.18" y1="157.48" x2="43.18" y2="132.08" width="1.27" layer="92"/>
+</segment>
+</bus>
+<bus name="B$8">
+<segment>
+<wire x1="127" y1="88.9" x2="162.56" y2="88.9" width="1.27" layer="92"/>
+</segment>
+</bus>
+<bus name="B$9">
+<segment>
+<wire x1="139.7" y1="27.94" x2="162.56" y2="27.94" width="1.27" layer="92"/>
+</segment>
+</bus>
+<bus name="B$10">
+<segment>
+<wire x1="43.18" y1="-91.44" x2="43.18" y2="-111.76" width="1.27" layer="92"/>
+</segment>
+</bus>
+<bus name="B$7">
+<segment>
+<wire x1="-55.88" y1="165.1" x2="-33.02" y2="165.1" width="1.27" layer="92"/>
+</segment>
+</bus>
+<bus name="B$11">
+<segment>
+<wire x1="-55.88" y1="27.94" x2="-33.02" y2="27.94" width="1.27" layer="92"/>
+</segment>
+</bus>
+<bus name="B$13">
+<segment>
+<wire x1="43.18" y1="274.32" x2="43.18" y2="254" width="1.27" layer="92"/>
+</segment>
+</bus>
+<bus name="B$14">
+<segment>
+<wire x1="106.68" y1="241.3" x2="162.56" y2="241.3" width="1.27" layer="92"/>
+</segment>
+</bus>
+<bus name="B$15">
+<segment>
+<wire x1="88.9" y1="71.12" x2="88.9" y2="35.56" width="1.27" layer="92"/>
+</segment>
+</bus>
+<bus name="B$16">
+<segment>
+<wire x1="43.18" y1="71.12" x2="43.18" y2="58.42" width="1.27" layer="92"/>
+</segment>
+</bus>
+<bus name="B$17">
+<segment>
+<wire x1="43.18" y1="55.88" x2="43.18" y2="50.8" width="1.27" layer="92"/>
+</segment>
+</bus>
+<bus name="B$18">
+<segment>
+<wire x1="43.18" y1="124.46" x2="43.18" y2="111.76" width="1.27" layer="92"/>
+</segment>
+</bus>
+<bus name="B$19">
+<segment>
+<wire x1="88.9" y1="111.76" x2="88.9" y2="157.48" width="1.27" layer="92"/>
+</segment>
+</bus>
+<bus name="B$20">
+<segment>
+<wire x1="353.06" y1="12.7" x2="353.06" y2="5.08" width="1.27" layer="92"/>
+</segment>
+</bus>
+<bus name="B$21">
+<segment>
+<wire x1="287.02" y1="-35.56" x2="307.34" y2="-35.56" width="1.27" layer="92"/>
+</segment>
+</bus>
+<bus name="B$22">
+<segment>
+<wire x1="287.02" y1="27.94" x2="302.26" y2="27.94" width="1.27" layer="92"/>
+</segment>
+</bus>
+<bus name="B$23">
+<segment>
+<wire x1="-20.32" y1="297.18" x2="-20.32" y2="284.48" width="1.27" layer="92"/>
+</segment>
+</bus>
+<bus name="B$24">
+<segment>
+<wire x1="-86.36" y1="241.3" x2="-73.66" y2="241.3" width="1.27" layer="92"/>
+</segment>
+</bus>
+<bus name="B$25">
+<segment>
+<wire x1="-83.82" y1="165.1" x2="-71.12" y2="165.1" width="1.27" layer="92"/>
+</segment>
+</bus>
+<bus name="B$26">
+<segment>
+<wire x1="43.18" y1="48.26" x2="43.18" y2="35.56" width="1.27" layer="92"/>
+</segment>
+</bus>
+<bus name="B$27">
+<segment>
+<wire x1="43.18" y1="182.88" x2="43.18" y2="170.18" width="1.27" layer="92"/>
+</segment>
+</bus>
+<bus name="B$28">
+<segment>
+<wire x1="88.9" y1="231.14" x2="88.9" y2="170.18" width="1.27" layer="92"/>
+</segment>
+</bus>
+<bus name="B$29">
+<segment>
+<wire x1="43.18" y1="231.14" x2="43.18" y2="218.44" width="1.27" layer="92"/>
+</segment>
+</bus>
+<bus name="B$30">
+<segment>
+<wire x1="88.9" y1="274.32" x2="88.9" y2="254" width="1.27" layer="92"/>
+</segment>
+</bus>
+<bus name="B$31">
+<segment>
+<wire x1="-55.88" y1="241.3" x2="-33.02" y2="241.3" width="1.27" layer="92"/>
+</segment>
+</bus>
+<bus name="B$32">
+<segment>
+<wire x1="88.9" y1="284.48" x2="88.9" y2="297.18" width="1.27" layer="92"/>
+</segment>
+</bus>
+<bus name="B$33">
+<segment>
+<wire x1="-55.88" y1="86.36" x2="-33.02" y2="86.36" width="1.27" layer="92"/>
+</segment>
+</bus>
+<bus name="B$34">
+<segment>
+<wire x1="88.9" y1="-91.44" x2="88.9" y2="-111.76" width="1.27" layer="92"/>
+</segment>
+</bus>
+<bus name="B$35">
+<segment>
+<wire x1="139.7" y1="-35.56" x2="162.56" y2="-35.56" width="1.27" layer="92"/>
+</segment>
+</bus>
+<bus name="B$36">
+<segment>
+<wire x1="195.58" y1="-15.24" x2="195.58" y2="-33.02" width="1.27" layer="92"/>
+</segment>
+</bus>
+<bus name="B$37">
+<segment>
+<wire x1="195.58" y1="-91.44" x2="195.58" y2="-111.76" width="1.27" layer="92"/>
+</segment>
+</bus>
+<bus name="B$12">
+<segment>
+<wire x1="-30.48" y1="-35.56" x2="-55.88" y2="-35.56" width="1.27" layer="92"/>
+</segment>
+</bus>
+<bus name="B$38">
+<segment>
+<wire x1="-73.66" y1="279.4" x2="-86.36" y2="279.4" width="1.27" layer="92"/>
+</segment>
+</bus>
+<bus name="B$39">
+<segment>
+<wire x1="-20.32" y1="274.32" x2="-20.32" y2="254" width="1.27" layer="92"/>
+</segment>
+</bus>
+<bus name="B$40">
+<segment>
+<wire x1="-20.32" y1="-91.44" x2="-20.32" y2="-111.76" width="1.27" layer="92"/>
+</segment>
+</bus>
+</busses>
+<nets>
+<net name="N$1" class="0">
+<segment>
+<portref moduleinst="PCU1" port="12V+1"/>
+<wire x1="25.4" y1="180.34" x2="124.46" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="180.34" x2="124.46" y2="45.72" width="0.1524" layer="91"/>
+<portref moduleinst="COOLING1" port="12V+1"/>
+<wire x1="25.4" y1="45.72" x2="124.46" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="GND" class="0">
+<net name="N$2" class="0">
 <segment>
-<pinref part="SL5" gate="G$1" pin="2"/>
-<wire x1="60.96" y1="91.44" x2="99.06" y2="91.44" width="0.1524" layer="91"/>
-<label x="63.5" y="91.44" size="1.778" layer="95"/>
-<pinref part="BATTERY" gate="G$1" pin="1"/>
-<pinref part="INVERTER" gate="G$1" pin="3"/>
-<wire x1="99.06" y1="35.56" x2="99.06" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="175.26" y1="35.56" x2="99.06" y2="35.56" width="0.1524" layer="91"/>
-<label x="-12.7" y="35.56" size="1.778" layer="95"/>
-<junction x="99.06" y="35.56"/>
-<wire x1="99.06" y1="35.56" x2="73.66" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="35.56" x2="30.48" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="ENERGYMETER" gate="G$1" pin="2"/>
-<wire x1="30.48" y1="35.56" x2="-15.24" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="-15.24" y1="60.96" x2="48.26" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="60.96" x2="73.66" y2="35.56" width="0.1524" layer="91"/>
-<junction x="73.66" y="35.56"/>
-<wire x1="12.7" y1="17.78" x2="30.48" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="BRAKES" gate="G$1" pin="2"/>
-<wire x1="-15.24" y1="17.78" x2="12.7" y2="17.78" width="0.1524" layer="91"/>
-<label x="-12.7" y="17.78" size="1.778" layer="95"/>
-<junction x="30.48" y="35.56"/>
-<label x="-12.7" y="60.96" size="1.778" layer="95"/>
-<label x="167.64" y="35.56" size="1.778" layer="95"/>
+<portref moduleinst="COOLING1" port="CANH1"/>
+<wire x1="25.4" y1="38.1" x2="116.84" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="38.1" x2="116.84" y2="172.72" width="0.1524" layer="91"/>
+<portref moduleinst="PCU1" port="CANH1"/>
+<wire x1="116.84" y1="172.72" x2="25.4" y2="172.72" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="INVERTER_SUPPLY" class="0">
+<net name="N$3" class="0">
 <segment>
-<pinref part="SL5" gate="G$1" pin="4"/>
-<wire x1="60.96" y1="86.36" x2="104.14" y2="86.36" width="0.1524" layer="91"/>
-<label x="63.5" y="86.36" size="1.778" layer="95"/>
-<wire x1="104.14" y1="86.36" x2="104.14" y2="33.02" width="0.1524" layer="91"/>
-<pinref part="INVERTER" gate="G$1" pin="4"/>
-<wire x1="104.14" y1="33.02" x2="-15.24" y2="33.02" width="0.1524" layer="91"/>
-<label x="-12.7" y="33.02" size="1.778" layer="95"/>
+<portref moduleinst="PCU1" port="CANL1"/>
+<wire x1="25.4" y1="175.26" x2="119.38" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="175.26" x2="119.38" y2="40.64" width="0.1524" layer="91"/>
+<portref moduleinst="COOLING1" port="CANL1"/>
+<wire x1="119.38" y1="40.64" x2="25.4" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="BRAKE_LIGHT" class="0">
+<net name="N$4" class="0">
 <segment>
-<pinref part="SL5" gate="G$1" pin="5"/>
-<wire x1="60.96" y1="83.82" x2="96.52" y2="83.82" width="0.1524" layer="91"/>
-<label x="63.5" y="83.82" size="1.778" layer="95"/>
-<label x="-12.7" y="20.32" size="1.778" layer="95"/>
-<pinref part="BRAKES" gate="G$1" pin="1"/>
-<wire x1="96.52" y1="30.48" x2="96.52" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="-15.24" y1="20.32" x2="10.16" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="10.16" y1="20.32" x2="20.32" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="30.48" x2="96.52" y2="30.48" width="0.1524" layer="91"/>
+<portref moduleinst="COOLING1" port="GND1"/>
+<wire x1="25.4" y1="43.18" x2="121.92" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="43.18" x2="121.92" y2="177.8" width="0.1524" layer="91"/>
+<portref moduleinst="PCU1" port="GND1"/>
+<wire x1="121.92" y1="177.8" x2="25.4" y2="177.8" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="SHUTDOWN" class="0">
+<net name="N$5" class="0">
 <segment>
-<pinref part="SL5" gate="G$1" pin="6"/>
-<label x="63.5" y="81.28" size="1.778" layer="95"/>
-<pinref part="FRONT" gate="G$1" pin="1"/>
-<wire x1="60.96" y1="81.28" x2="198.12" y2="81.28" width="0.1524" layer="91"/>
-<label x="175.26" y="81.28" size="1.778" layer="95"/>
+<portref moduleinst="ACCUMULATOR1" port="12V+"/>
+<wire x1="25.4" y1="121.92" x2="129.54" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="121.92" x2="129.54" y2="68.58" width="0.1524" layer="91"/>
+<portref moduleinst="COOLING1" port="12V+2"/>
+<wire x1="129.54" y1="68.58" x2="25.4" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="BMS_OK" class="0">
+<net name="N$6" class="0">
 <segment>
-<pinref part="SL5" gate="G$1" pin="7"/>
-<label x="63.5" y="78.74" size="1.778" layer="95"/>
-<wire x1="60.96" y1="78.74" x2="116.84" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="116.84" y1="78.74" x2="116.84" y2="124.46" width="0.1524" layer="91"/>
-<pinref part="SL4" gate="G$1" pin="11"/>
-<wire x1="116.84" y1="124.46" x2="60.96" y2="124.46" width="0.1524" layer="91"/>
-<label x="63.5" y="124.46" size="1.778" layer="95"/>
+<portref moduleinst="ACCUMULATOR1" port="GND"/>
+<wire x1="25.4" y1="119.38" x2="132.08" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="119.38" x2="132.08" y2="66.04" width="0.1524" layer="91"/>
+<portref moduleinst="COOLING1" port="GND2"/>
+<wire x1="132.08" y1="66.04" x2="25.4" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="OKHS_OUT" class="0">
+<net name="N$7" class="0">
 <segment>
-<pinref part="SL5" gate="G$1" pin="8"/>
-<label x="63.5" y="76.2" size="1.778" layer="95"/>
-<wire x1="60.96" y1="76.2" x2="119.38" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="76.2" x2="119.38" y2="121.92" width="0.1524" layer="91"/>
-<pinref part="SL4" gate="G$1" pin="12"/>
-<wire x1="119.38" y1="121.92" x2="60.96" y2="121.92" width="0.1524" layer="91"/>
-<label x="63.5" y="121.92" size="1.778" layer="95"/>
+<portref moduleinst="ACCUMULATOR1" port="CANL"/>
+<wire x1="25.4" y1="116.84" x2="134.62" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="116.84" x2="134.62" y2="63.5" width="0.1524" layer="91"/>
+<portref moduleinst="COOLING1" port="CANL2"/>
+<wire x1="134.62" y1="63.5" x2="25.4" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="CHARGE_ENABLE" class="0">
+<net name="N$8" class="0">
 <segment>
-<pinref part="SL4" gate="G$1" pin="10"/>
-<label x="63.5" y="127" size="1.778" layer="95"/>
-<wire x1="60.96" y1="127" x2="111.76" y2="127" width="0.1524" layer="91"/>
-<wire x1="111.76" y1="127" x2="111.76" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="SL5" gate="G$1" pin="3"/>
-<wire x1="111.76" y1="88.9" x2="60.96" y2="88.9" width="0.1524" layer="91"/>
-<label x="63.5" y="88.9" size="1.778" layer="95"/>
+<portref moduleinst="ACCUMULATOR1" port="CANH"/>
+<wire x1="25.4" y1="114.3" x2="137.16" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="114.3" x2="137.16" y2="60.96" width="0.1524" layer="91"/>
+<portref moduleinst="COOLING1" port="CANH2"/>
+<wire x1="137.16" y1="60.96" x2="25.4" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="TSAL+" class="0">
+<net name="N$9" class="0">
 <segment>
-<pinref part="SL4" gate="G$1" pin="1"/>
-<wire x1="60.96" y1="149.86" x2="198.12" y2="149.86" width="0.1524" layer="91"/>
-<label x="63.5" y="149.86" size="1.778" layer="95"/>
-<pinref part="TSAL" gate="G$1" pin="1"/>
-<label x="184.15" y="151.13" size="1.778" layer="95"/>
+<portref moduleinst="INVERTER1" port="BRAKE_LIGHT"/>
+<wire x1="-99.06" y1="106.68" x2="-83.82" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="-83.82" y1="106.68" x2="-83.82" y2="287.02" width="0.1524" layer="91"/>
+<wire x1="-83.82" y1="287.02" x2="53.34" y2="287.02" width="0.1524" layer="91"/>
+<pinref part="SL14" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="TSVP+" class="0">
+<net name="N$10" class="0">
 <segment>
-<pinref part="SL4" gate="G$1" pin="2"/>
-<wire x1="60.96" y1="147.32" x2="121.92" y2="147.32" width="0.1524" layer="91"/>
-<label x="63.5" y="147.32" size="1.778" layer="95"/>
-<pinref part="LEFTPANEL" gate="G$1" pin="4"/>
-<wire x1="121.92" y1="147.32" x2="121.92" y2="210.82" width="0.1524" layer="91"/>
-<label x="121.92" y="210.82" size="1.778" layer="95" rot="R270"/>
-<pinref part="RIGHTPANEL" gate="G$1" pin="1"/>
-<wire x1="121.92" y1="147.32" x2="121.92" y2="-30.48" width="0.1524" layer="91"/>
-<junction x="121.92" y="147.32"/>
-<label x="121.92" y="-27.94" size="1.778" layer="95" rot="R90"/>
+<wire x1="-81.28" y1="289.56" x2="-81.28" y2="104.14" width="0.1524" layer="91"/>
+<portref moduleinst="INVERTER1" port="12V+"/>
+<wire x1="-81.28" y1="104.14" x2="-99.06" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="-81.28" y1="289.56" x2="53.34" y2="289.56" width="0.1524" layer="91"/>
+<pinref part="SL14" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="BSPD_CURRENT" class="0">
+<net name="N$11" class="0">
 <segment>
-<pinref part="SL4" gate="G$1" pin="4"/>
-<wire x1="60.96" y1="142.24" x2="134.62" y2="142.24" width="0.1524" layer="91"/>
-<label x="63.5" y="142.24" size="1.778" layer="95"/>
-<pinref part="FRONT" gate="G$1" pin="3"/>
-<wire x1="134.62" y1="142.24" x2="134.62" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="76.2" x2="198.12" y2="76.2" width="0.1524" layer="91"/>
-<label x="175.26" y="76.2" size="1.778" layer="95"/>
+<portref moduleinst="INVERTER1" port="CANL"/>
+<wire x1="-78.74" y1="101.6" x2="-99.06" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="-78.74" y1="292.1" x2="-78.74" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="-78.74" y1="292.1" x2="53.34" y2="292.1" width="0.1524" layer="91"/>
+<pinref part="SL14" gate="G$1" pin="3"/>
 </segment>
 </net>
-<net name="CANH_OUT" class="0">
+<net name="N$12" class="0">
 <segment>
+<portref moduleinst="INVERTER1" port="CANH"/>
+<wire x1="-76.2" y1="294.64" x2="-76.2" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="-76.2" y1="99.06" x2="-99.06" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="-76.2" y1="294.64" x2="53.34" y2="294.64" width="0.1524" layer="91"/>
+<pinref part="SL14" gate="G$1" pin="4"/>
+</segment>
+</net>
+<net name="N$13" class="0">
+<segment>
+<wire x1="142.24" y1="193.04" x2="142.24" y2="307.34" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="193.04" x2="142.24" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="307.34" x2="149.86" y2="307.34" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="307.34" x2="149.86" y2="312.42" width="0.1524" layer="91"/>
+<portref moduleinst="PCU1" port="12V+"/>
+<pinref part="SL6" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$14" class="0">
+<segment>
+<wire x1="139.7" y1="304.8" x2="139.7" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="304.8" x2="152.4" y2="304.8" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="304.8" x2="152.4" y2="312.42" width="0.1524" layer="91"/>
+<pinref part="SL7" gate="G$1" pin="1"/>
+<wire x1="139.7" y1="53.34" x2="81.28" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="SL6" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$20" class="0">
+<segment>
+<wire x1="129.54" y1="205.74" x2="129.54" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="205.74" x2="25.4" y2="205.74" width="0.1524" layer="91"/>
+<portref moduleinst="ACCUMULATOR1" port="OKHS_OUT"/>
+<wire x1="129.54" y1="139.7" x2="25.4" y2="139.7" width="0.1524" layer="91"/>
+<portref moduleinst="PCU1" port="OKHS"/>
+</segment>
+</net>
+<net name="N$27" class="0">
+<segment>
+<portref moduleinst="TCU1" port="BSPD_CUR_FAULT"/>
+<wire x1="388.62" y1="7.62" x2="304.8" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="304.8" y1="7.62" x2="304.8" y2="-109.22" width="0.1524" layer="91"/>
+<wire x1="304.8" y1="-109.22" x2="-50.8" y2="-109.22" width="0.1524" layer="91"/>
+<wire x1="-50.8" y1="-109.22" x2="-50.8" y2="182.88" width="0.1524" layer="91"/>
+<pinref part="SL1" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$28" class="0">
+<segment>
+<pinref part="BUTTONS" gate="G$1" pin="1"/>
+<wire x1="297.18" y1="81.28" x2="289.56" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="289.56" y1="81.28" x2="289.56" y2="-93.98" width="0.1524" layer="91"/>
+<wire x1="289.56" y1="-93.98" x2="-53.34" y2="-93.98" width="0.1524" layer="91"/>
+<wire x1="-53.34" y1="182.88" x2="-53.34" y2="-93.98" width="0.1524" layer="91"/>
+<pinref part="SL1" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$29" class="0">
+<segment>
+<portref moduleinst="DCU1" port="CANH1"/>
+<wire x1="299.72" y1="53.34" x2="299.72" y2="-104.14" width="0.1524" layer="91"/>
+<wire x1="299.72" y1="-104.14" x2="-38.1" y2="-104.14" width="0.1524" layer="91"/>
+<pinref part="SL1" gate="G$1" pin="7"/>
+<wire x1="-38.1" y1="-104.14" x2="-38.1" y2="182.88" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$30" class="0">
+<segment>
+<portref moduleinst="DCU1" port="CANL1"/>
+<wire x1="299.72" y1="55.88" x2="297.18" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="55.88" x2="297.18" y2="-101.6" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="-101.6" x2="-35.56" y2="-101.6" width="0.1524" layer="91"/>
+<pinref part="SL1" gate="G$1" pin="8"/>
+<wire x1="-35.56" y1="182.88" x2="-35.56" y2="-101.6" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$31" class="0">
+<segment>
+<portref moduleinst="DCU1" port="GND1"/>
+<wire x1="299.72" y1="58.42" x2="294.64" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="294.64" y1="58.42" x2="294.64" y2="-99.06" width="0.1524" layer="91"/>
+<wire x1="294.64" y1="-99.06" x2="-48.26" y2="-99.06" width="0.1524" layer="91"/>
+<pinref part="SL1" gate="G$1" pin="3"/>
+<wire x1="-48.26" y1="182.88" x2="-48.26" y2="-99.06" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$32" class="0">
+<segment>
+<portref moduleinst="DCU1" port="12V+1"/>
+<wire x1="299.72" y1="60.96" x2="292.1" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="292.1" y1="60.96" x2="292.1" y2="-96.52" width="0.1524" layer="91"/>
+<wire x1="292.1" y1="-96.52" x2="-45.72" y2="-96.52" width="0.1524" layer="91"/>
+<pinref part="SL1" gate="G$1" pin="4"/>
+<wire x1="-45.72" y1="182.88" x2="-45.72" y2="-96.52" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$37" class="0">
+<segment>
+<portref moduleinst="PCU1" port="SHUTDOWN"/>
+<wire x1="25.4" y1="200.66" x2="119.38" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="200.66" x2="119.38" y2="266.7" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="266.7" x2="-53.34" y2="266.7" width="0.1524" layer="91"/>
+<wire x1="-53.34" y1="266.7" x2="-53.34" y2="205.74" width="0.1524" layer="91"/>
+<pinref part="SL2" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$40" class="0">
+<segment>
+<wire x1="142.24" y1="190.5" x2="142.24" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="190.5" x2="25.4" y2="190.5" width="0.1524" layer="91"/>
+<pinref part="SL3" gate="G$1" pin="8"/>
+<portref moduleinst="PCU1" port="GPIO"/>
+</segment>
+</net>
+<net name="N$42" class="0">
+<segment>
+<wire x1="137.16" y1="144.78" x2="137.16" y2="271.78" width="0.1524" layer="91"/>
+<portref moduleinst="ACCUMULATOR1" port="BSPD_CURRENT"/>
+<wire x1="137.16" y1="144.78" x2="25.4" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="-50.8" y1="271.78" x2="137.16" y2="271.78" width="0.1524" layer="91"/>
+<wire x1="-50.8" y1="205.74" x2="-50.8" y2="271.78" width="0.1524" layer="91"/>
+<pinref part="SL2" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$45" class="0">
+<segment>
+<wire x1="157.48" y1="312.42" x2="157.48" y2="10.16" width="0.1524" layer="91"/>
+<pinref part="SL3" gate="G$1" pin="2"/>
+<pinref part="SL6" gate="G$1" pin="4"/>
+</segment>
+</net>
+<net name="N$48" class="0">
+<segment>
+<wire x1="149.86" y1="-53.34" x2="149.86" y2="-12.7" width="0.1524" layer="91"/>
+<portref moduleinst="RIGHT_PANEL_BOTTOM1" port="SHUTDOWN5"/>
+<wire x1="162.56" y1="-53.34" x2="149.86" y2="-53.34" width="0.1524" layer="91"/>
 <pinref part="SL4" gate="G$1" pin="5"/>
-<wire x1="60.96" y1="139.7" x2="109.22" y2="139.7" width="0.1524" layer="91"/>
-<label x="63.5" y="139.7" size="1.778" layer="95"/>
-<wire x1="109.22" y1="139.7" x2="109.22" y2="38.1" width="0.1524" layer="91"/>
-<pinref part="INVERTER" gate="G$1" pin="2"/>
-<wire x1="109.22" y1="38.1" x2="-15.24" y2="38.1" width="0.1524" layer="91"/>
-<label x="-12.7" y="38.1" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="CANL_OUT" class="0">
+<net name="N$49" class="0">
 <segment>
+<wire x1="147.32" y1="-55.88" x2="147.32" y2="-12.7" width="0.1524" layer="91"/>
+<portref moduleinst="RIGHT_PANEL_BOTTOM1" port="SHUTDOWN6"/>
+<wire x1="147.32" y1="-55.88" x2="162.56" y2="-55.88" width="0.1524" layer="91"/>
 <pinref part="SL4" gate="G$1" pin="6"/>
-<wire x1="60.96" y1="137.16" x2="106.68" y2="137.16" width="0.1524" layer="91"/>
-<label x="63.5" y="137.16" size="1.778" layer="95"/>
-<wire x1="106.68" y1="137.16" x2="106.68" y2="40.64" width="0.1524" layer="91"/>
-<pinref part="INVERTER" gate="G$1" pin="1"/>
-<wire x1="106.68" y1="40.64" x2="-15.24" y2="40.64" width="0.1524" layer="91"/>
-<label x="-12.7" y="40.64" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="12VSUPPLY_COOLING_UNSWITCHED" class="0">
+<net name="N$50" class="0">
 <segment>
-<pinref part="RIGHTPANEL" gate="G$1" pin="4"/>
-<label x="129.54" y="-27.94" size="1.778" layer="95" rot="R90"/>
-<pinref part="LEFTPANEL" gate="G$1" pin="3"/>
-<wire x1="119.38" y1="210.82" x2="119.38" y2="162.56" width="0.1524" layer="91"/>
-<label x="119.38" y="210.82" size="1.778" layer="95" rot="R270"/>
-<wire x1="129.54" y1="-30.48" x2="129.54" y2="162.56" width="0.1524" layer="91"/>
-<wire x1="129.54" y1="162.56" x2="119.38" y2="162.56" width="0.1524" layer="91"/>
+<portref moduleinst="RIGHT_PANEL_BOTTOM1" port="CHARGE_ENABLE"/>
+<wire x1="162.56" y1="-58.42" x2="144.78" y2="-58.42" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="-58.42" x2="144.78" y2="-12.7" width="0.1524" layer="91"/>
+<pinref part="SL4" gate="G$1" pin="7"/>
 </segment>
 </net>
-<net name="12VSUPPLY_UNSWITCHED" class="0">
+<net name="N$52" class="0">
 <segment>
-<pinref part="RIGHTPANEL" gate="G$1" pin="5"/>
-<label x="132.08" y="-27.94" size="1.778" layer="95" rot="R90"/>
-<wire x1="132.08" y1="-30.48" x2="132.08" y2="160.02" width="0.1524" layer="91"/>
-<wire x1="132.08" y1="160.02" x2="116.84" y2="160.02" width="0.1524" layer="91"/>
-<pinref part="LEFTPANEL" gate="G$1" pin="2"/>
-<wire x1="116.84" y1="210.82" x2="116.84" y2="160.02" width="0.1524" layer="91"/>
-<label x="116.84" y="210.82" size="1.778" layer="95" rot="R270"/>
+<portref moduleinst="RIGHT_PANEL_BOTTOM1" port="GPIO"/>
+<wire x1="162.56" y1="-60.96" x2="142.24" y2="-60.96" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="-60.96" x2="142.24" y2="-12.7" width="0.1524" layer="91"/>
+<pinref part="SL4" gate="G$1" pin="8"/>
 </segment>
 </net>
-<net name="SHUTDOWN6" class="0">
+<net name="N$53" class="0">
 <segment>
+<portref moduleinst="PCU1" port="BMS_OK"/>
+<portref moduleinst="ACCUMULATOR1" port="BMS_OK"/>
+<wire x1="127" y1="203.2" x2="127" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="127" y1="203.2" x2="25.4" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="142.24" x2="127" y2="142.24" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$55" class="0">
+<segment>
+<wire x1="-43.18" y1="269.24" x2="149.86" y2="269.24" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="10.16" x2="149.86" y2="269.24" width="0.1524" layer="91"/>
+<pinref part="SL3" gate="G$1" pin="5"/>
+<pinref part="SL2" gate="G$1" pin="5"/>
+<wire x1="-43.18" y1="205.74" x2="-43.18" y2="269.24" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$58" class="0">
+<segment>
+<portref moduleinst="PCU1" port="INVERTER_SUPPLY"/>
+<wire x1="124.46" y1="195.58" x2="124.46" y2="289.56" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="195.58" x2="124.46" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="289.56" x2="76.2" y2="289.56" width="0.1524" layer="91"/>
+<pinref part="SL13" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$62" class="0">
+<segment>
+<portref moduleinst="ACCUMULATOR1" port="CANL_MC"/>
+<wire x1="132.08" y1="137.16" x2="132.08" y2="292.1" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="292.1" x2="76.2" y2="292.1" width="0.1524" layer="91"/>
+<pinref part="SL13" gate="G$1" pin="3"/>
+<wire x1="25.4" y1="137.16" x2="132.08" y2="137.16" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$66" class="0">
+<segment>
+<portref moduleinst="ACCUMULATOR1" port="TSVP+"/>
+<pinref part="SL3" gate="G$1" pin="3"/>
+<wire x1="154.94" y1="147.32" x2="154.94" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="147.32" x2="154.94" y2="304.8" width="0.1524" layer="91"/>
+<junction x="154.94" y="147.32"/>
+<wire x1="160.02" y1="312.42" x2="160.02" y2="309.88" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="309.88" x2="162.56" y2="309.88" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="309.88" x2="162.56" y2="304.8" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="304.8" x2="154.94" y2="304.8" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="147.32" x2="154.94" y2="147.32" width="0.1524" layer="91"/>
+<pinref part="SL6" gate="G$1" pin="5"/>
+</segment>
+</net>
+<net name="N$68" class="0">
+<segment>
+<portref moduleinst="ACCUMULATOR1" port="CHARGE_ENABLE"/>
+<wire x1="144.78" y1="152.4" x2="144.78" y2="10.16" width="0.1524" layer="91"/>
+<pinref part="SL3" gate="G$1" pin="7"/>
+<wire x1="25.4" y1="152.4" x2="144.78" y2="152.4" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$69" class="0">
+<segment>
+<portref moduleinst="ACCUMULATOR1" port="SHUTDOWN6"/>
+<wire x1="147.32" y1="154.94" x2="147.32" y2="10.16" width="0.1524" layer="91"/>
+<pinref part="SL3" gate="G$1" pin="6"/>
+<wire x1="25.4" y1="154.94" x2="147.32" y2="154.94" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$70" class="0">
+<segment>
+<portref moduleinst="LEFT_PANEL1" port="12V+"/>
+<wire x1="149.86" y1="347.98" x2="165.1" y2="347.98" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="347.98" x2="149.86" y2="335.28" width="0.1524" layer="91"/>
+<pinref part="SL9" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$71" class="0">
+<segment>
+<portref moduleinst="LEFT_PANEL1" port="12V+COOLING"/>
+<wire x1="165.1" y1="345.44" x2="152.4" y2="345.44" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="345.44" x2="152.4" y2="335.28" width="0.1524" layer="91"/>
+<pinref part="SL9" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$73" class="0">
+<segment>
+<portref moduleinst="LEFT_PANEL1" port="12V+UNSWITCHED"/>
+<wire x1="154.94" y1="342.9" x2="165.1" y2="342.9" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="335.28" x2="154.94" y2="342.9" width="0.1524" layer="91"/>
+<pinref part="SL9" gate="G$1" pin="3"/>
+</segment>
+</net>
+<net name="N$72" class="0">
+<segment>
+<portref moduleinst="LEFT_PANEL1" port="12V+COOLING_UNSWITCHED"/>
+<wire x1="165.1" y1="340.36" x2="157.48" y2="340.36" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="340.36" x2="157.48" y2="335.28" width="0.1524" layer="91"/>
+<pinref part="SL9" gate="G$1" pin="4"/>
+</segment>
+</net>
+<net name="N$75" class="0">
+<segment>
+<wire x1="134.62" y1="134.62" x2="134.62" y2="294.64" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="294.64" x2="76.2" y2="294.64" width="0.1524" layer="91"/>
+<pinref part="SL13" gate="G$1" pin="4"/>
+<portref moduleinst="ACCUMULATOR1" port="CANH_MC"/>
+<wire x1="134.62" y1="134.62" x2="25.4" y2="134.62" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$78" class="0">
+<segment>
+<wire x1="121.92" y1="287.02" x2="121.92" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="287.02" x2="76.2" y2="287.02" width="0.1524" layer="91"/>
+<pinref part="SL13" gate="G$1" pin="1"/>
+<wire x1="25.4" y1="198.12" x2="121.92" y2="198.12" width="0.1524" layer="91"/>
+<portref moduleinst="PCU1" port="BRAKE_LIGHT"/>
+</segment>
+</net>
+<net name="N$43" class="0">
+<segment>
+<portref moduleinst="RIGHT_PANEL_TOP1" port="12V+COOLING_UNSWITCHED_IN"/>
+<portref moduleinst="RIGHT_PANEL_BOTTOM1" port="12V+COOLING_UNSWITCHED"/>
+<wire x1="162.56" y1="-50.8" x2="157.48" y2="-50.8" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="-50.8" x2="157.48" y2="-25.4" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="-25.4" x2="157.48" y2="-25.4" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$79" class="0">
+<segment>
+<wire x1="152.4" y1="149.86" x2="152.4" y2="10.16" width="0.1524" layer="91"/>
+<pinref part="SL3" gate="G$1" pin="4"/>
+<portref moduleinst="ACCUMULATOR1" port="TSAL+"/>
+<wire x1="152.4" y1="149.86" x2="25.4" y2="149.86" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$74" class="0">
+<segment>
+<portref moduleinst="LEFT_PANEL1" port="TSVP+"/>
+<wire x1="165.1" y1="337.82" x2="160.02" y2="337.82" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="337.82" x2="160.02" y2="335.28" width="0.1524" layer="91"/>
+<pinref part="SL9" gate="G$1" pin="5"/>
+</segment>
+</net>
+<net name="N$46" class="0">
+<segment>
+<portref moduleinst="RIGHT_PANEL_TOP1" port="12V+UNSWITCHED_IN"/>
+<portref moduleinst="RIGHT_PANEL_BOTTOM1" port="12V+UNSWITCHED"/>
+<wire x1="162.56" y1="-48.26" x2="160.02" y2="-48.26" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="-48.26" x2="160.02" y2="-22.86" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="-22.86" x2="160.02" y2="-22.86" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$15" class="0">
+<segment>
+<portref moduleinst="RIGHT_PANEL_TOP1" port="TSAL"/>
+<wire x1="215.9" y1="-30.48" x2="152.4" y2="-30.48" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="-30.48" x2="152.4" y2="-12.7" width="0.1524" layer="91"/>
+<pinref part="SL4" gate="G$1" pin="4"/>
+</segment>
+</net>
+<net name="N$16" class="0">
+<segment>
+<portref moduleinst="RIGHT_PANEL_TOP1" port="12V+UNSWITCHED"/>
+<wire x1="215.9" y1="-17.78" x2="160.02" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="-17.78" x2="160.02" y2="-12.7" width="0.1524" layer="91"/>
+<pinref part="SL4" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$18" class="0">
+<segment>
+<portref moduleinst="RIGHT_PANEL_TOP1" port="12V+COOLING_UNSWITCHED"/>
+<wire x1="215.9" y1="-20.32" x2="157.48" y2="-20.32" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="-20.32" x2="157.48" y2="-12.7" width="0.1524" layer="91"/>
+<pinref part="SL4" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$21" class="0">
+<segment>
+<portref moduleinst="RIGHT_PANEL_TOP1" port="TSVP+"/>
+<wire x1="215.9" y1="-27.94" x2="154.94" y2="-27.94" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="-27.94" x2="154.94" y2="-12.7" width="0.1524" layer="91"/>
 <pinref part="SL4" gate="G$1" pin="3"/>
-<wire x1="60.96" y1="144.78" x2="127" y2="144.78" width="0.1524" layer="91"/>
-<label x="63.5" y="144.78" size="1.778" layer="95"/>
-<pinref part="RIGHTPANEL" gate="G$1" pin="3"/>
-<wire x1="127" y1="144.78" x2="127" y2="-30.48" width="0.1524" layer="91"/>
-<label x="127" y="-27.94" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="SHUTDOWN5" class="0">
+<net name="N$47" class="0">
 <segment>
-<pinref part="FRONT" gate="G$1" pin="2"/>
-<wire x1="198.12" y1="78.74" x2="124.46" y2="78.74" width="0.1524" layer="91"/>
-<pinref part="RIGHTPANEL" gate="G$1" pin="2"/>
-<wire x1="124.46" y1="78.74" x2="124.46" y2="-30.48" width="0.1524" layer="91"/>
-<label x="124.46" y="-27.94" size="1.778" layer="95" rot="R90"/>
-<label x="175.26" y="78.74" size="1.778" layer="95"/>
+<wire x1="160.02" y1="307.34" x2="154.94" y2="307.34" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="307.34" x2="154.94" y2="312.42" width="0.1524" layer="91"/>
+<pinref part="SL3" gate="G$1" pin="1"/>
+<wire x1="160.02" y1="10.16" x2="160.02" y2="307.34" width="0.1524" layer="91"/>
+<pinref part="SL6" gate="G$1" pin="3"/>
+</segment>
+</net>
+<net name="N$17" class="0">
+<segment>
+<pinref part="SL8" gate="G$1" pin="1"/>
+<portref moduleinst="COOLING1" port="12V+COOLING"/>
+<wire x1="58.42" y1="53.34" x2="25.4" y2="53.34" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$19" class="0">
+<segment>
+<portref moduleinst="PCU1" port="GND2"/>
+<pinref part="SL2" gate="G$1" pin="3"/>
+<wire x1="25.4" y1="226.06" x2="111.76" y2="226.06" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="226.06" x2="111.76" y2="259.08" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="259.08" x2="-48.26" y2="259.08" width="0.1524" layer="91"/>
+<wire x1="-48.26" y1="259.08" x2="-48.26" y2="205.74" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$33" class="0">
+<segment>
+<portref moduleinst="PCU1" port="12V+2"/>
+<pinref part="SL2" gate="G$1" pin="4"/>
+<wire x1="25.4" y1="228.6" x2="109.22" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="228.6" x2="109.22" y2="256.54" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="256.54" x2="-45.72" y2="256.54" width="0.1524" layer="91"/>
+<wire x1="-45.72" y1="256.54" x2="-45.72" y2="205.74" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$34" class="0">
+<segment>
+<pinref part="SL2" gate="G$1" pin="7"/>
+<portref moduleinst="PCU1" port="CANH2"/>
+<wire x1="25.4" y1="220.98" x2="116.84" y2="220.98" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="220.98" x2="116.84" y2="264.16" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="264.16" x2="-38.1" y2="264.16" width="0.1524" layer="91"/>
+<wire x1="-38.1" y1="264.16" x2="-38.1" y2="205.74" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$35" class="0">
+<segment>
+<pinref part="SL2" gate="G$1" pin="8"/>
+<portref moduleinst="PCU1" port="CANL2"/>
+<wire x1="25.4" y1="223.52" x2="114.3" y2="223.52" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="223.52" x2="114.3" y2="261.62" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="261.62" x2="-35.56" y2="261.62" width="0.1524" layer="91"/>
+<wire x1="-35.56" y1="261.62" x2="-35.56" y2="205.74" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$36" class="0">
+<segment>
+<pinref part="SL1" gate="G$1" pin="5"/>
+<wire x1="-43.18" y1="182.88" x2="-43.18" y2="-106.68" width="0.1524" layer="91"/>
+<portref moduleinst="TCU1" port="SHUTDOWN5"/>
+<wire x1="388.62" y1="10.16" x2="302.26" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="302.26" y1="10.16" x2="302.26" y2="-106.68" width="0.1524" layer="91"/>
+<wire x1="302.26" y1="-106.68" x2="-43.18" y2="-106.68" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$22" class="0">
+<segment>
+<portref moduleinst="DCU1" port="12V+2"/>
+<wire x1="340.36" y1="60.96" x2="378.46" y2="60.96" width="0.1524" layer="91"/>
+<portref moduleinst="TCU1" port="12V+1"/>
+<wire x1="378.46" y1="60.96" x2="378.46" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="378.46" y1="25.4" x2="388.62" y2="25.4" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$23" class="0">
+<segment>
+<portref moduleinst="DCU1" port="GND2"/>
+<wire x1="340.36" y1="58.42" x2="375.92" y2="58.42" width="0.1524" layer="91"/>
+<portref moduleinst="TCU1" port="GND1"/>
+<wire x1="375.92" y1="58.42" x2="375.92" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="375.92" y1="22.86" x2="388.62" y2="22.86" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$24" class="0">
+<segment>
+<portref moduleinst="DCU1" port="CANL2"/>
+<wire x1="340.36" y1="55.88" x2="373.38" y2="55.88" width="0.1524" layer="91"/>
+<portref moduleinst="TCU1" port="CANL1"/>
+<wire x1="373.38" y1="55.88" x2="373.38" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="373.38" y1="20.32" x2="388.62" y2="20.32" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$25" class="0">
+<segment>
+<portref moduleinst="DCU1" port="CANH2"/>
+<wire x1="340.36" y1="53.34" x2="370.84" y2="53.34" width="0.1524" layer="91"/>
+<portref moduleinst="TCU1" port="CANH1"/>
+<wire x1="370.84" y1="53.34" x2="370.84" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="370.84" y1="17.78" x2="388.62" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

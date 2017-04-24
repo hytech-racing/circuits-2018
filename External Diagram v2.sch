@@ -1917,11 +1917,8 @@ per FH EV4.1.4</text>
 <wire x1="0" y1="220.98" x2="0" y2="203.2" width="0.381" layer="156"/>
 <text x="238.76" y="167.64" size="1.778" layer="91">Unfused
 for FSAE</text>
-<wire x1="-10.16" y1="223.52" x2="20.32" y2="223.52" width="0.381" layer="156"/>
-<wire x1="20.32" y1="220.98" x2="0" y2="220.98" width="0.381" layer="156"/>
-<wire x1="101.6" y1="223.52" x2="66.04" y2="223.52" width="0.381" layer="156"/>
-<wire x1="66.04" y1="220.98" x2="101.6" y2="220.98" width="0.381" layer="156"/>
-<text x="33.02" y="228.6" size="1.778" layer="91">FSAE Energy Meter</text>
+<wire x1="-10.16" y1="223.52" x2="101.6" y2="223.52" width="0.381" layer="156"/>
+<wire x1="101.6" y1="220.98" x2="0" y2="220.98" width="0.381" layer="156"/>
 <text x="180.34" y="193.04" size="1.778" layer="91">TODO bms current sensor</text>
 <text x="309.88" y="182.88" size="1.778" layer="91">TODO bspd current sensor</text>
 <text x="-12.7" y="243.84" size="5.08" layer="91">Wire Key
@@ -1957,7 +1954,6 @@ Power for FSAE (EV5.1.4)</text>
 <moduleinst name="BMS_CONTROL" module="BMS_CONTROL" x="170.18" y="208.28" smashed="yes">
 <attribute name="NAME" x="170.18" y="213.36" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
-<moduleinst name="ENERGY_METER_BOX" module="ENERGY_METER" x="43.18" y="215.9"/>
 </moduleinsts>
 <instances>
 <instance part="RTDS" gate="1" x="548.64" y="208.28" rot="R90"/>
@@ -2112,7 +2108,7 @@ Power for FSAE (EV5.1.4)</text>
 <wire x1="215.9" y1="0" x2="215.9" y2="-99.06" width="0.762" layer="92"/>
 <wire x1="215.9" y1="-99.06" x2="416.56" y2="-99.06" width="0.762" layer="92"/>
 <wire x1="215.9" y1="-99.06" x2="45.72" y2="-99.06" width="0.762" layer="92"/>
-<wire x1="45.72" y1="-99.06" x2="45.72" y2="200.66" width="0.762" layer="92"/>
+<wire x1="45.72" y1="-99.06" x2="45.72" y2="190.5" width="0.762" layer="92"/>
 <wire x1="416.56" y1="-99.06" x2="416.56" y2="22.86" width="0.762" layer="92"/>
 <wire x1="416.56" y1="22.86" x2="548.64" y2="22.86" width="0.762" layer="92"/>
 </segment>
@@ -2259,13 +2255,6 @@ Power for FSAE (EV5.1.4)</text>
 <pinref part="GND1" gate="1" pin="GND"/>
 <portref moduleinst="COOLING_BOARD" port="COOLING_GND"/>
 <wire x1="464.82" y1="281.94" x2="464.82" y2="347.98" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<wire x1="45.72" y1="200.66" x2="68.58" y2="200.66" width="0.1524" layer="91"/>
-<label x="50.8" y="200.66" size="1.778" layer="95"/>
-<wire x1="68.58" y1="200.66" x2="68.58" y2="208.28" width="0.1524" layer="91"/>
-<portref moduleinst="ENERGY_METER_BOX" port="GND"/>
-<wire x1="68.58" y1="208.28" x2="66.04" y2="208.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -2414,13 +2403,6 @@ Power for FSAE (EV5.1.4)</text>
 <wire x1="187.96" y1="-53.34" x2="215.9" y2="-53.34" width="0.1524" layer="91"/>
 <label x="190.5" y="-53.34" size="1.778" layer="95"/>
 <pinref part="SL8" gate="G$1" pin="1"/>
-</segment>
-<segment>
-<wire x1="45.72" y1="198.12" x2="71.12" y2="198.12" width="0.1524" layer="91"/>
-<label x="50.8" y="198.12" size="1.778" layer="95"/>
-<wire x1="71.12" y1="198.12" x2="71.12" y2="210.82" width="0.1524" layer="91"/>
-<portref moduleinst="ENERGY_METER_BOX" port="12VSUPPLY"/>
-<wire x1="71.12" y1="210.82" x2="66.04" y2="210.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="CANH" class="0">
