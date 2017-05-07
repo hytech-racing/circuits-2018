@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.1.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -362,7 +362,7 @@
 <port name="SHUTDOWN" side="right" coord="0" direction="out"/>
 <port name="BRAKE_LIGHT" side="right" coord="-2.54" direction="out"/>
 <port name="INVERTER_SUPPLY" side="right" coord="-5.08" direction="out"/>
-<port name="12V+" side="right" coord="-7.62" direction="in"/>
+<port name="12V+" side="right" coord="-10.16" direction="in"/>
 <port name="12V+1" side="right" coord="-20.32" direction="out"/>
 <port name="GND1" side="right" coord="-22.86" direction="in"/>
 <port name="CANL1" side="right" coord="-25.4" direction="io"/>
@@ -371,7 +371,7 @@
 <port name="12V+2" side="right" coord="27.94" direction="out"/>
 <port name="CANL2" side="right" coord="22.86" direction="io"/>
 <port name="CANH2" side="right" coord="20.32" direction="io"/>
-<port name="GPIO" side="right" coord="-10.16" direction="io"/>
+<port name="GPIO" side="right" coord="-7.62" direction="io"/>
 </ports>
 <variantdefs>
 </variantdefs>
@@ -735,7 +735,7 @@
 </bus>
 <bus name="B$25">
 <segment>
-<wire x1="-83.82" y1="165.1" x2="-71.12" y2="165.1" width="1.27" layer="92"/>
+<wire x1="-86.36" y1="165.1" x2="-73.66" y2="165.1" width="1.27" layer="92"/>
 </segment>
 </bus>
 <bus name="B$26">
@@ -930,9 +930,9 @@
 </net>
 <net name="N$13" class="0">
 <segment>
-<wire x1="142.24" y1="193.04" x2="142.24" y2="307.34" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="193.04" x2="142.24" y2="193.04" width="0.1524" layer="91"/>
-<wire x1="142.24" y1="307.34" x2="149.86" y2="307.34" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="190.5" x2="144.78" y2="307.34" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="190.5" x2="144.78" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="307.34" x2="149.86" y2="307.34" width="0.1524" layer="91"/>
 <wire x1="149.86" y1="307.34" x2="149.86" y2="312.42" width="0.1524" layer="91"/>
 <portref moduleinst="PCU1" port="12V+"/>
 <pinref part="SL6" gate="G$1" pin="1"/>
@@ -1028,8 +1028,8 @@
 </net>
 <net name="N$40" class="0">
 <segment>
-<wire x1="142.24" y1="190.5" x2="142.24" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="142.24" y1="190.5" x2="25.4" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="193.04" x2="142.24" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="193.04" x2="25.4" y2="193.04" width="0.1524" layer="91"/>
 <pinref part="SL3" gate="G$1" pin="8"/>
 <portref moduleinst="PCU1" port="GPIO"/>
 </segment>

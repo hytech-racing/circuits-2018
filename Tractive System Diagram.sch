@@ -1301,8 +1301,8 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="SL1" library="HyTechSymbols" deviceset="M09" device=""/>
 <part name="DISCHARGE" library="HyTechDevices" deviceset="RESISTOR" device="10W"/>
 <part name="SL2" library="HyTechSymbols" deviceset="M04" device=""/>
-<part name="SL3" library="HyTechSymbols" deviceset="M02" device=""/>
 <part name="HVD_INTERLOCK" library="HyTechSymbols" deviceset="SWITCH_SPST" device=""/>
+<part name="HVD" library="HyTechSymbols" deviceset="M02" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1329,13 +1329,12 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <wire x1="297.18" y1="58.42" x2="297.18" y2="55.88" width="0.381" layer="156"/>
 <wire x1="297.18" y1="55.88" x2="299.72" y2="55.88" width="0.381" layer="156"/>
 <wire x1="309.88" y1="58.42" x2="317.5" y2="58.42" width="0.381" layer="156"/>
-<wire x1="327.66" y1="58.42" x2="332.74" y2="58.42" width="0.381" layer="156"/>
-<wire x1="332.74" y1="58.42" x2="332.74" y2="55.88" width="0.381" layer="156"/>
-<wire x1="335.28" y1="55.88" x2="332.74" y2="55.88" width="0.381" layer="156"/>
+<wire x1="332.74" y1="58.42" x2="340.36" y2="58.42" width="0.381" layer="156"/>
+<wire x1="340.36" y1="58.42" x2="340.36" y2="55.88" width="0.381" layer="156"/>
+<wire x1="342.9" y1="55.88" x2="340.36" y2="55.88" width="0.381" layer="156"/>
 <text x="205.74" y="137.16" size="2.1844" layer="97">Molex Imperium also used for charging</text>
-<wire x1="345.44" y1="58.42" x2="350.52" y2="58.42" width="0.381" layer="156"/>
-<wire x1="350.52" y1="58.42" x2="350.52" y2="86.36" width="0.381" layer="156"/>
-<wire x1="350.52" y1="86.36" x2="215.9" y2="86.36" width="0.381" layer="156"/>
+<wire x1="353.06" y1="58.42" x2="353.06" y2="86.36" width="0.381" layer="156"/>
+<wire x1="353.06" y1="86.36" x2="215.9" y2="86.36" width="0.381" layer="156"/>
 <text x="304.8" y="93.98" size="2.1844" layer="97">Wire Key
 Thick: Tractive System wires
 Orange: High Current path
@@ -1348,12 +1347,9 @@ Blue: VSense, TSense connections</text>
 <wire x1="71.12" y1="139.7" x2="71.12" y2="134.62" width="0.381" layer="156"/>
 <text x="137.16" y="96.52" size="1.778" layer="97">2 10W 5kΩ resistors in series</text>
 <wire x1="269.24" y1="58.42" x2="264.16" y2="58.42" width="0.381" layer="156"/>
-<wire x1="147.32" y1="132.08" x2="154.94" y2="132.08" width="0.381" layer="156"/>
-<wire x1="154.94" y1="121.92" x2="147.32" y2="121.92" width="0.381" layer="156"/>
-<wire x1="200.66" y1="132.08" x2="215.9" y2="132.08" width="0.381" layer="156"/>
-<wire x1="200.66" y1="121.92" x2="213.36" y2="121.92" width="0.381" layer="156"/>
-<text x="162.56" y="139.7" size="1.778" layer="97">FSAE Energy Meter (internal busbar bypass for FH)</text>
-<text x="203.2" y="99.06" size="2.54" layer="97" rot="R90">HVD</text>
+<wire x1="147.32" y1="132.08" x2="215.9" y2="132.08" width="0.381" layer="156"/>
+<wire x1="213.36" y1="121.92" x2="147.32" y2="121.92" width="0.381" layer="156"/>
+<wire x1="330.2" y1="58.42" x2="327.66" y2="58.42" width="0.381" layer="156"/>
 </plain>
 <moduleinsts>
 <moduleinst name="HV_PCB" module="HV_ECU" x="73.66" y="63.5"/>
@@ -1375,11 +1371,10 @@ Blue: VSense, TSense connections</text>
 <moduleinst name="CUR_SENSE" module="BSPD_SENSE" x="121.92" y="35.56" smashed="yes">
 <attribute name="NAME" x="121.92" y="39.37" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
-<moduleinst name="ENERGY_METER_BOX" module="FSAE_ENERGY_METER" x="177.8" y="127"/>
 </moduleinsts>
 <instances>
 <instance part="AIR2" gate="1" x="190.5" y="48.26" rot="R90"/>
-<instance part="AIR1" gate="1" x="340.36" y="48.26" rot="R90"/>
+<instance part="AIR1" gate="1" x="347.98" y="48.26" rot="R90"/>
 <instance part="SMD3" gate="1" x="226.06" y="48.26" rot="R90"/>
 <instance part="SMD2" gate="1" x="259.08" y="48.26" rot="R90"/>
 <instance part="SMD1" gate="1" x="304.8" y="48.26" rot="R90"/>
@@ -1402,7 +1397,7 @@ Blue: VSense, TSense connections</text>
 <instance part="SEGMENT2" gate="G$1" x="287.02" y="58.42" rot="R180"/>
 <instance part="SEGMENT1" gate="G$1" x="322.58" y="58.42" rot="R180"/>
 <instance part="FUSE" gate="G$1" x="274.32" y="58.42"/>
-<instance part="GND5" gate="1" x="332.74" y="48.26" rot="R270"/>
+<instance part="GND5" gate="1" x="340.36" y="48.26" rot="R270"/>
 <instance part="MOLEX_IMPERIUM1" gate="G$1" x="215.9" y="116.84" rot="MR90"/>
 <instance part="U$2" gate="G$1" x="142.24" y="109.22" rot="MR0"/>
 <instance part="EMRAX_207_MED_V_MOTOR" gate="G$1" x="35.56" y="127" rot="R90"/>
@@ -1415,8 +1410,8 @@ Blue: VSense, TSense connections</text>
 <instance part="SL1" gate="G$1" x="5.08" y="68.58"/>
 <instance part="DISCHARGE" gate="G$1" x="40.64" y="91.44"/>
 <instance part="SL2" gate="G$1" x="5.08" y="48.26" rot="MR180"/>
-<instance part="SL3" gate="G$1" x="177.8" y="104.14" rot="R90"/>
 <instance part="HVD_INTERLOCK" gate="SPST" x="256.54" y="114.3" rot="R270"/>
+<instance part="HVD" gate="G$1" x="330.2" y="53.34" rot="R90"/>
 </instances>
 <busses>
 <bus name="B$1">
@@ -1503,10 +1498,10 @@ Blue: VSense, TSense connections</text>
 <wire x1="231.14" y1="96.52" x2="231.14" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="231.14" y1="88.9" x2="276.86" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="276.86" y1="88.9" x2="276.86" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="276.86" y1="111.76" x2="355.6" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="355.6" y1="111.76" x2="355.6" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="276.86" y1="111.76" x2="358.14" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="358.14" y1="111.76" x2="358.14" y2="12.7" width="0.1524" layer="91"/>
 <label x="281.94" y="111.76" size="1.778" layer="95"/>
-<wire x1="355.6" y1="12.7" x2="96.52" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="358.14" y1="12.7" x2="96.52" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="12.7" x2="96.52" y2="40.64" width="0.1524" layer="91"/>
 <portref moduleinst="HV_PCB" port="SHUTDOWN7_IN"/>
 <label x="116.84" y="12.7" size="1.778" layer="95"/>
@@ -1527,10 +1522,10 @@ Blue: VSense, TSense connections</text>
 <portref moduleinst="HV_PCB" port="AIR_PWR1"/>
 <wire x1="99.06" y1="15.24" x2="99.06" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="AIR1" gate="1" pin="2"/>
-<wire x1="345.44" y1="30.48" x2="345.44" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="353.06" y1="30.48" x2="353.06" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="SMD1" gate="1" pin="2"/>
 <wire x1="309.88" y1="30.48" x2="309.88" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="309.88" y1="30.48" x2="345.44" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="309.88" y1="30.48" x2="353.06" y2="30.48" width="0.1524" layer="91"/>
 <junction x="309.88" y="30.48"/>
 <pinref part="SMD2" gate="1" pin="2"/>
 <wire x1="264.16" y1="30.48" x2="264.16" y2="48.26" width="0.1524" layer="91"/>
@@ -1550,15 +1545,15 @@ Blue: VSense, TSense connections</text>
 </net>
 <net name="SHUTDOWN_CIRCUIT_PRE_INTERLOCK" class="0">
 <segment>
-<wire x1="93.98" y1="10.16" x2="358.14" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="358.14" y1="10.16" x2="358.14" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="10.16" x2="360.68" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="360.68" y1="10.16" x2="360.68" y2="114.3" width="0.1524" layer="91"/>
 <label x="116.84" y="10.16" size="1.778" layer="95"/>
 <wire x1="93.98" y1="10.16" x2="93.98" y2="40.64" width="0.1524" layer="91"/>
 <portref moduleinst="HV_PCB" port="SHUTDOWN6_OUT"/>
 <pinref part="HVD_INTERLOCK" gate="SPST" pin="S"/>
 <wire x1="261.62" y1="111.76" x2="264.16" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="264.16" y1="111.76" x2="264.16" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="264.16" y1="114.3" x2="358.14" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="264.16" y1="114.3" x2="360.68" y2="114.3" width="0.1524" layer="91"/>
 <label x="281.94" y="114.3" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -1965,20 +1960,6 @@ Blue: VSense, TSense connections</text>
 <wire x1="132.08" y1="55.88" x2="137.16" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="137.16" y1="55.88" x2="147.32" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="147.32" y1="45.72" x2="147.32" y2="30.48" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$51" class="0">
-<segment>
-<portref moduleinst="ENERGY_METER_BOX" port="GND"/>
-<pinref part="SL3" gate="G$1" pin="1"/>
-<wire x1="180.34" y1="109.22" x2="180.34" y2="111.76" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$52" class="0">
-<segment>
-<portref moduleinst="ENERGY_METER_BOX" port="12V+"/>
-<pinref part="SL3" gate="G$1" pin="2"/>
-<wire x1="177.8" y1="109.22" x2="177.8" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$53" class="0">

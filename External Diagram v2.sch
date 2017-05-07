@@ -2247,14 +2247,14 @@ Power for FSAE (EV5.1.4)</text>
 <label x="220.98" y="-63.5" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="215.9" y1="-50.8" x2="187.96" y2="-50.8" width="0.1524" layer="91"/>
-<label x="190.5" y="-50.8" size="1.778" layer="95"/>
-<pinref part="SL8" gate="G$1" pin="2"/>
-</segment>
-<segment>
 <pinref part="GND1" gate="1" pin="GND"/>
 <portref moduleinst="COOLING_BOARD" port="COOLING_GND"/>
 <wire x1="464.82" y1="281.94" x2="464.82" y2="347.98" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="187.96" y1="-53.34" x2="215.9" y2="-53.34" width="0.1524" layer="91"/>
+<label x="190.5" y="-53.34" size="1.778" layer="95"/>
+<pinref part="SL8" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -2369,14 +2369,15 @@ Power for FSAE (EV5.1.4)</text>
 </segment>
 <segment>
 <portref moduleinst="POWER_BOARD" port="12VSUPPLY"/>
-<wire x1="119.38" y1="-55.88" x2="119.38" y2="-63.5" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="-63.5" x2="127" y2="-63.5" width="0.1524" layer="91"/>
-<wire x1="127" y1="-63.5" x2="162.56" y2="-63.5" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="-63.5" x2="162.56" y2="-53.34" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="-55.88" x2="119.38" y2="-58.42" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="-58.42" x2="127" y2="-58.42" width="0.1524" layer="91"/>
+<wire x1="127" y1="-58.42" x2="160.02" y2="-58.42" width="0.1524" layer="91"/>
 <portref moduleinst="POWER_BOARD" port="SHUTDOWN_PWR"/>
-<wire x1="127" y1="-55.88" x2="127" y2="-63.5" width="0.1524" layer="91"/>
-<junction x="127" y="-63.5"/>
-<pinref part="SL3" gate="G$1" pin="10"/>
+<wire x1="127" y1="-55.88" x2="127" y2="-58.42" width="0.1524" layer="91"/>
+<junction x="127" y="-58.42"/>
+<pinref part="SL3" gate="G$1" pin="9"/>
+<wire x1="162.56" y1="-50.8" x2="160.02" y2="-50.8" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="-50.8" x2="160.02" y2="-58.42" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <portref moduleinst="DASHBOARD_BOARD" port="12VSUPPLY_1"/>
@@ -2400,9 +2401,9 @@ Power for FSAE (EV5.1.4)</text>
 <wire x1="419.1" y1="289.56" x2="419.1" y2="294.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="187.96" y1="-53.34" x2="215.9" y2="-53.34" width="0.1524" layer="91"/>
-<label x="190.5" y="-53.34" size="1.778" layer="95"/>
-<pinref part="SL8" gate="G$1" pin="1"/>
+<wire x1="215.9" y1="-50.8" x2="187.96" y2="-50.8" width="0.1524" layer="91"/>
+<label x="190.5" y="-50.8" size="1.778" layer="95"/>
+<pinref part="SL8" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="CANH" class="0">
@@ -3157,10 +3158,9 @@ Power for FSAE (EV5.1.4)</text>
 <segment>
 <portref moduleinst="POWER_BOARD" port="GND"/>
 <wire x1="121.92" y1="-60.96" x2="121.92" y2="-55.88" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="-60.96" x2="160.02" y2="-60.96" width="0.1524" layer="91"/>
-<wire x1="160.02" y1="-60.96" x2="160.02" y2="-50.8" width="0.1524" layer="91"/>
-<pinref part="SL3" gate="G$1" pin="9"/>
-<wire x1="160.02" y1="-50.8" x2="162.56" y2="-50.8" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="-60.96" x2="162.56" y2="-60.96" width="0.1524" layer="91"/>
+<pinref part="SL3" gate="G$1" pin="10"/>
+<wire x1="162.56" y1="-60.96" x2="162.56" y2="-53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="BAT+" class="0">
