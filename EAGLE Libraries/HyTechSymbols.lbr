@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.1.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -473,8 +473,8 @@ Precharger</text>
 <pin name="C" x="71.12" y="25.4" length="middle" rot="R180"/>
 <pin name="DC+" x="-5.08" y="12.7" length="middle"/>
 <pin name="DC-" x="-5.08" y="22.86" length="middle"/>
-<pin name="J1-11/CAN_L" x="17.78" y="33.02" length="short" rot="R270"/>
-<pin name="J1-33/CAN_H" x="15.24" y="33.02" length="short" rot="R270"/>
+<pin name="J1-11/CAN_L" x="15.24" y="33.02" length="short" rot="R270"/>
+<pin name="J1-33/CAN_H" x="17.78" y="33.02" length="short" rot="R270"/>
 <text x="63.5" y="7.62" size="5.08" layer="95" rot="R180">Rinehart PM100DX</text>
 <pin name="J2-8/BATT+" x="7.62" y="33.02" length="short" rot="R270"/>
 <pin name="J2-6/GND" x="10.16" y="33.02" length="short" rot="R270"/>
