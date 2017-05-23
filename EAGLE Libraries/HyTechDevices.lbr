@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.025" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -5308,10 +5308,10 @@ These measurements should be close enough to place on a pcb</description>
 </package>
 <package name="RASPBERRY_PI_ZERO-V1.2">
 <description>Raspberry Pi Zero, full outline with position of big connectors &amp;amp; drill holes</description>
-<circle x="3.5" y="3.5" radius="3.1" width="0.127" layer="52"/>
-<circle x="61.5" y="3.5" radius="3.1" width="0.127" layer="52"/>
-<circle x="61.5" y="26.5" radius="3.1" width="0.127" layer="52"/>
-<circle x="3.5" y="26.5" radius="3.1" width="0.127" layer="52"/>
+<circle x="3.5" y="3.5" radius="3.1" width="0.127" layer="39"/>
+<circle x="61.5" y="3.5" radius="3.1" width="0.127" layer="39"/>
+<circle x="61.5" y="26.5" radius="3.1" width="0.127" layer="39"/>
+<circle x="3.5" y="26.5" radius="3.1" width="0.127" layer="39"/>
 <wire x1="0" y1="3" x2="3" y2="0" width="0.254" layer="52" curve="90"/>
 <wire x1="3" y1="0" x2="7" y2="0" width="0.254" layer="52"/>
 <wire x1="7" y1="0" x2="18" y2="0" width="0.254" layer="52"/>
@@ -5410,6 +5410,10 @@ These measurements should be close enough to place on a pcb</description>
 <text x="52.5" y="2.5" size="1.27" layer="21">USB</text>
 <text x="3" y="17" size="1.27" layer="21">Micro SD</text>
 <text x="17" y="14" size="3" layer="21">Raspberry Pi Zero (1.2)</text>
+<circle x="3.5" y="26.5" radius="3.1" width="0.127" layer="40"/>
+<circle x="3.5" y="3.5" radius="3.1" width="0.127" layer="40"/>
+<circle x="61.5" y="3.5" radius="3.1" width="0.127" layer="40"/>
+<circle x="61.5" y="26.5" radius="3.1" width="0.127" layer="40"/>
 </package>
 <package name="SOT223">
 <description>&lt;b&gt;SOT-223&lt;/b&gt;
@@ -7626,6 +7630,29 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <rectangle x1="4.7879" y1="-0.4191" x2="5.3721" y2="0.1651" layer="51"/>
 <rectangle x1="7.3279" y1="-0.4191" x2="7.9121" y2="0.1651" layer="51" rot="R90"/>
 <rectangle x1="9.8679" y1="-0.4191" x2="10.4521" y2="0.1651" layer="51"/>
+</package>
+<package name="HX1188NL">
+<wire x1="3.556" y1="6.477" x2="-3.556" y2="6.477" width="0.127" layer="21"/>
+<wire x1="-3.556" y1="6.477" x2="-3.556" y2="-6.477" width="0.127" layer="21"/>
+<wire x1="-3.556" y1="-6.477" x2="3.556" y2="-6.477" width="0.127" layer="21"/>
+<wire x1="3.556" y1="-6.477" x2="3.556" y2="6.477" width="0.127" layer="21"/>
+<smd name="8" x="-4.318" y="-4.445" dx="1.905" dy="0.762" layer="1" rot="R180"/>
+<smd name="7" x="-4.318" y="-3.175" dx="1.905" dy="0.762" layer="1" rot="R180"/>
+<smd name="6" x="-4.318" y="-1.905" dx="1.905" dy="0.762" layer="1" rot="R180"/>
+<smd name="5" x="-4.318" y="-0.635" dx="1.905" dy="0.762" layer="1" rot="R180"/>
+<smd name="4" x="-4.318" y="0.635" dx="1.905" dy="0.762" layer="1" rot="R180"/>
+<smd name="3" x="-4.318" y="1.905" dx="1.905" dy="0.762" layer="1" rot="R180"/>
+<smd name="2" x="-4.318" y="3.175" dx="1.905" dy="0.762" layer="1" rot="R180"/>
+<smd name="1" x="-4.318" y="4.445" dx="1.905" dy="0.762" layer="1" rot="R180"/>
+<smd name="9" x="4.318" y="-4.445" dx="1.905" dy="0.762" layer="1" rot="R180"/>
+<smd name="10" x="4.318" y="-3.175" dx="1.905" dy="0.762" layer="1" rot="R180"/>
+<smd name="11" x="4.318" y="-1.905" dx="1.905" dy="0.762" layer="1" rot="R180"/>
+<smd name="12" x="4.318" y="-0.635" dx="1.905" dy="0.762" layer="1" rot="R180"/>
+<smd name="13" x="4.318" y="0.635" dx="1.905" dy="0.762" layer="1" rot="R180"/>
+<smd name="14" x="4.318" y="1.905" dx="1.905" dy="0.762" layer="1" rot="R180"/>
+<smd name="15" x="4.318" y="3.175" dx="1.905" dy="0.762" layer="1" rot="R180"/>
+<smd name="16" x="4.318" y="4.445" dx="1.905" dy="0.762" layer="1" rot="R180"/>
+<circle x="-2.54" y="5.715" radius="0.635" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -15259,6 +15286,34 @@ Note: The Sparkfun version includes many other packages including surface mount 
 <connect gate="G$1" pin="3" pad="3"/>
 <connect gate="G$1" pin="4" pad="4"/>
 <connect gate="G$1" pin="5" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="HX1188NL">
+<description>Pulse Electronics HX1188NL Transformer</description>
+<gates>
+<gate name="G$1" symbol="TRANSFORMER" x="10.16" y="15.24"/>
+<gate name="G$2" symbol="TRANSFORMER" x="10.16" y="-12.7"/>
+</gates>
+<devices>
+<device name="HX1188NL" package="HX1188NL">
+<connects>
+<connect gate="G$1" pin="CD" pad="2"/>
+<connect gate="G$1" pin="CX" pad="15"/>
+<connect gate="G$1" pin="D+" pad="1"/>
+<connect gate="G$1" pin="D-" pad="3"/>
+<connect gate="G$1" pin="X+" pad="16"/>
+<connect gate="G$1" pin="X-" pad="14"/>
+<connect gate="G$2" pin="CD" pad="7"/>
+<connect gate="G$2" pin="CX" pad="10"/>
+<connect gate="G$2" pin="D+" pad="6"/>
+<connect gate="G$2" pin="D-" pad="8"/>
+<connect gate="G$2" pin="X+" pad="11"/>
+<connect gate="G$2" pin="X-" pad="9"/>
 </connects>
 <technologies>
 <technology name=""/>
