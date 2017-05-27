@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -7027,19 +7027,23 @@ FUSE</text>
 <description>105309-1202
 
 Nano-Fit™ Vertical Header, Through Hole, Single Row</description>
-<pad name="2" x="-1.25" y="0" drill="1.2"/>
-<pad name="1" x="1.25" y="0" drill="1.2"/>
+<pad name="P$1" x="-1.25" y="0" drill="1.2"/>
+<pad name="P$2" x="1.25" y="0" drill="1.2"/>
 <wire x1="-3" y1="1.74" x2="3" y2="1.74" width="0.127" layer="21"/>
-<wire x1="3" y1="1.74" x2="3" y2="-2.5" width="0.127" layer="21"/>
-<wire x1="3" y1="-2.5" x2="-3" y2="-2.5" width="0.127" layer="21"/>
-<wire x1="-3" y1="-2.5" x2="-3" y2="1.74" width="0.127" layer="21"/>
+<wire x1="3" y1="1.74" x2="3" y2="-1.74" width="0.127" layer="21"/>
+<wire x1="2.6" y1="-4.6" x2="-2.6" y2="-4.6" width="0.127" layer="21"/>
+<wire x1="-3" y1="-1.74" x2="-3" y2="1.74" width="0.127" layer="21"/>
+<wire x1="-3" y1="-1.74" x2="-2.6" y2="-1.74" width="0.127" layer="21"/>
+<wire x1="-2.6" y1="-1.74" x2="-2.6" y2="-4.6" width="0.127" layer="21"/>
+<wire x1="3" y1="-1.74" x2="2.6" y2="-1.74" width="0.127" layer="21"/>
+<wire x1="2.6" y1="-1.74" x2="2.6" y2="-4.6" width="0.127" layer="21"/>
 </package>
 <package name="NANO-FIT_VERTICAL-4">
 <description>105312-1204 Nano-Fit™ Vertical Header, Through Hole, Dual Row, 4 Circuits</description>
-<pad name="2" x="-1.25" y="0" drill="1.2" shape="square"/>
-<pad name="1" x="1.25" y="0" drill="1.2" shape="square"/>
-<pad name="4" x="-1.25" y="2.5" drill="1.2" shape="square"/>
-<pad name="3" x="1.25" y="2.5" drill="1.2" shape="square"/>
+<pad name="P$1" x="-1.25" y="0" drill="1.2" shape="square"/>
+<pad name="P$2" x="1.25" y="0" drill="1.2" shape="square"/>
+<pad name="P$3" x="-1.25" y="2.5" drill="1.2" shape="square"/>
+<pad name="P$4" x="1.25" y="2.5" drill="1.2" shape="square"/>
 <wire x1="-3" y1="4" x2="3" y2="4" width="0.127" layer="21"/>
 <wire x1="3" y1="4" x2="3" y2="2.32" width="0.127" layer="21"/>
 <wire x1="-3" y1="2.32" x2="-3" y2="4" width="0.127" layer="21"/>
@@ -7703,6 +7707,20 @@ MX150L™ Vertical PCB Header</description>
 <wire x1="20.32" y1="0" x2="20.32" y2="-5.08" width="0.508" layer="21"/>
 <wire x1="19.05" y1="0" x2="13.97" y2="0" width="0.508" layer="21"/>
 <wire x1="20.32" y1="0" x2="25.4" y2="0" width="0.508" layer="21"/>
+</package>
+<package name="OMF_250">
+<smd name="P$1" x="-4.8" y="0" dx="4.4" dy="3.6" layer="1" rot="R90"/>
+<smd name="P$2" x="4.8" y="0" dx="4.4" dy="3.6" layer="1" rot="R90"/>
+<text x="-5.08" y="2.794" size="1.6764" layer="21">&gt;NAME</text>
+<text x="-5.08" y="-4.572" size="1.6764" layer="21">&gt;VALUE</text>
+<wire x1="-6.8" y1="2.4" x2="6.8" y2="2.4" width="0.127" layer="21"/>
+<wire x1="6.8" y1="2.4" x2="6.8" y2="-2.4" width="0.127" layer="21"/>
+<wire x1="6.8" y1="-2.4" x2="-6.8" y2="-2.4" width="0.127" layer="21"/>
+<wire x1="-6.8" y1="-2.4" x2="-6.8" y2="2.4" width="0.127" layer="21"/>
+<wire x1="-1.2" y1="0" x2="-0.6" y2="-0.6" width="0.254" layer="21" curve="90"/>
+<wire x1="-0.6" y1="-0.6" x2="0" y2="0" width="0.254" layer="21" curve="90"/>
+<wire x1="0" y1="0" x2="0.6" y2="0.6" width="0.254" layer="21" curve="-90"/>
+<wire x1="0.6" y1="0.6" x2="1.2" y2="0" width="0.254" layer="21" curve="-90"/>
 </package>
 </packages>
 <symbols>
@@ -12070,8 +12088,8 @@ Source: http://www.molex.com</description>
 </device>
 <device name="NANO-FIT_VERTICAL-2" package="NANO-FIT_VERTICAL-2">
 <connects>
-<connect gate="-1" pin="S" pad="1"/>
-<connect gate="-2" pin="S" pad="2"/>
+<connect gate="-1" pin="S" pad="P$1"/>
+<connect gate="-2" pin="S" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -12145,10 +12163,10 @@ Source: http://www.molex.com</description>
 </device>
 <device name="NANO-FIT-VERTICAL-4" package="NANO-FIT_VERTICAL-4">
 <connects>
-<connect gate="-1" pin="S" pad="1"/>
-<connect gate="-2" pin="S" pad="2"/>
-<connect gate="-3" pin="S" pad="3"/>
-<connect gate="-4" pin="S" pad="4"/>
+<connect gate="-1" pin="S" pad="P$1"/>
+<connect gate="-2" pin="S" pad="P$2"/>
+<connect gate="-3" pin="S" pad="P$3"/>
+<connect gate="-4" pin="S" pad="P$4"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -15067,6 +15085,15 @@ Schurter 0751.0110 Brass Fuse Clip
 <connects>
 <connect gate="G$1" pin="P1" pad="L1 L2"/>
 <connect gate="G$1" pin="P2" pad="R1 R2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_OMF_250" package="OMF_250">
+<connects>
+<connect gate="G$1" pin="P1" pad="P$1"/>
+<connect gate="G$1" pin="P2" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>

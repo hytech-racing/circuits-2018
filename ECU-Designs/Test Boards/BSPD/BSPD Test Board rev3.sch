@@ -1757,6 +1757,9 @@ MAX voltage in: 35V</description>
 <part name="GND15" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="SW_POWER1" library="HyTechDevices" deviceset="0S102011MS2QS1" device=""/>
 <part name="P+10" library="supply1" deviceset="+12V" device=""/>
+<part name="U$8" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
+<part name="U$9" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
+<part name="U$10" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1774,27 +1777,27 @@ MAX voltage in: 35V</description>
 <instance part="X1" gate="-8" x="10.16" y="50.8" rot="MR0"/>
 <instance part="X1" gate="-9" x="10.16" y="48.26" rot="MR0"/>
 <instance part="X1" gate="-10" x="10.16" y="45.72" rot="MR0"/>
-<instance part="LED1" gate="LED" x="53.34" y="50.8"/>
-<instance part="LED2" gate="LED" x="60.96" y="53.34"/>
-<instance part="LED3" gate="LED" x="68.58" y="55.88"/>
+<instance part="LED1" gate="LED" x="53.34" y="43.18"/>
+<instance part="LED2" gate="LED" x="60.96" y="45.72"/>
+<instance part="LED3" gate="LED" x="68.58" y="48.26"/>
 <instance part="GND1" gate="1" x="40.64" y="43.18"/>
 <instance part="P+1" gate="1" x="45.72" y="40.64" rot="R180"/>
-<instance part="R1" gate="G$1" x="53.34" y="38.1" rot="R90"/>
-<instance part="R2" gate="G$1" x="60.96" y="40.64" rot="R90"/>
-<instance part="R3" gate="G$1" x="68.58" y="43.18" rot="R90"/>
-<instance part="GND2" gate="1" x="53.34" y="27.94"/>
-<instance part="GND3" gate="1" x="60.96" y="30.48"/>
-<instance part="GND4" gate="1" x="68.58" y="33.02"/>
+<instance part="R1" gate="G$1" x="53.34" y="30.48" rot="R90"/>
+<instance part="R2" gate="G$1" x="60.96" y="33.02" rot="R90"/>
+<instance part="R3" gate="G$1" x="68.58" y="35.56" rot="R90"/>
+<instance part="GND2" gate="1" x="53.34" y="20.32"/>
+<instance part="GND3" gate="1" x="60.96" y="22.86"/>
+<instance part="GND4" gate="1" x="68.58" y="25.4"/>
 <instance part="R4" gate="G$1" x="109.22" y="91.44" rot="R270"/>
 <instance part="R5" gate="G$1" x="109.22" y="76.2" rot="R270"/>
 <instance part="GND5" gate="1" x="119.38" y="91.44" rot="R90"/>
 <instance part="GND6" gate="1" x="119.38" y="76.2" rot="R90"/>
-<instance part="P+4" gate="1" x="40.64" y="15.24" rot="R270"/>
-<instance part="GND7" gate="1" x="7.62" y="12.7" rot="R270"/>
-<instance part="U$1" gate="G$1" x="73.66" y="17.78"/>
-<instance part="P+5" gate="1" x="60.96" y="17.78" rot="MR270"/>
-<instance part="P+6" gate="1" x="86.36" y="17.78" rot="R270"/>
-<instance part="GND9" gate="1" x="73.66" y="5.08"/>
+<instance part="P+4" gate="1" x="40.64" y="7.62" rot="R270"/>
+<instance part="GND7" gate="1" x="7.62" y="5.08" rot="R270"/>
+<instance part="U$1" gate="G$1" x="73.66" y="10.16"/>
+<instance part="P+5" gate="1" x="60.96" y="10.16" rot="MR270"/>
+<instance part="P+6" gate="1" x="86.36" y="10.16" rot="R270"/>
+<instance part="GND9" gate="1" x="73.66" y="-2.54"/>
 <instance part="LED5" gate="LED" x="55.88" y="71.12" rot="R180"/>
 <instance part="R8" gate="G$1" x="55.88" y="83.82" rot="R90"/>
 <instance part="GND10" gate="1" x="55.88" y="93.98" rot="R180"/>
@@ -1802,13 +1805,13 @@ MAX voltage in: 35V</description>
 <instance part="P+3" gate="1" x="99.06" y="76.2" rot="MR270"/>
 <instance part="SW_INT_CUR" gate="G$1" x="73.66" y="86.36" rot="R270"/>
 <instance part="SW_INT_BR" gate="G$1" x="73.66" y="71.12" rot="R270"/>
-<instance part="SW_POWER" gate="G$1" x="30.48" y="15.24" rot="R270"/>
+<instance part="SW_POWER" gate="G$1" x="30.48" y="7.62" rot="R270"/>
 <instance part="U$2" gate="G$1" x="114.3" y="86.36"/>
 <instance part="U$3" gate="G$1" x="114.3" y="71.12"/>
 <instance part="U$4" gate="G$1" x="60.96" y="66.04"/>
 <instance part="R6" gate="G$1" x="48.26" y="83.82" rot="R90"/>
 <instance part="GND8" gate="1" x="48.26" y="93.98" rot="R180"/>
-<instance part="9V" gate="G$1" x="17.78" y="12.7"/>
+<instance part="9V" gate="G$1" x="17.78" y="5.08"/>
 <instance part="U$5" gate="G$1" x="99.06" y="50.8"/>
 <instance part="U$6" gate="G$1" x="99.06" y="45.72"/>
 <instance part="GND11" gate="1" x="96.52" y="43.18"/>
@@ -1828,6 +1831,9 @@ MAX voltage in: 35V</description>
 <instance part="GND15" gate="1" x="132.08" y="71.12" rot="MR90"/>
 <instance part="SW_POWER1" gate="G$1" x="30.48" y="81.28" rot="MR270"/>
 <instance part="P+10" gate="1" x="20.32" y="81.28" rot="R90"/>
+<instance part="U$8" gate="G$1" x="81.28" y="58.42"/>
+<instance part="U$9" gate="G$1" x="81.28" y="55.88"/>
+<instance part="U$10" gate="G$1" x="81.28" y="53.34"/>
 </instances>
 <busses>
 </busses>
@@ -1870,25 +1876,37 @@ MAX voltage in: 35V</description>
 <net name="READ_FAULT" class="0">
 <segment>
 <pinref part="X1" gate="-5" pin="S"/>
-<wire x1="12.7" y1="58.42" x2="68.58" y2="58.42" width="0.1524" layer="91"/>
 <label x="35.56" y="58.42" size="1.778" layer="95" rot="MR0"/>
 <pinref part="LED3" gate="LED" pin="A"/>
+<wire x1="12.7" y1="58.42" x2="68.58" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="58.42" x2="68.58" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="U$8" gate="G$1" pin="P$1"/>
+<wire x1="78.74" y1="58.42" x2="68.58" y2="58.42" width="0.1524" layer="91"/>
+<junction x="68.58" y="58.42"/>
 </segment>
 </net>
 <net name="READ_CHARGE" class="0">
 <segment>
 <pinref part="X1" gate="-6" pin="S"/>
-<wire x1="12.7" y1="55.88" x2="60.96" y2="55.88" width="0.1524" layer="91"/>
 <label x="35.56" y="55.88" size="1.778" layer="95" rot="MR0"/>
 <pinref part="LED2" gate="LED" pin="A"/>
+<wire x1="12.7" y1="55.88" x2="60.96" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="55.88" x2="60.96" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="U$9" gate="G$1" pin="P$1"/>
+<wire x1="78.74" y1="55.88" x2="60.96" y2="55.88" width="0.1524" layer="91"/>
+<junction x="60.96" y="55.88"/>
 </segment>
 </net>
 <net name="READ_SWITCH" class="0">
 <segment>
 <pinref part="X1" gate="-7" pin="S"/>
-<wire x1="12.7" y1="53.34" x2="53.34" y2="53.34" width="0.1524" layer="91"/>
 <label x="35.56" y="53.34" size="1.778" layer="95" rot="MR0"/>
 <pinref part="LED1" gate="LED" pin="A"/>
+<wire x1="12.7" y1="53.34" x2="53.34" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="53.34" x2="53.34" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="U$10" gate="G$1" pin="P$1"/>
+<wire x1="78.74" y1="53.34" x2="53.34" y2="53.34" width="0.1524" layer="91"/>
+<junction x="53.34" y="53.34"/>
 </segment>
 </net>
 <net name="+12V" class="0">
@@ -1901,13 +1919,13 @@ MAX voltage in: 35V</description>
 </segment>
 <segment>
 <pinref part="P+4" gate="1" pin="+12V"/>
-<wire x1="38.1" y1="15.24" x2="35.56" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="7.62" x2="35.56" y2="7.62" width="0.1524" layer="91"/>
 <pinref part="SW_POWER" gate="G$1" pin="O"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="IN"/>
 <pinref part="P+5" gate="1" pin="+12V"/>
-<wire x1="63.5" y1="17.78" x2="66.04" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="10.16" x2="66.04" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$5" gate="G$1" pin="P$1"/>
@@ -1934,17 +1952,17 @@ MAX voltage in: 35V</description>
 <segment>
 <pinref part="R1" gate="G$1" pin="1"/>
 <pinref part="GND2" gate="1" pin="GND"/>
-<wire x1="53.34" y1="30.48" x2="53.34" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="22.86" x2="53.34" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>
 <pinref part="GND3" gate="1" pin="GND"/>
-<wire x1="60.96" y1="33.02" x2="60.96" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="25.4" x2="60.96" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R3" gate="G$1" pin="1"/>
 <pinref part="GND4" gate="1" pin="GND"/>
-<wire x1="68.58" y1="35.56" x2="68.58" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="27.94" x2="68.58" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R4" gate="G$1" pin="3"/>
@@ -1958,13 +1976,13 @@ MAX voltage in: 35V</description>
 </segment>
 <segment>
 <pinref part="GND7" gate="1" pin="GND"/>
-<wire x1="10.16" y1="12.7" x2="12.7" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="5.08" x2="12.7" y2="5.08" width="0.1524" layer="91"/>
 <pinref part="9V" gate="G$1" pin="-"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="GND"/>
 <pinref part="GND9" gate="1" pin="GND"/>
-<wire x1="73.66" y1="7.62" x2="73.66" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="0" x2="73.66" y2="2.54" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R8" gate="G$1" pin="2"/>
@@ -2005,21 +2023,21 @@ MAX voltage in: 35V</description>
 <segment>
 <pinref part="LED1" gate="LED" pin="C"/>
 <pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="53.34" y1="43.18" x2="53.34" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="35.56" x2="53.34" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
 <pinref part="LED2" gate="LED" pin="C"/>
 <pinref part="R2" gate="G$1" pin="2"/>
-<wire x1="60.96" y1="45.72" x2="60.96" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="38.1" x2="60.96" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
 <segment>
 <pinref part="LED3" gate="LED" pin="C"/>
 <pinref part="R3" gate="G$1" pin="2"/>
-<wire x1="68.58" y1="48.26" x2="68.58" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="40.64" x2="68.58" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -2052,7 +2070,7 @@ MAX voltage in: 35V</description>
 </net>
 <net name="N$6" class="0">
 <segment>
-<wire x1="22.86" y1="12.7" x2="25.4" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="5.08" x2="25.4" y2="5.08" width="0.1524" layer="91"/>
 <pinref part="SW_POWER" gate="G$1" pin="P"/>
 <pinref part="9V" gate="G$1" pin="+"/>
 </segment>
@@ -2061,7 +2079,7 @@ MAX voltage in: 35V</description>
 <segment>
 <pinref part="U$1" gate="G$1" pin="OUT"/>
 <pinref part="P+6" gate="1" pin="+5V"/>
-<wire x1="83.82" y1="17.78" x2="81.28" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="10.16" x2="81.28" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R4" gate="G$1" pin="1"/>

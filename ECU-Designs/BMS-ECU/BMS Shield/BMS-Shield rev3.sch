@@ -3726,7 +3726,7 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <part name="GND14" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="GND15" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="R8" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="120"/>
-<part name="C3" library="HyTechDevices" deviceset="CAP" device="0805" value="100pF"/>
+<part name="C3" library="HyTechDevices" deviceset="CAP" device="0805" value="27pF"/>
 <part name="ISOSPI" library="HyTechDevices" deviceset="CONNECTOR-2" device=""/>
 <part name="GND16" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="U$15" library="HyTechDevices" deviceset="HX1188NL" device="HX1188NL"/>
@@ -3739,6 +3739,7 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <sheet>
 <plain>
 <text x="0" y="30.48" size="1.778" layer="97">Cut one of these inputs ➡️</text>
+<text x="10.16" y="-12.7" size="1.778" layer="91">See pg. 19 about Pull-Up Resistance Considerations</text>
 </plain>
 <instances>
 <instance part="J1" gate="G$1" x="53.34" y="40.64"/>

@@ -3510,6 +3510,12 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="GND37" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="LED12" library="HyTechDevices" deviceset="LED" device="-0805"/>
 <part name="LED13" library="HyTechDevices" deviceset="LED" device="-0805"/>
+<part name="REG2" library="HyTechDevices" deviceset="5V_REGULATOR_LM340-N" device="LM340MPX-5.0/NOPB" value="5V"/>
+<part name="GND38" library="HyTechSymbols" deviceset="GND" device=""/>
+<part name="C5" library="HyTechDevices" deviceset="CAP" device="0805" value=".22uF"/>
+<part name="C6" library="HyTechDevices" deviceset="CAP" device="0805" value=".1uF"/>
+<part name="GND39" library="HyTechSymbols" deviceset="GND" device=""/>
+<part name="P+19" library="supply1" deviceset="+12V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3691,6 +3697,12 @@ In this library the device names are the same as the pin names of the symbols, t
 <instance part="GND37" gate="1" x="185.42" y="180.34" rot="R270"/>
 <instance part="LED12" gate="LED" x="208.28" y="162.56" rot="MR90"/>
 <instance part="LED13" gate="LED" x="208.28" y="180.34" rot="MR90"/>
+<instance part="REG2" gate="G$1" x="-93.98" y="190.5"/>
+<instance part="GND38" gate="1" x="-99.06" y="182.88" rot="R270"/>
+<instance part="C5" gate="G$1" x="-109.22" y="193.04"/>
+<instance part="C6" gate="G$1" x="-83.82" y="193.04"/>
+<instance part="GND39" gate="1" x="-73.66" y="193.04"/>
+<instance part="P+19" gate="1" x="-109.22" y="182.88" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -3909,6 +3921,20 @@ In this library the device names are the same as the pin names of the symbols, t
 <pinref part="R28" gate="G$1" pin="2"/>
 <pinref part="GND37" gate="1" pin="GND"/>
 <wire x1="190.5" y1="180.34" x2="187.96" y2="180.34" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="REG2" gate="G$1" pin="GND"/>
+<pinref part="GND38" gate="1" pin="GND"/>
+<wire x1="-93.98" y1="182.88" x2="-96.52" y2="182.88" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C5" gate="G$1" pin="1"/>
+<pinref part="C6" gate="G$1" pin="1"/>
+<wire x1="-109.22" y1="198.12" x2="-83.82" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="-83.82" y1="198.12" x2="-73.66" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="-73.66" y1="198.12" x2="-73.66" y2="195.58" width="0.1524" layer="91"/>
+<junction x="-83.82" y="198.12"/>
+<pinref part="GND39" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -4533,6 +4559,14 @@ In this library the device names are the same as the pin names of the symbols, t
 <pinref part="FAN1_SSR" gate="G$1" pin="DC+"/>
 <wire x1="236.22" y1="157.48" x2="233.68" y2="157.48" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="REG2" gate="G$1" pin="IN"/>
+<wire x1="-109.22" y1="190.5" x2="-101.6" y2="190.5" width="0.1524" layer="91"/>
+<pinref part="C5" gate="G$1" pin="2"/>
+<junction x="-109.22" y="190.5"/>
+<wire x1="-109.22" y1="185.42" x2="-109.22" y2="190.5" width="0.1524" layer="91"/>
+<pinref part="P+19" gate="1" pin="+12V"/>
+</segment>
 </net>
 <net name="SHUTDOWN_POWER" class="0">
 <segment>
@@ -4619,6 +4653,13 @@ In this library the device names are the same as the pin names of the symbols, t
 <pinref part="REG1" gate="G$1" pin="IN"/>
 <pinref part="C3" gate="G$1" pin="1"/>
 <wire x1="-58.42" y1="185.42" x2="-60.96" y2="185.42" width="0.1524" layer="91"/>
+<pinref part="C6" gate="G$1" pin="2"/>
+<junction x="-83.82" y="190.5"/>
+<pinref part="REG2" gate="G$1" pin="OUT"/>
+<wire x1="-86.36" y1="190.5" x2="-83.82" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="-83.82" y1="185.42" x2="-83.82" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="-60.96" y1="185.42" x2="-83.82" y2="185.42" width="0.1524" layer="91"/>
+<junction x="-60.96" y="185.42"/>
 </segment>
 </net>
 <net name="VCC" class="0">
