@@ -2072,7 +2072,7 @@ per FH EV4.1.4</text>
 <wire x1="-2.54" y1="220.98" x2="-2.54" y2="203.2" width="0.6096" layer="156"/>
 <wire x1="-12.7" y1="223.52" x2="63.5" y2="223.52" width="0.6096" layer="156"/>
 <wire x1="63.5" y1="220.98" x2="-2.54" y2="220.98" width="0.6096" layer="156"/>
-<text x="-22.86" y="243.84" size="5.08" layer="97">Wire Key
+<text x="-55.88" y="53.34" size="5.08" layer="97">Wire Key
 Thick: Tractive System wires
 Orange: High Current path
 Blue: GLV Buses</text>
@@ -2122,6 +2122,7 @@ Power for FSAE EV5.1.4</text>
 <wire x1="492.76" y1="294.64" x2="492.76" y2="238.76" width="1.27" layer="97"/>
 <wire x1="492.76" y1="238.76" x2="441.96" y2="238.76" width="1.27" layer="97"/>
 <wire x1="441.96" y1="238.76" x2="441.96" y2="294.64" width="1.27" layer="97"/>
+<text x="114.3" y="287.02" size="12.7" layer="97">HyTech Racing 2017 Electrical Diagram</text>
 </plain>
 <moduleinsts>
 <moduleinst name="FRONT_ECU" module="DASHBOARD_BOARD" x="551.18" y="187.96" smashed="yes">
