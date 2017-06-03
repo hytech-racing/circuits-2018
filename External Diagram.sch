@@ -1987,10 +1987,8 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="LED_POWER" library="HyTechSymbols" deviceset="LED" device=""/>
 <part name="SL12" library="HyTechSymbols" deviceset="M04" device=""/>
 <part name="GND2" library="HyTechSymbols" deviceset="GND" device=""/>
-<part name="TSMP-2" library="HyTechDevices" deviceset="RESISTOR" device="10W" value="5k"/>
-<part name="TSMP+2" library="HyTechDevices" deviceset="RESISTOR" device="10W" value="5k"/>
-<part name="TSMP-1" library="HyTechDevices" deviceset="RESISTOR" device="10W" value="5k"/>
-<part name="TSMP+1" library="HyTechDevices" deviceset="RESISTOR" device="10W" value="5k"/>
+<part name="TSMP_RES-" library="HyTechDevices" deviceset="RESISTOR" device="10W" value="5k"/>
+<part name="TSMP_RES+" library="HyTechDevices" deviceset="RESISTOR" device="10W" value="5k"/>
 <part name="PCB_F1" library="HyTechSymbols" deviceset="FUSE" device="" value="6.3A"/>
 <part name="PCB_F2" library="HyTechSymbols" deviceset="FUSE" device="" value="6.3A"/>
 <part name="SL13" library="HyTechSymbols" deviceset="M04" device=""/>
@@ -2122,7 +2120,7 @@ Power for FSAE EV5.1.4</text>
 <wire x1="492.76" y1="294.64" x2="492.76" y2="238.76" width="1.27" layer="97"/>
 <wire x1="492.76" y1="238.76" x2="441.96" y2="238.76" width="1.27" layer="97"/>
 <wire x1="441.96" y1="238.76" x2="441.96" y2="294.64" width="1.27" layer="97"/>
-<text x="114.3" y="287.02" size="12.7" layer="97">HyTech Racing 2017 Electrical Diagram</text>
+<text x="157.48" y="289.56" size="10.16" layer="97">HyTech Racing 2017 Electrical Diagram</text>
 </plain>
 <moduleinsts>
 <moduleinst name="FRONT_ECU" module="DASHBOARD_BOARD" x="551.18" y="187.96" smashed="yes">
@@ -2212,10 +2210,8 @@ Power for FSAE EV5.1.4</text>
 <instance part="LED_POWER" gate="G$1" x="533.4" y="287.02" rot="R180"/>
 <instance part="SL12" gate="G$1" x="22.86" y="190.5" rot="R180"/>
 <instance part="GND2" gate="1" x="246.38" y="17.78" rot="R270"/>
-<instance part="TSMP-2" gate="G$1" x="91.44" y="193.04" rot="R90"/>
-<instance part="TSMP+2" gate="G$1" x="96.52" y="198.12" rot="R90"/>
-<instance part="TSMP-1" gate="G$1" x="91.44" y="208.28" rot="R90"/>
-<instance part="TSMP+1" gate="G$1" x="96.52" y="213.36" rot="R90"/>
+<instance part="TSMP_RES-" gate="G$1" x="91.44" y="200.66" rot="R90"/>
+<instance part="TSMP_RES+" gate="G$1" x="96.52" y="208.28" rot="R90"/>
 <instance part="PCB_F1" gate="G$1" x="101.6" y="187.96" rot="R90"/>
 <instance part="PCB_F2" gate="G$1" x="106.68" y="200.66" rot="R90"/>
 <instance part="SL13" gate="G$1" x="401.32" y="172.72" rot="MR180"/>
@@ -2958,8 +2954,7 @@ Power for FSAE EV5.1.4</text>
 <segment>
 <pinref part="TSMP-A" gate="G$1" pin="1"/>
 <wire x1="213.36" y1="139.7" x2="91.44" y2="139.7" width="0.6096" layer="91"/>
-<pinref part="TSMP-2" gate="G$1" pin="1"/>
-<wire x1="91.44" y1="139.7" x2="91.44" y2="187.96" width="0.6096" layer="91"/>
+<wire x1="91.44" y1="139.7" x2="91.44" y2="195.58" width="0.6096" layer="91"/>
 </segment>
 </net>
 <net name="N$34" class="0">
@@ -2967,35 +2962,20 @@ Power for FSAE EV5.1.4</text>
 <pinref part="TSMP+A" gate="G$1" pin="1"/>
 <wire x1="218.44" y1="139.7" x2="218.44" y2="142.24" width="0.6096" layer="91"/>
 <wire x1="218.44" y1="142.24" x2="96.52" y2="142.24" width="0.6096" layer="91"/>
-<pinref part="TSMP+2" gate="G$1" pin="1"/>
-<wire x1="96.52" y1="142.24" x2="96.52" y2="193.04" width="0.6096" layer="91"/>
-</segment>
-</net>
-<net name="N$37" class="0">
-<segment>
-<pinref part="TSMP-2" gate="G$1" pin="2"/>
-<pinref part="TSMP-1" gate="G$1" pin="1"/>
-<wire x1="91.44" y1="203.2" x2="91.44" y2="198.12" width="0.6096" layer="91"/>
-</segment>
-</net>
-<net name="N$38" class="0">
-<segment>
-<pinref part="TSMP+2" gate="G$1" pin="2"/>
-<pinref part="TSMP+1" gate="G$1" pin="1"/>
-<wire x1="96.52" y1="208.28" x2="96.52" y2="203.2" width="0.6096" layer="91"/>
+<wire x1="96.52" y1="142.24" x2="96.52" y2="203.2" width="0.6096" layer="91"/>
 </segment>
 </net>
 <net name="N$39" class="0">
 <segment>
-<pinref part="TSMP-1" gate="G$1" pin="2"/>
-<wire x1="91.44" y1="213.36" x2="91.44" y2="220.98" width="0.6096" layer="91"/>
+<pinref part="TSMP_RES-" gate="G$1" pin="2"/>
+<wire x1="91.44" y1="205.74" x2="91.44" y2="220.98" width="0.6096" layer="91"/>
 <junction x="91.44" y="220.98"/>
 </segment>
 </net>
 <net name="N$40" class="0">
 <segment>
-<pinref part="TSMP+1" gate="G$1" pin="2"/>
-<wire x1="96.52" y1="218.44" x2="96.52" y2="223.52" width="0.6096" layer="91"/>
+<pinref part="TSMP_RES+" gate="G$1" pin="2"/>
+<wire x1="96.52" y1="213.36" x2="96.52" y2="223.52" width="0.6096" layer="91"/>
 <junction x="96.52" y="223.52"/>
 </segment>
 </net>
