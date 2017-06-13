@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.1.0">
+<eagle version="8.2.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -3465,10 +3465,10 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="GND26" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="GND11" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="LED10" library="HyTechDevices" deviceset="LED" device="-0805"/>
-<part name="R22" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES"/>
+<part name="R22" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="82"/>
 <part name="GND27" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="LED11" library="HyTechDevices" deviceset="LED" device="-0805"/>
-<part name="R23" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES"/>
+<part name="R23" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="20"/>
 <part name="GND28" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="P+11" library="supply1" deviceset="+12V" device=""/>
 <part name="REG1" library="HyTechDevices" deviceset="TLV1117LV33" device=""/>

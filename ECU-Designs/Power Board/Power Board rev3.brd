@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.1.0">
+<eagle version="8.2.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -3020,9 +3020,9 @@ design rules under a new name.</description>
 <element name="D6" library="HyTechDevices" package="0805_D" value="DIODE0805" x="56.388" y="60.706" rot="MR90"/>
 <element name="XB" library="HyTechDevices" package="XBEE" value="XBEE" x="73" y="77.762"/>
 <element name="LED10" library="HyTechDevices" package="LED-805" value="" x="82.514" y="95.696" rot="R90"/>
-<element name="R22" library="HyTechDevices" package="0805" value="" x="77.996" y="95.794"/>
+<element name="R22" library="HyTechDevices" package="0805" value="82" x="77.996" y="95.794"/>
 <element name="LED11" library="HyTechDevices" package="LED-805" value="" x="82.386" y="92.188" rot="R90"/>
-<element name="R23" library="HyTechDevices" package="0805" value="" x="77.996" y="92.176"/>
+<element name="R23" library="HyTechDevices" package="0805" value="20" x="77.996" y="92.176"/>
 <element name="REG1" library="HyTechDevices" package="SOT223" value="TLV1117LV33" x="72.836" y="81.128"/>
 <element name="C3" library="HyTechDevices" package="0805" value="1uF" x="78.398" y="77.658" rot="R270"/>
 <element name="C4" library="HyTechDevices" package="0805" value="1uF" x="75.324" y="74.51" rot="R180"/>
