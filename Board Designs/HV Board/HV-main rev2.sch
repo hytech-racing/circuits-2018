@@ -1810,7 +1810,7 @@ DC/DC</text>
 <pin name="CONTACT2" x="50.8" y="-10.16" length="short" rot="R180"/>
 <text x="27.94" y="-5.08" size="1.778" layer="94">5504-12-1 NC</text>
 </symbol>
-<symbol name="MCP6002">
+<symbol name="OPAMP_2_CHANNEL">
 <wire x1="0" y1="1.27" x2="0" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="0" y1="-2.54" x2="0" y2="-5.08" width="0.254" layer="94"/>
@@ -2650,10 +2650,10 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="MCP6002">
-<description>Microchip MCP6002 Dual Channel Op Amp</description>
+<deviceset name="NE5532">
+<description>TI NE5532 Dual Channel Op Amp</description>
 <gates>
-<gate name="G$1" symbol="MCP6002" x="0" y="0"/>
+<gate name="G$1" symbol="OPAMP_2_CHANNEL" x="0" y="0"/>
 </gates>
 <devices>
 <device name="SOIC" package="SOIC-08">
@@ -3721,7 +3721,7 @@ Source: http://www.molex.com</description>
 <part name="GND17" library="supply1" deviceset="GND" device=""/>
 <part name="R6" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="10k"/>
 <part name="R7" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="2k"/>
-<part name="IC2" library="HyTechDevices" deviceset="MCP6002" device="SOIC"/>
+<part name="IC2" library="HyTechDevices" deviceset="NE5532" device="SOIC"/>
 <part name="P+12" library="supply1" deviceset="+12V" device=""/>
 <part name="GND21" library="supply1" deviceset="GND" device=""/>
 <part name="IMD-OK" library="HyTechDevices" deviceset="LED" device="-0805"/>
@@ -3735,7 +3735,7 @@ Source: http://www.molex.com</description>
 <part name="R5" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="100"/>
 <part name="P+14" library="supply1" deviceset="+5V" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
-<part name="IC3" library="HyTechDevices" deviceset="MCP6002" device="SOIC"/>
+<part name="IC3" library="HyTechDevices" deviceset="NE5532" device="SOIC"/>
 <part name="P+11" library="supply1" deviceset="+5V" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="5KW_TRIM" library="HyTechDevices" deviceset="TRIMPOT_3296" device="C"/>
@@ -3754,7 +3754,7 @@ Source: http://www.molex.com</description>
 <part name="MAIN" library="HyTechDevices" deviceset="CONNECTOR-12" device="" value="CONNECTOR-12"/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="P+4" library="supply1" deviceset="+12V" device=""/>
-<part name="IMD" library="HyTechDevices" deviceset="CONNECTOR-6" device="NANO-FIT_VERTICAL-6" value="CONNECTOR-6NANO-FIT_VERTICAL-6"/>
+<part name="IMD" library="HyTechDevices" deviceset="CONNECTOR-6" device="NANO-FIT_VERTICAL-6" value="CONNECTOR-6"/>
 <part name="P+5" library="supply1" deviceset="+5V" device=""/>
 <part name="D1" library="HyTechDevices" deviceset="DIODE" device="DO-41" value="DIODE"/>
 <part name="HV_REG1" library="HyTechDevices" deviceset="HV_LIN_REG_LR8" device="SMD" value="LR8"/>
@@ -3807,7 +3807,7 @@ Source: http://www.molex.com</description>
 <part name="P+18" library="supply1" deviceset="+5V" device=""/>
 <part name="R35" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="120"/>
 <part name="C4" library="HyTechDevices" deviceset="CAP" device="0805" value="27pF"/>
-<part name="ISOSPI" library="HyTechDevices" deviceset="CONNECTOR-2" device="NANO-FIT_VERTICAL-2" value="CONNECTOR-2NANO-FIT_VERTICAL-2"/>
+<part name="ISOSPI" library="HyTechDevices" deviceset="CONNECTOR-2" device="NANO-FIT_VERTICAL-2" value="CONNECTOR-2"/>
 <part name="GND22" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="U$15" library="HyTechDevices" deviceset="HX1188NL" device="HX1188NL"/>
 <part name="R36" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="2k"/>
@@ -3836,7 +3836,7 @@ Source: http://www.molex.com</description>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
 <part name="R44" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="1k"/>
 <part name="GND32" library="HyTechSymbols" deviceset="GND" device=""/>
-<part name="EM" library="HyTechDevices" deviceset="CONNECTOR-4" device="NANO-FIT-VERTICAL-4" value="CONNECTOR-4NANO-FIT-VERTICAL-4"/>
+<part name="EM" library="HyTechDevices" deviceset="CONNECTOR-4" device="NANO-FIT-VERTICAL-4" value="CONNECTOR-4"/>
 <part name="+3V1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="+3V2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="GND5" library="HyTech 2016" deviceset="GND" device=""/>

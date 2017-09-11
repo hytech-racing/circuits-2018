@@ -2508,7 +2508,7 @@ design rules under a new name.</description>
 <element name="TRIM+" library="HyTechDevices" package="0805" value="" x="61.595" y="27.94" rot="MR270"/>
 <element name="TRIM-" library="HyTechDevices" package="0805" value="" x="60.833" y="35.56" rot="MR90"/>
 <element name="U$12" library="HyTechDevices" package="5504-12-1-NC" value="5504-12-1-NC" x="120.142" y="22.479"/>
-<element name="IC2" library="HyTechDevices" package="SOIC-08" value="MCP6002SOIC" x="55.499" y="28.321" rot="MR270"/>
+<element name="IC2" library="HyTechDevices" package="SOIC-08" value="NE5532SOIC" x="55.499" y="28.321" rot="MR270"/>
 <element name="U$5" library="HyTechDevices" package="HV_DCDC_VI-J71-CZ" value="HV_DCDC_VI-J71-CZ" x="114.173" y="1.27" rot="R180"/>
 <element name="DISCH+" library="HyTechDevices" package="MINIFIT_5566-2" value="TO DISCHARGE +" x="198.12" y="4.572" rot="R270">
 <attribute name="MF" value="" x="198.12" y="4.572" size="1.778" layer="27" rot="R270" display="off"/>
@@ -2536,7 +2536,7 @@ design rules under a new name.</description>
 </element>
 <element name="ON-LED" library="HyTechDevices" package="LED-805" value="" x="47.625" y="29.21" rot="R180"/>
 <element name="R5" library="HyTechDevices" package="0805" value="100" x="47.625" y="25.654" rot="R270"/>
-<element name="IC3" library="HyTechDevices" package="SOIC-08" value="MCP6002SOIC" x="54.483" y="38.608" rot="MR270"/>
+<element name="IC3" library="HyTechDevices" package="SOIC-08" value="NE5532SOIC" x="54.483" y="38.608" rot="MR270"/>
 <element name="5KW_TRIM" library="HyTechDevices" package="TRIMPOT_3296" value="" x="51.689" y="18.415" rot="R270"/>
 <element name="RELAYS" library="HyTechDevices" package="MINIFIT_5566-2" value="" x="37.211" y="55.753">
 <attribute name="MF" value="" x="37.211" y="55.753" size="1.778" layer="27" display="off"/>
@@ -2581,7 +2581,7 @@ design rules under a new name.</description>
 <attribute name="OC_FARNELL" value="unknown" x="26.924" y="46.99" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="OC_NEWARK" value="unknown" x="26.924" y="46.99" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="IMD" library="HyTechDevices" package="NANO-FIT_VERTICAL-6" value="CONNECTOR-6NANO-FIT_VERTICAL-6" x="42.799" y="6.477" rot="R270"/>
+<element name="IMD" library="HyTechDevices" package="NANO-FIT_VERTICAL-6" value="CONNECTOR-6" x="42.799" y="6.477" rot="R270"/>
 <element name="D1" library="HyTechDevices" package="DO-41" value="DIODE" x="39.624" y="48.006"/>
 <element name="HV_REG1" library="HyTechDevices" package="TO-252" value="LR8" x="97.028" y="55.88" rot="MR270"/>
 <element name="TSAL_SSR" library="HyTechDevices" package="SOP04" value="CPC1002N" x="76.2" y="55.88" rot="MR270"/>
@@ -2625,7 +2625,7 @@ design rules under a new name.</description>
 <element name="R34" library="HyTechDevices" package="0805" value="1k" x="21.463" y="15.748" rot="MR0"/>
 <element name="R35" library="HyTechDevices" package="0805" value="120" x="20.828" y="29.972" rot="R90"/>
 <element name="C4" library="HyTechDevices" package="0805" value="27pF" x="20.32" y="32.766" rot="MR180"/>
-<element name="ISOSPI" library="HyTechDevices" package="NANO-FIT_VERTICAL-2" value="CONNECTOR-2NANO-FIT_VERTICAL-2" x="5.842" y="28.702" rot="R270"/>
+<element name="ISOSPI" library="HyTechDevices" package="NANO-FIT_VERTICAL-2" value="CONNECTOR-2" x="5.842" y="28.702" rot="R270"/>
 <element name="U$15" library="HyTechDevices" package="HX1188NL" value="HX1188NLHX1188NL" x="13.335" y="26.67"/>
 <element name="R36" library="HyTechDevices" package="0805" value="2k" x="33.528" y="6.096" rot="R270"/>
 <element name="R37" library="HyTechDevices" package="0805" value="2k" x="36.068" y="6.096" rot="R270"/>
@@ -2644,7 +2644,7 @@ design rules under a new name.</description>
 <element name="R32" library="HyTechDevices" package="0805" value="2k" x="24.892" y="14.732" rot="R90"/>
 <element name="R43" library="HyTechDevices" package="0805" value="2k" x="28.448" y="14.732" rot="R90"/>
 <element name="R44" library="HyTechDevices" package="0805" value="1k" x="9.652" y="14.986" rot="R270"/>
-<element name="EM" library="HyTechDevices" package="NANO-FIT_VERTICAL-4" value="CONNECTOR-4NANO-FIT-VERTICAL-4" x="42.672" y="15.748" rot="R270"/>
+<element name="EM" library="HyTechDevices" package="NANO-FIT_VERTICAL-4" value="CONNECTOR-4" x="42.672" y="15.748" rot="R270"/>
 </elements>
 <signals>
 <signal name="GND">
