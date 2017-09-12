@@ -2638,7 +2638,7 @@ _________________</text>
 <busses>
 </busses>
 <nets>
-<net name="N$1" class="0">
+<net name="IMD_5V" class="0">
 <segment>
 <pinref part="C2" gate="G$1" pin="1"/>
 <wire x1="12.7" y1="33.02" x2="12.7" y2="43.18" width="0.1524" layer="91"/>
@@ -2779,7 +2779,7 @@ _________________</text>
 <pinref part="C4" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="N$15" class="0">
+<net name="BMS_5V" class="0">
 <segment>
 <pinref part="C1" gate="G$1" pin="1"/>
 <pinref part="R1" gate="G$1" pin="2"/>
@@ -2792,7 +2792,7 @@ _________________</text>
 <wire x1="12.7" y1="-60.96" x2="7.62" y2="-60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="IMD_DEBOUNCE" class="0">
 <segment>
 <pinref part="C2" gate="G$1" pin="2"/>
 <wire x1="20.32" y1="43.18" x2="20.32" y2="53.34" width="0.1524" layer="91"/>
@@ -2808,7 +2808,7 @@ _________________</text>
 <pinref part="IC1" gate="C" pin="I1"/>
 </segment>
 </net>
-<net name="N$14" class="0">
+<net name="BMS_DEBOUNCE" class="0">
 <segment>
 <pinref part="C1" gate="G$1" pin="2"/>
 <wire x1="20.32" y1="-50.8" x2="20.32" y2="-40.64" width="0.1524" layer="91"/>
@@ -2819,8 +2819,14 @@ _________________</text>
 <wire x1="20.32" y1="-40.64" x2="20.32" y2="-35.56" width="0.1524" layer="91"/>
 <junction x="20.32" y="-40.64"/>
 </segment>
+<segment>
+<wire x1="20.32" y1="-50.8" x2="40.64" y2="-50.8" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="-50.8" x2="40.64" y2="-86.36" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="-86.36" x2="50.8" y2="-86.36" width="0.1524" layer="91"/>
+<pinref part="IC3" gate="A" pin="I1"/>
+</segment>
 </net>
-<net name="N$16" class="0">
+<net name="12V" class="0">
 <segment>
 <pinref part="X1" gate="-2" pin="S"/>
 <pinref part="U$2" gate="G$1" pin="IN"/>
@@ -2892,14 +2898,6 @@ _________________</text>
 <pinref part="IC1" gate="C" pin="O"/>
 <pinref part="IC6" gate="B" pin="I0"/>
 <pinref part="IC6" gate="B" pin="I1"/>
-</segment>
-</net>
-<net name="N$19" class="0">
-<segment>
-<wire x1="20.32" y1="-50.8" x2="40.64" y2="-50.8" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="-50.8" x2="40.64" y2="-86.36" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="-86.36" x2="50.8" y2="-86.36" width="0.1524" layer="91"/>
-<pinref part="IC3" gate="A" pin="I1"/>
 </segment>
 </net>
 <net name="N$20" class="0">
@@ -2981,7 +2979,7 @@ _________________</text>
 <pinref part="IC3" gate="B" pin="O"/>
 </segment>
 </net>
-<net name="N$31" class="0">
+<net name="IMD_IN" class="0">
 <segment>
 <pinref part="U$3" gate="G$1" pin="CONTROL+"/>
 <pinref part="R8" gate="G$1" pin="2"/>
@@ -3000,7 +2998,7 @@ _________________</text>
 <pinref part="R9" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="N$34" class="0">
+<net name="BMS_IN" class="0">
 <segment>
 <pinref part="U$4" gate="G$1" pin="CONTROL+"/>
 <pinref part="R9" gate="G$1" pin="2"/>
