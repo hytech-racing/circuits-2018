@@ -2584,8 +2584,8 @@ _________________</text>
 <instance part="P+5" gate="1" x="35.56" y="-60.96" rot="R270"/>
 <instance part="GND5" gate="1" x="205.74" y="-86.36"/>
 <instance part="GND2" gate="1" x="43.18" y="-7.62" rot="R270"/>
-<instance part="P+1" gate="1" x="236.22" y="40.64" rot="R270"/>
-<instance part="GND3" gate="1" x="236.22" y="25.4" rot="R90"/>
+<instance part="P+1" gate="1" x="226.06" y="40.64" rot="R270"/>
+<instance part="GND3" gate="1" x="223.52" y="25.4" rot="R90"/>
 <instance part="SUPPLY1" gate="+5V" x="104.14" y="55.88" rot="R90"/>
 <instance part="SUPPLY2" gate="+5V" x="104.14" y="40.64" rot="R90"/>
 <instance part="SUPPLY3" gate="+5V" x="104.14" y="0" rot="R90"/>
@@ -2680,7 +2680,7 @@ _________________</text>
 <wire x1="203.2" y1="40.64" x2="213.36" y2="40.64" width="0.1524" layer="91"/>
 <junction x="203.2" y="40.64"/>
 <pinref part="IC4" gate="P" pin="VCC"/>
-<wire x1="213.36" y1="40.64" x2="233.68" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="40.64" x2="223.52" y2="40.64" width="0.1524" layer="91"/>
 <junction x="213.36" y="40.64"/>
 </segment>
 <segment>
@@ -2749,7 +2749,7 @@ _________________</text>
 <wire x1="203.2" y1="25.4" x2="213.36" y2="25.4" width="0.1524" layer="91"/>
 <junction x="203.2" y="25.4"/>
 <pinref part="IC4" gate="P" pin="GND"/>
-<wire x1="213.36" y1="25.4" x2="233.68" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="25.4" x2="220.98" y2="25.4" width="0.1524" layer="91"/>
 <junction x="213.36" y="25.4"/>
 </segment>
 <segment>
@@ -2810,20 +2810,18 @@ _________________</text>
 </net>
 <net name="BMS_DEBOUNCE" class="0">
 <segment>
+<wire x1="40.64" y1="-50.8" x2="40.64" y2="-86.36" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="-86.36" x2="50.8" y2="-86.36" width="0.1524" layer="91"/>
+<pinref part="IC3" gate="A" pin="I1"/>
 <pinref part="C1" gate="G$1" pin="2"/>
 <wire x1="20.32" y1="-50.8" x2="20.32" y2="-40.64" width="0.1524" layer="91"/>
 <pinref part="R4" gate="G$1" pin="2"/>
-<junction x="20.32" y="-50.8"/>
 <pinref part="IC6" gate="A" pin="I0"/>
 <pinref part="IC6" gate="A" pin="I1"/>
 <wire x1="20.32" y1="-40.64" x2="20.32" y2="-35.56" width="0.1524" layer="91"/>
 <junction x="20.32" y="-40.64"/>
-</segment>
-<segment>
-<wire x1="20.32" y1="-50.8" x2="40.64" y2="-50.8" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="-50.8" x2="40.64" y2="-86.36" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="-86.36" x2="50.8" y2="-86.36" width="0.1524" layer="91"/>
-<pinref part="IC3" gate="A" pin="I1"/>
+<wire x1="40.64" y1="-50.8" x2="20.32" y2="-50.8" width="0.1524" layer="91"/>
+<junction x="20.32" y="-50.8"/>
 </segment>
 </net>
 <net name="12V" class="0">
@@ -2870,7 +2868,7 @@ _________________</text>
 <pinref part="IC2" gate="A" pin="D"/>
 </segment>
 </net>
-<net name="N$9" class="0">
+<net name="IMD_OUT" class="0">
 <segment>
 <wire x1="48.26" y1="50.8" x2="45.72" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="50.8" x2="45.72" y2="22.86" width="0.1524" layer="91"/>
@@ -2885,6 +2883,7 @@ _________________</text>
 <wire x1="149.86" y1="-30.48" x2="154.94" y2="-30.48" width="0.1524" layer="91"/>
 <wire x1="134.62" y1="10.16" x2="149.86" y2="10.16" width="0.1524" layer="91"/>
 <junction x="134.62" y="10.16"/>
+<junction x="149.86" y="10.16"/>
 </segment>
 </net>
 <net name="N$11" class="0">
@@ -2936,7 +2935,7 @@ _________________</text>
 <pinref part="IC3" gate="C" pin="O"/>
 </segment>
 </net>
-<net name="N$24" class="0">
+<net name="BMS_OUT" class="0">
 <segment>
 <wire x1="48.26" y1="-43.18" x2="45.72" y2="-43.18" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="-43.18" x2="45.72" y2="-68.58" width="0.1524" layer="91"/>
@@ -2950,6 +2949,8 @@ _________________</text>
 <pinref part="X2" gate="-1" pin="S"/>
 <wire x1="154.94" y1="-35.56" x2="149.86" y2="-35.56" width="0.1524" layer="91"/>
 <wire x1="134.62" y1="-83.82" x2="149.86" y2="-83.82" width="0.1524" layer="91"/>
+<junction x="134.62" y="-83.82"/>
+<junction x="149.86" y="-83.82"/>
 </segment>
 </net>
 <net name="N$25" class="0">
