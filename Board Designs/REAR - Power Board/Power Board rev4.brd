@@ -190,7 +190,7 @@
 <text x="6.096" y="5.08" size="0.762" layer="51">BMS LATCH</text>
 <text x="15.24" y="5.08" size="0.762" layer="51">IMD LATCH</text>
 <text x="23.622" y="5.08" size="0.762" layer="51">BMS</text>
-<text x="4.429759375" y="-3.77951875" size="1.27" layer="51" font="vector" ratio="14">power_board_rev3</text>
+<text x="4.429759375" y="-3.77951875" size="1.778" layer="51" font="vector" ratio="14">rear_ecu_rev4</text>
 <rectangle x1="57.702446875" y1="10.7480125" x2="59.493146875" y2="10.75563125" layer="51" rot="R90"/>
 <rectangle x1="57.694828125" y1="10.7480125" x2="59.485528125" y2="10.75563125" layer="51" rot="R90"/>
 <rectangle x1="57.687209375" y1="10.7480125" x2="59.477909375" y2="10.75563125" layer="51" rot="R90"/>
