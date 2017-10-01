@@ -1131,12 +1131,12 @@
 </net>
 <net name="12VSUPPLY_BRB" class="0">
 <segment>
-<wire x1="195.58" y1="231.14" x2="195.58" y2="284.48" width="0.1524" layer="91"/>
-<wire x1="195.58" y1="284.48" x2="76.2" y2="284.48" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="231.14" x2="198.12" y2="284.48" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="284.48" x2="76.2" y2="284.48" width="0.1524" layer="91"/>
 <pinref part="SL6" gate="G$1" pin="1"/>
 <label x="78.74" y="284.48" size="1.778" layer="95"/>
 <portref moduleinst="REAR_ECU" port="12VSUPPLY_BRB"/>
-<wire x1="0" y1="231.14" x2="195.58" y2="231.14" width="0.1524" layer="91"/>
+<wire x1="0" y1="231.14" x2="198.12" y2="231.14" width="0.1524" layer="91"/>
 <label x="2.54" y="231.14" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -1724,6 +1724,11 @@
 <label x="78.74" y="-5.08" size="1.778" layer="95"/>
 <label x="2.54" y="182.88" size="1.778" layer="95"/>
 <pinref part="SL11" gate="G$1" pin="10"/>
+<pinref part="SL6" gate="G$1" pin="6"/>
+<wire x1="76.2" y1="297.18" x2="195.58" y2="297.18" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="297.18" x2="195.58" y2="182.88" width="0.1524" layer="91"/>
+<junction x="195.58" y="182.88"/>
+<label x="78.74" y="297.18" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FAN2-" class="0">
