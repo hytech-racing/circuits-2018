@@ -1982,7 +1982,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="TSMP-A" library="HyTechSymbols" deviceset="BANANA_JACK" device=""/>
 <part name="TSMP+A" library="HyTechSymbols" deviceset="BANANA_JACK" device=""/>
 <part name="GND10" library="HyTechSymbols" deviceset="GND" device=""/>
-<part name="TSAL/TSEL" library="HyTechSymbols" deviceset="LED" device=""/>
+<part name="TSAL" library="HyTechSymbols" deviceset="LED" device=""/>
 <part name="GND11" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="MOLEX_IMPERIUM_1" library="HyTechSymbols" deviceset="M02" device=""/>
 <part name="BUTTON_START" library="HyTechSymbols" deviceset="SWITCH_SPST_MOM" device=""/>
@@ -2227,7 +2227,7 @@ Power for FSAE EV5.1.4</text>
 <instance part="TSMP-A" gate="G$1" x="213.36" y="137.16" rot="MR270"/>
 <instance part="TSMP+A" gate="G$1" x="218.44" y="137.16" rot="MR270"/>
 <instance part="GND10" gate="1" x="294.64" y="38.1" rot="R270"/>
-<instance part="TSAL/TSEL" gate="G$1" x="401.32" y="38.1"/>
+<instance part="TSAL" gate="G$1" x="401.32" y="38.1"/>
 <instance part="GND11" gate="1" x="416.56" y="40.64" rot="R90"/>
 <instance part="MOLEX_IMPERIUM_1" gate="G$1" x="81.28" y="223.52"/>
 <instance part="BUTTON_START" gate="SPST_MOM" x="566.42" y="271.78" rot="R270"/>
@@ -2351,7 +2351,7 @@ Power for FSAE EV5.1.4</text>
 <wire x1="297.18" y1="38.1" x2="299.72" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="TSAL/TSEL" gate="G$1" pin="C"/>
+<pinref part="TSAL" gate="G$1" pin="C"/>
 <pinref part="GND11" gate="1" pin="GND"/>
 <wire x1="414.02" y1="40.64" x2="408.94" y2="40.64" width="0.1524" layer="91"/>
 </segment>
@@ -2883,7 +2883,7 @@ Power for FSAE EV5.1.4</text>
 <segment>
 <wire x1="459.74" y1="15.24" x2="396.24" y2="15.24" width="0.1524" layer="91"/>
 <wire x1="396.24" y1="15.24" x2="396.24" y2="40.64" width="0.1524" layer="91"/>
-<pinref part="TSAL/TSEL" gate="G$1" pin="A"/>
+<pinref part="TSAL" gate="G$1" pin="A"/>
 <wire x1="401.32" y1="40.64" x2="396.24" y2="40.64" width="0.1524" layer="91"/>
 <label x="398.78" y="15.24" size="1.778" layer="95"/>
 <pinref part="SL9" gate="G$1" pin="4"/>
@@ -3055,7 +3055,7 @@ Power for FSAE EV5.1.4</text>
 <net name="N$67" class="0">
 <segment>
 <pinref part="ACCUMULATOR_INDICATOR" gate="G$1" pin="C"/>
-<wire x1="279.4" y1="124.46" x2="279.4" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="279.4" y1="124.46" x2="279.4" y2="137.16" width="0.6096" layer="91"/>
 <portref moduleinst="HV_PCB" port="INDIC+"/>
 </segment>
 </net>
@@ -3110,7 +3110,7 @@ Power for FSAE EV5.1.4</text>
 <net name="N$22" class="0">
 <segment>
 <pinref part="ACCUMULATOR_INDICATOR" gate="G$1" pin="A"/>
-<wire x1="287.02" y1="137.16" x2="287.02" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="287.02" y1="137.16" x2="287.02" y2="124.46" width="0.6096" layer="91"/>
 <portref moduleinst="HV_PCB" port="INDIC-"/>
 </segment>
 </net>
