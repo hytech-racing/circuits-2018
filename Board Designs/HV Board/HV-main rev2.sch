@@ -3713,10 +3713,10 @@ Source: http://www.molex.com</description>
 <part name="INDICATOR" library="HyTechDevices" deviceset="MINIFIT_5566-2" device="" value=""/>
 <part name="U$12" library="HyTechDevices" deviceset="5504-12-1-NC" device=""/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
-<part name="DISCH+" library="HyTechDevices" deviceset="MINIFIT_5566-2" device="" value="TO DISCHARGE +"/>
-<part name="DISCH-" library="HyTechDevices" deviceset="MINIFIT_5566-2" device="" value="TO DISCHARGE -"/>
+<part name="DISCH+" library="HyTechDevices" deviceset="MINIFIT_5566-2" device="" value="DISCHARGE+"/>
+<part name="DISCH-" library="HyTechDevices" deviceset="MINIFIT_5566-2" device="" value="DISCHARGE -"/>
 <part name="C3" library="HyTechDevices" deviceset="CAP" device="0805" value="1uF"/>
-<part name="CURRENT1" library="HyTechDevices" deviceset="CONNECTOR-4" device="" value="CONNECTOR-4"/>
+<part name="CURRENT1" library="HyTechDevices" deviceset="CONNECTOR-4" device="" value=""/>
 <part name="P+10" library="supply1" deviceset="+5V" device=""/>
 <part name="GND17" library="supply1" deviceset="GND" device=""/>
 <part name="R6" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="10k"/>
@@ -3744,14 +3744,14 @@ Source: http://www.molex.com</description>
 <part name="RELAYS" library="HyTechDevices" deviceset="MINIFIT_5566-2" device="" value=""/>
 <part name="P+16" library="supply1" deviceset="+12V" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
-<part name="POWER" library="HyTechDevices" deviceset="CONNECTOR-4" device="" value="CONNECTOR-4"/>
+<part name="POWER" library="HyTechDevices" deviceset="CONNECTOR-4" device="" value=""/>
 <part name="FUSE" library="HyTechDevices" deviceset="FUSE" device="_5X20MM" value="1A"/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
-<part name="HV+UNFUSED" library="HyTechDevices" deviceset="CONNECTOR-2" device="" value="CONNECTOR FSAE"/>
-<part name="HV-UNFUSED" library="HyTechDevices" deviceset="CONNECTOR-2" device="" value="CONNECTOR FSAE"/>
-<part name="IMD_HV+" library="HyTechDevices" deviceset="CONNECTOR-2" device="" value="CONNECTOR-2"/>
-<part name="IMD_HV-" library="HyTechDevices" deviceset="CONNECTOR-2" device="" value="CONNECTOR-2"/>
-<part name="MAIN" library="HyTechDevices" deviceset="CONNECTOR-12" device="" value="CONNECTOR-12"/>
+<part name="HV+UNFUSED" library="HyTechDevices" deviceset="CONNECTOR-2" device="" value="FSAE"/>
+<part name="HV-UNFUSED" library="HyTechDevices" deviceset="CONNECTOR-2" device="" value="FSAE"/>
+<part name="IMD_HV+" library="HyTechDevices" deviceset="CONNECTOR-2" device="" value=""/>
+<part name="IMD_HV-" library="HyTechDevices" deviceset="CONNECTOR-2" device="" value=""/>
+<part name="MAIN" library="HyTechDevices" deviceset="CONNECTOR-12" device="" value=""/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="P+4" library="supply1" deviceset="+12V" device=""/>
 <part name="IMD" library="HyTechDevices" deviceset="CONNECTOR-6" device="NANO-FIT_VERTICAL-6" value="CONNECTOR-6"/>
@@ -3820,10 +3820,10 @@ Source: http://www.molex.com</description>
 <part name="P+23" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="GND26" library="supply1" deviceset="GND" device=""/>
 <part name="R38" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="68"/>
-<part name="U$11" library="HyTechDevices" deviceset="CPC1002N" device=""/>
+<part name="U$11" library="HyTechDevices" deviceset="CPC1002N" device="" value=""/>
 <part name="GND27" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="P+25" library="supply1" deviceset="+5V" device=""/>
-<part name="CURRENT2" library="HyTechDevices" deviceset="CONNECTOR-4" device=""/>
+<part name="CURRENT2" library="HyTechDevices" deviceset="CONNECTOR-4" device="" value=""/>
 <part name="P+7" library="supply1" deviceset="+5V" device=""/>
 <part name="R1" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="1k"/>
 <part name="R2" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="1k"/>
