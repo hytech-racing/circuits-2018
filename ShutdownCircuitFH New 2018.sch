@@ -741,9 +741,9 @@ Contact Amperage: 8A at 30VDC
 <part name="RIGHT_BRB" library="HyTechSymbols" deviceset="SWITCH_SPST" device="" value="Normally Closed"/>
 <part name="LEFT_BRB" library="HyTechSymbols" deviceset="SWITCH_SPST" device="" value="Normally Closed"/>
 <part name="U$1" library="HyTechDevices" deviceset="G2RL-2-DC12" device=""/>
-<part name="AMS_SOFTWARE_LATCH" library="HyTechDevices" deviceset="SOLID_STATE_RELAY" device="_VO14642AT" value="Normally Open"/>
+<part name="AMS_STATE_LATCH" library="HyTechDevices" deviceset="SOLID_STATE_RELAY" device="_VO14642AT" value="Normally Open"/>
 <part name="AMS_RELAY_DRIVE" library="HyTechDevices" deviceset="SOLID_STATE_RELAY" device="_VO14642AT" value="Normally Open"/>
-<part name="IMD_SOFTWARE_LATCH" library="HyTechDevices" deviceset="SOLID_STATE_RELAY" device="_VO14642AT" value="Normally Open"/>
+<part name="IMD_STATE_LATCH" library="HyTechDevices" deviceset="SOLID_STATE_RELAY" device="_VO14642AT" value="Normally Open"/>
 <part name="U$2" library="HyTechSymbols" deviceset="BENDER_IR155-3204" device=""/>
 <part name="GND2" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="COCKPIT_BRB" library="HyTechSymbols" deviceset="SWITCH_SPST" device="" value="Normally Closed"/>
@@ -806,9 +806,8 @@ Battery Pack</text>
 <text x="172.72" y="2.54" size="1.778" layer="97" rot="R90">To Motor Controller</text>
 <text x="116.84" y="48.26" size="1.778" layer="97" rot="R180">Insulation Monitoring Device</text>
 <text x="149.86" y="102.87" size="1.778" layer="95" rot="MR180" align="top-left">AMS OK signal</text>
-<text x="149.86" y="125.73" size="1.778" layer="95" rot="MR180" align="top-left">Software latch signal</text>
-<text x="129.54" y="151.13" size="1.778" layer="95" rot="MR180" align="top-left">Software latch signal</text>
-<text x="68.58" y="162.56" size="5.08" layer="91">TODO: Changing Latching Mechanism</text>
+<text x="149.86" y="125.73" size="1.778" layer="95" rot="MR180" align="top-left">State machine signal</text>
+<text x="129.54" y="151.13" size="1.778" layer="95" rot="MR180" align="top-left">State machine signal</text>
 <wire x1="10.16" y1="20.32" x2="7.62" y2="20.32" width="0.6096" layer="156"/>
 <wire x1="7.62" y1="20.32" x2="7.62" y2="7.62" width="0.6096" layer="156"/>
 <wire x1="7.62" y1="7.62" x2="157.48" y2="7.62" width="0.6096" layer="156"/>
@@ -854,9 +853,9 @@ Battery Pack</text>
 <instance part="RIGHT_BRB" gate="SPST" x="43.18" y="111.76" rot="R270"/>
 <instance part="LEFT_BRB" gate="SPST" x="63.5" y="111.76" rot="R270"/>
 <instance part="U$1" gate="G$1" x="83.82" y="134.62" rot="R270"/>
-<instance part="AMS_SOFTWARE_LATCH" gate="G$1" x="139.7" y="127" rot="R180"/>
+<instance part="AMS_STATE_LATCH" gate="G$1" x="139.7" y="127" rot="R180"/>
 <instance part="AMS_RELAY_DRIVE" gate="G$1" x="139.7" y="104.14" rot="R180"/>
-<instance part="IMD_SOFTWARE_LATCH" gate="G$1" x="119.38" y="152.4" rot="R180"/>
+<instance part="IMD_STATE_LATCH" gate="G$1" x="119.38" y="152.4" rot="R180"/>
 <instance part="U$2" gate="G$1" x="132.08" y="73.66" rot="R180"/>
 <instance part="GND2" gate="1" x="73.66" y="50.8" rot="R270"/>
 <instance part="COCKPIT_BRB" gate="SPST" x="71.12" y="91.44" rot="MR270"/>
@@ -921,12 +920,12 @@ Battery Pack</text>
 <wire x1="152.4" y1="106.68" x2="149.86" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="AMS_SOFTWARE_LATCH" gate="G$1" pin="LED-"/>
+<pinref part="AMS_STATE_LATCH" gate="G$1" pin="LED-"/>
 <pinref part="GND5" gate="1" pin="GND"/>
 <wire x1="152.4" y1="129.54" x2="149.86" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="IMD_SOFTWARE_LATCH" gate="G$1" pin="LED-"/>
+<pinref part="IMD_STATE_LATCH" gate="G$1" pin="LED-"/>
 <pinref part="GND6" gate="1" pin="GND"/>
 <wire x1="132.08" y1="154.94" x2="129.54" y2="154.94" width="0.1524" layer="91"/>
 </segment>
@@ -1026,12 +1025,12 @@ Battery Pack</text>
 <net name="VIN" class="0">
 <segment>
 <pinref part="LATCH_SIGNAL" gate="G$1" pin="VIN"/>
-<pinref part="IMD_SOFTWARE_LATCH" gate="G$1" pin="LED+"/>
+<pinref part="IMD_STATE_LATCH" gate="G$1" pin="LED+"/>
 <wire x1="132.08" y1="149.86" x2="129.54" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SOFTWARE_OK_SIGNAL" gate="G$1" pin="VIN"/>
-<pinref part="AMS_SOFTWARE_LATCH" gate="G$1" pin="LED+"/>
+<pinref part="AMS_STATE_LATCH" gate="G$1" pin="LED+"/>
 <wire x1="152.4" y1="124.46" x2="149.86" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -1109,7 +1108,7 @@ Battery Pack</text>
 </net>
 <net name="N$13" class="0">
 <segment>
-<pinref part="AMS_SOFTWARE_LATCH" gate="G$1" pin="IO1"/>
+<pinref part="AMS_STATE_LATCH" gate="G$1" pin="IO1"/>
 <wire x1="129.54" y1="124.46" x2="116.84" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="124.46" x2="116.84" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="114.3" x2="114.3" y2="114.3" width="0.1524" layer="91"/>
@@ -1177,7 +1176,7 @@ Battery Pack</text>
 <wire x1="109.22" y1="154.94" x2="76.2" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="154.94" x2="76.2" y2="129.54" width="0.1524" layer="91"/>
 <junction x="76.2" y="129.54"/>
-<pinref part="IMD_SOFTWARE_LATCH" gate="G$1" pin="IO2"/>
+<pinref part="IMD_STATE_LATCH" gate="G$1" pin="IO2"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -1212,7 +1211,7 @@ Battery Pack</text>
 <junction x="99.06" y="127"/>
 <wire x1="99.06" y1="137.16" x2="124.46" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="137.16" x2="124.46" y2="129.54" width="0.1524" layer="91"/>
-<pinref part="AMS_SOFTWARE_LATCH" gate="G$1" pin="IO2"/>
+<pinref part="AMS_STATE_LATCH" gate="G$1" pin="IO2"/>
 <wire x1="124.46" y1="129.54" x2="129.54" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="U$4" gate="G$1" pin="3"/>
 <pinref part="U$4" gate="G$1" pin="COIL-"/>
@@ -1244,7 +1243,7 @@ Battery Pack</text>
 <pinref part="U$1" gate="G$1" pin="4"/>
 <wire x1="96.52" y1="116.84" x2="93.98" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="149.86" x2="96.52" y2="140.97" width="0.1524" layer="91"/>
-<pinref part="IMD_SOFTWARE_LATCH" gate="G$1" pin="IO1"/>
+<pinref part="IMD_STATE_LATCH" gate="G$1" pin="IO1"/>
 <wire x1="96.52" y1="140.97" x2="96.52" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="149.86" x2="96.52" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="140.97" x2="143.51" y2="140.97" width="0.1524" layer="91"/>
