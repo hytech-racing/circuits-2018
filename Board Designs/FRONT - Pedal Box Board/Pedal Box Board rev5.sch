@@ -1868,31 +1868,6 @@ Source: transistor-fet.lbr</description>
 <circle x="0" y="0" radius="1.5875" width="0.127" layer="21"/>
 <pad name="P$1" x="0" y="0" drill="1.6002" rot="R90"/>
 </package>
-<package name="MCP3208">
-<smd name="1" x="0" y="0" dx="0.84" dy="0.42" layer="1"/>
-<smd name="2" x="0" y="-1.27" dx="0.84" dy="0.42" layer="1"/>
-<smd name="3" x="0" y="-2.54" dx="0.84" dy="0.42" layer="1"/>
-<smd name="4" x="0" y="-3.81" dx="0.84" dy="0.42" layer="1"/>
-<smd name="5" x="0" y="-5.08" dx="0.84" dy="0.42" layer="1"/>
-<smd name="6" x="0" y="-6.35" dx="0.84" dy="0.42" layer="1"/>
-<smd name="7" x="0" y="-7.62" dx="0.84" dy="0.42" layer="1"/>
-<smd name="8" x="0" y="-8.89" dx="0.84" dy="0.42" layer="1"/>
-<smd name="9" x="4.96" y="-8.89" dx="0.84" dy="0.42" layer="1"/>
-<smd name="10" x="4.96" y="-7.62" dx="0.84" dy="0.42" layer="1"/>
-<smd name="11" x="4.96" y="-6.35" dx="0.84" dy="0.42" layer="1"/>
-<smd name="12" x="4.96" y="-5.08" dx="0.84" dy="0.42" layer="1"/>
-<smd name="13" x="4.96" y="-3.81" dx="0.84" dy="0.42" layer="1"/>
-<smd name="14" x="4.96" y="-2.54" dx="0.84" dy="0.42" layer="1"/>
-<smd name="15" x="4.96" y="-1.27" dx="0.84" dy="0.42" layer="1"/>
-<smd name="16" x="4.96" y="0" dx="0.84" dy="0.42" layer="1"/>
-<circle x="-0.29" y="0.1" radius="0.01" width="0.127" layer="21"/>
-<wire x1="0.53" y1="0.51" x2="4.43" y2="0.51" width="0.127" layer="51"/>
-<wire x1="4.43" y1="0.51" x2="4.43" y2="-9.4" width="0.127" layer="51"/>
-<wire x1="4.43" y1="-9.4" x2="0.53" y2="-9.4" width="0.127" layer="51"/>
-<wire x1="0.53" y1="-9.4" x2="0.53" y2="0.51" width="0.127" layer="51"/>
-<text x="0.69" y="0.83" size="0.8128" layer="25">&gt;NAME</text>
-<text x="0.24" y="-10.56" size="0.8128" layer="25">&gt;VALUE</text>
-</package>
 </packages>
 <symbols>
 <symbol name="MC34161DG">
@@ -3882,7 +3857,7 @@ This is just like the LOCK variant in that the holes are staggared by 5 mil, but
 <gate name="G$1" symbol="MCP3208" x="-2.54" y="-2.54"/>
 </gates>
 <devices>
-<device name="" package="MCP3208">
+<device name="SOIC" package="SOIC-16">
 <connects>
 <connect gate="G$1" pin="!CS!/SHDN" pad="10"/>
 <connect gate="G$1" pin="AGND" pad="14"/>
@@ -5198,7 +5173,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="U$15" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
 <part name="U$16" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
 <part name="U$17" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
-<part name="U$18" library="HyTechDevices" deviceset="MCP3208" device=""/>
+<part name="U$18" library="HyTechDevices" deviceset="MCP3208" device="SOIC"/>
 <part name="GND26" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="P+15" library="supply1" deviceset="+5V" device=""/>
 </parts>
