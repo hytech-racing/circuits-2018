@@ -1494,9 +1494,6 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <port name="SIGNAL_CUR" side="right" coord="-15.24" direction="in"/>
 <port name="SIGNAL_BRAKE" side="right" coord="-17.78" direction="in"/>
 <port name="READ_FAULT" side="right" coord="-20.32" direction="out"/>
-<port name="NC_1" side="right" coord="-27.94" direction="nc"/>
-<port name="12V_AUX" side="right" coord="-30.48" direction="in"/>
-<port name="GND_AUX" side="right" coord="-33.02" direction="out"/>
 <port name="NC_0" side="right" coord="0" direction="nc"/>
 <port name="CTRL_1" side="top" coord="-15.24" direction="out"/>
 <port name="CTRL_2" side="top" coord="-12.7" direction="out"/>
@@ -1508,8 +1505,11 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <port name="CTRL_8/GPIO_3" side="top" coord="2.54" direction="io"/>
 <port name="GPIO_4" side="top" coord="5.08" direction="in"/>
 <port name="GPIO_5" side="top" coord="7.62" direction="in"/>
-<port name="READ_CHARGE" side="right" coord="-22.86" direction="out"/>
-<port name="READ_SWITCH" side="right" coord="-25.4" direction="out"/>
+<port name="READ_SWITCH" side="right" coord="-22.86" direction="out"/>
+<port name="CANL_1" side="right" coord="-30.48" direction="io"/>
+<port name="CANH_1" side="right" coord="-33.02" direction="io"/>
+<port name="12VSUPPLY_1" side="right" coord="-25.4" direction="in"/>
+<port name="GND_1" side="right" coord="-27.94" direction="out"/>
 </ports>
 <variantdefs>
 </variantdefs>
@@ -2034,7 +2034,6 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="CHARGE_ENABLE" library="HyTechSymbols" deviceset="BANANA_JACK" device=""/>
 <part name="GND16" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="SL6" library="HyTechSymbols" deviceset="M04" device=""/>
-<part name="SL16" library="HyTechSymbols" deviceset="M04" device=""/>
 <part name="SL17" library="HyTechSymbols" deviceset="M10" device=""/>
 <part name="SL19" library="HyTechSymbols" deviceset="M10" device=""/>
 <part name="SL20" library="HyTechSymbols" deviceset="M10" device=""/>
@@ -2117,7 +2116,7 @@ Power for FSAE EV5.1.4</text>
 <wire x1="83.82" y1="38.1" x2="81.28" y2="35.56" width="0.1524" layer="157"/>
 <wire x1="86.36" y1="35.56" x2="81.28" y2="30.48" width="0.1524" layer="157"/>
 <wire x1="88.9" y1="33.02" x2="81.28" y2="25.4" width="0.1524" layer="157"/>
-<text x="566.42" y="119.38" size="5.08" layer="97">Front ECU</text>
+<text x="566.42" y="248.92" size="5.08" layer="97">Front ECU</text>
 <text x="363.22" y="-12.7" size="5.08" layer="97">Right Rear Panel High</text>
 <wire x1="73.66" y1="289.56" x2="396.24" y2="289.56" width="1.27" layer="97"/>
 <wire x1="396.24" y1="289.56" x2="396.24" y2="129.54" width="1.27" layer="97"/>
@@ -2212,7 +2211,7 @@ Power for FSAE EV5.1.4</text>
 <instance part="BRAKE_LIGHT" gate="G$1" x="20.32" y="200.66"/>
 <instance part="BOTS" gate="SPST" x="599.44" y="99.06" rot="R270"/>
 <instance part="INERTIA_SW" gate="SPST" x="576.58" y="99.06" rot="R270"/>
-<instance part="COCKPIT_BRB" gate="SPST" x="622.3" y="99.06" rot="R270"/>
+<instance part="COCKPIT_BRB" gate="SPST" x="624.84" y="99.06" rot="R270"/>
 <instance part="RIGHT_SSOK" gate="G$1" x="383.54" y="30.48" rot="R180"/>
 <instance part="LEFT_SSOK" gate="G$1" x="453.39" y="281.94" rot="MR0"/>
 <instance part="GND8" gate="1" x="440.69" y="284.48" rot="MR90"/>
@@ -2279,7 +2278,6 @@ Power for FSAE EV5.1.4</text>
 <instance part="CHARGE_ENABLE" gate="G$1" x="302.26" y="53.34"/>
 <instance part="GND16" gate="1" x="391.16" y="114.3" rot="R90"/>
 <instance part="SL6" gate="G$1" x="538.48" y="134.62" rot="MR90"/>
-<instance part="SL16" gate="G$1" x="538.48" y="119.38" rot="R270"/>
 <instance part="SL17" gate="G$1" x="591.82" y="165.1" rot="R180"/>
 <instance part="SL19" gate="G$1" x="607.06" y="165.1" rot="MR180"/>
 <instance part="SL20" gate="G$1" x="591.82" y="198.12" rot="R180"/>
@@ -2842,12 +2840,12 @@ Power for FSAE EV5.1.4</text>
 <net name="BSPD_CURRENT" class="0">
 <segment>
 <wire x1="548.64" y1="58.42" x2="548.64" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="548.64" y1="106.68" x2="622.3" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="548.64" y1="106.68" x2="627.38" y2="106.68" width="0.1524" layer="91"/>
 <label x="556.26" y="106.68" size="1.778" layer="95"/>
 <label x="548.64" y="60.96" size="1.778" layer="95" rot="R90"/>
-<wire x1="622.3" y1="106.68" x2="622.3" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="627.38" y1="106.68" x2="627.38" y2="172.72" width="0.1524" layer="91"/>
 <pinref part="SL19" gate="G$1" pin="3"/>
-<wire x1="612.14" y1="172.72" x2="622.3" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="612.14" y1="172.72" x2="627.38" y2="172.72" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="375.92" y1="116.84" x2="375.92" y2="78.74" width="0.1524" layer="91"/>
@@ -2908,10 +2906,10 @@ Power for FSAE EV5.1.4</text>
 <wire x1="551.18" y1="104.14" x2="551.18" y2="58.42" width="0.1524" layer="91"/>
 <label x="551.18" y="60.96" size="1.778" layer="95" rot="R90"/>
 <label x="556.26" y="104.14" size="1.778" layer="95"/>
-<wire x1="551.18" y1="104.14" x2="624.84" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="624.84" y1="175.26" x2="624.84" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="551.18" y1="104.14" x2="629.92" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="629.92" y1="175.26" x2="629.92" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="SL19" gate="G$1" pin="2"/>
-<wire x1="624.84" y1="175.26" x2="612.14" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="629.92" y1="175.26" x2="612.14" y2="175.26" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="TSMS" gate="SPST" pin="P"/>
@@ -3534,9 +3532,13 @@ Power for FSAE EV5.1.4</text>
 </net>
 <net name="BUS_REAR-&gt;FRONT_CANH" class="0">
 <segment>
-<label x="543.56" y="60.96" size="1.778" layer="95" rot="R90"/>
-<pinref part="SL16" gate="G$1" pin="4"/>
-<wire x1="543.56" y1="114.3" x2="543.56" y2="58.42" width="0.1524" layer="91"/>
+<label x="533.4" y="60.96" size="1.778" layer="95" rot="R90"/>
+<wire x1="533.4" y1="121.92" x2="533.4" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="SL19" gate="G$1" pin="10"/>
+<wire x1="614.68" y1="121.92" x2="533.4" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="612.14" y1="154.94" x2="614.68" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="614.68" y1="154.94" x2="614.68" y2="121.92" width="0.1524" layer="91"/>
+<label x="556.26" y="121.92" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="43.18" y1="25.4" x2="81.28" y2="25.4" width="0.1524" layer="91"/>
@@ -3545,9 +3547,13 @@ Power for FSAE EV5.1.4</text>
 </net>
 <net name="BUS_REAR-&gt;FRONT_CANL" class="0">
 <segment>
-<label x="541.02" y="60.96" size="1.778" layer="95" rot="R90"/>
-<pinref part="SL16" gate="G$1" pin="3"/>
-<wire x1="541.02" y1="114.3" x2="541.02" y2="58.42" width="0.1524" layer="91"/>
+<label x="535.94" y="60.96" size="1.778" layer="95" rot="R90"/>
+<wire x1="535.94" y1="119.38" x2="535.94" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="SL19" gate="G$1" pin="9"/>
+<wire x1="612.14" y1="157.48" x2="617.22" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="617.22" y1="157.48" x2="617.22" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="617.22" y1="119.38" x2="535.94" y2="119.38" width="0.1524" layer="91"/>
+<label x="556.26" y="119.38" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="43.18" y1="30.48" x2="81.28" y2="30.48" width="0.1524" layer="91"/>
@@ -3557,8 +3563,12 @@ Power for FSAE EV5.1.4</text>
 <net name="BUS_REAR-&gt;FRONT_GND" class="0">
 <segment>
 <label x="538.48" y="60.96" size="1.778" layer="95" rot="R90"/>
-<pinref part="SL16" gate="G$1" pin="2"/>
-<wire x1="538.48" y1="114.3" x2="538.48" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="538.48" y1="116.84" x2="538.48" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="SL19" gate="G$1" pin="8"/>
+<wire x1="612.14" y1="160.02" x2="619.76" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="619.76" y1="160.02" x2="619.76" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="619.76" y1="116.84" x2="538.48" y2="116.84" width="0.1524" layer="91"/>
+<label x="556.26" y="116.84" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="43.18" y1="35.56" x2="81.28" y2="35.56" width="0.1524" layer="91"/>
@@ -3572,9 +3582,13 @@ Power for FSAE EV5.1.4</text>
 <pinref part="SL5" gate="G$1" pin="5"/>
 </segment>
 <segment>
-<label x="535.94" y="60.96" size="1.778" layer="95" rot="R90"/>
-<pinref part="SL16" gate="G$1" pin="1"/>
-<wire x1="535.94" y1="114.3" x2="535.94" y2="58.42" width="0.1524" layer="91"/>
+<label x="541.02" y="60.96" size="1.778" layer="95" rot="R90"/>
+<wire x1="541.02" y1="114.3" x2="541.02" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="SL19" gate="G$1" pin="7"/>
+<wire x1="612.14" y1="162.56" x2="622.3" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="622.3" y1="162.56" x2="622.3" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="622.3" y1="114.3" x2="541.02" y2="114.3" width="0.1524" layer="91"/>
+<label x="556.26" y="114.3" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FAN2-" class="0">
@@ -3620,7 +3634,7 @@ Power for FSAE EV5.1.4</text>
 <wire x1="604.52" y1="101.6" x2="607.06" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="COCKPIT_BRB" gate="SPST" pin="P"/>
 <wire x1="607.06" y1="99.06" x2="614.68" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="614.68" y1="99.06" x2="617.22" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="614.68" y1="99.06" x2="619.76" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="614.68" y1="99.06" x2="614.68" y2="86.36" width="0.1524" layer="91"/>
 <junction x="614.68" y="99.06"/>
 </segment>
@@ -3628,9 +3642,10 @@ Power for FSAE EV5.1.4</text>
 <net name="SHUTDOWN4" class="0">
 <segment>
 <pinref part="SL19" gate="G$1" pin="1"/>
-<wire x1="612.14" y1="177.8" x2="627.38" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="612.14" y1="177.8" x2="632.46" y2="177.8" width="0.1524" layer="91"/>
 <pinref part="COCKPIT_BRB" gate="SPST" pin="O"/>
-<wire x1="627.38" y1="101.6" x2="627.38" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="629.92" y1="101.6" x2="632.46" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="632.46" y1="101.6" x2="632.46" y2="177.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="CUR_SENSE_300_GND" class="0">
@@ -3781,13 +3796,6 @@ Power for FSAE EV5.1.4</text>
 <portref moduleinst="FRONT_ECU" port="READ_FAULT"/>
 <pinref part="SL17" gate="G$1" pin="5"/>
 <wire x1="586.74" y1="167.64" x2="574.04" y2="167.64" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$107" class="0">
-<segment>
-<pinref part="SL17" gate="G$1" pin="6"/>
-<wire x1="586.74" y1="165.1" x2="574.04" y2="165.1" width="0.1524" layer="91"/>
-<portref moduleinst="FRONT_ECU" port="READ_CHARGE"/>
 </segment>
 </net>
 <net name="N$26" class="0">
@@ -4057,34 +4065,6 @@ Power for FSAE EV5.1.4</text>
 <wire x1="558.8" y1="233.68" x2="558.8" y2="231.14" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$108" class="0">
-<segment>
-<pinref part="SL17" gate="G$1" pin="7"/>
-<portref moduleinst="FRONT_ECU" port="READ_SWITCH"/>
-<wire x1="586.74" y1="162.56" x2="574.04" y2="162.56" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$109" class="0">
-<segment>
-<pinref part="SL17" gate="G$1" pin="8"/>
-<portref moduleinst="FRONT_ECU" port="NC_1"/>
-<wire x1="586.74" y1="160.02" x2="574.04" y2="160.02" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$110" class="0">
-<segment>
-<pinref part="SL17" gate="G$1" pin="9"/>
-<portref moduleinst="FRONT_ECU" port="12V_AUX"/>
-<wire x1="574.04" y1="157.48" x2="586.74" y2="157.48" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$131" class="0">
-<segment>
-<pinref part="SL17" gate="G$1" pin="10"/>
-<portref moduleinst="FRONT_ECU" port="GND_AUX"/>
-<wire x1="586.74" y1="154.94" x2="574.04" y2="154.94" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="EM_VCC" class="0">
 <segment>
 <portref moduleinst="ENERGY_METER" port="VCC"/>
@@ -4306,6 +4286,41 @@ Power for FSAE EV5.1.4</text>
 <wire x1="556.26" y1="86.36" x2="614.68" y2="86.36" width="0.1524" layer="91"/>
 <label x="556.26" y="60.96" size="1.778" layer="95" rot="R90"/>
 <label x="556.26" y="86.36" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$58" class="0">
+<segment>
+<pinref part="SL17" gate="G$1" pin="6"/>
+<portref moduleinst="FRONT_ECU" port="READ_SWITCH"/>
+<wire x1="586.74" y1="165.1" x2="574.04" y2="165.1" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$59" class="0">
+<segment>
+<pinref part="SL17" gate="G$1" pin="7"/>
+<portref moduleinst="FRONT_ECU" port="12VSUPPLY_1"/>
+<wire x1="586.74" y1="162.56" x2="574.04" y2="162.56" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$64" class="0">
+<segment>
+<pinref part="SL17" gate="G$1" pin="8"/>
+<portref moduleinst="FRONT_ECU" port="GND_1"/>
+<wire x1="574.04" y1="160.02" x2="586.74" y2="160.02" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$66" class="0">
+<segment>
+<pinref part="SL17" gate="G$1" pin="9"/>
+<portref moduleinst="FRONT_ECU" port="CANL_1"/>
+<wire x1="586.74" y1="157.48" x2="574.04" y2="157.48" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$70" class="0">
+<segment>
+<pinref part="SL17" gate="G$1" pin="10"/>
+<portref moduleinst="FRONT_ECU" port="CANH_1"/>
+<wire x1="574.04" y1="154.94" x2="586.74" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

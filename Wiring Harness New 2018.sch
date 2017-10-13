@@ -729,13 +729,13 @@
 </module>
 <module name="FCU" prefix="" dx="30.48" dy="30.48">
 <ports>
-<port name="12V" side="left" coord="12.7" direction="in"/>
-<port name="GND" side="left" coord="10.16" direction="out"/>
-<port name="CANL" side="left" coord="7.62" direction="io"/>
-<port name="CANH" side="left" coord="5.08" direction="io"/>
-<port name="BSPD_CUR_FAULT" side="right" coord="-12.7" direction="in"/>
-<port name="SHUTDOWN5" side="right" coord="-7.62" direction="out"/>
-<port name="SHUTDOWN4" side="right" coord="-5.08" direction="in"/>
+<port name="12V" side="left" coord="-2.54" direction="in"/>
+<port name="GND" side="left" coord="-5.08" direction="out"/>
+<port name="CANL" side="left" coord="-7.62" direction="io"/>
+<port name="CANH" side="left" coord="-10.16" direction="io"/>
+<port name="BSPD_CUR_FAULT" side="left" coord="7.62" direction="in"/>
+<port name="SHUTDOWN5" side="left" coord="10.16" direction="out"/>
+<port name="SHUTDOWN4" side="left" coord="12.7" direction="in"/>
 </ports>
 <variantdefs>
 </variantdefs>
@@ -864,6 +864,8 @@
 <part name="SL4" library="HyTechSymbols" deviceset="M02" device=""/>
 <part name="SL11" library="HyTechSymbols" deviceset="M12" device=""/>
 <part name="SL7" library="HyTechSymbols" deviceset="M12" device=""/>
+<part name="SL10" library="HyTechSymbols" deviceset="M04" device=""/>
+<part name="SL12" library="HyTechSymbols" deviceset="M04" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -885,7 +887,7 @@
 <attribute name="NAME" x="73.66" y="-45.72" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
 <moduleinst name="RIGHT_PANEL_TOP1" module="RIGHT_PANEL_TOP" x="50.8" y="-81.28"/>
-<moduleinst name="FRONT_ECU" module="FCU" x="320.04" y="48.26"/>
+<moduleinst name="FRONT_ECU" module="FCU" x="340.36" y="48.26"/>
 <moduleinst name="LV_BATT1" module="LV_BATT" x="-129.54" y="78.74"/>
 <moduleinst name="MOTOR_PUMP1" module="MOTOR_PUMP" x="-129.54" y="55.88"/>
 <moduleinst name="MOTOR_FAN1" module="MOTOR_FAN" x="-129.54" y="33.02"/>
@@ -902,9 +904,9 @@
 <instance part="SL9" gate="G$1" x="58.42" y="289.56" rot="MR0"/>
 <instance part="LED1" gate="G$1" x="-114.3" y="177.8" rot="R180"/>
 <instance part="GND3" gate="1" x="-124.46" y="175.26" rot="R270"/>
-<instance part="BRB" gate="SPST" x="353.06" y="81.28" rot="R270"/>
-<instance part="BOTS" gate="SPST" x="327.66" y="81.28" rot="R270"/>
-<instance part="INERTIA" gate="SPST" x="302.26" y="81.28" rot="R270"/>
+<instance part="BRB" gate="SPST" x="353.06" y="109.22" rot="R270"/>
+<instance part="BOTS" gate="SPST" x="327.66" y="109.22" rot="R270"/>
+<instance part="INERTIA" gate="SPST" x="302.26" y="109.22" rot="R270"/>
 <instance part="SL5" gate="G$1" x="58.42" y="83.82" rot="R180"/>
 <instance part="SL8" gate="G$1" x="71.12" y="83.82" rot="MR180"/>
 <instance part="GND1" gate="1" x="5.08" y="129.54"/>
@@ -914,6 +916,8 @@
 <instance part="SL4" gate="G$1" x="71.12" y="66.04" rot="MR180"/>
 <instance part="SL11" gate="G$1" x="71.12" y="2.54" rot="MR180"/>
 <instance part="SL7" gate="G$1" x="58.42" y="2.54" rot="R180"/>
+<instance part="SL10" gate="G$1" x="284.48" y="76.2" rot="R270"/>
+<instance part="SL12" gate="G$1" x="284.48" y="88.9" rot="MR90"/>
 </instances>
 <busses>
 <bus name="B$1">
@@ -947,19 +951,20 @@
 <wire x1="71.12" y1="109.22" x2="71.12" y2="152.4" width="1.27" layer="92"/>
 </segment>
 </bus>
-<bus name="B$20">
-<segment>
-<wire x1="322.58" y1="15.24" x2="322.58" y2="7.62" width="1.27" layer="92"/>
-</segment>
-</bus>
 <bus name="B$21">
 <segment>
-<wire x1="284.48" y1="-17.78" x2="307.34" y2="-17.78" width="1.27" layer="92"/>
+<wire x1="279.4" y1="-17.78" x2="302.26" y2="-17.78" width="1.27" layer="92"/>
 </segment>
 </bus>
 <bus name="B$22">
 <segment>
-<wire x1="284.48" y1="27.94" x2="302.26" y2="27.94" width="1.27" layer="92"/>
+<wire x1="279.4" y1="27.94" x2="302.26" y2="27.94" width="1.27" layer="92"/>
+</segment>
+<segment>
+<wire x1="309.88" y1="35.56" x2="309.88" y2="63.5" width="1.27" layer="92"/>
+</segment>
+<segment>
+<wire x1="279.4" y1="66.04" x2="289.56" y2="66.04" width="1.27" layer="92"/>
 </segment>
 </bus>
 <bus name="B$23">
@@ -1159,16 +1164,15 @@
 </net>
 <net name="BSPD_CURRENT" class="0">
 <segment>
-<wire x1="340.36" y1="12.7" x2="304.8" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="304.8" y1="12.7" x2="304.8" y2="-124.46" width="0.1524" layer="91"/>
-<wire x1="304.8" y1="-124.46" x2="-27.94" y2="-124.46" width="0.1524" layer="91"/>
+<wire x1="289.56" y1="55.88" x2="289.56" y2="-114.3" width="0.1524" layer="91"/>
+<wire x1="289.56" y1="-114.3" x2="-17.78" y2="-114.3" width="0.1524" layer="91"/>
 <pinref part="SL1" gate="G$1" pin="2"/>
-<wire x1="340.36" y1="12.7" x2="340.36" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="289.56" y1="55.88" x2="320.04" y2="55.88" width="0.1524" layer="91"/>
 <portref moduleinst="FRONT_ECU" port="BSPD_CUR_FAULT"/>
-<wire x1="-27.94" y1="-124.46" x2="-27.94" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="-27.94" y1="50.8" x2="53.34" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="-114.3" x2="-17.78" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="50.8" x2="53.34" y2="50.8" width="0.1524" layer="91"/>
 <label x="50.8" y="50.8" size="1.778" layer="95" rot="MR0"/>
-<label x="7.62" y="-124.46" size="1.778" layer="95"/>
+<label x="7.62" y="-114.3" size="1.778" layer="95"/>
 </segment>
 <segment>
 <portref moduleinst="ACCUMULATOR" port="BSPD_CURRENT"/>
@@ -1182,16 +1186,14 @@
 </net>
 <net name="SHUTDOWN" class="0">
 <segment>
-<wire x1="289.56" y1="78.74" x2="289.56" y2="-109.22" width="0.1524" layer="91"/>
-<wire x1="289.56" y1="-109.22" x2="-12.7" y2="-109.22" width="0.1524" layer="91"/>
+<wire x1="284.48" y1="71.12" x2="284.48" y2="-109.22" width="0.1524" layer="91"/>
+<wire x1="284.48" y1="-109.22" x2="-12.7" y2="-109.22" width="0.1524" layer="91"/>
 <pinref part="SL1" gate="G$1" pin="1"/>
 <wire x1="-12.7" y1="-109.22" x2="-12.7" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="-12.7" y1="53.34" x2="53.34" y2="53.34" width="0.1524" layer="91"/>
 <label x="50.8" y="53.34" size="1.778" layer="95" rot="MR0"/>
 <label x="7.62" y="-109.22" size="1.778" layer="95"/>
-<pinref part="INERTIA" gate="SPST" pin="P"/>
-<wire x1="297.18" y1="81.28" x2="289.56" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="289.56" y1="81.28" x2="289.56" y2="78.74" width="0.1524" layer="91"/>
+<pinref part="SL10" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <portref moduleinst="REAR_ECU" port="SHUTDOWN"/>
@@ -1205,14 +1207,15 @@
 </net>
 <net name="BUS_REAR-&gt;FRONT_CANH" class="0">
 <segment>
-<wire x1="299.72" y1="53.34" x2="299.72" y2="-119.38" width="0.1524" layer="91"/>
 <pinref part="SL1" gate="G$1" pin="7"/>
-<wire x1="-22.86" y1="38.1" x2="53.34" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="-27.94" y1="38.1" x2="53.34" y2="38.1" width="0.1524" layer="91"/>
 <portref moduleinst="FRONT_ECU" port="CANH"/>
-<wire x1="-22.86" y1="38.1" x2="-22.86" y2="-119.38" width="0.1524" layer="91"/>
-<wire x1="-22.86" y1="-119.38" x2="299.72" y2="-119.38" width="0.1524" layer="91"/>
+<wire x1="-27.94" y1="38.1" x2="-27.94" y2="-124.46" width="0.1524" layer="91"/>
+<wire x1="-27.94" y1="-124.46" x2="299.72" y2="-124.46" width="0.1524" layer="91"/>
 <label x="50.8" y="38.1" size="1.778" layer="95" rot="MR0"/>
-<label x="7.62" y="-119.38" size="1.778" layer="95"/>
+<label x="7.62" y="-124.46" size="1.778" layer="95"/>
+<wire x1="320.04" y1="38.1" x2="299.72" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="299.72" y1="38.1" x2="299.72" y2="-124.46" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SL2" gate="G$1" pin="7"/>
@@ -1225,15 +1228,15 @@
 </net>
 <net name="BUS_REAR-&gt;FRONT_CANL" class="0">
 <segment>
-<wire x1="299.72" y1="55.88" x2="297.18" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="297.18" y1="55.88" x2="297.18" y2="-116.84" width="0.1524" layer="91"/>
+<wire x1="320.04" y1="40.64" x2="297.18" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="40.64" x2="297.18" y2="-121.92" width="0.1524" layer="91"/>
 <pinref part="SL1" gate="G$1" pin="8"/>
-<wire x1="53.34" y1="35.56" x2="-20.32" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="35.56" x2="-25.4" y2="35.56" width="0.1524" layer="91"/>
 <portref moduleinst="FRONT_ECU" port="CANL"/>
-<wire x1="-20.32" y1="35.56" x2="-20.32" y2="-116.84" width="0.1524" layer="91"/>
-<wire x1="-20.32" y1="-116.84" x2="297.18" y2="-116.84" width="0.1524" layer="91"/>
+<wire x1="-25.4" y1="35.56" x2="-25.4" y2="-121.92" width="0.1524" layer="91"/>
+<wire x1="-25.4" y1="-121.92" x2="297.18" y2="-121.92" width="0.1524" layer="91"/>
 <label x="50.8" y="35.56" size="1.778" layer="95" rot="MR0"/>
-<label x="7.62" y="-116.84" size="1.778" layer="95"/>
+<label x="7.62" y="-121.92" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="SL2" gate="G$1" pin="8"/>
@@ -1246,15 +1249,15 @@
 </net>
 <net name="BUS_REAR-&gt;FRONT_GND" class="0">
 <segment>
-<wire x1="299.72" y1="58.42" x2="294.64" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="294.64" y1="58.42" x2="294.64" y2="-114.3" width="0.1524" layer="91"/>
+<wire x1="320.04" y1="43.18" x2="294.64" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="294.64" y1="43.18" x2="294.64" y2="-119.38" width="0.1524" layer="91"/>
 <pinref part="SL1" gate="G$1" pin="3"/>
-<wire x1="53.34" y1="48.26" x2="-17.78" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="48.26" x2="-22.86" y2="48.26" width="0.1524" layer="91"/>
 <portref moduleinst="FRONT_ECU" port="GND"/>
-<wire x1="-17.78" y1="48.26" x2="-17.78" y2="-114.3" width="0.1524" layer="91"/>
-<wire x1="-17.78" y1="-114.3" x2="294.64" y2="-114.3" width="0.1524" layer="91"/>
+<wire x1="-22.86" y1="48.26" x2="-22.86" y2="-119.38" width="0.1524" layer="91"/>
+<wire x1="-22.86" y1="-119.38" x2="294.64" y2="-119.38" width="0.1524" layer="91"/>
 <label x="50.8" y="48.26" size="1.778" layer="95" rot="MR0"/>
-<label x="7.62" y="-114.3" size="1.778" layer="95"/>
+<label x="7.62" y="-119.38" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="SL2" gate="G$1" pin="3"/>
@@ -1267,15 +1270,15 @@
 </net>
 <net name="BUS_REAR-&gt;FRONT_12VSUPPLY" class="0">
 <segment>
-<wire x1="299.72" y1="60.96" x2="292.1" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="292.1" y1="60.96" x2="292.1" y2="-111.76" width="0.1524" layer="91"/>
-<wire x1="292.1" y1="-111.76" x2="-15.24" y2="-111.76" width="0.1524" layer="91"/>
+<wire x1="320.04" y1="45.72" x2="292.1" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="292.1" y1="45.72" x2="292.1" y2="-116.84" width="0.1524" layer="91"/>
+<wire x1="292.1" y1="-116.84" x2="-20.32" y2="-116.84" width="0.1524" layer="91"/>
 <pinref part="SL1" gate="G$1" pin="4"/>
 <portref moduleinst="FRONT_ECU" port="12V"/>
-<wire x1="-15.24" y1="-111.76" x2="-15.24" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="-15.24" y1="45.72" x2="53.34" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="-20.32" y1="-116.84" x2="-20.32" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="-20.32" y1="45.72" x2="53.34" y2="45.72" width="0.1524" layer="91"/>
 <label x="50.8" y="45.72" size="1.778" layer="95" rot="MR0"/>
-<label x="7.62" y="-111.76" size="1.778" layer="95"/>
+<label x="7.62" y="-116.84" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="SL2" gate="G$1" pin="4"/>
@@ -1387,29 +1390,23 @@
 </net>
 <net name="N$1" class="0">
 <segment>
-<wire x1="309.88" y1="83.82" x2="309.88" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="309.88" y1="111.76" x2="309.88" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="INERTIA" gate="SPST" pin="O"/>
-<wire x1="307.34" y1="83.82" x2="309.88" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="307.34" y1="111.76" x2="309.88" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="BOTS" gate="SPST" pin="P"/>
-<wire x1="309.88" y1="81.28" x2="322.58" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="309.88" y1="109.22" x2="322.58" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SSOK+" class="0">
 <segment>
-<wire x1="335.28" y1="83.82" x2="335.28" y2="81.28" width="0.1524" layer="91"/>
-<pinref part="BOTS" gate="SPST" pin="O"/>
-<wire x1="332.74" y1="83.82" x2="335.28" y2="83.82" width="0.1524" layer="91"/>
-<pinref part="BRB" gate="SPST" pin="P"/>
-<wire x1="335.28" y1="81.28" x2="347.98" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="335.28" y1="83.82" x2="335.28" y2="88.9" width="0.1524" layer="91"/>
-<junction x="335.28" y="83.82"/>
-<wire x1="335.28" y1="88.9" x2="287.02" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="287.02" y1="88.9" x2="287.02" y2="-106.68" width="0.1524" layer="91"/>
+<wire x1="281.94" y1="71.12" x2="281.94" y2="-106.68" width="0.1524" layer="91"/>
 <pinref part="SL1" gate="G$1" pin="6"/>
 <wire x1="53.34" y1="40.64" x2="-10.16" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="287.02" y1="-106.68" x2="-10.16" y2="-106.68" width="0.1524" layer="91"/>
+<wire x1="281.94" y1="-106.68" x2="-10.16" y2="-106.68" width="0.1524" layer="91"/>
 <wire x1="-10.16" y1="-106.68" x2="-10.16" y2="40.64" width="0.1524" layer="91"/>
 <label x="50.8" y="40.64" size="1.778" layer="95" rot="MR0"/>
+<label x="7.62" y="-106.68" size="1.778" layer="95"/>
+<pinref part="SL10" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <wire x1="208.28" y1="40.64" x2="208.28" y2="294.64" width="0.1524" layer="91"/>
@@ -1442,11 +1439,12 @@
 </net>
 <net name="N$3" class="0">
 <segment>
-<wire x1="368.3" y1="83.82" x2="368.3" y2="43.18" width="0.1524" layer="91"/>
-<portref moduleinst="FRONT_ECU" port="SHUTDOWN4"/>
-<wire x1="368.3" y1="43.18" x2="340.36" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="BRB" gate="SPST" pin="O"/>
-<wire x1="358.14" y1="83.82" x2="368.3" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="358.14" y1="111.76" x2="368.3" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="287.02" y1="99.06" x2="368.3" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="368.3" y1="99.06" x2="368.3" y2="111.76" width="0.1524" layer="91"/>
+<pinref part="SL12" gate="G$1" pin="3"/>
+<wire x1="287.02" y1="99.06" x2="287.02" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="BAT+" class="0">
@@ -1694,16 +1692,14 @@
 </segment>
 <segment>
 <pinref part="SL1" gate="G$1" pin="5"/>
-<wire x1="53.34" y1="43.18" x2="-25.4" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="342.9" y1="10.16" x2="302.26" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="302.26" y1="10.16" x2="302.26" y2="-121.92" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="43.18" x2="-15.24" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="287.02" y1="58.42" x2="287.02" y2="-111.76" width="0.1524" layer="91"/>
 <portref moduleinst="FRONT_ECU" port="SHUTDOWN5"/>
-<wire x1="-25.4" y1="43.18" x2="-25.4" y2="-121.92" width="0.1524" layer="91"/>
-<wire x1="-25.4" y1="-121.92" x2="302.26" y2="-121.92" width="0.1524" layer="91"/>
+<wire x1="-15.24" y1="43.18" x2="-15.24" y2="-111.76" width="0.1524" layer="91"/>
+<wire x1="-15.24" y1="-111.76" x2="287.02" y2="-111.76" width="0.1524" layer="91"/>
 <label x="50.8" y="43.18" size="1.778" layer="95" rot="MR0"/>
-<label x="7.62" y="-121.92" size="1.778" layer="95"/>
-<wire x1="340.36" y1="40.64" x2="342.9" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="342.9" y1="40.64" x2="342.9" y2="10.16" width="0.1524" layer="91"/>
+<label x="7.62" y="-111.76" size="1.778" layer="95"/>
+<wire x1="320.04" y1="58.42" x2="287.02" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="193.04" y1="43.18" x2="193.04" y2="7.62" width="0.1524" layer="91"/>
@@ -1770,6 +1766,36 @@
 <wire x1="76.2" y1="-10.16" x2="185.42" y2="-10.16" width="0.1524" layer="91"/>
 <wire x1="185.42" y1="-10.16" x2="185.42" y2="203.2" width="0.1524" layer="91"/>
 <label x="78.74" y="-10.16" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="BRB" gate="SPST" pin="P"/>
+<pinref part="BOTS" gate="SPST" pin="O"/>
+<wire x1="332.74" y1="111.76" x2="335.28" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="335.28" y1="111.76" x2="335.28" y2="116.84" width="0.1524" layer="91"/>
+<junction x="335.28" y="111.76"/>
+<wire x1="335.28" y1="111.76" x2="335.28" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="335.28" y1="109.22" x2="347.98" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="SL12" gate="G$1" pin="1"/>
+<wire x1="335.28" y1="116.84" x2="281.94" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="281.94" y1="116.84" x2="281.94" y2="93.98" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="INERTIA" gate="SPST" pin="P"/>
+<pinref part="SL12" gate="G$1" pin="2"/>
+<wire x1="297.18" y1="109.22" x2="284.48" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="284.48" y1="109.22" x2="284.48" y2="93.98" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="SL10" gate="G$1" pin="3"/>
+<portref moduleinst="FRONT_ECU" port="SHUTDOWN4"/>
+<wire x1="320.04" y1="60.96" x2="287.02" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="287.02" y1="60.96" x2="287.02" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
