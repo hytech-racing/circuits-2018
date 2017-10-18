@@ -6708,7 +6708,7 @@ Source: transistor-fet.lbr</description>
 <pad name="3" x="2.54" y="0" drill="1"/>
 </package>
 <package name="KEYSTONE5222">
-<smd name="P$1" x="0" y="0" dx="12.7" dy="12.7" layer="1"/>
+<smd name="P$1" x="0" y="0" dx="15.875" dy="17.78" layer="1"/>
 <text x="0" y="-6.604" size="0.508" layer="25" align="top-center">&gt;NAME</text>
 </package>
 <package name="0S102011MS2QS1">
@@ -7944,6 +7944,14 @@ MX150L™ Vertical PCB Header</description>
 <wire x1="1.5" y1="-1.5" x2="-1.5" y2="-1.5" width="0.127" layer="21"/>
 <wire x1="-1.5" y1="-1.5" x2="-1.5" y2="1.5" width="0.127" layer="21"/>
 <circle x="-1.15" y="-1.15" radius="0.05" width="0.2" layer="21"/>
+</package>
+<package name="5X20MM_FUSE">
+<smd name="P$1" x="-7.5" y="0" dx="5" dy="5.5" layer="1" rot="R90"/>
+<smd name="P$2" x="7.5" y="0" dx="5" dy="5.5" layer="1" rot="R90"/>
+<wire x1="-10" y1="2.6" x2="10" y2="2.6" width="0.127" layer="21"/>
+<wire x1="10" y1="2.6" x2="10" y2="-2.6" width="0.127" layer="21"/>
+<wire x1="10" y1="-2.6" x2="-10" y2="-2.6" width="0.127" layer="21"/>
+<wire x1="-10" y1="-2.6" x2="-10" y2="2.6" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -15415,6 +15423,9 @@ Source: Adafruit</description>
 </devices>
 </deviceset>
 <deviceset name="BATTERY_SPRING">
+<description>&lt;b&gt; Keystone Electronics Battery Spring Contact &lt;/b&gt;
+&lt;br&gt;
+&lt;a href="http://keyelco.com/userAssets/file/M65p17.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="MV" x="0" y="0" addlevel="always"/>
 </gates>
@@ -16396,6 +16407,33 @@ Output Current: 50 mA (max)
 <connect gate="G$1" pin="SW" pad="1"/>
 <connect gate="G$1" pin="VIN" pad="2"/>
 <connect gate="G$1" pin="VOUT" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="0001.2704.11">
+<description>&lt;b&gt; Schurter Surface Mount Ceramic Fuse &lt;/b&gt;
+&lt;br&gt;
+Current Rating: 1A
+&lt;br&gt;
+Voltage Rating AC: 250 VAC
+&lt;br&gt;
+Voltage Rating DC: 300 VDC
+&lt;br&gt;
+Dimensions: 5 mm x 20 mm 
+&lt;br&gt;
+&lt;a href="http://www.mouser.com/ds/2/358/typ_SMD-SPT-46594.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="FUSE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="5X20MM_FUSE">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
