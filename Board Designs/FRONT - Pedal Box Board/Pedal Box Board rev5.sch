@@ -839,44 +839,6 @@ It has reduced top mask to make it harder to put the component on the wrong side
 <text x="-5.334" y="-2.921" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
 <text x="-3.556" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
-<package name="MINIFIT_5566-4">
-<description>&lt;b&gt;Mini-Fit Junior connector 4 pole&lt;/b&gt;&lt;p&gt;
-Source: http://www.molex.com</description>
-<wire x1="-4.7" y1="4.5" x2="4.7" y2="4.5" width="0.254" layer="21"/>
-<wire x1="4.7" y1="4.5" x2="4.7" y2="-2.2" width="0.254" layer="21"/>
-<wire x1="4.7" y1="-3.3" x2="4.7" y2="-4.9" width="0.254" layer="21"/>
-<wire x1="4.7" y1="-4.9" x2="-4.7" y2="-4.9" width="0.254" layer="21"/>
-<wire x1="-4.7" y1="-4.9" x2="-4.7" y2="4.5" width="0.254" layer="21"/>
-<wire x1="4.7" y1="-2.2" x2="4.7" y2="-3.3" width="0.254" layer="21" curve="-180"/>
-<wire x1="-2.1" y1="6.3" x2="2.1" y2="6.3" width="0.254" layer="27"/>
-<wire x1="-2.1" y1="6.3" x2="-2.1" y2="4.6" width="0.254" layer="27"/>
-<wire x1="2.1" y1="6.3" x2="2.1" y2="4.6" width="0.254" layer="27"/>
-<pad name="1" x="2.1" y="-2.75" drill="1.4" shape="square"/>
-<pad name="2" x="-2.1" y="-2.75" drill="1.4" shape="square"/>
-<pad name="3" x="2.1" y="2.75" drill="1.4" shape="square"/>
-<pad name="4" x="-2.1" y="2.75" drill="1.4" shape="square"/>
-<text x="-1.27" y="-6.985" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3.81" y="6.985" size="1.27" layer="27">&gt;VALUE</text>
-</package>
-<package name="MINIFIT_5566-4@1">
-<description>&lt;b&gt;Mini-Fit Junior connector 4 pole&lt;/b&gt;&lt;p&gt;
-Source: http://www.molex.com</description>
-<wire x1="-4.7" y1="4.5" x2="4.7" y2="4.5" width="0.254" layer="21"/>
-<wire x1="4.7" y1="4.5" x2="4.7" y2="-2.2" width="0.254" layer="21"/>
-<wire x1="4.7" y1="-3.3" x2="4.7" y2="-4.9" width="0.254" layer="21"/>
-<wire x1="4.7" y1="-4.9" x2="-4.7" y2="-4.9" width="0.254" layer="21"/>
-<wire x1="-4.7" y1="-4.9" x2="-4.7" y2="4.5" width="0.254" layer="21"/>
-<wire x1="4.7" y1="-2.2" x2="4.7" y2="-3.3" width="0.254" layer="21" curve="-180"/>
-<wire x1="-2.1" y1="6.3" x2="2.1" y2="6.3" width="0.254" layer="27"/>
-<wire x1="-2.1" y1="6.3" x2="-2.1" y2="4.6" width="0.254" layer="27"/>
-<wire x1="2.1" y1="6.3" x2="2.1" y2="4.6" width="0.254" layer="27"/>
-<pad name="1" x="2.1" y="-2.75" drill="1.4" shape="square"/>
-<pad name="2" x="-2.1" y="-2.75" drill="1.4" shape="square"/>
-<pad name="3" x="2.1" y="2.75" drill="1.4" shape="square"/>
-<pad name="4" x="-2.1" y="2.75" drill="1.4" shape="square"/>
-<text x="0" y="-5.08" size="1.27" layer="25" align="top-center">&gt;NAME</text>
-<text x="0" y="6.35" size="1.27" layer="27" align="bottom-center">&gt;VALUE</text>
-</package>
 <package name="MINIFIT_5566-10">
 <description>&lt;b&gt;Mini-Fit Junior connector 10 pole&lt;/b&gt;&lt;p&gt;
 Source: http://www.molex.com</description>
@@ -1143,19 +1105,6 @@ diameter 2.54 mm, horizontal, grid 10.16 mm</description>
 <wire x1="-3" y1="0" x2="-3" y2="5" width="0.127" layer="21"/>
 <wire x1="-2" y1="-10" x2="-2" y2="-11" width="0.127" layer="21"/>
 </package>
-<package name="NANO-FIT_VERTICAL-4">
-<description>105312-1204 Nano-Fit™ Vertical Header, Through Hole, Dual Row, 4 Circuits</description>
-<pad name="2" x="-1.25" y="0" drill="1.2" shape="square"/>
-<pad name="1" x="1.25" y="0" drill="1.2" shape="square"/>
-<pad name="4" x="-1.25" y="2.5" drill="1.2" shape="square"/>
-<pad name="3" x="1.25" y="2.5" drill="1.2" shape="square"/>
-<wire x1="-3" y1="4" x2="3" y2="4" width="0.127" layer="21"/>
-<wire x1="3" y1="4" x2="3" y2="2.32" width="0.127" layer="21"/>
-<wire x1="-3" y1="2.32" x2="-3" y2="4" width="0.127" layer="21"/>
-<wire x1="-3" y1="2.3" x2="-3" y2="-1.7" width="0.127" layer="21"/>
-<wire x1="-3" y1="-1.7" x2="3" y2="-1.7" width="0.127" layer="21"/>
-<wire x1="3" y1="-1.7" x2="3" y2="2.3" width="0.127" layer="21"/>
-</package>
 <package name="DURACLIK_RIGHT_ANGLE-4">
 <smd name="1" x="3" y="8.13" dx="3.2" dy="1.2" layer="1" rot="R90"/>
 <smd name="2" x="1" y="8.13" dx="3.2" dy="1.2" layer="1" rot="R90"/>
@@ -1213,6 +1162,7 @@ MX150L™ Vertical PCB Header</description>
 <pad name="4" x="2.921" y="-2.9972" drill="1.778" diameter="3.81"/>
 <circle x="-19.05" y="0" radius="4" width="0.127" layer="22"/>
 <circle x="19.05" y="0" radius="4" width="0.127" layer="22"/>
+<hole x="-8.763" y="2.921" drill="1.651"/>
 </package>
 <package name="NANO-FIT_RIGHT_ANGLE-10-SURFACE">
 <smd name="3" x="0" y="0" dx="1.24" dy="2.5" layer="1"/>
@@ -1333,6 +1283,7 @@ MX150L™ Vertical PCB Header</description>
 <pad name="10" x="11.684" y="-2.9972" drill="1.778" diameter="3.81"/>
 <circle x="-27.2923" y="0" radius="4" width="0.127" layer="22"/>
 <circle x="27.2923" y="0" radius="4" width="0.127" layer="22"/>
+<hole x="-17.526" y="2.921" drill="1.524"/>
 </package>
 <package name="SOIC-16">
 <description>&lt;b&gt;Small Outline Integrated Circuit&lt;/b&gt;</description>
@@ -1868,6 +1819,38 @@ Source: transistor-fet.lbr</description>
 <package name="TEST_POINT">
 <circle x="0" y="0" radius="1.5875" width="0.127" layer="21"/>
 <pad name="P$1" x="0" y="0" drill="1.6002" rot="R90"/>
+</package>
+<package name="MINIFIT_5566-4">
+<description>&lt;b&gt;Mini-Fit Junior connector 4 pole&lt;/b&gt;&lt;p&gt;
+Source: http://www.molex.com</description>
+<wire x1="-4.7" y1="4.5" x2="4.7" y2="4.5" width="0.254" layer="21"/>
+<wire x1="4.7" y1="4.5" x2="4.7" y2="-2.2" width="0.254" layer="21"/>
+<wire x1="4.7" y1="-3.3" x2="4.7" y2="-4.9" width="0.254" layer="21"/>
+<wire x1="4.7" y1="-4.9" x2="-4.7" y2="-4.9" width="0.254" layer="21"/>
+<wire x1="-4.7" y1="-4.9" x2="-4.7" y2="4.5" width="0.254" layer="21"/>
+<wire x1="4.7" y1="-2.2" x2="4.7" y2="-3.3" width="0.254" layer="21" curve="-180"/>
+<wire x1="-2.1" y1="6.3" x2="2.1" y2="6.3" width="0.254" layer="27"/>
+<wire x1="-2.1" y1="6.3" x2="-2.1" y2="4.6" width="0.254" layer="27"/>
+<wire x1="2.1" y1="6.3" x2="2.1" y2="4.6" width="0.254" layer="27"/>
+<pad name="1" x="2.1" y="-2.75" drill="1.4" shape="square"/>
+<pad name="2" x="-2.1" y="-2.75" drill="1.4" shape="square"/>
+<pad name="3" x="2.1" y="2.75" drill="1.4" shape="square"/>
+<pad name="4" x="-2.1" y="2.75" drill="1.4" shape="square"/>
+<text x="0" y="-5.08" size="1.27" layer="25" align="top-center">&gt;NAME</text>
+<text x="0" y="6.35" size="1.27" layer="27" align="bottom-center">&gt;VALUE</text>
+</package>
+<package name="NANO-FIT_VERTICAL-4">
+<description>105312-1204 Nano-Fit™ Vertical Header, Through Hole, Dual Row, 4 Circuits</description>
+<pad name="P$1" x="-1.25" y="0" drill="1.2" shape="square"/>
+<pad name="P$2" x="1.25" y="0" drill="1.2" shape="square"/>
+<pad name="P$3" x="-1.25" y="2.5" drill="1.2" shape="square"/>
+<pad name="P$4" x="1.25" y="2.5" drill="1.2" shape="square"/>
+<wire x1="-3" y1="4" x2="3" y2="4" width="0.127" layer="21"/>
+<wire x1="3" y1="4" x2="3" y2="2.32" width="0.127" layer="21"/>
+<wire x1="-3" y1="2.32" x2="-3" y2="4" width="0.127" layer="21"/>
+<wire x1="-3" y1="2.3" x2="-3" y2="-1.7" width="0.127" layer="21"/>
+<wire x1="-3" y1="-1.7" x2="3" y2="-1.7" width="0.127" layer="21"/>
+<wire x1="3" y1="-1.7" x2="3" y2="2.3" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -3072,34 +3055,6 @@ It is replaced by MCP2561.
 </device>
 </devices>
 </deviceset>
-<deviceset name="MINIFIT_5566-4" prefix="X">
-<description>&lt;b&gt;Mini-Fit Junior connector 4 pole&lt;/b&gt;&lt;p&gt;
-Source: http://www.molex.com</description>
-<gates>
-<gate name="-1" symbol="MV" x="0" y="5.08" addlevel="always"/>
-<gate name="-2" symbol="M" x="0" y="2.54" addlevel="always"/>
-<gate name="-3" symbol="M" x="0" y="0" addlevel="always"/>
-<gate name="-4" symbol="M" x="0" y="-2.54" addlevel="always"/>
-</gates>
-<devices>
-<device name="" package="MINIFIT_5566-4">
-<connects>
-<connect gate="-1" pin="S" pad="1"/>
-<connect gate="-2" pin="S" pad="2"/>
-<connect gate="-3" pin="S" pad="3"/>
-<connect gate="-4" pin="S" pad="4"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="MCP6002">
 <description>Microchip MCP6002 Dual Channel Op Amp</description>
 <gates>
@@ -3296,7 +3251,7 @@ Source: http://www.molex.com</description>
 <gate name="-4" symbol="M" x="0" y="-2.54" addlevel="always"/>
 </gates>
 <devices>
-<device name="" package="MINIFIT_5566-4@1">
+<device name="" package="MINIFIT_5566-4">
 <connects>
 <connect gate="-1" pin="S" pad="1"/>
 <connect gate="-2" pin="S" pad="2"/>
@@ -3325,10 +3280,10 @@ Source: http://www.molex.com</description>
 </device>
 <device name="NANO-FIT-VERTICAL-4" package="NANO-FIT_VERTICAL-4">
 <connects>
-<connect gate="-1" pin="S" pad="1"/>
-<connect gate="-2" pin="S" pad="2"/>
-<connect gate="-3" pin="S" pad="3"/>
-<connect gate="-4" pin="S" pad="4"/>
+<connect gate="-1" pin="S" pad="P$1"/>
+<connect gate="-2" pin="S" pad="P$2"/>
+<connect gate="-3" pin="S" pad="P$3"/>
+<connect gate="-4" pin="S" pad="P$4"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -5068,8 +5023,8 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="U$1" library="HyTechDevices" deviceset="TEENSY_3.2_SIMPLE" device=""/>
 <part name="U$2" library="HyTechDevices" deviceset="5VREG_LM340-N" device="LM340MPX-5.0/NOPB"/>
 <part name="U$3" library="HyTechDevices" deviceset="MCP2551" device=""/>
-<part name="X1" library="HyTechDevices" deviceset="MINIFIT_5566-4" device=""/>
-<part name="X2" library="HyTechDevices" deviceset="MINIFIT_5566-4" device=""/>
+<part name="X1" library="HyTechDevices" deviceset="CONNECTOR-4" device=""/>
+<part name="X2" library="HyTechDevices" deviceset="CONNECTOR-4" device=""/>
 <part name="GND2" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="R1" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="120"/>
 <part name="GND3" library="HyTechSymbols" deviceset="GND" device=""/>
