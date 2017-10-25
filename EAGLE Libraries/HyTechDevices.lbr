@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.3.1">
+<eagle version="8.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -70,7 +70,7 @@
 <layer number="90" name="Modules" color="5" fill="1" visible="no" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="no" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="no" active="yes"/>
-<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="no" active="yes"/>
@@ -8048,6 +8048,18 @@ MX150L™ Vertical PCB Header</description>
 <wire x1="0.8" y1="-0.4" x2="-0.8" y2="-0.4" width="0.1524" layer="21"/>
 <wire x1="-0.8" y1="-0.4" x2="-0.8" y2="0.4" width="0.1524" layer="21"/>
 </package>
+<package name="SRU1048">
+<smd name="1" x="-4.5" y="0" dx="3.6" dy="1.8" layer="1" rot="R90"/>
+<smd name="2" x="4.5" y="0" dx="3.6" dy="1.8" layer="1" rot="R90"/>
+<wire x1="-5" y1="2.07105" x2="-5" y2="-2.07105" width="0.127" layer="21"/>
+<wire x1="-5" y1="-2.07105" x2="-2.07105" y2="-5" width="0.127" layer="21"/>
+<wire x1="-2.07105" y1="-5" x2="2.07105" y2="-5" width="0.127" layer="21"/>
+<wire x1="2.07105" y1="-5" x2="5" y2="-2.07105" width="0.127" layer="21"/>
+<wire x1="5" y1="-2.07105" x2="5" y2="2.07105" width="0.127" layer="21"/>
+<wire x1="5" y1="2.07105" x2="2.07105" y2="5" width="0.127" layer="21"/>
+<wire x1="2.07105" y1="5" x2="-2.07105" y2="5" width="0.127" layer="21"/>
+<wire x1="-2.07105" y1="5" x2="-5" y2="2.07105" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ARDUINO_NANO">
@@ -10948,6 +10960,20 @@ Demo Board</text>
 <pin name="SS" x="10.16" y="-2.54" length="short" rot="R180"/>
 <pin name="VOUT" x="10.16" y="2.54" length="short" rot="R180"/>
 <pin name="SW" x="10.16" y="7.62" length="short" rot="R180"/>
+</symbol>
+<symbol name="INDUCTOR">
+<wire x1="5.08" y1="0.0254" x2="3.81" y2="1.2954" width="0.254" layer="94" curve="90" cap="flat"/>
+<wire x1="2.5403" y1="0.0254" x2="3.81" y2="1.27" width="0.254" layer="94" curve="-88.851934" cap="flat"/>
+<wire x1="2.54" y1="0.0254" x2="1.27" y2="1.2954" width="0.254" layer="94" curve="90" cap="flat"/>
+<wire x1="0.0003" y1="0.0254" x2="1.27" y2="1.27" width="0.254" layer="94" curve="-88.851934" cap="flat"/>
+<wire x1="0" y1="0.0254" x2="-1.27" y2="1.2954" width="0.254" layer="94" curve="90" cap="flat"/>
+<wire x1="-2.5397" y1="0.0254" x2="-1.27" y2="1.2703" width="0.254" layer="94" curve="-88.838669" cap="flat"/>
+<wire x1="-2.54" y1="0.0254" x2="-3.81" y2="1.2954" width="0.254" layer="94" curve="90" cap="flat"/>
+<wire x1="-5.0797" y1="0.0254" x2="-3.81" y2="1.2703" width="0.254" layer="94" curve="-88.838669" cap="flat"/>
+<pin name="P$1" x="-7.62" y="0" visible="off" length="short"/>
+<pin name="P$2" x="7.62" y="0" visible="off" length="short" rot="R180"/>
+<text x="-5.08" y="2.54" size="1.27" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-2.54" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -15945,7 +15971,6 @@ Schurter 0751.0110 Brass Fuse Clip
 </devices>
 </deviceset>
 <deviceset name="DC1894B">
-<description>Linear DC1894B Demo Board for LTC6804-1</description>
 <description>&lt;b&gt; Linear Technology Multicell Battery Stack Monitor &lt;/b&gt;
 &lt;br&gt;
 Variant 1: Daisy Chained Configuration
@@ -16794,6 +16819,25 @@ Output Current: 50 mA (max)
 <connect gate="G$1" pin="SW" pad="1"/>
 <connect gate="G$1" pin="VIN" pad="2"/>
 <connect gate="G$1" pin="VOUT" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SRU1048" uservalue="yes">
+<description>&lt;b&gt; Bourns SRU1048 Series Shielded SMD Power Inductor &lt;/b&gt;
+&lt;br&gt;
+&lt;a href="http://www.mouser.com/ds/2/54/RU1048-778161.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="INDUCTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SRU1048">
+<connects>
+<connect gate="G$1" pin="P$1" pad="1"/>
+<connect gate="G$1" pin="P$2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
