@@ -1,21 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<<<<<<< HEAD
 <eagle version="8.4.0">
-=======
-<eagle version="8.3.2">
->>>>>>> cd6f2569f345da7ddb5ede6272b24ac04f35b8fa
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<<<<<<< HEAD
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
-=======
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
->>>>>>> cd6f2569f345da7ddb5ede6272b24ac04f35b8fa
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -8056,7 +8048,6 @@ MX150L™ Vertical PCB Header</description>
 <wire x1="0.8" y1="-0.4" x2="-0.8" y2="-0.4" width="0.1524" layer="21"/>
 <wire x1="-0.8" y1="-0.4" x2="-0.8" y2="0.4" width="0.1524" layer="21"/>
 </package>
-<<<<<<< HEAD
 <package name="SRU1048">
 <smd name="1" x="-4.5" y="0" dx="3.6" dy="1.8" layer="1" rot="R90"/>
 <smd name="2" x="4.5" y="0" dx="3.6" dy="1.8" layer="1" rot="R90"/>
@@ -8068,7 +8059,7 @@ MX150L™ Vertical PCB Header</description>
 <wire x1="5" y1="2.07105" x2="2.07105" y2="5" width="0.127" layer="21"/>
 <wire x1="2.07105" y1="5" x2="-2.07105" y2="5" width="0.127" layer="21"/>
 <wire x1="-2.07105" y1="5" x2="-5" y2="2.07105" width="0.127" layer="21"/>
-=======
+</package>
 <package name="EASY_DRIVER">
 <pad name="5V+" x="16.51" y="3.81" drill="0.8" shape="long"/>
 <pad name="SLP" x="16.51" y="13.97" drill="0.8" shape="long"/>
@@ -8105,7 +8096,6 @@ MX150L™ Vertical PCB Header</description>
 <wire x1="7.6" y1="-0.2" x2="7.6" y2="-4.8" width="0.127" layer="21"/>
 <wire x1="7.6" y1="-4.8" x2="0.2" y2="-4.8" width="0.127" layer="21"/>
 <wire x1="0.2" y1="-4.8" x2="0.2" y2="-0.2" width="0.127" layer="21"/>
->>>>>>> cd6f2569f345da7ddb5ede6272b24ac04f35b8fa
 </package>
 </packages>
 <symbols>
@@ -11008,7 +10998,6 @@ Demo Board</text>
 <pin name="VOUT" x="10.16" y="2.54" length="short" rot="R180"/>
 <pin name="SW" x="10.16" y="7.62" length="short" rot="R180"/>
 </symbol>
-<<<<<<< HEAD
 <symbol name="INDUCTOR">
 <wire x1="5.08" y1="0.0254" x2="3.81" y2="1.2954" width="0.254" layer="94" curve="90" cap="flat"/>
 <wire x1="2.5403" y1="0.0254" x2="3.81" y2="1.27" width="0.254" layer="94" curve="-88.851934" cap="flat"/>
@@ -11022,7 +11011,7 @@ Demo Board</text>
 <pin name="P$2" x="7.62" y="0" visible="off" length="short" rot="R180"/>
 <text x="-5.08" y="2.54" size="1.27" layer="95">&gt;NAME</text>
 <text x="-2.54" y="-2.54" size="1.27" layer="96">&gt;VALUE</text>
-=======
+</symbol>
 <symbol name="EASY_DRIVER">
 <pin name="MS2" x="-2.54" y="33.02" visible="pin" length="short"/>
 <wire x1="0" y1="45.72" x2="0" y2="0" width="0.254" layer="94"/>
@@ -11046,7 +11035,6 @@ Demo Board</text>
 <pin name="M+" x="-2.54" y="43.18" visible="pin" length="short"/>
 <pin name="DIR" x="22.86" y="43.18" visible="pin" length="short" rot="R180"/>
 <pin name="STEP" x="22.86" y="40.64" visible="pin" length="short" rot="R180"/>
->>>>>>> cd6f2569f345da7ddb5ede6272b24ac04f35b8fa
 </symbol>
 </symbols>
 <devicesets>
@@ -16899,7 +16887,6 @@ Output Current: 50 mA (max)
 </device>
 </devices>
 </deviceset>
-<<<<<<< HEAD
 <deviceset name="SRU1048" uservalue="yes">
 <description>&lt;b&gt; Bourns SRU1048 Series Shielded SMD Power Inductor &lt;/b&gt;
 &lt;br&gt;
@@ -16912,7 +16899,13 @@ Output Current: 50 mA (max)
 <connects>
 <connect gate="G$1" pin="P$1" pad="1"/>
 <connect gate="G$1" pin="P$2" pad="2"/>
-=======
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 <deviceset name="EASY_DRIVER">
 <description>Easy Driver - Single channel stepper motor driver
 &lt;br&gt;
@@ -16965,7 +16958,6 @@ Output Current: 50 mA (max)
 <connect gate="-3" pin="S" pad="P$3"/>
 <connect gate="-4" pin="S" pad="P$4"/>
 <connect gate="-5" pin="S" pad="P$5"/>
->>>>>>> cd6f2569f345da7ddb5ede6272b24ac04f35b8fa
 </connects>
 <technologies>
 <technology name=""/>
