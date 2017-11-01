@@ -11905,7 +11905,7 @@ Standard 7805 5V regulator. IGO (Input Ground Output). Spark Fun Electronics SKU
 &lt;br&gt;
 &lt;a href="http://www.mouser.com/ProductDetail/Panasonic-Industrial-Devices/JW2SN-DC5V"&gt;Product Page&lt;/a&gt;</description>
 <gates>
-<gate name="-1" symbol="JW2SN" x="-17.78" y="-7.62"/>
+<gate name="-1" symbol="JW2SN" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="JW2SN">
