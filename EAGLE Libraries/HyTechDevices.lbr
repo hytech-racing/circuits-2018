@@ -17046,7 +17046,6 @@ Output Current: 50 mA (max)
 </device>
 </devices>
 </deviceset>
-<<<<<<< HEAD
 <deviceset name="OKI-78SR-5/1.5-W36-C" prefix="IC" uservalue="yes">
 <description>&lt;b&gt;Voltage Regulator&lt;/b&gt;
 
@@ -17096,7 +17095,13 @@ Standard 7805 5V regulator. IGO (Input Ground Output). Spark Fun Electronics SKU
 <connect gate="G$1" pin="GND" pad="2"/>
 <connect gate="G$1" pin="IN" pad="1"/>
 <connect gate="G$1" pin="OUT" pad="3"/>
-=======
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 <deviceset name="SS-14D0839-VG5PA">
 <gates>
 <gate name="G$1" symbol="SS-14D0839-VG5PA" x="33.02" y="-5.08"/>
@@ -17109,7 +17114,6 @@ Standard 7805 5V regulator. IGO (Input Ground Output). Spark Fun Electronics SKU
 <connect gate="G$1" pin="3" pad="3"/>
 <connect gate="G$1" pin="4" pad="4"/>
 <connect gate="G$1" pin="COM" pad="COM"/>
->>>>>>> 1e5507640213f23326e527d94dfce7b4413f90f4
 </connects>
 <technologies>
 <technology name=""/>
