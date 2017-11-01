@@ -769,29 +769,6 @@ It has reduced top mask to make it harder to put the component on the wrong side
 <wire x1="5.08" y1="30.48" x2="12.7" y2="30.48" width="0.127" layer="21"/>
 <wire x1="12.7" y1="30.48" x2="12.7" y2="35.56" width="0.127" layer="21"/>
 </package>
-<package name="SOT223">
-<description>&lt;b&gt;SOT-223&lt;/b&gt;
-&lt;br&gt;
-&lt;a href="https://github.com/sparkfun/SparkFun-Eagle-Libraries"&gt;Source: Sparkfun Eagle Library</description>
-<wire x1="3.2766" y1="1.651" x2="3.2766" y2="-1.651" width="0.2032" layer="21"/>
-<wire x1="3.2766" y1="-1.651" x2="-3.2766" y2="-1.651" width="0.2032" layer="21"/>
-<wire x1="-3.2766" y1="-1.651" x2="-3.2766" y2="1.651" width="0.2032" layer="21"/>
-<wire x1="-3.2766" y1="1.651" x2="3.2766" y2="1.651" width="0.2032" layer="21"/>
-<rectangle x1="-1.6002" y1="1.8034" x2="1.6002" y2="3.6576" layer="51"/>
-<rectangle x1="-0.4318" y1="-3.6576" x2="0.4318" y2="-1.8034" layer="51"/>
-<rectangle x1="-2.7432" y1="-3.6576" x2="-1.8796" y2="-1.8034" layer="51"/>
-<rectangle x1="1.8796" y1="-3.6576" x2="2.7432" y2="-1.8034" layer="51"/>
-<rectangle x1="-1.6002" y1="1.8034" x2="1.6002" y2="3.6576" layer="51"/>
-<rectangle x1="-0.4318" y1="-3.6576" x2="0.4318" y2="-1.8034" layer="51"/>
-<rectangle x1="-2.7432" y1="-3.6576" x2="-1.8796" y2="-1.8034" layer="51"/>
-<rectangle x1="1.8796" y1="-3.6576" x2="2.7432" y2="-1.8034" layer="51"/>
-<smd name="1" x="-2.3" y="-3.15" dx="1.5" dy="2.2352" layer="1"/>
-<smd name="2" x="0" y="-3.15" dx="1.5" dy="2.2352" layer="1"/>
-<smd name="3" x="2.3" y="-3.15" dx="1.5" dy="2.2352" layer="1"/>
-<smd name="4" x="0" y="3.15" dx="3.8" dy="2.2" layer="1"/>
-<text x="-0.8255" y="4.5085" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-1.0795" y="-0.1905" size="0.4064" layer="27">&gt;VALUE</text>
-</package>
 <package name="TO-220">
 <pad name="1" x="-2.54" y="0" drill="1" diameter="1.8796" shape="square"/>
 <pad name="2" x="0" y="0" drill="1" diameter="1.8796"/>
@@ -2935,53 +2912,6 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="5VREG_LM340-N" uservalue="yes">
-<description>&lt;b&gt;Voltage Regulator&lt;/b&gt;
-
-&lt;p&gt;5v linear voltage regulator
-
-&lt;a href="http://www.mouser.com/ProductDetail/Texas-Instruments/LM340MPX-50-NOPB/?qs=X1J7HmVL2ZGZwtTFRQ9ItA%3D%3D"&gt;Datasheet &lt;/a&gt;
-&lt;br&gt;
-&lt;br&gt;
-MAX current out: 1.5A
-&lt;br&gt;
-MAX voltage in: 35V</description>
-<gates>
-<gate name="G$1" symbol="VOLTAGE_REGULATOR" x="5.08" y="5.08"/>
-</gates>
-<devices>
-<device name="LM340MPX-5.0/NOPB" package="SOT223">
-<connects>
-<connect gate="G$1" pin="GND" pad="2 4"/>
-<connect gate="G$1" pin="IN" pad="1"/>
-<connect gate="G$1" pin="OUT" pad="3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="LM340T-5.0/NOPB" package="TO-220">
-<connects>
-<connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="IN" pad="1"/>
-<connect gate="G$1" pin="OUT" pad="3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="LM340T-5.0/NOPB_SINK" package="TO-220-SINK">
-<connects>
-<connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="IN" pad="1"/>
-<connect gate="G$1" pin="OUT" pad="3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="MCP2551">
 <description>MCP2551 High-Speed CAN Transceiver
 &lt;br&gt;
@@ -3595,62 +3525,6 @@ Source: http://www.molex.com</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="5VREG_L7805" prefix="IC" uservalue="yes">
-<description>&lt;b&gt;Voltage Regulator&lt;/b&gt;
-
-&lt;p&gt;Switching 5v regulator
-
-&lt;a href="http://power.murata.com/data/power/oki-78sr.pdf"&gt;Datasheet &lt;/a&gt;
-&lt;br&gt;
-&lt;br&gt;
-Standard 7805 5V regulator. IGO (Input Ground Output). Spark Fun Electronics SKU : COM-00107
-&lt;a href="http://www.mouser.com/ds/2/308/MC7800-D-94905.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="VOLTAGE_REGULATOR" x="0" y="0"/>
-</gates>
-<devices>
-<device name="_SINK" package="TO-220-SINK">
-<connects>
-<connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="IN" pad="1"/>
-<connect gate="G$1" pin="OUT" pad="3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="_VERT" package="TO-220">
-<connects>
-<connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="IN" pad="1"/>
-<connect gate="G$1" pin="OUT" pad="3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="_HOR" package="TO-220-H">
-<connects>
-<connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="IN" pad="1"/>
-<connect gate="G$1" pin="OUT" pad="3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="SPACED" package="TO-220-SPACED">
-<connects>
-<connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="IN" pad="1"/>
-<connect gate="G$1" pin="OUT" pad="3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="M20" prefix="J" uservalue="yes">
 <description>1x20 .1" header&lt;br&gt;
 This is just like the LOCK variant in that the holes are staggared by 5 mil, but except for the last two holes.  They are not altered from the "standard" footprint layout.  This is used for a special purpose on the layout of our Graphic LCD Backpack.  Make sure you want to use this device before selecting it for you project!
@@ -3850,6 +3724,62 @@ This is just like the LOCK variant in that the holes are staggared by 5 mil, but
 <connect gate="G$1" pin="DOUT" pad="12"/>
 <connect gate="G$1" pin="VDD" pad="16"/>
 <connect gate="G$1" pin="VREF" pad="15"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="OKI-78SR-5/1.5-W36-C" prefix="IC" uservalue="yes">
+<description>&lt;b&gt;Voltage Regulator&lt;/b&gt;
+
+&lt;p&gt;Switching 5v regulator
+
+&lt;a href="http://power.murata.com/data/power/oki-78sr.pdf"&gt;Datasheet &lt;/a&gt;
+&lt;br&gt;
+&lt;br&gt;
+Standard 7805 5V regulator. IGO (Input Ground Output). Spark Fun Electronics SKU : COM-00107
+&lt;a href="http://www.mouser.com/ds/2/308/MC7800-D-94905.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="VOLTAGE_REGULATOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="_SINK" package="TO-220-SINK">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="IN" pad="1"/>
+<connect gate="G$1" pin="OUT" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_VERT" package="TO-220">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="IN" pad="1"/>
+<connect gate="G$1" pin="OUT" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_HOR" package="TO-220-H">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="IN" pad="1"/>
+<connect gate="G$1" pin="OUT" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SPACED" package="TO-220-SPACED">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="IN" pad="1"/>
+<connect gate="G$1" pin="OUT" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -4982,7 +4912,6 @@ In this library the device names are the same as the pin names of the symbols, t
 </modules>
 <parts>
 <part name="U$1" library="HyTechDevices" deviceset="TEENSY_3.2_SIMPLE" device=""/>
-<part name="U$2" library="HyTechDevices" deviceset="5VREG_LM340-N" device="LM340MPX-5.0/NOPB"/>
 <part name="U$3" library="HyTechDevices" deviceset="MCP2551" device=""/>
 <part name="X1" library="HyTechDevices" deviceset="CONNECTOR-4" device=""/>
 <part name="X2" library="HyTechDevices" deviceset="CONNECTOR-4" device=""/>
@@ -5061,7 +4990,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="R25" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="200"/>
 <part name="LED5" library="HyTechDevices" deviceset="LED" device="-0805" value="PURPLE"/>
 <part name="R26" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="200"/>
-<part name="IC1" library="HyTechDevices" deviceset="5VREG_L7805" device="_HOR"/>
 <part name="LED6" library="HyTechDevices" deviceset="LED" device="-0805" value="RED"/>
 <part name="R27" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="270"/>
 <part name="PI_EVEN" library="HyTechDevices" deviceset="M20" device=""/>
@@ -5108,6 +5036,8 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="LED8" library="HyTechDevices" deviceset="LED" device="-0805" value="RED"/>
 <part name="R12" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="1.2K"/>
 <part name="GND13" library="HyTechSymbols" deviceset="GND" device=""/>
+<part name="IC2" library="HyTechDevices" deviceset="OKI-78SR-5/1.5-W36-C" device="_VERT"/>
+<part name="IC3" library="HyTechDevices" deviceset="OKI-78SR-5/1.5-W36-C" device="_VERT"/>
 </parts>
 <sheets>
 <sheet>
@@ -5154,7 +5084,6 @@ detect open circuit</text>
 </moduleinsts>
 <instances>
 <instance part="U$1" gate="G$1" x="43.18" y="40.64"/>
-<instance part="U$2" gate="G$1" x="-12.7" y="81.28"/>
 <instance part="U$3" gate="G$1" x="-2.54" y="60.96" rot="R180"/>
 <instance part="X1" gate="-1" x="-111.76" y="71.12" rot="MR0"/>
 <instance part="X1" gate="-2" x="-111.76" y="68.58" rot="MR0"/>
@@ -5290,7 +5219,6 @@ detect open circuit</text>
 <instance part="R25" gate="G$1" x="185.42" y="10.16"/>
 <instance part="LED5" gate="LED" x="172.72" y="-10.16" rot="R90"/>
 <instance part="R26" gate="G$1" x="185.42" y="-10.16"/>
-<instance part="IC1" gate="G$1" x="172.72" y="55.88" rot="R270"/>
 <instance part="LED6" gate="LED" x="172.72" y="0" rot="R90"/>
 <instance part="R27" gate="G$1" x="185.42" y="0"/>
 <instance part="PI_EVEN" gate="G$1" x="228.6" y="66.04" rot="MR180"/>
@@ -5337,6 +5265,8 @@ detect open circuit</text>
 <instance part="LED8" gate="LED" x="12.7" y="-73.66" rot="MR270"/>
 <instance part="R12" gate="G$1" x="2.54" y="-73.66"/>
 <instance part="GND13" gate="1" x="22.86" y="-73.66" rot="R90"/>
+<instance part="IC2" gate="G$1" x="172.72" y="55.88" rot="R270"/>
+<instance part="IC3" gate="G$1" x="-12.7" y="81.28"/>
 </instances>
 <busses>
 </busses>
@@ -5378,10 +5308,6 @@ detect open circuit</text>
 </segment>
 </net>
 <net name="GND" class="0">
-<segment>
-<pinref part="U$2" gate="G$1" pin="GND"/>
-<pinref part="GND2" gate="1" pin="GND"/>
-</segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="GND"/>
 <pinref part="GND3" gate="1" pin="GND"/>
@@ -5534,9 +5460,9 @@ detect open circuit</text>
 <pinref part="C7" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="GND"/>
 <pinref part="GND19" gate="1" pin="GND"/>
 <wire x1="162.56" y1="55.88" x2="165.1" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="IC2" gate="G$1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="GND20" gate="1" pin="GND"/>
@@ -5604,12 +5530,16 @@ detect open circuit</text>
 <pinref part="GND13" gate="1" pin="GND"/>
 <wire x1="17.78" y1="-73.66" x2="20.32" y2="-73.66" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="GND2" gate="1" pin="GND"/>
+<pinref part="IC3" gate="G$1" pin="GND"/>
+</segment>
 </net>
 <net name="+5V" class="0">
 <segment>
-<pinref part="U$2" gate="G$1" pin="OUT"/>
 <pinref part="P+1" gate="1" pin="+5V"/>
 <wire x1="-5.08" y1="81.28" x2="-2.54" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="IC3" gate="G$1" pin="OUT"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="VIN"/>
@@ -6009,9 +5939,9 @@ detect open circuit</text>
 </net>
 <net name="+12V" class="0">
 <segment>
-<pinref part="U$2" gate="G$1" pin="IN"/>
 <pinref part="P+16" gate="1" pin="+12V"/>
 <wire x1="-22.86" y1="81.28" x2="-20.32" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="IC3" gate="G$1" pin="IN"/>
 </segment>
 <segment>
 <pinref part="X2" gate="-1" pin="S"/>
@@ -6067,10 +5997,10 @@ detect open circuit</text>
 <wire x1="172.72" y1="63.5" x2="185.42" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="185.42" y1="63.5" x2="185.42" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="1"/>
-<pinref part="IC1" gate="G$1" pin="IN"/>
 <pinref part="P+12" gate="1" pin="+12V"/>
 <wire x1="187.96" y1="63.5" x2="185.42" y2="63.5" width="0.1524" layer="91"/>
 <junction x="185.42" y="63.5"/>
+<pinref part="IC2" gate="G$1" pin="IN"/>
 </segment>
 <segment>
 <pinref part="POWER" gate="-7" pin="S"/>
@@ -6616,8 +6546,8 @@ detect open circuit</text>
 <wire x1="175.26" y1="45.72" x2="172.72" y2="45.72" width="0.1524" layer="91"/>
 <junction x="172.72" y="45.72"/>
 <pinref part="C2" gate="G$1" pin="1"/>
-<pinref part="IC1" gate="G$1" pin="OUT"/>
 <pinref part="SUPPLY1" gate="G$1" pin="+5V/1"/>
+<pinref part="IC2" gate="G$1" pin="OUT"/>
 </segment>
 <segment>
 <pinref part="LED5" gate="LED" pin="A"/>
