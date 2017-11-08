@@ -2507,17 +2507,11 @@ In this library the device names are the same as the pin names of the symbols, t
 <parts>
 <part name="C1" library="HyTechDevices" deviceset="CAP" device="0402-CAP"/>
 <part name="C2" library="HyTechDevices" deviceset="CAP" device="0402-CAP"/>
-<part name="R1" library="HyTechDevices" deviceset="RESISTOR" device="0402"/>
-<part name="R2" library="HyTechDevices" deviceset="RESISTOR" device="0402"/>
 <part name="Y1" library="HyTechDevices" deviceset="CRYSTAL" device="3.2X1.5MM" value="16MHz"/>
-<part name="R4" library="HyTechDevices" deviceset="RESISTOR" device="0402"/>
-<part name="R5" library="HyTechDevices" deviceset="RESISTOR" device="0402"/>
 <part name="X1" library="HyTechDevices" deviceset="CONNECTOR-4" device=""/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U$2" library="HyTechDevices" deviceset="5VREG_LM340-N" device="LM340MPX-5.0/NOPB"/>
 <part name="P+3" library="supply1" deviceset="+5V" device=""/>
-<part name="P+4" library="supply1" deviceset="+5V" device=""/>
-<part name="P+5" library="supply1" deviceset="+5V" device=""/>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" deviceset="+5V" device=""/>
@@ -2554,34 +2548,26 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="IC3" library="HyTechDevices" deviceset="SN74AHC00" device="D"/>
 <part name="IC2" library="HyTechDevices" deviceset="SN74AHC74" device="D"/>
 <part name="IC4" library="HyTechDevices" deviceset="SN74AHC74" device="D"/>
+<part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="17.78" y="60.96" size="1.778" layer="91" rot="R180">_________________
-R4*C1, R5*C2 must
-be &gt; bounce time
-_________________</text>
 <text x="24.13" y="18.796" size="1.778" layer="91">IMD</text>
 <text x="22.86" y="-73.66" size="1.778" layer="91">BMS</text>
 </plain>
 <instances>
-<instance part="C1" gate="G$1" x="17.78" y="-50.8" rot="R90"/>
-<instance part="C2" gate="G$1" x="17.78" y="43.18" rot="R90"/>
-<instance part="R1" gate="G$1" x="27.94" y="-60.96" rot="R180"/>
-<instance part="R2" gate="G$1" x="27.94" y="33.02"/>
+<instance part="C1" gate="G$1" x="7.62" y="-43.18" rot="R180"/>
+<instance part="C2" gate="G$1" x="10.16" y="48.26"/>
 <instance part="Y1" gate="G$1" x="55.88" y="-15.24" rot="R90"/>
-<instance part="R4" gate="G$1" x="20.32" y="-55.88" rot="R90"/>
-<instance part="R5" gate="G$1" x="20.32" y="38.1" rot="R90"/>
 <instance part="X1" gate="-1" x="187.96" y="-53.34" rot="R180"/>
 <instance part="X1" gate="-2" x="187.96" y="-50.8" rot="R180"/>
-<instance part="X1" gate="-3" x="-7.62" y="-86.36" rot="R270"/>
-<instance part="X1" gate="-4" x="-5.08" y="7.62" rot="R270"/>
+<instance part="X1" gate="-3" x="-12.7" y="-86.36" rot="R270"/>
+<instance part="X1" gate="-4" x="-10.16" y="7.62" rot="R270"/>
 <instance part="GND4" gate="1" x="193.04" y="-55.88"/>
 <instance part="U$2" gate="G$1" x="205.74" y="-76.2"/>
 <instance part="P+3" gate="1" x="218.44" y="-76.2" rot="R270"/>
-<instance part="P+4" gate="1" x="35.56" y="33.02" rot="R270"/>
-<instance part="P+5" gate="1" x="35.56" y="-60.96" rot="R270"/>
 <instance part="GND5" gate="1" x="205.74" y="-86.36"/>
 <instance part="GND2" gate="1" x="43.18" y="-7.62" rot="R270"/>
 <instance part="P+1" gate="1" x="226.06" y="40.64" rot="R270"/>
@@ -2596,16 +2582,16 @@ _________________</text>
 <instance part="SUPPLY8" gate="+5V" x="104.14" y="-78.74" rot="R90"/>
 <instance part="X2" gate="-2" x="157.48" y="-30.48"/>
 <instance part="X2" gate="-1" x="157.48" y="-35.56"/>
-<instance part="U$3" gate="G$1" x="7.62" y="22.86" rot="R90"/>
-<instance part="U$4" gate="G$1" x="5.08" y="-71.12" rot="R90"/>
+<instance part="U$3" gate="G$1" x="2.54" y="22.86" rot="R90"/>
+<instance part="U$4" gate="G$1" x="0" y="-71.12" rot="R90"/>
 <instance part="R6" gate="G$1" x="154.94" y="10.16"/>
 <instance part="R7" gate="G$1" x="154.94" y="-83.82"/>
-<instance part="R8" gate="G$1" x="0" y="10.16"/>
-<instance part="R9" gate="G$1" x="-2.54" y="-83.82"/>
-<instance part="GND6" gate="1" x="10.16" y="7.62"/>
-<instance part="GND7" gate="1" x="7.62" y="-86.36"/>
-<instance part="SUPPLY9" gate="+5V" x="5.08" y="35.56"/>
-<instance part="SUPPLY10" gate="+5V" x="2.54" y="-58.42"/>
+<instance part="R8" gate="G$1" x="-5.08" y="10.16"/>
+<instance part="R9" gate="G$1" x="-7.62" y="-83.82"/>
+<instance part="GND6" gate="1" x="5.08" y="7.62"/>
+<instance part="GND7" gate="1" x="2.54" y="-86.36"/>
+<instance part="SUPPLY9" gate="+5V" x="0" y="35.56"/>
+<instance part="SUPPLY10" gate="+5V" x="-2.54" y="-58.42"/>
 <instance part="LED1" gate="LED" x="162.56" y="-83.82" rot="R90"/>
 <instance part="LED2" gate="LED" x="162.56" y="10.16" rot="R90"/>
 <instance part="GND8" gate="1" x="170.18" y="-83.82" rot="R90"/>
@@ -2634,32 +2620,34 @@ _________________</text>
 <instance part="IC3" gate="A" x="58.42" y="-83.82"/>
 <instance part="IC3" gate="B" x="81.28" y="-83.82"/>
 <instance part="IC3" gate="C" x="78.74" y="-43.18"/>
+<instance part="GND1" gate="1" x="10.16" y="58.42" rot="R180"/>
+<instance part="GND11" gate="1" x="7.62" y="-35.56" rot="R180"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="IMD_5V" class="0">
 <segment>
-<pinref part="C2" gate="G$1" pin="1"/>
-<wire x1="12.7" y1="33.02" x2="12.7" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="R2" gate="G$1" pin="1"/>
-<wire x1="12.7" y1="33.02" x2="20.32" y2="33.02" width="0.1524" layer="91"/>
-<pinref part="R5" gate="G$1" pin="1"/>
-<wire x1="20.32" y1="33.02" x2="22.86" y2="33.02" width="0.1524" layer="91"/>
-<junction x="20.32" y="33.02"/>
 <pinref part="U$3" gate="G$1" pin="DC-"/>
-<wire x1="12.7" y1="33.02" x2="10.16" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="33.02" x2="10.16" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="33.02" x2="10.16" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="43.18" x2="40.64" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="7.62" x2="50.8" y2="7.62" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="C" pin="I1"/>
+<pinref part="IC1" gate="A" pin="I0"/>
+<wire x1="20.32" y1="53.34" x2="20.32" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="A" pin="I1"/>
+<wire x1="10.16" y1="43.18" x2="20.32" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="43.18" x2="20.32" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="43.18" x2="40.64" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="C2" gate="G$1" pin="2"/>
+<wire x1="10.16" y1="43.18" x2="10.16" y2="45.72" width="0.1524" layer="91"/>
+<junction x="20.32" y="43.18"/>
+<junction x="20.32" y="53.34"/>
+<junction x="10.16" y="43.18"/>
 </segment>
 </net>
 <net name="+5V" class="0">
-<segment>
-<pinref part="R2" gate="G$1" pin="2"/>
-<pinref part="P+4" gate="1" pin="+5V"/>
-</segment>
-<segment>
-<pinref part="R1" gate="G$1" pin="1"/>
-<pinref part="P+5" gate="1" pin="+5V"/>
-</segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="OUT"/>
 <pinref part="P+3" gate="1" pin="+5V"/>
@@ -2755,12 +2743,12 @@ _________________</text>
 <segment>
 <pinref part="U$3" gate="G$1" pin="CONTROL-"/>
 <pinref part="GND6" gate="1" pin="GND"/>
-<wire x1="10.16" y1="10.16" x2="10.16" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="10.16" x2="5.08" y2="12.7" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$4" gate="G$1" pin="CONTROL-"/>
 <pinref part="GND7" gate="1" pin="GND"/>
-<wire x1="7.62" y1="-81.28" x2="7.62" y2="-83.82" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="-81.28" x2="2.54" y2="-83.82" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="LED1" gate="LED" pin="C"/>
@@ -2778,50 +2766,36 @@ _________________</text>
 <pinref part="GND10" gate="1" pin="GND"/>
 <pinref part="C4" gate="G$1" pin="1"/>
 </segment>
+<segment>
+<pinref part="C2" gate="G$1" pin="1"/>
+<pinref part="GND1" gate="1" pin="GND"/>
+<wire x1="10.16" y1="55.88" x2="10.16" y2="53.34" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C1" gate="G$1" pin="2"/>
+<pinref part="GND11" gate="1" pin="GND"/>
+<wire x1="7.62" y1="-38.1" x2="7.62" y2="-40.64" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="BMS_5V" class="0">
 <segment>
-<pinref part="C1" gate="G$1" pin="1"/>
-<pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="12.7" y1="-60.96" x2="20.32" y2="-60.96" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="-60.96" x2="22.86" y2="-60.96" width="0.1524" layer="91"/>
-<wire x1="12.7" y1="-60.96" x2="12.7" y2="-50.8" width="0.1524" layer="91"/>
-<pinref part="R4" gate="G$1" pin="1"/>
-<junction x="20.32" y="-60.96"/>
 <pinref part="U$4" gate="G$1" pin="DC-"/>
-<wire x1="12.7" y1="-60.96" x2="7.62" y2="-60.96" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="IMD_DEBOUNCE" class="0">
-<segment>
-<pinref part="C2" gate="G$1" pin="2"/>
-<wire x1="20.32" y1="43.18" x2="20.32" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="R5" gate="G$1" pin="2"/>
-<junction x="20.32" y="43.18"/>
-<wire x1="20.32" y1="53.34" x2="20.32" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="43.18" x2="40.64" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="43.18" x2="40.64" y2="7.62" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="7.62" x2="50.8" y2="7.62" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="A" pin="I0"/>
-<pinref part="IC1" gate="A" pin="I1"/>
-<junction x="20.32" y="53.34"/>
-<pinref part="IC1" gate="C" pin="I1"/>
-</segment>
-</net>
-<net name="BMS_DEBOUNCE" class="0">
-<segment>
+<wire x1="2.54" y1="-60.96" x2="7.62" y2="-60.96" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="-50.8" x2="40.64" y2="-86.36" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="-86.36" x2="50.8" y2="-86.36" width="0.1524" layer="91"/>
 <pinref part="IC3" gate="A" pin="I1"/>
-<pinref part="C1" gate="G$1" pin="2"/>
-<wire x1="20.32" y1="-50.8" x2="20.32" y2="-40.64" width="0.1524" layer="91"/>
-<pinref part="R4" gate="G$1" pin="2"/>
+<pinref part="C1" gate="G$1" pin="1"/>
+<wire x1="7.62" y1="-50.8" x2="7.62" y2="-48.26" width="0.1524" layer="91"/>
 <pinref part="IC6" gate="A" pin="I0"/>
 <pinref part="IC6" gate="A" pin="I1"/>
 <wire x1="20.32" y1="-40.64" x2="20.32" y2="-35.56" width="0.1524" layer="91"/>
-<junction x="20.32" y="-40.64"/>
-<wire x1="40.64" y1="-50.8" x2="20.32" y2="-50.8" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="-50.8" x2="20.32" y2="-50.8" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="-50.8" x2="20.32" y2="-40.64" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="-50.8" x2="40.64" y2="-50.8" width="0.1524" layer="91"/>
 <junction x="20.32" y="-50.8"/>
+<junction x="20.32" y="-40.64"/>
+<wire x1="7.62" y1="-60.96" x2="7.62" y2="-50.8" width="0.1524" layer="91"/>
+<junction x="7.62" y="-50.8"/>
 </segment>
 </net>
 <net name="12V" class="0">
@@ -2984,7 +2958,7 @@ _________________</text>
 <segment>
 <pinref part="U$3" gate="G$1" pin="CONTROL+"/>
 <pinref part="R8" gate="G$1" pin="2"/>
-<wire x1="5.08" y1="10.16" x2="5.08" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="0" y1="10.16" x2="0" y2="12.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$32" class="0">
@@ -3003,7 +2977,7 @@ _________________</text>
 <segment>
 <pinref part="U$4" gate="G$1" pin="CONTROL+"/>
 <pinref part="R9" gate="G$1" pin="2"/>
-<wire x1="2.54" y1="-81.28" x2="2.54" y2="-83.82" width="0.1524" layer="91"/>
+<wire x1="-2.54" y1="-81.28" x2="-2.54" y2="-83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$29" class="0">
@@ -3074,10 +3048,6 @@ _________________</text>
 </schematic>
 </drawing>
 <compatibility>
-<note version="6.3" minversion="6.2.2" severity="warning">
-Since Version 6.2.2 text objects can contain more than one line,
-which will not be processed correctly with this version.
-</note>
 <note version="8.2" severity="warning">
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
