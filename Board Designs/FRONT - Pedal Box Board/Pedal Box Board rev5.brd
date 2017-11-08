@@ -190,7 +190,7 @@
 <text x="68.199" y="96.647" size="1.016" layer="51">SW</text>
 <text x="71.374" y="96.647" size="1.016" layer="51">CH</text>
 <text x="74.295" y="96.647" size="1.016" layer="51">FAULT</text>
-<text x="43.688" y="135.255" size="1.524" layer="51" font="vector">HyTech 2017 Front ECU rev5</text>
+<text x="43.688" y="135.255" size="1.524" layer="51" font="vector">HyTech 2018 Front ECU rev5</text>
 <hole x="27.2796" y="131.8768" drill="3.429"/>
 <hole x="27.2796" y="73.9648" drill="3.429"/>
 <rectangle x1="92.837" y1="3.429" x2="96.4946" y2="3.5814" layer="51"/>
