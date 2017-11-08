@@ -849,141 +849,6 @@ Source: http://www.molex.com</description>
 <wire x1="2" y1="9" x2="3" y2="9" width="0.127" layer="21"/>
 <wire x1="3" y1="9" x2="6" y2="5" width="0.127" layer="21"/>
 </package>
-<package name="LED-3MM">
-<description>3mm LED
-&lt;br&gt;
-&lt;a href="https://github.com/DangerousPrototypes/Eagle_Part_Library"&gt;Source: Dangerous Prototypes Eagle Library&lt;/a&gt;</description>
-<wire x1="1.5748" y1="-1.27" x2="1.5748" y2="1.27" width="0.254" layer="51"/>
-<wire x1="-1.524" y1="0" x2="-1.1708" y2="0.9756" width="0.1524" layer="51" curve="-39.80361"/>
-<wire x1="-1.524" y1="0" x2="-1.1391" y2="-1.0125" width="0.1524" layer="51" curve="41.633208"/>
-<wire x1="1.1571" y1="0.9918" x2="1.524" y2="0" width="0.1524" layer="51" curve="-40.601165"/>
-<wire x1="1.1708" y1="-0.9756" x2="1.524" y2="0" width="0.1524" layer="51" curve="39.80361"/>
-<wire x1="0" y1="1.524" x2="1.2401" y2="0.8858" width="0.1524" layer="21" curve="-54.461337"/>
-<wire x1="-1.2192" y1="0.9144" x2="0" y2="1.524" width="0.1524" layer="21" curve="-53.130102"/>
-<wire x1="0" y1="-1.524" x2="1.203" y2="-0.9356" width="0.1524" layer="21" curve="52.126876"/>
-<wire x1="-1.203" y1="-0.9356" x2="0" y2="-1.524" width="0.1524" layer="21" curve="52.126876"/>
-<wire x1="-0.635" y1="0" x2="0" y2="0.635" width="0.1524" layer="51" curve="-90"/>
-<wire x1="-1.016" y1="0" x2="0" y2="1.016" width="0.1524" layer="51" curve="-90"/>
-<wire x1="0" y1="-0.635" x2="0.635" y2="0" width="0.1524" layer="51" curve="90"/>
-<wire x1="0" y1="-1.016" x2="1.016" y2="0" width="0.1524" layer="51" curve="90"/>
-<wire x1="0" y1="2.032" x2="1.561" y2="1.3009" width="0.254" layer="21" curve="-50.193108"/>
-<wire x1="-1.7929" y1="0.9562" x2="0" y2="2.032" width="0.254" layer="21" curve="-61.926949"/>
-<wire x1="0" y1="-2.032" x2="1.5512" y2="-1.3126" width="0.254" layer="21" curve="49.763022"/>
-<wire x1="-1.7643" y1="-1.0082" x2="0" y2="-2.032" width="0.254" layer="21" curve="60.255215"/>
-<wire x1="-2.032" y1="0" x2="-1.7891" y2="0.9634" width="0.254" layer="51" curve="-28.301701"/>
-<wire x1="-2.032" y1="0" x2="-1.7306" y2="-1.065" width="0.254" layer="51" curve="31.60822"/>
-<pad name="A" x="-1.27" y="0" drill="0.8128" shape="octagon"/>
-<pad name="K" x="1.27" y="0" drill="0.8128" shape="octagon"/>
-<text x="1.905" y="0.381" size="1.27" layer="25" font="vector" ratio="10">&gt;NAME</text>
-<text x="1.905" y="-1.651" size="1.27" layer="27" font="vector" ratio="10">&gt;VALUE</text>
-</package>
-<package name="LED-5MM">
-<description>5mm LED
-&lt;br&gt;
-&lt;a href="https://github.com/DangerousPrototypes/Eagle_Part_Library"&gt;Source: Dangerous Prototypes Eagle Library&lt;/a&gt;</description>
-<wire x1="2.54" y1="-1.905" x2="2.54" y2="1.905" width="0.2032" layer="21"/>
-<wire x1="2.54" y1="-1.905" x2="2.54" y2="1.905" width="0.254" layer="21" curve="-286.260205"/>
-<wire x1="-1.143" y1="0" x2="0" y2="1.143" width="0.1524" layer="51" curve="-90"/>
-<wire x1="0" y1="-1.143" x2="1.143" y2="0" width="0.1524" layer="51" curve="90"/>
-<wire x1="-1.651" y1="0" x2="0" y2="1.651" width="0.1524" layer="51" curve="-90"/>
-<wire x1="0" y1="-1.651" x2="1.651" y2="0" width="0.1524" layer="51" curve="90"/>
-<wire x1="-2.159" y1="0" x2="0" y2="2.159" width="0.1524" layer="51" curve="-90"/>
-<wire x1="0" y1="-2.159" x2="2.159" y2="0" width="0.1524" layer="51" curve="90"/>
-<circle x="0" y="0" radius="2.54" width="0.1524" layer="21"/>
-<pad name="A" x="-1.27" y="0" drill="0.8128" shape="octagon"/>
-<pad name="K" x="1.27" y="0" drill="0.8128" shape="octagon"/>
-<text x="3.175" y="0.5334" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="3.2004" y="-1.8034" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="LED-805">
-<description>LED 805 Surface Mount
-&lt;br&gt;
-&lt;a href="https://github.com/DangerousPrototypes/Eagle_Part_Library"&gt;Source: Dangerous Prototypes Eagle Library&lt;/a&gt;</description>
-<wire x1="-0.35" y1="0.925" x2="0.35" y2="0.925" width="0.1016" layer="51" curve="162.394521"/>
-<wire x1="-0.35" y1="-0.925" x2="0.35" y2="-0.925" width="0.1016" layer="51" curve="-162.394521"/>
-<wire x1="0.575" y1="0.525" x2="0.575" y2="-0.525" width="0.1016" layer="51"/>
-<wire x1="-0.575" y1="-0.5" x2="-0.575" y2="0.925" width="0.1016" layer="51"/>
-<circle x="-0.45" y="0.85" radius="0.103" width="0.1016" layer="51"/>
-<smd name="C" x="0" y="1.05" dx="1.2" dy="1.2" layer="1"/>
-<smd name="A" x="0" y="-1.05" dx="1.2" dy="1.2" layer="1"/>
-<text x="-1.27" y="-1.27" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
-<text x="2.54" y="-1.27" size="1.27" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
-<rectangle x1="0.3" y1="0.5" x2="0.625" y2="1" layer="51"/>
-<rectangle x1="-0.325" y1="0.5" x2="-0.175" y2="0.75" layer="51"/>
-<rectangle x1="0.175" y1="0.5" x2="0.325" y2="0.75" layer="51"/>
-<rectangle x1="-0.2" y1="0.5" x2="0.2" y2="0.675" layer="51"/>
-<rectangle x1="0.3" y1="-1" x2="0.625" y2="-0.5" layer="51"/>
-<rectangle x1="-0.625" y1="-1" x2="-0.3" y2="-0.5" layer="51"/>
-<rectangle x1="0.175" y1="-0.75" x2="0.325" y2="-0.5" layer="51"/>
-<rectangle x1="-0.325" y1="-0.75" x2="-0.175" y2="-0.5" layer="51"/>
-<rectangle x1="-0.2" y1="-0.675" x2="0.2" y2="-0.5" layer="51"/>
-<rectangle x1="-0.6" y1="0.5" x2="-0.3" y2="0.8" layer="51"/>
-<rectangle x1="-0.625" y1="0.925" x2="-0.3" y2="1" layer="51"/>
-<polygon width="0.0508" layer="21">
-<vertex x="-0.0762" y="-0.1778"/>
-<vertex x="0.3302" y="-0.1778"/>
-<vertex x="0.127" y="0.127"/>
-</polygon>
-<wire x1="-0.0762" y1="0.1524" x2="0.3302" y2="0.1524" width="0.0508" layer="21"/>
-<wire x1="-0.127" y1="0.0508" x2="-0.2794" y2="0.1524" width="0.0508" layer="21"/>
-<polygon width="0.0254" layer="21">
-<vertex x="-0.2794" y="0.0762"/>
-<vertex x="-0.254" y="0.2032"/>
-<vertex x="-0.3556" y="0.2032"/>
-</polygon>
-<polygon width="0.0254" layer="21">
-<vertex x="-0.2794" y="-0.1016"/>
-<vertex x="-0.254" y="0.0254"/>
-<vertex x="-0.3556" y="0.0254"/>
-</polygon>
-<wire x1="-0.127" y1="-0.127" x2="-0.2794" y2="-0.0254" width="0.0508" layer="21"/>
-<wire x1="-0.5842" y1="0.254" x2="-0.5842" y2="-0.254" width="0.1524" layer="21"/>
-<wire x1="0.5842" y1="0.254" x2="0.5842" y2="-0.254" width="0.1524" layer="21"/>
-</package>
-<package name="LED-5MM-90DEG">
-<description>5mm LED bent 90 degrees
-&lt;br&gt;
-&lt;a href="https://github.com/DangerousPrototypes/Eagle_Part_Library"&gt;Source: Dangerous Prototypes Eagle Library&lt;/a&gt;</description>
-<wire x1="-2.55" y1="2.5" x2="2.65" y2="2.5" width="0.1524" layer="21"/>
-<wire x1="-2.55" y1="-2.5" x2="2.65" y2="-2.5" width="0.1524" layer="21"/>
-<wire x1="2.65" y1="-2.5" x2="3.65" y2="-2.5" width="0.1524" layer="21"/>
-<wire x1="2.65" y1="2.9" x2="2.65" y2="-2.5" width="0.1524" layer="21"/>
-<wire x1="3.65" y1="2.9" x2="3.65" y2="-2.5" width="0.1524" layer="21"/>
-<wire x1="2.65" y1="2.9" x2="3.65" y2="2.9" width="0.1524" layer="21"/>
-<wire x1="-2.55" y1="2.5" x2="-2.55" y2="-2.5" width="0.1524" layer="21" curve="180"/>
-<pad name="A" x="5.1" y="1.25" drill="0.8128" shape="octagon"/>
-<pad name="K" x="5.1" y="-1.25" drill="0.8128" shape="octagon"/>
-<text x="-1.778" y="3.302" size="1.27" layer="25" font="vector" ratio="10">&gt;NAME</text>
-<text x="-4.5" y="-0.5" size="1.27" layer="27" font="vector" ratio="10">&gt;VALUE</text>
-<text x="4.572" y="-3.556" size="1.016" layer="21" ratio="10">K</text>
-<rectangle x1="3.65" y1="-1.5" x2="4.35" y2="-1" layer="21"/>
-<rectangle x1="3.65" y1="1" x2="4.35" y2="1.5" layer="21"/>
-</package>
-<package name="LED-603">
-<description>LED 603 Surface Mount
-&lt;br&gt;
-&lt;a href="https://github.com/DangerousPrototypes/Eagle_Part_Library"&gt;Source: Dangerous Prototypes Eagle Library&lt;/a&gt;</description>
-<wire x1="-0.3" y1="0.8" x2="0.3" y2="0.8" width="0.1016" layer="51" curve="170.055574"/>
-<wire x1="-0.275" y1="-0.825" x2="0.275" y2="-0.825" width="0.0508" layer="51" curve="-180"/>
-<wire x1="-0.4" y1="0.375" x2="-0.4" y2="-0.35" width="0.1016" layer="51"/>
-<wire x1="0.4" y1="0.35" x2="0.4" y2="-0.35" width="0.1016" layer="51"/>
-<circle x="-0.35" y="0.625" radius="0.075" width="0.0508" layer="51"/>
-<smd name="C" x="0" y="0.75" dx="0.8" dy="0.8" layer="1"/>
-<smd name="A" x="0" y="-0.75" dx="0.8" dy="0.8" layer="1"/>
-<text x="-0.635" y="-1.27" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
-<text x="1.905" y="-1.27" size="1.27" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
-<rectangle x1="-0.45" y1="0.7" x2="-0.25" y2="0.85" layer="51"/>
-<rectangle x1="-0.275" y1="0.55" x2="-0.225" y2="0.6" layer="51"/>
-<rectangle x1="-0.45" y1="0.35" x2="-0.4" y2="0.725" layer="51"/>
-<rectangle x1="0.25" y1="0.55" x2="0.45" y2="0.85" layer="51"/>
-<rectangle x1="-0.45" y1="0.35" x2="0.45" y2="0.575" layer="51"/>
-<rectangle x1="-0.45" y1="-0.85" x2="-0.25" y2="-0.35" layer="51"/>
-<rectangle x1="0.25" y1="-0.85" x2="0.45" y2="-0.35" layer="51"/>
-<rectangle x1="-0.275" y1="-0.575" x2="0.275" y2="-0.35" layer="51"/>
-<rectangle x1="-0.275" y1="-0.65" x2="-0.175" y2="-0.55" layer="51"/>
-<rectangle x1="0.175" y1="-0.65" x2="0.275" y2="-0.55" layer="51"/>
-<rectangle x1="-0.125" y1="0" x2="0.125" y2="0.25" layer="21"/>
-</package>
 <package name="DIL14">
 <description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
 <wire x1="8.89" y1="2.921" x2="-8.89" y2="2.921" width="0.1524" layer="21"/>
@@ -1179,34 +1044,6 @@ Nano-Fit™ Vertical Header, Through Hole, Single Row</description>
 <text x="-2.032" y="-4.318" size="1.524" layer="95">GND</text>
 <text x="-4.445" y="-0.635" size="1.524" layer="95">IN</text>
 <text x="0.635" y="-0.635" size="1.524" layer="95">OUT</text>
-</symbol>
-<symbol name="LED">
-<description>LED
-&lt;br&gt;
-&lt;a href="https://github.com/DangerousPrototypes/Eagle_Part_Library"&gt;Source: Dangerous Prototypes Eagle Library&lt;/a&gt;</description>
-<wire x1="1.27" y1="-2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="-2.54" x2="-1.27" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="-2.032" y1="-0.762" x2="-3.429" y2="-2.159" width="0.1524" layer="94"/>
-<wire x1="-1.905" y1="-1.905" x2="-3.302" y2="-3.302" width="0.1524" layer="94"/>
-<text x="3.556" y="-4.572" size="1.778" layer="95" rot="R90">&gt;NAME</text>
-<text x="5.715" y="-4.572" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
-<pin name="C" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
-<pin name="A" x="0" y="2.54" visible="off" length="short" direction="pas" rot="R270"/>
-<polygon width="0.1524" layer="94">
-<vertex x="-3.429" y="-2.159"/>
-<vertex x="-3.048" y="-1.27"/>
-<vertex x="-2.54" y="-1.778"/>
-</polygon>
-<polygon width="0.1524" layer="94">
-<vertex x="-3.302" y="-3.302"/>
-<vertex x="-2.921" y="-2.413"/>
-<vertex x="-2.413" y="-2.921"/>
-</polygon>
-<polygon width="0.254" layer="94">
-<vertex x="-1.27" y="0"/>
-<vertex x="1.27" y="0"/>
-<vertex x="0" y="-2.54"/>
-</polygon>
 </symbol>
 <symbol name="NAND_2">
 <wire x1="-2.54" y1="5.08" x2="-2.54" y2="-5.08" width="0.4064" layer="94"/>
@@ -1753,61 +1590,6 @@ Source: http://www.molex.com</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="LED" prefix="LED" uservalue="yes">
-<description>Light Emitting Diode (LED)
-&lt;br&gt;
-&lt;a href="https://github.com/DangerousPrototypes/Eagle_Part_Library"&gt;Source: Dangerous Prototypes Eagle Library&lt;/a&gt;</description>
-<gates>
-<gate name="LED" symbol="LED" x="0" y="0"/>
-</gates>
-<devices>
-<device name="-3MM" package="LED-3MM">
-<connects>
-<connect gate="LED" pin="A" pad="A"/>
-<connect gate="LED" pin="C" pad="K"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="-5MM" package="LED-5MM">
-<connects>
-<connect gate="LED" pin="A" pad="A"/>
-<connect gate="LED" pin="C" pad="K"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="-0805" package="LED-805">
-<connects>
-<connect gate="LED" pin="A" pad="A"/>
-<connect gate="LED" pin="C" pad="C"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="-5MM-90DEG" package="LED-5MM-90DEG">
-<connects>
-<connect gate="LED" pin="A" pad="A"/>
-<connect gate="LED" pin="C" pad="K"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="-0603" package="LED-603">
-<connects>
-<connect gate="LED" pin="A" pad="A"/>
-<connect gate="LED" pin="C" pad="C"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="SN74AHC00" prefix="IC">
 <description>TI SN74AHC00 Quadruple 2-input &lt;B&gt;NAND&lt;/B&gt;</description>
 <gates>
@@ -2162,18 +1944,12 @@ at 30/07/2012 17:45:58</description>
 <part name="X2" library="HyTechDevices" deviceset="CONNECTOR-2" device=""/>
 <part name="U$3" library="HyTechDevices" deviceset="CPC1002N" device=""/>
 <part name="U$4" library="HyTechDevices" deviceset="CPC1002N" device=""/>
-<part name="R6" library="HyTechDevices" deviceset="RESISTOR" device="0402" value="430"/>
-<part name="R7" library="HyTechDevices" deviceset="RESISTOR" device="0402" value="430"/>
 <part name="R8" library="HyTechDevices" deviceset="RESISTOR" device="0402" value="680Ω"/>
 <part name="R9" library="HyTechDevices" deviceset="RESISTOR" device="0402" value="680Ω"/>
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="SUPPLY9" library="supply2" deviceset="+5V" device=""/>
 <part name="SUPPLY10" library="supply2" deviceset="+5V" device=""/>
-<part name="LED1" library="HyTechDevices" deviceset="LED" device="-0805"/>
-<part name="LED2" library="HyTechDevices" deviceset="LED" device="-0805"/>
-<part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="IC6" library="HyTechDevices" deviceset="SN74AHC00" device="D"/>
 <part name="IC1" library="HyTechDevices" deviceset="SN74AHC00" device="D"/>
 <part name="IC3" library="HyTechDevices" deviceset="SN74AHC00" device="D"/>
@@ -2216,22 +1992,16 @@ at 30/07/2012 17:45:58</description>
 <instance part="SUPPLY6" gate="+5V" x="104.14" y="-127" rot="R90"/>
 <instance part="SUPPLY7" gate="+5V" x="104.14" y="15.24" rot="R90"/>
 <instance part="SUPPLY8" gate="+5V" x="104.14" y="-111.76" rot="R90"/>
-<instance part="X2" gate="-2" x="157.48" y="-30.48"/>
-<instance part="X2" gate="-1" x="157.48" y="-68.58"/>
+<instance part="X2" gate="-2" x="157.48" y="10.16"/>
+<instance part="X2" gate="-1" x="157.48" y="-116.84"/>
 <instance part="U$3" gate="G$1" x="2.54" y="22.86" rot="R90"/>
 <instance part="U$4" gate="G$1" x="0" y="-104.14" rot="R90"/>
-<instance part="R6" gate="G$1" x="154.94" y="10.16"/>
-<instance part="R7" gate="G$1" x="154.94" y="-116.84"/>
 <instance part="R8" gate="G$1" x="-5.08" y="10.16"/>
 <instance part="R9" gate="G$1" x="-7.62" y="-116.84"/>
 <instance part="GND6" gate="1" x="5.08" y="7.62"/>
 <instance part="GND7" gate="1" x="2.54" y="-119.38"/>
 <instance part="SUPPLY9" gate="+5V" x="0" y="35.56"/>
 <instance part="SUPPLY10" gate="+5V" x="-2.54" y="-91.44"/>
-<instance part="LED1" gate="LED" x="162.56" y="-116.84" rot="R90"/>
-<instance part="LED2" gate="LED" x="162.56" y="10.16" rot="R90"/>
-<instance part="GND8" gate="1" x="170.18" y="-116.84" rot="R90"/>
-<instance part="GND9" gate="1" x="170.18" y="10.16" rot="R90"/>
 <instance part="IC1" gate="A" x="27.94" y="55.88"/>
 <instance part="IC1" gate="B" x="55.88" y="53.34"/>
 <instance part="IC1" gate="D" x="78.74" y="50.8"/>
@@ -2398,14 +2168,6 @@ at 30/07/2012 17:45:58</description>
 <wire x1="2.54" y1="-114.3" x2="2.54" y2="-116.84" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="LED1" gate="LED" pin="C"/>
-<pinref part="GND8" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="LED2" gate="LED" pin="C"/>
-<pinref part="GND9" gate="1" pin="GND"/>
-</segment>
-<segment>
 <pinref part="C2" gate="G$1" pin="1"/>
 <pinref part="GND1" gate="1" pin="GND"/>
 <wire x1="10.16" y1="55.88" x2="10.16" y2="53.34" width="0.1524" layer="91"/>
@@ -2502,13 +2264,9 @@ at 30/07/2012 17:45:58</description>
 <wire x1="134.62" y1="10.16" x2="132.08" y2="10.16" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="B" pin="I1"/>
 <pinref part="IC2" gate="B" pin="Q"/>
-<pinref part="R6" gate="G$1" pin="1"/>
-<wire x1="149.86" y1="10.16" x2="149.86" y2="-30.48" width="0.1524" layer="91"/>
 <pinref part="X2" gate="-2" pin="S"/>
-<wire x1="149.86" y1="-30.48" x2="154.94" y2="-30.48" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="10.16" x2="149.86" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="10.16" x2="154.94" y2="10.16" width="0.1524" layer="91"/>
 <junction x="134.62" y="10.16"/>
-<junction x="149.86" y="10.16"/>
 </segment>
 </net>
 <net name="N$11" class="0">
@@ -2569,13 +2327,9 @@ at 30/07/2012 17:45:58</description>
 <wire x1="134.62" y1="-116.84" x2="132.08" y2="-116.84" width="0.1524" layer="91"/>
 <pinref part="IC6" gate="C" pin="I1"/>
 <pinref part="IC4" gate="B" pin="Q"/>
-<pinref part="R7" gate="G$1" pin="1"/>
-<wire x1="149.86" y1="-116.84" x2="149.86" y2="-68.58" width="0.1524" layer="91"/>
 <pinref part="X2" gate="-1" pin="S"/>
-<wire x1="154.94" y1="-68.58" x2="149.86" y2="-68.58" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="-116.84" x2="149.86" y2="-116.84" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="-116.84" x2="154.94" y2="-116.84" width="0.1524" layer="91"/>
 <junction x="134.62" y="-116.84"/>
-<junction x="149.86" y="-116.84"/>
 </segment>
 </net>
 <net name="N$25" class="0">
@@ -2629,18 +2383,6 @@ at 30/07/2012 17:45:58</description>
 <pinref part="U$4" gate="G$1" pin="CONTROL+"/>
 <pinref part="R9" gate="G$1" pin="2"/>
 <wire x1="-2.54" y1="-114.3" x2="-2.54" y2="-116.84" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$29" class="0">
-<segment>
-<pinref part="R7" gate="G$1" pin="2"/>
-<pinref part="LED1" gate="LED" pin="A"/>
-</segment>
-</net>
-<net name="N$30" class="0">
-<segment>
-<pinref part="R6" gate="G$1" pin="2"/>
-<pinref part="LED2" gate="LED" pin="A"/>
 </segment>
 </net>
 <net name="N$1" class="0">
