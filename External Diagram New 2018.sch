@@ -2118,9 +2118,10 @@ per FH EV4.1.4</text>
 <wire x1="-12.7" y1="223.52" x2="60.96" y2="223.52" width="0.6096" layer="156"/>
 <wire x1="60.96" y1="220.98" x2="-2.54" y2="220.98" width="0.6096" layer="156"/>
 <text x="-55.88" y="5.08" size="5.08" layer="97">Wire Key
-Thick: Tractive System wires
-Orange: High Current path
-Blue: GLV Buses</text>
+Thin Green: GLV
+Blue: GLV Buses
+Thick Green: HV
+Orange: HV High Current Path</text>
 <text x="53.34" y="55.88" size="1.524" layer="97">Separate Shutdown Circuit
 Power for FSAE EV5.1.4</text>
 <wire x1="337.82" y1="241.3" x2="330.2" y2="241.3" width="0.6096" layer="156"/>
