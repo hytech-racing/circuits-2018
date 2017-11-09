@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.3.2">
+<eagle version="8.4.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -307,36 +307,6 @@
 <text x="-5.08" y="1.27" size="1.27" layer="95">&gt;Name</text>
 <text x="2.54" y="1.27" size="1.27" layer="96">&gt;Value</text>
 </symbol>
-<symbol name="RINEHART_PM100DX">
-<wire x1="66.04" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="30.48" x2="66.04" y2="30.48" width="0.254" layer="94"/>
-<wire x1="66.04" y1="0" x2="66.04" y2="30.48" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="30.48" width="0.254" layer="94"/>
-<pin name="A" x="71.12" y="10.16" length="middle" rot="R180"/>
-<pin name="B" x="71.12" y="17.78" length="middle" rot="R180"/>
-<pin name="C" x="71.12" y="25.4" length="middle" rot="R180"/>
-<pin name="DC+" x="-5.08" y="12.7" length="middle"/>
-<pin name="DC-" x="-5.08" y="22.86" length="middle"/>
-<pin name="J1-11/CAN_L" x="15.24" y="33.02" length="short" rot="R270"/>
-<pin name="J1-33/CAN_H" x="17.78" y="33.02" length="short" rot="R270"/>
-<text x="63.5" y="7.62" size="5.08" layer="95" rot="R180">Rinehart PM100DX</text>
-<pin name="J2-8/BATT+" x="7.62" y="33.02" length="short" rot="R270"/>
-<pin name="J2-6/GND" x="10.16" y="33.02" length="short" rot="R270"/>
-<pin name="J1-12/TXD" x="22.86" y="33.02" length="short" rot="R270"/>
-<pin name="J1-35/RXD" x="25.4" y="33.02" length="short" rot="R270"/>
-<pin name="J1-7/PROG_ENA" x="30.48" y="33.02" length="short" rot="R270"/>
-<pin name="J2-22/FAULT_INDIC" x="35.56" y="33.02" length="short" rot="R270"/>
-<pin name="J1-22/GND" x="27.94" y="33.02" length="short" rot="R270"/>
-<pin name="J2-17/EXC" x="43.18" y="33.02" length="short" rot="R270"/>
-<pin name="J2-3/GND" x="45.72" y="33.02" length="short" rot="R270"/>
-<pin name="G2-11/SIN+" x="48.26" y="33.02" length="short" rot="R270"/>
-<pin name="J2-18/SIN-" x="50.8" y="33.02" length="short" rot="R270"/>
-<pin name="J2-4/COS+" x="53.34" y="33.02" length="short" rot="R270"/>
-<pin name="J2-12/COS-" x="55.88" y="33.02" length="short" rot="R270"/>
-<pin name="J2-19/GND" x="58.42" y="33.02" length="short" rot="R270"/>
-<pin name="J1-24/AIN2_TEMP" x="40.64" y="33.02" length="short" rot="R270"/>
-<pin name="J1-28/XDCR_PWR" x="33.02" y="33.02" length="short" rot="R270"/>
-</symbol>
 <symbol name="MOTOR_AC">
 <circle x="0" y="0" radius="20.32" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-17.78" x2="12.7" y2="-20.32" width="0.254" layer="94"/>
@@ -591,6 +561,37 @@ Precharger</text>
 <pin name="11" x="5.08" y="10.16" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="12" x="5.08" y="12.7" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 </symbol>
+<symbol name="RINEHART_PM100DX">
+<wire x1="66.04" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="30.48" x2="66.04" y2="30.48" width="0.254" layer="94"/>
+<wire x1="66.04" y1="0" x2="66.04" y2="30.48" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="30.48" width="0.254" layer="94"/>
+<pin name="A" x="71.12" y="10.16" length="middle" rot="R180"/>
+<pin name="B" x="71.12" y="17.78" length="middle" rot="R180"/>
+<pin name="C" x="71.12" y="25.4" length="middle" rot="R180"/>
+<pin name="DC+" x="-5.08" y="12.7" length="middle"/>
+<pin name="DC-" x="-5.08" y="22.86" length="middle"/>
+<pin name="J1-11/CAN_L" x="15.24" y="33.02" length="short" rot="R270"/>
+<pin name="J1-33/CAN_H" x="17.78" y="33.02" length="short" rot="R270"/>
+<text x="63.5" y="7.62" size="5.08" layer="95" rot="R180">Rinehart PM100DX</text>
+<pin name="J2-8/BATT+" x="7.62" y="33.02" length="short" rot="R270"/>
+<pin name="J2-6/GND" x="10.16" y="33.02" length="short" rot="R270"/>
+<pin name="J1-12/TXD" x="22.86" y="33.02" length="short" rot="R270"/>
+<pin name="J1-35/RXD" x="25.4" y="33.02" length="short" rot="R270"/>
+<pin name="J1-7/PROG_ENA" x="30.48" y="33.02" length="short" rot="R270"/>
+<pin name="J2-22/FAULT_INDIC" x="35.56" y="33.02" length="short" rot="R270"/>
+<pin name="J1-22/GND" x="27.94" y="33.02" length="short" rot="R270"/>
+<pin name="J2-17/EXC" x="45.72" y="33.02" length="short" rot="R270"/>
+<pin name="J2-3/GND" x="48.26" y="33.02" length="short" rot="R270"/>
+<pin name="J2-11/SIN+" x="50.8" y="33.02" length="short" rot="R270"/>
+<pin name="J2-18/SIN-" x="53.34" y="33.02" length="short" rot="R270"/>
+<pin name="J2-4/COS+" x="55.88" y="33.02" length="short" rot="R270"/>
+<pin name="J2-12/COS-" x="58.42" y="33.02" length="short" rot="R270"/>
+<pin name="J1-19/AGND" x="60.96" y="33.02" length="short" rot="R270"/>
+<pin name="J1-24/AIN2_TEMP" x="43.18" y="33.02" length="short" rot="R270"/>
+<pin name="J1-28/XDCR_PWR" x="33.02" y="33.02" length="short" rot="R270"/>
+<pin name="J1-26/XDCR_PWR" x="40.64" y="33.02" length="short" rot="R270"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="BUZZER" prefix="SP">
@@ -690,25 +691,6 @@ Source: Schukat</description>
 <description>Generic Fuse</description>
 <gates>
 <gate name="G$1" symbol="FUSE" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name="">
-<attribute name="_EXTERNAL_" value="" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="RINEHART_PM100DX">
-<description>Rinehart Motion Systems PM100DX Motor Inverter
-&lt;br&gt;
-&lt;a href="http://www.rinehartmotion.com/standard.html"&gt;Product Page&lt;/a&gt;
-&lt;br&gt;
-&lt;a href="http://www.rinehartmotion.com/uploads/5/1/3/0/51309945/pm100-150datasheet_2.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="RINEHART_PM100DX" x="-20.32" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -931,6 +913,25 @@ Source: Sonnenschein</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="RINEHART_PM100DX">
+<description>Rinehart Motion Systems PM100DX Motor Inverter
+&lt;br&gt;
+&lt;a href="http://www.rinehartmotion.com/standard.html"&gt;Product Page&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="http://www.rinehartmotion.com/uploads/5/1/3/0/51309945/pm100-150datasheet_2.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="RINEHART_PM100DX" x="-20.32" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="">
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="HyTechDevices">
@@ -968,14 +969,6 @@ chip</description>
 <smd name="2" x="0.85" y="0" dx="1.1" dy="1" layer="1"/>
 <text x="-0.889" y="0.762" size="0.4064" layer="25" font="vector">&gt;NAME</text>
 <text x="-1.016" y="-1.143" size="0.4064" layer="27" font="vector">&gt;VALUE</text>
-</package>
-<package name="0805">
-<wire x1="-0.3" y1="0.6" x2="0.3" y2="0.6" width="0.1524" layer="21"/>
-<wire x1="-0.3" y1="-0.6" x2="0.3" y2="-0.6" width="0.1524" layer="21"/>
-<smd name="1" x="-0.9" y="0" dx="0.8" dy="1.2" layer="1"/>
-<smd name="2" x="0.9" y="0" dx="0.8" dy="1.2" layer="1"/>
-<text x="0" y="0.7239" size="0.3048" layer="25" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-0.7112" size="0.3048" layer="27" align="top-center">&gt;VALUE</text>
 </package>
 <package name="1206">
 <wire x1="-2.473" y1="0.983" x2="2.473" y2="0.983" width="0.0508" layer="39"/>
@@ -1195,6 +1188,25 @@ Yageo CFR series &lt;a href="http://www.yageo.com/pdf/yageo/Leaded-R_CFR_2008.pd
 <pad name="2" x="52.07" y="0" drill="1.3"/>
 <text x="15.24" y="0" size="1.27" layer="21">POWER RESISTOR</text>
 </package>
+<package name="0805">
+<smd name="1" x="-1.025" y="0" dx="1.4" dy="1.5" layer="1"/>
+<smd name="2" x="1.025" y="0" dx="1.4" dy="1.5" layer="1"/>
+<text x="0" y="0.7239" size="0.3048" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-0.7112" size="0.3048" layer="27" align="top-center">&gt;VALUE</text>
+<wire x1="-1" y1="0.625" x2="1" y2="0.625" width="0.1524" layer="21"/>
+<wire x1="1" y1="0.625" x2="1" y2="-0.625" width="0.1524" layer="21"/>
+<wire x1="1" y1="-0.625" x2="-1" y2="-0.625" width="0.1524" layer="21"/>
+<wire x1="-1" y1="-0.625" x2="-1" y2="0.625" width="0.1524" layer="21"/>
+</package>
+<package name="PWR163">
+<smd name="PAD" x="0" y="0" dx="7.874" dy="8.509" layer="1"/>
+<smd name="1" x="-2.54" y="-7.9375" dx="3.81" dy="1.651" layer="1" rot="R90"/>
+<smd name="2" x="2.54" y="-7.9375" dx="3.81" dy="1.651" layer="1" rot="R90"/>
+<wire x1="-4.064" y1="3.6195" x2="4.064" y2="3.6195" width="0.127" layer="21"/>
+<wire x1="4.064" y1="3.6195" x2="4.064" y2="-3.6195" width="0.127" layer="21"/>
+<wire x1="4.064" y1="-3.6195" x2="-4.064" y2="-3.6195" width="0.127" layer="21"/>
+<wire x1="-4.064" y1="-3.6195" x2="-4.064" y2="3.6195" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="RESISTOR">
@@ -1375,6 +1387,15 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </technologies>
 </device>
 <device name="10W" package="10W_RESISTOR_VISHAY">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="PWR163" package="PWR163">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -1962,7 +1983,6 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="GLVMS" library="HyTechSymbols" deviceset="SWITCH_SPST" device=""/>
 <part name="F1" library="HyTechSymbols" deviceset="FUSE" device="" value="14A"/>
 <part name="F2" library="HyTechSymbols" deviceset="FUSE" device="" value="8A"/>
-<part name="U$1" library="HyTechSymbols" deviceset="RINEHART_PM100DX" device=""/>
 <part name="EMRAX_207_MED" library="HyTechSymbols" deviceset="MOTOR_AC" device=""/>
 <part name="BRAKE_LIGHT" library="HyTechSymbols" deviceset="LED" device=""/>
 <part name="BOTS" library="HyTechSymbols" deviceset="SWITCH_SPST" device=""/>
@@ -2058,6 +2078,8 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="TSMP_RES+_2" library="HyTechDevices" deviceset="RESISTOR" device="10W" value="5k"/>
 <part name="SL24" library="HyTechSymbols" deviceset="M06" device=""/>
 <part name="SL25" library="HyTechSymbols" deviceset="M06" device=""/>
+<part name="THERM_PULLUP" library="HyTechDevices" deviceset="RESISTOR" device="AXIAL-0.3" value="3.01k"/>
+<part name="U$1" library="HyTechSymbols" deviceset="RINEHART_PM100DX" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2065,7 +2087,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <text x="76.2" y="121.92" size="5.08" layer="97">Accumulator Container</text>
 <text x="434.34" y="297.18" size="5.08" layer="97">Left Rear Panel</text>
 <text x="287.02" y="-12.7" size="5.08" layer="97">Right Rear Panel Low</text>
-<text x="22.86" y="157.48" size="1.778" layer="91" rot="R90">Maintenance plug</text>
+<text x="40.64" y="157.48" size="1.778" layer="91" rot="R90">Maintenance plug</text>
 <text x="246.38" y="-10.16" size="1.524" layer="97">12AWG grounding
 per FH EV4.1.4</text>
 <wire x1="198.12" y1="233.68" x2="350.52" y2="233.68" width="0.6096" layer="156"/>
@@ -2143,7 +2165,7 @@ Power for FSAE EV5.1.4</text>
 <wire x1="485.14" y1="238.76" x2="434.34" y2="238.76" width="1.27" layer="97"/>
 <wire x1="434.34" y1="238.76" x2="434.34" y2="294.64" width="1.27" layer="97"/>
 <text x="157.48" y="294.64" size="10.16" layer="97">HyTech Racing 2018 Electrical Diagram</text>
-<text x="323.85" y="25.4" size="1.524" layer="97">⬅ Disconnected for
+<text x="323.85" y="27.94" size="1.524" layer="97">⬅ Disconnected for
      Formula Hybrid</text>
 <text x="410.21" y="221.742" size="1.524" layer="97">⬅ Formula Hybrid
      AMS Test Port</text>
@@ -2204,9 +2226,8 @@ Power for FSAE EV5.1.4</text>
 <instance part="S1" gate="DPST" x="458.47" y="274.32" rot="MR270"/>
 <instance part="RIGHT_REAR_BRB" gate="DPST" x="383.54" y="15.24" rot="R270"/>
 <instance part="GLVMS" gate="SPST" x="309.88" y="15.24" rot="R90"/>
-<instance part="F1" gate="G$1" x="332.74" y="15.24"/>
-<instance part="F2" gate="G$1" x="332.74" y="5.08"/>
-<instance part="U$1" gate="G$1" x="-25.4" y="198.12" rot="R270"/>
+<instance part="F1" gate="G$1" x="335.28" y="15.24"/>
+<instance part="F2" gate="G$1" x="335.28" y="5.08"/>
 <instance part="EMRAX_207_MED" gate="G$1" x="-71.12" y="165.1" rot="MR270"/>
 <instance part="BRAKE_LIGHT" gate="G$1" x="20.32" y="200.66"/>
 <instance part="BOTS" gate="SPST" x="599.44" y="99.06" rot="R270"/>
@@ -2248,7 +2269,7 @@ Power for FSAE EV5.1.4</text>
 <instance part="GND19" gate="1" x="337.82" y="266.7" rot="R180"/>
 <instance part="FUSE" gate="G$1" x="312.42" y="261.62"/>
 <instance part="GND23" gate="1" x="162.56" y="256.54"/>
-<instance part="SL10" gate="G$1" x="15.24" y="170.18" rot="R180"/>
+<instance part="SL10" gate="G$1" x="33.02" y="170.18" rot="R180"/>
 <instance part="LED_BMS" gate="G$1" x="533.4" y="297.18" rot="R180"/>
 <instance part="LED_IMD" gate="G$1" x="533.4" y="307.34" rot="R180"/>
 <instance part="LED_POWER" gate="G$1" x="533.4" y="287.02" rot="R180"/>
@@ -2302,15 +2323,17 @@ Power for FSAE EV5.1.4</text>
 <instance part="TSMP_RES+_2" gate="G$1" x="93.98" y="177.8" rot="R90"/>
 <instance part="SL24" gate="G$1" x="469.9" y="231.14" rot="R270"/>
 <instance part="SL25" gate="G$1" x="469.9" y="246.38" rot="MR90"/>
+<instance part="THERM_PULLUP" gate="G$1" x="22.86" y="157.48" rot="MR0"/>
+<instance part="U$1" gate="G$1" x="-25.4" y="198.12" rot="R270"/>
 </instances>
 <busses>
 <bus name="MOTOR_TEMP,EXC+,EXC-,SIN+,SIN-,COS+,COS-,GND">
 <segment>
-<wire x1="10.16" y1="157.48" x2="10.16" y2="148.59" width="0.762" layer="92"/>
-<wire x1="10.16" y1="148.59" x2="10.16" y2="139.7" width="0.762" layer="92"/>
-<wire x1="10.16" y1="148.59" x2="20.32" y2="148.59" width="0.762" layer="92"/>
-<wire x1="20.32" y1="148.59" x2="20.32" y2="114.3" width="0.762" layer="92"/>
-<wire x1="20.32" y1="114.3" x2="-58.42" y2="114.3" width="0.762" layer="92"/>
+<wire x1="12.7" y1="149.86" x2="12.7" y2="140.97" width="0.762" layer="92"/>
+<wire x1="12.7" y1="140.97" x2="12.7" y2="132.08" width="0.762" layer="92"/>
+<wire x1="12.7" y1="140.97" x2="22.86" y2="140.97" width="0.762" layer="92"/>
+<wire x1="22.86" y1="140.97" x2="22.86" y2="114.3" width="0.762" layer="92"/>
+<wire x1="22.86" y1="114.3" x2="-58.42" y2="114.3" width="0.762" layer="92"/>
 <wire x1="-58.42" y1="114.3" x2="-58.42" y2="149.86" width="0.762" layer="92"/>
 </segment>
 </bus>
@@ -2378,8 +2401,8 @@ Power for FSAE EV5.1.4</text>
 <pinref part="GND23" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="J2-19/GND"/>
-<wire x1="7.62" y1="139.7" x2="10.16" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="137.16" x2="12.7" y2="132.08" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="J1-19/AGND"/>
 </segment>
 <segment>
 <pinref part="GND2" gate="1" pin="GND"/>
@@ -2392,10 +2415,10 @@ Power for FSAE EV5.1.4</text>
 <pinref part="SL8" gate="G$1" pin="10"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="J2-6/GND"/>
 <pinref part="GND3" gate="1" pin="GND"/>
 <wire x1="7.62" y1="187.96" x2="10.16" y2="187.96" width="0.1524" layer="91"/>
 <wire x1="10.16" y1="187.96" x2="10.16" y2="195.58" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="J2-6/GND"/>
 </segment>
 <segment>
 <pinref part="BRAKE_LIGHT" gate="G$1" pin="C"/>
@@ -2462,14 +2485,7 @@ Power for FSAE EV5.1.4</text>
 <segment>
 <pinref part="F1" gate="G$1" pin="2"/>
 <pinref part="RIGHT_REAR_BRB" gate="DPST" pin="P"/>
-<wire x1="378.46" y1="15.24" x2="337.82" y2="15.24" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$17" class="0">
-<segment>
-<pinref part="F2" gate="G$1" pin="2"/>
-<pinref part="RIGHT_REAR_BRB" gate="DPST" pin="P1"/>
-<wire x1="378.46" y1="5.08" x2="337.82" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="378.46" y1="15.24" x2="340.36" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="12VSUPPLY_COOLING_UNSWITCHED" class="0">
@@ -2617,9 +2633,9 @@ Power for FSAE EV5.1.4</text>
 <pinref part="SL8" gate="G$1" pin="5"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="J2-8/BATT+"/>
 <pinref part="SL12" gate="G$1" pin="2"/>
 <wire x1="17.78" y1="190.5" x2="7.62" y2="190.5" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="J2-8/BATT+"/>
 </segment>
 <segment>
 <pinref part="SL11" gate="G$1" pin="2"/>
@@ -2701,86 +2717,91 @@ Power for FSAE EV5.1.4</text>
 </net>
 <net name="MOTOR_TEMP" class="0">
 <segment>
+<wire x1="7.62" y1="154.94" x2="10.16" y2="152.4" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="J1-24/AIN2_TEMP"/>
-<wire x1="7.62" y1="157.48" x2="10.16" y2="157.48" width="0.1524" layer="91"/>
+<pinref part="THERM_PULLUP" gate="G$1" pin="1"/>
+<wire x1="10.16" y1="152.4" x2="12.7" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="157.48" x2="27.94" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="152.4" x2="10.16" y2="152.4" width="0.1524" layer="91"/>
+<junction x="10.16" y="152.4"/>
 </segment>
 </net>
 <net name="EXC+" class="0">
 <segment>
+<wire x1="7.62" y1="152.4" x2="12.7" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="J2-17/EXC"/>
-<wire x1="7.62" y1="154.94" x2="10.16" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="EXC-" class="0">
 <segment>
+<wire x1="7.62" y1="149.86" x2="12.7" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="J2-3/GND"/>
-<wire x1="7.62" y1="152.4" x2="10.16" y2="152.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SIN+" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="G2-11/SIN+"/>
-<wire x1="7.62" y1="149.86" x2="10.16" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="147.32" x2="12.7" y2="142.24" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="J2-11/SIN+"/>
 </segment>
 </net>
 <net name="SIN-" class="0">
 <segment>
+<wire x1="7.62" y1="144.78" x2="12.7" y2="139.7" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="J2-18/SIN-"/>
-<wire x1="7.62" y1="147.32" x2="10.16" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="COS+" class="0">
 <segment>
+<wire x1="7.62" y1="142.24" x2="12.7" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="J2-4/COS+"/>
-<wire x1="7.62" y1="144.78" x2="10.16" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="COS-" class="0">
 <segment>
+<wire x1="7.62" y1="139.7" x2="12.7" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="J2-12/COS-"/>
-<wire x1="7.62" y1="142.24" x2="10.16" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$32" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="J1-12/TXD"/>
-<wire x1="10.16" y1="175.26" x2="7.62" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="175.26" x2="7.62" y2="175.26" width="0.1524" layer="91"/>
 <pinref part="SL10" gate="G$1" pin="1"/>
+<pinref part="U$1" gate="G$1" pin="J1-12/TXD"/>
 </segment>
 </net>
 <net name="N$43" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="J1-35/RXD"/>
-<wire x1="10.16" y1="172.72" x2="7.62" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="172.72" x2="7.62" y2="172.72" width="0.1524" layer="91"/>
 <pinref part="SL10" gate="G$1" pin="2"/>
+<pinref part="U$1" gate="G$1" pin="J1-35/RXD"/>
 </segment>
 </net>
 <net name="N$63" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="J1-22/GND"/>
-<wire x1="10.16" y1="170.18" x2="7.62" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="170.18" x2="7.62" y2="170.18" width="0.1524" layer="91"/>
 <pinref part="SL10" gate="G$1" pin="3"/>
+<pinref part="U$1" gate="G$1" pin="J1-22/GND"/>
 </segment>
 </net>
 <net name="N$69" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="J1-7/PROG_ENA"/>
-<wire x1="10.16" y1="167.64" x2="7.62" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="167.64" x2="7.62" y2="167.64" width="0.1524" layer="91"/>
 <pinref part="SL10" gate="G$1" pin="4"/>
+<pinref part="U$1" gate="G$1" pin="J1-7/PROG_ENA"/>
 </segment>
 </net>
 <net name="N$71" class="0">
 <segment>
 <pinref part="SL10" gate="G$1" pin="5"/>
+<wire x1="27.94" y1="165.1" x2="7.62" y2="165.1" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="J1-28/XDCR_PWR"/>
-<wire x1="10.16" y1="165.1" x2="7.62" y2="165.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$72" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="J2-22/FAULT_INDIC"/>
 <pinref part="SL10" gate="G$1" pin="6"/>
-<wire x1="7.62" y1="162.56" x2="10.16" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="162.56" x2="27.94" y2="162.56" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="J2-22/FAULT_INDIC"/>
 </segment>
 </net>
 <net name="OKHS_OUT" class="0">
@@ -2823,18 +2844,18 @@ Power for FSAE EV5.1.4</text>
 </net>
 <net name="CANL_OUT" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="J1-33/CAN_H"/>
 <pinref part="SL12" gate="G$1" pin="4"/>
 <wire x1="17.78" y1="185.42" x2="12.7" y2="185.42" width="0.1524" layer="91"/>
 <wire x1="12.7" y1="185.42" x2="7.62" y2="180.34" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="J1-33/CAN_H"/>
 </segment>
 </net>
 <net name="CANH_OUT" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="J1-11/CAN_L"/>
 <pinref part="SL12" gate="G$1" pin="3"/>
 <wire x1="17.78" y1="187.96" x2="12.7" y2="187.96" width="0.1524" layer="91"/>
 <wire x1="12.7" y1="187.96" x2="7.62" y2="182.88" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="J1-11/CAN_L"/>
 </segment>
 </net>
 <net name="BSPD_CURRENT" class="0">
@@ -3235,27 +3256,19 @@ Power for FSAE EV5.1.4</text>
 </net>
 <net name="12VSUPPLY_FSAE" class="0">
 <segment>
-<pinref part="F2" gate="G$1" pin="1"/>
-<pinref part="F1" gate="G$1" pin="1"/>
-<wire x1="322.58" y1="15.24" x2="327.66" y2="15.24" width="0.1524" layer="91"/>
-<pinref part="MEASURE_12V" gate="G$1" pin="1"/>
-<wire x1="327.66" y1="5.08" x2="322.58" y2="5.08" width="0.1524" layer="91"/>
-<wire x1="322.58" y1="5.08" x2="322.58" y2="15.24" width="0.1524" layer="91"/>
-<junction x="322.58" y="15.24"/>
-<wire x1="322.58" y1="15.24" x2="322.58" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="322.58" y1="0" x2="322.58" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="322.58" y1="58.42" x2="454.66" y2="58.42" width="0.1524" layer="91"/>
 <label x="398.78" y="58.42" size="1.778" layer="95"/>
 <wire x1="459.74" y1="25.4" x2="454.66" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="454.66" y1="25.4" x2="454.66" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="299.72" y1="33.02" x2="294.64" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="294.64" y1="33.02" x2="294.64" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="294.64" y1="17.78" x2="294.64" y2="5.08" width="0.1524" layer="91"/>
-<wire x1="294.64" y1="5.08" x2="322.58" y2="5.08" width="0.1524" layer="91"/>
-<junction x="322.58" y="5.08"/>
-<pinref part="GLVMS" gate="SPST" pin="S"/>
-<wire x1="304.8" y1="17.78" x2="294.64" y2="17.78" width="0.1524" layer="91"/>
-<junction x="294.64" y="17.78"/>
 <pinref part="SL9" gate="G$1" pin="8"/>
+<pinref part="F2" gate="G$1" pin="2"/>
+<pinref part="RIGHT_REAR_BRB" gate="DPST" pin="P1"/>
+<wire x1="378.46" y1="5.08" x2="342.9" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="342.9" y1="5.08" x2="340.36" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="342.9" y1="5.08" x2="342.9" y2="0" width="0.1524" layer="91"/>
+<junction x="342.9" y="5.08"/>
+<wire x1="342.9" y1="0" x2="322.58" y2="0" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="43.18" y1="50.8" x2="88.9" y2="50.8" width="0.1524" layer="91"/>
@@ -4321,6 +4334,31 @@ Power for FSAE EV5.1.4</text>
 <pinref part="SL17" gate="G$1" pin="10"/>
 <portref moduleinst="FRONT_ECU" port="CANH_1"/>
 <wire x1="574.04" y1="154.94" x2="586.74" y2="154.94" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$74" class="0">
+<segment>
+<pinref part="F1" gate="G$1" pin="1"/>
+<wire x1="327.66" y1="15.24" x2="330.2" y2="15.24" width="0.1524" layer="91"/>
+<pinref part="F2" gate="G$1" pin="1"/>
+<wire x1="330.2" y1="5.08" x2="327.66" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="327.66" y1="5.08" x2="327.66" y2="15.24" width="0.1524" layer="91"/>
+<junction x="327.66" y="5.08"/>
+<pinref part="MEASURE_12V" gate="G$1" pin="1"/>
+<wire x1="299.72" y1="33.02" x2="294.64" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="294.64" y1="33.02" x2="294.64" y2="17.78" width="0.1524" layer="91"/>
+<pinref part="GLVMS" gate="SPST" pin="S"/>
+<wire x1="304.8" y1="17.78" x2="294.64" y2="17.78" width="0.1524" layer="91"/>
+<junction x="294.64" y="17.78"/>
+<wire x1="294.64" y1="17.78" x2="294.64" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="294.64" y1="5.08" x2="327.66" y2="5.08" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$17" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="J1-26/XDCR_PWR"/>
+<pinref part="THERM_PULLUP" gate="G$1" pin="2"/>
+<wire x1="7.62" y1="157.48" x2="17.78" y2="157.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
