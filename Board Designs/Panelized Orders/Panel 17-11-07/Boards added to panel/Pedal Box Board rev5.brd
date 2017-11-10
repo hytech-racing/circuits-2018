@@ -968,7 +968,6 @@
 <text x="72.898" y="104.267" size="1.016" layer="51" align="center">Time</text>
 <text x="83.82" y="104.267" size="1.016" layer="51" align="center">Brake</text>
 <text x="94.742" y="104.267" size="1.016" layer="51" align="center">Current</text>
-<text x="102.87" y="46.228" size="0.762" layer="51" rot="R90" align="center">BSPD ENABLE</text>
 </plain>
 <libraries>
 <library name="HyTechDevices">

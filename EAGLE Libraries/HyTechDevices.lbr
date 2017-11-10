@@ -8107,6 +8107,38 @@ MX150L™ Vertical PCB Header</description>
 <wire x1="4.064" y1="-3.6195" x2="-4.064" y2="-3.6195" width="0.127" layer="21"/>
 <wire x1="-4.064" y1="-3.6195" x2="-4.064" y2="3.6195" width="0.127" layer="21"/>
 </package>
+<package name="SS-14D0839-VG5PA">
+<pad name="1" x="-4.57" y="-0.35" drill="0.85" shape="square"/>
+<pad name="2" x="-2.57" y="-0.35" drill="0.85" shape="square"/>
+<pad name="COM" x="1.43" y="-0.35" drill="0.85" shape="square"/>
+<pad name="3" x="3.43" y="-0.35" drill="0.85" shape="square"/>
+<pad name="4" x="5.43" y="-0.35" drill="0.85" shape="square"/>
+<wire x1="-8.57" y1="1.65" x2="-8.57" y2="-2.35" width="0.1524" layer="21"/>
+<wire x1="-8.57" y1="-2.35" x2="9.43" y2="-2.35" width="0.1524" layer="21"/>
+<wire x1="9.43" y1="-2.35" x2="9.43" y2="1.65" width="0.1524" layer="21"/>
+<wire x1="9.43" y1="1.65" x2="-8.57" y2="1.65" width="0.1524" layer="21"/>
+<hole x="-6.57" y="-0.35" drill="1.3"/>
+<hole x="7.43" y="-0.35" drill="1.3"/>
+</package>
+<package name="SCA3100-D04">
+<smd name="AVSS" x="0.1" y="-1.8" dx="0.98" dy="0.61" layer="1"/>
+<smd name="A_EXTC" x="0.1" y="-2.8" dx="0.98" dy="0.61" layer="1"/>
+<smd name="RESERVED" x="0.1" y="-3.8" dx="0.98" dy="0.61" layer="1"/>
+<smd name="VDD" x="0.1" y="-4.8" dx="0.98" dy="0.61" layer="1"/>
+<smd name="CSB" x="0.1" y="-5.8" dx="0.98" dy="0.61" layer="1"/>
+<smd name="MISO" x="0.1" y="-6.8" dx="0.98" dy="0.61" layer="1"/>
+<smd name="EMC_GND" x="6.9" y="-1.8" dx="0.98" dy="0.61" layer="1"/>
+<smd name="DVSS" x="6.9" y="-2.8" dx="0.98" dy="0.61" layer="1"/>
+<smd name="D_EXTC" x="6.9" y="-3.8" dx="0.98" dy="0.61" layer="1"/>
+<smd name="DVIO" x="6.9" y="-4.8" dx="0.98" dy="0.61" layer="1"/>
+<smd name="SCK" x="6.9" y="-5.8" dx="0.98" dy="0.61" layer="1"/>
+<smd name="MOSI" x="6.9" y="-6.8" dx="0.98" dy="0.61" layer="1"/>
+<text x="0.7" y="-0.7" size="0.4064" layer="25" align="top-left">Murata SCA3100-D04</text>
+<wire x1="0" y1="-8.6" x2="7" y2="-8.6" width="0.127" layer="21"/>
+<wire x1="7" y1="-8.6" x2="7" y2="0" width="0.127" layer="21"/>
+<wire x1="0" y1="-8.6" x2="0" y2="0" width="0.127" layer="21"/>
+<wire x1="0" y1="0" x2="7" y2="0" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ARDUINO_NANO">
@@ -11046,6 +11078,68 @@ Demo Board</text>
 <pin name="DIR" x="22.86" y="43.18" visible="pin" length="short" rot="R180"/>
 <pin name="STEP" x="22.86" y="40.64" visible="pin" length="short" rot="R180"/>
 </symbol>
+<symbol name="SS-14D0839-VG5PA">
+<wire x1="0" y1="0" x2="20.32" y2="0" width="0.1524" layer="94"/>
+<wire x1="20.32" y1="0" x2="20.32" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="20.32" y1="-7.62" x2="0" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="0" y1="-7.62" x2="0" y2="0" width="0.1524" layer="94"/>
+<pin name="COM" x="10.16" y="5.08" visible="pad" length="middle" rot="R270"/>
+<pin name="1" x="0" y="-12.7" visible="pad" length="middle" rot="R90"/>
+<pin name="4" x="20.32" y="-12.7" visible="pad" length="middle" rot="R90"/>
+<pin name="3" x="12.7" y="-12.7" visible="pad" length="middle" rot="R90"/>
+<pin name="2" x="7.62" y="-12.7" visible="pad" length="middle" rot="R90"/>
+</symbol>
+<symbol name="SOT223">
+<pin name="4" x="-2.54" y="7.62" visible="pad" length="short" rot="R270"/>
+<pin name="1" x="-7.62" y="-2.54" visible="pad" length="short" rot="R90"/>
+<pin name="2" x="-2.54" y="-2.54" visible="pad" length="short" rot="R90"/>
+<pin name="3" x="2.54" y="-2.54" visible="pad" length="short" rot="R90"/>
+<wire x1="-7.62" y1="5.08" x2="-7.62" y2="0" width="0.1524" layer="94"/>
+<wire x1="-7.62" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="5.08" x2="-7.62" y2="5.08" width="0.1524" layer="94"/>
+</symbol>
+<symbol name="SOIC16">
+<wire x1="0" y1="-2.54" x2="17.78" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="17.78" y1="5.08" x2="0" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="0" y1="5.08" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="17.78" y1="5.08" x2="17.78" y2="-2.54" width="0.1524" layer="94"/>
+<pin name="P$1" x="0" y="7.62" visible="pad" length="short" rot="R270"/>
+<pin name="P$2" x="2.54" y="7.62" visible="pad" length="short" rot="R270"/>
+<pin name="P$3" x="5.08" y="7.62" visible="pad" length="short" rot="R270"/>
+<pin name="P$4" x="7.62" y="7.62" visible="pad" length="short" rot="R270"/>
+<pin name="P$5" x="10.16" y="7.62" visible="pad" length="short" rot="R270"/>
+<pin name="P$6" x="12.7" y="7.62" visible="pad" length="short" rot="R270"/>
+<pin name="P$7" x="15.24" y="7.62" visible="pad" length="short" rot="R270"/>
+<pin name="P$8" x="17.78" y="7.62" visible="pad" length="short" rot="R270"/>
+<pin name="P$9" x="0" y="-5.08" visible="pad" length="short" rot="R90"/>
+<pin name="P$10" x="2.54" y="-5.08" visible="pad" length="short" rot="R90"/>
+<pin name="P$11" x="5.08" y="-5.08" visible="pad" length="short" rot="R90"/>
+<pin name="P$12" x="7.62" y="-5.08" visible="pad" length="short" rot="R90"/>
+<pin name="P$13" x="10.16" y="-5.08" visible="pad" length="short" rot="R90"/>
+<pin name="P$14" x="12.7" y="-5.08" visible="pad" length="short" rot="R90"/>
+<pin name="P$15" x="15.24" y="-5.08" visible="pad" length="short" rot="R90"/>
+<pin name="P$16" x="17.78" y="-5.08" visible="pad" length="short" rot="R90"/>
+<text x="2.54" y="2.54" size="1.27" layer="94">GENERIC SOIC16</text>
+</symbol>
+<symbol name="SCA3100-D04">
+<wire x1="0" y1="0" x2="0" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="0" y1="-17.78" x2="10.16" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-17.78" x2="10.16" y2="0" width="0.254" layer="94"/>
+<wire x1="10.16" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<pin name="EMC_GND" x="10.16" y="-2.54" length="middle"/>
+<pin name="DVSS" x="10.16" y="-5.08" length="middle"/>
+<pin name="D_EXTC" x="10.16" y="-7.62" length="middle"/>
+<pin name="DVIO" x="10.16" y="-10.16" length="middle"/>
+<pin name="SCK" x="10.16" y="-12.7" length="middle"/>
+<pin name="MOSI" x="10.16" y="-15.24" length="middle"/>
+<pin name="MISO" x="0" y="-15.24" length="middle" rot="R180"/>
+<pin name="CSB" x="0" y="-12.7" length="middle" rot="R180"/>
+<pin name="VDD" x="0" y="-10.16" length="middle" rot="R180"/>
+<pin name="RESERVED" x="0" y="-7.62" length="middle" rot="R180"/>
+<pin name="A_EXTC" x="0" y="-5.08" length="middle" rot="R180"/>
+<pin name="AVSS" x="0" y="-2.54" length="middle" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="ARDUINO_NANO">
@@ -11905,7 +11999,7 @@ Standard 7805 5V regulator. IGO (Input Ground Output). Spark Fun Electronics SKU
 &lt;br&gt;
 &lt;a href="http://www.mouser.com/ProductDetail/Panasonic-Industrial-Devices/JW2SN-DC5V"&gt;Product Page&lt;/a&gt;</description>
 <gates>
-<gate name="-1" symbol="JW2SN" x="-17.78" y="-7.62"/>
+<gate name="-1" symbol="JW2SN" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="JW2SN">
@@ -16456,13 +16550,13 @@ Note: The Sparkfun version includes many other packages including surface mount 
 <devices>
 <device name="" package="DIL14">
 <connects>
-<connect gate="A" pin="!Q" pad="8"/>
+<connect gate="A" pin="!Q" pad="6"/>
 <connect gate="A" pin="CL" pad="1"/>
 <connect gate="A" pin="CLK" pad="3"/>
 <connect gate="A" pin="D" pad="2"/>
 <connect gate="A" pin="PR" pad="4"/>
 <connect gate="A" pin="Q" pad="5"/>
-<connect gate="B" pin="!Q" pad="6"/>
+<connect gate="B" pin="!Q" pad="8"/>
 <connect gate="B" pin="CL" pad="13"/>
 <connect gate="B" pin="CLK" pad="11"/>
 <connect gate="B" pin="D" pad="12"/>
@@ -17015,6 +17109,157 @@ Output Current: 50 mA (max)
 <connect gate="G$1" pin="VOUTA" pad="1"/>
 <connect gate="G$1" pin="VOUTB" pad="7"/>
 <connect gate="G$1" pin="VSS" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="OKI-78SR-5/1.5-W36-C" prefix="IC" uservalue="yes">
+<description>&lt;b&gt;Voltage Regulator&lt;/b&gt;
+
+&lt;p&gt;Switching 5v regulator
+
+&lt;a href="http://power.murata.com/data/power/oki-78sr.pdf"&gt;Datasheet &lt;/a&gt;
+&lt;br&gt;
+&lt;br&gt;
+Standard 7805 5V regulator. IGO (Input Ground Output). Spark Fun Electronics SKU : COM-00107
+&lt;a href="http://www.mouser.com/ds/2/308/MC7800-D-94905.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="VOLTAGE_REGULATOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="_SINK" package="TO-220-SINK">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="IN" pad="1"/>
+<connect gate="G$1" pin="OUT" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_VERT" package="TO-220">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="IN" pad="1"/>
+<connect gate="G$1" pin="OUT" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_HOR" package="TO-220-H">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="IN" pad="1"/>
+<connect gate="G$1" pin="OUT" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SPACED" package="TO-220-SPACED">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="IN" pad="1"/>
+<connect gate="G$1" pin="OUT" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SS-14D0839-VG5PA">
+<gates>
+<gate name="G$1" symbol="SS-14D0839-VG5PA" x="33.02" y="-5.08"/>
+</gates>
+<devices>
+<device name="" package="SS-14D0839-VG5PA">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="COM" pad="COM"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SOT223">
+<gates>
+<gate name="G$1" symbol="SOT223" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT223">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SOIC16">
+<gates>
+<gate name="G$1" symbol="SOIC16" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOIC-16">
+<connects>
+<connect gate="G$1" pin="P$1" pad="1"/>
+<connect gate="G$1" pin="P$10" pad="10"/>
+<connect gate="G$1" pin="P$11" pad="11"/>
+<connect gate="G$1" pin="P$12" pad="12"/>
+<connect gate="G$1" pin="P$13" pad="13"/>
+<connect gate="G$1" pin="P$14" pad="14"/>
+<connect gate="G$1" pin="P$15" pad="15"/>
+<connect gate="G$1" pin="P$16" pad="16"/>
+<connect gate="G$1" pin="P$2" pad="2"/>
+<connect gate="G$1" pin="P$3" pad="3"/>
+<connect gate="G$1" pin="P$4" pad="4"/>
+<connect gate="G$1" pin="P$5" pad="5"/>
+<connect gate="G$1" pin="P$6" pad="6"/>
+<connect gate="G$1" pin="P$7" pad="7"/>
+<connect gate="G$1" pin="P$8" pad="8"/>
+<connect gate="G$1" pin="P$9" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SCA3100-D04">
+<description>&lt;b&gt;Murata SCA3100-D04 3-axis accelerometer &lt;/b&gt;&lt;br&gt;
+&lt;a href="http://www.mouser.com/pdfdocs/SCA3300-D01Industrial3-axisaccelerometerDatasheet_A1.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="SCA3100-D04" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SCA3100-D04">
+<connects>
+<connect gate="G$1" pin="AVSS" pad="AVSS"/>
+<connect gate="G$1" pin="A_EXTC" pad="A_EXTC"/>
+<connect gate="G$1" pin="CSB" pad="CSB"/>
+<connect gate="G$1" pin="DVIO" pad="DVIO"/>
+<connect gate="G$1" pin="DVSS" pad="DVSS"/>
+<connect gate="G$1" pin="D_EXTC" pad="D_EXTC"/>
+<connect gate="G$1" pin="EMC_GND" pad="EMC_GND"/>
+<connect gate="G$1" pin="MISO" pad="MISO"/>
+<connect gate="G$1" pin="MOSI" pad="MOSI"/>
+<connect gate="G$1" pin="RESERVED" pad="RESERVED"/>
+<connect gate="G$1" pin="SCK" pad="SCK"/>
+<connect gate="G$1" pin="VDD" pad="VDD"/>
 </connects>
 <technologies>
 <technology name=""/>

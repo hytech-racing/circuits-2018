@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.3.1">
+<eagle version="8.4.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -484,15 +484,16 @@ Precharger</text>
 <pin name="J1-7/PROG_ENA" x="30.48" y="33.02" length="short" rot="R270"/>
 <pin name="J2-22/FAULT_INDIC" x="35.56" y="33.02" length="short" rot="R270"/>
 <pin name="J1-22/GND" x="27.94" y="33.02" length="short" rot="R270"/>
-<pin name="J2-17/EXC" x="43.18" y="33.02" length="short" rot="R270"/>
-<pin name="J2-3/GND" x="45.72" y="33.02" length="short" rot="R270"/>
-<pin name="G2-11/SIN+" x="48.26" y="33.02" length="short" rot="R270"/>
-<pin name="J2-18/SIN-" x="50.8" y="33.02" length="short" rot="R270"/>
-<pin name="J2-4/COS+" x="53.34" y="33.02" length="short" rot="R270"/>
-<pin name="J2-12/COS-" x="55.88" y="33.02" length="short" rot="R270"/>
-<pin name="J2-19/GND" x="58.42" y="33.02" length="short" rot="R270"/>
-<pin name="J1-24/AIN2_TEMP" x="40.64" y="33.02" length="short" rot="R270"/>
+<pin name="J2-17/EXC" x="45.72" y="33.02" length="short" rot="R270"/>
+<pin name="J2-3/GND" x="48.26" y="33.02" length="short" rot="R270"/>
+<pin name="J2-11/SIN+" x="50.8" y="33.02" length="short" rot="R270"/>
+<pin name="J2-18/SIN-" x="53.34" y="33.02" length="short" rot="R270"/>
+<pin name="J2-4/COS+" x="55.88" y="33.02" length="short" rot="R270"/>
+<pin name="J2-12/COS-" x="58.42" y="33.02" length="short" rot="R270"/>
+<pin name="J1-19/AGND" x="60.96" y="33.02" length="short" rot="R270"/>
+<pin name="J1-24/AIN2_TEMP" x="43.18" y="33.02" length="short" rot="R270"/>
 <pin name="J1-28/XDCR_PWR" x="33.02" y="33.02" length="short" rot="R270"/>
+<pin name="J1-26/XDCR_PWR" x="40.64" y="33.02" length="short" rot="R270"/>
 </symbol>
 <symbol name="BANANA_JACK">
 <circle x="0" y="0" radius="1.2951" width="0.254" layer="94"/>
