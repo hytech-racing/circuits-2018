@@ -3709,16 +3709,16 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="R8" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="12k"/>
 <part name="BOARD_TEMP" library="HyTechDevices" deviceset="THERMISTOR_NCP21" device="0805"/>
 <part name="R9" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="10k"/>
-<part name="R10" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="100"/>
-<part name="R11" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="100"/>
-<part name="R12" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="100"/>
+<part name="R10" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="43"/>
+<part name="R11" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="43"/>
+<part name="R12" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="33"/>
 <part name="BMS_LATCH_SSR" library="HyTechDevices" deviceset="CPC1002N" device=""/>
-<part name="R13" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="100"/>
-<part name="LED1" library="HyTechDevices" deviceset="LED" device="-0805"/>
-<part name="LED2" library="HyTechDevices" deviceset="LED" device="-0805"/>
-<part name="LED3" library="HyTechDevices" deviceset="LED" device="-0805"/>
-<part name="LED4" library="HyTechDevices" deviceset="LED" device="-0805"/>
-<part name="LED5" library="HyTechDevices" deviceset="LED" device="-0805"/>
+<part name="R13" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="33"/>
+<part name="LED1" library="HyTechDevices" deviceset="LED" device="-0805" value="White"/>
+<part name="LED2" library="HyTechDevices" deviceset="LED" device="-0805" value="White"/>
+<part name="LED3" library="HyTechDevices" deviceset="LED" device="-0805" value="Green"/>
+<part name="LED4" library="HyTechDevices" deviceset="LED" device="-0805" value="Red"/>
+<part name="LED5" library="HyTechDevices" deviceset="LED" device="-0805" value="Yellow"/>
 <part name="R14" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="820"/>
 <part name="GND6" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="R15" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="120"/>
@@ -3732,13 +3732,13 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="D2" library="HyTechDevices" deviceset="DIODE" device="0805"/>
 <part name="D3" library="HyTechDevices" deviceset="DIODE" device="0805"/>
 <part name="INVERTER_SSR" library="HyTechDevices" deviceset="CPC1002N" device=""/>
-<part name="LED6" library="HyTechDevices" deviceset="LED" device="-0805"/>
+<part name="LED6" library="HyTechDevices" deviceset="LED" device="-0805" value="Red"/>
 <part name="GND9" library="HyTechSymbols" deviceset="GND" device=""/>
-<part name="R16" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="100"/>
+<part name="R16" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="43"/>
 <part name="IMD_SHUTDOWN1" library="HyTechDevices" deviceset="G2RL-2-DC12" device=""/>
 <part name="GND19" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="R17" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="820"/>
-<part name="LED7" library="HyTechDevices" deviceset="LED" device="-0805"/>
+<part name="LED7" library="HyTechDevices" deviceset="LED" device="-0805" value="Green"/>
 <part name="GND20" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" deviceset="+5V" device=""/>
 <part name="P+2" library="supply1" deviceset="+5V" device=""/>
@@ -3753,9 +3753,9 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="GND23" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="P+6" library="supply1" deviceset="+5V" device=""/>
 <part name="IMD_SSR" library="HyTechDevices" deviceset="CPC1002N" device=""/>
-<part name="LED9" library="HyTechDevices" deviceset="LED" device="-0805"/>
+<part name="LED9" library="HyTechDevices" deviceset="LED" device="-0805" value="Yellow"/>
 <part name="GND24" library="HyTechSymbols" deviceset="GND" device=""/>
-<part name="R21" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="680"/>
+<part name="R21" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="820"/>
 <part name="P+8" library="supply1" deviceset="+12V" device=""/>
 <part name="P+9" library="supply1" deviceset="+12V" device=""/>
 <part name="P+10" library="supply1" deviceset="+12V" device=""/>
@@ -3772,10 +3772,10 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="GND26" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="GND11" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="LED10" library="HyTechDevices" deviceset="LED" device="-0805" value="Red"/>
-<part name="R22" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="82"/>
+<part name="R22" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="100"/>
 <part name="GND27" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="LED11" library="HyTechDevices" deviceset="LED" device="-0805" value="Green"/>
-<part name="R23" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="20"/>
+<part name="R23" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="33"/>
 <part name="GND28" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="REG1" library="HyTechDevices" deviceset="TLV1117LV33" device=""/>
 <part name="GND29" library="HyTechSymbols" deviceset="GND" device=""/>
@@ -3807,12 +3807,12 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="PUMP_SSR" library="HyTechDevices" deviceset="CPC1002N" device=""/>
 <part name="P+16" library="supply1" deviceset="+12V" device=""/>
 <part name="P+17" library="supply1" deviceset="+12V" device=""/>
-<part name="R27" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES"/>
-<part name="R28" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES"/>
+<part name="R27" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="33"/>
+<part name="R28" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="33"/>
 <part name="GND36" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="GND37" library="HyTechSymbols" deviceset="GND" device=""/>
-<part name="LED12" library="HyTechDevices" deviceset="LED" device="-0805"/>
-<part name="LED13" library="HyTechDevices" deviceset="LED" device="-0805"/>
+<part name="LED12" library="HyTechDevices" deviceset="LED" device="-0805" value="Red"/>
+<part name="LED13" library="HyTechDevices" deviceset="LED" device="-0805" value="Red"/>
 <part name="REG2" library="HyTechDevices" deviceset="5V_REGULATOR_LM340-N" device="LM340MPX-5.0/NOPB" value="5V"/>
 <part name="GND38" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="C5" library="HyTechDevices" deviceset="CAP" device="0805" value=".22uF"/>
@@ -3829,10 +3829,10 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="P+22" library="supply1" deviceset="+12V" device=""/>
 <part name="U$10" library="HyTechDevices" deviceset="JUMPER" device="" value="JUMPER"/>
 <part name="U$11" library="HyTechDevices" deviceset="JUMPER" device="" value="JUMPER"/>
-<part name="R29" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="120"/>
-<part name="R30" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="120"/>
-<part name="LED14" library="HyTechDevices" deviceset="LED" device="-0805"/>
-<part name="LED15" library="HyTechDevices" deviceset="LED" device="-0805"/>
+<part name="R29" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="43"/>
+<part name="R30" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="43"/>
+<part name="LED14" library="HyTechDevices" deviceset="LED" device="-0805" value="Red"/>
+<part name="LED15" library="HyTechDevices" deviceset="LED" device="-0805" value="Red"/>
 <part name="GND40" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="GND41" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="U$8" library="HyTechDevices" deviceset="MC34152" device=""/>
@@ -3865,16 +3865,16 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="266.7" y1="-5.08" x2="127" y2="-5.08" width="0.1524" layer="90"/>
 <wire x1="127" y1="-5.08" x2="127" y2="91.44" width="0.1524" layer="90"/>
 <text x="127" y="91.44" size="5.08" layer="90">Cooling</text>
-<wire x1="127" y1="238.76" x2="187.96" y2="238.76" width="0.1524" layer="90"/>
-<wire x1="187.96" y1="238.76" x2="187.96" y2="180.34" width="0.1524" layer="90"/>
-<wire x1="187.96" y1="180.34" x2="127" y2="180.34" width="0.1524" layer="90"/>
-<wire x1="127" y1="180.34" x2="127" y2="238.76" width="0.1524" layer="90"/>
+<wire x1="127" y1="238.76" x2="236.22" y2="238.76" width="0.1524" layer="90"/>
+<wire x1="236.22" y1="238.76" x2="236.22" y2="190.5" width="0.1524" layer="90"/>
+<wire x1="236.22" y1="190.5" x2="127" y2="190.5" width="0.1524" layer="90"/>
+<wire x1="127" y1="190.5" x2="127" y2="238.76" width="0.1524" layer="90"/>
 <text x="127" y="238.76" size="5.08" layer="90">Power</text>
-<wire x1="127" y1="170.18" x2="266.7" y2="170.18" width="0.1524" layer="90"/>
-<wire x1="266.7" y1="170.18" x2="266.7" y2="101.6" width="0.1524" layer="90"/>
+<wire x1="127" y1="180.34" x2="266.7" y2="180.34" width="0.1524" layer="90"/>
+<wire x1="266.7" y1="180.34" x2="266.7" y2="101.6" width="0.1524" layer="90"/>
 <wire x1="266.7" y1="101.6" x2="127" y2="101.6" width="0.1524" layer="90"/>
-<wire x1="127" y1="101.6" x2="127" y2="170.18" width="0.1524" layer="90"/>
-<text x="127" y="170.18" size="5.08" layer="90">Relays</text>
+<wire x1="127" y1="101.6" x2="127" y2="180.34" width="0.1524" layer="90"/>
+<text x="127" y="180.34" size="5.08" layer="90">Relays</text>
 <wire x1="274.32" y1="238.76" x2="426.72" y2="238.76" width="0.1524" layer="90"/>
 <wire x1="426.72" y1="238.76" x2="426.72" y2="142.24" width="0.1524" layer="90"/>
 <wire x1="426.72" y1="142.24" x2="274.32" y2="142.24" width="0.1524" layer="90"/>
@@ -3894,7 +3894,7 @@ GPIO_SSR not installed</text>
 <instance part="BUS1" gate="-3" x="48.26" y="114.3" rot="MR0"/>
 <instance part="BUS1" gate="-4" x="48.26" y="111.76" rot="MR0"/>
 <instance part="REG" gate="G$1" x="152.4" y="208.28"/>
-<instance part="GND1" gate="1" x="147.32" y="200.66" rot="R270"/>
+<instance part="GND1" gate="1" x="152.4" y="195.58"/>
 <instance part="U$3" gate="G$1" x="337.82" y="182.88"/>
 <instance part="GND10" gate="1" x="335.28" y="223.52" rot="R180"/>
 <instance part="CAN_TRANSCEIVER" gate="G$1" x="314.96" y="218.44" rot="R180"/>
@@ -3911,7 +3911,7 @@ GPIO_SSR not installed</text>
 <instance part="GND15" gate="1" x="60.96" y="116.84" rot="R90"/>
 <instance part="GND16" gate="1" x="60.96" y="93.98" rot="MR270"/>
 <instance part="BRAKE_LIGHT_SSR" gate="G$1" x="182.88" y="154.94"/>
-<instance part="GND17" gate="1" x="160.02" y="149.86"/>
+<instance part="GND17" gate="1" x="157.48" y="149.86"/>
 <instance part="GND18" gate="1" x="292.1" y="210.82" rot="R270"/>
 <instance part="BMS_SSR" gate="G$1" x="375.92" y="101.6" rot="MR0"/>
 <instance part="GND3" gate="1" x="411.48" y="99.06" rot="R90"/>
@@ -3927,17 +3927,17 @@ GPIO_SSR not installed</text>
 <instance part="BOARD_TEMP" gate="G$1" x="396.24" y="228.6"/>
 <instance part="R9" gate="G$1" x="391.16" y="218.44" rot="R180"/>
 <instance part="R10" gate="G$1" x="157.48" y="157.48" rot="R180"/>
-<instance part="R11" gate="G$1" x="393.7" y="104.14"/>
+<instance part="R11" gate="G$1" x="393.7" y="106.68"/>
 <instance part="R12" gate="G$1" x="325.12" y="91.44"/>
 <instance part="BMS_LATCH_SSR" gate="G$1" x="378.46" y="83.82" rot="MR0"/>
-<instance part="R13" gate="G$1" x="396.24" y="88.9" rot="R180"/>
+<instance part="R13" gate="G$1" x="396.24" y="88.9" rot="MR0"/>
 <instance part="LED1" gate="LED" x="322.58" y="81.28" rot="R90"/>
 <instance part="LED2" gate="LED" x="393.7" y="78.74" rot="R90"/>
 <instance part="LED3" gate="LED" x="401.32" y="99.06" rot="R90"/>
 <instance part="LED4" gate="LED" x="167.64" y="152.4" rot="R270"/>
-<instance part="LED5" gate="LED" x="337.82" y="66.04" rot="R180"/>
-<instance part="R14" gate="G$1" x="337.82" y="55.88" rot="R90"/>
-<instance part="GND6" gate="1" x="340.36" y="73.66" rot="R90"/>
+<instance part="LED5" gate="LED" x="340.36" y="66.04" rot="R180"/>
+<instance part="R14" gate="G$1" x="340.36" y="55.88" rot="R90"/>
+<instance part="GND6" gate="1" x="342.9" y="73.66" rot="R90"/>
 <instance part="R15" gate="G$1" x="289.56" y="228.6" rot="MR180"/>
 <instance part="C1" gate="G$1" x="137.16" y="210.82"/>
 <instance part="C2" gate="G$1" x="162.56" y="210.82"/>
@@ -3959,25 +3959,25 @@ GPIO_SSR not installed</text>
 <instance part="R16" gate="G$1" x="195.58" y="137.16"/>
 <instance part="IMD_SHUTDOWN1" gate="G$1" x="373.38" y="66.04" rot="R270"/>
 <instance part="GND19" gate="1" x="386.08" y="66.04" rot="R180"/>
-<instance part="R17" gate="G$1" x="408.94" y="53.34" rot="R90"/>
-<instance part="LED7" gate="LED" x="408.94" y="63.5" rot="R180"/>
-<instance part="GND20" gate="1" x="411.48" y="71.12" rot="R90"/>
+<instance part="R17" gate="G$1" x="411.48" y="53.34" rot="R90"/>
+<instance part="LED7" gate="LED" x="411.48" y="63.5" rot="R180"/>
+<instance part="GND20" gate="1" x="414.02" y="71.12" rot="R90"/>
 <instance part="P+1" gate="1" x="320.04" y="228.6"/>
 <instance part="P+2" gate="1" x="419.1" y="228.6" rot="R270"/>
 <instance part="P+3" gate="1" x="162.56" y="200.66" rot="R180"/>
 <instance part="P+4" gate="1" x="365.76" y="223.52" rot="R270"/>
-<instance part="GND21" gate="1" x="403.86" y="121.92" rot="R180"/>
-<instance part="R19" gate="G$1" x="403.86" y="111.76" rot="R90"/>
-<instance part="R18" gate="G$1" x="335.28" y="114.3" rot="R90"/>
-<instance part="GND22" gate="1" x="335.28" y="124.46" rot="R180"/>
-<instance part="LED8" gate="LED" x="160.02" y="187.96" rot="R90"/>
-<instance part="R20" gate="G$1" x="149.86" y="187.96"/>
-<instance part="GND23" gate="1" x="170.18" y="187.96" rot="R90"/>
-<instance part="P+6" gate="1" x="139.7" y="187.96" rot="R90"/>
+<instance part="GND21" gate="1" x="403.86" y="124.46" rot="R180"/>
+<instance part="R19" gate="G$1" x="403.86" y="114.3" rot="R90"/>
+<instance part="R18" gate="G$1" x="335.28" y="116.84" rot="R90"/>
+<instance part="GND22" gate="1" x="335.28" y="127" rot="R180"/>
+<instance part="LED8" gate="LED" x="210.82" y="215.9" rot="R90"/>
+<instance part="R20" gate="G$1" x="200.66" y="215.9"/>
+<instance part="GND23" gate="1" x="220.98" y="215.9" rot="R90"/>
+<instance part="P+6" gate="1" x="190.5" y="215.9" rot="R90"/>
 <instance part="IMD_SSR" gate="G$1" x="304.8" y="104.14" rot="MR0"/>
 <instance part="LED9" gate="LED" x="330.2" y="101.6" rot="R90"/>
 <instance part="GND24" gate="1" x="340.36" y="101.6" rot="R90"/>
-<instance part="R21" gate="G$1" x="322.58" y="106.68" rot="R180"/>
+<instance part="R21" gate="G$1" x="322.58" y="109.22" rot="MR0"/>
 <instance part="P+8" gate="1" x="137.16" y="116.84" rot="R90"/>
 <instance part="P+9" gate="1" x="160.02" y="132.08" rot="R90"/>
 <instance part="P+10" gate="1" x="284.48" y="106.68" rot="R90"/>
@@ -4064,17 +4064,17 @@ GPIO_SSR not installed</text>
 <instance part="P+18" gate="1" x="134.62" y="228.6" rot="MR270"/>
 <instance part="P+20" gate="1" x="88.9" y="119.38" rot="R270"/>
 <instance part="P+21" gate="1" x="88.9" y="96.52" rot="R270"/>
-<instance part="GPIO_SSR2" gate="G$1" x="241.3" y="119.38"/>
-<instance part="GPIO_SSR1" gate="G$1" x="241.3" y="152.4"/>
-<instance part="P+11" gate="1" x="256.54" y="154.94" rot="R270"/>
-<instance part="P+22" gate="1" x="256.54" y="121.92" rot="R270"/>
-<instance part="U$10" gate="G$1" x="241.3" y="165.1"/>
-<instance part="U$11" gate="G$1" x="241.3" y="132.08"/>
-<instance part="R29" gate="G$1" x="233.68" y="139.7" rot="MR180"/>
+<instance part="GPIO_SSR2" gate="G$1" x="241.3" y="121.92"/>
+<instance part="GPIO_SSR1" gate="G$1" x="241.3" y="160.02"/>
+<instance part="P+11" gate="1" x="256.54" y="162.56" rot="R270"/>
+<instance part="P+22" gate="1" x="256.54" y="124.46" rot="R270"/>
+<instance part="U$10" gate="G$1" x="241.3" y="172.72"/>
+<instance part="U$11" gate="G$1" x="241.3" y="134.62"/>
+<instance part="R29" gate="G$1" x="233.68" y="144.78" rot="MR180"/>
 <instance part="R30" gate="G$1" x="233.68" y="106.68" rot="MR180"/>
-<instance part="LED14" gate="LED" x="243.84" y="139.7" rot="R90"/>
+<instance part="LED14" gate="LED" x="243.84" y="144.78" rot="R90"/>
 <instance part="LED15" gate="LED" x="243.84" y="106.68" rot="R90"/>
-<instance part="GND40" gate="1" x="254" y="139.7" rot="R90"/>
+<instance part="GND40" gate="1" x="254" y="144.78" rot="R90"/>
 <instance part="GND41" gate="1" x="254" y="106.68" rot="R90"/>
 <instance part="U$8" gate="G$1" x="147.32" y="45.72"/>
 <instance part="U$9" gate="G$1" x="147.32" y="15.24"/>
@@ -4094,7 +4094,7 @@ GPIO_SSR not installed</text>
 <segment>
 <pinref part="REG" gate="G$1" pin="GND"/>
 <pinref part="GND1" gate="1" pin="GND"/>
-<wire x1="152.4" y1="200.66" x2="149.86" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="200.66" x2="152.4" y2="198.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="GND"/>
@@ -4161,12 +4161,12 @@ GPIO_SSR not installed</text>
 <segment>
 <pinref part="LED4" gate="LED" pin="C"/>
 <pinref part="GND17" gate="1" pin="GND"/>
-<wire x1="160.02" y1="152.4" x2="162.56" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="152.4" x2="162.56" y2="152.4" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND6" gate="1" pin="GND"/>
 <pinref part="LED5" gate="LED" pin="C"/>
-<wire x1="337.82" y1="73.66" x2="337.82" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="340.36" y1="73.66" x2="340.36" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C1" gate="G$1" pin="1"/>
@@ -4203,22 +4203,22 @@ GPIO_SSR not installed</text>
 <segment>
 <pinref part="GND20" gate="1" pin="GND"/>
 <pinref part="LED7" gate="LED" pin="C"/>
-<wire x1="408.94" y1="71.12" x2="408.94" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="411.48" y1="71.12" x2="411.48" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R19" gate="G$1" pin="2"/>
 <pinref part="GND21" gate="1" pin="GND"/>
-<wire x1="403.86" y1="119.38" x2="403.86" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="403.86" y1="121.92" x2="403.86" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R18" gate="G$1" pin="2"/>
 <pinref part="GND22" gate="1" pin="GND"/>
-<wire x1="335.28" y1="121.92" x2="335.28" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="335.28" y1="124.46" x2="335.28" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="LED8" gate="LED" pin="C"/>
 <pinref part="GND23" gate="1" pin="GND"/>
-<wire x1="167.64" y1="187.96" x2="165.1" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="215.9" x2="215.9" y2="215.9" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="LED9" gate="LED" pin="C"/>
@@ -4309,7 +4309,7 @@ GPIO_SSR not installed</text>
 <segment>
 <pinref part="LED14" gate="LED" pin="C"/>
 <pinref part="GND40" gate="1" pin="GND"/>
-<wire x1="251.46" y1="139.7" x2="248.92" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="251.46" y1="144.78" x2="248.92" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="LED15" gate="LED" pin="C"/>
@@ -4365,7 +4365,7 @@ GPIO_SSR not installed</text>
 <pinref part="D6" gate="1" pin="C"/>
 <wire x1="332.74" y1="63.5" x2="325.12" y2="63.5" width="0.1524" layer="91"/>
 <junction x="332.74" y="63.5"/>
-<wire x1="332.74" y1="50.8" x2="337.82" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="332.74" y1="50.8" x2="340.36" y2="50.8" width="0.1524" layer="91"/>
 <junction x="332.74" y="50.8"/>
 <label x="304.8" y="73.66" size="1.778" layer="95"/>
 </segment>
@@ -4508,11 +4508,11 @@ GPIO_SSR not installed</text>
 <segment>
 <pinref part="R11" gate="G$1" pin="2"/>
 <pinref part="R19" gate="G$1" pin="1"/>
-<wire x1="403.86" y1="106.68" x2="403.86" y2="104.14" width="0.1524" layer="91"/>
-<label x="406.4" y="104.14" size="1.27" layer="95" xref="yes"/>
-<wire x1="403.86" y1="104.14" x2="398.78" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="406.4" y1="104.14" x2="403.86" y2="104.14" width="0.1524" layer="91"/>
-<junction x="403.86" y="104.14"/>
+<wire x1="403.86" y1="109.22" x2="403.86" y2="106.68" width="0.1524" layer="91"/>
+<label x="406.4" y="106.68" size="1.27" layer="95" xref="yes"/>
+<wire x1="403.86" y1="106.68" x2="398.78" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="406.4" y1="106.68" x2="403.86" y2="106.68" width="0.1524" layer="91"/>
+<junction x="403.86" y="106.68"/>
 </segment>
 </net>
 <net name="OKHS_READ" class="0">
@@ -4571,22 +4571,15 @@ GPIO_SSR not installed</text>
 <wire x1="383.54" y1="228.6" x2="391.16" y2="228.6" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="BMS_LATCH_CTRL" class="0">
-<segment>
-<pinref part="U$3" gate="G$1" pin="D11"/>
-<wire x1="335.28" y1="190.5" x2="332.74" y2="190.5" width="0.1524" layer="91"/>
-<label x="332.74" y="190.5" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
 <net name="OKHS" class="0">
 <segment>
 <pinref part="R18" gate="G$1" pin="1"/>
-<wire x1="335.28" y1="109.22" x2="335.28" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="335.28" y1="111.76" x2="335.28" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="R21" gate="G$1" pin="1"/>
-<wire x1="327.66" y1="106.68" x2="335.28" y2="106.68" width="0.1524" layer="91"/>
-<label x="337.82" y="106.68" size="1.27" layer="95" xref="yes"/>
-<wire x1="337.82" y1="106.68" x2="335.28" y2="106.68" width="0.1524" layer="91"/>
-<junction x="335.28" y="106.68"/>
+<wire x1="327.66" y1="109.22" x2="335.28" y2="109.22" width="0.1524" layer="91"/>
+<label x="337.82" y="109.22" size="1.27" layer="95" xref="yes"/>
+<wire x1="337.82" y1="109.22" x2="335.28" y2="109.22" width="0.1524" layer="91"/>
+<junction x="335.28" y="109.22"/>
 </segment>
 <segment>
 <pinref part="X3" gate="-1" pin="S"/>
@@ -4622,7 +4615,7 @@ GPIO_SSR not installed</text>
 <segment>
 <pinref part="R11" gate="G$1" pin="1"/>
 <pinref part="BMS_SSR" gate="G$1" pin="CONTROL+"/>
-<wire x1="388.62" y1="104.14" x2="386.08" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="388.62" y1="106.68" x2="386.08" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -4643,7 +4636,7 @@ GPIO_SSR not installed</text>
 <segment>
 <pinref part="R14" gate="G$1" pin="2"/>
 <pinref part="LED5" gate="LED" pin="A"/>
-<wire x1="337.82" y1="60.96" x2="337.82" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="340.36" y1="60.96" x2="340.36" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="INVERTER_CTRL" class="0">
@@ -4728,13 +4721,6 @@ GPIO_SSR not installed</text>
 <pinref part="R12" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="IMD_LATCH_CTRL" class="0">
-<segment>
-<pinref part="U$3" gate="G$1" pin="D8(TX3)"/>
-<wire x1="335.28" y1="198.12" x2="332.74" y2="198.12" width="0.1524" layer="91"/>
-<label x="332.74" y="198.12" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
 <net name="N$16" class="0">
 <segment>
 <pinref part="LED2" gate="LED" pin="A"/>
@@ -4756,12 +4742,12 @@ GPIO_SSR not installed</text>
 <pinref part="BMS_LATCH_SSR" gate="G$1" pin="DC-"/>
 <pinref part="IMD_SHUTDOWN1" gate="G$1" pin="4"/>
 <wire x1="368.3" y1="71.12" x2="368.3" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="383.54" y1="48.26" x2="408.94" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="408.94" y1="48.26" x2="403.86" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="383.54" y1="48.26" x2="411.48" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="411.48" y1="48.26" x2="403.86" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="403.86" y1="48.26" x2="403.86" y2="60.96" width="0.1524" layer="91"/>
 <junction x="368.3" y="71.12"/>
 <pinref part="R17" gate="G$1" pin="1"/>
-<junction x="408.94" y="48.26"/>
+<junction x="411.48" y="48.26"/>
 <label x="375.92" y="71.12" size="1.778" layer="95"/>
 <wire x1="403.86" y1="60.96" x2="403.86" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="403.86" y1="71.12" x2="368.3" y2="71.12" width="0.1524" layer="91"/>
@@ -4796,7 +4782,7 @@ GPIO_SSR not installed</text>
 <segment>
 <pinref part="R17" gate="G$1" pin="2"/>
 <pinref part="LED7" gate="LED" pin="A"/>
-<wire x1="408.94" y1="58.42" x2="408.94" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="411.48" y1="58.42" x2="411.48" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -4827,7 +4813,7 @@ GPIO_SSR not installed</text>
 <segment>
 <pinref part="R20" gate="G$1" pin="1"/>
 <pinref part="P+6" gate="1" pin="+5V"/>
-<wire x1="144.78" y1="187.96" x2="142.24" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="215.9" x2="193.04" y2="215.9" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$9" gate="G$1" pin="VCC"/>
@@ -4856,7 +4842,7 @@ GPIO_SSR not installed</text>
 <segment>
 <pinref part="LED8" gate="LED" pin="A"/>
 <pinref part="R20" gate="G$1" pin="2"/>
-<wire x1="154.94" y1="187.96" x2="157.48" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="215.9" x2="208.28" y2="215.9" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="IMD_PWR_STEP" class="0">
@@ -4883,7 +4869,7 @@ GPIO_SSR not installed</text>
 <net name="N$31" class="0">
 <segment>
 <pinref part="IMD_SSR" gate="G$1" pin="CONTROL+"/>
-<wire x1="317.5" y1="106.68" x2="314.96" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="317.5" y1="109.22" x2="314.96" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="R21" gate="G$1" pin="2"/>
 </segment>
 </net>
@@ -4962,12 +4948,12 @@ GPIO_SSR not installed</text>
 <segment>
 <pinref part="GPIO_SSR1" gate="G$1" pin="DC+"/>
 <pinref part="P+11" gate="1" pin="+12V"/>
-<wire x1="254" y1="154.94" x2="251.46" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="254" y1="162.56" x2="251.46" y2="162.56" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GPIO_SSR2" gate="G$1" pin="DC+"/>
 <pinref part="P+22" gate="1" pin="+12V"/>
-<wire x1="254" y1="121.92" x2="251.46" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="254" y1="124.46" x2="251.46" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="FUSE_BUS_1" gate="G$1" pin="P1"/>
@@ -5303,13 +5289,13 @@ GPIO_SSR not installed</text>
 </segment>
 <segment>
 <pinref part="U$11" gate="G$1" pin="P$2"/>
-<wire x1="246.38" y1="129.54" x2="254" y2="129.54" width="0.1524" layer="91"/>
-<label x="254" y="129.54" size="1.27" layer="95" xref="yes"/>
+<wire x1="246.38" y1="132.08" x2="254" y2="132.08" width="0.1524" layer="91"/>
+<label x="254" y="132.08" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="GPIO_SSR2" gate="G$1" pin="DC-"/>
-<wire x1="251.46" y1="116.84" x2="254" y2="116.84" width="0.1524" layer="91"/>
-<label x="254" y="116.84" size="1.27" layer="95" xref="yes"/>
+<wire x1="251.46" y1="119.38" x2="254" y2="119.38" width="0.1524" layer="91"/>
+<label x="254" y="119.38" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="BRAKE_LIGHT_CTRL" class="0">
@@ -5332,13 +5318,13 @@ GPIO_SSR not installed</text>
 </segment>
 <segment>
 <pinref part="U$11" gate="G$1" pin="P$1"/>
-<wire x1="241.3" y1="129.54" x2="228.6" y2="129.54" width="0.1524" layer="91"/>
-<label x="228.6" y="129.54" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="241.3" y1="132.08" x2="228.6" y2="132.08" width="0.1524" layer="91"/>
+<label x="228.6" y="132.08" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="GPIO_SSR2" gate="G$1" pin="CONTROL+"/>
-<wire x1="231.14" y1="121.92" x2="228.6" y2="121.92" width="0.1524" layer="91"/>
-<label x="228.6" y="121.92" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="231.14" y1="124.46" x2="228.6" y2="124.46" width="0.1524" layer="91"/>
+<label x="228.6" y="124.46" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="GPIO_CTRL3" class="0">
@@ -5356,25 +5342,25 @@ GPIO_SSR not installed</text>
 </segment>
 <segment>
 <pinref part="U$10" gate="G$1" pin="P$1"/>
-<wire x1="241.3" y1="162.56" x2="228.6" y2="162.56" width="0.1524" layer="91"/>
-<label x="228.6" y="162.56" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="241.3" y1="170.18" x2="228.6" y2="170.18" width="0.1524" layer="91"/>
+<label x="228.6" y="170.18" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="GPIO_SSR1" gate="G$1" pin="CONTROL+"/>
-<wire x1="231.14" y1="154.94" x2="228.6" y2="154.94" width="0.1524" layer="91"/>
-<label x="228.6" y="154.94" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="231.14" y1="162.56" x2="228.6" y2="162.56" width="0.1524" layer="91"/>
+<label x="228.6" y="162.56" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="GPIO_1" class="0">
 <segment>
 <pinref part="GPIO_SSR1" gate="G$1" pin="DC-"/>
-<wire x1="251.46" y1="149.86" x2="254" y2="149.86" width="0.1524" layer="91"/>
-<label x="254" y="149.86" size="1.27" layer="95" xref="yes"/>
+<wire x1="251.46" y1="157.48" x2="254" y2="157.48" width="0.1524" layer="91"/>
+<label x="254" y="157.48" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U$10" gate="G$1" pin="P$2"/>
-<wire x1="246.38" y1="162.56" x2="254" y2="162.56" width="0.1524" layer="91"/>
-<label x="254" y="162.56" size="1.27" layer="95" xref="yes"/>
+<wire x1="246.38" y1="170.18" x2="254" y2="170.18" width="0.1524" layer="91"/>
+<label x="254" y="170.18" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="X3" gate="-6" pin="S"/>
@@ -5390,24 +5376,24 @@ GPIO_SSR not installed</text>
 <net name="N$6" class="0">
 <segment>
 <pinref part="GPIO_SSR1" gate="G$1" pin="CONTROL-"/>
-<wire x1="231.14" y1="149.86" x2="228.6" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="157.48" x2="228.6" y2="157.48" width="0.1524" layer="91"/>
 <pinref part="R29" gate="G$1" pin="1"/>
-<wire x1="228.6" y1="149.86" x2="228.6" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="157.48" x2="228.6" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$8" class="0">
 <segment>
 <pinref part="GPIO_SSR2" gate="G$1" pin="CONTROL-"/>
-<wire x1="231.14" y1="116.84" x2="228.6" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="119.38" x2="228.6" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="R30" gate="G$1" pin="1"/>
-<wire x1="228.6" y1="116.84" x2="228.6" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="119.38" x2="228.6" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$13" class="0">
 <segment>
 <pinref part="R29" gate="G$1" pin="2"/>
 <pinref part="LED14" gate="LED" pin="A"/>
-<wire x1="241.3" y1="139.7" x2="238.76" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="144.78" x2="238.76" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$14" class="0">
