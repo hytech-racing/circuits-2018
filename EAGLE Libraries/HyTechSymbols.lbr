@@ -490,7 +490,7 @@ Precharger</text>
 <pin name="J2-18/SIN-" x="53.34" y="33.02" length="short" rot="R270"/>
 <pin name="J2-4/COS+" x="55.88" y="33.02" length="short" rot="R270"/>
 <pin name="J2-12/COS-" x="58.42" y="33.02" length="short" rot="R270"/>
-<pin name="J1-19/AGND" x="60.96" y="33.02" length="short" rot="R270"/>
+<pin name="J1-15/AGND" x="60.96" y="33.02" length="short" rot="R270"/>
 <pin name="J1-24/AIN2_TEMP" x="43.18" y="33.02" length="short" rot="R270"/>
 <pin name="J1-28/XDCR_PWR" x="33.02" y="33.02" length="short" rot="R270"/>
 <pin name="J1-26/XDCR_PWR" x="40.64" y="33.02" length="short" rot="R270"/>
