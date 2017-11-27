@@ -3791,7 +3791,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="SUPPLY1" library="supply2" deviceset="GND1" device=""/>
 <part name="X3" library="HyTechDevices" deviceset="CONNECTOR-10" device="MX150L_VERTICAL-10"/>
 <part name="X4" library="HyTechDevices" deviceset="CONNECTOR-10" device="MX150L_VERTICAL-10"/>
-<part name="P+15" library="supply1" deviceset="+12V" device=""/>
 <part name="GND32" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="GND33" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="SUPPLY4" library="supply2" deviceset="GND1" device=""/>
@@ -3819,7 +3818,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="C6" library="HyTechDevices" deviceset="CAP" device="0805" value=".1uF"/>
 <part name="GND39" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="P+19" library="supply1" deviceset="+12V" device=""/>
-<part name="FH_FUSE" library="HyTechDevices" deviceset="FUSE" device="_MINIBLADE" value="5A"/>
+<part name="FH_FUSE" library="HyTechDevices" deviceset="FUSE" device="_MINIBLADE" value="8A"/>
 <part name="P+18" library="supply1" deviceset="+12V" device=""/>
 <part name="P+20" library="supply1" deviceset="+12V" device=""/>
 <part name="P+21" library="supply1" deviceset="+12V" device=""/>
@@ -3845,14 +3844,17 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="P+26" library="supply1" deviceset="+5V" device=""/>
 <part name="S1" library="HyTechDevices" deviceset="BTN_10-XX" device="SMD"/>
 <part name="GND2" library="HyTechSymbols" deviceset="GND" device=""/>
+<part name="FSAE_FUSE" library="HyTechDevices" deviceset="FUSE" device="_MINIBLADE" value="8A"/>
+<part name="P+7" library="supply1" deviceset="+12V" device=""/>
+<part name="SHUTDWN_FUSE" library="HyTechDevices" deviceset="FUSE" device="_MINIBLADE" value="5A"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="137.16" y="220.98" size="1.778" layer="97">Install fuse for Formula Hybrid</text>
-<wire x1="0" y1="162.56" x2="93.98" y2="162.56" width="0.1524" layer="90"/>
-<wire x1="93.98" y1="162.56" x2="93.98" y2="0" width="0.1524" layer="90"/>
-<wire x1="93.98" y1="0" x2="0" y2="0" width="0.1524" layer="90"/>
+<text x="149.86" y="220.98" size="1.778" layer="97">Install FH_FUSE for Formula Hybrid</text>
+<wire x1="0" y1="162.56" x2="96.52" y2="162.56" width="0.1524" layer="90"/>
+<wire x1="96.52" y1="162.56" x2="96.52" y2="0" width="0.1524" layer="90"/>
+<wire x1="96.52" y1="0" x2="0" y2="0" width="0.1524" layer="90"/>
 <wire x1="0" y1="0" x2="0" y2="162.56" width="0.1524" layer="90"/>
 <text x="0" y="162.56" size="5.08" layer="90">Connectors</text>
 <wire x1="0" y1="238.76" x2="119.38" y2="238.76" width="0.1524" layer="90"/>
@@ -3865,9 +3867,9 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="266.7" y1="-5.08" x2="127" y2="-5.08" width="0.1524" layer="90"/>
 <wire x1="127" y1="-5.08" x2="127" y2="91.44" width="0.1524" layer="90"/>
 <text x="127" y="91.44" size="5.08" layer="90">Cooling</text>
-<wire x1="127" y1="238.76" x2="236.22" y2="238.76" width="0.1524" layer="90"/>
-<wire x1="236.22" y1="238.76" x2="236.22" y2="190.5" width="0.1524" layer="90"/>
-<wire x1="236.22" y1="190.5" x2="127" y2="190.5" width="0.1524" layer="90"/>
+<wire x1="127" y1="238.76" x2="251.46" y2="238.76" width="0.1524" layer="90"/>
+<wire x1="251.46" y1="238.76" x2="251.46" y2="190.5" width="0.1524" layer="90"/>
+<wire x1="251.46" y1="190.5" x2="127" y2="190.5" width="0.1524" layer="90"/>
 <wire x1="127" y1="190.5" x2="127" y2="238.76" width="0.1524" layer="90"/>
 <text x="127" y="238.76" size="5.08" layer="90">Power</text>
 <wire x1="127" y1="180.34" x2="266.7" y2="180.34" width="0.1524" layer="90"/>
@@ -3887,6 +3889,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <text x="274.32" y="132.08" size="5.08" layer="90">Latching Relays</text>
 <text x="198.12" y="104.14" size="1.778" layer="97">Install Jumper only if
 GPIO_SSR not installed</text>
+<text x="205.74" y="220.98" size="1.778" layer="97">Install FSAE_FUSE for FSAE</text>
 </plain>
 <instances>
 <instance part="BUS1" gate="-1" x="48.26" y="119.38" rot="MR0"/>
@@ -3941,7 +3944,7 @@ GPIO_SSR not installed</text>
 <instance part="R15" gate="G$1" x="289.56" y="228.6" rot="MR180"/>
 <instance part="C1" gate="G$1" x="137.16" y="210.82"/>
 <instance part="C2" gate="G$1" x="162.56" y="210.82"/>
-<instance part="GND7" gate="1" x="172.72" y="210.82"/>
+<instance part="GND7" gate="1" x="172.72" y="215.9" rot="R90"/>
 <instance part="U$1" gate="G$1" x="147.32" y="132.08" rot="R270"/>
 <instance part="GND8" gate="1" x="139.7" y="124.46"/>
 <instance part="X2" gate="-1" x="48.26" y="30.48" rot="MR0"/>
@@ -3970,10 +3973,10 @@ GPIO_SSR not installed</text>
 <instance part="R19" gate="G$1" x="403.86" y="114.3" rot="R90"/>
 <instance part="R18" gate="G$1" x="335.28" y="116.84" rot="R90"/>
 <instance part="GND22" gate="1" x="335.28" y="127" rot="R180"/>
-<instance part="LED8" gate="LED" x="210.82" y="215.9" rot="R90"/>
-<instance part="R20" gate="G$1" x="200.66" y="215.9"/>
-<instance part="GND23" gate="1" x="220.98" y="215.9" rot="R90"/>
-<instance part="P+6" gate="1" x="190.5" y="215.9" rot="R90"/>
+<instance part="LED8" gate="LED" x="223.52" y="198.12" rot="R90"/>
+<instance part="R20" gate="G$1" x="213.36" y="198.12"/>
+<instance part="GND23" gate="1" x="233.68" y="198.12" rot="R90"/>
+<instance part="P+6" gate="1" x="203.2" y="198.12" rot="R90"/>
 <instance part="IMD_SSR" gate="G$1" x="304.8" y="104.14" rot="MR0"/>
 <instance part="LED9" gate="LED" x="330.2" y="101.6" rot="R90"/>
 <instance part="GND24" gate="1" x="340.36" y="101.6" rot="R90"/>
@@ -4032,7 +4035,6 @@ GPIO_SSR not installed</text>
 <instance part="X4" gate="-8" x="48.26" y="137.16" rot="MR0"/>
 <instance part="X4" gate="-9" x="48.26" y="134.62" rot="MR0"/>
 <instance part="X4" gate="-10" x="48.26" y="132.08" rot="MR0"/>
-<instance part="P+15" gate="1" x="73.66" y="154.94" rot="R270"/>
 <instance part="GND32" gate="1" x="71.12" y="149.86" rot="R90"/>
 <instance part="GND33" gate="1" x="71.12" y="142.24" rot="R90"/>
 <instance part="SUPPLY4" gate="G$1" x="228.6" y="43.18" rot="R90"/>
@@ -4060,8 +4062,8 @@ GPIO_SSR not installed</text>
 <instance part="C6" gate="G$1" x="10.16" y="220.98" rot="R90"/>
 <instance part="GND39" gate="1" x="10.16" y="231.14" rot="R90"/>
 <instance part="P+19" gate="1" x="20.32" y="195.58" rot="R270"/>
-<instance part="FH_FUSE" gate="G$1" x="152.4" y="228.6"/>
-<instance part="P+18" gate="1" x="134.62" y="228.6" rot="MR270"/>
+<instance part="FH_FUSE" gate="G$1" x="162.56" y="228.6" rot="MR0"/>
+<instance part="P+18" gate="1" x="180.34" y="228.6" rot="R270"/>
 <instance part="P+20" gate="1" x="88.9" y="119.38" rot="R270"/>
 <instance part="P+21" gate="1" x="88.9" y="96.52" rot="R270"/>
 <instance part="GPIO_SSR2" gate="G$1" x="241.3" y="121.92"/>
@@ -4086,6 +4088,9 @@ GPIO_SSR not installed</text>
 <instance part="P+26" gate="1" x="406.4" y="88.9" rot="R270"/>
 <instance part="S1" gate="1" x="375.92" y="119.38" rot="R270"/>
 <instance part="GND2" gate="1" x="388.62" y="119.38" rot="R90"/>
+<instance part="FSAE_FUSE" gate="G$1" x="218.44" y="228.6" rot="MR0"/>
+<instance part="P+7" gate="1" x="236.22" y="228.6" rot="R270"/>
+<instance part="SHUTDWN_FUSE" gate="G$1" x="218.44" y="210.82" rot="MR0"/>
 </instances>
 <busses>
 </busses>
@@ -4172,8 +4177,7 @@ GPIO_SSR not installed</text>
 <pinref part="C1" gate="G$1" pin="1"/>
 <pinref part="C2" gate="G$1" pin="1"/>
 <wire x1="137.16" y1="215.9" x2="162.56" y2="215.9" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="215.9" x2="172.72" y2="215.9" width="0.1524" layer="91"/>
-<wire x1="172.72" y1="215.9" x2="172.72" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="215.9" x2="170.18" y2="215.9" width="0.1524" layer="91"/>
 <junction x="162.56" y="215.9"/>
 <pinref part="GND7" gate="1" pin="GND"/>
 </segment>
@@ -4218,7 +4222,7 @@ GPIO_SSR not installed</text>
 <segment>
 <pinref part="LED8" gate="LED" pin="C"/>
 <pinref part="GND23" gate="1" pin="GND"/>
-<wire x1="218.44" y1="215.9" x2="215.9" y2="215.9" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="198.12" x2="228.6" y2="198.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="LED9" gate="LED" pin="C"/>
@@ -4370,7 +4374,7 @@ GPIO_SSR not installed</text>
 <label x="304.8" y="73.66" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="SHUTDOWN_B" class="0">
+<net name="SHUTDOWN_C" class="0">
 <segment>
 <pinref part="IMD_SHUTDOWN1" gate="G$1" pin="5"/>
 <wire x1="383.54" y1="38.1" x2="386.08" y2="38.1" width="0.1524" layer="91"/>
@@ -4770,7 +4774,7 @@ GPIO_SSR not installed</text>
 <junction x="363.22" y="86.36"/>
 </segment>
 </net>
-<net name="SHUTDOWN_A" class="0">
+<net name="SHUTDOWN_B" class="0">
 <segment>
 <pinref part="IMD_SHUTDOWN1" gate="G$1" pin="6"/>
 <pinref part="IMD_SHUTDOWN" gate="G$1" pin="5"/>
@@ -4813,7 +4817,7 @@ GPIO_SSR not installed</text>
 <segment>
 <pinref part="R20" gate="G$1" pin="1"/>
 <pinref part="P+6" gate="1" pin="+5V"/>
-<wire x1="195.58" y1="215.9" x2="193.04" y2="215.9" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="198.12" x2="205.74" y2="198.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$9" gate="G$1" pin="VCC"/>
@@ -4842,7 +4846,7 @@ GPIO_SSR not installed</text>
 <segment>
 <pinref part="LED8" gate="LED" pin="A"/>
 <pinref part="R20" gate="G$1" pin="2"/>
-<wire x1="205.74" y1="215.9" x2="208.28" y2="215.9" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="198.12" x2="220.98" y2="198.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="IMD_PWR_STEP" class="0">
@@ -4918,11 +4922,6 @@ GPIO_SSR not installed</text>
 <pinref part="P+5" gate="1" pin="+12V"/>
 </segment>
 <segment>
-<pinref part="X4" gate="-1" pin="S"/>
-<pinref part="P+15" gate="1" pin="+12V"/>
-<wire x1="71.12" y1="154.94" x2="50.8" y2="154.94" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="FAN_SSR" gate="G$1" pin="DC+"/>
 <pinref part="P+16" gate="1" pin="+12V"/>
 <wire x1="193.04" y1="76.2" x2="190.5" y2="76.2" width="0.1524" layer="91"/>
@@ -4943,7 +4942,7 @@ GPIO_SSR not installed</text>
 <segment>
 <pinref part="FH_FUSE" gate="G$1" pin="P1"/>
 <pinref part="P+18" gate="1" pin="+12V"/>
-<wire x1="137.16" y1="228.6" x2="142.24" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="228.6" x2="172.72" y2="228.6" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GPIO_SSR1" gate="G$1" pin="DC+"/>
@@ -4960,13 +4959,13 @@ GPIO_SSR not installed</text>
 <pinref part="P+20" gate="1" pin="+12V"/>
 <wire x1="83.82" y1="119.38" x2="86.36" y2="119.38" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="FSAE_FUSE" gate="G$1" pin="P1"/>
+<wire x1="228.6" y1="228.6" x2="233.68" y2="228.6" width="0.1524" layer="91"/>
+<pinref part="P+7" gate="1" pin="+12V"/>
+</segment>
 </net>
 <net name="12VSUPPLY_BRB" class="0">
-<segment>
-<pinref part="IMD_SHUTDOWN" gate="G$1" pin="6"/>
-<label x="294.64" y="43.18" size="1.27" layer="95" rot="R180" xref="yes"/>
-<wire x1="297.18" y1="43.18" x2="294.64" y2="43.18" width="0.1524" layer="91"/>
-</segment>
 <segment>
 <pinref part="X4" gate="-2" pin="S"/>
 <wire x1="53.34" y1="152.4" x2="50.8" y2="152.4" width="0.1524" layer="91"/>
@@ -4979,8 +4978,13 @@ GPIO_SSR not installed</text>
 </segment>
 <segment>
 <pinref part="FH_FUSE" gate="G$1" pin="P2"/>
-<wire x1="162.56" y1="228.6" x2="165.1" y2="228.6" width="0.1524" layer="91"/>
-<label x="165.1" y="228.6" size="1.27" layer="95" xref="yes"/>
+<wire x1="152.4" y1="228.6" x2="149.86" y2="228.6" width="0.1524" layer="91"/>
+<label x="149.86" y="228.6" size="1.27" layer="95" rot="MR0" xref="yes"/>
+</segment>
+<segment>
+<pinref part="SHUTDWN_FUSE" gate="G$1" pin="P2"/>
+<wire x1="208.28" y1="210.82" x2="205.74" y2="210.82" width="0.1524" layer="91"/>
+<label x="205.74" y="210.82" size="1.27" layer="95" rot="MR0" xref="yes"/>
 </segment>
 </net>
 <net name="XB8" class="0">
@@ -5426,6 +5430,30 @@ GPIO_SSR not installed</text>
 <wire x1="370.84" y1="119.38" x2="365.76" y2="119.38" width="0.1524" layer="91"/>
 <junction x="370.84" y="119.38"/>
 <label x="365.76" y="119.38" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="12VSUPPLY_FSAE" class="0">
+<segment>
+<pinref part="FSAE_FUSE" gate="G$1" pin="P2"/>
+<wire x1="208.28" y1="228.6" x2="205.74" y2="228.6" width="0.1524" layer="91"/>
+<label x="205.74" y="228.6" size="1.27" layer="95" rot="MR0" xref="yes"/>
+</segment>
+<segment>
+<pinref part="X4" gate="-1" pin="S"/>
+<wire x1="53.34" y1="154.94" x2="50.8" y2="154.94" width="0.1524" layer="91"/>
+<label x="53.34" y="154.94" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="SHUTDOWN_A" class="0">
+<segment>
+<pinref part="IMD_SHUTDOWN" gate="G$1" pin="6"/>
+<label x="294.64" y="43.18" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="297.18" y1="43.18" x2="294.64" y2="43.18" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SHUTDWN_FUSE" gate="G$1" pin="P1"/>
+<wire x1="228.6" y1="210.82" x2="231.14" y2="210.82" width="0.1524" layer="91"/>
+<label x="231.14" y="210.82" size="1.27" layer="95" rot="MR180" xref="yes"/>
 </segment>
 </net>
 </nets>
