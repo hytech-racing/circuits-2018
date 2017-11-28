@@ -786,9 +786,8 @@ design rules under a new name.</description>
 <contactref element="IC6" pad="1"/>
 <contactref element="IC6" pad="2"/>
 <wire x1="26.035" y1="49.911" x2="28.575" y2="49.911" width="0.6096" layer="16"/>
-<wire x1="46.99" y1="49.911" x2="46.99" y2="47.498" width="0.6096" layer="16"/>
-<wire x1="46.99" y1="47.498" x2="28.575" y2="47.498" width="0.6096" layer="16"/>
-<wire x1="28.575" y1="47.498" x2="28.575" y2="49.911" width="0.6096" layer="16"/>
+<wire x1="46.99" y1="47.498" x2="46.99" y2="49.911" width="0.6096" layer="16"/>
+<wire x1="28.575" y1="49.911" x2="28.575" y2="47.498" width="0.6096" layer="16"/>
 <via x="8.763" y="15.494" extent="1-16" drill="0.35"/>
 <wire x1="20.233" y1="15.494" x2="8.763" y2="15.494" width="0.6096" layer="16"/>
 <wire x1="7.493" y1="22.019" x2="3.81" y2="25.702" width="0.6096" layer="1"/>
@@ -800,6 +799,7 @@ design rules under a new name.</description>
 <wire x1="26.035" y1="47.625" x2="26.035" y2="49.911" width="0.6096" layer="16"/>
 <wire x1="8.763" y1="15.494" x2="7.493" y2="16.764" width="0.6096" layer="1"/>
 <wire x1="7.493" y1="16.764" x2="7.493" y2="22.019" width="0.6096" layer="1"/>
+<wire x1="28.575" y1="47.498" x2="46.99" y2="47.498" width="0.6096" layer="16"/>
 </signal>
 <signal name="12V">
 <contactref element="X1" pad="2"/>
