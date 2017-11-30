@@ -133,7 +133,8 @@
 <layer number="153" name="FabDoc1" color="7" fill="1" visible="no" active="yes"/>
 <layer number="154" name="FabDoc2" color="7" fill="1" visible="no" active="yes"/>
 <layer number="155" name="FabDoc3" color="7" fill="1" visible="no" active="yes"/>
-<layer number="156" name="DimensionCut" color="12" fill="1" visible="yes" active="yes"/>
+<layer number="156" name="DimensionPanelized" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="157" name="DimensionCut" color="12" fill="1" visible="yes" active="yes"/>
 <layer number="191" name="mNets" color="7" fill="1" visible="no" active="yes"/>
 <layer number="192" name="mBusses" color="7" fill="1" visible="no" active="yes"/>
 <layer number="193" name="mPins" color="7" fill="1" visible="no" active="yes"/>
@@ -1784,6 +1785,16 @@
 <text x="220.98" y="129.286" size="1.016" layer="51" rot="R90" align="center">HyTech Racing</text>
 <text x="102.87" y="46.228" size="0.762" layer="51" rot="R90" align="center">BSPD ENABLE</text>
 <text x="212.09" y="46.228" size="0.762" layer="51" rot="R90" align="center">BSPD ENABLE</text>
+<wire x1="108.204" y1="139.192" x2="108.204" y2="0" width="0" layer="157"/>
+<wire x1="217.424" y1="139.192" x2="217.424" y2="118.11" width="0" layer="157"/>
+<wire x1="217.424" y1="118.11" x2="217.424" y2="95.758" width="0" layer="157"/>
+<wire x1="217.424" y1="95.758" x2="217.424" y2="73.406" width="0" layer="157"/>
+<wire x1="217.424" y1="73.406" x2="217.424" y2="53.848" width="0" layer="157"/>
+<wire x1="217.424" y1="53.848" x2="217.424" y2="0" width="0" layer="157"/>
+<wire x1="217.424" y1="53.848" x2="264.414" y2="53.848" width="0" layer="157"/>
+<wire x1="217.424" y1="73.406" x2="264.414" y2="73.406" width="0" layer="157"/>
+<wire x1="217.424" y1="95.758" x2="264.414" y2="95.758" width="0" layer="157"/>
+<wire x1="217.424" y1="118.11" x2="264.414" y2="118.11" width="0" layer="157"/>
 </plain>
 <libraries>
 <library name="HyTechDevices">

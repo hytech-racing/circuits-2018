@@ -134,7 +134,8 @@
 <layer number="154" name="FabDoc2" color="7" fill="1" visible="no" active="yes"/>
 <layer number="155" name="FabDoc3" color="7" fill="1" visible="no" active="yes"/>
 <layer number="156" name="HVSpacing" color="12" fill="1" visible="yes" active="yes"/>
-<layer number="157" name="DimensionCut" color="12" fill="1" visible="yes" active="yes"/>
+<layer number="157" name="DimensionPanelized" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="158" name="DimensionCut" color="12" fill="1" visible="yes" active="yes"/>
 <layer number="191" name="mNets" color="7" fill="1" visible="no" active="yes"/>
 <layer number="192" name="mBusses" color="7" fill="1" visible="no" active="yes"/>
 <layer number="193" name="mPins" color="7" fill="1" visible="no" active="yes"/>
@@ -5468,13 +5469,15 @@ PCB AREA</text>
 <wire x1="185.146" y1="132.588" x2="185.146" y2="148.006" width="0" layer="157"/>
 <wire x1="185.146" y1="148.006" x2="154.178" y2="148.006" width="0" layer="157"/>
 <wire x1="154.178" y1="148.006" x2="154.178" y2="132.588" width="0" layer="157"/>
-<wire x1="0" y1="188.722" x2="0" y2="0" width="0" layer="20"/>
+<wire x1="0" y1="188.722" x2="0" y2="160.528" width="0" layer="20"/>
+<wire x1="0" y1="160.528" x2="0" y2="0" width="0" layer="20"/>
 <wire x1="0" y1="0" x2="204.978" y2="0" width="0" layer="20"/>
 <wire x1="204.978" y1="0" x2="204.978" y2="188.722" width="0" layer="20"/>
-<wire x1="204.978" y1="188.722" x2="0" y2="188.722" width="0" layer="20"/>
+<wire x1="204.978" y1="188.722" x2="76.2" y2="188.722" width="0" layer="20"/>
 <text x="2.54" y="174.752" size="1.27" layer="51" rot="R90" align="center">Pedal Inline Test Board</text>
 <text x="2.54" y="145.796" size="1.27" layer="51" rot="R90" align="center">Pedal Inline Test Board</text>
 <dimension x1="0" y1="188.722" x2="204.978" y2="188.722" x3="102.489" y3="192.532" textsize="1.778" layer="47" unit="inch" precision="3"/>
+<wire x1="76.2" y1="188.722" x2="0" y2="188.722" width="0" layer="20"/>
 <wire x1="204.978" y1="169.406" x2="204.978" y2="188.634" width="0" layer="157"/>
 <wire x1="204.978" y1="188.634" x2="180.508" y2="188.634" width="0" layer="157"/>
 <wire x1="180.508" y1="188.634" x2="180.508" y2="169.406" width="0" layer="157"/>
@@ -5496,6 +5499,24 @@ PCB AREA</text>
 <hole x="55.372" y="125.984" drill="0.635"/>
 <hole x="55.118" y="59.944" drill="0.635"/>
 <hole x="196.088" y="137.668" drill="0.635"/>
+<wire x1="0" y1="160.528" x2="76.2" y2="160.528" width="0" layer="158"/>
+<wire x1="76.2" y1="160.528" x2="76.2" y2="188.722" width="0" layer="158"/>
+<wire x1="76.2" y1="160.528" x2="76.2" y2="131.572" width="0" layer="158"/>
+<wire x1="76.2" y1="131.572" x2="0" y2="131.572" width="0" layer="158"/>
+<wire x1="76.2" y1="131.572" x2="153.162" y2="131.572" width="0" layer="158"/>
+<wire x1="153.162" y1="131.572" x2="186.182" y2="131.572" width="0" layer="158"/>
+<wire x1="186.182" y1="131.572" x2="204.978" y2="131.572" width="0" layer="158"/>
+<wire x1="186.182" y1="131.572" x2="186.182" y2="149.098" width="0" layer="158"/>
+<wire x1="186.182" y1="149.098" x2="186.182" y2="166.624" width="0" layer="158"/>
+<wire x1="186.182" y1="166.624" x2="204.978" y2="166.624" width="0" layer="158"/>
+<wire x1="186.182" y1="166.624" x2="179.578" y2="166.624" width="0" layer="158"/>
+<wire x1="179.578" y1="166.624" x2="153.162" y2="166.624" width="0" layer="158"/>
+<wire x1="153.162" y1="166.624" x2="153.162" y2="188.722" width="0" layer="158"/>
+<wire x1="153.162" y1="166.624" x2="153.162" y2="149.098" width="0" layer="158"/>
+<wire x1="153.162" y1="149.098" x2="186.182" y2="149.098" width="0" layer="158"/>
+<wire x1="153.162" y1="149.098" x2="153.162" y2="131.572" width="0" layer="158"/>
+<wire x1="179.578" y1="188.722" x2="179.578" y2="166.624" width="0" layer="158"/>
+<wire x1="0" y1="65.278" x2="204.978" y2="65.278" width="0" layer="158"/>
 </plain>
 <libraries>
 <library name="HyTechDevices">
