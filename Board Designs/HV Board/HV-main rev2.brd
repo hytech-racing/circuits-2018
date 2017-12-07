@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.3.2">
+<eagle version="8.4.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -2388,10 +2388,10 @@ design rules under a new name.</description>
 <param name="slThermalsForVias" value="0"/>
 <param name="dpMaxLengthDifference" value="10mm"/>
 <param name="dpGapFactor" value="2.5"/>
-<param name="checkGrid" value="0"/>
 <param name="checkAngle" value="0"/>
 <param name="checkFont" value="1"/>
 <param name="checkRestrict" value="1"/>
+<param name="checkStop" value="0"/>
 <param name="useDiameter" value="13"/>
 <param name="maxErrors" value="50"/>
 </designrules>
@@ -2492,7 +2492,7 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="C3" library="HyTechDevices" package="0805" value="1uF" x="51.943" y="32.639" rot="MR180"/>
+<element name="C3" library="HyTechDevices" package="0805" value="10uF" x="51.943" y="32.639" rot="MR180"/>
 <element name="HV+FUSED" library="HyTechDevices" package="MINIFIT_5566-2" value="" x="165.481" y="30.226">
 <attribute name="MF" value="" x="165.481" y="30.226" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="165.481" y="30.226" size="1.778" layer="27" display="off"/>
@@ -2513,12 +2513,12 @@ design rules under a new name.</description>
 <attribute name="OC_FARNELL" value="1822072" x="147.32" y="43.18" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="OC_NEWARK" value="unknown" x="147.32" y="43.18" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="IMD-OK" library="HyTechDevices" package="LED-805" value="" x="58.293" y="29.972" rot="R180"/>
-<element name="BMS-OK" library="HyTechDevices" package="LED-805" value="" x="55.499" y="29.972" rot="R180"/>
+<element name="IMD-OK" library="HyTechDevices" package="LED-805" value="YELLOW" x="58.293" y="29.972" rot="R180"/>
+<element name="BMS-OK" library="HyTechDevices" package="LED-805" value="GREEN" x="55.499" y="29.972" rot="R180"/>
 <element name="R23" library="HyTechDevices" package="0805" value="2k" x="95.504" y="15.24" rot="MR0"/>
 <element name="R7" library="HyTechDevices" package="0805" value="2k" x="13.97" y="15.748" rot="R90"/>
-<element name="R3" library="HyTechDevices" package="0805" value="" x="58.293" y="26.416" rot="R90"/>
-<element name="R4" library="HyTechDevices" package="0805" value="" x="55.499" y="26.416" rot="R270"/>
+<element name="R3" library="HyTechDevices" package="0805" value="820" x="58.293" y="26.416" rot="R90"/>
+<element name="R4" library="HyTechDevices" package="0805" value="820" x="55.499" y="26.416" rot="R270"/>
 <element name="R22" library="HyTechDevices" package="0805" value="20k" x="99.822" y="15.24" rot="MR180"/>
 <element name="R6" library="HyTechDevices" package="0805" value="10k" x="47.625" y="36.703" rot="MR180"/>
 <element name="TRIM+" library="HyTechDevices" package="0805" value="" x="65.405" y="28.702" rot="MR270"/>
@@ -2550,8 +2550,8 @@ design rules under a new name.</description>
 <attribute name="OC_FARNELL" value="unknown" x="42.418" y="39.116" size="1.778" layer="27" display="off"/>
 <attribute name="OC_NEWARK" value="unknown" x="42.418" y="39.116" size="1.778" layer="27" display="off"/>
 </element>
-<element name="ON-LED" library="HyTechDevices" package="LED-805" value="" x="51.435" y="29.972" rot="R180"/>
-<element name="R5" library="HyTechDevices" package="0805" value="100" x="51.435" y="26.416" rot="R270"/>
+<element name="ON-LED" library="HyTechDevices" package="LED-805" value="PURPLE" x="51.435" y="29.972" rot="R180"/>
+<element name="R5" library="HyTechDevices" package="0805" value="270" x="51.435" y="26.416" rot="R270"/>
 <element name="IC3" library="HyTechDevices" package="SOIC-08" value="NE5532SOIC" x="58.293" y="39.37" rot="MR270"/>
 <element name="5KW_TRIM" library="HyTechDevices" package="TRIMPOT_3296" value="" x="55.499" y="19.177" rot="R270"/>
 <element name="RELAYS" library="HyTechDevices" package="MINIFIT_5566-2" value="" x="41.021" y="56.515">
@@ -2602,14 +2602,14 @@ design rules under a new name.</description>
 <element name="HV_REG1" library="HyTechDevices" package="TO-252" value="LR8" x="100.838" y="56.642" rot="MR270"/>
 <element name="TSAL_SSR" library="HyTechDevices" package="SOP04" value="CPC1002N" x="80.01" y="56.642" rot="MR270"/>
 <element name="THRESHOLD" library="HyTechDevices" package="TO-252" value="AOD1N60" x="130.048" y="47.498" rot="MR0"/>
-<element name="R16" library="HyTechDevices" package="0805" value="500k" x="137.668" y="39.878" rot="MR0"/>
-<element name="R19" library="HyTechDevices" package="0805" value="40k" x="138.938" y="49.53" rot="MR270"/>
+<element name="R16" library="HyTechDevices" package="0805" value="510k" x="137.668" y="39.878" rot="MR0"/>
+<element name="R19" library="HyTechDevices" package="0805" value="43k" x="138.938" y="49.53" rot="MR270"/>
 <element name="R26" library="HyTechDevices" package="0805" value="1k" x="88.9" y="41.656" rot="MR90"/>
 <element name="R13" library="HyTechDevices" package="0805" value="2k" x="90.424" y="47.752" rot="MR0"/>
-<element name="R15" library="HyTechDevices" package="0805" value="500k" x="134.366" y="39.878" rot="MR180"/>
-<element name="R14" library="HyTechDevices" package="0805" value="500k" x="131.064" y="39.878" rot="MR0"/>
-<element name="R18" library="HyTechDevices" package="0805" value="40k" x="138.938" y="46.228" rot="MR90"/>
-<element name="R17" library="HyTechDevices" package="0805" value="40k" x="138.938" y="42.926" rot="MR270"/>
+<element name="R15" library="HyTechDevices" package="0805" value="510k" x="134.366" y="39.878" rot="MR180"/>
+<element name="R14" library="HyTechDevices" package="0805" value="510k" x="131.064" y="39.878" rot="MR0"/>
+<element name="R18" library="HyTechDevices" package="0805" value="43k" x="138.938" y="46.228" rot="MR90"/>
+<element name="R17" library="HyTechDevices" package="0805" value="43k" x="138.938" y="42.926" rot="MR270"/>
 <element name="AI_SSR" library="HyTechDevices" package="SOP04" value="CPC1002N" x="92.964" y="37.338" rot="MR90"/>
 <element name="R12" library="HyTechDevices" package="0805" value="2k" x="93.98" y="47.752" rot="MR180"/>
 <element name="R11" library="HyTechDevices" package="0805" value="2k" x="97.536" y="47.752" rot="MR0"/>
@@ -2632,8 +2632,8 @@ design rules under a new name.</description>
 <element name="R30" library="HyTechDevices" package="0805" value="1k" x="8.89" y="15.494" rot="R270"/>
 <element name="C8" library="HyTechDevices" package="0805" value="560pF" x="13.208" y="7.62" rot="R90"/>
 <element name="C9" library="HyTechDevices" package="0805" value="560pF" x="15.24" y="7.62" rot="R90"/>
-<element name="LED" library="HyTechDevices" package="LED-805" value="" x="44.45" y="3.175" rot="R270"/>
-<element name="R31" library="HyTechDevices" package="0805" value="" x="46.101" y="8.382" rot="R90"/>
+<element name="LED" library="HyTechDevices" package="LED-805" value="BLUE" x="44.45" y="3.175" rot="R270"/>
+<element name="R31" library="HyTechDevices" package="0805" value="43" x="46.101" y="8.382" rot="R90"/>
 <element name="U$8" library="HyTechDevices" package="MSOP-16" value="LTC6820" x="22.606" y="11.43" rot="MR0"/>
 <element name="R33" library="HyTechDevices" package="0805" value="1k" x="25.273" y="14.478" rot="MR180"/>
 <element name="R34" library="HyTechDevices" package="0805" value="1k" x="25.273" y="16.51" rot="MR0"/>
@@ -2644,7 +2644,7 @@ design rules under a new name.</description>
 <element name="R37" library="HyTechDevices" package="0805" value="2k" x="36.83" y="8.128" rot="R270"/>
 <element name="U$9" library="HyTechDevices" package="TEENSY_3.2_SIMPLE" value="TEENSY_3.2_SIMPLE" x="41.148" y="2.286" rot="R90"/>
 <element name="U$10" library="HyTechDevices" package="SOT23-5" value="STWD100" x="40.513" y="16.256" rot="R90"/>
-<element name="R38" library="HyTechDevices" package="0805" value="68" x="36.195" y="15.494" rot="R270"/>
+<element name="R38" library="HyTechDevices" package="0805" value="430" x="36.195" y="15.494" rot="R270"/>
 <element name="U$11" library="HyTechDevices" package="SOP04" value="" x="29.845" y="10.16" rot="R90"/>
 <element name="CURRENT2" library="HyTechDevices" package="MINIFIT_5566-4" value="" x="42.672" y="27.178" rot="R270">
 <attribute name="MF" value="" x="69.596" y="52.578" size="1.778" layer="27" rot="R270" display="off"/>

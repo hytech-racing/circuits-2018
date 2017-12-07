@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.2.1">
+<eagle version="8.4.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="1" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="inch"/>
@@ -1578,10 +1579,10 @@ design rules under a new name.</description>
 <param name="slThermalsForVias" value="0"/>
 <param name="dpMaxLengthDifference" value="10mm"/>
 <param name="dpGapFactor" value="2.5"/>
-<param name="checkGrid" value="0"/>
 <param name="checkAngle" value="0"/>
 <param name="checkFont" value="1"/>
 <param name="checkRestrict" value="1"/>
+<param name="checkStop" value="0"/>
 <param name="useDiameter" value="13"/>
 <param name="maxErrors" value="50"/>
 </designrules>
@@ -1705,7 +1706,7 @@ design rules under a new name.</description>
 <element name="R10" library="HyTechDevices" package="0805" value="2k" x="3.6322" y="27.559" rot="R270"/>
 <element name="R11" library="HyTechDevices" package="0805" value="1k" x="13.2842" y="5.969" rot="MR90"/>
 <element name="R12" library="HyTechDevices" package="0805" value="2k" x="6.6802" y="27.559" rot="R270"/>
-<element name="R13" library="HyTechDevices" package="0805" value="68" x="4.3942" y="35.179"/>
+<element name="R13" library="HyTechDevices" package="0805" value="430" x="4.3942" y="35.179"/>
 <element name="R2" library="HyTechDevices" package="0805" value="100" x="14.0462" y="15.113" rot="MR180"/>
 <element name="R3" library="HyTechDevices" package="0805" value="100" x="9.7282" y="17.399" rot="MR180"/>
 <element name="R4" library="HyTechDevices" package="0805" value="1k" x="28.0162" y="30.861" rot="MR90"/>
@@ -2301,7 +2302,7 @@ design rules under a new name.</description>
 </drawing>
 <compatibility>
 <note version="8.2" severity="warning">
-Since Version 8.2, Eagle supports online libraries. The ids
+Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
 with this version.
 </note>

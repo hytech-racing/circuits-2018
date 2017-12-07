@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.3.2">
+<eagle version="8.4.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -3759,7 +3759,7 @@ Leakage Inductance: 0.5 uH
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
 <part name="DISCH+" library="HyTechDevices" deviceset="MINIFIT_5566-2" device="" value="DISCHARGE+"/>
 <part name="DISCH-" library="HyTechDevices" deviceset="MINIFIT_5566-2" device="" value="DISCHARGE -"/>
-<part name="C3" library="HyTechDevices" deviceset="CAP" device="0805" value="1uF"/>
+<part name="C3" library="HyTechDevices" deviceset="CAP" device="0805" value="10uF"/>
 <part name="CURRENT1" library="HyTechDevices" deviceset="CONNECTOR-4" device="" value=""/>
 <part name="P+10" library="supply1" deviceset="+5V" device=""/>
 <part name="GND17" library="supply1" deviceset="GND" device=""/>
@@ -3768,15 +3768,15 @@ Leakage Inductance: 0.5 uH
 <part name="IC2" library="HyTechDevices" deviceset="NE5532" device="SOIC"/>
 <part name="P+12" library="supply1" deviceset="+12V" device=""/>
 <part name="GND21" library="supply1" deviceset="GND" device=""/>
-<part name="IMD-OK" library="HyTechDevices" deviceset="LED" device="-0805"/>
-<part name="BMS-OK" library="HyTechDevices" deviceset="LED" device="-0805"/>
-<part name="R3" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES"/>
-<part name="R4" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES"/>
+<part name="IMD-OK" library="HyTechDevices" deviceset="LED" device="-0805" value="YELLOW"/>
+<part name="BMS-OK" library="HyTechDevices" deviceset="LED" device="-0805" value="GREEN"/>
+<part name="R3" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="820"/>
+<part name="R4" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="820"/>
 <part name="GND23" library="supply1" deviceset="GND" device=""/>
 <part name="GND25" library="supply1" deviceset="GND" device=""/>
 <part name="INTERLOCK" library="HyTechDevices" deviceset="MINIFIT_5566-2" device="" value=""/>
-<part name="ON-LED" library="HyTechDevices" deviceset="LED" device="-0805"/>
-<part name="R5" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="100"/>
+<part name="ON-LED" library="HyTechDevices" deviceset="LED" device="-0805" value="PURPLE"/>
+<part name="R5" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="270"/>
 <part name="P+14" library="supply1" deviceset="+5V" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="IC3" library="HyTechDevices" deviceset="NE5532" device="SOIC"/>
@@ -3804,14 +3804,14 @@ Leakage Inductance: 0.5 uH
 <part name="HV_REG1" library="HyTechDevices" deviceset="HV_LIN_REG_LR8" device="SMD" value="LR8"/>
 <part name="TSAL_SSR" library="HyTechDevices" deviceset="CPC1002N" device=""/>
 <part name="THRESHOLD" library="HyTechDevices" deviceset="N-CHANNEL_MOSFET" device="AOD1N60" value="AOD1N60"/>
-<part name="R16" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="500k"/>
-<part name="R19" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="40k"/>
+<part name="R16" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="510k"/>
+<part name="R19" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="43k"/>
 <part name="R26" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="1k"/>
 <part name="R13" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="2k"/>
-<part name="R15" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="500k"/>
-<part name="R14" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="500k"/>
-<part name="R18" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="40k"/>
-<part name="R17" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="40k"/>
+<part name="R15" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="510k"/>
+<part name="R14" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="510k"/>
+<part name="R18" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="43k"/>
+<part name="R17" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="43k"/>
 <part name="AI_SSR" library="HyTechDevices" deviceset="CPC1002N" device=""/>
 <part name="R12" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="2k"/>
 <part name="R11" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="2k"/>
@@ -3836,8 +3836,8 @@ Leakage Inductance: 0.5 uH
 <part name="R30" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="1k"/>
 <part name="C8" library="HyTechDevices" deviceset="CAP" device="0805" value="560pF"/>
 <part name="C9" library="HyTechDevices" deviceset="CAP" device="0805" value="560pF"/>
-<part name="LED" library="HyTechDevices" deviceset="LED" device="-0805"/>
-<part name="R31" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES"/>
+<part name="LED" library="HyTechDevices" deviceset="LED" device="-0805" value="BLUE"/>
+<part name="R31" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="43"/>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
 <part name="U$8" library="HyTechDevices" deviceset="LTC6820" device=""/>
 <part name="P+13" library="supply1" deviceset="+5V" device=""/>
@@ -3862,7 +3862,7 @@ Leakage Inductance: 0.5 uH
 <part name="U$10" library="HyTechDevices" deviceset="STWD100" device=""/>
 <part name="P+23" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="GND26" library="supply1" deviceset="GND" device=""/>
-<part name="R38" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="68"/>
+<part name="R38" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="430"/>
 <part name="U$11" library="HyTechDevices" deviceset="CPC1002N" device="" value=""/>
 <part name="GND27" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="P+25" library="supply1" deviceset="+5V" device=""/>
@@ -3996,7 +3996,7 @@ Thin wires: Grounded Low Voltage</text>
 <instance part="IC2" gate="G$1" x="50.8" y="-22.86"/>
 <instance part="P+12" gate="1" x="71.12" y="-22.86" rot="R270"/>
 <instance part="GND21" gate="1" x="43.18" y="-30.48" rot="R270"/>
-<instance part="IMD-OK" gate="LED" x="40.64" y="-22.86" rot="R270"/>
+<instance part="IMD-OK" gate="LED" x="40.64" y="-22.86" rot="MR90"/>
 <instance part="BMS-OK" gate="LED" x="78.74" y="-25.4" rot="R90"/>
 <instance part="R3" gate="G$1" x="27.94" y="-22.86"/>
 <instance part="R4" gate="G$1" x="91.44" y="-25.4"/>
@@ -4089,9 +4089,9 @@ Thin wires: Grounded Low Voltage</text>
 <instance part="R30" gate="G$1" x="40.64" y="-167.64" rot="MR0"/>
 <instance part="C8" gate="G$1" x="20.32" y="-162.56" rot="MR0"/>
 <instance part="C9" gate="G$1" x="30.48" y="-162.56" rot="MR0"/>
-<instance part="LED" gate="LED" x="60.96" y="-193.04" rot="R270"/>
-<instance part="R31" gate="G$1" x="48.26" y="-193.04" rot="R180"/>
-<instance part="GND15" gate="1" x="38.1" y="-193.04" rot="R270"/>
+<instance part="LED" gate="LED" x="60.96" y="-190.5" rot="R270"/>
+<instance part="R31" gate="G$1" x="48.26" y="-190.5" rot="R180"/>
+<instance part="GND15" gate="1" x="38.1" y="-190.5" rot="R270"/>
 <instance part="U$8" gate="G$1" x="60.96" y="-231.14"/>
 <instance part="P+13" gate="1" x="45.72" y="-246.38" rot="MR180"/>
 <instance part="P+17" gate="1" x="73.66" y="-246.38" rot="R180"/>
@@ -4259,7 +4259,7 @@ Thin wires: Grounded Low Voltage</text>
 <segment>
 <pinref part="GND15" gate="1" pin="GND"/>
 <pinref part="R31" gate="G$1" pin="2"/>
-<wire x1="40.64" y1="-193.04" x2="43.18" y2="-193.04" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="-190.5" x2="43.18" y2="-190.5" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R34" gate="G$1" pin="2"/>
@@ -5142,7 +5142,7 @@ Thin wires: Grounded Low Voltage</text>
 <segment>
 <pinref part="R31" gate="G$1" pin="1"/>
 <pinref part="LED" gate="LED" pin="C"/>
-<wire x1="55.88" y1="-193.04" x2="53.34" y2="-193.04" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="-190.5" x2="53.34" y2="-190.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$31" class="0">
@@ -5238,7 +5238,7 @@ Thin wires: Grounded Low Voltage</text>
 <segment>
 <pinref part="U$9" gate="G$1" pin="D7(RX3)"/>
 <pinref part="LED" gate="LED" pin="A"/>
-<wire x1="66.04" y1="-193.04" x2="63.5" y2="-193.04" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="-193.04" x2="63.5" y2="-190.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$38" class="0">
