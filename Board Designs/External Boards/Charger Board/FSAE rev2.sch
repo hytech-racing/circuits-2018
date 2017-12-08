@@ -2750,7 +2750,7 @@ Source: http://www.molex.com</description>
 <instance part="X2" gate="-8" x="101.6" y="91.44" rot="R90"/>
 <instance part="X2" gate="-4" x="30.48" y="50.8"/>
 <instance part="X2" gate="-11" x="241.3" y="111.76" rot="R180"/>
-<instance part="X2" gate="-10" x="261.62" y="109.22"/>
+<instance part="X2" gate="-6" x="261.62" y="109.22"/>
 </instances>
 <busses>
 </busses>
@@ -3222,7 +3222,7 @@ Source: http://www.molex.com</description>
 <wire x1="132.08" y1="48.26" x2="124.46" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="SHUTDOWN_IN" class="0">
 <segment>
 <pinref part="U$6" gate="G$1" pin="6"/>
 <wire x1="27.94" y1="50.8" x2="22.86" y2="50.8" width="0.1524" layer="91"/>
@@ -3269,18 +3269,16 @@ Source: http://www.molex.com</description>
 <wire x1="-48.26" y1="147.32" x2="-45.72" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$5" class="0">
-<segment>
-<pinref part="U$3" gate="G$1" pin="S"/>
-<pinref part="X2" gate="-10" pin="S"/>
-<junction x="259.08" y="109.22"/>
-<pinref part="X2" gate="-10" pin="S"/>
-</segment>
-</net>
 <net name="N$9" class="0">
 <segment>
 <pinref part="U$3" gate="G$1" pin="P"/>
 <pinref part="X2" gate="-11" pin="S"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="U$3" gate="G$1" pin="S"/>
+<pinref part="X2" gate="-6" pin="S"/>
 </segment>
 </net>
 </nets>
