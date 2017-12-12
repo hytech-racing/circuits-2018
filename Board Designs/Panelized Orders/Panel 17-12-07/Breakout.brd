@@ -220,37 +220,37 @@
 <wire x1="15.24" y1="73.152" x2="15.24" y2="108.712" width="0" layer="156"/>
 <wire x1="15.24" y1="108.712" x2="0" y2="108.712" width="0" layer="156"/>
 <text x="7.62" y="107.442" size="1.27" layer="51" align="center">HyTech Racing</text>
-<text x="7.62" y="75.692" size="1.27" layer="51" align="center">SOT-23-5</text>
+<text x="7.62" y="75.692" size="1.016" layer="51" align="center">SOT-23-5</text>
 <wire x1="16.256" y1="108.712" x2="16.256" y2="73.172" width="0" layer="156"/>
 <wire x1="16.256" y1="73.172" x2="31.496" y2="73.152" width="0" layer="156"/>
 <wire x1="31.496" y1="73.152" x2="31.496" y2="108.712" width="0" layer="156"/>
 <wire x1="31.496" y1="108.712" x2="16.256" y2="108.712" width="0" layer="156"/>
 <text x="23.876" y="107.442" size="1.27" layer="51" align="center">HyTech Racing</text>
-<text x="23.876" y="75.692" size="1.27" layer="51" align="center">SOT-23-5</text>
+<text x="23.876" y="75.692" size="1.016" layer="51" align="center">SOT-23-5</text>
 <wire x1="32.766" y1="108.712" x2="32.766" y2="73.172" width="0" layer="156"/>
 <wire x1="32.766" y1="73.172" x2="48.006" y2="73.152" width="0" layer="156"/>
 <wire x1="48.006" y1="73.152" x2="48.006" y2="108.712" width="0" layer="156"/>
 <wire x1="48.006" y1="108.712" x2="32.766" y2="108.712" width="0" layer="156"/>
 <text x="40.386" y="107.442" size="1.27" layer="51" align="center">HyTech Racing</text>
-<text x="40.386" y="75.692" size="1.27" layer="51" align="center">SOT-23-5</text>
+<text x="40.386" y="75.692" size="1.016" layer="51" align="center">SOT-23-5</text>
 <wire x1="49.022" y1="108.712" x2="49.022" y2="73.172" width="0" layer="156"/>
 <wire x1="49.022" y1="73.172" x2="64.262" y2="73.152" width="0" layer="156"/>
 <wire x1="64.262" y1="73.152" x2="64.262" y2="108.712" width="0" layer="156"/>
 <wire x1="64.262" y1="108.712" x2="49.022" y2="108.712" width="0" layer="156"/>
 <text x="56.642" y="107.442" size="1.27" layer="51" align="center">HyTech Racing</text>
-<text x="56.642" y="75.692" size="1.27" layer="51" align="center">SOT-23-5</text>
+<text x="56.642" y="75.692" size="1.016" layer="51" align="center">SOT-23-5</text>
 <wire x1="65.278" y1="108.712" x2="65.278" y2="73.172" width="0" layer="156"/>
 <wire x1="65.278" y1="73.172" x2="80.518" y2="73.152" width="0" layer="156"/>
 <wire x1="80.518" y1="73.152" x2="80.518" y2="108.712" width="0" layer="156"/>
 <wire x1="80.518" y1="108.712" x2="65.278" y2="108.712" width="0" layer="156"/>
 <text x="72.898" y="107.442" size="1.27" layer="51" align="center">HyTech Racing</text>
-<text x="72.898" y="75.692" size="1.27" layer="51" align="center">SOT-23-5</text>
+<text x="72.898" y="75.692" size="1.016" layer="51" align="center">SOT-23-5</text>
 <wire x1="81.534" y1="108.712" x2="81.534" y2="73.172" width="0" layer="156"/>
 <wire x1="81.534" y1="73.172" x2="96.774" y2="73.152" width="0" layer="156"/>
 <wire x1="96.774" y1="73.152" x2="96.774" y2="108.712" width="0" layer="156"/>
 <wire x1="96.774" y1="108.712" x2="81.534" y2="108.712" width="0" layer="156"/>
 <text x="89.154" y="107.442" size="1.27" layer="51" align="center">HyTech Racing</text>
-<text x="89.154" y="75.692" size="1.27" layer="51" align="center">SOT-23-5</text>
+<text x="89.154" y="75.692" size="1.016" layer="51" align="center">SOT-23-5</text>
 <wire x1="18.796" y1="142.748" x2="18.796" y2="109.748" width="0" layer="156"/>
 <wire x1="18.796" y1="109.748" x2="36.576" y2="109.728" width="0" layer="156"/>
 <wire x1="36.576" y1="109.728" x2="36.576" y2="142.748" width="0" layer="156"/>
@@ -271,22 +271,22 @@
 <wire x1="92.964" y1="109.728" x2="92.964" y2="142.748" width="0" layer="156"/>
 <wire x1="92.964" y1="142.748" x2="75.184" y2="142.748" width="0" layer="156"/>
 <text x="84.074" y="110.744" size="1.27" layer="51" align="center">SOT223</text>
-<text x="7.62" y="13.97" size="1.27" layer="51" align="center">↑HT18-10</text>
-<text x="23.876" y="13.97" size="1.27" layer="51" align="center">↑HT18-11</text>
-<text x="40.132" y="13.97" size="1.27" layer="51" align="center">↑HT18-12</text>
-<text x="56.388" y="13.97" size="1.27" layer="51" align="center">↑HT18-13</text>
-<text x="72.644" y="13.97" size="1.27" layer="51" align="center">↑HT18-14</text>
-<text x="88.9" y="13.97" size="1.27" layer="51" align="center">↑HT18-15</text>
+<text x="7.62" y="13.97" size="1.016" layer="51" align="center">↑HT18-10</text>
+<text x="23.876" y="13.97" size="1.016" layer="51" align="center">↑HT18-11</text>
+<text x="40.132" y="13.97" size="1.016" layer="51" align="center">↑HT18-12</text>
+<text x="56.388" y="13.97" size="1.016" layer="51" align="center">↑HT18-13</text>
+<text x="72.644" y="13.97" size="1.016" layer="51" align="center">↑HT18-14</text>
+<text x="88.9" y="13.97" size="1.016" layer="51" align="center">↑HT18-15</text>
 <text x="10.16" y="50.8" size="1.27" layer="51" align="center">↑HT18-16</text>
 <text x="31.496" y="50.8" size="1.27" layer="51" align="center">↑HT18-17</text>
 <text x="52.832" y="50.292" size="1.27" layer="51" align="center">↑HT18-18</text>
 <text x="74.168" y="50.292" size="1.27" layer="51" align="center">↑HT18-19</text>
-<text x="7.62" y="98.552" size="1.27" layer="51" align="center">↑HT18-21</text>
-<text x="23.876" y="98.552" size="1.27" layer="51" align="center">↑HT18-22</text>
-<text x="40.64" y="98.552" size="1.27" layer="51" align="center">↑HT18-23</text>
-<text x="56.896" y="98.552" size="1.27" layer="51" align="center">↑HT18-24</text>
-<text x="73.152" y="98.552" size="1.27" layer="51" align="center">↑HT18-25</text>
-<text x="89.408" y="98.552" size="1.27" layer="51" align="center">↑HT18-26</text>
+<text x="7.62" y="98.552" size="1.016" layer="51" align="center">↑HT18-21</text>
+<text x="23.876" y="98.552" size="1.016" layer="51" align="center">↑HT18-22</text>
+<text x="40.64" y="98.552" size="1.016" layer="51" align="center">↑HT18-23</text>
+<text x="56.896" y="98.552" size="1.016" layer="51" align="center">↑HT18-24</text>
+<text x="73.152" y="98.552" size="1.016" layer="51" align="center">↑HT18-25</text>
+<text x="89.408" y="98.552" size="1.016" layer="51" align="center">↑HT18-26</text>
 <text x="8.89" y="141.732" size="1.016" layer="51" align="center">↓ HT18-27</text>
 <text x="27.432" y="141.732" size="1.016" layer="51" align="center">↓ HT18-28</text>
 <text x="46.482" y="141.732" size="1.016" layer="51" align="center">↓ HT18-29</text>
