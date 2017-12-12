@@ -189,7 +189,7 @@
 <hole x="57.3" y="111.769" drill="3.2"/>
 <hole x="154.3" y="96.144" drill="3.2"/>
 <hole x="154.3" y="21.144" drill="3.2"/>
-<dimension x1="50.8" y1="242.3414" x2="50.8" y2="0" x3="49.784" y3="121.1707" textsize="2.286" layer="20" unit="inch" precision="3"/>
+<dimension x1="50.8" y1="242.3414" x2="50.8" y2="0" x3="49.784" y3="121.1707" textsize="2.286" layer="47" unit="inch" precision="3"/>
 <wire x1="50.8" y1="17.171" x2="50.8" y2="0" width="0" layer="20"/>
 <wire x1="160.782" y1="0" x2="160.782" y2="242.3414" width="0" layer="20"/>
 <hole x="57.3" y="136.709" drill="3.2"/>
@@ -213,7 +213,7 @@
 <wire x1="59.944" y1="230.125" x2="50.8" y2="230.125" width="0" layer="20"/>
 <wire x1="50.8" y1="230.125" x2="50.8" y2="242.3414" width="0" layer="20"/>
 <wire x1="50.8" y1="242.3414" x2="160.782" y2="242.3414" width="0" layer="20"/>
-<dimension x1="50.8" y1="0" x2="160.782" y2="0" x3="105.791" y3="-2.54" textsize="1.778" layer="20" unit="inch"/>
+<dimension x1="50.8" y1="0" x2="160.782" y2="0" x3="105.791" y3="-2.54" textsize="1.778" layer="47" unit="inch"/>
 <text x="141.224" y="14.224" size="1.27" layer="51" align="center">HyTech 2018 BMS Segment rev3</text>
 <rectangle x1="62.3316" y1="140.208" x2="65.0748" y2="140.3604" layer="51" rot="R270"/>
 <rectangle x1="62.103" y1="133.8834" x2="65.3034" y2="134.0358" layer="51" rot="R270"/>
