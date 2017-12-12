@@ -785,6 +785,8 @@ Nano-Fit™ Vertical Header, Through Hole, Single Row</description>
 <wire x1="-2.6" y1="-1.74" x2="-2.6" y2="-4.6" width="0.127" layer="21"/>
 <wire x1="3" y1="-1.74" x2="2.6" y2="-1.74" width="0.127" layer="21"/>
 <wire x1="2.6" y1="-1.74" x2="2.6" y2="-4.6" width="0.127" layer="21"/>
+<hole x="0" y="-1.34" drill="1.3"/>
+<wire x1="-2.6" y1="-1.74" x2="2.6" y2="-1.74" width="0.127" layer="21"/>
 </package>
 <package name="LLS2V221MELZ">
 <circle x="0" y="0" radius="11" width="0.127" layer="21"/>
