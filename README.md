@@ -1,6 +1,6 @@
 ![HyTech logo](https://hytechracing.gatech.edu/images/hytech_logo_small.png)
 
-# 2017 Circuits
+# 2018 Circuits
 
 ## Getting Started with this git repository
 1. Download and install [Github Desktop](https://desktop.github.com/) (basic) or [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) (advanced)
@@ -12,9 +12,9 @@
 2. Create a Github account if you don't already have one
 3. Talk to your subteam lead to be added to your respective team on the Github organization
 4. Clone this repository to your computer
-    * SSH: git@github.com:hytech-racing/circuits-2017.git
-    * HTTPS: https://github.com/hytech-racing/circuits-2017.git
+    * SSH: git@github.com:hytech-racing/circuits-2018.git
+    * HTTPS: https://github.com/hytech-racing/circuits-2018.git
 
 ## Getting Started with EAGLE
-1. Download and install [EAGLE](http://www.cadsoftusa.com/download-eagle/)
-2. Get the free [Educational License](https://cadsoft.io/buy/educational/1/USD) (a .edu email address is required)
+1. Download and install [EAGLE](https://www.autodesk.com/products/eagle/overview)
+2. Get the free [Educational License](https://www.autodesk.com/education/free-software/eagle) (a .edu email address is required)
