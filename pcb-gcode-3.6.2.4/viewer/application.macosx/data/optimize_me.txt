@@ -1,4 +1,0 @@
-# board=.../Cooling-ECU/Cooling rev2.bot.mill.nc
-# depth=-0.125000
-# pass=1
-# preview window width=800 height=600
