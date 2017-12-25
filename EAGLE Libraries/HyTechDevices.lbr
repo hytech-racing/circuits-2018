@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -83,7 +83,7 @@
 <layer number="101" name="Patch_Top" color="12" fill="4" visible="no" active="yes"/>
 <layer number="102" name="Vscore" color="7" fill="1" visible="no" active="yes"/>
 <layer number="103" name="tMap" color="7" fill="1" visible="no" active="yes"/>
-<layer number="104" name="Name" color="16" fill="1" visible="no" active="yes"/>
+<layer number="104" name="Name" color="16" fill="1" visible="yes" active="yes"/>
 <layer number="105" name="tPlate" color="7" fill="1" visible="no" active="yes"/>
 <layer number="106" name="bPlate" color="7" fill="1" visible="no" active="yes"/>
 <layer number="107" name="Crop" color="7" fill="1" visible="no" active="yes"/>
@@ -8145,23 +8145,38 @@ MX150L™ Vertical PCB Header</description>
 <hole x="7.43" y="-0.35" drill="1.3"/>
 </package>
 <package name="SCA3100-D04">
-<smd name="AVSS" x="0.1" y="-1.8" dx="0.98" dy="0.61" layer="1"/>
-<smd name="A_EXTC" x="0.1" y="-2.8" dx="0.98" dy="0.61" layer="1"/>
-<smd name="RESERVED" x="0.1" y="-3.8" dx="0.98" dy="0.61" layer="1"/>
-<smd name="VDD" x="0.1" y="-4.8" dx="0.98" dy="0.61" layer="1"/>
-<smd name="CSB" x="0.1" y="-5.8" dx="0.98" dy="0.61" layer="1"/>
-<smd name="MISO" x="0.1" y="-6.8" dx="0.98" dy="0.61" layer="1"/>
-<smd name="EMC_GND" x="6.9" y="-1.8" dx="0.98" dy="0.61" layer="1"/>
-<smd name="DVSS" x="6.9" y="-2.8" dx="0.98" dy="0.61" layer="1"/>
-<smd name="D_EXTC" x="6.9" y="-3.8" dx="0.98" dy="0.61" layer="1"/>
-<smd name="DVIO" x="6.9" y="-4.8" dx="0.98" dy="0.61" layer="1"/>
-<smd name="SCK" x="6.9" y="-5.8" dx="0.98" dy="0.61" layer="1"/>
-<smd name="MOSI" x="6.9" y="-6.8" dx="0.98" dy="0.61" layer="1"/>
-<text x="0.7" y="-0.7" size="0.4064" layer="25" align="top-left">Murata SCA3100-D04</text>
+<smd name="AVSS" x="0.06" y="-1.8" dx="0.98" dy="0.61" layer="1"/>
+<smd name="A_EXTC" x="0.06" y="-2.8" dx="0.98" dy="0.61" layer="1"/>
+<smd name="RESERVED" x="0.06" y="-3.8" dx="0.98" dy="0.61" layer="1"/>
+<smd name="VDD" x="0.06" y="-4.8" dx="0.98" dy="0.61" layer="1"/>
+<smd name="CSB" x="0.06" y="-5.8" dx="0.98" dy="0.61" layer="1"/>
+<smd name="MISO" x="0.06" y="-6.8" dx="0.98" dy="0.61" layer="1"/>
+<smd name="EMC_GND" x="6.94" y="-1.8" dx="0.98" dy="0.61" layer="1"/>
+<smd name="DVSS" x="6.94" y="-2.8" dx="0.98" dy="0.61" layer="1"/>
+<smd name="D_EXTC" x="6.94" y="-3.8" dx="0.98" dy="0.61" layer="1"/>
+<smd name="DVIO" x="6.94" y="-4.8" dx="0.98" dy="0.61" layer="1"/>
+<smd name="SCK" x="6.94" y="-5.8" dx="0.98" dy="0.61" layer="1"/>
+<smd name="MOSI" x="6.94" y="-6.8" dx="0.98" dy="0.61" layer="1"/>
+<text x="5.3" y="-4.2" size="0.55" layer="26" rot="SR270" align="center">Murata SCA3100-D04</text>
 <wire x1="0" y1="-8.6" x2="7" y2="-8.6" width="0.127" layer="21"/>
 <wire x1="7" y1="-8.6" x2="7" y2="0" width="0.127" layer="21"/>
 <wire x1="0" y1="-8.6" x2="0" y2="0" width="0.127" layer="21"/>
 <wire x1="0" y1="0" x2="7" y2="0" width="0.127" layer="21"/>
+<circle x="1.2" y="-1.8" radius="0.3" width="0.09" layer="21"/>
+<wire x1="2" y1="-1" x2="4" y2="-1" width="0.127" layer="22"/>
+<polygon width="0.127" layer="22">
+<vertex x="4.5" y="-1"/>
+<vertex x="4" y="-0.5"/>
+<vertex x="4" y="-1.5"/>
+</polygon>
+<wire x1="2" y1="-1" x2="2" y2="-3" width="0.127" layer="22"/>
+<polygon width="0.127" layer="22">
+<vertex x="1.5" y="-3"/>
+<vertex x="2.5" y="-3"/>
+<vertex x="2" y="-3.5"/>
+</polygon>
+<text x="3" y="-3" size="0.7" layer="22" rot="MR270" align="center">Y</text>
+<text x="4" y="-2" size="0.7" layer="22" rot="MR270" align="center">X</text>
 </package>
 <package name="TACTILE_SWITCH_SMD_6.2MM_TALL">
 <description>Source: Sparkfun Library
@@ -11215,21 +11230,23 @@ Demo Board</text>
 </symbol>
 <symbol name="SCA3100-D04">
 <wire x1="0" y1="0" x2="0" y2="-17.78" width="0.254" layer="94"/>
-<wire x1="0" y1="-17.78" x2="10.16" y2="-17.78" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-17.78" x2="10.16" y2="0" width="0.254" layer="94"/>
-<wire x1="10.16" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<pin name="EMC_GND" x="10.16" y="-2.54" length="middle"/>
-<pin name="DVSS" x="10.16" y="-5.08" length="middle"/>
-<pin name="D_EXTC" x="10.16" y="-7.62" length="middle"/>
-<pin name="DVIO" x="10.16" y="-10.16" length="middle"/>
-<pin name="SCK" x="10.16" y="-12.7" length="middle"/>
-<pin name="MOSI" x="10.16" y="-15.24" length="middle"/>
-<pin name="MISO" x="0" y="-15.24" length="middle" rot="R180"/>
-<pin name="CSB" x="0" y="-12.7" length="middle" rot="R180"/>
-<pin name="VDD" x="0" y="-10.16" length="middle" rot="R180"/>
-<pin name="RESERVED" x="0" y="-7.62" length="middle" rot="R180"/>
-<pin name="A_EXTC" x="0" y="-5.08" length="middle" rot="R180"/>
-<pin name="AVSS" x="0" y="-2.54" length="middle" rot="R180"/>
+<wire x1="0" y1="-17.78" x2="22.86" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="22.86" y1="-17.78" x2="22.86" y2="0" width="0.254" layer="94"/>
+<wire x1="22.86" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<pin name="EMC_GND" x="25.4" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="DVSS" x="25.4" y="-5.08" visible="pin" length="short" rot="R180"/>
+<pin name="D_EXTC" x="25.4" y="-7.62" visible="pin" length="short" rot="R180"/>
+<pin name="DVIO" x="25.4" y="-10.16" visible="pin" length="short" rot="R180"/>
+<pin name="SCK" x="25.4" y="-12.7" visible="pin" length="short" rot="R180"/>
+<pin name="MOSI" x="25.4" y="-15.24" visible="pin" length="short" rot="R180"/>
+<pin name="MISO" x="-2.54" y="-15.24" visible="pin" length="short"/>
+<pin name="CSB" x="-2.54" y="-12.7" visible="pin" length="short"/>
+<pin name="VDD" x="-2.54" y="-10.16" visible="pin" length="short"/>
+<pin name="RSVD" x="-2.54" y="-7.62" visible="pin" length="short"/>
+<pin name="A_EXTC" x="-2.54" y="-5.08" visible="pin" length="short"/>
+<pin name="AVSS" x="-2.54" y="-2.54" visible="pin" length="short"/>
+<text x="0" y="0.635" size="1.778" layer="95">&gt;NAME</text>
+<text x="0" y="-20.32" size="1.778" layer="95">&gt;VALUE</text>
 </symbol>
 <symbol name="INA226">
 <wire x1="0" y1="15.24" x2="0" y2="0" width="0.254" layer="94"/>
@@ -17321,7 +17338,7 @@ Output Current: 50 mA (max)
 <connect gate="G$1" pin="EMC_GND" pad="EMC_GND"/>
 <connect gate="G$1" pin="MISO" pad="MISO"/>
 <connect gate="G$1" pin="MOSI" pad="MOSI"/>
-<connect gate="G$1" pin="RESERVED" pad="RESERVED"/>
+<connect gate="G$1" pin="RSVD" pad="RESERVED"/>
 <connect gate="G$1" pin="SCK" pad="SCK"/>
 <connect gate="G$1" pin="VDD" pad="VDD"/>
 </connects>
