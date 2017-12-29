@@ -9,34 +9,34 @@
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="no"/>
-<layer number="3" name="Route3" color="4" fill="3" visible="yes" active="no"/>
-<layer number="4" name="Route4" color="1" fill="4" visible="yes" active="no"/>
-<layer number="5" name="Route5" color="4" fill="4" visible="yes" active="no"/>
-<layer number="6" name="Route6" color="1" fill="8" visible="yes" active="no"/>
-<layer number="7" name="Route7" color="4" fill="8" visible="yes" active="no"/>
-<layer number="8" name="Route8" color="1" fill="2" visible="yes" active="no"/>
-<layer number="9" name="Route9" color="4" fill="2" visible="yes" active="no"/>
-<layer number="10" name="Route10" color="1" fill="7" visible="yes" active="no"/>
-<layer number="11" name="Route11" color="4" fill="7" visible="yes" active="no"/>
-<layer number="12" name="Route12" color="1" fill="5" visible="yes" active="no"/>
-<layer number="13" name="Route13" color="4" fill="5" visible="yes" active="no"/>
-<layer number="14" name="Route14" color="1" fill="6" visible="yes" active="no"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -45,8 +45,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -54,19 +54,19 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="yes" active="no"/>
-<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="yes" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
-<layer number="57" name="tCAD" color="7" fill="1" visible="yes" active="no"/>
-<layer number="59" name="tCarbon" color="7" fill="1" visible="yes" active="no"/>
-<layer number="60" name="bCarbon" color="7" fill="1" visible="yes" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -1644,7 +1644,6 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <port name="HV+FUSED" side="left" coord="-5.08" direction="in"/>
 <port name="HV-FUSED" side="left" coord="-2.54" direction="out"/>
 <port name="AIR_PWR1" side="right" coord="27.94" direction="out"/>
-<port name="AIR_PWR2" side="right" coord="25.4" direction="out"/>
 <port name="SHUTDOWN6_IN" side="right" coord="-2.54" direction="in"/>
 <port name="SHUTDOWN6_OUT" side="right" coord="20.32" direction="out"/>
 <port name="SHUTDOWN7_IN" side="right" coord="22.86" direction="in"/>
@@ -1665,12 +1664,13 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <port name="EM_IO2" side="left" coord="20.32" direction="io"/>
 <port name="EM_IO1_OUT" side="right" coord="-20.32" direction="io"/>
 <port name="EM_IO2_OUT" side="right" coord="-22.86" direction="io"/>
-<port name="ISOSPI_P" side="top" coord="0" direction="io"/>
-<port name="ISOSPI_M" side="top" coord="-2.54" direction="io"/>
+<port name="ISOSPI_P" side="top" coord="-5.08" direction="io"/>
+<port name="ISOSPI_M" side="top" coord="-7.62" direction="io"/>
 <port name="CUR_5V_1" side="right" coord="10.16" direction="out"/>
 <port name="CUR_SENSE_RAW_1" side="right" coord="12.7" direction="in"/>
 <port name="TEMP_SENSE_RAW_1" side="right" coord="15.24" direction="in"/>
 <port name="CUR_GND_1" side="right" coord="17.78" direction="in"/>
+<port name="DISCHARGE_RELAY_GND" side="right" coord="25.4" direction="out"/>
 </ports>
 <variantdefs>
 </variantdefs>
@@ -2080,6 +2080,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="SL25" library="HyTechSymbols" deviceset="M06" device=""/>
 <part name="THERM_PULLUP" library="HyTechDevices" deviceset="RESISTOR" device="AXIAL-0.3" value="3.01k"/>
 <part name="U$1" library="HyTechSymbols" deviceset="RINEHART_PM100DX" device=""/>
+<part name="GND17" library="HyTechSymbols" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2326,6 +2327,7 @@ Power for FSAE EV5.1.4</text>
 <instance part="SL25" gate="G$1" x="469.9" y="246.38" rot="MR90"/>
 <instance part="THERM_PULLUP" gate="G$1" x="22.86" y="157.48" rot="MR0"/>
 <instance part="U$1" gate="G$1" x="-25.4" y="198.12" rot="R270"/>
+<instance part="GND17" gate="1" x="360.68" y="200.66" rot="R180"/>
 </instances>
 <busses>
 <bus name="MOTOR_TEMP,EXC+,EXC-,SIN+,SIN-,COS+,COS-,GND">
@@ -2472,6 +2474,12 @@ Power for FSAE EV5.1.4</text>
 <pinref part="GND15" gate="1" pin="GND"/>
 <wire x1="241.3" y1="264.16" x2="241.3" y2="259.08" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<portref moduleinst="HV_PCB" port="DISCHARGE_RELAY_GND"/>
+<wire x1="309.88" y1="198.12" x2="360.68" y2="198.12" width="0.1524" layer="91"/>
+<pinref part="GND17" gate="1" pin="GND"/>
+<label x="312.42" y="198.12" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="12VSUPPLY" class="0">
 <segment>
@@ -2540,13 +2548,13 @@ Power for FSAE EV5.1.4</text>
 </segment>
 <segment>
 <portref moduleinst="HV_PCB" port="SHUTDOWN6_OUT"/>
-<wire x1="309.88" y1="193.04" x2="363.22" y2="193.04" width="0.1524" layer="91"/>
-<wire x1="363.22" y1="193.04" x2="363.22" y2="281.94" width="0.1524" layer="91"/>
+<wire x1="309.88" y1="193.04" x2="368.3" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="368.3" y1="193.04" x2="368.3" y2="281.94" width="0.1524" layer="91"/>
 <label x="312.42" y="193.04" size="1.778" layer="95"/>
 <pinref part="HVD_INTERLOCK" gate="SPST" pin="S"/>
 <wire x1="91.44" y1="279.4" x2="93.98" y2="279.4" width="0.1524" layer="91"/>
 <wire x1="93.98" y1="279.4" x2="93.98" y2="281.94" width="0.1524" layer="91"/>
-<wire x1="363.22" y1="281.94" x2="93.98" y2="281.94" width="0.1524" layer="91"/>
+<wire x1="368.3" y1="281.94" x2="93.98" y2="281.94" width="0.1524" layer="91"/>
 <label x="312.42" y="281.94" size="1.778" layer="95"/>
 <label x="165.1" y="281.94" size="1.778" layer="95"/>
 </segment>
@@ -2646,26 +2654,16 @@ Power for FSAE EV5.1.4</text>
 </net>
 <net name="SHUTDOWN7" class="0">
 <segment>
-<wire x1="360.68" y1="195.58" x2="360.68" y2="279.4" width="0.1524" layer="91"/>
-<wire x1="309.88" y1="195.58" x2="360.68" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="365.76" y1="195.58" x2="365.76" y2="279.4" width="0.1524" layer="91"/>
+<wire x1="309.88" y1="195.58" x2="365.76" y2="195.58" width="0.1524" layer="91"/>
 <portref moduleinst="HV_PCB" port="SHUTDOWN7_IN"/>
 <label x="312.42" y="195.58" size="1.778" layer="95"/>
 <pinref part="IMPERIUM_INTERLOCK" gate="SPST" pin="S"/>
 <wire x1="88.9" y1="266.7" x2="104.14" y2="266.7" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="266.7" x2="104.14" y2="279.4" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="279.4" x2="360.68" y2="279.4" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="279.4" x2="365.76" y2="279.4" width="0.1524" layer="91"/>
 <label x="312.42" y="279.4" size="1.778" layer="95"/>
 <label x="165.1" y="279.4" size="1.778" layer="95"/>
-</segment>
-<segment>
-<portref moduleinst="HV_PCB" port="AIR_PWR2"/>
-<wire x1="309.88" y1="198.12" x2="358.14" y2="198.12" width="0.1524" layer="91"/>
-<wire x1="358.14" y1="198.12" x2="358.14" y2="274.32" width="0.1524" layer="91"/>
-<wire x1="358.14" y1="274.32" x2="162.56" y2="274.32" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="274.32" x2="162.56" y2="261.62" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="12V"/>
-<label x="312.42" y="198.12" size="1.778" layer="95"/>
-<label x="314.96" y="274.32" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="AIR1" gate="1" pin="1"/>
@@ -2688,6 +2686,10 @@ Power for FSAE EV5.1.4</text>
 <wire x1="276.86" y1="271.78" x2="251.46" y2="271.78" width="0.1524" layer="91"/>
 <wire x1="251.46" y1="271.78" x2="251.46" y2="259.08" width="0.1524" layer="91"/>
 <junction x="276.86" y="271.78"/>
+<pinref part="U$3" gate="G$1" pin="12V"/>
+<wire x1="162.56" y1="271.78" x2="162.56" y2="261.62" width="0.1524" layer="91"/>
+<wire x1="251.46" y1="271.78" x2="162.56" y2="271.78" width="0.1524" layer="91"/>
+<junction x="251.46" y="271.78"/>
 </segment>
 </net>
 <net name="N$45" class="0">
@@ -3112,8 +3114,8 @@ Power for FSAE EV5.1.4</text>
 <wire x1="342.9" y1="218.44" x2="342.9" y2="210.82" width="0.1524" layer="91"/>
 <label x="312.42" y="210.82" size="1.778" layer="95"/>
 <portref moduleinst="HV_PCB" port="ISOSPI_M"/>
-<wire x1="342.9" y1="210.82" x2="276.86" y2="210.82" width="0.1524" layer="91"/>
-<wire x1="276.86" y1="210.82" x2="276.86" y2="208.28" width="0.1524" layer="91"/>
+<wire x1="342.9" y1="210.82" x2="271.78" y2="210.82" width="0.1524" layer="91"/>
+<wire x1="271.78" y1="210.82" x2="271.78" y2="208.28" width="0.1524" layer="91"/>
 <portref moduleinst="BMS_SEGMENT1" port="ISOSPI2"/>
 </segment>
 </net>
@@ -3121,7 +3123,7 @@ Power for FSAE EV5.1.4</text>
 <segment>
 <wire x1="345.44" y1="208.28" x2="345.44" y2="220.98" width="0.1524" layer="91"/>
 <wire x1="345.44" y1="220.98" x2="342.9" y2="220.98" width="0.1524" layer="91"/>
-<wire x1="279.4" y1="208.28" x2="345.44" y2="208.28" width="0.1524" layer="91"/>
+<wire x1="274.32" y1="208.28" x2="345.44" y2="208.28" width="0.1524" layer="91"/>
 <label x="312.42" y="208.28" size="1.778" layer="95"/>
 <portref moduleinst="HV_PCB" port="ISOSPI_P"/>
 <portref moduleinst="BMS_SEGMENT1" port="ISOSPI1"/>

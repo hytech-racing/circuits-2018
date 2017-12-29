@@ -3805,7 +3805,6 @@ Leakage Inductance: 0.5 uH
 <part name="R22" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="20k"/>
 <part name="INDICATOR" library="HyTechDevices" deviceset="MINIFIT_5566-2" device="" value="INDICATOR"/>
 <part name="U$12" library="HyTechDevices" deviceset="5504-12-1-NC" device=""/>
-<part name="GND14" library="supply1" deviceset="GND" device=""/>
 <part name="DISCH+" library="HyTechDevices" deviceset="MINIFIT_5566-2" device="" value="DISCHARGE+"/>
 <part name="DISCH-" library="HyTechDevices" deviceset="MINIFIT_5566-2" device="" value="DISCHARGE -"/>
 <part name="C3" library="HyTechDevices" deviceset="CAP" device="0805" value="10uF"/>
@@ -3874,7 +3873,6 @@ Leakage Inductance: 0.5 uH
 <part name="U$3" library="HyTechDevices" deviceset="JUMPER" device=".3"/>
 <part name="U$4" library="HyTechDevices" deviceset="JUMPER" device=".3"/>
 <part name="D2" library="HyTechDevices" deviceset="DIODE" device="0805"/>
-<part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="FUSE1" library="HyTechDevices" deviceset="FUSE" device="_5X20MM" value="1A"/>
 <part name="R27" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="120"/>
 <part name="GND13" library="HyTech 2016" deviceset="GND" device=""/>
@@ -3962,9 +3960,9 @@ Current sensor 2: ISB-300-A-600</text>
 <wire x1="149.86" y1="-109.22" x2="10.16" y2="-109.22" width="0.1524" layer="90"/>
 <wire x1="10.16" y1="-109.22" x2="10.16" y2="-55.88" width="0.1524" layer="90"/>
 <text x="10.16" y="-55.88" size="5.08" layer="90">Current Sensor Input</text>
-<wire x1="10.16" y1="-119.38" x2="96.52" y2="-119.38" width="0.1524" layer="90"/>
-<wire x1="96.52" y1="-119.38" x2="96.52" y2="-142.24" width="0.1524" layer="90"/>
-<wire x1="96.52" y1="-142.24" x2="10.16" y2="-142.24" width="0.1524" layer="90"/>
+<wire x1="10.16" y1="-119.38" x2="124.46" y2="-119.38" width="0.1524" layer="90"/>
+<wire x1="124.46" y1="-119.38" x2="124.46" y2="-142.24" width="0.1524" layer="90"/>
+<wire x1="124.46" y1="-142.24" x2="10.16" y2="-142.24" width="0.1524" layer="90"/>
 <wire x1="10.16" y1="-142.24" x2="10.16" y2="-119.38" width="0.1524" layer="90"/>
 <text x="10.16" y="-119.38" size="5.08" layer="90">AIR Power Distribution</text>
 <rectangle x1="165.1" y1="-254" x2="172.72" y2="63.5" layer="90"/>
@@ -3975,10 +3973,10 @@ Current sensor 2: ISB-300-A-600</text>
 <wire x1="327.66" y1="-63.5" x2="177.8" y2="-63.5" width="0.1524" layer="90"/>
 <wire x1="177.8" y1="-63.5" x2="177.8" y2="5.08" width="0.1524" layer="90"/>
 <text x="177.8" y="5.08" size="5.08" layer="90">HV DC/DC Converter</text>
-<wire x1="177.8" y1="-73.66" x2="322.58" y2="-73.66" width="0.1524" layer="90"/>
-<wire x1="322.58" y1="-73.66" x2="322.58" y2="-116.84" width="0.1524" layer="90"/>
-<wire x1="322.58" y1="-116.84" x2="177.8" y2="-116.84" width="0.1524" layer="90"/>
-<text x="177.8" y="-73.66" size="5.08" layer="90">Discharge Circuitry</text>
+<wire x1="177.8" y1="-73.66" x2="327.66" y2="-73.66" width="0.1524" layer="90"/>
+<wire x1="327.66" y1="-73.66" x2="327.66" y2="-116.84" width="0.1524" layer="90"/>
+<wire x1="327.66" y1="-116.84" x2="177.8" y2="-116.84" width="0.1524" layer="90"/>
+<text x="177.8" y="-73.66" size="5.08" layer="90">Discharge and Precharge Circuitry</text>
 <wire x1="177.8" y1="-127" x2="327.66" y2="-127" width="0.1524" layer="90"/>
 <wire x1="327.66" y1="-127" x2="327.66" y2="-205.74" width="0.1524" layer="90"/>
 <wire x1="327.66" y1="-205.74" x2="177.8" y2="-205.74" width="0.1524" layer="90"/>
@@ -3987,7 +3985,7 @@ Current sensor 2: ISB-300-A-600</text>
 <wire x1="177.8" y1="-73.66" x2="177.8" y2="-116.84" width="0.1524" layer="90"/>
 <text x="205.74" y="-114.3" size="1.778" layer="97">Unfused connection
 used at FSAE</text>
-<text x="205.74" y="-93.98" size="1.778" layer="97">Unfused connection
+<text x="205.74" y="-83.82" size="1.778" layer="97">Unfused connection
 used at FSAE</text>
 <wire x1="177.8" y1="55.88" x2="254" y2="55.88" width="0.1524" layer="90"/>
 <wire x1="177.8" y1="15.24" x2="177.8" y2="55.88" width="0.1524" layer="90"/>
@@ -4009,6 +4007,8 @@ Thin wires: Grounded Low Voltage</text>
 <wire x1="160.02" y1="-152.4" x2="10.16" y2="-152.4" width="0.1524" layer="90"/>
 <wire x1="10.16" y1="-152.4" x2="10.16" y2="-254" width="0.1524" layer="90"/>
 <text x="10.16" y="-152.4" size="5.08" layer="90">BMS</text>
+<text x="213.36" y="-93.98" size="1.778" layer="97">Capacitor used
+for Precharge</text>
 </plain>
 <instances>
 <instance part="IC1" gate="G$1" x="121.92" y="-30.48"/>
@@ -4028,12 +4028,11 @@ Thin wires: Grounded Low Voltage</text>
 <instance part="R22" gate="G$1" x="218.44" y="-195.58" rot="R90"/>
 <instance part="INDICATOR" gate="-2" x="307.34" y="-185.42"/>
 <instance part="INDICATOR" gate="-1" x="307.34" y="-182.88"/>
-<instance part="U$12" gate="G$1" x="228.6" y="-76.2"/>
-<instance part="GND14" gate="1" x="246.38" y="-104.14"/>
-<instance part="DISCH+" gate="-2" x="294.64" y="-88.9"/>
-<instance part="DISCH+" gate="-1" x="294.64" y="-86.36"/>
-<instance part="DISCH-" gate="-2" x="294.64" y="-101.6"/>
-<instance part="DISCH-" gate="-1" x="294.64" y="-99.06"/>
+<instance part="U$12" gate="G$1" x="241.3" y="-76.2"/>
+<instance part="DISCH+" gate="-2" x="307.34" y="-88.9"/>
+<instance part="DISCH+" gate="-1" x="307.34" y="-86.36"/>
+<instance part="DISCH-" gate="-2" x="307.34" y="-101.6"/>
+<instance part="DISCH-" gate="-1" x="307.34" y="-99.06"/>
 <instance part="C3" gate="G$1" x="132.08" y="-35.56"/>
 <instance part="CURRENT1" gate="-1" x="60.96" y="-81.28"/>
 <instance part="CURRENT1" gate="-2" x="60.96" y="-83.82"/>
@@ -4051,8 +4050,8 @@ Thin wires: Grounded Low Voltage</text>
 <instance part="R4" gate="G$1" x="91.44" y="-25.4"/>
 <instance part="GND23" gate="1" x="101.6" y="-25.4" rot="R90"/>
 <instance part="GND25" gate="1" x="17.78" y="-22.86" rot="R270"/>
-<instance part="INTERLOCK" gate="-2" x="73.66" y="-127"/>
-<instance part="INTERLOCK" gate="-1" x="73.66" y="-124.46"/>
+<instance part="INTERLOCK" gate="-2" x="101.6" y="-127"/>
+<instance part="INTERLOCK" gate="-1" x="101.6" y="-124.46"/>
 <instance part="ON-LED" gate="LED" x="116.84" y="-20.32" rot="R90"/>
 <instance part="R5" gate="G$1" x="129.54" y="-20.32"/>
 <instance part="P+14" gate="1" x="109.22" y="-20.32" rot="R90"/>
@@ -4063,8 +4062,8 @@ Thin wires: Grounded Low Voltage</text>
 <instance part="5KW_TRIM" gate="G$1" x="73.66" y="-68.58" rot="R180"/>
 <instance part="P+15" gate="1" x="83.82" y="-63.5" rot="R270"/>
 <instance part="GND3" gate="1" x="83.82" y="-73.66" rot="R90"/>
-<instance part="RELAYS" gate="-2" x="73.66" y="-137.16"/>
-<instance part="RELAYS" gate="-1" x="73.66" y="-134.62"/>
+<instance part="RELAYS" gate="-2" x="101.6" y="-137.16"/>
+<instance part="RELAYS" gate="-1" x="101.6" y="-134.62"/>
 <instance part="P+16" gate="1" x="43.18" y="10.16" rot="R270"/>
 <instance part="GND4" gate="1" x="45.72" y="7.62" rot="R90"/>
 <instance part="POWER" gate="-1" x="30.48" y="10.16" rot="MR0"/>
@@ -4102,7 +4101,7 @@ Thin wires: Grounded Low Voltage</text>
 <instance part="IMD" gate="-5" x="129.54" y="38.1"/>
 <instance part="IMD" gate="-6" x="129.54" y="35.56"/>
 <instance part="P+5" gate="1" x="25.4" y="-78.74" rot="MR270"/>
-<instance part="D1" gate="1" x="40.64" y="-137.16" rot="R180"/>
+<instance part="D1" gate="1" x="86.36" y="-132.08" rot="R180"/>
 <instance part="HV_REG1" gate="G$1" x="223.52" y="-142.24"/>
 <instance part="TSAL_SSR" gate="G$1" x="287.02" y="-139.7"/>
 <instance part="THRESHOLD" gate="G$1" x="259.08" y="-167.64"/>
@@ -4124,11 +4123,10 @@ Thin wires: Grounded Low Voltage</text>
 <instance part="R10" gate="G$1" x="218.44" y="-147.32" rot="R90"/>
 <instance part="R9" gate="G$1" x="210.82" y="-147.32" rot="R90"/>
 <instance part="R8" gate="G$1" x="203.2" y="-147.32" rot="R90"/>
-<instance part="C1" gate="G$1" x="213.36" y="33.02"/>
+<instance part="C1" gate="G$1" x="210.82" y="-101.6"/>
 <instance part="U$3" gate="G$1" x="198.12" y="-81.28"/>
 <instance part="U$4" gate="G$1" x="198.12" y="-101.6"/>
-<instance part="D2" gate="1" x="271.78" y="-96.52" rot="R180"/>
-<instance part="GND9" gate="1" x="281.94" y="-99.06"/>
+<instance part="D2" gate="1" x="276.86" y="-99.06"/>
 <instance part="FUSE1" gate="G$1" x="218.44" y="20.32"/>
 <instance part="R27" gate="G$1" x="25.4" y="-193.04" rot="MR90"/>
 <instance part="GND13" gate="1" x="53.34" y="-157.48" rot="MR270"/>
@@ -4224,11 +4222,6 @@ Thin wires: Grounded Low Voltage</text>
 <junction x="302.26" y="-38.1"/>
 </segment>
 <segment>
-<pinref part="GND14" gate="1" pin="GND"/>
-<wire x1="246.38" y1="-101.6" x2="246.38" y2="-93.98" width="0.1524" layer="91"/>
-<pinref part="U$12" gate="G$1" pin="COIL-"/>
-</segment>
-<segment>
 <pinref part="GND17" gate="1" pin="GND"/>
 <pinref part="CURRENT1" gate="-4" pin="S"/>
 <wire x1="58.42" y1="-91.44" x2="58.42" y2="-88.9" width="0.1524" layer="91"/>
@@ -4287,11 +4280,6 @@ Thin wires: Grounded Low Voltage</text>
 <wire x1="124.46" y1="43.18" x2="124.46" y2="45.72" width="0.1524" layer="91"/>
 <junction x="124.46" y="43.18"/>
 <junction x="124.46" y="45.72"/>
-</segment>
-<segment>
-<pinref part="D2" gate="1" pin="A"/>
-<pinref part="GND9" gate="1" pin="GND"/>
-<wire x1="281.94" y1="-96.52" x2="276.86" y2="-96.52" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="45.72" y1="-167.64" x2="48.26" y2="-167.64" width="0.1524" layer="91"/>
@@ -4597,15 +4585,15 @@ Thin wires: Grounded Low Voltage</text>
 <label x="33.02" y="45.72" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="DISCHARGE2" class="0">
+<net name="HV+UNFUSED_FSAE_DISCHARGE" class="0">
 <segment>
 <pinref part="DISCH+" gate="-1" pin="S"/>
-<wire x1="279.4" y1="-86.36" x2="289.56" y2="-86.36" width="0.6096" layer="91"/>
+<wire x1="292.1" y1="-86.36" x2="302.26" y2="-86.36" width="0.6096" layer="91"/>
 <pinref part="DISCH+" gate="-2" pin="S"/>
-<wire x1="289.56" y1="-86.36" x2="292.1" y2="-86.36" width="0.6096" layer="91"/>
-<wire x1="292.1" y1="-88.9" x2="289.56" y2="-88.9" width="0.6096" layer="91"/>
-<wire x1="289.56" y1="-88.9" x2="289.56" y2="-86.36" width="0.6096" layer="91"/>
-<junction x="289.56" y="-86.36"/>
+<wire x1="302.26" y1="-86.36" x2="304.8" y2="-86.36" width="0.6096" layer="91"/>
+<wire x1="304.8" y1="-88.9" x2="302.26" y2="-88.9" width="0.6096" layer="91"/>
+<wire x1="302.26" y1="-88.9" x2="302.26" y2="-86.36" width="0.6096" layer="91"/>
+<junction x="302.26" y="-86.36"/>
 <pinref part="U$12" gate="G$1" pin="CONTACT2"/>
 </segment>
 </net>
@@ -4677,10 +4665,11 @@ Thin wires: Grounded Low Voltage</text>
 <label x="50.8" y="-68.58" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="DISCHARGE1" class="0">
+<net name="HV+UNFUSED_FSAE" class="0">
 <segment>
-<wire x1="203.2" y1="-86.36" x2="226.06" y2="-86.36" width="0.6096" layer="91"/>
+<wire x1="203.2" y1="-86.36" x2="210.82" y2="-86.36" width="0.6096" layer="91"/>
 <pinref part="U$12" gate="G$1" pin="CONTACT1"/>
+<wire x1="210.82" y1="-86.36" x2="238.76" y2="-86.36" width="0.6096" layer="91"/>
 <wire x1="203.2" y1="-83.82" x2="203.2" y2="-86.36" width="0.6096" layer="91"/>
 <pinref part="HV+UNFUSED" gate="-1" pin="S"/>
 <wire x1="203.2" y1="-91.44" x2="203.2" y2="-86.36" width="0.6096" layer="91"/>
@@ -4689,6 +4678,9 @@ Thin wires: Grounded Low Voltage</text>
 <wire x1="203.2" y1="-91.44" x2="203.2" y2="-93.98" width="0.6096" layer="91"/>
 <junction x="203.2" y="-91.44"/>
 <pinref part="U$3" gate="G$1" pin="P$2"/>
+<pinref part="C1" gate="G$1" pin="1"/>
+<wire x1="210.82" y1="-86.36" x2="210.82" y2="-96.52" width="0.6096" layer="91"/>
+<junction x="210.82" y="-86.36"/>
 </segment>
 </net>
 <net name="HV+FUSED_1A" class="0">
@@ -4732,14 +4724,10 @@ Thin wires: Grounded Low Voltage</text>
 <pinref part="IMD_HV+" gate="-2" pin="S"/>
 <pinref part="IMD_HV+" gate="-1" pin="S"/>
 <wire x1="228.6" y1="40.64" x2="228.6" y2="38.1" width="0.6096" layer="91"/>
-<wire x1="205.74" y1="40.64" x2="213.36" y2="40.64" width="0.6096" layer="91"/>
 <junction x="228.6" y="40.64"/>
-<wire x1="213.36" y1="40.64" x2="228.6" y2="40.64" width="0.6096" layer="91"/>
+<wire x1="205.74" y1="40.64" x2="228.6" y2="40.64" width="0.6096" layer="91"/>
 <wire x1="205.74" y1="40.64" x2="200.66" y2="40.64" width="0.6096" layer="91"/>
 <junction x="205.74" y="40.64"/>
-<pinref part="C1" gate="G$1" pin="1"/>
-<wire x1="213.36" y1="40.64" x2="213.36" y2="38.1" width="0.6096" layer="91"/>
-<junction x="213.36" y="40.64"/>
 </segment>
 <segment>
 <wire x1="198.12" y1="-83.82" x2="195.58" y2="-83.82" width="0.6096" layer="91"/>
@@ -4747,24 +4735,28 @@ Thin wires: Grounded Low Voltage</text>
 <pinref part="U$3" gate="G$1" pin="P$1"/>
 </segment>
 </net>
-<net name="DISCHARGE3" class="0">
+<net name="HV-UNFUSED_FSAE" class="0">
 <segment>
 <pinref part="HV-UNFUSED" gate="-1" pin="S"/>
 <wire x1="203.2" y1="-104.14" x2="203.2" y2="-109.22" width="0.6096" layer="91"/>
 <pinref part="DISCH-" gate="-1" pin="S"/>
 <wire x1="203.2" y1="-109.22" x2="203.2" y2="-111.76" width="0.6096" layer="91"/>
-<wire x1="292.1" y1="-99.06" x2="289.56" y2="-99.06" width="0.6096" layer="91"/>
-<wire x1="289.56" y1="-99.06" x2="289.56" y2="-101.6" width="0.6096" layer="91"/>
+<wire x1="304.8" y1="-99.06" x2="302.26" y2="-99.06" width="0.6096" layer="91"/>
+<wire x1="302.26" y1="-99.06" x2="302.26" y2="-101.6" width="0.6096" layer="91"/>
 <pinref part="DISCH-" gate="-2" pin="S"/>
-<wire x1="289.56" y1="-101.6" x2="292.1" y2="-101.6" width="0.6096" layer="91"/>
-<wire x1="289.56" y1="-101.6" x2="289.56" y2="-109.22" width="0.6096" layer="91"/>
-<junction x="289.56" y="-101.6"/>
-<wire x1="203.2" y1="-109.22" x2="289.56" y2="-109.22" width="0.6096" layer="91"/>
+<wire x1="302.26" y1="-101.6" x2="304.8" y2="-101.6" width="0.6096" layer="91"/>
+<wire x1="302.26" y1="-101.6" x2="302.26" y2="-109.22" width="0.6096" layer="91"/>
+<junction x="302.26" y="-101.6"/>
+<wire x1="203.2" y1="-109.22" x2="210.82" y2="-109.22" width="0.6096" layer="91"/>
 <junction x="203.2" y="-109.22"/>
 <pinref part="HV-UNFUSED" gate="-2" pin="S"/>
+<wire x1="210.82" y1="-109.22" x2="302.26" y2="-109.22" width="0.6096" layer="91"/>
 <wire x1="203.2" y1="-111.76" x2="203.2" y2="-114.3" width="0.6096" layer="91"/>
 <junction x="203.2" y="-111.76"/>
 <pinref part="U$4" gate="G$1" pin="P$2"/>
+<pinref part="C1" gate="G$1" pin="2"/>
+<wire x1="210.82" y1="-109.22" x2="210.82" y2="-104.14" width="0.6096" layer="91"/>
+<junction x="210.82" y="-109.22"/>
 </segment>
 </net>
 <net name="HV-FUSED" class="0">
@@ -4784,13 +4776,9 @@ Thin wires: Grounded Low Voltage</text>
 <pinref part="IMD_HV-" gate="-2" pin="S"/>
 <pinref part="IMD_HV-" gate="-1" pin="S"/>
 <wire x1="228.6" y1="30.48" x2="228.6" y2="27.94" width="0.6096" layer="91"/>
-<wire x1="205.74" y1="27.94" x2="213.36" y2="27.94" width="0.6096" layer="91"/>
 <junction x="205.74" y="27.94"/>
 <junction x="228.6" y="27.94"/>
-<pinref part="C1" gate="G$1" pin="2"/>
-<wire x1="213.36" y1="27.94" x2="228.6" y2="27.94" width="0.6096" layer="91"/>
-<wire x1="213.36" y1="30.48" x2="213.36" y2="27.94" width="0.6096" layer="91"/>
-<junction x="213.36" y="27.94"/>
+<wire x1="205.74" y1="27.94" x2="228.6" y2="27.94" width="0.6096" layer="91"/>
 <pinref part="FUSE1" gate="G$1" pin="P1"/>
 <wire x1="200.66" y1="20.32" x2="208.28" y2="20.32" width="0.6096" layer="91"/>
 <junction x="200.66" y="20.32"/>
@@ -4812,38 +4800,35 @@ Thin wires: Grounded Low Voltage</text>
 </net>
 <net name="SHUTDOWN7" class="0">
 <segment>
-<wire x1="259.08" y1="-104.14" x2="259.08" y2="-96.52" width="0.1524" layer="91"/>
 <pinref part="U$12" gate="G$1" pin="COIL+"/>
-<label x="259.08" y="-104.14" size="1.778" layer="95" xref="yes"/>
 <pinref part="D2" gate="1" pin="C"/>
-<wire x1="259.08" y1="-96.52" x2="259.08" y2="-93.98" width="0.1524" layer="91"/>
-<wire x1="269.24" y1="-96.52" x2="259.08" y2="-96.52" width="0.1524" layer="91"/>
-<junction x="259.08" y="-96.52"/>
+<wire x1="279.4" y1="-93.98" x2="271.78" y2="-93.98" width="0.1524" layer="91"/>
+<wire x1="279.4" y1="-99.06" x2="279.4" y2="-93.98" width="0.1524" layer="91"/>
+<label x="281.94" y="-93.98" size="1.778" layer="95" xref="yes"/>
+<wire x1="279.4" y1="-93.98" x2="281.94" y2="-93.98" width="0.1524" layer="91"/>
+<junction x="279.4" y="-93.98"/>
 </segment>
 <segment>
 <pinref part="INTERLOCK" gate="-2" pin="S"/>
-<wire x1="71.12" y1="-127" x2="50.8" y2="-127" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="-127" x2="50.8" y2="-134.62" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="-134.62" x2="71.12" y2="-134.62" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="-127" x2="93.98" y2="-127" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="-127" x2="93.98" y2="-132.08" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="-132.08" x2="93.98" y2="-134.62" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="-134.62" x2="99.06" y2="-134.62" width="0.1524" layer="91"/>
 <label x="50.8" y="-127" size="1.778" layer="95"/>
 <pinref part="RELAYS" gate="-1" pin="S"/>
-<pinref part="RELAYS" gate="-2" pin="S"/>
-<wire x1="71.12" y1="-137.16" x2="50.8" y2="-137.16" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="-137.16" x2="50.8" y2="-134.62" width="0.1524" layer="91"/>
-<junction x="50.8" y="-134.62"/>
 <label x="43.18" y="-127" size="1.27" layer="95" rot="R180" xref="yes"/>
-<wire x1="50.8" y1="-127" x2="43.18" y2="-127" width="0.1524" layer="91"/>
-<junction x="50.8" y="-127"/>
+<wire x1="93.98" y1="-127" x2="43.18" y2="-127" width="0.1524" layer="91"/>
+<junction x="93.98" y="-127"/>
 <pinref part="D1" gate="1" pin="A"/>
-<wire x1="50.8" y1="-137.16" x2="45.72" y2="-137.16" width="0.1524" layer="91"/>
-<junction x="50.8" y="-137.16"/>
+<wire x1="91.44" y1="-132.08" x2="93.98" y2="-132.08" width="0.1524" layer="91"/>
+<junction x="93.98" y="-132.08"/>
 </segment>
 </net>
 <net name="SHUTDOWN6" class="0">
 <segment>
 <pinref part="INTERLOCK" gate="-1" pin="S"/>
 <label x="50.8" y="-124.46" size="1.778" layer="95"/>
-<wire x1="43.18" y1="-124.46" x2="71.12" y2="-124.46" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="-124.46" x2="99.06" y2="-124.46" width="0.1524" layer="91"/>
 <label x="43.18" y="-124.46" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
@@ -4862,8 +4847,9 @@ Thin wires: Grounded Low Voltage</text>
 </segment>
 <segment>
 <pinref part="D1" gate="1" pin="C"/>
-<wire x1="38.1" y1="-137.16" x2="35.56" y2="-137.16" width="0.1524" layer="91"/>
-<label x="35.56" y="-137.16" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="83.82" y1="-132.08" x2="43.18" y2="-132.08" width="0.1524" layer="91"/>
+<label x="43.18" y="-132.08" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="50.8" y="-132.08" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="BMS_OK" class="0">
@@ -5516,6 +5502,24 @@ Thin wires: Grounded Low Voltage</text>
 <pinref part="U$9" gate="G$1" pin="D9(RX2)"/>
 <wire x1="66.04" y1="-198.12" x2="48.26" y2="-198.12" width="0.1524" layer="91"/>
 <label x="48.26" y="-198.12" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="DISCHARGE_RELAY_GND" class="0">
+<segment>
+<pinref part="U$12" gate="G$1" pin="COIL-"/>
+<wire x1="259.08" y1="-93.98" x2="264.16" y2="-93.98" width="0.1524" layer="91"/>
+<wire x1="264.16" y1="-93.98" x2="264.16" y2="-99.06" width="0.1524" layer="91"/>
+<pinref part="D2" gate="1" pin="A"/>
+<wire x1="271.78" y1="-99.06" x2="264.16" y2="-99.06" width="0.1524" layer="91"/>
+<wire x1="264.16" y1="-99.06" x2="261.62" y2="-99.06" width="0.1524" layer="91"/>
+<junction x="264.16" y="-99.06"/>
+<label x="261.62" y="-99.06" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="RELAYS" gate="-2" pin="S"/>
+<wire x1="99.06" y1="-137.16" x2="43.18" y2="-137.16" width="0.1524" layer="91"/>
+<label x="43.18" y="-137.16" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="50.8" y="-137.16" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
