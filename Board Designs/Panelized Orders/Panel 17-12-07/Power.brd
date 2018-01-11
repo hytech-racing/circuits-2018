@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -2149,6 +2149,13 @@
 <hole x="183.388" y="77.978" drill="3.4"/>
 <hole x="183.388" y="18.288" drill="3.4"/>
 <hole x="248.158" y="18.288" drill="3.4"/>
+<wire x1="178.562" y1="143.256" x2="178.562" y2="82.804" width="0" layer="157"/>
+<wire x1="178.562" y1="82.804" x2="178.562" y2="13.462" width="0" layer="157"/>
+<wire x1="178.562" y1="13.462" x2="178.562" y2="0" width="0" layer="157"/>
+<wire x1="178.562" y1="82.804" x2="246.888" y2="82.804" width="0" layer="157"/>
+<wire x1="246.888" y1="82.804" x2="251.968" y2="82.804" width="0" layer="157"/>
+<wire x1="246.888" y1="82.804" x2="246.888" y2="143.256" width="0" layer="157"/>
+<wire x1="178.562" y1="13.462" x2="251.968" y2="13.462" width="0" layer="157"/>
 </plain>
 <libraries>
 <library name="HyTechDevices">
