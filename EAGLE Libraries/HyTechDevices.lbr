@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -8295,6 +8295,21 @@ MX150L™ Vertical PCB Header</description>
 <pad name="39" x="49.528" y="1.264" drill="1" diameter="1.778"/>
 <pad name="40" x="49.528" y="3.804" drill="1" diameter="1.778"/>
 </package>
+<package name="AMC1200B">
+<smd name="GND1" x="-4.05" y="0" dx="2.35" dy="0.65" layer="1"/>
+<smd name="VINN" x="-4.05" y="2.54" dx="2.35" dy="0.65" layer="1"/>
+<smd name="VINP" x="-4.05" y="5.08" dx="2.35" dy="0.65" layer="1"/>
+<smd name="VDD1" x="-4.05" y="7.62" dx="2.35" dy="0.65" layer="1"/>
+<smd name="GND2" x="4.05" y="0" dx="2.35" dy="0.65" layer="1"/>
+<smd name="VOUTN" x="4.05" y="2.54" dx="2.35" dy="0.65" layer="1"/>
+<smd name="VOUTP" x="4.05" y="5.08" dx="2.35" dy="0.65" layer="1"/>
+<smd name="VDD2" x="4.05" y="7.62" dx="2.35" dy="0.65" layer="1"/>
+<wire x1="-3.254278125" y1="-0.919" x2="3.345721875" y2="-0.919" width="0.127" layer="21"/>
+<wire x1="3.345721875" y1="-0.919" x2="3.345721875" y2="8.381" width="0.127" layer="21"/>
+<wire x1="3.345721875" y1="8.381" x2="-3.2537375" y2="8.381" width="0.127" layer="21"/>
+<wire x1="-3.2537375" y1="8.381" x2="-3.2537375" y2="-0.91948125" width="0.127" layer="21"/>
+<circle x="-1.905" y="7.62" radius="0.254" width="0.0508" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ARDUINO_NANO">
@@ -11352,6 +11367,20 @@ Demo Board</text>
 <pin name="6" x="10.16" y="15.24" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <wire x1="3.81" y1="17.78" x2="5.08" y2="17.78" width="0.6096" layer="94"/>
 <pin name="7" x="10.16" y="17.78" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+</symbol>
+<symbol name="AMC1200B">
+<wire x1="-22.86" y1="25.4" x2="-5.08" y2="25.4" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="25.4" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="5.08" x2="-22.86" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-22.86" y1="5.08" x2="-22.86" y2="25.4" width="0.254" layer="94"/>
+<pin name="VDD1" x="-27.94" y="22.86" length="middle" direction="pwr"/>
+<pin name="VINP" x="-27.94" y="17.78" length="middle" direction="in"/>
+<pin name="VINN" x="-27.94" y="12.7" length="middle" direction="in"/>
+<pin name="GND1" x="-27.94" y="7.62" length="middle" direction="pwr"/>
+<pin name="VDD2" x="0" y="22.86" length="middle" direction="pwr" rot="R180"/>
+<pin name="VOUTP" x="0" y="17.78" length="middle" direction="out" rot="R180"/>
+<pin name="VOUTN" x="0" y="12.7" length="middle" direction="out" rot="R180"/>
+<pin name="GND2" x="0" y="7.62" length="middle" direction="pwr" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -17583,6 +17612,28 @@ Output Current: 50 mA (max)
 <connect gate="G$1" pin="5" pad="5"/>
 <connect gate="G$1" pin="6" pad="6"/>
 <connect gate="G$1" pin="7" pad="7"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="AMC1200B">
+<gates>
+<gate name="G$1" symbol="AMC1200B" x="10.16" y="-10.16"/>
+</gates>
+<devices>
+<device name="" package="AMC1200B">
+<connects>
+<connect gate="G$1" pin="GND1" pad="GND1"/>
+<connect gate="G$1" pin="GND2" pad="GND2"/>
+<connect gate="G$1" pin="VDD1" pad="VDD1"/>
+<connect gate="G$1" pin="VDD2" pad="VDD2"/>
+<connect gate="G$1" pin="VINN" pad="VINN"/>
+<connect gate="G$1" pin="VINP" pad="VINP"/>
+<connect gate="G$1" pin="VOUTN" pad="VOUTN"/>
+<connect gate="G$1" pin="VOUTP" pad="VOUTP"/>
 </connects>
 <technologies>
 <technology name=""/>

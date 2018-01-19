@@ -666,6 +666,21 @@ Yageo CFR series &lt;a href="http://www.yageo.com/pdf/yageo/Leaded-R_CFR_2008.pd
 <wire x1="4.064" y1="-3.6195" x2="-4.064" y2="-3.6195" width="0.127" layer="21"/>
 <wire x1="-4.064" y1="-3.6195" x2="-4.064" y2="3.6195" width="0.127" layer="21"/>
 </package>
+<package name="AMC1200B">
+<smd name="GND1" x="-4.05" y="0" dx="2.35" dy="0.65" layer="1"/>
+<smd name="VINN" x="-4.05" y="2.54" dx="2.35" dy="0.65" layer="1"/>
+<smd name="VINP" x="-4.05" y="5.08" dx="2.35" dy="0.65" layer="1"/>
+<smd name="VDD1" x="-4.05" y="7.62" dx="2.35" dy="0.65" layer="1"/>
+<smd name="GND2" x="4.05" y="0" dx="2.35" dy="0.65" layer="1"/>
+<smd name="VOUTN" x="4.05" y="2.54" dx="2.35" dy="0.65" layer="1"/>
+<smd name="VOUTP" x="4.05" y="5.08" dx="2.35" dy="0.65" layer="1"/>
+<smd name="VDD2" x="4.05" y="7.62" dx="2.35" dy="0.65" layer="1"/>
+<wire x1="-3.254278125" y1="-0.919" x2="3.345721875" y2="-0.919" width="0.127" layer="21"/>
+<wire x1="3.345721875" y1="-0.919" x2="3.345721875" y2="8.381" width="0.127" layer="21"/>
+<wire x1="3.345721875" y1="8.381" x2="-3.2537375" y2="8.381" width="0.127" layer="21"/>
+<wire x1="-3.2537375" y1="8.381" x2="-3.2537375" y2="-0.91948125" width="0.127" layer="21"/>
+<circle x="-1.905" y="7.62" radius="0.254" width="0.0508" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="OPAMP_2_CHANNEL">
@@ -778,6 +793,20 @@ Yageo CFR series &lt;a href="http://www.yageo.com/pdf/yageo/Leaded-R_CFR_2008.pd
 <pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <text x="-3.81" y="1.4986" size="1.778" layer="95">&gt;NAME</text>
 <text x="-3.81" y="-3.302" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="AMC1200B">
+<wire x1="-22.86" y1="25.4" x2="-5.08" y2="25.4" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="25.4" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="5.08" x2="-22.86" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-22.86" y1="5.08" x2="-22.86" y2="25.4" width="0.254" layer="94"/>
+<pin name="VDD1" x="-27.94" y="22.86" length="middle" direction="pwr"/>
+<pin name="VINP" x="-27.94" y="17.78" length="middle" direction="in"/>
+<pin name="VINN" x="-27.94" y="12.7" length="middle" direction="in"/>
+<pin name="GND1" x="-27.94" y="7.62" length="middle" direction="pwr"/>
+<pin name="VDD2" x="0" y="22.86" length="middle" direction="pwr" rot="R180"/>
+<pin name="VOUTP" x="0" y="17.78" length="middle" direction="out" rot="R180"/>
+<pin name="VOUTN" x="0" y="12.7" length="middle" direction="out" rot="R180"/>
+<pin name="GND2" x="0" y="7.62" length="middle" direction="pwr" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1125,6 +1154,28 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </device>
 </devices>
 </deviceset>
+<deviceset name="AMC1200B">
+<gates>
+<gate name="G$1" symbol="AMC1200B" x="10.16" y="-10.16"/>
+</gates>
+<devices>
+<device name="" package="AMC1200B">
+<connects>
+<connect gate="G$1" pin="GND1" pad="GND1"/>
+<connect gate="G$1" pin="GND2" pad="GND2"/>
+<connect gate="G$1" pin="VDD1" pad="VDD1"/>
+<connect gate="G$1" pin="VDD2" pad="VDD2"/>
+<connect gate="G$1" pin="VINN" pad="VINN"/>
+<connect gate="G$1" pin="VINP" pad="VINP"/>
+<connect gate="G$1" pin="VOUTN" pad="VOUTN"/>
+<connect gate="G$1" pin="VOUTP" pad="VOUTP"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="supply1">
@@ -1199,6 +1250,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="R1" library="HyTechDevices" deviceset="RESISTOR" device="0402"/>
 <part name="R2" library="HyTechDevices" deviceset="RESISTOR" device="0402"/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
+<part name="U$3" library="HyTechDevices" deviceset="AMC1200B" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1220,6 +1272,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <instance part="R1" gate="G$1" x="114.3" y="50.8"/>
 <instance part="R2" gate="G$1" x="124.46" y="50.8"/>
 <instance part="GND2" gate="1" x="132.08" y="48.26"/>
+<instance part="U$3" gate="G$1" x="68.58" y="53.34"/>
 </instances>
 <busses>
 </busses>

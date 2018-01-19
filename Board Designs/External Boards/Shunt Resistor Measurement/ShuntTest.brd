@@ -290,6 +290,21 @@ chip</description>
 <text x="-0.889" y="0.6985" size="0.4064" layer="25">&gt;NAME</text>
 <text x="-1.0795" y="-1.143" size="0.4064" layer="27">&gt;VALUE</text>
 </package>
+<package name="AMC1200B">
+<smd name="GND1" x="-4.05" y="0" dx="2.35" dy="0.65" layer="1"/>
+<smd name="VINN" x="-4.05" y="2.54" dx="2.35" dy="0.65" layer="1"/>
+<smd name="VINP" x="-4.05" y="5.08" dx="2.35" dy="0.65" layer="1"/>
+<smd name="VDD1" x="-4.05" y="7.62" dx="2.35" dy="0.65" layer="1"/>
+<smd name="GND2" x="4.05" y="0" dx="2.35" dy="0.65" layer="1"/>
+<smd name="VOUTN" x="4.05" y="2.54" dx="2.35" dy="0.65" layer="1"/>
+<smd name="VOUTP" x="4.05" y="5.08" dx="2.35" dy="0.65" layer="1"/>
+<smd name="VDD2" x="4.05" y="7.62" dx="2.35" dy="0.65" layer="1"/>
+<wire x1="-3.254278125" y1="-0.919" x2="3.345721875" y2="-0.919" width="0.127" layer="21"/>
+<wire x1="3.345721875" y1="-0.919" x2="3.345721875" y2="8.381" width="0.127" layer="21"/>
+<wire x1="3.345721875" y1="8.381" x2="-3.2537375" y2="8.381" width="0.127" layer="21"/>
+<wire x1="-3.2537375" y1="8.381" x2="-3.2537375" y2="-0.91948125" width="0.127" layer="21"/>
+<circle x="-1.905" y="7.62" radius="0.254" width="0.0508" layer="21"/>
+</package>
 </packages>
 </library>
 </libraries>
@@ -491,6 +506,7 @@ design rules under a new name.</description>
 </element>
 <element name="R1" library="HyTechDevices" package="0402-RES" value="" x="13.97" y="13.97" rot="MR0"/>
 <element name="R2" library="HyTechDevices" package="0402-RES" value="" x="12.7" y="10.16" rot="MR0"/>
+<element name="U$3" library="HyTechDevices" package="AMC1200B" value="AMC1200B" x="5.08" y="-12.7"/>
 </elements>
 <signals>
 <signal name="+5V">
@@ -545,6 +561,18 @@ design rules under a new name.</description>
 <contactref element="R2" pad="2"/>
 <contactref element="U$2" pad="A1"/>
 <wire x1="12.05" y1="10.16" x2="3.81" y2="30.48" width="0" layer="19" extent="16-16"/>
+</signal>
+<signal name="VDD1">
+<contactref element="U$3" pad="VDD1"/>
+</signal>
+<signal name="GND1">
+<contactref element="U$3" pad="GND1"/>
+</signal>
+<signal name="VDD2">
+<contactref element="U$3" pad="VDD2"/>
+</signal>
+<signal name="GND2">
+<contactref element="U$3" pad="GND2"/>
 </signal>
 </signals>
 </board>
