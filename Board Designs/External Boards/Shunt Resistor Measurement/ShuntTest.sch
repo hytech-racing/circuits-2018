@@ -237,8 +237,8 @@
 <text x="-5.334" y="-2.921" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
 <text x="-3.556" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
-<package name="TEENSY_3.2_SIMPLE">
-<pad name="AGND" x="16.51" y="31.75" drill="0.8" shape="long"/>
+<package name="TEENSY_3.2_EXT">
+<pad name="3.3V" x="16.51" y="31.75" drill="0.8" shape="long"/>
 <pad name="D13" x="16.51" y="1.27" drill="0.8" shape="long"/>
 <pad name="A0" x="16.51" y="3.81" drill="0.8" shape="long"/>
 <pad name="A1" x="16.51" y="6.35" drill="0.8" shape="long"/>
@@ -257,7 +257,7 @@
 <pad name="D2" x="1.27" y="26.67" drill="0.8" shape="long"/>
 <pad name="GND" x="1.27" y="34.29" drill="0.8" shape="long"/>
 <pad name="VIN" x="16.51" y="34.29" drill="0.8" shape="long"/>
-<pad name="3.3V" x="16.51" y="29.21" drill="0.8" shape="long"/>
+<pad name="AGND" x="16.51" y="29.21" drill="0.8" shape="long"/>
 <pad name="A9" x="16.51" y="26.67" drill="0.8" shape="long"/>
 <pad name="D0(RX1)" x="1.27" y="31.75" drill="0.8" shape="long" rot="R180"/>
 <pad name="D1(TX1)" x="1.27" y="29.21" drill="0.8" shape="long" rot="R180"/>
@@ -274,10 +274,15 @@
 <wire x1="5.08" y1="35.56" x2="5.08" y2="36.322" width="0.127" layer="21"/>
 <wire x1="0" y1="35.56" x2="5.08" y2="35.56" width="0.127" layer="21"/>
 <wire x1="12.7" y1="35.56" x2="17.78" y2="35.56" width="0.127" layer="21"/>
-<text x="10.16" y="7.62" size="2.54" layer="51" rot="R90">Teensy 3.2</text>
+<text x="10.16" y="7.62" size="2.54" layer="51" rot="R90">Teensy LC</text>
 <wire x1="5.08" y1="35.56" x2="5.08" y2="30.48" width="0.127" layer="21"/>
 <wire x1="5.08" y1="30.48" x2="12.7" y2="30.48" width="0.127" layer="21"/>
 <wire x1="12.7" y1="30.48" x2="12.7" y2="35.56" width="0.127" layer="21"/>
+<pad name="VBAT" x="3.81" y="1.27" drill="0.8" shape="long" rot="R90"/>
+<pad name="3.3V2" x="6.35" y="1.27" drill="0.8" shape="long" rot="R90"/>
+<pad name="GND2" x="8.89" y="1.27" drill="0.8" shape="long" rot="R90"/>
+<pad name="PGRM" x="11.43" y="1.27" drill="0.8" shape="long" rot="R90"/>
+<pad name="DAC" x="13.97" y="1.27" drill="0.8" shape="long" rot="R90"/>
 </package>
 <package name="0402-RES">
 <description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
@@ -733,40 +738,45 @@ MX150L™ Vertical PCB Header</description>
 <wire x1="12.7" y1="-2.54" x2="7.62" y2="-2.54" width="0.1524" layer="94"/>
 <wire x1="7.62" y1="-2.54" x2="7.62" y2="-6.35" width="0.1524" layer="94"/>
 </symbol>
-<symbol name="TEENSY_3.2_SIMPLE">
-<pin name="D0(RX1)" x="-2.54" y="35.56" visible="pin" length="short"/>
-<pin name="D1(TX1)" x="-2.54" y="33.02" visible="pin" length="short"/>
-<pin name="GND" x="-2.54" y="38.1" visible="pin" length="short"/>
-<wire x1="0" y1="40.64" x2="0" y2="0" width="0.254" layer="94"/>
+<symbol name="TEENSY_3.2_EXT">
+<pin name="D0(RX1)" x="-2.54" y="40.64" visible="pin" length="short"/>
+<pin name="D1(TX1)" x="-2.54" y="38.1" visible="pin" length="short"/>
+<pin name="GND" x="-2.54" y="43.18" visible="pin" length="short"/>
+<wire x1="0" y1="48.26" x2="0" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="20.32" y2="0" width="0.254" layer="94"/>
-<wire x1="20.32" y1="0" x2="20.32" y2="40.64" width="0.254" layer="94"/>
-<wire x1="20.32" y1="40.64" x2="0" y2="40.64" width="0.254" layer="94"/>
-<text x="5.08" y="1.27" size="1.778" layer="95">Teensy 3.2</text>
-<pin name="D2" x="-2.54" y="30.48" visible="pin" length="short"/>
-<pin name="D3(CANTX)" x="-2.54" y="27.94" visible="pin" length="short"/>
-<pin name="D4(CANRX)" x="-2.54" y="25.4" visible="pin" length="short"/>
-<pin name="D5" x="-2.54" y="22.86" visible="pin" length="short"/>
-<pin name="D6" x="-2.54" y="20.32" visible="pin" length="short"/>
-<pin name="D7(RX3)" x="-2.54" y="17.78" visible="pin" length="short"/>
-<pin name="D8(TX3)" x="-2.54" y="15.24" visible="pin" length="short"/>
-<pin name="D9(RX2)" x="-2.54" y="12.7" visible="pin" length="short"/>
-<pin name="D10(TX2)" x="-2.54" y="10.16" visible="pin" length="short"/>
-<pin name="D11" x="-2.54" y="7.62" visible="pin" length="short"/>
-<pin name="D12" x="-2.54" y="5.08" visible="pin" length="short"/>
-<pin name="D13" x="22.86" y="5.08" visible="pin" length="short" rot="R180"/>
-<pin name="A0" x="22.86" y="7.62" visible="pin" length="short" rot="R180"/>
-<pin name="A1" x="22.86" y="10.16" visible="pin" length="short" rot="R180"/>
-<pin name="A2" x="22.86" y="12.7" visible="pin" length="short" rot="R180"/>
-<pin name="A3" x="22.86" y="15.24" visible="pin" length="short" rot="R180"/>
-<pin name="A4" x="22.86" y="17.78" visible="pin" length="short" rot="R180"/>
-<pin name="A6" x="22.86" y="22.86" visible="pin" length="short" rot="R180"/>
-<pin name="A5" x="22.86" y="20.32" visible="pin" length="short" rot="R180"/>
-<pin name="A7" x="22.86" y="25.4" visible="pin" length="short" rot="R180"/>
-<pin name="A9" x="22.86" y="30.48" visible="pin" length="short" rot="R180"/>
-<pin name="A8" x="22.86" y="27.94" visible="pin" length="short" rot="R180"/>
-<pin name="3.3V" x="22.86" y="33.02" visible="pin" length="short" rot="R180"/>
-<pin name="VIN" x="22.86" y="38.1" visible="pin" length="short" rot="R180"/>
-<pin name="AGND" x="22.86" y="35.56" visible="pin" length="short" rot="R180"/>
+<wire x1="20.32" y1="0" x2="20.32" y2="48.26" width="0.254" layer="94"/>
+<wire x1="20.32" y1="48.26" x2="0" y2="48.26" width="0.254" layer="94"/>
+<text x="4.064" y="45.72" size="1.778" layer="95">Teensy 3.2</text>
+<pin name="D2" x="-2.54" y="35.56" visible="pin" length="short"/>
+<pin name="D3(CANTX)" x="-2.54" y="33.02" visible="pin" length="short"/>
+<pin name="D4(CANRX)" x="-2.54" y="30.48" visible="pin" length="short"/>
+<pin name="D5" x="-2.54" y="27.94" visible="pin" length="short"/>
+<pin name="D6" x="-2.54" y="25.4" visible="pin" length="short"/>
+<pin name="D7(RX3)" x="-2.54" y="22.86" visible="pin" length="short"/>
+<pin name="D8(TX3)" x="-2.54" y="20.32" visible="pin" length="short"/>
+<pin name="D9(RX2)" x="-2.54" y="17.78" visible="pin" length="short"/>
+<pin name="D10(TX2)" x="-2.54" y="15.24" visible="pin" length="short"/>
+<pin name="D11" x="-2.54" y="12.7" visible="pin" length="short"/>
+<pin name="D12" x="-2.54" y="10.16" visible="pin" length="short"/>
+<pin name="D13" x="22.86" y="10.16" visible="pin" length="short" rot="R180"/>
+<pin name="A0" x="22.86" y="12.7" visible="pin" length="short" rot="R180"/>
+<pin name="A1" x="22.86" y="15.24" visible="pin" length="short" rot="R180"/>
+<pin name="A2" x="22.86" y="17.78" visible="pin" length="short" rot="R180"/>
+<pin name="A3" x="22.86" y="20.32" visible="pin" length="short" rot="R180"/>
+<pin name="A4" x="22.86" y="22.86" visible="pin" length="short" rot="R180"/>
+<pin name="A6" x="22.86" y="27.94" visible="pin" length="short" rot="R180"/>
+<pin name="A5" x="22.86" y="25.4" visible="pin" length="short" rot="R180"/>
+<pin name="A7" x="22.86" y="30.48" visible="pin" length="short" rot="R180"/>
+<pin name="A9" x="22.86" y="35.56" visible="pin" length="short" rot="R180"/>
+<pin name="A8" x="22.86" y="33.02" visible="pin" length="short" rot="R180"/>
+<pin name="3.3V" x="22.86" y="40.64" visible="pin" length="short" rot="R180"/>
+<pin name="VIN" x="22.86" y="43.18" visible="pin" length="short" rot="R180"/>
+<pin name="AGND" x="22.86" y="38.1" visible="pin" length="short" rot="R180"/>
+<pin name="VBAT" x="5.08" y="-2.54" visible="pin" length="short" rot="R90"/>
+<pin name="3.3V2" x="7.62" y="-2.54" visible="pin" length="short" rot="R90"/>
+<pin name="GND2" x="10.16" y="-2.54" visible="pin" length="short" rot="R90"/>
+<pin name="PGRM" x="12.7" y="-2.54" visible="pin" length="short" rot="R90"/>
+<pin name="DAC" x="15.24" y="-2.54" visible="pin" length="short" rot="R90"/>
 </symbol>
 <symbol name="MV">
 <wire x1="1.27" y1="0" x2="0" y2="0" width="0.6096" layer="94"/>
@@ -849,15 +859,16 @@ MX150L™ Vertical PCB Header</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="TEENSY_3.2_SIMPLE">
-<description>Simple version of the Teensy 3.2 board that only uses the 2 main rows of pins, not the inner pins or the pins opposite the usb port.</description>
+<deviceset name="TEENSY_3.2_EXT">
+<description>Version of the Teensy LC board that uses the 2 main rows of pins and the pins opposite the usb port.</description>
 <gates>
-<gate name="G$1" symbol="TEENSY_3.2_SIMPLE" x="0" y="0"/>
+<gate name="G$1" symbol="TEENSY_3.2_EXT" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="TEENSY_3.2_SIMPLE">
+<device name="" package="TEENSY_3.2_EXT">
 <connects>
 <connect gate="G$1" pin="3.3V" pad="3.3V"/>
+<connect gate="G$1" pin="3.3V2" pad="3.3V2"/>
 <connect gate="G$1" pin="A0" pad="A0"/>
 <connect gate="G$1" pin="A1" pad="A1"/>
 <connect gate="G$1" pin="A2" pad="A2"/>
@@ -883,7 +894,11 @@ MX150L™ Vertical PCB Header</description>
 <connect gate="G$1" pin="D7(RX3)" pad="D7(RX3)"/>
 <connect gate="G$1" pin="D8(TX3)" pad="D8(TX3)"/>
 <connect gate="G$1" pin="D9(RX2)" pad="D9(RX2)"/>
+<connect gate="G$1" pin="DAC" pad="DAC"/>
 <connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="GND2" pad="GND2"/>
+<connect gate="G$1" pin="PGRM" pad="PGRM"/>
+<connect gate="G$1" pin="VBAT" pad="VBAT"/>
 <connect gate="G$1" pin="VIN" pad="VIN"/>
 </connects>
 <technologies>
@@ -1276,7 +1291,7 @@ Source: http://www.molex.com</description>
 </classes>
 <parts>
 <part name="U$1" library="HyTechDevices" deviceset="MCP6002" device="PDIP"/>
-<part name="U$2" library="HyTechDevices" deviceset="TEENSY_3.2_SIMPLE" device=""/>
+<part name="U$2" library="HyTechDevices" deviceset="TEENSY_3.2_EXT" device=""/>
 <part name="P+1" library="supply1" deviceset="+5V" device=""/>
 <part name="P+2" library="supply1" deviceset="+5V" device=""/>
 <part name="R1" library="HyTechDevices" deviceset="RESISTOR" device="0402"/>
@@ -1287,10 +1302,10 @@ Source: http://www.molex.com</description>
 <part name="P+4" library="supply1" deviceset="+5V" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="+3V2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
-<part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="X1" library="HyTechDevices" deviceset="CONNECTOR-4" device=""/>
 <part name="P+3" library="supply1" deviceset="+5V" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
+<part name="GND4" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1303,7 +1318,7 @@ to bias the signal on pin A6.</text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="91.44" y="35.56" rot="R180"/>
-<instance part="U$2" gate="G$1" x="38.1" y="-17.78" rot="MR90"/>
+<instance part="U$2" gate="G$1" x="33.02" y="-17.78" rot="MR90"/>
 <instance part="P+1" gate="1" x="76.2" y="20.32"/>
 <instance part="P+2" gate="1" x="71.12" y="35.56" rot="R90"/>
 <instance part="R1" gate="G$1" x="99.06" y="35.56"/>
@@ -1314,13 +1329,13 @@ to bias the signal on pin A6.</text>
 <instance part="P+4" gate="1" x="8.89" y="40.64" rot="MR270"/>
 <instance part="GND3" gate="1" x="46.99" y="25.4" rot="R90"/>
 <instance part="+3V2" gate="G$1" x="73.66" y="12.7"/>
-<instance part="GND4" gate="1" x="68.58" y="-25.4" rot="MR0"/>
 <instance part="X1" gate="-1" x="10.16" y="17.78" rot="R180"/>
 <instance part="X1" gate="-2" x="10.16" y="25.4" rot="R180"/>
 <instance part="X1" gate="-3" x="10.16" y="35.56" rot="R180"/>
 <instance part="X1" gate="-4" x="10.16" y="30.48" rot="R180"/>
 <instance part="P+3" gate="1" x="20.32" y="17.78" rot="MR90"/>
 <instance part="GND1" gate="1" x="109.22" y="43.18" rot="R90"/>
+<instance part="GND4" gate="1" x="22.86" y="-2.54" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -1356,9 +1371,9 @@ to bias the signal on pin A6.</text>
 <junction x="93.98" y="35.56"/>
 </segment>
 <segment>
-<label x="63.5" y="-5.08" size="1.778" layer="95" rot="R180" xref="yes"/>
+<label x="63.5" y="-22.86" size="1.778" layer="95" rot="R270" xref="yes"/>
 <pinref part="U$2" gate="G$1" pin="D4(CANRX)"/>
-<wire x1="63.5" y1="-20.32" x2="63.5" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="-20.32" x2="63.5" y2="-22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -1383,14 +1398,14 @@ to bias the signal on pin A6.</text>
 <wire x1="44.45" y1="25.4" x2="39.37" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="D2"/>
-<pinref part="GND4" gate="1" pin="GND"/>
-<wire x1="68.58" y1="-22.86" x2="68.58" y2="-20.32" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="U$1" gate="G$1" pin="VSS"/>
 <pinref part="GND1" gate="1" pin="GND"/>
 <wire x1="106.68" y1="43.18" x2="93.98" y2="43.18" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="DAC"/>
+<pinref part="GND4" gate="1" pin="GND"/>
+<wire x1="25.4" y1="-2.54" x2="30.48" y2="-2.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -1400,8 +1415,8 @@ to bias the signal on pin A6.</text>
 <wire x1="44.45" y1="40.64" x2="39.37" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="AGND"/>
 <pinref part="+3V2" gate="G$1" pin="+3V3"/>
+<pinref part="U$2" gate="G$1" pin="3.3V"/>
 <wire x1="73.66" y1="10.16" x2="73.66" y2="5.08" width="0.1524" layer="91"/>
 </segment>
 </net>
