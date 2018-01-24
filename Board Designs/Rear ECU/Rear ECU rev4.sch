@@ -5331,13 +5331,6 @@ GPIO_SSR not installed</text>
 <label x="228.6" y="124.46" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="GPIO_CTRL3" class="0">
-<segment>
-<pinref part="U$3" gate="G$1" pin="D13"/>
-<wire x1="360.68" y1="187.96" x2="363.22" y2="187.96" width="0.1524" layer="91"/>
-<label x="363.22" y="187.96" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
 <net name="GPIO_CTRL1" class="0">
 <segment>
 <pinref part="U$3" gate="G$1" pin="A4"/>
