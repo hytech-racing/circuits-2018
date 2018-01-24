@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.3.1">
+<eagle version="8.4.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -69,14 +69,14 @@
 <layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="89" name="SimProbes" color="9" fill="1" visible="yes" active="yes"/>
-<layer number="90" name="Modules" color="5" fill="1" visible="no" active="yes"/>
-<layer number="91" name="Nets" color="2" fill="1" visible="no" active="yes"/>
-<layer number="92" name="Busses" color="1" fill="1" visible="no" active="yes"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="96" name="Values" color="7" fill="1" visible="no" active="yes"/>
-<layer number="97" name="Info" color="7" fill="1" visible="no" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="no" active="yes"/>
 <layer number="99" name="SpiceOrder" color="7" fill="1" visible="no" active="no"/>
 <layer number="100" name="Muster" color="7" fill="1" visible="no" active="no"/>
@@ -8499,20 +8499,20 @@ MX150L™ Vertical PCB Header</description>
 <circle x="2.54" y="2.54" radius="2.54" width="0.254" layer="94"/>
 </symbol>
 <symbol name="HV_DCDC_VI-J71-CZ">
-<wire x1="-20.32" y1="25.4" x2="43.18" y2="25.4" width="0.254" layer="94"/>
-<wire x1="43.18" y1="25.4" x2="43.18" y2="-30.48" width="0.254" layer="94"/>
-<wire x1="43.18" y1="-30.48" x2="-20.32" y2="-30.48" width="0.254" layer="94"/>
-<wire x1="-20.32" y1="-30.48" x2="-20.32" y2="25.4" width="0.254" layer="94"/>
-<pin name="1VIN+" x="-22.86" y="20.32" length="middle"/>
-<pin name="2GATEIN" x="-22.86" y="10.16" length="middle"/>
-<pin name="3GATEOUT" x="-22.86" y="-7.62" length="middle"/>
-<pin name="4VIN-" x="-22.86" y="-22.86" length="middle"/>
-<pin name="5VOUT+" x="45.72" y="20.32" length="middle" rot="R180"/>
-<pin name="6SENSE+" x="45.72" y="12.7" length="middle" rot="R180"/>
-<pin name="7TRIM" x="45.72" y="0" length="middle" rot="R180"/>
-<pin name="8SENSE-" x="45.72" y="-12.7" length="middle" rot="R180"/>
-<pin name="9VOUT-" x="45.72" y="-22.86" length="middle" rot="R180"/>
-<text x="0" y="0" size="1.778" layer="97">Vicor VI-J71-CZ
+<wire x1="0" y1="0" x2="40.64" y2="0" width="0.254" layer="94"/>
+<wire x1="40.64" y1="0" x2="40.64" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="40.64" y1="-30.48" x2="0" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="0" y1="-30.48" x2="0" y2="0" width="0.254" layer="94"/>
+<pin name="1VIN+" x="-2.54" y="-2.54" visible="pin" length="short"/>
+<pin name="2GATEIN" x="-2.54" y="-10.16" visible="pin" length="short"/>
+<pin name="3GATEOUT" x="-2.54" y="-20.32" visible="pin" length="short"/>
+<pin name="4VIN-" x="-2.54" y="-27.94" visible="pin" length="short"/>
+<pin name="5VOUT+" x="43.18" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="6SENSE+" x="43.18" y="-7.62" visible="pin" length="short" rot="R180"/>
+<pin name="7TRIM" x="43.18" y="-15.24" visible="pin" length="short" rot="R180"/>
+<pin name="8SENSE-" x="43.18" y="-22.86" visible="pin" length="short" rot="R180"/>
+<pin name="9VOUT-" x="43.18" y="-27.94" visible="pin" length="short" rot="R180"/>
+<text x="20.32" y="-15.24" size="1.778" layer="97" align="center">Vicor VI-J71-CZ
 DC/DC</text>
 </symbol>
 <symbol name="ARDUINO-MEGA">
@@ -16302,13 +16302,13 @@ Schurter 0751.0110 Brass Fuse Clip
 &lt;br&gt;
 &lt;a href="http://www.mouser.com/ds/2/358/typ_OG__Clip__5x20-2553.pdf"&gt; Datasheet</description>
 <gates>
-<gate name="G$1" symbol="FUSE_HOLDER-1" x="7.62" y="0"/>
+<gate name="G$1" symbol="FUSE" x="0" y="0"/>
 </gates>
 <devices>
 <device name="_MINIBLADE" package="MINI-BLADE_FUSE_HOLDER">
 <connects>
-<connect gate="G$1" pin="P1" pad="L1 L2"/>
-<connect gate="G$1" pin="P2" pad="R1 R2"/>
+<connect gate="G$1" pin="1" pad="L1 L2"/>
+<connect gate="G$1" pin="2" pad="R1 R2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -16316,8 +16316,8 @@ Schurter 0751.0110 Brass Fuse Clip
 </device>
 <device name="_MIDGET" package="1A3400_38.1MM">
 <connects>
-<connect gate="G$1" pin="P1" pad="P1 P2"/>
-<connect gate="G$1" pin="P2" pad="N3 N4" route="any"/>
+<connect gate="G$1" pin="1" pad="N3 N4"/>
+<connect gate="G$1" pin="2" pad="P1 P2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -16325,8 +16325,8 @@ Schurter 0751.0110 Brass Fuse Clip
 </device>
 <device name="_C1Q1206" package="1206">
 <connects>
-<connect gate="G$1" pin="P1" pad="1"/>
-<connect gate="G$1" pin="P2" pad="2"/>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -16334,8 +16334,8 @@ Schurter 0751.0110 Brass Fuse Clip
 </device>
 <device name="_5X20MM" package="0751.0110">
 <connects>
-<connect gate="G$1" pin="P1" pad="L1 L2"/>
-<connect gate="G$1" pin="P2" pad="R1 R2"/>
+<connect gate="G$1" pin="1" pad="L1 L2"/>
+<connect gate="G$1" pin="2" pad="R1 R2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -16343,8 +16343,17 @@ Schurter 0751.0110 Brass Fuse Clip
 </device>
 <device name="_OMF_250" package="OMF_250">
 <connects>
-<connect gate="G$1" pin="P1" pad="P$1"/>
-<connect gate="G$1" pin="P2" pad="P$2"/>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_TH" package="AXIAL-0.4">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
