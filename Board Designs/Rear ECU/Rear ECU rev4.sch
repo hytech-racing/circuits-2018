@@ -3783,9 +3783,9 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="C4" library="HyTechDevices" deviceset="CAP" device="0805" value="1uF"/>
 <part name="GND30" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="GND31" library="HyTechSymbols" deviceset="GND" device=""/>
-<part name="U$2" library="HyTechDevices" deviceset="N-CHANNEL_MOSFET" device="GENERIC"/>
-<part name="U$4" library="HyTechDevices" deviceset="N-CHANNEL_MOSFET" device="GENERIC"/>
-<part name="U$5" library="HyTechDevices" deviceset="N-CHANNEL_MOSFET" device="GENERIC"/>
+<part name="U$2" library="HyTechDevices" deviceset="N-CHANNEL_MOSFET" device="GENERIC" value="TK8R2A06PL"/>
+<part name="U$4" library="HyTechDevices" deviceset="N-CHANNEL_MOSFET" device="GENERIC" value="TK8R2A06PL"/>
+<part name="U$5" library="HyTechDevices" deviceset="N-CHANNEL_MOSFET" device="GENERIC" value="TK8R2A06PL"/>
 <part name="U$6" library="HyTechDevices" deviceset="G5LE" device=""/>
 <part name="U$7" library="HyTechDevices" deviceset="G5LE" device=""/>
 <part name="SUPPLY1" library="supply2" deviceset="GND1" device=""/>
