@@ -1707,6 +1707,7 @@ Source: Sonnenschein</description>
 <part name="SUPPLY3" library="HyTechSymbols" deviceset="VIN" device=""/>
 <part name="C3" library="HyTechDevices" deviceset="CAP" device="0805"/>
 <part name="GND7" library="HyTechSymbols" deviceset="GND" device=""/>
+<part name="R2" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES"/>
 </parts>
 <sheets>
 <sheet>
@@ -1717,9 +1718,9 @@ Source: Sonnenschein</description>
 <wire x1="132.08" y1="-53.34" x2="132.08" y2="-5.08" width="0.1524" layer="103"/>
 <wire x1="132.08" y1="-5.08" x2="63.5" y2="-5.08" width="0.1524" layer="103"/>
 <text x="63.5" y="-2.54" size="1.778" layer="91">battery_circuit</text>
-<wire x1="86.36" y1="96.52" x2="86.36" y2="12.7" width="0.1524" layer="103"/>
-<wire x1="86.36" y1="12.7" x2="243.84" y2="12.7" width="0.1524" layer="103"/>
-<wire x1="243.84" y1="12.7" x2="243.84" y2="96.52" width="0.1524" layer="103"/>
+<wire x1="86.36" y1="96.52" x2="86.36" y2="0" width="0.1524" layer="103"/>
+<wire x1="86.36" y1="0" x2="243.84" y2="0" width="0.1524" layer="103"/>
+<wire x1="243.84" y1="0" x2="243.84" y2="96.52" width="0.1524" layer="103"/>
 <wire x1="243.84" y1="96.52" x2="86.36" y2="96.52" width="0.1524" layer="103"/>
 </plain>
 <instances>
@@ -1746,8 +1747,9 @@ Source: Sonnenschein</description>
 <instance part="GND6" gate="1" x="200.66" y="50.8" rot="R180"/>
 <instance part="SUPPLY2" gate="G$1" x="180.34" y="43.18"/>
 <instance part="SUPPLY3" gate="G$1" x="182.88" y="27.94"/>
-<instance part="C3" gate="G$1" x="182.88" y="22.86"/>
-<instance part="GND7" gate="1" x="182.88" y="17.78"/>
+<instance part="C3" gate="G$1" x="182.88" y="20.32"/>
+<instance part="GND7" gate="1" x="182.88" y="5.08"/>
+<instance part="R2" gate="G$1" x="182.88" y="12.7" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -1839,13 +1841,8 @@ Source: Sonnenschein</description>
 <pinref part="GND6" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C3" gate="G$1" pin="2"/>
+<pinref part="R2" gate="G$1" pin="1"/>
 <pinref part="GND7" gate="1" pin="GND"/>
-<pinref part="IC1" gate="B" pin="CLK"/>
-<wire x1="172.72" y1="40.64" x2="177.8" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="177.8" y1="40.64" x2="177.8" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="177.8" y1="20.32" x2="182.88" y2="20.32" width="0.1524" layer="91"/>
-<junction x="182.88" y="20.32"/>
 </segment>
 </net>
 <net name="RELAY" class="0">
@@ -1916,6 +1913,7 @@ Source: Sonnenschein</description>
 <segment>
 <pinref part="SUPPLY3" gate="G$1" pin="VIN"/>
 <pinref part="C3" gate="G$1" pin="1"/>
+<wire x1="182.88" y1="25.4" x2="182.88" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -1934,6 +1932,18 @@ Source: Sonnenschein</description>
 <wire x1="144.78" y1="53.34" x2="187.96" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="BASE"/>
 <wire x1="187.96" y1="53.34" x2="187.96" y2="68.58" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="IC1" gate="B" pin="CLK"/>
+<wire x1="172.72" y1="40.64" x2="177.8" y2="40.64" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="C3" gate="G$1" pin="2"/>
+<pinref part="R2" gate="G$1" pin="2"/>
 </segment>
 </net>
 </nets>
