@@ -1190,6 +1190,7 @@
 <hole x="1" y="31" drill="3.3"/>
 <hole x="72.5" y="76" drill="3.3"/>
 <hole x="72.5" y="31" drill="3.3"/>
+<text x="63" y="35.5" size="0.6096" layer="51" rot="R90">Spiritual support by Choukri Nyon</text>
 </plain>
 <libraries>
 <library name="HyTechDevices">
