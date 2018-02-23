@@ -985,6 +985,38 @@ It has reduced top mask to make it harder to put the component on the wrong side
 <rectangle x1="0.175" y1="-0.65" x2="0.275" y2="-0.55" layer="51"/>
 <rectangle x1="-0.125" y1="0" x2="0.125" y2="0.25" layer="21"/>
 </package>
+<package name="DIL04">
+<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
+<wire x1="2.54" y1="2.921" x2="-2.54" y2="2.921" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="-2.921" x2="2.54" y2="-2.921" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="2.921" x2="2.54" y2="-2.921" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="2.921" x2="-2.54" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="-2.921" x2="-2.54" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="1.016" x2="-2.54" y2="-1.016" width="0.1524" layer="21" curve="-180"/>
+<pad name="1" x="-1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="2" x="1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="3" x="1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="4" x="-1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<text x="4.191" y="-2.921" size="1.27" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+<text x="-2.921" y="-2.667" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+</package>
+<package name="DIL06">
+<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
+<wire x1="3.81" y1="2.921" x2="-3.81" y2="2.921" width="0.1524" layer="21"/>
+<wire x1="-3.81" y1="-2.921" x2="3.81" y2="-2.921" width="0.1524" layer="21"/>
+<wire x1="3.81" y1="2.921" x2="3.81" y2="-2.921" width="0.1524" layer="21"/>
+<wire x1="-3.81" y1="2.921" x2="-3.81" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="-3.81" y1="-2.921" x2="-3.81" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="-3.81" y1="1.016" x2="-3.81" y2="-1.016" width="0.1524" layer="21" curve="-180"/>
+<pad name="1" x="-2.54" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="2" x="0" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="5" x="0" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="6" x="-2.54" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="3" x="2.54" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="4" x="2.54" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<text x="-2.413" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-4.064" y="-2.921" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="RESISTOR">
@@ -1151,6 +1183,65 @@ It has reduced top mask to make it harder to put the component on the wrong side
 <vertex x="-1.27" y="0"/>
 <vertex x="1.27" y="0"/>
 <vertex x="0" y="-2.54"/>
+</polygon>
+</symbol>
+<symbol name="PHOTOMOS-DC">
+<wire x1="-5.08" y1="2.54" x2="-5.08" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="1.016" x2="4.318" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="4.318" y1="1.27" x2="4.318" y2="0.762" width="0.1524" layer="94"/>
+<wire x1="4.318" y1="0.254" x2="4.318" y2="0" width="0.1524" layer="94"/>
+<wire x1="4.318" y1="0" x2="4.318" y2="-0.254" width="0.1524" layer="94"/>
+<wire x1="4.318" y1="-0.762" x2="4.318" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="4.318" y1="-1.016" x2="4.318" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="4.318" y1="0" x2="5.08" y2="0" width="0.1524" layer="94"/>
+<wire x1="4.826" y1="0.254" x2="4.318" y2="0" width="0.1524" layer="94"/>
+<wire x1="4.318" y1="0" x2="4.826" y2="-0.254" width="0.1524" layer="94"/>
+<wire x1="4.826" y1="-0.254" x2="4.826" y2="0.254" width="0.1524" layer="94"/>
+<wire x1="4.318" y1="-1.016" x2="5.08" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-1.016" x2="5.08" y2="0" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="1.27" x2="3.81" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-1.016" x2="5.08" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-7.62" y1="5.08" x2="-7.62" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="2.54" x2="-7.62" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-2.54" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="6.35" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="6.35" y1="2.54" x2="7.874" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="6.35" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="6.35" y1="-2.54" x2="7.62" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="6.35" y1="2.54" x2="6.35" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="2.54" x2="-7.62" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="-2.54" x2="-7.62" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0.762" x2="-0.254" y2="-0.508" width="0.2032" layer="94"/>
+<wire x1="-0.254" y1="-0.508" x2="-0.254" y2="1.27" width="0.2032" layer="94"/>
+<wire x1="-0.254" y1="1.27" x2="2.794" y2="-0.762" width="0.2032" layer="94"/>
+<circle x="6.35" y="2.54" radius="0.127" width="0.254" layer="94"/>
+<circle x="6.35" y="-2.54" radius="0.127" width="0.254" layer="94"/>
+<text x="-7.62" y="6.35" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="-7.62" y="-7.62" size="1.778" layer="96" font="vector">&gt;VALUE</text>
+<rectangle x1="5.842" y1="0.254" x2="6.858" y2="0.508" layer="94"/>
+<rectangle x1="-6.35" y1="-1.016" x2="-3.81" y2="-0.762" layer="94"/>
+<pin name="LED+" x="-10.16" y="2.54" visible="pad" length="short" direction="pas"/>
+<pin name="LED-" x="-10.16" y="-2.54" visible="pad" length="short" direction="pas"/>
+<pin name="IO1" x="10.16" y="2.54" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="IO2" x="10.16" y="-2.54" visible="pad" length="short" direction="pas" rot="R180"/>
+<polygon width="0.1524" layer="94">
+<vertex x="-6.35" y="1.016"/>
+<vertex x="-3.81" y="1.016"/>
+<vertex x="-5.08" y="-0.762"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="6.35" y="0.254"/>
+<vertex x="5.842" y="-0.508"/>
+<vertex x="6.858" y="-0.508"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="1.778" y="0.508"/>
+<vertex x="1.27" y="-0.254"/>
+<vertex x="2.794" y="-0.762"/>
 </polygon>
 </symbol>
 </symbols>
@@ -1719,6 +1810,35 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
 </device>
 </devices>
 </deviceset>
+<deviceset name="SOLID_STATE_RELAY">
+<gates>
+<gate name="G$1" symbol="PHOTOMOS-DC" x="0" y="0"/>
+</gates>
+<devices>
+<device name="_G3VM-41AY" package="DIL04">
+<connects>
+<connect gate="G$1" pin="IO1" pad="4"/>
+<connect gate="G$1" pin="IO2" pad="3"/>
+<connect gate="G$1" pin="LED+" pad="1"/>
+<connect gate="G$1" pin="LED-" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_VO14642AT" package="DIL06">
+<connects>
+<connect gate="G$1" pin="IO1" pad="6"/>
+<connect gate="G$1" pin="IO2" pad="5"/>
+<connect gate="G$1" pin="LED+" pad="1"/>
+<connect gate="G$1" pin="LED-" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="HyTechSymbols">
@@ -1896,6 +2016,9 @@ Source: Sonnenschein</description>
 <part name="GND10" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="R9" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES"/>
 <part name="LED1" library="HyTechDevices" deviceset="LED" device="-0805"/>
+<part name="U$1" library="HyTechDevices" deviceset="SOLID_STATE_RELAY" device="_G3VM-41AY" value=""/>
+<part name="SUPPLY7" library="HyTechSymbols" deviceset="VIN" device=""/>
+<part name="GND11" library="HyTechSymbols" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1952,6 +2075,9 @@ Source: Sonnenschein</description>
 <instance part="GND10" gate="1" x="144.78" y="15.24"/>
 <instance part="R9" gate="G$1" x="144.78" y="30.48" rot="R90"/>
 <instance part="LED1" gate="LED" x="144.78" y="22.86"/>
+<instance part="U$1" gate="G$1" x="114.3" y="60.96" rot="MR0"/>
+<instance part="SUPPLY7" gate="G$1" x="124.46" y="66.04"/>
+<instance part="GND11" gate="1" x="124.46" y="53.34"/>
 </instances>
 <busses>
 </busses>
@@ -1961,11 +2087,11 @@ Source: Sonnenschein</description>
 <pinref part="POWER_RES" gate="G$1" pin="1"/>
 <wire x1="73.66" y1="38.1" x2="96.52" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="38.1" x2="96.52" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="38.1" x2="121.92" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="38.1" x2="121.92" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="38.1" x2="129.54" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="38.1" x2="129.54" y2="76.2" width="0.1524" layer="91"/>
 <junction x="96.52" y="38.1"/>
 <pinref part="U$3" gate="G$1" pin="GND1"/>
-<wire x1="121.92" y1="76.2" x2="154.94" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="76.2" x2="154.94" y2="76.2" width="0.1524" layer="91"/>
 <label x="73.66" y="38.1" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
@@ -1987,13 +2113,15 @@ Source: Sonnenschein</description>
 </net>
 <net name="A" class="0">
 <segment>
-<pinref part="POWER_RES2" gate="G$1" pin="2"/>
-<wire x1="96.52" y1="68.58" x2="96.52" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="LED_RES" gate="G$1" pin="1"/>
-<wire x1="96.52" y1="78.74" x2="73.66" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="78.74" x2="106.68" y2="78.74" width="0.1524" layer="91"/>
-<junction x="96.52" y="78.74"/>
+<wire x1="106.68" y1="78.74" x2="96.52" y2="78.74" width="0.1524" layer="91"/>
 <label x="73.66" y="78.74" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="96.52" y1="78.74" x2="73.66" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="73.66" x2="96.52" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="73.66" x2="96.52" y2="78.74" width="0.1524" layer="91"/>
+<junction x="96.52" y="78.74"/>
+<pinref part="U$1" gate="G$1" pin="IO1"/>
+<wire x1="104.14" y1="73.66" x2="104.14" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="G1" gate="G$1" pin="+"/>
@@ -2063,6 +2191,11 @@ Source: Sonnenschein</description>
 <segment>
 <pinref part="GND10" gate="1" pin="GND"/>
 <pinref part="LED1" gate="LED" pin="C"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="LED-"/>
+<pinref part="GND11" gate="1" pin="GND"/>
+<wire x1="124.46" y1="58.42" x2="124.46" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RELAY" class="0">
@@ -2139,6 +2272,11 @@ Source: Sonnenschein</description>
 <pinref part="R7" gate="G$1" pin="2"/>
 <pinref part="SUPPLY6" gate="G$1" pin="VIN"/>
 </segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="LED+"/>
+<pinref part="SUPPLY7" gate="G$1" pin="VIN"/>
+<wire x1="124.46" y1="63.5" x2="124.46" y2="66.04" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="N$6" class="0">
 <segment>
@@ -2211,6 +2349,16 @@ Source: Sonnenschein</description>
 <segment>
 <pinref part="R9" gate="G$1" pin="1"/>
 <pinref part="LED1" gate="LED" pin="A"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="POWER_RES2" gate="G$1" pin="2"/>
+<wire x1="96.52" y1="68.58" x2="96.52" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="71.12" x2="101.6" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="IO2"/>
+<wire x1="101.6" y1="71.12" x2="101.6" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="58.42" x2="104.14" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
