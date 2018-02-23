@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.4.1">
+<eagle version="8.3.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -3847,6 +3847,12 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="FSAE_FUSE" library="HyTechDevices" deviceset="FUSE" device="_MINIBLADE" value="8A"/>
 <part name="P+7" library="supply1" deviceset="+12V" device=""/>
 <part name="SHUTDWN_FUSE" library="HyTechDevices" deviceset="FUSE" device="_MINIBLADE" value="5A"/>
+<part name="R24" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="33"/>
+<part name="R25" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="33"/>
+<part name="R26" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="33"/>
+<part name="GND5" library="HyTechSymbols" deviceset="GND" device=""/>
+<part name="GND14" library="HyTechSymbols" deviceset="GND" device=""/>
+<part name="GND44" library="HyTechSymbols" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3863,9 +3869,9 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="0" y1="172.72" x2="0" y2="238.76" width="0.1524" layer="90"/>
 <text x="0" y="238.76" size="5.08" layer="90">XBee</text>
 <wire x1="127" y1="91.44" x2="266.7" y2="91.44" width="0.1524" layer="90"/>
-<wire x1="266.7" y1="91.44" x2="266.7" y2="-5.08" width="0.1524" layer="90"/>
-<wire x1="266.7" y1="-5.08" x2="127" y2="-5.08" width="0.1524" layer="90"/>
-<wire x1="127" y1="-5.08" x2="127" y2="91.44" width="0.1524" layer="90"/>
+<wire x1="266.7" y1="91.44" x2="266.7" y2="-15.24" width="0.1524" layer="90"/>
+<wire x1="266.7" y1="-15.24" x2="127" y2="-15.24" width="0.1524" layer="90"/>
+<wire x1="127" y1="-15.24" x2="127" y2="91.44" width="0.1524" layer="90"/>
 <text x="127" y="91.44" size="5.08" layer="90">Cooling</text>
 <wire x1="127" y1="238.76" x2="251.46" y2="238.76" width="0.1524" layer="90"/>
 <wire x1="251.46" y1="238.76" x2="251.46" y2="190.5" width="0.1524" layer="90"/>
@@ -4080,8 +4086,8 @@ GPIO_SSR not installed</text>
 <instance part="GND41" gate="1" x="254" y="106.68" rot="R90"/>
 <instance part="U$8" gate="G$1" x="147.32" y="45.72"/>
 <instance part="U$9" gate="G$1" x="147.32" y="15.24"/>
-<instance part="GND42" gate="1" x="142.24" y="38.1" rot="R270"/>
-<instance part="GND43" gate="1" x="142.24" y="7.62" rot="R270"/>
+<instance part="GND42" gate="1" x="139.7" y="38.1" rot="R270"/>
+<instance part="GND43" gate="1" x="139.7" y="7.62" rot="R270"/>
 <instance part="P+23" gate="1" x="170.18" y="12.7" rot="MR0"/>
 <instance part="P+24" gate="1" x="170.18" y="33.02" rot="R180"/>
 <instance part="P+25" gate="1" x="335.28" y="91.44" rot="R270"/>
@@ -4091,6 +4097,12 @@ GPIO_SSR not installed</text>
 <instance part="FSAE_FUSE" gate="G$1" x="218.44" y="228.6" rot="MR0"/>
 <instance part="P+7" gate="1" x="236.22" y="228.6" rot="R270"/>
 <instance part="SHUTDWN_FUSE" gate="G$1" x="218.44" y="210.82" rot="MR0"/>
+<instance part="R24" gate="G$1" x="142.24" y="45.72" rot="R270"/>
+<instance part="R25" gate="G$1" x="142.24" y="30.48" rot="R270"/>
+<instance part="R26" gate="G$1" x="142.24" y="0" rot="R270"/>
+<instance part="GND5" gate="1" x="142.24" y="53.34" rot="R180"/>
+<instance part="GND14" gate="1" x="142.24" y="22.86"/>
+<instance part="GND44" gate="1" x="142.24" y="-7.62"/>
 </instances>
 <busses>
 </busses>
@@ -4323,10 +4335,12 @@ GPIO_SSR not installed</text>
 <segment>
 <pinref part="U$8" gate="G$1" pin="GND"/>
 <pinref part="GND42" gate="1" pin="GND"/>
+<wire x1="142.24" y1="38.1" x2="144.78" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$9" gate="G$1" pin="GND"/>
 <pinref part="GND43" gate="1" pin="GND"/>
+<wire x1="142.24" y1="7.62" x2="144.78" y2="7.62" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="S1" gate="1" pin="S"/>
@@ -4335,6 +4349,18 @@ GPIO_SSR not installed</text>
 <pinref part="GND2" gate="1" pin="GND"/>
 <wire x1="386.08" y1="119.38" x2="381" y2="119.38" width="0.1524" layer="91"/>
 <junction x="381" y="119.38"/>
+</segment>
+<segment>
+<pinref part="R24" gate="G$1" pin="1"/>
+<pinref part="GND5" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="R25" gate="G$1" pin="2"/>
+<pinref part="GND14" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="R26" gate="G$1" pin="2"/>
+<pinref part="GND44" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -5082,9 +5108,12 @@ GPIO_SSR not installed</text>
 <label x="363.22" y="205.74" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="142.24" y1="2.54" x2="144.78" y2="5.08" width="0.1524" layer="91"/>
-<label x="142.24" y="2.54" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="134.62" y1="5.08" x2="142.24" y2="5.08" width="0.1524" layer="91"/>
+<label x="134.62" y="5.08" size="1.27" layer="95" rot="R90" xref="yes"/>
 <pinref part="U$9" gate="G$1" pin="IN_B"/>
+<pinref part="R26" gate="G$1" pin="1"/>
+<wire x1="142.24" y1="5.08" x2="144.78" y2="5.08" width="0.1524" layer="91"/>
+<junction x="142.24" y="5.08"/>
 </segment>
 </net>
 <net name="PWM_CTRL2" class="0">
@@ -5094,9 +5123,12 @@ GPIO_SSR not installed</text>
 <label x="363.22" y="208.28" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="142.24" y1="33.02" x2="144.78" y2="35.56" width="0.1524" layer="91"/>
-<label x="142.24" y="33.02" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="134.62" y1="35.56" x2="142.24" y2="35.56" width="0.1524" layer="91"/>
+<label x="134.62" y="35.56" size="1.27" layer="95" rot="R270" xref="yes"/>
 <pinref part="U$8" gate="G$1" pin="IN_B"/>
+<pinref part="R25" gate="G$1" pin="1"/>
+<wire x1="142.24" y1="35.56" x2="144.78" y2="35.56" width="0.1524" layer="91"/>
+<junction x="142.24" y="35.56"/>
 </segment>
 </net>
 <net name="PWM_CTRL1" class="0">
@@ -5106,9 +5138,12 @@ GPIO_SSR not installed</text>
 <label x="363.22" y="210.82" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="142.24" y1="43.18" x2="144.78" y2="40.64" width="0.1524" layer="91"/>
-<label x="142.24" y="43.18" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="134.62" y1="40.64" x2="142.24" y2="40.64" width="0.1524" layer="91"/>
+<label x="134.62" y="40.64" size="1.27" layer="95" rot="R90" xref="yes"/>
 <pinref part="U$8" gate="G$1" pin="IN_A"/>
+<pinref part="R24" gate="G$1" pin="2"/>
+<wire x1="142.24" y1="40.64" x2="144.78" y2="40.64" width="0.1524" layer="91"/>
+<junction x="142.24" y="40.64"/>
 </segment>
 </net>
 <net name="N$39" class="0">
