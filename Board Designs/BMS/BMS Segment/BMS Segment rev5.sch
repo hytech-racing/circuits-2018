@@ -2068,6 +2068,9 @@ In this library the device names are the same as the pin names of the symbols, t
 <classes>
 <class number="0" name="default" width="0" drill="0">
 </class>
+<class number="1" name="unfused_hv" width="0" drill="0">
+<clearance class="1" value="3.2004"/>
+</class>
 </classes>
 <modules>
 <module name="DRAIN+FILTER" prefix="" dx="20.32" dy="15.24">
@@ -3007,32 +3010,6 @@ to set chip address</text>
 <label x="-88.9" y="93.98" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="ISOSPI-P_B" class="0">
-<segment>
-<label x="53.34" y="121.92" size="1.778" layer="95"/>
-<wire x1="40.64" y1="121.92" x2="66.04" y2="121.92" width="0.1524" layer="91"/>
-<pinref part="ISOSPI_B" gate="-1" pin="S"/>
-<pinref part="RM_B" gate="G$1" pin="1"/>
-<wire x1="40.64" y1="116.84" x2="40.64" y2="121.92" width="0.1524" layer="91"/>
-<pinref part="R4_B" gate="G$1" pin="2"/>
-<wire x1="38.1" y1="121.92" x2="40.64" y2="121.92" width="0.1524" layer="91"/>
-<junction x="40.64" y="121.92"/>
-</segment>
-</net>
-<net name="ISOSPI-M_B" class="0">
-<segment>
-<label x="53.34" y="119.38" size="1.778" layer="95"/>
-<wire x1="40.64" y1="101.6" x2="48.26" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="101.6" x2="48.26" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="119.38" x2="66.04" y2="119.38" width="0.1524" layer="91"/>
-<pinref part="ISOSPI_B" gate="-2" pin="S"/>
-<pinref part="RM_B" gate="G$1" pin="2"/>
-<wire x1="40.64" y1="106.68" x2="40.64" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="R5_B" gate="G$1" pin="2"/>
-<wire x1="38.1" y1="101.6" x2="40.64" y2="101.6" width="0.1524" layer="91"/>
-<junction x="40.64" y="101.6"/>
-</segment>
-</net>
 <net name="GPIO3_B" class="0">
 <segment>
 <wire x1="17.78" y1="12.7" x2="45.72" y2="12.7" width="0.1524" layer="91"/>
@@ -3244,7 +3221,7 @@ to set chip address</text>
 <wire x1="-165.1" y1="297.18" x2="-165.1" y2="279.4" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="CC9" class="0">
+<net name="CC9" class="1">
 <segment>
 <pinref part="F9" gate="G$1" pin="1"/>
 <pinref part="CELL9" gate="G$1" pin="S"/>
@@ -3252,7 +3229,7 @@ to set chip address</text>
 <wire x1="-236.22" y1="137.16" x2="-215.9" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="CC8" class="0">
+<net name="CC8" class="1">
 <segment>
 <wire x1="-236.22" y1="38.1" x2="-215.9" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="F8" gate="G$1" pin="1"/>
@@ -3260,7 +3237,7 @@ to set chip address</text>
 <label x="-228.6" y="38.1" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="CC7" class="0">
+<net name="CC7" class="1">
 <segment>
 <wire x1="-236.22" y1="35.56" x2="-215.9" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="F7" gate="G$1" pin="1"/>
@@ -3268,7 +3245,7 @@ to set chip address</text>
 <label x="-228.6" y="35.56" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="CC6" class="0">
+<net name="CC6" class="1">
 <segment>
 <wire x1="-236.22" y1="33.02" x2="-215.9" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="F6" gate="G$1" pin="1"/>
@@ -3276,7 +3253,7 @@ to set chip address</text>
 <label x="-228.6" y="33.02" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="CC5" class="0">
+<net name="CC5" class="1">
 <segment>
 <wire x1="-236.22" y1="30.48" x2="-215.9" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="F5" gate="G$1" pin="1"/>
@@ -3284,7 +3261,7 @@ to set chip address</text>
 <label x="-228.6" y="30.48" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="CC4" class="0">
+<net name="CC4" class="1">
 <segment>
 <wire x1="-236.22" y1="27.94" x2="-215.9" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="F4" gate="G$1" pin="1"/>
@@ -3292,7 +3269,7 @@ to set chip address</text>
 <label x="-228.6" y="27.94" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="CC3" class="0">
+<net name="CC3" class="1">
 <segment>
 <wire x1="-236.22" y1="25.4" x2="-215.9" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="F3" gate="G$1" pin="1"/>
@@ -3300,7 +3277,7 @@ to set chip address</text>
 <label x="-228.6" y="25.4" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="CC2" class="0">
+<net name="CC2" class="1">
 <segment>
 <wire x1="-236.22" y1="22.86" x2="-215.9" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="F2" gate="G$1" pin="1"/>
@@ -3308,7 +3285,7 @@ to set chip address</text>
 <label x="-228.6" y="22.86" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="CC1" class="0">
+<net name="CC1" class="1">
 <segment>
 <wire x1="-236.22" y1="20.32" x2="-215.9" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="F1" gate="G$1" pin="1"/>
@@ -3316,7 +3293,7 @@ to set chip address</text>
 <label x="-228.6" y="20.32" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="CC0" class="0">
+<net name="CC0" class="1">
 <segment>
 <wire x1="-236.22" y1="17.78" x2="-215.9" y2="17.78" width="0.1524" layer="91"/>
 <pinref part="F0" gate="G$1" pin="1"/>
@@ -4778,7 +4755,7 @@ to set chip address</text>
 <pinref part="RU1_A" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="CC18" class="0">
+<net name="CC18" class="1">
 <segment>
 <pinref part="F18" gate="G$1" pin="1"/>
 <pinref part="CELL18" gate="G$1" pin="S"/>
@@ -4786,7 +4763,7 @@ to set chip address</text>
 <wire x1="-236.22" y1="279.4" x2="-215.9" y2="279.4" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="CC17" class="0">
+<net name="CC17" class="1">
 <segment>
 <wire x1="-236.22" y1="276.86" x2="-215.9" y2="276.86" width="0.1524" layer="91"/>
 <pinref part="F17" gate="G$1" pin="1"/>
@@ -4794,7 +4771,7 @@ to set chip address</text>
 <label x="-228.6" y="276.86" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="CC16" class="0">
+<net name="CC16" class="1">
 <segment>
 <wire x1="-236.22" y1="274.32" x2="-215.9" y2="274.32" width="0.1524" layer="91"/>
 <pinref part="F16" gate="G$1" pin="1"/>
@@ -4802,7 +4779,7 @@ to set chip address</text>
 <label x="-228.6" y="274.32" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="CC15" class="0">
+<net name="CC15" class="1">
 <segment>
 <wire x1="-236.22" y1="271.78" x2="-215.9" y2="271.78" width="0.1524" layer="91"/>
 <pinref part="F15" gate="G$1" pin="1"/>
@@ -4810,7 +4787,7 @@ to set chip address</text>
 <label x="-228.6" y="271.78" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="CC14" class="0">
+<net name="CC14" class="1">
 <segment>
 <wire x1="-236.22" y1="269.24" x2="-215.9" y2="269.24" width="0.1524" layer="91"/>
 <pinref part="F14" gate="G$1" pin="1"/>
@@ -4818,7 +4795,7 @@ to set chip address</text>
 <label x="-228.6" y="269.24" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="CC13" class="0">
+<net name="CC13" class="1">
 <segment>
 <wire x1="-236.22" y1="266.7" x2="-215.9" y2="266.7" width="0.1524" layer="91"/>
 <pinref part="F13" gate="G$1" pin="1"/>
@@ -4826,7 +4803,7 @@ to set chip address</text>
 <label x="-228.6" y="266.7" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="CC12" class="0">
+<net name="CC12" class="1">
 <segment>
 <wire x1="-236.22" y1="264.16" x2="-215.9" y2="264.16" width="0.1524" layer="91"/>
 <pinref part="F12" gate="G$1" pin="1"/>
@@ -4834,7 +4811,7 @@ to set chip address</text>
 <label x="-228.6" y="264.16" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="CC11" class="0">
+<net name="CC11" class="1">
 <segment>
 <wire x1="-236.22" y1="261.62" x2="-215.9" y2="261.62" width="0.1524" layer="91"/>
 <pinref part="F11" gate="G$1" pin="1"/>
@@ -4842,7 +4819,7 @@ to set chip address</text>
 <label x="-228.6" y="261.62" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="CC10" class="0">
+<net name="CC10" class="1">
 <segment>
 <wire x1="-236.22" y1="259.08" x2="-215.9" y2="259.08" width="0.1524" layer="91"/>
 <pinref part="F10" gate="G$1" pin="1"/>
@@ -5188,7 +5165,7 @@ to set chip address</text>
 <wire x1="-170.18" y1="259.08" x2="-170.18" y2="167.64" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="ISOSPI-P_A" class="0">
+<net name="ISOSPI-P" class="0">
 <segment>
 <label x="53.34" y="360.68" size="1.778" layer="95"/>
 <wire x1="40.64" y1="360.68" x2="66.04" y2="360.68" width="0.1524" layer="91"/>
@@ -5199,8 +5176,18 @@ to set chip address</text>
 <wire x1="38.1" y1="360.68" x2="40.64" y2="360.68" width="0.1524" layer="91"/>
 <junction x="40.64" y="360.68"/>
 </segment>
+<segment>
+<label x="53.34" y="121.92" size="1.778" layer="95"/>
+<wire x1="40.64" y1="121.92" x2="66.04" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="ISOSPI_B" gate="-1" pin="S"/>
+<pinref part="RM_B" gate="G$1" pin="1"/>
+<wire x1="40.64" y1="116.84" x2="40.64" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="R4_B" gate="G$1" pin="2"/>
+<wire x1="38.1" y1="121.92" x2="40.64" y2="121.92" width="0.1524" layer="91"/>
+<junction x="40.64" y="121.92"/>
+</segment>
 </net>
-<net name="ISOSPI-M_A" class="0">
+<net name="ISOSPI-M" class="0">
 <segment>
 <label x="53.34" y="358.14" size="1.778" layer="95"/>
 <wire x1="40.64" y1="340.36" x2="48.26" y2="340.36" width="0.1524" layer="91"/>
@@ -5212,6 +5199,18 @@ to set chip address</text>
 <pinref part="R5_A" gate="G$1" pin="2"/>
 <wire x1="38.1" y1="340.36" x2="40.64" y2="340.36" width="0.1524" layer="91"/>
 <junction x="40.64" y="340.36"/>
+</segment>
+<segment>
+<label x="53.34" y="119.38" size="1.778" layer="95"/>
+<wire x1="40.64" y1="101.6" x2="48.26" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="101.6" x2="48.26" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="119.38" x2="66.04" y2="119.38" width="0.1524" layer="91"/>
+<pinref part="ISOSPI_B" gate="-2" pin="S"/>
+<pinref part="RM_B" gate="G$1" pin="2"/>
+<wire x1="40.64" y1="106.68" x2="40.64" y2="101.6" width="0.1524" layer="91"/>
+<pinref part="R5_B" gate="G$1" pin="2"/>
+<wire x1="38.1" y1="101.6" x2="40.64" y2="101.6" width="0.1524" layer="91"/>
+<junction x="40.64" y="101.6"/>
 </segment>
 </net>
 </nets>
