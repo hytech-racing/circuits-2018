@@ -3950,9 +3950,9 @@ Current sensor 2: ISB-300-A-600</text>
 <wire x1="149.86" y1="-2.54" x2="10.16" y2="-2.54" width="0.1524" layer="90"/>
 <wire x1="10.16" y1="-2.54" x2="10.16" y2="55.88" width="0.1524" layer="90"/>
 <text x="10.16" y="55.88" size="5.08" layer="90">Main I/O</text>
-<wire x1="10.16" y1="-12.7" x2="144.78" y2="-12.7" width="0.1524" layer="90"/>
-<wire x1="144.78" y1="-12.7" x2="144.78" y2="-45.72" width="0.1524" layer="90"/>
-<wire x1="144.78" y1="-45.72" x2="10.16" y2="-45.72" width="0.1524" layer="90"/>
+<wire x1="10.16" y1="-12.7" x2="149.86" y2="-12.7" width="0.1524" layer="90"/>
+<wire x1="149.86" y1="-12.7" x2="149.86" y2="-45.72" width="0.1524" layer="90"/>
+<wire x1="149.86" y1="-45.72" x2="10.16" y2="-45.72" width="0.1524" layer="90"/>
 <wire x1="10.16" y1="-45.72" x2="10.16" y2="-12.7" width="0.1524" layer="90"/>
 <text x="10.16" y="-12.7" size="5.08" layer="90">LEDs</text>
 <wire x1="10.16" y1="-55.88" x2="149.86" y2="-55.88" width="0.1524" layer="90"/>
@@ -4012,7 +4012,7 @@ for Precharge</text>
 </plain>
 <instances>
 <instance part="IC1" gate="G$1" x="121.92" y="-30.48"/>
-<instance part="P+1" gate="1" x="139.7" y="-30.48" rot="R270"/>
+<instance part="P+1" gate="1" x="144.78" y="-30.48" rot="R270"/>
 <instance part="P+2" gate="1" x="101.6" y="-30.48" rot="R90"/>
 <instance part="GND8" gate="1" x="121.92" y="-40.64"/>
 <instance part="U$5" gate="G$1" x="236.22" y="-25.4"/>
@@ -4033,7 +4033,7 @@ for Precharge</text>
 <instance part="DISCH+" gate="-1" x="307.34" y="-86.36"/>
 <instance part="DISCH-" gate="-2" x="307.34" y="-101.6"/>
 <instance part="DISCH-" gate="-1" x="307.34" y="-99.06"/>
-<instance part="C3" gate="G$1" x="132.08" y="-35.56"/>
+<instance part="C3" gate="G$1" x="137.16" y="-35.56"/>
 <instance part="CURRENT1" gate="-1" x="60.96" y="-81.28"/>
 <instance part="CURRENT1" gate="-2" x="60.96" y="-83.82"/>
 <instance part="CURRENT1" gate="-3" x="60.96" y="-86.36"/>
@@ -4071,7 +4071,7 @@ for Precharge</text>
 <instance part="POWER" gate="-3" x="30.48" y="5.08" rot="MR0"/>
 <instance part="POWER" gate="-4" x="30.48" y="2.54" rot="MR0"/>
 <instance part="FUSE" gate="G$1" x="218.44" y="48.26"/>
-<instance part="GND6" gate="1" x="132.08" y="-40.64"/>
+<instance part="GND6" gate="1" x="137.16" y="-40.64"/>
 <instance part="HV+UNFUSED" gate="-2" x="200.66" y="-93.98" rot="MR0"/>
 <instance part="HV+UNFUSED" gate="-1" x="200.66" y="-91.44" rot="MR0"/>
 <instance part="HV-UNFUSED" gate="-2" x="200.66" y="-114.3" rot="MR0"/>
@@ -4425,10 +4425,10 @@ for Precharge</text>
 <segment>
 <pinref part="IC1" gate="G$1" pin="OUT"/>
 <pinref part="P+1" gate="1" pin="+5V"/>
-<wire x1="129.54" y1="-30.48" x2="132.08" y2="-30.48" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="-30.48" x2="137.16" y2="-30.48" width="0.1524" layer="91"/>
 <pinref part="C3" gate="G$1" pin="1"/>
-<wire x1="132.08" y1="-30.48" x2="137.16" y2="-30.48" width="0.1524" layer="91"/>
-<junction x="132.08" y="-30.48"/>
+<wire x1="137.16" y1="-30.48" x2="142.24" y2="-30.48" width="0.1524" layer="91"/>
+<junction x="137.16" y="-30.48"/>
 </segment>
 <segment>
 <pinref part="P+10" gate="1" pin="+5V"/>

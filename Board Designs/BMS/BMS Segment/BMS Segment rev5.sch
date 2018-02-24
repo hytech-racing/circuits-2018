@@ -2295,9 +2295,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="SUPPLY7" library="supply2" deviceset="V-" device=""/>
 <part name="SUPPLY8" library="supply2" deviceset="V-" device=""/>
 <part name="SUPPLY9" library="supply2" deviceset="V-" device=""/>
-<part name="THERM1_B" library="HyTechDevices" deviceset="CONNECTOR-2" device="NANO-FIT_VERTICAL-2" value="Th1"/>
-<part name="THERM2_B" library="HyTechDevices" deviceset="CONNECTOR-2" device="NANO-FIT_VERTICAL-2" value="Th2"/>
-<part name="THERM3_B" library="HyTechDevices" deviceset="CONNECTOR-2" device="NANO-FIT_VERTICAL-2" value="Th3"/>
 <part name="ISOSPI_B" library="HyTechDevices" deviceset="CONNECTOR-2" device="NANO-FIT_VERTICAL-2"/>
 <part name="THERM3" library="HyTechDevices" deviceset="THERMISTOR_NCP21" device="0603" value="10kΩ"/>
 <part name="THERM4" library="HyTechDevices" deviceset="THERMISTOR_NCP21" device="0603" value="10kΩ"/>
@@ -2381,9 +2378,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="SUPPLY34" library="supply1" deviceset="V-" device=""/>
 <part name="SUPPLY35" library="supply1" deviceset="V-" device=""/>
 <part name="SUPPLY36" library="supply1" deviceset="V-" device=""/>
-<part name="THERM1A" library="HyTechDevices" deviceset="CONNECTOR-2" device="NANO-FIT_VERTICAL-2" value="Th1"/>
-<part name="THERM2A" library="HyTechDevices" deviceset="CONNECTOR-2" device="NANO-FIT_VERTICAL-2" value="Th2"/>
-<part name="THERM3A" library="HyTechDevices" deviceset="CONNECTOR-2" device="NANO-FIT_VERTICAL-2" value="Th3"/>
 <part name="AMS_TEST_PORT1" library="HyTechDevices" deviceset="CONNECTOR-2" device="NANO-FIT_VERTICAL-2" value="CONNECTOR-2NANO-FIT_VERTICAL-2"/>
 <part name="ISOSPI_A" library="HyTechDevices" deviceset="CONNECTOR-2" device="NANO-FIT_VERTICAL-2"/>
 <part name="THERM1" library="HyTechDevices" deviceset="THERMISTOR_NCP21" device="0603" value="10kΩ"/>
@@ -2444,6 +2438,12 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="SUPPLY67" library="supply1" deviceset="V-" device=""/>
 <part name="SUPPLY68" library="supply1" deviceset="V-" device=""/>
 <part name="SUPPLY66" library="supply1" deviceset="V-" device=""/>
+<part name="THERM1_A" library="HyTechDevices" deviceset="CONNECTOR-2" device="NANO-FIT_VERTICAL-2" value="Th1"/>
+<part name="THERM2_A" library="HyTechDevices" deviceset="CONNECTOR-2" device="NANO-FIT_VERTICAL-2" value="Th1"/>
+<part name="THERM3_A" library="HyTechDevices" deviceset="CONNECTOR-2" device="NANO-FIT_VERTICAL-2" value="Th1"/>
+<part name="THERM1_B" library="HyTechDevices" deviceset="CONNECTOR-2" device="NANO-FIT_VERTICAL-2" value="Th1"/>
+<part name="THERM2_B" library="HyTechDevices" deviceset="CONNECTOR-2" device="NANO-FIT_VERTICAL-2" value="Th1"/>
+<part name="THERM3_B" library="HyTechDevices" deviceset="CONNECTOR-2" device="NANO-FIT_VERTICAL-2" value="Th1"/>
 </parts>
 <sheets>
 <sheet>
@@ -2586,12 +2586,6 @@ to set chip address</text>
 <instance part="SUPPLY7" gate="1" x="50.8" y="50.8" rot="R90"/>
 <instance part="SUPPLY8" gate="1" x="30.48" y="15.24" rot="R90"/>
 <instance part="SUPPLY9" gate="1" x="139.7" y="50.8"/>
-<instance part="THERM1_B" gate="-2" x="144.78" y="58.42" rot="MR180"/>
-<instance part="THERM1_B" gate="-1" x="144.78" y="55.88" rot="MR180"/>
-<instance part="THERM2_B" gate="-2" x="144.78" y="38.1" rot="MR180"/>
-<instance part="THERM2_B" gate="-1" x="144.78" y="35.56" rot="MR180"/>
-<instance part="THERM3_B" gate="-2" x="144.78" y="17.78" rot="MR180"/>
-<instance part="THERM3_B" gate="-1" x="144.78" y="15.24" rot="MR180"/>
 <instance part="ISOSPI_B" gate="-2" x="68.58" y="119.38"/>
 <instance part="ISOSPI_B" gate="-1" x="68.58" y="121.92"/>
 <instance part="THERM3" gate="G$1" x="147.32" y="-2.54" smashed="yes">
@@ -2739,12 +2733,6 @@ to set chip address</text>
 <instance part="SUPPLY36" gate="1" x="139.7" y="289.56" smashed="yes">
 <attribute name="VALUE" x="139.7" y="287.02" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="THERM1A" gate="-2" x="144.78" y="297.18" rot="MR180"/>
-<instance part="THERM1A" gate="-1" x="144.78" y="294.64" rot="MR180"/>
-<instance part="THERM2A" gate="-2" x="144.78" y="276.86" rot="MR180"/>
-<instance part="THERM2A" gate="-1" x="144.78" y="274.32" rot="MR180"/>
-<instance part="THERM3A" gate="-2" x="144.78" y="256.54" rot="MR180"/>
-<instance part="THERM3A" gate="-1" x="144.78" y="254" rot="MR180"/>
 <instance part="AMS_TEST_PORT1" gate="-2" x="-238.76" y="297.18" rot="R180"/>
 <instance part="AMS_TEST_PORT1" gate="-1" x="-238.76" y="294.64" smashed="yes" rot="R180">
 <attribute name="NAME" x="-241.3" y="295.402" size="1.524" layer="95" rot="R180"/>
@@ -2869,6 +2857,18 @@ to set chip address</text>
 <instance part="SUPPLY66" gate="1" x="149.86" y="266.7" smashed="yes" rot="R90">
 <attribute name="VALUE" x="152.4" y="266.7" size="1.778" layer="96"/>
 </instance>
+<instance part="THERM1_A" gate="-2" x="144.78" y="294.64"/>
+<instance part="THERM1_A" gate="-1" x="144.78" y="297.18"/>
+<instance part="THERM2_A" gate="-2" x="144.78" y="274.32"/>
+<instance part="THERM2_A" gate="-1" x="144.78" y="276.86"/>
+<instance part="THERM3_A" gate="-2" x="144.78" y="254"/>
+<instance part="THERM3_A" gate="-1" x="144.78" y="256.54"/>
+<instance part="THERM1_B" gate="-2" x="144.78" y="55.88"/>
+<instance part="THERM1_B" gate="-1" x="144.78" y="58.42"/>
+<instance part="THERM2_B" gate="-2" x="144.78" y="35.56"/>
+<instance part="THERM2_B" gate="-1" x="144.78" y="38.1"/>
+<instance part="THERM3_B" gate="-2" x="144.78" y="15.24"/>
+<instance part="THERM3_B" gate="-1" x="144.78" y="17.78"/>
 </instances>
 <busses>
 </busses>
@@ -3588,9 +3588,9 @@ to set chip address</text>
 </segment>
 <segment>
 <pinref part="SUPPLY9" gate="1" pin="V-"/>
-<pinref part="THERM1_B" gate="-1" pin="S"/>
 <wire x1="142.24" y1="55.88" x2="139.7" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="139.7" y1="55.88" x2="139.7" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="THERM1_B" gate="-2" pin="S"/>
 </segment>
 <segment>
 <pinref part="THERM3" gate="G$1" pin="1"/>
@@ -3665,16 +3665,16 @@ to set chip address</text>
 <wire x1="63.5" y1="38.1" x2="63.5" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="THERM2_B" gate="-1" pin="S"/>
 <wire x1="142.24" y1="35.56" x2="139.7" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="139.7" y1="35.56" x2="139.7" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="SUPPLY24" gate="1" pin="V-"/>
+<pinref part="THERM2_B" gate="-2" pin="S"/>
 </segment>
 <segment>
-<pinref part="THERM3_B" gate="-1" pin="S"/>
 <wire x1="142.24" y1="15.24" x2="139.7" y2="15.24" width="0.1524" layer="91"/>
 <wire x1="139.7" y1="15.24" x2="139.7" y2="12.7" width="0.1524" layer="91"/>
 <pinref part="SUPPLY25" gate="1" pin="V-"/>
+<pinref part="THERM3_B" gate="-2" pin="S"/>
 </segment>
 <segment>
 <portref moduleinst="DRAIN9" port="V-"/>
@@ -4007,9 +4007,9 @@ to set chip address</text>
 </net>
 <net name="N$26" class="0">
 <segment>
-<pinref part="THERM3_B" gate="-2" pin="S"/>
 <wire x1="140.97" y1="17.78" x2="142.24" y2="17.78" width="0.1524" layer="91"/>
 <portref moduleinst="THERM_FILTER3" port="THERM"/>
+<pinref part="THERM3_B" gate="-1" pin="S"/>
 </segment>
 </net>
 <net name="N$17" class="0">
@@ -4022,15 +4022,15 @@ to set chip address</text>
 <net name="N$18" class="0">
 <segment>
 <portref moduleinst="THERM_FILTER2" port="THERM"/>
-<pinref part="THERM2_B" gate="-2" pin="S"/>
 <wire x1="142.24" y1="38.1" x2="140.97" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="THERM2_B" gate="-1" pin="S"/>
 </segment>
 </net>
 <net name="N$3" class="0">
 <segment>
 <portref moduleinst="THERM_FILTER1" port="THERM"/>
-<pinref part="THERM1_B" gate="-2" pin="S"/>
 <wire x1="142.24" y1="58.42" x2="140.97" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="THERM1_B" gate="-1" pin="S"/>
 </segment>
 </net>
 <net name="SENSE1" class="0">
@@ -4202,9 +4202,9 @@ to set chip address</text>
 </net>
 <net name="N$35" class="0">
 <segment>
-<pinref part="THERM3A" gate="-2" pin="S"/>
 <wire x1="140.97" y1="256.54" x2="142.24" y2="256.54" width="0.1524" layer="91"/>
 <portref moduleinst="THERM_FILTER8" port="THERM"/>
+<pinref part="THERM3_A" gate="-1" pin="S"/>
 </segment>
 </net>
 <net name="N$36" class="0">
@@ -4217,15 +4217,15 @@ to set chip address</text>
 <net name="N$37" class="0">
 <segment>
 <portref moduleinst="THERM_FILTER7" port="THERM"/>
-<pinref part="THERM2A" gate="-2" pin="S"/>
 <wire x1="142.24" y1="276.86" x2="140.97" y2="276.86" width="0.1524" layer="91"/>
+<pinref part="THERM2_A" gate="-1" pin="S"/>
 </segment>
 </net>
 <net name="N$38" class="0">
 <segment>
 <portref moduleinst="THERM_FILTER6" port="THERM"/>
-<pinref part="THERM1A" gate="-2" pin="S"/>
 <wire x1="142.24" y1="297.18" x2="140.97" y2="297.18" width="0.1524" layer="91"/>
+<pinref part="THERM1_A" gate="-1" pin="S"/>
 </segment>
 </net>
 <net name="V-_A" class="0">
@@ -4304,22 +4304,22 @@ to set chip address</text>
 <wire x1="152.4" y1="236.22" x2="154.94" y2="236.22" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="THERM3A" gate="-1" pin="S"/>
 <wire x1="142.24" y1="254" x2="139.7" y2="254" width="0.1524" layer="91"/>
 <wire x1="139.7" y1="254" x2="139.7" y2="251.46" width="0.1524" layer="91"/>
 <pinref part="SUPPLY49" gate="1" pin="V-"/>
+<pinref part="THERM3_A" gate="-2" pin="S"/>
 </segment>
 <segment>
-<pinref part="THERM2A" gate="-1" pin="S"/>
 <wire x1="142.24" y1="274.32" x2="139.7" y2="274.32" width="0.1524" layer="91"/>
 <wire x1="139.7" y1="274.32" x2="139.7" y2="271.78" width="0.1524" layer="91"/>
 <pinref part="SUPPLY48" gate="1" pin="V-"/>
+<pinref part="THERM2_A" gate="-2" pin="S"/>
 </segment>
 <segment>
 <pinref part="SUPPLY36" gate="1" pin="V-"/>
-<pinref part="THERM1A" gate="-1" pin="S"/>
 <wire x1="142.24" y1="294.64" x2="139.7" y2="294.64" width="0.1524" layer="91"/>
 <wire x1="139.7" y1="294.64" x2="139.7" y2="292.1" width="0.1524" layer="91"/>
+<pinref part="THERM1_A" gate="-2" pin="S"/>
 </segment>
 <segment>
 <pinref part="C4_A" gate="G$1" pin="2"/>
