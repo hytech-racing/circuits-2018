@@ -582,6 +582,8 @@ Source: Sonnenschein</description>
 <part name="THERM3" library="HyTechSymbols" deviceset="THERMISTOR" device="" value=""/>
 <part name="THERM2" library="HyTechSymbols" deviceset="THERMISTOR" device="" value=""/>
 <part name="THERM1" library="HyTechSymbols" deviceset="THERMISTOR" device="" value=""/>
+<part name="AMS_TEST" library="HyTechSymbols" deviceset="M02" device=""/>
+<part name="AMS_TEST_EXT" library="HyTechSymbols" deviceset="M02" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -804,6 +806,8 @@ Source: Sonnenschein</description>
 <attribute name="NAME" x="234.442" y="-114.046" size="1.524" layer="95"/>
 <attribute name="VALUE" x="232.283" y="-112.522" size="1.778" layer="96" rot="R90"/>
 </instance>
+<instance part="AMS_TEST" gate="G$1" x="96.52" y="-66.04" rot="R180"/>
+<instance part="AMS_TEST_EXT" gate="G$1" x="109.22" y="-66.04" rot="MR180"/>
 </instances>
 <busses>
 <bus name="ISOSPI">
@@ -2074,12 +2078,12 @@ Source: Sonnenschein</description>
 </net>
 <net name="N$103" class="0">
 <segment>
-<pinref part="C18" gate="G$1" pin="+"/>
-<junction x="76.2" y="-106.68"/>
-<wire x1="76.2" y1="-106.68" x2="76.2" y2="-76.2" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="-76.2" x2="144.78" y2="-76.2" width="0.1524" layer="91"/>
 <portref moduleinst="BMS_SEGMENT1" port="CELL18"/>
+<wire x1="86.36" y1="-76.2" x2="144.78" y2="-76.2" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="-76.2" x2="144.78" y2="-73.66" width="0.1524" layer="91"/>
+<pinref part="AMS_TEST" gate="G$1" pin="2"/>
+<wire x1="91.44" y1="-66.04" x2="86.36" y2="-66.04" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="-66.04" x2="86.36" y2="-76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$85" class="0">
@@ -2110,6 +2114,24 @@ Source: Sonnenschein</description>
 <wire x1="190.5" y1="-76.2" x2="259.08" y2="-76.2" width="0.1524" layer="91"/>
 <wire x1="259.08" y1="-76.2" x2="259.08" y2="-106.68" width="0.1524" layer="91"/>
 <junction x="259.08" y="-106.68"/>
+</segment>
+</net>
+<net name="N$105" class="0">
+<segment>
+<pinref part="C18" gate="G$1" pin="+"/>
+<junction x="76.2" y="-106.68"/>
+<wire x1="76.2" y1="-106.68" x2="76.2" y2="-63.5" width="0.1524" layer="91"/>
+<pinref part="AMS_TEST" gate="G$1" pin="1"/>
+<wire x1="91.44" y1="-63.5" x2="76.2" y2="-63.5" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$92" class="0">
+<segment>
+<pinref part="AMS_TEST_EXT" gate="G$1" pin="1"/>
+<wire x1="114.3" y1="-63.5" x2="116.84" y2="-63.5" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="-63.5" x2="116.84" y2="-66.04" width="0.1524" layer="91"/>
+<pinref part="AMS_TEST_EXT" gate="G$1" pin="2"/>
+<wire x1="116.84" y1="-66.04" x2="114.3" y2="-66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

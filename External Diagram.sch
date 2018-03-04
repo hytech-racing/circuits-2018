@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.4.1">
+<eagle version="8.3.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1981,8 +1981,8 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="S1" library="HyTechSymbols" deviceset="SWITCH_DPST" device=""/>
 <part name="RIGHT_REAR_BRB" library="HyTechSymbols" deviceset="SWITCH_DPST" device=""/>
 <part name="GLVMS" library="HyTechSymbols" deviceset="SWITCH_SPST" device=""/>
-<part name="F1" library="HyTechSymbols" deviceset="FUSE" device="" value="14A"/>
-<part name="F2" library="HyTechSymbols" deviceset="FUSE" device="" value="8A"/>
+<part name="F1" library="HyTechSymbols" deviceset="FUSE" device="" value="10A"/>
+<part name="F2" library="HyTechSymbols" deviceset="FUSE" device="" value="7.5A"/>
 <part name="EMRAX_207_MED" library="HyTechSymbols" deviceset="MOTOR_AC" device=""/>
 <part name="BRAKE_LIGHT" library="HyTechSymbols" deviceset="LED" device=""/>
 <part name="BOTS" library="HyTechSymbols" deviceset="SWITCH_SPST" device=""/>
