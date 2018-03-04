@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.2.2">
+<eagle version="8.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -813,35 +814,42 @@ Note: The Sparkfun version includes many other packages including surface mount 
 </deviceset>
 </devicesets>
 </library>
-<library name="supply2" urn="urn:adsk.eagle:library:372">
+<library name="supply1" urn="urn:adsk.eagle:library:371">
 <description>&lt;b&gt;Supply Symbols&lt;/b&gt;&lt;p&gt;
-GND, VCC, 0V, +5V, -5V, etc.&lt;p&gt;
-Please keep in mind, that these devices are necessary for the
-automatic wiring of the supply signals.&lt;p&gt;
-The pin name defined in the symbol is identical to the net which is to be wired automatically.&lt;p&gt;
-In this library the device names are the same as the pin names of the symbols, therefore the correct signal names appear next to the supply symbols in the schematic.&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+ GND, VCC, 0V, +5V, -5V, etc.&lt;p&gt;
+ Please keep in mind, that these devices are necessary for the
+ automatic wiring of the supply signals.&lt;p&gt;
+ The pin name defined in the symbol is identical to the net which is to be wired automatically.&lt;p&gt;
+ In this library the device names are the same as the pin names of the symbols, therefore the correct signal names appear next to the supply symbols in the schematic.&lt;p&gt;
+ &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
 </packages>
 <symbols>
-<symbol name="GND" library_version="1">
-<wire x1="-1.27" y1="0" x2="1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="1.27" y1="0" x2="0" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="0" y1="-1.27" x2="-1.27" y2="0" width="0.254" layer="94"/>
-<text x="-1.905" y="-3.175" size="1.778" layer="96">&gt;VALUE</text>
+<symbol name="AGND" urn="urn:adsk.eagle:symbol:26949/1" library_version="1">
+<wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.0922" y1="-0.508" x2="1.0922" y2="-0.508" width="0.254" layer="94"/>
+<text x="-2.54" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="AGND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+</symbol>
+<symbol name="GND" urn="urn:adsk.eagle:symbol:26925/1" library_version="1">
+<wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
 </symbol>
-<symbol name="VDD" library_version="1">
-<circle x="0" y="1.27" radius="1.27" width="0.254" layer="94"/>
-<text x="-1.905" y="3.175" size="1.778" layer="96">&gt;VALUE</text>
+<symbol name="VDD" urn="urn:adsk.eagle:symbol:26943/1" library_version="1">
+<wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="0" y1="1.27" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-1.905" x2="0" y2="1.27" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
 <pin name="VDD" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="GND" prefix="SUPPLY" library_version="1">
+<deviceset name="AGND" urn="urn:adsk.eagle:component:26977/1" prefix="AGND" library_version="1">
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
-<gate name="GND" symbol="GND" x="0" y="0"/>
+<gate name="VR1" symbol="AGND" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -851,7 +859,20 @@ In this library the device names are the same as the pin names of the symbols, t
 </device>
 </devices>
 </deviceset>
-<deviceset name="VDD" prefix="SUPPLY" library_version="1">
+<deviceset name="GND" urn="urn:adsk.eagle:component:26954/1" prefix="GND" library_version="1">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="GND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VDD" urn="urn:adsk.eagle:component:26970/1" prefix="VDD" library_version="1">
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="VDD" x="0" y="0"/>
@@ -877,20 +898,22 @@ In this library the device names are the same as the pin names of the symbols, t
 </classes>
 <parts>
 <part name="U$1" library="HyTechDevices" deviceset="SCA3100-D04" device=""/>
-<part name="SUPPLY1" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="SUPPLY2" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="C4" library="HyTechDevices" deviceset="CAP" device="0805" value="130 nF"/>
 <part name="C1" library="HyTechDevices" deviceset="CAP" device="0805" value="130 nF"/>
 <part name="C2" library="HyTechDevices" deviceset="CAP" device="0805" value="130 nF"/>
 <part name="C3" library="HyTechDevices" deviceset="CAP" device="0805" value="130 nF"/>
-<part name="C4" library="HyTechDevices" deviceset="CAP" device="0805" value="130 nF"/>
 <part name="PINOUT" library="HyTechDevices" deviceset="M08" device=""/>
-<part name="SUPPLY3" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="SUPPLY4" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="SUPPLY5" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="SUPPLY6" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="SUPPLY7" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="SUPPLY8" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VDD" device=""/>
-<part name="SUPPLY10" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VDD" device=""/>
+<part name="AGND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="AGND" device=""/>
+<part name="AGND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="AGND" device=""/>
+<part name="AGND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="AGND" device=""/>
+<part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="AGND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="AGND" device=""/>
+<part name="VDD1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VDD" device=""/>
+<part name="VDD2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VDD" device=""/>
+<part name="AGND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="AGND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -898,153 +921,178 @@ In this library the device names are the same as the pin names of the symbols, t
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="73.66" y="58.42"/>
-<instance part="SUPPLY1" gate="GND" x="22.86" y="53.34"/>
-<instance part="SUPPLY2" gate="GND" x="119.38" y="53.34"/>
-<instance part="C1" gate="G$1" x="53.34" y="35.56"/>
-<instance part="C2" gate="G$1" x="27.94" y="48.26"/>
-<instance part="C3" gate="G$1" x="111.76" y="45.72"/>
-<instance part="C4" gate="G$1" x="101.6" y="40.64"/>
+<instance part="C4" gate="G$1" x="53.34" y="35.56"/>
+<instance part="C1" gate="G$1" x="27.94" y="48.26"/>
+<instance part="C2" gate="G$1" x="111.76" y="45.72"/>
+<instance part="C3" gate="G$1" x="101.6" y="40.64"/>
 <instance part="PINOUT" gate="G$1" x="81.28" y="7.62" rot="R90"/>
-<instance part="SUPPLY3" gate="GND" x="27.94" y="43.18"/>
-<instance part="SUPPLY4" gate="GND" x="53.34" y="25.4"/>
-<instance part="SUPPLY5" gate="GND" x="101.6" y="33.02"/>
-<instance part="SUPPLY6" gate="GND" x="114.3" y="38.1"/>
-<instance part="SUPPLY7" gate="GND" x="93.98" y="20.32" rot="R180"/>
-<instance part="SUPPLY8" gate="G$1" x="86.36" y="20.32"/>
-<instance part="SUPPLY10" gate="G$1" x="114.3" y="22.86" rot="R180"/>
+<instance part="AGND1" gate="VR1" x="20.32" y="50.8"/>
+<instance part="AGND2" gate="VR1" x="27.94" y="40.64"/>
+<instance part="AGND3" gate="VR1" x="45.72" y="22.86"/>
+<instance part="GND1" gate="1" x="124.46" y="48.26"/>
+<instance part="GND3" gate="1" x="83.82" y="27.94" rot="R180"/>
+<instance part="GND4" gate="1" x="101.6" y="33.02"/>
+<instance part="GND5" gate="1" x="114.3" y="38.1"/>
+<instance part="AGND4" gate="VR1" x="86.36" y="20.32" rot="R180"/>
+<instance part="VDD1" gate="G$1" x="88.9" y="17.78"/>
+<instance part="VDD2" gate="G$1" x="60.96" y="-7.62" rot="R180"/>
+<instance part="AGND5" gate="VR1" x="134.62" y="53.34"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="GND" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="AVSS"/>
-<pinref part="SUPPLY1" gate="GND" pin="GND"/>
-<wire x1="73.66" y1="55.88" x2="22.86" y2="55.88" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="U$1" gate="G$1" pin="EMC_GND"/>
-<pinref part="SUPPLY2" gate="GND" pin="GND"/>
-<wire x1="83.82" y1="55.88" x2="114.3" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="DVSS"/>
-<wire x1="114.3" y1="55.88" x2="119.38" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="53.34" x2="114.3" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="53.34" x2="114.3" y2="55.88" width="0.1524" layer="91"/>
-<junction x="114.3" y="55.88"/>
-</segment>
-<segment>
-<pinref part="C2" gate="G$1" pin="2"/>
-<pinref part="SUPPLY3" gate="GND" pin="GND"/>
-</segment>
-<segment>
-<pinref part="C1" gate="G$1" pin="2"/>
-<pinref part="SUPPLY4" gate="GND" pin="GND"/>
-<wire x1="53.34" y1="33.02" x2="53.34" y2="27.94" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="RESERVED"/>
-<wire x1="73.66" y1="50.8" x2="35.56" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="50.8" x2="35.56" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="27.94" x2="53.34" y2="27.94" width="0.1524" layer="91"/>
-<junction x="53.34" y="27.94"/>
-</segment>
-<segment>
-<pinref part="C4" gate="G$1" pin="2"/>
-<pinref part="SUPPLY5" gate="GND" pin="GND"/>
-<wire x1="101.6" y1="38.1" x2="101.6" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="53.34" x2="124.46" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="53.34" x2="124.46" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="GND1" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="C3" gate="G$1" pin="2"/>
-<pinref part="SUPPLY6" gate="GND" pin="GND"/>
-<wire x1="111.76" y1="43.18" x2="114.3" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="43.18" x2="114.3" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="38.1" x2="101.6" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="GND4" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="PINOUT" gate="G$1" pin="1"/>
-<pinref part="SUPPLY7" gate="GND" pin="GND"/>
-<wire x1="88.9" y1="12.7" x2="93.98" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="12.7" x2="93.98" y2="17.78" width="0.1524" layer="91"/>
+<pinref part="C2" gate="G$1" pin="2"/>
+<wire x1="111.76" y1="43.18" x2="114.3" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="43.18" x2="114.3" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="GND5" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="PINOUT" gate="G$1" pin="3"/>
+<wire x1="83.82" y1="12.7" x2="83.82" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="GND3" gate="1" pin="GND"/>
+<label x="83.82" y="-5.08" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="N$1" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="A_EXTC"/>
-<pinref part="C2" gate="G$1" pin="1"/>
+<pinref part="C1" gate="G$1" pin="1"/>
 <wire x1="73.66" y1="53.34" x2="27.94" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="D_EXTC"/>
-<pinref part="C3" gate="G$1" pin="1"/>
+<pinref part="C2" gate="G$1" pin="1"/>
 <wire x1="83.82" y1="50.8" x2="111.76" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$5" class="0">
+<net name="MOSI" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="MOSI"/>
 <wire x1="83.82" y1="43.18" x2="88.9" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="43.18" x2="88.9" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="38.1" x2="78.74" y2="38.1" width="0.1524" layer="91"/>
-<pinref part="PINOUT" gate="G$1" pin="5"/>
-<wire x1="78.74" y1="38.1" x2="78.74" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="38.1" x2="76.2" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="PINOUT" gate="G$1" pin="6"/>
+<wire x1="76.2" y1="38.1" x2="76.2" y2="12.7" width="0.1524" layer="91"/>
+<label x="76.2" y="-5.08" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="N$7" class="0">
+<net name="CSB" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="CSB"/>
 <wire x1="73.66" y1="45.72" x2="63.5" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="45.72" x2="63.5" y2="30.48" width="0.1524" layer="91"/>
-<pinref part="PINOUT" gate="G$1" pin="7"/>
-<wire x1="63.5" y1="30.48" x2="73.66" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="30.48" x2="73.66" y2="12.7" width="0.1524" layer="91"/>
+<pinref part="PINOUT" gate="G$1" pin="8"/>
+<wire x1="63.5" y1="30.48" x2="71.12" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="30.48" x2="71.12" y2="12.7" width="0.1524" layer="91"/>
+<label x="71.12" y="-5.08" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="N$8" class="0">
+<net name="MISO" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="MISO"/>
 <wire x1="73.66" y1="43.18" x2="68.58" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="43.18" x2="68.58" y2="33.02" width="0.1524" layer="91"/>
-<pinref part="PINOUT" gate="G$1" pin="6"/>
-<wire x1="68.58" y1="33.02" x2="76.2" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="33.02" x2="76.2" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="33.02" x2="73.66" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="PINOUT" gate="G$1" pin="7"/>
+<wire x1="73.66" y1="33.02" x2="73.66" y2="12.7" width="0.1524" layer="91"/>
+<label x="73.66" y="-5.08" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="N$6" class="0">
+<net name="SCK" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="SCK"/>
 <wire x1="83.82" y1="45.72" x2="91.44" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="45.72" x2="91.44" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="35.56" x2="78.74" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="PINOUT" gate="G$1" pin="5"/>
+<wire x1="78.74" y1="35.56" x2="78.74" y2="12.7" width="0.1524" layer="91"/>
+<label x="78.74" y="-5.08" size="1.778" layer="95" rot="R90"/>
+</segment>
+</net>
+<net name="AGND" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="AVSS"/>
+<wire x1="73.66" y1="55.88" x2="20.32" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="AGND1" gate="VR1" pin="AGND"/>
+<wire x1="20.32" y1="55.88" x2="20.32" y2="53.34" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C1" gate="G$1" pin="2"/>
+<pinref part="AGND2" gate="VR1" pin="AGND"/>
+<wire x1="27.94" y1="45.72" x2="27.94" y2="43.18" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C4" gate="G$1" pin="2"/>
+<wire x1="53.34" y1="33.02" x2="53.34" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="RESERVED"/>
+<wire x1="73.66" y1="50.8" x2="35.56" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="50.8" x2="35.56" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="27.94" x2="45.72" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="AGND3" gate="VR1" pin="AGND"/>
+<wire x1="45.72" y1="27.94" x2="53.34" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="25.4" x2="45.72" y2="27.94" width="0.1524" layer="91"/>
+<junction x="45.72" y="27.94"/>
+</segment>
+<segment>
+<pinref part="AGND4" gate="VR1" pin="AGND"/>
+<pinref part="PINOUT" gate="G$1" pin="2"/>
+<wire x1="86.36" y1="17.78" x2="86.36" y2="12.7" width="0.1524" layer="91"/>
+<label x="86.36" y="-5.08" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="EMC_GND"/>
+<wire x1="83.82" y1="55.88" x2="134.62" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="AGND5" gate="VR1" pin="AGND"/>
+</segment>
+</net>
+<net name="DVIO" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="DVIO"/>
+<wire x1="83.82" y1="48.26" x2="101.6" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="48.26" x2="101.6" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="C3" gate="G$1" pin="1"/>
+<wire x1="101.6" y1="48.26" x2="106.68" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="48.26" x2="106.68" y2="27.94" width="0.1524" layer="91"/>
+<junction x="101.6" y="48.26"/>
+<wire x1="106.68" y1="27.94" x2="88.9" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="27.94" x2="88.9" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="33.02" x2="81.28" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="PINOUT" gate="G$1" pin="4"/>
-<wire x1="91.44" y1="35.56" x2="81.28" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="35.56" x2="81.28" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="33.02" x2="81.28" y2="12.7" width="0.1524" layer="91"/>
+<label x="81.28" y="-5.08" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="VDD" class="0">
 <segment>
-<pinref part="PINOUT" gate="G$1" pin="2"/>
-<pinref part="SUPPLY8" gate="G$1" pin="VDD"/>
-<wire x1="86.36" y1="12.7" x2="86.36" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="C1" gate="G$1" pin="1"/>
+<pinref part="PINOUT" gate="G$1" pin="1"/>
+<pinref part="VDD1" gate="G$1" pin="VDD"/>
+<wire x1="88.9" y1="12.7" x2="88.9" y2="15.24" width="0.1524" layer="91"/>
+<label x="88.9" y="-5.08" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="C4" gate="G$1" pin="1"/>
 <wire x1="53.34" y1="40.64" x2="53.34" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="VDD"/>
 <wire x1="53.34" y1="48.26" x2="73.66" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="53.34" y1="40.64" x2="60.96" y2="40.64" width="0.1524" layer="91"/>
 <junction x="53.34" y="40.64"/>
-<wire x1="60.96" y1="40.64" x2="60.96" y2="-2.54" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="-2.54" x2="86.36" y2="-2.54" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="-2.54" x2="86.36" y2="12.7" width="0.1524" layer="91"/>
-<junction x="86.36" y="12.7"/>
-</segment>
-<segment>
-<pinref part="U$1" gate="G$1" pin="DVIO"/>
-<wire x1="83.82" y1="48.26" x2="101.6" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="48.26" x2="101.6" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="C4" gate="G$1" pin="1"/>
-<wire x1="101.6" y1="48.26" x2="106.68" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="48.26" x2="106.68" y2="27.94" width="0.1524" layer="91"/>
-<junction x="101.6" y="48.26"/>
-<pinref part="SUPPLY10" gate="G$1" pin="VDD"/>
-<wire x1="106.68" y1="27.94" x2="114.3" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="27.94" x2="114.3" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="40.64" x2="60.96" y2="-5.08" width="0.1524" layer="91"/>
+<pinref part="VDD2" gate="G$1" pin="VDD"/>
 </segment>
 </net>
 </nets>
@@ -1054,9 +1102,14 @@ In this library the device names are the same as the pin names of the symbols, t
 </drawing>
 <compatibility>
 <note version="8.2" severity="warning">
-Since Version 8.2, Eagle supports online libraries. The ids
+Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
 with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports URNs for individual library
+assets (packages, symbols, and devices). The URNs of those assets
+will not be understood (or retained) with this version.
 </note>
 </compatibility>
 </eagle>
