@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.3.2">
+<eagle version="8.3.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -8311,7 +8311,7 @@ MX150L™ Vertical PCB Header</description>
 <circle x="-1.905" y="7.62" radius="0.254" width="0.0508" layer="21"/>
 </package>
 <package name="TEENSY_3.2_EXT">
-<pad name="3.3V" x="16.51" y="31.75" drill="0.8" shape="long"/>
+<pad name="AGND" x="16.51" y="31.75" drill="0.8" shape="long"/>
 <pad name="D13" x="16.51" y="1.27" drill="0.8" shape="long"/>
 <pad name="A0" x="16.51" y="3.81" drill="0.8" shape="long"/>
 <pad name="A1" x="16.51" y="6.35" drill="0.8" shape="long"/>
@@ -8330,7 +8330,7 @@ MX150L™ Vertical PCB Header</description>
 <pad name="D2" x="1.27" y="26.67" drill="0.8" shape="long"/>
 <pad name="GND" x="1.27" y="34.29" drill="0.8" shape="long"/>
 <pad name="VIN" x="16.51" y="34.29" drill="0.8" shape="long"/>
-<pad name="AGND" x="16.51" y="29.21" drill="0.8" shape="long"/>
+<pad name="3.3V" x="16.51" y="29.21" drill="0.8" shape="long"/>
 <pad name="A9" x="16.51" y="26.67" drill="0.8" shape="long"/>
 <pad name="D0(RX1)" x="1.27" y="31.75" drill="0.8" shape="long" rot="R180"/>
 <pad name="D1(TX1)" x="1.27" y="29.21" drill="0.8" shape="long" rot="R180"/>
@@ -11897,9 +11897,9 @@ Demo Board</text>
 <pin name="A7" x="22.86" y="30.48" visible="pin" length="short" rot="R180"/>
 <pin name="A9" x="22.86" y="35.56" visible="pin" length="short" rot="R180"/>
 <pin name="A8" x="22.86" y="33.02" visible="pin" length="short" rot="R180"/>
-<pin name="3.3V" x="22.86" y="40.64" visible="pin" length="short" rot="R180"/>
+<pin name="3.3V" x="22.86" y="38.1" visible="pin" length="short" rot="R180"/>
 <pin name="VIN" x="22.86" y="43.18" visible="pin" length="short" rot="R180"/>
-<pin name="AGND" x="22.86" y="38.1" visible="pin" length="short" rot="R180"/>
+<pin name="AGND" x="22.86" y="40.64" visible="pin" length="short" rot="R180"/>
 <pin name="VBAT" x="5.08" y="-2.54" visible="pin" length="short" rot="R90"/>
 <pin name="3.3V2" x="7.62" y="-2.54" visible="pin" length="short" rot="R90"/>
 <pin name="GND2" x="10.16" y="-2.54" visible="pin" length="short" rot="R90"/>
