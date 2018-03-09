@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.4.1">
+<eagle version="8.6.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -5178,6 +5178,9 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="C11" library="HyTechDevices" deviceset="CAP" device="0805" value="100nF"/>
 <part name="C12" library="HyTechDevices" deviceset="CAP" device="0805" value="100nF"/>
 <part name="GND34" library="HyTechSymbols" deviceset="GND" device=""/>
+<part name="R9" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="10k"/>
+<part name="R30" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="10k"/>
+<part name="GND35" library="HyTechSymbols" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5216,7 +5219,7 @@ when optocoupler resistors are removed!</text>
 <text x="111.76" y="93.98" size="5.08" layer="90">Shutdown Circuit and BSPD</text>
 <text x="314.96" y="17.78" size="1.778" layer="91">Use these jumpers to select
 DASH_IO{7,8} output voltage</text>
-<text x="210.82" y="142.24" size="1.778" layer="91">Pullup resistors to
+<text x="213.36" y="144.78" size="1.778" layer="91">Pullup resistors to
 detect open circuit</text>
 </plain>
 <moduleinsts>
@@ -5280,9 +5283,9 @@ detect open circuit</text>
 <instance part="P+6" gate="1" x="55.88" y="233.68"/>
 <instance part="P+7" gate="1" x="185.42" y="66.04" rot="R270"/>
 <instance part="P+9" gate="1" x="198.12" y="50.8"/>
-<instance part="R13" gate="G$1" x="132.08" y="127"/>
-<instance part="R14" gate="G$1" x="132.08" y="119.38"/>
-<instance part="GND15" gate="1" x="142.24" y="119.38" rot="R90"/>
+<instance part="R13" gate="G$1" x="121.92" y="127"/>
+<instance part="R14" gate="G$1" x="121.92" y="119.38"/>
+<instance part="GND15" gate="1" x="132.08" y="119.38" rot="R90"/>
 <instance part="D3" gate="1" x="152.4" y="78.74" rot="MR180"/>
 <instance part="X3" gate="-1" x="50.8" y="226.06" rot="MR0"/>
 <instance part="X3" gate="-2" x="50.8" y="223.52" rot="MR0"/>
@@ -5395,9 +5398,9 @@ detect open circuit</text>
 <instance part="U$22" gate="G$1" x="317.5" y="30.48" rot="R90"/>
 <instance part="P+10" gate="1" x="340.36" y="27.94" rot="MR90"/>
 <instance part="P+17" gate="1" x="314.96" y="27.94" rot="R90"/>
-<instance part="R10" gate="G$1" x="203.2" y="142.24" rot="R90"/>
-<instance part="R11" gate="G$1" x="193.04" y="142.24" rot="R90"/>
-<instance part="P+18" gate="1" x="208.28" y="147.32" rot="R270"/>
+<instance part="R10" gate="G$1" x="205.74" y="142.24" rot="R90"/>
+<instance part="R11" gate="G$1" x="198.12" y="142.24" rot="R90"/>
+<instance part="P+18" gate="1" x="210.82" y="149.86" rot="R270"/>
 <instance part="LED8" gate="LED" x="187.96" y="60.96" rot="MR270"/>
 <instance part="R12" gate="G$1" x="177.8" y="60.96"/>
 <instance part="GND13" gate="1" x="198.12" y="60.96" rot="R90"/>
@@ -5410,9 +5413,9 @@ detect open circuit</text>
 <instance part="R29" gate="G$1" x="149.86" y="43.18"/>
 <instance part="U$2" gate="G$1" x="238.76" y="53.34" rot="R90"/>
 <instance part="GND16" gate="1" x="238.76" y="48.26"/>
-<instance part="U$23" gate="G$1" x="134.62" y="147.32"/>
-<instance part="GND27" gate="1" x="132.08" y="134.62"/>
-<instance part="P+19" gate="1" x="154.94" y="147.32" rot="R270"/>
+<instance part="U$23" gate="G$1" x="124.46" y="147.32"/>
+<instance part="GND27" gate="1" x="121.92" y="134.62"/>
+<instance part="P+19" gate="1" x="144.78" y="147.32" rot="R270"/>
 <instance part="U$24" gate="G$1" x="137.16" y="215.9"/>
 <instance part="GND28" gate="1" x="190.5" y="220.98"/>
 <instance part="GND29" gate="1" x="218.44" y="220.98"/>
@@ -5425,6 +5428,9 @@ detect open circuit</text>
 <instance part="C11" gate="G$1" x="167.64" y="210.82"/>
 <instance part="C12" gate="G$1" x="177.8" y="210.82"/>
 <instance part="GND34" gate="1" x="177.8" y="220.98" rot="R180"/>
+<instance part="R9" gate="G$1" x="180.34" y="142.24" rot="R90"/>
+<instance part="R30" gate="G$1" x="187.96" y="142.24" rot="R90"/>
+<instance part="GND35" gate="1" x="172.72" y="149.86" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -5708,12 +5714,12 @@ detect open circuit</text>
 <segment>
 <pinref part="R14" gate="G$1" pin="2"/>
 <pinref part="GND15" gate="1" pin="GND"/>
-<wire x1="137.16" y1="119.38" x2="139.7" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="127" y1="119.38" x2="129.54" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$23" gate="G$1" pin="VSS"/>
 <pinref part="GND27" gate="1" pin="GND"/>
-<wire x1="132.08" y1="137.16" x2="132.08" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="137.16" x2="121.92" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$24" gate="G$1" pin="EMC_GND"/>
@@ -5747,6 +5753,16 @@ detect open circuit</text>
 <pinref part="C12" gate="G$1" pin="1"/>
 <pinref part="GND34" gate="1" pin="GND"/>
 <wire x1="177.8" y1="218.44" x2="177.8" y2="215.9" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND35" gate="1" pin="GND"/>
+<pinref part="R30" gate="G$1" pin="2"/>
+<wire x1="175.26" y1="149.86" x2="180.34" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="149.86" x2="187.96" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="149.86" x2="187.96" y2="147.32" width="0.1524" layer="91"/>
+<pinref part="R9" gate="G$1" pin="2"/>
+<wire x1="180.34" y1="147.32" x2="180.34" y2="149.86" width="0.1524" layer="91"/>
+<junction x="180.34" y="149.86"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -5832,17 +5848,19 @@ detect open circuit</text>
 <junction x="320.04" y="27.94"/>
 </segment>
 <segment>
-<pinref part="R11" gate="G$1" pin="2"/>
-<pinref part="P+18" gate="1" pin="+5V"/>
-<wire x1="193.04" y1="147.32" x2="203.2" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="203.2" y1="147.32" x2="205.74" y2="147.32" width="0.1524" layer="91"/>
-<pinref part="R10" gate="G$1" pin="2"/>
-<junction x="203.2" y="147.32"/>
-</segment>
-<segment>
 <pinref part="U$23" gate="G$1" pin="VDD"/>
 <pinref part="P+19" gate="1" pin="+5V"/>
-<wire x1="152.4" y1="147.32" x2="149.86" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="147.32" x2="139.7" y2="147.32" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R11" gate="G$1" pin="2"/>
+<wire x1="198.12" y1="147.32" x2="198.12" y2="149.86" width="0.1524" layer="91"/>
+<pinref part="P+18" gate="1" pin="+5V"/>
+<wire x1="198.12" y1="149.86" x2="205.74" y2="149.86" width="0.1524" layer="91"/>
+<pinref part="R10" gate="G$1" pin="2"/>
+<wire x1="205.74" y1="149.86" x2="208.28" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="147.32" x2="205.74" y2="149.86" width="0.1524" layer="91"/>
+<junction x="205.74" y="149.86"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -5877,12 +5895,16 @@ detect open circuit</text>
 </segment>
 <segment>
 <pinref part="U$18" gate="G$1" pin="CH1"/>
-<wire x1="187.96" y1="132.08" x2="203.2" y2="132.08" width="0.1524" layer="91"/>
-<label x="187.96" y="132.08" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="177.8" y1="132.08" x2="187.96" y2="132.08" width="0.1524" layer="91"/>
+<label x="177.8" y="132.08" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="R10" gate="G$1" pin="1"/>
-<wire x1="203.2" y1="132.08" x2="208.28" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="203.2" y1="137.16" x2="203.2" y2="132.08" width="0.1524" layer="91"/>
-<junction x="203.2" y="132.08"/>
+<wire x1="187.96" y1="132.08" x2="205.74" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="132.08" x2="208.28" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="137.16" x2="205.74" y2="132.08" width="0.1524" layer="91"/>
+<junction x="205.74" y="132.08"/>
+<pinref part="R30" gate="G$1" pin="1"/>
+<wire x1="187.96" y1="137.16" x2="187.96" y2="132.08" width="0.1524" layer="91"/>
+<junction x="187.96" y="132.08"/>
 </segment>
 </net>
 <net name="READ_FAULT" class="0">
@@ -5967,9 +5989,9 @@ detect open circuit</text>
 <junction x="66.04" y="157.48"/>
 </segment>
 <segment>
-<label x="152.4" y="139.7" size="1.27" layer="95" xref="yes"/>
+<label x="142.24" y="139.7" size="1.27" layer="95" xref="yes"/>
 <pinref part="U$23" gate="G$1" pin="VINB+"/>
-<wire x1="152.4" y1="139.7" x2="149.86" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="139.7" x2="139.7" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="READ_SWITCH" class="0">
@@ -6089,9 +6111,9 @@ detect open circuit</text>
 <label x="81.28" y="104.14" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<label x="139.7" y="127" size="1.27" layer="95" xref="yes"/>
+<label x="129.54" y="127" size="1.27" layer="95" xref="yes"/>
 <pinref part="R13" gate="G$1" pin="2"/>
-<wire x1="139.7" y1="127" x2="137.16" y2="127" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="127" x2="127" y2="127" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SOFTWARE_SHUTOFF" gate="G$1" pin="P"/>
@@ -6131,12 +6153,16 @@ detect open circuit</text>
 </segment>
 <segment>
 <pinref part="U$18" gate="G$1" pin="CH0"/>
-<wire x1="187.96" y1="134.62" x2="193.04" y2="134.62" width="0.1524" layer="91"/>
-<label x="187.96" y="134.62" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="177.8" y1="134.62" x2="180.34" y2="134.62" width="0.1524" layer="91"/>
+<label x="177.8" y="134.62" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="R11" gate="G$1" pin="1"/>
-<wire x1="193.04" y1="134.62" x2="208.28" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="193.04" y1="137.16" x2="193.04" y2="134.62" width="0.1524" layer="91"/>
-<junction x="193.04" y="134.62"/>
+<wire x1="180.34" y1="134.62" x2="198.12" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="134.62" x2="208.28" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="137.16" x2="198.12" y2="134.62" width="0.1524" layer="91"/>
+<junction x="198.12" y="134.62"/>
+<pinref part="R9" gate="G$1" pin="1"/>
+<wire x1="180.34" y1="137.16" x2="180.34" y2="134.62" width="0.1524" layer="91"/>
+<junction x="180.34" y="134.62"/>
 </segment>
 </net>
 <net name="+12V" class="0">
@@ -6248,15 +6274,15 @@ detect open circuit</text>
 <net name="READ_UPSTREAM_SHUTDOWN" class="0">
 <segment>
 <pinref part="U$18" gate="G$1" pin="CH3"/>
-<wire x1="170.18" y1="114.3" x2="170.18" y2="127" width="0.1524" layer="91"/>
-<wire x1="170.18" y1="127" x2="208.28" y2="127" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="114.3" x2="160.02" y2="127" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="127" x2="208.28" y2="127" width="0.1524" layer="91"/>
 <pinref part="U$23" gate="G$1" pin="VINA-"/>
 <pinref part="U$23" gate="G$1" pin="VOUTA"/>
-<wire x1="132.08" y1="144.78" x2="132.08" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="132.08" y1="147.32" x2="124.46" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="147.32" x2="124.46" y2="114.3" width="0.1524" layer="91"/>
-<junction x="132.08" y="147.32"/>
-<wire x1="124.46" y1="114.3" x2="170.18" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="144.78" x2="121.92" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="147.32" x2="114.3" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="147.32" x2="114.3" y2="114.3" width="0.1524" layer="91"/>
+<junction x="121.92" y="147.32"/>
+<wire x1="114.3" y1="114.3" x2="160.02" y2="114.3" width="0.1524" layer="91"/>
 <label x="208.28" y="127" size="1.778" layer="95" rot="MR0"/>
 </segment>
 </net>
@@ -6972,12 +6998,12 @@ detect open circuit</text>
 <segment>
 <pinref part="U$23" gate="G$1" pin="VINB-"/>
 <pinref part="U$23" gate="G$1" pin="VOUTB"/>
-<wire x1="149.86" y1="142.24" x2="149.86" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="149.86" y1="144.78" x2="170.18" y2="144.78" width="0.1524" layer="91"/>
-<junction x="149.86" y="144.78"/>
+<wire x1="139.7" y1="142.24" x2="139.7" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="144.78" x2="160.02" y2="144.78" width="0.1524" layer="91"/>
+<junction x="139.7" y="144.78"/>
 <pinref part="U$18" gate="G$1" pin="CH2"/>
-<wire x1="170.18" y1="129.54" x2="208.28" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="170.18" y1="144.78" x2="170.18" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="129.54" x2="208.28" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="144.78" x2="160.02" y2="129.54" width="0.1524" layer="91"/>
 <label x="208.28" y="129.54" size="1.778" layer="95" rot="MR0"/>
 </segment>
 </net>
@@ -6985,11 +7011,11 @@ detect open circuit</text>
 <segment>
 <pinref part="R13" gate="G$1" pin="1"/>
 <pinref part="R14" gate="G$1" pin="1"/>
-<wire x1="127" y1="127" x2="127" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="127" x2="116.84" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="U$23" gate="G$1" pin="VINA+"/>
-<wire x1="132.08" y1="142.24" x2="127" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="127" y1="142.24" x2="127" y2="127" width="0.1524" layer="91"/>
-<junction x="127" y="127"/>
+<wire x1="121.92" y1="142.24" x2="116.84" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="142.24" x2="116.84" y2="127" width="0.1524" layer="91"/>
+<junction x="116.84" y="127"/>
 </segment>
 </net>
 <net name="3.3V+" class="0">
