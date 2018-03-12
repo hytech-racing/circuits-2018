@@ -2836,7 +2836,7 @@ to set chip address</text>
 <instance part="SUPPLY58" gate="1" x="-91.44" y="162.56" smashed="yes" rot="R90">
 <attribute name="VALUE" x="-88.9" y="162.56" size="1.778" layer="96"/>
 </instance>
-<instance part="J" gate="G$1" x="-172.72" y="279.4"/>
+<instance part="J" gate="G$1" x="-172.72" y="276.86"/>
 <instance part="SUPPLY39" gate="1" x="-101.6" y="134.62" smashed="yes">
 <attribute name="VALUE" x="-101.6" y="132.08" size="1.778" layer="96" rot="R180"/>
 </instance>
@@ -3200,6 +3200,9 @@ to set chip address</text>
 </net>
 <net name="SENSE18" class="0">
 <segment>
+<pinref part="F18" gate="G$1" pin="2"/>
+<label x="-195.58" y="279.4" size="1.778" layer="95"/>
+<wire x1="-205.74" y1="279.4" x2="-162.56" y2="279.4" width="0.1524" layer="91"/>
 <wire x1="-162.56" y1="332.74" x2="-162.56" y2="325.12" width="0.1524" layer="91"/>
 <wire x1="-162.56" y1="325.12" x2="-162.56" y2="317.5" width="0.1524" layer="91"/>
 <wire x1="-162.56" y1="317.5" x2="-162.56" y2="279.4" width="0.1524" layer="91"/>
@@ -3212,13 +3215,6 @@ to set chip address</text>
 <pinref part="RU1_A" gate="G$1" pin="1"/>
 <wire x1="-116.84" y1="325.12" x2="-162.56" y2="325.12" width="0.1524" layer="91"/>
 <junction x="-162.56" y="325.12"/>
-<wire x1="-162.56" y1="279.4" x2="-165.1" y2="279.4" width="0.1524" layer="91"/>
-<pinref part="J" gate="G$1" pin="2"/>
-<wire x1="-167.64" y1="279.4" x2="-165.1" y2="279.4" width="0.1524" layer="91"/>
-<junction x="-165.1" y="279.4"/>
-<pinref part="AMS_TEST_PORT1" gate="-2" pin="S"/>
-<wire x1="-236.22" y1="297.18" x2="-165.1" y2="297.18" width="0.1524" layer="91"/>
-<wire x1="-165.1" y1="297.18" x2="-165.1" y2="279.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="CC9" class="1">
@@ -4022,19 +4018,6 @@ to set chip address</text>
 <pinref part="F1" gate="G$1" pin="2"/>
 <label x="-195.58" y="20.32" size="1.778" layer="95"/>
 <wire x1="-170.18" y1="20.32" x2="-170.18" y2="-71.12" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="SENSE18_J" class="0">
-<segment>
-<pinref part="F18" gate="G$1" pin="2"/>
-<label x="-195.58" y="279.4" size="1.778" layer="95"/>
-<wire x1="-205.74" y1="279.4" x2="-180.34" y2="279.4" width="0.1524" layer="91"/>
-<pinref part="J" gate="G$1" pin="1"/>
-<wire x1="-177.8" y1="279.4" x2="-180.34" y2="279.4" width="0.1524" layer="91"/>
-<junction x="-180.34" y="279.4"/>
-<pinref part="AMS_TEST_PORT1" gate="-1" pin="S"/>
-<wire x1="-236.22" y1="294.64" x2="-180.34" y2="294.64" width="0.1524" layer="91"/>
-<wire x1="-180.34" y1="294.64" x2="-180.34" y2="279.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -5049,18 +5032,17 @@ to set chip address</text>
 <pinref part="U$1" gate="G$1" pin="VREF1"/>
 </segment>
 </net>
-<net name="SENSE17" class="0">
+<net name="SENSE17_J" class="0">
 <segment>
+<pinref part="AMS_TEST_PORT1" gate="-1" pin="S"/>
+<wire x1="-236.22" y1="294.64" x2="-180.34" y2="294.64" width="0.1524" layer="91"/>
 <pinref part="F17" gate="G$1" pin="2"/>
-<wire x1="-160.02" y1="276.86" x2="-205.74" y2="276.86" width="0.1524" layer="91"/>
-<wire x1="-160.02" y1="276.86" x2="-160.02" y2="299.72" width="0.1524" layer="91"/>
+<wire x1="-177.8" y1="276.86" x2="-180.34" y2="276.86" width="0.1524" layer="91"/>
 <label x="-195.58" y="276.86" size="1.778" layer="95"/>
-<portref moduleinst="DRAIN17" port="CELL+"/>
-<wire x1="-127" y1="299.72" x2="-160.02" y2="299.72" width="0.1524" layer="91"/>
-<label x="-139.7" y="299.72" size="1.778" layer="95"/>
-<junction x="-127" y="299.72"/>
-<portref moduleinst="DRAIN18" port="CELL-"/>
-<wire x1="-127" y1="307.34" x2="-127" y2="299.72" width="0.1524" layer="91"/>
+<pinref part="J" gate="G$1" pin="1"/>
+<wire x1="-180.34" y1="276.86" x2="-205.74" y2="276.86" width="0.1524" layer="91"/>
+<wire x1="-180.34" y1="294.64" x2="-180.34" y2="276.86" width="0.1524" layer="91"/>
+<junction x="-180.34" y="276.86"/>
 </segment>
 </net>
 <net name="SENSE16" class="0">
@@ -5211,6 +5193,24 @@ to set chip address</text>
 <pinref part="R5_B" gate="G$1" pin="2"/>
 <wire x1="38.1" y1="101.6" x2="40.64" y2="101.6" width="0.1524" layer="91"/>
 <junction x="40.64" y="101.6"/>
+</segment>
+</net>
+<net name="SENSE17" class="0">
+<segment>
+<pinref part="AMS_TEST_PORT1" gate="-2" pin="S"/>
+<wire x1="-236.22" y1="297.18" x2="-165.1" y2="297.18" width="0.1524" layer="91"/>
+<portref moduleinst="DRAIN17" port="CELL+"/>
+<junction x="-127" y="299.72"/>
+<portref moduleinst="DRAIN18" port="CELL-"/>
+<wire x1="-127" y1="307.34" x2="-127" y2="299.72" width="0.1524" layer="91"/>
+<wire x1="-127" y1="299.72" x2="-160.02" y2="299.72" width="0.1524" layer="91"/>
+<label x="-139.7" y="299.72" size="1.778" layer="95"/>
+<wire x1="-160.02" y1="299.72" x2="-160.02" y2="276.86" width="0.1524" layer="91"/>
+<pinref part="J" gate="G$1" pin="2"/>
+<wire x1="-160.02" y1="276.86" x2="-165.1" y2="276.86" width="0.1524" layer="91"/>
+<wire x1="-165.1" y1="276.86" x2="-167.64" y2="276.86" width="0.1524" layer="91"/>
+<wire x1="-165.1" y1="297.18" x2="-165.1" y2="276.86" width="0.1524" layer="91"/>
+<junction x="-165.1" y="276.86"/>
 </segment>
 </net>
 </nets>
