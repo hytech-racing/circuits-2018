@@ -2099,18 +2099,18 @@ Source: http://www.molex.com</description>
 <wire x1="96.52" y1="53.34" x2="96.52" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="A" class="0">
+<net name="A1" class="0">
 <segment>
 <pinref part="LED_RES" gate="G$1" pin="1"/>
 <wire x1="106.68" y1="78.74" x2="96.52" y2="78.74" width="0.1524" layer="91"/>
-<label x="81.28" y="83.82" size="1.27" layer="95" xref="yes"/>
-<wire x1="96.52" y1="78.74" x2="81.28" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="78.74" x2="81.28" y2="83.82" width="0.1524" layer="91"/>
-<junction x="96.52" y="78.74"/>
 <pinref part="POWER_RES2" gate="G$1" pin="2"/>
 <wire x1="96.52" y1="68.58" x2="96.52" y2="78.74" width="0.1524" layer="91"/>
+<junction x="96.52" y="78.74"/>
 <pinref part="+" gate="G$1" pin="P$1"/>
+<wire x1="81.28" y1="78.74" x2="81.28" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="78.74" x2="68.58" y2="78.74" width="0.1524" layer="91"/>
+<label x="81.28" y="83.82" size="1.27" layer="95" xref="yes"/>
+<wire x1="96.52" y1="78.74" x2="81.28" y2="78.74" width="0.1524" layer="91"/>
 <junction x="81.28" y="78.74"/>
 </segment>
 </net>
@@ -2323,6 +2323,8 @@ Source: http://www.molex.com</description>
 <wire x1="175.26" y1="48.26" x2="182.88" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="R6" gate="G$1" pin="2"/>
 <junction x="182.88" y="17.78"/>
+<pinref part="R3" gate="G$1" pin="1"/>
+<wire x1="182.88" y1="20.32" x2="182.88" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SIGNAL" class="0">
