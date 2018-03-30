@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -6366,6 +6366,16 @@ PCB AREA</text>
 <text x="199.898" y="100.584" size="0.889" layer="51" align="center">DISCHARGE+</text>
 <text x="153.416" y="131.572" size="0.889" layer="51" rot="R90" align="center">INDICATOR</text>
 <hole x="60.96" y="147.828" drill="1.27"/>
+<wire x1="0" y1="87.122" x2="65.024" y2="87.122" width="0" layer="158"/>
+<wire x1="65.024" y1="87.122" x2="118.364" y2="87.122" width="0" layer="158"/>
+<wire x1="118.364" y1="87.122" x2="179.832" y2="87.122" width="0" layer="158"/>
+<wire x1="179.832" y1="87.122" x2="205.994" y2="87.122" width="0" layer="158"/>
+<wire x1="205.994" y1="87.122" x2="205.994" y2="152.4" width="0" layer="158"/>
+<wire x1="65.024" y1="87.122" x2="65.024" y2="0" width="0" layer="158"/>
+<wire x1="118.364" y1="87.122" x2="118.364" y2="0" width="0" layer="158"/>
+<wire x1="179.832" y1="87.122" x2="179.832" y2="58.42" width="0" layer="158"/>
+<wire x1="179.832" y1="58.42" x2="179.832" y2="0" width="0" layer="158"/>
+<wire x1="179.832" y1="58.42" x2="245.364" y2="58.42" width="0" layer="158"/>
 </plain>
 <libraries>
 <library name="HyTechDevices">
@@ -12422,6 +12432,9 @@ design rules under a new name.</description>
 <wire x1="51.054" y1="149.86" x2="58.928" y2="141.986" width="0.6096" layer="1"/>
 <via x="58.928" y="141.986" extent="1-16" drill="0.55"/>
 <wire x1="58.928" y1="141.986" x2="66.802" y2="141.986" width="0.6096" layer="16"/>
+</signal>
+<signal name="S$1">
+<wire x1="205.994" y1="87.122" x2="205.994" y2="58.42" width="0" layer="1"/>
 </signal>
 </signals>
 </board>
