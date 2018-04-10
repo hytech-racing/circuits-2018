@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.6.3">
+<eagle version="8.4.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -5289,7 +5289,10 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="R30" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="10k"/>
 <part name="GND35" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="GND36" library="HyTechSymbols" deviceset="GND" device=""/>
-<part name="JP1" library="HyTechDevices" deviceset="M08" device=""/>
+<part name="ADXL345_BREAKOUT" library="HyTechDevices" deviceset="M08" device=""/>
+<part name="P+20" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
+<part name="R31" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="4.7k"/>
+<part name="R32" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="4.7k"/>
 </parts>
 <sheets>
 <sheet>
@@ -5310,7 +5313,7 @@ when optocoupler resistors are removed!</text>
 <wire x1="111.76" y1="167.64" x2="269.24" y2="167.64" width="0.1524" layer="90"/>
 <wire x1="269.24" y1="167.64" x2="269.24" y2="238.76" width="0.1524" layer="90"/>
 <wire x1="269.24" y1="238.76" x2="111.76" y2="238.76" width="0.1524" layer="90"/>
-<text x="111.76" y="238.76" size="5.08" layer="90">Microcontroller and Power</text>
+<text x="111.76" y="238.76" size="5.08" layer="90">Microcontroller, Accelerometer, and Power</text>
 <wire x1="0" y1="238.76" x2="0" y2="0" width="0.1524" layer="90"/>
 <wire x1="0" y1="0" x2="104.14" y2="0" width="0.1524" layer="90"/>
 <wire x1="104.14" y1="0" x2="104.14" y2="238.76" width="0.1524" layer="90"/>
@@ -5328,8 +5331,9 @@ when optocoupler resistors are removed!</text>
 <text x="111.76" y="93.98" size="5.08" layer="90">Shutdown Circuit and BSPD</text>
 <text x="314.96" y="17.78" size="1.778" layer="91">Use these jumpers to select
 DASH_IO{7,8} output voltage</text>
-<text x="213.36" y="144.78" size="1.778" layer="91">Pullup resistors to
-detect open circuit</text>
+<text x="213.36" y="144.78" size="1.778" layer="91">Pullup/down resistors
+to detect open circuit.
+Install one per signal.</text>
 </plain>
 <moduleinsts>
 <moduleinst name="BSPD1" module="BSPD" x="215.9" y="25.4"/>
@@ -5530,8 +5534,11 @@ detect open circuit</text>
 <instance part="R9" gate="G$1" x="180.34" y="142.24" rot="R90"/>
 <instance part="R30" gate="G$1" x="187.96" y="142.24" rot="R90"/>
 <instance part="GND35" gate="1" x="172.72" y="149.86" rot="R270"/>
-<instance part="GND36" gate="1" x="132.08" y="226.06" rot="R270"/>
-<instance part="JP1" gate="G$1" x="152.4" y="218.44" rot="R180"/>
+<instance part="GND36" gate="1" x="142.24" y="220.98" rot="R270"/>
+<instance part="ADXL345_BREAKOUT" gate="G$1" x="152.4" y="218.44" rot="R180"/>
+<instance part="P+20" gate="1" x="142.24" y="226.06" rot="MR270"/>
+<instance part="R31" gate="G$1" x="124.46" y="218.44" rot="R90"/>
+<instance part="R32" gate="G$1" x="134.62" y="218.44" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -5833,9 +5840,9 @@ detect open circuit</text>
 <junction x="180.34" y="149.86"/>
 </segment>
 <segment>
+<pinref part="ADXL345_BREAKOUT" gate="G$1" pin="3"/>
 <pinref part="GND36" gate="1" pin="GND"/>
-<wire x1="147.32" y1="226.06" x2="134.62" y2="226.06" width="0.1524" layer="91"/>
-<pinref part="JP1" gate="G$1" pin="1"/>
+<wire x1="144.78" y1="220.98" x2="147.32" y2="220.98" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -5935,15 +5942,18 @@ detect open circuit</text>
 <wire x1="205.74" y1="147.32" x2="205.74" y2="149.86" width="0.1524" layer="91"/>
 <junction x="205.74" y="149.86"/>
 </segment>
+<segment>
+<pinref part="ADXL345_BREAKOUT" gate="G$1" pin="1"/>
+<pinref part="P+20" gate="1" pin="+5V"/>
+<wire x1="144.78" y1="226.06" x2="147.32" y2="226.06" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="N$2" class="0">
 <segment>
 <pinref part="U$3" gate="G$1" pin="4"/>
-<wire x1="162.56" y1="185.42" x2="162.56" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="185.42" x2="162.56" y2="200.66" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="D4(CANRX)"/>
-<wire x1="162.56" y1="187.96" x2="190.5" y2="187.96" width="0.1524" layer="91"/>
-<wire x1="190.5" y1="187.96" x2="190.5" y2="200.66" width="0.1524" layer="91"/>
-<wire x1="190.5" y1="200.66" x2="213.36" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="200.66" x2="213.36" y2="200.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -6561,9 +6571,9 @@ detect open circuit</text>
 <label x="55.88" y="12.7" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<label x="241.3" y="193.04" size="1.27" layer="95" xref="yes"/>
-<pinref part="U$1" gate="G$1" pin="A4"/>
-<wire x1="241.3" y1="193.04" x2="238.76" y2="193.04" width="0.1524" layer="91"/>
+<label x="241.3" y="198.12" size="1.27" layer="95" xref="yes"/>
+<pinref part="U$1" gate="G$1" pin="A6"/>
+<wire x1="238.76" y1="198.12" x2="241.3" y2="198.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$27" class="0">
@@ -6876,11 +6886,6 @@ detect open circuit</text>
 <wire x1="238.76" y1="127" x2="241.3" y2="127" width="0.1524" layer="91"/>
 <label x="241.3" y="127" size="1.27" layer="95" xref="yes"/>
 </segment>
-<segment>
-<wire x1="147.32" y1="208.28" x2="144.78" y2="208.28" width="0.1524" layer="91"/>
-<label x="144.78" y="208.28" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="JP1" gate="G$1" pin="8"/>
-</segment>
 </net>
 <net name="MISO_TEENSY" class="0">
 <segment>
@@ -6893,11 +6898,6 @@ detect open circuit</text>
 <pinref part="U$1" gate="G$1" pin="D12"/>
 <wire x1="210.82" y1="180.34" x2="213.36" y2="180.34" width="0.1524" layer="91"/>
 </segment>
-<segment>
-<wire x1="147.32" y1="213.36" x2="144.78" y2="213.36" width="0.1524" layer="91"/>
-<label x="144.78" y="213.36" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="JP1" gate="G$1" pin="6"/>
-</segment>
 </net>
 <net name="MOSI_TEENSY" class="0">
 <segment>
@@ -6909,11 +6909,6 @@ detect open circuit</text>
 <label x="210.82" y="182.88" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="U$1" gate="G$1" pin="D11"/>
 <wire x1="210.82" y1="182.88" x2="213.36" y2="182.88" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<wire x1="147.32" y1="210.82" x2="144.78" y2="210.82" width="0.1524" layer="91"/>
-<label x="144.78" y="210.82" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="JP1" gate="G$1" pin="7"/>
 </segment>
 </net>
 <net name="CS_MCP3208" class="0">
@@ -7097,24 +7092,47 @@ detect open circuit</text>
 <wire x1="238.76" y1="208.28" x2="241.3" y2="208.28" width="0.1524" layer="91"/>
 <label x="241.3" y="208.28" size="1.27" layer="95" xref="yes"/>
 </segment>
-</net>
-<net name="3.3V" class="0">
 <segment>
-<wire x1="147.32" y1="223.52" x2="144.78" y2="223.52" width="0.1524" layer="91"/>
-<label x="144.78" y="223.52" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="JP1" gate="G$1" pin="2"/>
+<pinref part="R31" gate="G$1" pin="2"/>
+<wire x1="124.46" y1="223.52" x2="124.46" y2="226.06" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="226.06" x2="134.62" y2="226.06" width="0.1524" layer="91"/>
+<pinref part="R32" gate="G$1" pin="2"/>
+<wire x1="134.62" y1="226.06" x2="134.62" y2="223.52" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="226.06" x2="121.92" y2="226.06" width="0.1524" layer="91"/>
+<junction x="124.46" y="226.06"/>
+<label x="121.92" y="226.06" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="CS_ADXL345" class="0">
-<segment>
-<wire x1="147.32" y1="220.98" x2="144.78" y2="220.98" width="0.1524" layer="91"/>
-<label x="144.78" y="220.98" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="JP1" gate="G$1" pin="3"/>
-</segment>
+<net name="SCL" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="A5"/>
 <wire x1="238.76" y1="195.58" x2="241.3" y2="195.58" width="0.1524" layer="91"/>
 <label x="241.3" y="195.58" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R31" gate="G$1" pin="1"/>
+<pinref part="ADXL345_BREAKOUT" gate="G$1" pin="8"/>
+<wire x1="147.32" y1="208.28" x2="124.46" y2="208.28" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="208.28" x2="124.46" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="208.28" x2="121.92" y2="208.28" width="0.1524" layer="91"/>
+<junction x="124.46" y="208.28"/>
+<label x="121.92" y="208.28" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="SDA" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="A4"/>
+<wire x1="238.76" y1="193.04" x2="241.3" y2="193.04" width="0.1524" layer="91"/>
+<label x="241.3" y="193.04" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="ADXL345_BREAKOUT" gate="G$1" pin="7"/>
+<wire x1="147.32" y1="210.82" x2="134.62" y2="210.82" width="0.1524" layer="91"/>
+<pinref part="R32" gate="G$1" pin="1"/>
+<wire x1="134.62" y1="210.82" x2="134.62" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="210.82" x2="132.08" y2="210.82" width="0.1524" layer="91"/>
+<junction x="134.62" y="210.82"/>
+<label x="132.08" y="210.82" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>

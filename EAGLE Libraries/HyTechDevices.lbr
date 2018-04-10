@@ -18820,6 +18820,31 @@ Output Current: 50 mA (max)
 </device>
 </devices>
 </deviceset>
+<deviceset name="NSV1C201MZ4" uservalue="yes">
+<description>&lt;b&gt;NPN Transistor&lt;/b&gt;
+
+&lt;a href="http://www.onsemi.com/pub/Collateral/NSS1C201MZ4-D.PDF"&gt;Datasheet &lt;/a&gt;
+&lt;br&gt;
+&lt;br&gt;
+MAX current: 2.0A
+&lt;br&gt;
+MAX voltage: 100V</description>
+<gates>
+<gate name="G$1" symbol="NPN_BJT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT223">
+<connects>
+<connect gate="G$1" pin="BASE" pad="1"/>
+<connect gate="G$1" pin="COLLECTOR" pad="2 4"/>
+<connect gate="G$1" pin="EMITTER" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
