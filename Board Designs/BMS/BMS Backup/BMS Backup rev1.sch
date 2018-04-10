@@ -750,6 +750,37 @@ Source: transistor-fet.lbr</description>
 <circle x="0" y="11.176" radius="4.191" width="0" layer="43"/>
 <hole x="0" y="11.176" drill="3.302"/>
 </package>
+<package name="SOIC-08">
+<description>&lt;b&gt;SMALL OUTLINE INTEGRATED CIRCUIT&lt;/b&gt;</description>
+<wire x1="2.4" y1="1.9" x2="2.4" y2="-1.908" width="0.2032" layer="21"/>
+<wire x1="2.4" y1="-1.9" x2="-2.4" y2="-1.9" width="0.2032" layer="21"/>
+<wire x1="-2.4" y1="-1.908" x2="-2.4" y2="1.9" width="0.2032" layer="21"/>
+<wire x1="-2.4" y1="1.9" x2="2.4" y2="1.9" width="0.2032" layer="21"/>
+<smd name="2" x="-0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="7" x="-0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="1" x="-1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="3" x="0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="4" x="1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="8" x="-1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="6" x="0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="5" x="1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<text x="-2.54" y="0" size="0.6096" layer="25" rot="R90" align="bottom-center">&gt;NAME</text>
+<text x="2.54" y="0" size="0.6096" layer="27" rot="R270" align="bottom-center">&gt;VALUE</text>
+<rectangle x1="-2.1501" y1="-3.1001" x2="-1.6599" y2="-2" layer="51"/>
+<rectangle x1="-0.8801" y1="-3.1001" x2="-0.3899" y2="-2" layer="51"/>
+<rectangle x1="0.3899" y1="-3.1001" x2="0.8801" y2="-2" layer="51"/>
+<rectangle x1="1.6599" y1="-3.1001" x2="2.1501" y2="-2" layer="51"/>
+<rectangle x1="1.6599" y1="2" x2="2.1501" y2="3.1001" layer="51"/>
+<rectangle x1="0.3899" y1="2" x2="0.8801" y2="3.1001" layer="51"/>
+<rectangle x1="-0.8801" y1="2" x2="-0.3899" y2="3.1001" layer="51"/>
+<rectangle x1="-2.1501" y1="2" x2="-1.6599" y2="3.1001" layer="51"/>
+<polygon width="0.127" layer="21">
+<vertex x="-1.778" y="-1.016" curve="90"/>
+<vertex x="-1.778" y="-0.762" curve="90"/>
+<vertex x="-2.032" y="-0.762" curve="90"/>
+<vertex x="-2.032" y="-1.016" curve="90"/>
+</polygon>
+</package>
 </packages>
 <symbols>
 <symbol name="M04">
@@ -845,6 +876,20 @@ Source: transistor-fet.lbr</description>
 <text x="-2.032" y="-4.318" size="1.524" layer="95">GND</text>
 <text x="-4.445" y="-0.635" size="1.524" layer="95">IN</text>
 <text x="0.635" y="-0.635" size="1.524" layer="95">OUT</text>
+</symbol>
+<symbol name="ISO1050">
+<wire x1="0" y1="0" x2="20.32" y2="0" width="0.254" layer="94"/>
+<wire x1="20.32" y1="0" x2="20.32" y2="20.32" width="0.254" layer="94"/>
+<wire x1="20.32" y1="20.32" x2="0" y2="20.32" width="0.254" layer="94"/>
+<wire x1="0" y1="20.32" x2="0" y2="0" width="0.254" layer="94"/>
+<pin name="VCC1" x="-5.08" y="17.78" length="middle"/>
+<pin name="RXD" x="-5.08" y="12.7" length="middle"/>
+<pin name="TXD" x="-5.08" y="7.62" length="middle"/>
+<pin name="GND1" x="-5.08" y="2.54" length="middle"/>
+<pin name="VCC2" x="25.4" y="17.78" length="middle" rot="R180"/>
+<pin name="CANH" x="25.4" y="12.7" length="middle" rot="R180"/>
+<pin name="CANL" x="25.4" y="7.62" length="middle" rot="R180"/>
+<pin name="GND2" x="25.4" y="2.54" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1215,6 +1260,28 @@ Standard 7805 5V regulator. IGO (Input Ground Output). Spark Fun Electronics SKU
 </device>
 </devices>
 </deviceset>
+<deviceset name="ISO1050CAN">
+<gates>
+<gate name="G$1" symbol="ISO1050" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOIC-08">
+<connects>
+<connect gate="G$1" pin="CANH" pad="7"/>
+<connect gate="G$1" pin="CANL" pad="6"/>
+<connect gate="G$1" pin="GND1" pad="4"/>
+<connect gate="G$1" pin="GND2" pad="5"/>
+<connect gate="G$1" pin="RXD" pad="2"/>
+<connect gate="G$1" pin="TXD" pad="3"/>
+<connect gate="G$1" pin="VCC1" pad="1"/>
+<connect gate="G$1" pin="VCC2" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -1245,6 +1312,7 @@ Standard 7805 5V regulator. IGO (Input Ground Output). Spark Fun Electronics SKU
 <part name="R9" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES"/>
 <part name="R10" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES"/>
 <part name="IC1" library="HyTechDevices" deviceset="5VREG_L7805" device="SPACED"/>
+<part name="U$2" library="HyTechDevices" deviceset="ISO1050CAN" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1269,6 +1337,7 @@ Standard 7805 5V regulator. IGO (Input Ground Output). Spark Fun Electronics SKU
 <instance part="R9" gate="G$1" x="35.56" y="22.86" rot="R90"/>
 <instance part="R10" gate="G$1" x="40.64" y="22.86" rot="R90"/>
 <instance part="IC1" gate="G$1" x="246.38" y="35.56" rot="R180"/>
+<instance part="U$2" gate="G$1" x="180.34" y="53.34"/>
 </instances>
 <busses>
 </busses>
@@ -1473,6 +1542,68 @@ Standard 7805 5V regulator. IGO (Input Ground Output). Spark Fun Electronics SKU
 <junction x="45.72" y="60.96"/>
 <pinref part="U$1" gate="G$1" pin="A2"/>
 <wire x1="53.34" y1="63.5" x2="101.6" y2="63.5" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="OUT"/>
+<wire x1="238.76" y1="35.56" x2="223.52" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="35.56" x2="223.52" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="VCC2"/>
+<wire x1="223.52" y1="71.12" x2="205.74" y2="71.12" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="JP5" gate="G$1" pin="2"/>
+<pinref part="IC1" gate="G$1" pin="GND"/>
+<wire x1="266.7" y1="71.12" x2="246.38" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="71.12" x2="246.38" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="GND2"/>
+<wire x1="246.38" y1="55.88" x2="246.38" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="55.88" x2="246.38" y2="55.88" width="0.1524" layer="91"/>
+<junction x="246.38" y="55.88"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="JP5" gate="G$1" pin="1"/>
+<pinref part="IC1" gate="G$1" pin="IN"/>
+<wire x1="266.7" y1="73.66" x2="254" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="254" y1="73.66" x2="254" y2="35.56" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="JP5" gate="G$1" pin="4"/>
+<pinref part="U$2" gate="G$1" pin="CANH"/>
+<wire x1="266.7" y1="66.04" x2="205.74" y2="66.04" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="CANL"/>
+<pinref part="JP5" gate="G$1" pin="3"/>
+<wire x1="205.74" y1="60.96" x2="266.7" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="266.7" y1="60.96" x2="266.7" y2="68.58" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="D3(CANTX)"/>
+<wire x1="127" y1="78.74" x2="144.78" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="78.74" x2="144.78" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="TXD"/>
+<wire x1="144.78" y1="60.96" x2="175.26" y2="60.96" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="D4(CANRX)"/>
+<wire x1="127" y1="76.2" x2="157.48" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="76.2" x2="157.48" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="RXD"/>
+<wire x1="157.48" y1="66.04" x2="175.26" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
