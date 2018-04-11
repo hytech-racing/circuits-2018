@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.3.1">
+<eagle version="8.4.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -180,6 +180,8 @@
 <layer number="249" name="Edge" color="7" fill="1" visible="no" active="yes"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
+<layer number="252" name="BR-BS" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="253" name="BR-LS" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="254" name="cooling" color="7" fill="1" visible="no" active="yes"/>
 <layer number="255" name="routoute" color="7" fill="1" visible="no" active="yes"/>
 </layers>
@@ -9064,18 +9066,64 @@ Source: transistor-fet.lbr</description>
 <pad name="A11" x="13.97" y="21.59" drill="0.8" diameter="1.778" rot="R90"/>
 </package>
 <package name="DCDC-CONVERTER">
-<dimension x1="0" y1="0" x2="21.8694" y2="0" x3="10.9347" y3="-21.8694" textsize="1.27" layer="21"/>
-<dimension x1="0" y1="0" x2="0" y2="8.2042" x3="-8.2042" y3="4.1021" textsize="1.27" layer="21"/>
-<wire x1="21.8694" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
-<wire x1="0" y1="0" x2="0" y2="8.2042" width="0.127" layer="21"/>
-<wire x1="21.8694" y1="0" x2="21.8694" y2="7.5692" width="0.127" layer="21"/>
-<wire x1="0" y1="8.2042" x2="21.8694" y2="8.2042" width="0.127" layer="21"/>
-<wire x1="21.8694" y1="8.2042" x2="21.8694" y2="7.5692" width="0.127" layer="21"/>
-<pad name="-VIN" x="2.54" y="5.08" drill="0.9906"/>
-<pad name="+VIN" x="5.08" y="5.08" drill="0.9906"/>
-<pad name="CONTROL" x="7.62" y="5.08" drill="0.9906"/>
-<pad name="+VOUT" x="15.24" y="5.08" drill="0.9906"/>
-<pad name="-VOUT" x="17.78" y="5.08" drill="0.9906"/>
+<wire x1="10.4394" y1="-5.08" x2="-11.43" y2="-5.08" width="0.127" layer="21"/>
+<wire x1="-11.43" y1="-5.08" x2="-11.43" y2="3.1242" width="0.127" layer="21"/>
+<wire x1="10.4394" y1="-5.08" x2="10.4394" y2="3.1242" width="0.127" layer="21"/>
+<wire x1="-11.43" y1="3.1242" x2="10.4394" y2="3.1242" width="0.127" layer="21"/>
+<pad name="-VIN" x="-8.89" y="0" drill="0.9906"/>
+<pad name="+VIN" x="-6.35" y="0" drill="0.9906"/>
+<pad name="CONTROL" x="-3.81" y="0" drill="0.9906"/>
+<pad name="+VOUT" x="3.81" y="0" drill="0.9906"/>
+<pad name="-VOUT" x="6.35" y="0" drill="0.9906"/>
+</package>
+<package name="SOP8">
+<description>&lt;b&gt;Small Outline Package 8&lt;/b&gt; 8P2S-A&lt;br&gt;
+Plastic 8pin 225mil SOP&lt;br&gt;
+Source: Mitsubishi M5218AL/P/FP</description>
+<wire x1="2.4" y1="2.1" x2="2.4" y2="-1.55" width="0.2032" layer="21"/>
+<wire x1="2.4" y1="-1.55" x2="2.4" y2="-2.1" width="0.2032" layer="21"/>
+<wire x1="2.4" y1="-2.1" x2="-2.4" y2="-2.1" width="0.2032" layer="51"/>
+<wire x1="-2.4" y1="-2.1" x2="-2.4" y2="-1.55" width="0.2032" layer="21"/>
+<wire x1="-2.4" y1="-1.55" x2="-2.4" y2="2.1" width="0.2032" layer="21"/>
+<wire x1="-2.4" y1="2.1" x2="2.4" y2="2.1" width="0.2032" layer="51"/>
+<circle x="-1.7" y="-1.225" radius="0.4" width="0" layer="21"/>
+<smd name="2" x="-0.635" y="-2.86" dx="0.76" dy="1.27" layer="1"/>
+<smd name="7" x="-0.635" y="2.86" dx="0.76" dy="1.27" layer="1"/>
+<smd name="1" x="-1.905" y="-2.86" dx="0.76" dy="1.27" layer="1"/>
+<smd name="3" x="0.635" y="-2.86" dx="0.76" dy="1.27" layer="1"/>
+<smd name="4" x="1.905" y="-2.86" dx="0.76" dy="1.27" layer="1"/>
+<smd name="8" x="-1.905" y="2.86" dx="0.76" dy="1.27" layer="1"/>
+<smd name="6" x="0.635" y="2.86" dx="0.76" dy="1.27" layer="1"/>
+<smd name="5" x="1.905" y="2.86" dx="0.76" dy="1.27" layer="1"/>
+<text x="-2.667" y="-1.905" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="3.937" y="-1.905" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-2.15" y1="-3.1" x2="-1.66" y2="-2.075" layer="51"/>
+<rectangle x1="-0.88" y1="-3.1" x2="-0.39" y2="-2.2" layer="51"/>
+<rectangle x1="0.39" y1="-3.1" x2="0.88" y2="-2.2" layer="51"/>
+<rectangle x1="1.66" y1="-3.1" x2="2.15" y2="-2.2" layer="51"/>
+<rectangle x1="1.66" y1="2.2" x2="2.15" y2="3.1" layer="51"/>
+<rectangle x1="0.39" y1="2.2" x2="0.88" y2="3.1" layer="51"/>
+<rectangle x1="-0.88" y1="2.2" x2="-0.39" y2="3.1" layer="51"/>
+<rectangle x1="-2.15" y1="2.2" x2="-1.66" y2="3.1" layer="51"/>
+</package>
+<package name="DUB8">
+<circle x="-4.13" y="-1.4" radius="0.565684375" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="3.81" x2="-6.35" y2="3.81" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="3.81" x2="-6.35" y2="-3.81" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="-3.81" x2="-5.08" y2="-3.81" width="0.127" layer="21"/>
+<wire x1="5.08" y1="3.81" x2="6.35" y2="3.81" width="0.127" layer="21"/>
+<wire x1="6.35" y1="3.81" x2="6.35" y2="-3.81" width="0.127" layer="21"/>
+<wire x1="6.35" y1="-3.81" x2="5.08" y2="-3.81" width="0.127" layer="21"/>
+<smd name="P$1" x="-3.81" y="-4.8" dx="3" dy="0.8" layer="1" rot="R90"/>
+<smd name="P$2" x="-1.27" y="-4.8" dx="3" dy="0.8" layer="1" rot="R90"/>
+<smd name="P$3" x="1.27" y="-4.8" dx="3" dy="0.8" layer="1" rot="R90"/>
+<smd name="P$4" x="3.81" y="-4.8" dx="3" dy="0.8" layer="1" rot="R90"/>
+<smd name="P$5" x="3.81" y="4.8" dx="3" dy="0.8" layer="1" rot="R90"/>
+<smd name="P$6" x="1.27" y="4.8" dx="3" dy="0.8" layer="1" rot="R90"/>
+<smd name="P$7" x="-1.27" y="4.8" dx="3" dy="0.8" layer="1" rot="R90"/>
+<smd name="P$8" x="-3.81" y="4.8" dx="3" dy="0.8" layer="1" rot="R90"/>
+<text x="-6.8" y="-3.4" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="8.2" y="-3.8" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -12345,17 +12393,17 @@ Demo Board</text>
 </symbol>
 <symbol name="ISO1050">
 <wire x1="0" y1="0" x2="20.32" y2="0" width="0.254" layer="94"/>
-<wire x1="20.32" y1="0" x2="20.32" y2="20.32" width="0.254" layer="94"/>
-<wire x1="20.32" y1="20.32" x2="0" y2="20.32" width="0.254" layer="94"/>
-<wire x1="0" y1="20.32" x2="0" y2="0" width="0.254" layer="94"/>
-<pin name="VCC1" x="-5.08" y="17.78" length="middle"/>
-<pin name="RXD" x="-5.08" y="12.7" length="middle"/>
-<pin name="TXD" x="-5.08" y="7.62" length="middle"/>
-<pin name="GND1" x="-5.08" y="2.54" length="middle"/>
-<pin name="VCC2" x="25.4" y="17.78" length="middle" rot="R180"/>
-<pin name="CANH" x="25.4" y="12.7" length="middle" rot="R180"/>
-<pin name="CANL" x="25.4" y="7.62" length="middle" rot="R180"/>
-<pin name="GND2" x="25.4" y="2.54" length="middle" rot="R180"/>
+<wire x1="20.32" y1="0" x2="20.32" y2="12.7" width="0.254" layer="94"/>
+<wire x1="20.32" y1="12.7" x2="0" y2="12.7" width="0.254" layer="94"/>
+<wire x1="0" y1="12.7" x2="0" y2="0" width="0.254" layer="94"/>
+<pin name="VCC1" x="-2.54" y="10.16" length="short"/>
+<pin name="RXD" x="-2.54" y="7.62" length="short"/>
+<pin name="TXD" x="-2.54" y="5.08" length="short"/>
+<pin name="GND1" x="-2.54" y="2.54" length="short"/>
+<pin name="VCC2" x="22.86" y="10.16" length="short" rot="R180"/>
+<pin name="CANH" x="22.86" y="7.62" length="short" rot="R180"/>
+<pin name="CANL" x="22.86" y="5.08" length="short" rot="R180"/>
+<pin name="GND2" x="22.86" y="2.54" length="short" rot="R180"/>
 </symbol>
 <symbol name="TEENSY_3.2_12ANALOG">
 <pin name="D0(RX1)" x="-2.54" y="35.56" visible="pin" length="short"/>
@@ -18909,16 +18957,16 @@ Output Current: 50 mA (max)
 <gate name="G$1" symbol="ISO1050" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SOIC-08">
+<device name="" package="DUB8">
 <connects>
-<connect gate="G$1" pin="CANH" pad="7"/>
-<connect gate="G$1" pin="CANL" pad="6"/>
-<connect gate="G$1" pin="GND1" pad="4"/>
-<connect gate="G$1" pin="GND2" pad="5"/>
-<connect gate="G$1" pin="RXD" pad="2"/>
-<connect gate="G$1" pin="TXD" pad="3"/>
-<connect gate="G$1" pin="VCC1" pad="1"/>
-<connect gate="G$1" pin="VCC2" pad="8"/>
+<connect gate="G$1" pin="CANH" pad="P$7"/>
+<connect gate="G$1" pin="CANL" pad="P$6"/>
+<connect gate="G$1" pin="GND1" pad="P$4"/>
+<connect gate="G$1" pin="GND2" pad="P$5"/>
+<connect gate="G$1" pin="RXD" pad="P$2"/>
+<connect gate="G$1" pin="TXD" pad="P$3"/>
+<connect gate="G$1" pin="VCC1" pad="P$1"/>
+<connect gate="G$1" pin="VCC2" pad="P$8"/>
 </connects>
 <technologies>
 <technology name=""/>
