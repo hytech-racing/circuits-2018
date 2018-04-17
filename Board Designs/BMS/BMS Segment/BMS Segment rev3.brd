@@ -1641,7 +1641,7 @@ design rules under a new name.</description>
 <element name="BUCK_CONV_B" library="HyTechDevices" package="LFCSP-8" value="ADP2360" x="144.78" y="35.56" rot="R180"/>
 <element name="RIN_B" library="HyTechDevices" package="0805" value="1kΩ" x="151.765" y="35.56" rot="R270"/>
 <element name="CIN_B" library="HyTechDevices" package="0805" value="4.7uF" x="151.765" y="30.48" rot="R270"/>
-<element name="RPG_B" library="HyTechDevices" package="0805" value="1kΩ" x="149.225" y="35.56" rot="R270"/>
+<element name="RPG_B" library="HyTechDevices" package="0805" value="10MΩ" x="149.225" y="35.56" rot="R270"/>
 <element name="CSS_B" library="HyTechDevices" package="0805" value="2.2nF" x="144.78" y="30.48" rot="R180"/>
 <element name="COUT_B" library="HyTechDevices" package="0805" value="22uF" x="144.78" y="40.64" rot="R180"/>
 <element name="L1_B" library="HyTechDevices" package="SRU1048" value="330uH" x="154.94" y="48.895" rot="R90"/>
@@ -1713,7 +1713,7 @@ design rules under a new name.</description>
 <element name="BUCK_CONV_A" library="HyTechDevices" package="LFCSP-8" value="ADP2360" x="145.415" y="159.385" rot="R180"/>
 <element name="RIN_A" library="HyTechDevices" package="0805" value="1kΩ" x="152.4" y="159.385" rot="R270"/>
 <element name="CIN_A" library="HyTechDevices" package="0805" value="4.7uF" x="152.4" y="154.305" rot="R270"/>
-<element name="RPG_A" library="HyTechDevices" package="0805" value="1kΩ" x="149.86" y="159.385" rot="R270"/>
+<element name="RPG_A" library="HyTechDevices" package="0805" value="10MΩ" x="149.86" y="159.385" rot="R270"/>
 <element name="CSS_A" library="HyTechDevices" package="0805" value="2.2nF" x="145.415" y="154.305" rot="R180"/>
 <element name="COUT_A" library="HyTechDevices" package="0805" value="22uF" x="145.415" y="164.465" rot="R180"/>
 <element name="L1_A" library="HyTechDevices" package="SRU1048" value="330uH" x="154.305" y="175.26" rot="R90"/>

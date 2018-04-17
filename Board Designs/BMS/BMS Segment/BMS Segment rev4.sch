@@ -2317,7 +2317,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="RIN_B" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="1kΩ"/>
 <part name="CIN_B" library="HyTechDevices" deviceset="CAP" device="0805" value="4.7uF"/>
 <part name="SUPPLY2" library="supply2" deviceset="V-" device=""/>
-<part name="RPG_B" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="1kΩ"/>
+<part name="RPG_B" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="10MΩ"/>
 <part name="SUPPLY12" library="supply2" deviceset="V-" device=""/>
 <part name="CSS_B" library="HyTechDevices" deviceset="CAP" device="0805" value="2.2nF"/>
 <part name="COUT_B" library="HyTechDevices" deviceset="CAP" device="0805" value="22uF"/>
@@ -2402,7 +2402,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="RIN_A" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="1kΩ"/>
 <part name="CIN_A" library="HyTechDevices" deviceset="CAP" device="0805" value="4.7uF"/>
 <part name="SUPPLY40" library="supply1" deviceset="V-" device=""/>
-<part name="RPG_A" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="1kΩ"/>
+<part name="RPG_A" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="10MΩ"/>
 <part name="SUPPLY41" library="supply1" deviceset="V-" device=""/>
 <part name="CSS_A" library="HyTechDevices" deviceset="CAP" device="0805" value="2.2nF"/>
 <part name="COUT_A" library="HyTechDevices" deviceset="CAP" device="0805" value="22uF"/>
