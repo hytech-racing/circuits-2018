@@ -3848,7 +3848,6 @@ BOARD IS ALWAYS ENERGIZED</text>
 <text x="99.06" y="137.668" size="1.524" layer="52" rot="MR90" align="bottom-center">isoSPI</text>
 <text x="97.028" y="137.668" size="1.524" layer="52" rot="MR270" align="bottom-center">TS</text>
 <text x="97.028" y="104.648" size="1.524" layer="52" rot="MR270" align="bottom-center">TS</text>
-<text x="90.424" y="11.43" size="1.143" layer="51" align="center">Manufactured by JLCPCB</text>
 </plain>
 <libraries>
 <library name="HyTechDevices">
