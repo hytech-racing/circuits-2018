@@ -2358,6 +2358,8 @@ Source: http://www.molex.com</description>
 <text x="55.88" y="33.02" size="1.778" layer="91">Powerswitch Tail</text>
 <text x="-33.02" y="45.72" size="1.778" layer="91">Shutdown Circuit</text>
 <text x="-33.02" y="-7.62" size="1.778" layer="91">Charger Interlock</text>
+<text x="45.72" y="25.4" size="1.778" layer="91">GND
+-IN</text>
 </plain>
 <instances>
 <instance part="GND1" gate="1" x="5.08" y="43.18"/>
@@ -2590,7 +2592,7 @@ Source: http://www.molex.com</description>
 <pinref part="JP1" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="SHUTDOWN_12V" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="COIL-"/>
 <wire x1="0" y1="48.26" x2="20.32" y2="48.26" width="0.1524" layer="91"/>
@@ -2602,7 +2604,7 @@ Source: http://www.molex.com</description>
 <pinref part="JP1" gate="G$1" pin="3"/>
 </segment>
 </net>
-<net name="PWR" class="0">
+<net name="POWER_CAN_12V" class="0">
 <segment>
 <wire x1="-2.54" y1="27.94" x2="5.08" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="-2.54" y1="17.78" x2="5.08" y2="17.78" width="0.1524" layer="91"/>
@@ -2625,11 +2627,12 @@ Source: http://www.molex.com</description>
 <pinref part="X2" gate="-4" pin="S"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="+IN" class="0">
 <segment>
 <pinref part="X4" gate="-1" pin="S"/>
 <pinref part="U$1" gate="G$1" pin="S"/>
 <wire x1="43.18" y1="35.56" x2="35.56" y2="35.56" width="0.1524" layer="91"/>
+<label x="38.1" y="35.56" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -2645,6 +2648,10 @@ Source: http://www.molex.com</description>
 </schematic>
 </drawing>
 <compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
 <note version="8.2" severity="warning">
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
