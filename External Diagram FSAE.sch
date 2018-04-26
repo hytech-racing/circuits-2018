@@ -189,27 +189,6 @@
 <packages>
 </packages>
 <symbols>
-<symbol name="BUZZER">
-<wire x1="-1.905" y1="-0.635" x2="1.905" y2="-0.635" width="0.254" layer="94"/>
-<wire x1="1.905" y1="-0.635" x2="1.905" y2="0" width="0.254" layer="94"/>
-<wire x1="1.905" y1="2.54" x2="-1.905" y2="2.54" width="0.254" layer="94"/>
-<wire x1="-1.905" y1="-0.635" x2="-1.905" y2="0" width="0.254" layer="94"/>
-<wire x1="1.905" y1="2.54" x2="5.08" y2="5.08" width="0.254" layer="94"/>
-<wire x1="5.08" y1="5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-1.905" y1="2.54" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
-<wire x1="2.54" y1="0" x2="1.905" y2="0" width="0.1524" layer="94"/>
-<wire x1="1.905" y1="0" x2="1.905" y2="2.54" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="0" x2="-1.905" y2="0" width="0.1524" layer="94"/>
-<wire x1="-1.905" y1="0" x2="-1.905" y2="2.54" width="0.254" layer="94"/>
-<pin name="1" x="-5.08" y="0" visible="pad" length="short" direction="pas"/>
-<pin name="2" x="5.08" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
-<text x="-3.81" y="6.35" size="1.778" layer="95">&gt;NAME</text>
-<text x="-3.81" y="-3.175" size="1.778" layer="96">&gt;VALUE</text>
-<wire x1="-2.54" y1="0" x2="-5.08" y2="0" width="0.254" layer="94"/>
-<text x="-3.556" y="0.254" size="1.778" layer="95">+</text>
-<text x="2.286" y="0.254" size="1.778" layer="95">-</text>
-<wire x1="5.08" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
-</symbol>
 <symbol name="GND">
 <wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
 <text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
@@ -592,28 +571,29 @@ Precharger</text>
 <pin name="J1-28/XDCR_PWR" x="33.02" y="33.02" length="short" rot="R270"/>
 <pin name="J1-26/XDCR_PWR" x="40.64" y="33.02" length="short" rot="R270"/>
 </symbol>
+<symbol name="BUZZER">
+<wire x1="-1.905" y1="-0.635" x2="1.905" y2="-0.635" width="0.254" layer="94"/>
+<wire x1="1.905" y1="-0.635" x2="1.905" y2="0" width="0.254" layer="94"/>
+<wire x1="1.905" y1="2.54" x2="-1.905" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="-0.635" x2="-1.905" y2="0" width="0.254" layer="94"/>
+<wire x1="1.905" y1="2.54" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="2.54" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="1.905" y2="0" width="0.1524" layer="94"/>
+<wire x1="1.905" y1="0" x2="1.905" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-1.905" y2="0" width="0.1524" layer="94"/>
+<wire x1="-1.905" y1="0" x2="-1.905" y2="2.54" width="0.254" layer="94"/>
+<pin name="1" x="-5.08" y="0" visible="pad" length="short" direction="pas"/>
+<pin name="2" x="5.08" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
+<text x="-3.81" y="6.35" size="1.778" layer="95">&gt;NAME</text>
+<text x="-3.81" y="-3.175" size="1.778" layer="96">&gt;VALUE</text>
+<wire x1="-2.54" y1="0" x2="-5.08" y2="0" width="0.254" layer="94"/>
+<text x="-3.556" y="0.254" size="1.778" layer="95">+</text>
+<text x="2.286" y="0.254" size="1.778" layer="95">-</text>
+<wire x1="5.08" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
-<deviceset name="BUZZER" prefix="SP">
-<description>&lt;b&gt;SPEAKER&lt;/b&gt;&lt;p&gt;
-
-&lt;a href="http://www.alliedelec.com/icc-intervox-brp4535s-12-c/70115826/"&gt;Prouct Page&lt;/a&gt; (Ready to Drive Sound)
-&lt;br&gt;
-&lt;br&gt;
-Source: Schukat</description>
-<gates>
-<gate name="1" symbol="BUZZER" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name="">
-<attribute name="_EXTERNAL_" value="" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="GND" prefix="GND">
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
@@ -921,6 +901,26 @@ Source: Sonnenschein</description>
 &lt;a href="http://www.rinehartmotion.com/uploads/5/1/3/0/51309945/pm100-150datasheet_2.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="RINEHART_PM100DX" x="-20.32" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="">
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BUZZER" prefix="SP">
+<description>&lt;b&gt;SPEAKER&lt;/b&gt;&lt;p&gt;
+
+&lt;a href="http://www.alliedelec.com/icc-intervox-brp4535s-12-c/70115826/"&gt;Prouct Page&lt;/a&gt; (Ready to Drive Sound)
+&lt;br&gt;
+&lt;br&gt;
+Source: Schukat</description>
+<gates>
+<gate name="1" symbol="BUZZER" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -1977,7 +1977,6 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </module>
 </modules>
 <parts>
-<part name="RTDS" library="HyTechSymbols" deviceset="BUZZER" device=""/>
 <part name="S1" library="HyTechSymbols" deviceset="SWITCH_DPST" device=""/>
 <part name="RIGHT_REAR_BRB" library="HyTechSymbols" deviceset="SWITCH_DPST" device=""/>
 <part name="GLVMS" library="HyTechSymbols" deviceset="SWITCH_SPST" device=""/>
@@ -2003,10 +2002,6 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="TSAL" library="HyTechSymbols" deviceset="LED" device=""/>
 <part name="GND11" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="MOLEX_IMPERIUM_1" library="HyTechSymbols" deviceset="M02" device=""/>
-<part name="BUTTON_START" library="HyTechSymbols" deviceset="SWITCH_SPST_MOM" device=""/>
-<part name="BUTTON_MARK" library="HyTechSymbols" deviceset="SWITCH_SPST_MOM" device=""/>
-<part name="GND12" library="HyTechSymbols" deviceset="GND" device=""/>
-<part name="GND13" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="U$2" library="HyTechSymbols" deviceset="BENDER_IR155-3204" device=""/>
 <part name="U$3" library="HyTechSymbols" deviceset="SMART_PRECHARGER" device=""/>
 <part name="ACCUMULATOR_INDICATOR" library="HyTechSymbols" deviceset="LED" device=""/>
@@ -2021,9 +2016,6 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="FUSE" library="HyTechSymbols" deviceset="FUSE" device="" value="200A"/>
 <part name="GND23" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="SL10" library="HyTechSymbols" deviceset="M06" device=""/>
-<part name="LED_BMS" library="HyTechSymbols" deviceset="LED" device=""/>
-<part name="LED_IMD" library="HyTechSymbols" deviceset="LED" device=""/>
-<part name="LED_POWER" library="HyTechSymbols" deviceset="LED" device=""/>
 <part name="SL12" library="HyTechSymbols" deviceset="M04" device=""/>
 <part name="GND2" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="TSMP_RES-" library="HyTechDevices" deviceset="RESISTOR" device="10W" value="10k"/>
@@ -2045,7 +2037,6 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="EM_F1" library="HyTechSymbols" deviceset="FUSE" device="" value="6.3A"/>
 <part name="SL8" library="HyTechSymbols" deviceset="M10" device=""/>
 <part name="GND1" library="HyTechSymbols" deviceset="GND" device=""/>
-<part name="GND7" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="GND14" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="CHARGE_ENABLE" library="HyTechSymbols" deviceset="BANANA_JACK" device=""/>
 <part name="GND16" library="HyTechSymbols" deviceset="GND" device=""/>
@@ -2055,7 +2046,6 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="SL20" library="HyTechSymbols" deviceset="M10" device=""/>
 <part name="SL21" library="HyTechSymbols" deviceset="M10" device=""/>
 <part name="SL22" library="HyTechSymbols" deviceset="M10" device=""/>
-<part name="SL23" library="HyTechSymbols" deviceset="M10" device=""/>
 <part name="SL2" library="HyTechSymbols" deviceset="M16" device=""/>
 <part name="SL4" library="HyTechSymbols" deviceset="M16" device=""/>
 <part name="SL5" library="HyTechSymbols" deviceset="M10" device=""/>
@@ -2075,6 +2065,20 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="GND17" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="BMS_IMD_LATCH_BTN" library="HyTechSymbols" deviceset="SWITCH_SPST_MOM" device=""/>
 <part name="GND18" library="HyTechSymbols" deviceset="GND" device=""/>
+<part name="RTDS" library="HyTechSymbols" deviceset="BUZZER" device=""/>
+<part name="BUTTON_START" library="HyTechSymbols" deviceset="SWITCH_SPST_MOM" device=""/>
+<part name="BUTTON_MARK" library="HyTechSymbols" deviceset="SWITCH_SPST_MOM" device=""/>
+<part name="GND12" library="HyTechSymbols" deviceset="GND" device=""/>
+<part name="GND13" library="HyTechSymbols" deviceset="GND" device=""/>
+<part name="LED_BMS" library="HyTechSymbols" deviceset="LED" device=""/>
+<part name="LED_IMD" library="HyTechSymbols" deviceset="LED" device=""/>
+<part name="LED_START" library="HyTechSymbols" deviceset="LED" device=""/>
+<part name="GND7" library="HyTechSymbols" deviceset="GND" device=""/>
+<part name="SL23" library="HyTechSymbols" deviceset="M10" device=""/>
+<part name="BUTTON_MODE" library="HyTechSymbols" deviceset="SWITCH_SPST_MOM" device=""/>
+<part name="GND20" library="HyTechSymbols" deviceset="GND" device=""/>
+<part name="LED_POWER" library="HyTechSymbols" deviceset="LED" device=""/>
+<part name="LED_MODE" library="HyTechSymbols" deviceset="LED" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2214,7 +2218,6 @@ Power for FSAE EV5.1.4</text>
 </moduleinst>
 </moduleinsts>
 <instances>
-<instance part="RTDS" gate="1" x="528.32" y="271.78" rot="R180"/>
 <instance part="S1" gate="DPST" x="458.47" y="274.32" rot="MR270"/>
 <instance part="RIGHT_REAR_BRB" gate="DPST" x="383.54" y="12.7" rot="R270"/>
 <instance part="GLVMS" gate="SPST" x="309.88" y="12.7" rot="R90"/>
@@ -2240,10 +2243,6 @@ Power for FSAE EV5.1.4</text>
 <instance part="TSAL" gate="G$1" x="401.32" y="35.56"/>
 <instance part="GND11" gate="1" x="416.56" y="38.1" rot="R90"/>
 <instance part="MOLEX_IMPERIUM_1" gate="G$1" x="81.28" y="223.52"/>
-<instance part="BUTTON_START" gate="SPST_MOM" x="566.42" y="271.78" rot="R270"/>
-<instance part="BUTTON_MARK" gate="SPST_MOM" x="566.42" y="284.48" rot="R270"/>
-<instance part="GND12" gate="1" x="576.58" y="271.78" rot="R180"/>
-<instance part="GND13" gate="1" x="576.58" y="284.48" rot="R180"/>
 <instance part="U$2" gate="G$1" x="99.06" y="144.78"/>
 <instance part="U$3" gate="G$1" x="160.02" y="254"/>
 <instance part="ACCUMULATOR_INDICATOR" gate="G$1" x="287.02" y="127" rot="R180"/>
@@ -2258,9 +2257,6 @@ Power for FSAE EV5.1.4</text>
 <instance part="FUSE" gate="G$1" x="284.48" y="254"/>
 <instance part="GND23" gate="1" x="154.94" y="259.08"/>
 <instance part="SL10" gate="G$1" x="33.02" y="170.18" rot="R180"/>
-<instance part="LED_BMS" gate="G$1" x="533.4" y="297.18" rot="R180"/>
-<instance part="LED_IMD" gate="G$1" x="533.4" y="307.34" rot="R180"/>
-<instance part="LED_POWER" gate="G$1" x="533.4" y="287.02" rot="R180"/>
 <instance part="SL12" gate="G$1" x="22.86" y="190.5" rot="R180"/>
 <instance part="GND2" gate="1" x="246.38" y="-5.08" rot="R270"/>
 <instance part="TSMP_RES-" gate="G$1" x="88.9" y="187.96" rot="R90"/>
@@ -2282,7 +2278,6 @@ Power for FSAE EV5.1.4</text>
 <instance part="EM_F1" gate="G$1" x="193.04" y="238.76" rot="R90"/>
 <instance part="SL8" gate="G$1" x="195.58" y="35.56" rot="MR180"/>
 <instance part="GND1" gate="1" x="86.36" y="55.88" rot="R180"/>
-<instance part="GND7" gate="1" x="515.62" y="266.7"/>
 <instance part="GND14" gate="1" x="391.16" y="147.32" rot="R90"/>
 <instance part="CHARGE_ENABLE" gate="G$1" x="302.26" y="40.64"/>
 <instance part="GND16" gate="1" x="391.16" y="114.3" rot="R90"/>
@@ -2292,7 +2287,6 @@ Power for FSAE EV5.1.4</text>
 <instance part="SL20" gate="G$1" x="591.82" y="198.12" rot="R180"/>
 <instance part="SL21" gate="G$1" x="607.06" y="198.12" rot="MR180"/>
 <instance part="SL22" gate="G$1" x="548.64" y="238.76" rot="R270"/>
-<instance part="SL23" gate="G$1" x="548.64" y="254" rot="MR90"/>
 <instance part="SL2" gate="G$1" x="363.22" y="121.92" rot="MR270"/>
 <instance part="SL4" gate="G$1" x="363.22" y="137.16" rot="R90"/>
 <instance part="SL5" gate="G$1" x="93.98" y="35.56" rot="R180"/>
@@ -2312,6 +2306,20 @@ Power for FSAE EV5.1.4</text>
 <instance part="GND17" gate="1" x="360.68" y="200.66" rot="R180"/>
 <instance part="BMS_IMD_LATCH_BTN" gate="SPST_MOM" x="327.66" y="63.5" rot="R90"/>
 <instance part="GND18" gate="1" x="302.26" y="66.04" rot="R270"/>
+<instance part="RTDS" gate="1" x="528.32" y="271.78" rot="R180"/>
+<instance part="BUTTON_START" gate="SPST_MOM" x="566.42" y="271.78" rot="R270"/>
+<instance part="BUTTON_MARK" gate="SPST_MOM" x="566.42" y="284.48" rot="R270"/>
+<instance part="GND12" gate="1" x="576.58" y="271.78" rot="R180"/>
+<instance part="GND13" gate="1" x="576.58" y="284.48" rot="R180"/>
+<instance part="LED_BMS" gate="G$1" x="533.4" y="297.18" rot="R180"/>
+<instance part="LED_IMD" gate="G$1" x="533.4" y="307.34" rot="R180"/>
+<instance part="LED_START" gate="G$1" x="533.4" y="287.02" rot="R180"/>
+<instance part="GND7" gate="1" x="515.62" y="266.7"/>
+<instance part="SL23" gate="G$1" x="548.64" y="254" rot="MR90"/>
+<instance part="BUTTON_MODE" gate="SPST_MOM" x="566.42" y="297.18" rot="R270"/>
+<instance part="GND20" gate="1" x="576.58" y="297.18" rot="R180"/>
+<instance part="LED_POWER" gate="G$1" x="533.4" y="317.5" rot="R180"/>
+<instance part="LED_MODE" gate="G$1" x="533.4" y="327.66" rot="R180"/>
 </instances>
 <busses>
 <bus name="MOTOR_TEMP,EXC+,EXC-,SIN+,SIN-,COS+,COS-,GND">
@@ -2362,16 +2370,6 @@ Power for FSAE EV5.1.4</text>
 <pinref part="TSAL" gate="G$1" pin="C"/>
 <pinref part="GND11" gate="1" pin="GND"/>
 <wire x1="414.02" y1="38.1" x2="408.94" y2="38.1" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="BUTTON_START" gate="SPST_MOM" pin="S"/>
-<pinref part="GND12" gate="1" pin="GND"/>
-<wire x1="576.58" y1="269.24" x2="571.5" y2="269.24" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="BUTTON_MARK" gate="SPST_MOM" pin="S"/>
-<pinref part="GND13" gate="1" pin="GND"/>
-<wire x1="576.58" y1="281.94" x2="571.5" y2="281.94" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="AIR1" gate="1" pin="2"/>
@@ -2426,24 +2424,6 @@ Power for FSAE EV5.1.4</text>
 <pinref part="SL2" gate="G$1" pin="8"/>
 </segment>
 <segment>
-<pinref part="RTDS" gate="1" pin="2"/>
-<wire x1="523.24" y1="271.78" x2="515.62" y2="271.78" width="0.1524" layer="91"/>
-<pinref part="LED_POWER" gate="G$1" pin="C"/>
-<wire x1="525.78" y1="284.48" x2="515.62" y2="284.48" width="0.1524" layer="91"/>
-<wire x1="515.62" y1="271.78" x2="515.62" y2="284.48" width="0.1524" layer="91"/>
-<pinref part="GND7" gate="1" pin="GND"/>
-<wire x1="515.62" y1="271.78" x2="515.62" y2="269.24" width="0.1524" layer="91"/>
-<junction x="515.62" y="271.78"/>
-<wire x1="515.62" y1="284.48" x2="515.62" y2="294.64" width="0.1524" layer="91"/>
-<junction x="515.62" y="284.48"/>
-<pinref part="LED_BMS" gate="G$1" pin="C"/>
-<wire x1="515.62" y1="294.64" x2="525.78" y2="294.64" width="0.1524" layer="91"/>
-<pinref part="LED_IMD" gate="G$1" pin="C"/>
-<wire x1="525.78" y1="304.8" x2="515.62" y2="304.8" width="0.1524" layer="91"/>
-<wire x1="515.62" y1="304.8" x2="515.62" y2="294.64" width="0.1524" layer="91"/>
-<junction x="515.62" y="294.64"/>
-</segment>
-<segment>
 <pinref part="SMD2" gate="1" pin="2"/>
 <pinref part="GND6" gate="1" pin="GND"/>
 <wire x1="266.7" y1="266.7" x2="266.7" y2="261.62" width="0.1524" layer="91"/>
@@ -2463,6 +2443,47 @@ Power for FSAE EV5.1.4</text>
 <pinref part="BMS_IMD_LATCH_BTN" gate="SPST_MOM" pin="S"/>
 <pinref part="GND18" gate="1" pin="GND"/>
 <wire x1="304.8" y1="66.04" x2="322.58" y2="66.04" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="BUTTON_START" gate="SPST_MOM" pin="S"/>
+<pinref part="GND12" gate="1" pin="GND"/>
+<wire x1="576.58" y1="269.24" x2="571.5" y2="269.24" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="BUTTON_MARK" gate="SPST_MOM" pin="S"/>
+<pinref part="GND13" gate="1" pin="GND"/>
+<wire x1="576.58" y1="281.94" x2="571.5" y2="281.94" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="RTDS" gate="1" pin="2"/>
+<wire x1="523.24" y1="271.78" x2="515.62" y2="271.78" width="0.1524" layer="91"/>
+<pinref part="LED_START" gate="G$1" pin="C"/>
+<wire x1="525.78" y1="284.48" x2="515.62" y2="284.48" width="0.1524" layer="91"/>
+<wire x1="515.62" y1="271.78" x2="515.62" y2="284.48" width="0.1524" layer="91"/>
+<pinref part="GND7" gate="1" pin="GND"/>
+<wire x1="515.62" y1="271.78" x2="515.62" y2="269.24" width="0.1524" layer="91"/>
+<junction x="515.62" y="271.78"/>
+<wire x1="515.62" y1="284.48" x2="515.62" y2="294.64" width="0.1524" layer="91"/>
+<junction x="515.62" y="284.48"/>
+<pinref part="LED_BMS" gate="G$1" pin="C"/>
+<wire x1="515.62" y1="294.64" x2="525.78" y2="294.64" width="0.1524" layer="91"/>
+<pinref part="LED_IMD" gate="G$1" pin="C"/>
+<wire x1="525.78" y1="304.8" x2="515.62" y2="304.8" width="0.1524" layer="91"/>
+<wire x1="515.62" y1="304.8" x2="515.62" y2="294.64" width="0.1524" layer="91"/>
+<junction x="515.62" y="294.64"/>
+<pinref part="LED_POWER" gate="G$1" pin="C"/>
+<wire x1="525.78" y1="314.96" x2="515.62" y2="314.96" width="0.1524" layer="91"/>
+<wire x1="515.62" y1="314.96" x2="515.62" y2="304.8" width="0.1524" layer="91"/>
+<junction x="515.62" y="304.8"/>
+<pinref part="LED_MODE" gate="G$1" pin="C"/>
+<wire x1="525.78" y1="325.12" x2="515.62" y2="325.12" width="0.1524" layer="91"/>
+<wire x1="515.62" y1="325.12" x2="515.62" y2="314.96" width="0.1524" layer="91"/>
+<junction x="515.62" y="314.96"/>
+</segment>
+<segment>
+<pinref part="GND20" gate="1" pin="GND"/>
+<pinref part="BUTTON_MODE" gate="SPST_MOM" pin="S"/>
+<wire x1="576.58" y1="294.64" x2="571.5" y2="294.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="12VSUPPLY" class="0">
@@ -3965,54 +3986,6 @@ Power for FSAE EV5.1.4</text>
 <wire x1="629.92" y1="187.96" x2="632.46" y2="187.96" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$1" class="0">
-<segment>
-<pinref part="RTDS" gate="1" pin="1"/>
-<wire x1="533.4" y1="271.78" x2="535.94" y2="271.78" width="0.1524" layer="91"/>
-<pinref part="SL23" gate="G$1" pin="1"/>
-<wire x1="535.94" y1="271.78" x2="535.94" y2="259.08" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$2" class="0">
-<segment>
-<pinref part="LED_POWER" gate="G$1" pin="A"/>
-<wire x1="538.48" y1="284.48" x2="533.4" y2="284.48" width="0.1524" layer="91"/>
-<pinref part="SL23" gate="G$1" pin="2"/>
-<wire x1="538.48" y1="284.48" x2="538.48" y2="259.08" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$47" class="0">
-<segment>
-<pinref part="LED_BMS" gate="G$1" pin="A"/>
-<wire x1="533.4" y1="294.64" x2="541.02" y2="294.64" width="0.1524" layer="91"/>
-<pinref part="SL23" gate="G$1" pin="3"/>
-<wire x1="541.02" y1="294.64" x2="541.02" y2="259.08" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$48" class="0">
-<segment>
-<pinref part="LED_IMD" gate="G$1" pin="A"/>
-<wire x1="533.4" y1="304.8" x2="543.56" y2="304.8" width="0.1524" layer="91"/>
-<pinref part="SL23" gate="G$1" pin="4"/>
-<wire x1="543.56" y1="304.8" x2="543.56" y2="259.08" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$50" class="0">
-<segment>
-<pinref part="BUTTON_START" gate="SPST_MOM" pin="P"/>
-<wire x1="561.34" y1="271.78" x2="558.8" y2="271.78" width="0.1524" layer="91"/>
-<pinref part="SL23" gate="G$1" pin="10"/>
-<wire x1="558.8" y1="271.78" x2="558.8" y2="259.08" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$75" class="0">
-<segment>
-<pinref part="BUTTON_MARK" gate="SPST_MOM" pin="P"/>
-<wire x1="561.34" y1="284.48" x2="556.26" y2="284.48" width="0.1524" layer="91"/>
-<pinref part="SL23" gate="G$1" pin="9"/>
-<wire x1="556.26" y1="284.48" x2="556.26" y2="259.08" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$91" class="0">
 <segment>
 <portref moduleinst="FRONT_ECU" port="CTRL_1"/>
@@ -4324,6 +4297,78 @@ Power for FSAE EV5.1.4</text>
 <pinref part="SL7" gate="G$1" pin="10"/>
 <portref moduleinst="REAR_ECU" port="LATCH_EXT_BUTTON"/>
 <wire x1="116.84" y1="25.4" x2="114.3" y2="25.4" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="RTDS" gate="1" pin="1"/>
+<wire x1="533.4" y1="271.78" x2="535.94" y2="271.78" width="0.1524" layer="91"/>
+<pinref part="SL23" gate="G$1" pin="1"/>
+<wire x1="535.94" y1="271.78" x2="535.94" y2="259.08" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="LED_START" gate="G$1" pin="A"/>
+<wire x1="538.48" y1="284.48" x2="533.4" y2="284.48" width="0.1524" layer="91"/>
+<pinref part="SL23" gate="G$1" pin="2"/>
+<wire x1="538.48" y1="284.48" x2="538.48" y2="259.08" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$47" class="0">
+<segment>
+<pinref part="LED_BMS" gate="G$1" pin="A"/>
+<wire x1="533.4" y1="294.64" x2="541.02" y2="294.64" width="0.1524" layer="91"/>
+<pinref part="SL23" gate="G$1" pin="3"/>
+<wire x1="541.02" y1="294.64" x2="541.02" y2="259.08" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$48" class="0">
+<segment>
+<pinref part="LED_IMD" gate="G$1" pin="A"/>
+<wire x1="533.4" y1="304.8" x2="543.56" y2="304.8" width="0.1524" layer="91"/>
+<pinref part="SL23" gate="G$1" pin="4"/>
+<wire x1="543.56" y1="304.8" x2="543.56" y2="259.08" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$50" class="0">
+<segment>
+<pinref part="BUTTON_START" gate="SPST_MOM" pin="P"/>
+<wire x1="561.34" y1="271.78" x2="558.8" y2="271.78" width="0.1524" layer="91"/>
+<pinref part="SL23" gate="G$1" pin="10"/>
+<wire x1="558.8" y1="271.78" x2="558.8" y2="259.08" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$75" class="0">
+<segment>
+<pinref part="BUTTON_MARK" gate="SPST_MOM" pin="P"/>
+<wire x1="561.34" y1="284.48" x2="556.26" y2="284.48" width="0.1524" layer="91"/>
+<pinref part="SL23" gate="G$1" pin="9"/>
+<wire x1="556.26" y1="284.48" x2="556.26" y2="259.08" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="SL23" gate="G$1" pin="5"/>
+<wire x1="546.1" y1="259.08" x2="546.1" y2="314.96" width="0.1524" layer="91"/>
+<wire x1="546.1" y1="314.96" x2="533.4" y2="314.96" width="0.1524" layer="91"/>
+<pinref part="LED_POWER" gate="G$1" pin="A"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<pinref part="SL23" gate="G$1" pin="6"/>
+<wire x1="548.64" y1="259.08" x2="548.64" y2="325.12" width="0.1524" layer="91"/>
+<wire x1="548.64" y1="325.12" x2="533.4" y2="325.12" width="0.1524" layer="91"/>
+<pinref part="LED_MODE" gate="G$1" pin="A"/>
+</segment>
+</net>
+<net name="N$11" class="0">
+<segment>
+<pinref part="SL23" gate="G$1" pin="8"/>
+<wire x1="553.72" y1="259.08" x2="553.72" y2="297.18" width="0.1524" layer="91"/>
+<wire x1="553.72" y1="297.18" x2="561.34" y2="297.18" width="0.1524" layer="91"/>
+<pinref part="BUTTON_MODE" gate="SPST_MOM" pin="P"/>
 </segment>
 </net>
 </nets>

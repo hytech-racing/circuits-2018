@@ -475,6 +475,7 @@
 <port name="BUS_CANL" side="right" coord="-10.16" direction="io"/>
 <port name="BUS_CANH" side="right" coord="-12.7" direction="io"/>
 <port name="BUS_12VSUPPLY" side="right" coord="-5.08" direction="in"/>
+<port name="NC-4" side="right" coord="17.78" direction="nc"/>
 </ports>
 <variantdefs>
 </variantdefs>

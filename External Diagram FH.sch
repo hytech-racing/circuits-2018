@@ -2023,7 +2023,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="SL10" library="HyTechSymbols" deviceset="M06" device=""/>
 <part name="LED_BMS" library="HyTechSymbols" deviceset="LED" device=""/>
 <part name="LED_IMD" library="HyTechSymbols" deviceset="LED" device=""/>
-<part name="LED_POWER" library="HyTechSymbols" deviceset="LED" device=""/>
+<part name="LED_START" library="HyTechSymbols" deviceset="LED" device=""/>
 <part name="SL12" library="HyTechSymbols" deviceset="M04" device=""/>
 <part name="GND2" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="TSMP_RES-" library="HyTechDevices" deviceset="RESISTOR" device="10W" value="10k"/>
@@ -2078,6 +2078,10 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="GND18" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="PRE_F2" library="HyTechSymbols" deviceset="FUSE" device="" value="6.3A"/>
 <part name="PRE_F1" library="HyTechSymbols" deviceset="FUSE" device="" value="6.3A"/>
+<part name="BUTTON_MODE" library="HyTechSymbols" deviceset="SWITCH_SPST_MOM" device=""/>
+<part name="GND20" library="HyTechSymbols" deviceset="GND" device=""/>
+<part name="LED_POWER" library="HyTechSymbols" deviceset="LED" device=""/>
+<part name="LED_MODE" library="HyTechSymbols" deviceset="LED" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2273,7 +2277,7 @@ Formula Hybrid ➡</text>
 <instance part="SL10" gate="G$1" x="33.02" y="170.18" rot="R180"/>
 <instance part="LED_BMS" gate="G$1" x="533.4" y="297.18" rot="R180"/>
 <instance part="LED_IMD" gate="G$1" x="533.4" y="307.34" rot="R180"/>
-<instance part="LED_POWER" gate="G$1" x="533.4" y="287.02" rot="R180"/>
+<instance part="LED_START" gate="G$1" x="533.4" y="287.02" rot="R180"/>
 <instance part="SL12" gate="G$1" x="22.86" y="190.5" rot="R180"/>
 <instance part="GND2" gate="1" x="246.38" y="-5.08" rot="R270"/>
 <instance part="TSMP_RES-" gate="G$1" x="88.9" y="187.96" rot="R90"/>
@@ -2328,6 +2332,10 @@ Formula Hybrid ➡</text>
 <instance part="GND18" gate="1" x="302.26" y="66.04" rot="R270"/>
 <instance part="PRE_F2" gate="G$1" x="208.28" y="241.3"/>
 <instance part="PRE_F1" gate="G$1" x="203.2" y="259.08"/>
+<instance part="BUTTON_MODE" gate="SPST_MOM" x="566.42" y="297.18" rot="R270"/>
+<instance part="GND20" gate="1" x="576.58" y="297.18" rot="R180"/>
+<instance part="LED_POWER" gate="G$1" x="533.4" y="317.5" rot="R180"/>
+<instance part="LED_MODE" gate="G$1" x="533.4" y="327.66" rot="R180"/>
 </instances>
 <busses>
 <bus name="MOTOR_TEMP,EXC+,EXC-,SIN+,SIN-,COS+,COS-,GND">
@@ -2444,7 +2452,7 @@ Formula Hybrid ➡</text>
 <segment>
 <pinref part="RTDS" gate="1" pin="2"/>
 <wire x1="523.24" y1="271.78" x2="515.62" y2="271.78" width="0.1524" layer="91"/>
-<pinref part="LED_POWER" gate="G$1" pin="C"/>
+<pinref part="LED_START" gate="G$1" pin="C"/>
 <wire x1="525.78" y1="284.48" x2="515.62" y2="284.48" width="0.1524" layer="91"/>
 <wire x1="515.62" y1="271.78" x2="515.62" y2="284.48" width="0.1524" layer="91"/>
 <pinref part="GND7" gate="1" pin="GND"/>
@@ -2458,6 +2466,14 @@ Formula Hybrid ➡</text>
 <wire x1="525.78" y1="304.8" x2="515.62" y2="304.8" width="0.1524" layer="91"/>
 <wire x1="515.62" y1="304.8" x2="515.62" y2="294.64" width="0.1524" layer="91"/>
 <junction x="515.62" y="294.64"/>
+<pinref part="LED_POWER" gate="G$1" pin="C"/>
+<wire x1="525.78" y1="314.96" x2="515.62" y2="314.96" width="0.1524" layer="91"/>
+<wire x1="515.62" y1="314.96" x2="515.62" y2="304.8" width="0.1524" layer="91"/>
+<junction x="515.62" y="304.8"/>
+<pinref part="LED_MODE" gate="G$1" pin="C"/>
+<wire x1="525.78" y1="325.12" x2="515.62" y2="325.12" width="0.1524" layer="91"/>
+<wire x1="515.62" y1="325.12" x2="515.62" y2="314.96" width="0.1524" layer="91"/>
+<junction x="515.62" y="314.96"/>
 </segment>
 <segment>
 <pinref part="SMD2" gate="1" pin="2"/>
@@ -2479,6 +2495,11 @@ Formula Hybrid ➡</text>
 <pinref part="BMS_IMD_LATCH_BTN" gate="SPST_MOM" pin="S"/>
 <pinref part="GND18" gate="1" pin="GND"/>
 <wire x1="304.8" y1="66.04" x2="322.58" y2="66.04" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND20" gate="1" pin="GND"/>
+<pinref part="BUTTON_MODE" gate="SPST_MOM" pin="S"/>
+<wire x1="576.58" y1="294.64" x2="571.5" y2="294.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="12VSUPPLY" class="0">
@@ -3931,7 +3952,7 @@ Formula Hybrid ➡</text>
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="LED_POWER" gate="G$1" pin="A"/>
+<pinref part="LED_START" gate="G$1" pin="A"/>
 <wire x1="538.48" y1="284.48" x2="533.4" y2="284.48" width="0.1524" layer="91"/>
 <pinref part="SL23" gate="G$1" pin="2"/>
 <wire x1="538.48" y1="284.48" x2="538.48" y2="259.08" width="0.1524" layer="91"/>
@@ -4291,6 +4312,30 @@ Formula Hybrid ➡</text>
 <pinref part="PRE_F1" gate="G$1" pin="1"/>
 <pinref part="U$3" gate="G$1" pin="CTCS-"/>
 <wire x1="198.12" y1="259.08" x2="195.58" y2="259.08" width="0.6096" layer="91"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="SL23" gate="G$1" pin="5"/>
+<wire x1="546.1" y1="259.08" x2="546.1" y2="314.96" width="0.1524" layer="91"/>
+<wire x1="546.1" y1="314.96" x2="533.4" y2="314.96" width="0.1524" layer="91"/>
+<pinref part="LED_POWER" gate="G$1" pin="A"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="SL23" gate="G$1" pin="6"/>
+<wire x1="548.64" y1="259.08" x2="548.64" y2="325.12" width="0.1524" layer="91"/>
+<wire x1="548.64" y1="325.12" x2="533.4" y2="325.12" width="0.1524" layer="91"/>
+<pinref part="LED_MODE" gate="G$1" pin="A"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="SL23" gate="G$1" pin="8"/>
+<wire x1="553.72" y1="259.08" x2="553.72" y2="297.18" width="0.1524" layer="91"/>
+<wire x1="553.72" y1="297.18" x2="561.34" y2="297.18" width="0.1524" layer="91"/>
+<pinref part="BUTTON_MODE" gate="SPST_MOM" pin="P"/>
 </segment>
 </net>
 </nets>
