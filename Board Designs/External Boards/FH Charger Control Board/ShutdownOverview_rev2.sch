@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.3.1">
+<eagle version="8.4.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -827,6 +827,20 @@ Precharger</text>
 <wire x1="13.97" y1="-3.81" x2="-5.08" y2="-3.81" width="0.127" layer="94"/>
 <wire x1="-5.08" y1="-3.81" x2="-5.08" y2="3.81" width="0.127" layer="94"/>
 </symbol>
+<symbol name="SWITCH_SPST">
+<description>&lt;a href="http://www2.produktinfo.conrad.com/datenblaetter/700000-724999/705152-da-01-de-Subminiaturschalter_TL_36YO.pdf"&gt;Source&lt;/a&gt;</description>
+<wire x1="0" y1="-3.175" x2="0" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.905" x2="-1.905" y2="3.175" width="0.254" layer="94"/>
+<wire x1="1.27" y1="2.54" x2="2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="3.175" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="-1.27" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="3.175" width="0.254" layer="94"/>
+<text x="5.08" y="-5.08" size="1.778" layer="95" rot="R90">&gt;NAME</text>
+<text x="7.62" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="P" x="0" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
+<pin name="S" x="2.54" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
+<pin name="O" x="-2.54" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="GND" prefix="GND">
@@ -923,6 +937,21 @@ Source: Sonnenschein</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="SWITCH_SPST" prefix="S">
+<description>Single Pull Single Throw Switch</description>
+<gates>
+<gate name="SPST" symbol="SWITCH_SPST" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="">
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="supply1" urn="urn:adsk.eagle:library:371">
@@ -995,7 +1024,7 @@ Source: Sonnenschein</description>
 </module>
 <module name="ELCON_PFC_2500_CHARGER" prefix="" dx="76.2" dy="50.8">
 <ports>
-<port name="HV+" side="top" coord="10.16" direction="out"/>
+<port name="HV+" side="top" coord="2.54" direction="out"/>
 <port name="HV-" side="top" coord="-10.16" direction="out"/>
 <port name="HOT" side="bottom" coord="10.16" direction="pwr"/>
 <port name="NEUTRAL" side="bottom" coord="0" direction="pwr"/>
@@ -1241,8 +1270,8 @@ Source: Sonnenschein</description>
 </module>
 <module name="CHARGER_CTRL_ECU" prefix="" dx="50.8" dy="50.8">
 <ports>
-<port name="CANH" side="right" coord="7.62" direction="io"/>
-<port name="CANL" side="right" coord="-7.62" direction="io"/>
+<port name="CANH" side="right" coord="17.78" direction="io"/>
+<port name="CANL" side="right" coord="2.54" direction="io"/>
 </ports>
 <variantdefs>
 </variantdefs>
@@ -1283,7 +1312,6 @@ Source: Sonnenschein</description>
 <part name="GND7" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="GND15" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="K1" library="HyTechSymbols" deviceset="RELAY" device=""/>
-<part name="F2" library="HyTechSymbols" deviceset="FUSE" device="" value="20A"/>
 <part name="F1" library="HyTechSymbols" deviceset="FUSE" device="" value="20A"/>
 <part name="R1" library="HyTechDevices" deviceset="RESISTOR" device="PTH-1/4W" value="120"/>
 <part name="R2" library="HyTechDevices" deviceset="RESISTOR" device="PTH-1/4W" value="120"/>
@@ -1291,6 +1319,7 @@ Source: Sonnenschein</description>
 <part name="K3" library="HyTechSymbols" deviceset="RELAY" device=""/>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="GND1" library="HyTechSymbols" deviceset="GND" device=""/>
+<part name="S1" library="HyTechSymbols" deviceset="SWITCH_SPST" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1331,9 +1360,7 @@ Source: Sonnenschein</description>
 <wire x1="264.16" y1="104.14" x2="264.16" y2="96.52" width="0.6096" layer="156"/>
 <wire x1="264.16" y1="96.52" x2="259.08" y2="96.52" width="0.6096" layer="156"/>
 <wire x1="165.1" y1="101.6" x2="170.18" y2="101.6" width="0.6096" layer="156"/>
-<wire x1="124.46" y1="104.14" x2="124.46" y2="111.76" width="0.6096" layer="156"/>
-<wire x1="124.46" y1="111.76" x2="119.38" y2="111.76" width="0.6096" layer="156"/>
-<wire x1="119.38" y1="91.44" x2="124.46" y2="91.44" width="0.6096" layer="156"/>
+<wire x1="119.38" y1="91.44" x2="137.16" y2="91.44" width="0.6096" layer="156"/>
 <polygon width="0.1524" layer="90">
 <vertex x="5.08" y="88.9" curve="90"/>
 <vertex x="15.24" y="101.6"/>
@@ -1341,16 +1368,17 @@ Source: Sonnenschein</description>
 <vertex x="5.08" y="114.3"/>
 </polygon>
 <text x="0" y="116.84" size="1.778" layer="91">AC POWER PLUG</text>
-<wire x1="124.46" y1="91.44" x2="124.46" y2="101.6" width="0.6096" layer="156"/>
-<wire x1="124.46" y1="101.6" x2="129.54" y2="101.6" width="0.6096" layer="156"/>
-<wire x1="124.46" y1="104.14" x2="129.54" y2="104.14" width="0.6096" layer="156"/>
+<wire x1="119.38" y1="104.14" x2="121.92" y2="104.14" width="0.6096" layer="156"/>
 <wire x1="170.18" y1="101.6" x2="170.18" y2="88.9" width="0.6096" layer="156"/>
+<wire x1="132.08" y1="104.14" x2="139.7" y2="104.14" width="0.6096" layer="156"/>
+<wire x1="139.7" y1="101.6" x2="137.16" y2="101.6" width="0.6096" layer="156"/>
+<wire x1="137.16" y1="101.6" x2="137.16" y2="91.44" width="0.6096" layer="156"/>
 </plain>
 <moduleinsts>
 <moduleinst name="ELCON_PFC_2500_CHARGER2" module="ELCON_PFC_2500_CHARGER" x="88.9" y="101.6" rot="MR90"/>
 <moduleinst name="PWRSWITCH_TAIL2" module="PWRSWITCH_TAIL" x="38.1" y="101.6" rot="MR270"/>
 <moduleinst name="BMS" module="BMS" x="292.1" y="25.4"/>
-<moduleinst name="CHARGER_CTRL_ECU1" module="CHARGER_CTRL_ECU" x="88.9" y="27.94"/>
+<moduleinst name="CHARGER_CTRL_ECU1" module="CHARGER_CTRL_ECU" x="88.9" y="17.78"/>
 </moduleinsts>
 <instances>
 <instance part="MOLEX_IMPERIUM_1" gate="G$1" x="160.02" y="104.14"/>
@@ -1372,15 +1400,15 @@ Source: Sonnenschein</description>
 <instance part="SMD3" gate="1" x="269.24" y="114.3" rot="R270"/>
 <instance part="GND7" gate="1" x="289.56" y="121.92" rot="R180"/>
 <instance part="GND15" gate="1" x="264.16" y="121.92" rot="R180"/>
-<instance part="K1" gate="1" x="88.9" y="38.1" rot="R90"/>
-<instance part="F2" gate="G$1" x="134.62" y="101.6" rot="R180"/>
-<instance part="F1" gate="G$1" x="134.62" y="104.14"/>
+<instance part="K1" gate="1" x="88.9" y="27.94" rot="R90"/>
+<instance part="F1" gate="G$1" x="127" y="104.14"/>
 <instance part="R1" gate="G$1" x="124.46" y="27.94" rot="R90"/>
 <instance part="R2" gate="G$1" x="256.54" y="27.94" rot="R90"/>
 <instance part="D1" gate="1" x="167.64" y="127" rot="R180"/>
 <instance part="K3" gate="1" x="55.88" y="162.56" rot="MR270"/>
 <instance part="P+2" gate="1" x="71.12" y="152.4" rot="R270"/>
 <instance part="GND1" gate="1" x="38.1" y="162.56" rot="R270"/>
+<instance part="S1" gate="SPST" x="76.2" y="50.8"/>
 </instances>
 <busses>
 <bus name="B$1">
@@ -1545,29 +1573,17 @@ Source: Sonnenschein</description>
 <net name="N$24" class="0">
 <segment>
 <pinref part="K1" gate="1" pin="S"/>
-<wire x1="83.82" y1="45.72" x2="78.74" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="45.72" x2="78.74" y2="58.42" width="0.1524" layer="91"/>
-<portref moduleinst="ELCON_PFC_2500_CHARGER2" port="EN+"/>
+<wire x1="83.82" y1="35.56" x2="76.2" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="S1" gate="SPST" pin="P"/>
+<wire x1="76.2" y1="45.72" x2="76.2" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$25" class="0">
 <segment>
 <pinref part="K1" gate="1" pin="P"/>
-<wire x1="93.98" y1="48.26" x2="101.6" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="48.26" x2="101.6" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="38.1" x2="101.6" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="38.1" x2="101.6" y2="58.42" width="0.1524" layer="91"/>
 <portref moduleinst="ELCON_PFC_2500_CHARGER2" port="EN-"/>
-</segment>
-</net>
-<net name="N$31" class="0">
-<segment>
-<pinref part="MOLEX_IMPERIUM_2" gate="G$1" pin="1"/>
-<pinref part="F2" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="N$32" class="0">
-<segment>
-<pinref part="MOLEX_IMPERIUM_2" gate="G$1" pin="2"/>
-<pinref part="F1" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$37" class="0">
@@ -1614,7 +1630,7 @@ Source: Sonnenschein</description>
 <wire x1="132.08" y1="127" x2="165.1" y2="127" width="0.1524" layer="91"/>
 <pinref part="K3" gate="1" pin="2"/>
 <wire x1="60.96" y1="162.56" x2="132.08" y2="162.56" width="0.1524" layer="91"/>
-<label x="93.98" y="160.02" size="1.778" layer="95"/>
+<label x="93.98" y="162.56" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -1623,6 +1639,13 @@ Source: Sonnenschein</description>
 <wire x1="38.1" y1="154.94" x2="38.1" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="K3" gate="1" pin="S"/>
 <wire x1="38.1" y1="154.94" x2="50.8" y2="154.94" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="S1" gate="SPST" pin="S"/>
+<portref moduleinst="ELCON_PFC_2500_CHARGER2" port="EN+"/>
+<wire x1="78.74" y1="58.42" x2="78.74" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
