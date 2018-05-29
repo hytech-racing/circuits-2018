@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.0.1">
+<eagle version="8.3.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -5282,10 +5282,10 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="GND30" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="GND31" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="GND32" library="HyTechSymbols" deviceset="GND" device=""/>
-<part name="AC1_FILTR" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="100"/>
-<part name="AC2_FILTR" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="100"/>
-<part name="C9" library="HyTechDevices" deviceset="CAP" device="0805" value="2.2µ"/>
-<part name="C10" library="HyTechDevices" deviceset="CAP" device="0805" value="2.2µ"/>
+<part name="AC1_FILTR" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="510"/>
+<part name="AC2_FILTR" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="510"/>
+<part name="C9" library="HyTechDevices" deviceset="CAP" device="0805" value="22µ"/>
+<part name="C10" library="HyTechDevices" deviceset="CAP" device="0805" value="22µ"/>
 <part name="GND33" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="GND34" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="U$24" library="HyTechDevices" deviceset="MCP6002" device="SOIC"/>
