@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -9223,91 +9223,91 @@ Source: Mitsubishi M5218AL/P/FP</description>
 <wire x1="0" y1="12.87" x2="0" y2="0" width="0.127" layer="21"/>
 <hole x="1.9" y="4.5" drill="3.05"/>
 <hole x="49.84" y="4.5" drill="3.05"/>
-<pad name="P$1" x="6.245" y="1.5" drill="0.5"/>
-<pad name="P$2" x="6.245" y="3" drill="0.5"/>
-<pad name="P$3" x="6.245" y="4.5" drill="0.5"/>
-<pad name="P$4" x="6.245" y="6" drill="0.5"/>
-<pad name="P$5" x="6.245" y="7.5" drill="0.5"/>
-<pad name="P$6" x="6.245" y="9" drill="0.5"/>
-<pad name="P$7" x="8.995" y="9" drill="0.5"/>
-<pad name="P$8" x="8.995" y="7.5" drill="0.5"/>
-<pad name="P$9" x="8.995" y="6" drill="0.5"/>
-<pad name="P$10" x="8.995" y="4.5" drill="0.5"/>
-<pad name="P$11" x="8.995" y="3" drill="0.5"/>
-<pad name="P$12" x="8.995" y="1.5" drill="0.5"/>
-<pad name="P$13" x="11.745" y="1.5" drill="0.5"/>
-<pad name="P$14" x="11.745" y="3" drill="0.5"/>
-<pad name="P$15" x="11.745" y="4.5" drill="0.5"/>
-<pad name="P$16" x="11.745" y="6" drill="0.5"/>
-<pad name="P$17" x="11.745" y="7.5" drill="0.5"/>
-<pad name="P$18" x="11.745" y="9" drill="0.5"/>
-<pad name="P$19" x="14.495" y="9" drill="0.5"/>
-<pad name="P$20" x="14.495" y="7.5" drill="0.5"/>
-<pad name="P$21" x="14.495" y="6" drill="0.5"/>
-<pad name="P$22" x="14.495" y="4.5" drill="0.5"/>
-<pad name="P$23" x="14.495" y="3" drill="0.5"/>
-<pad name="P$24" x="14.495" y="1.5" drill="0.5"/>
-<pad name="P$25" x="17.245" y="1.5" drill="0.5"/>
-<pad name="P$26" x="17.245" y="3" drill="0.5"/>
-<pad name="P$27" x="17.245" y="4.5" drill="0.5"/>
-<pad name="P$28" x="17.245" y="6" drill="0.5"/>
-<pad name="P$29" x="17.245" y="7.5" drill="0.5"/>
-<pad name="P$30" x="17.245" y="9" drill="0.5"/>
-<pad name="P$31" x="19.995" y="9" drill="0.5"/>
-<pad name="P$32" x="19.995" y="7.5" drill="0.5"/>
-<pad name="P$33" x="19.995" y="6" drill="0.5"/>
-<pad name="P$34" x="19.995" y="4.5" drill="0.5"/>
-<pad name="P$35" x="19.995" y="3" drill="0.5"/>
-<pad name="P$36" x="19.995" y="1.5" drill="0.5"/>
-<pad name="P$37" x="22.745" y="1.5" drill="0.5"/>
-<pad name="P$38" x="22.745" y="3" drill="0.5"/>
-<pad name="P$39" x="22.745" y="4.5" drill="0.5"/>
-<pad name="P$40" x="22.745" y="6" drill="0.5"/>
-<pad name="P$41" x="22.745" y="7.5" drill="0.5"/>
-<pad name="P$42" x="22.745" y="9" drill="0.5"/>
-<pad name="P$43" x="25.495" y="1.5" drill="0.5"/>
-<pad name="P$44" x="25.495" y="3" drill="0.5"/>
-<pad name="P$45" x="25.495" y="4.5" drill="0.5"/>
-<pad name="P$46" x="25.495" y="6" drill="0.5"/>
-<pad name="P$47" x="25.495" y="7.5" drill="0.5"/>
-<pad name="P$48" x="25.495" y="9" drill="0.5"/>
-<pad name="P$49" x="28.245" y="9" drill="0.5"/>
-<pad name="P$50" x="28.245" y="7.5" drill="0.5"/>
-<pad name="P$51" x="28.245" y="6" drill="0.5"/>
-<pad name="P$52" x="28.245" y="4.5" drill="0.5"/>
-<pad name="P$53" x="28.245" y="3" drill="0.5"/>
-<pad name="P$54" x="28.245" y="1.5" drill="0.5"/>
-<pad name="P$55" x="30.995" y="1.5" drill="0.5"/>
-<pad name="P$56" x="30.995" y="3" drill="0.5"/>
-<pad name="P$57" x="30.995" y="4.5" drill="0.5"/>
-<pad name="P$58" x="30.995" y="6" drill="0.5"/>
-<pad name="P$59" x="30.995" y="7.5" drill="0.5"/>
-<pad name="P$60" x="30.995" y="9" drill="0.5"/>
-<pad name="P$61" x="36.145" y="1.5" drill="0.5"/>
-<pad name="P$62" x="44.145" y="1.5" drill="0.5"/>
-<pad name="P$63" x="42.145" y="1.5" drill="0.5"/>
-<pad name="P$64" x="40.145" y="1.5" drill="0.5"/>
-<pad name="P$65" x="38.145" y="1.5" drill="0.5"/>
-<pad name="P$66" x="36.145" y="3.5" drill="0.5"/>
-<pad name="P$67" x="44.145" y="3.5" drill="0.5"/>
-<pad name="P$68" x="42.145" y="3.5" drill="0.5"/>
-<pad name="P$69" x="40.145" y="3.5" drill="0.5"/>
-<pad name="P$70" x="38.145" y="3.5" drill="0.5"/>
-<pad name="P$71" x="36.145" y="5.5" drill="0.5"/>
-<pad name="P$72" x="44.145" y="5.5" drill="0.5"/>
-<pad name="P$73" x="42.145" y="5.5" drill="0.5"/>
-<pad name="P$74" x="40.145" y="5.5" drill="0.5"/>
-<pad name="P$75" x="38.145" y="5.5" drill="0.5"/>
-<pad name="P$76" x="36.145" y="7.5" drill="0.5"/>
-<pad name="P$77" x="44.145" y="7.5" drill="0.5"/>
-<pad name="P$78" x="42.145" y="7.5" drill="0.5"/>
-<pad name="P$79" x="40.145" y="7.5" drill="0.5"/>
-<pad name="P$80" x="38.145" y="7.5" drill="0.5"/>
-<pad name="P$81" x="36.145" y="9.5" drill="0.5"/>
-<pad name="P$82" x="44.145" y="9.5" drill="0.5"/>
-<pad name="P$83" x="42.145" y="9.5" drill="0.5"/>
-<pad name="P$84" x="40.145" y="9.5" drill="0.5"/>
-<pad name="P$85" x="38.145" y="9.5" drill="0.5"/>
+<pad name="P$10F" x="6.245" y="1.5" drill="0.5"/>
+<pad name="P$10E" x="6.245" y="3" drill="0.5"/>
+<pad name="P$10D" x="6.245" y="4.5" drill="0.5"/>
+<pad name="P$10C" x="6.245" y="6" drill="0.5"/>
+<pad name="P$10B" x="6.245" y="7.5" drill="0.5"/>
+<pad name="P$10A" x="6.245" y="9" drill="0.5"/>
+<pad name="P$9A" x="8.995" y="9" drill="0.5"/>
+<pad name="P$9B" x="8.995" y="7.5" drill="0.5"/>
+<pad name="P$9C" x="8.995" y="6" drill="0.5"/>
+<pad name="P$9D" x="8.995" y="4.5" drill="0.5"/>
+<pad name="P$9E" x="8.995" y="3" drill="0.5"/>
+<pad name="P$9F" x="8.995" y="1.5" drill="0.5"/>
+<pad name="P$8F" x="11.745" y="1.5" drill="0.5"/>
+<pad name="P$8E" x="11.745" y="3" drill="0.5"/>
+<pad name="P$8D" x="11.745" y="4.5" drill="0.5"/>
+<pad name="P$8C" x="11.745" y="6" drill="0.5"/>
+<pad name="P$8B" x="11.745" y="7.5" drill="0.5"/>
+<pad name="P$8A" x="11.745" y="9" drill="0.5"/>
+<pad name="P$7A" x="14.495" y="9" drill="0.5"/>
+<pad name="P$7B" x="14.495" y="7.5" drill="0.5"/>
+<pad name="P$7C" x="14.495" y="6" drill="0.5"/>
+<pad name="P$7D" x="14.495" y="4.5" drill="0.5"/>
+<pad name="P$7E" x="14.495" y="3" drill="0.5"/>
+<pad name="P$7F" x="14.495" y="1.5" drill="0.5"/>
+<pad name="P$6F" x="17.245" y="1.5" drill="0.5"/>
+<pad name="P$6E" x="17.245" y="3" drill="0.5"/>
+<pad name="P$6D" x="17.245" y="4.5" drill="0.5"/>
+<pad name="P$6C" x="17.245" y="6" drill="0.5"/>
+<pad name="P$6B" x="17.245" y="7.5" drill="0.5"/>
+<pad name="P$6A" x="17.245" y="9" drill="0.5"/>
+<pad name="P$5A" x="19.995" y="9" drill="0.5"/>
+<pad name="P$5B" x="19.995" y="7.5" drill="0.5"/>
+<pad name="P$5C" x="19.995" y="6" drill="0.5"/>
+<pad name="P$5D" x="19.995" y="4.5" drill="0.5"/>
+<pad name="P$5E" x="19.995" y="3" drill="0.5"/>
+<pad name="P$5F" x="19.995" y="1.5" drill="0.5"/>
+<pad name="P$4F" x="22.745" y="1.5" drill="0.5"/>
+<pad name="P$4E" x="22.745" y="3" drill="0.5"/>
+<pad name="P$4D" x="22.745" y="4.5" drill="0.5"/>
+<pad name="P$4C" x="22.745" y="6" drill="0.5"/>
+<pad name="P$4B" x="22.745" y="7.5" drill="0.5"/>
+<pad name="P$4A" x="22.745" y="9" drill="0.5"/>
+<pad name="P$3F" x="25.495" y="1.5" drill="0.5"/>
+<pad name="P$3E" x="25.495" y="3" drill="0.5"/>
+<pad name="P$3D" x="25.495" y="4.5" drill="0.5"/>
+<pad name="P$3C" x="25.495" y="6" drill="0.5"/>
+<pad name="P$3B" x="25.495" y="7.5" drill="0.5"/>
+<pad name="P$3A" x="25.495" y="9" drill="0.5"/>
+<pad name="P$2A" x="28.245" y="9" drill="0.5"/>
+<pad name="P$2B" x="28.245" y="7.5" drill="0.5"/>
+<pad name="P$2C" x="28.245" y="6" drill="0.5"/>
+<pad name="P$2D" x="28.245" y="4.5" drill="0.5"/>
+<pad name="P$2E" x="28.245" y="3" drill="0.5"/>
+<pad name="P$2F" x="28.245" y="1.5" drill="0.5"/>
+<pad name="P$1F" x="30.995" y="1.5" drill="0.5"/>
+<pad name="P$1E" x="30.995" y="3" drill="0.5"/>
+<pad name="P$1D" x="30.995" y="4.5" drill="0.5"/>
+<pad name="P$1C" x="30.995" y="6" drill="0.5"/>
+<pad name="P$1B" x="30.995" y="7.5" drill="0.5"/>
+<pad name="P$1A" x="30.995" y="9" drill="0.5"/>
+<pad name="A5" x="36.145" y="1.5" drill="0.5"/>
+<pad name="A1" x="44.145" y="1.5" drill="0.5"/>
+<pad name="A2" x="42.145" y="1.5" drill="0.5"/>
+<pad name="A3" x="40.145" y="1.5" drill="0.5"/>
+<pad name="A4" x="38.145" y="1.5" drill="0.5"/>
+<pad name="B5" x="36.145" y="3.5" drill="0.5"/>
+<pad name="B1" x="44.145" y="3.5" drill="0.5"/>
+<pad name="B2" x="42.145" y="3.5" drill="0.5"/>
+<pad name="B3" x="40.145" y="3.5" drill="0.5"/>
+<pad name="B4" x="38.145" y="3.5" drill="0.5"/>
+<pad name="C5" x="36.145" y="5.5" drill="0.5"/>
+<pad name="C1" x="44.145" y="5.5" drill="0.5"/>
+<pad name="C2" x="42.145" y="5.5" drill="0.5"/>
+<pad name="C3" x="40.145" y="5.5" drill="0.5"/>
+<pad name="C4" x="38.145" y="5.5" drill="0.5"/>
+<pad name="D5" x="36.145" y="7.5" drill="0.5"/>
+<pad name="D1" x="44.145" y="7.5" drill="0.5"/>
+<pad name="D2" x="42.145" y="7.5" drill="0.5"/>
+<pad name="D3" x="40.145" y="7.5" drill="0.5"/>
+<pad name="D4" x="38.145" y="7.5" drill="0.5"/>
+<pad name="E5" x="36.145" y="9.5" drill="0.5"/>
+<pad name="E1" x="44.145" y="9.5" drill="0.5"/>
+<pad name="E2" x="42.145" y="9.5" drill="0.5"/>
+<pad name="E3" x="40.145" y="9.5" drill="0.5"/>
+<pad name="E4" x="38.145" y="9.5" drill="0.5"/>
 </package>
 </packages>
 <symbols>
@@ -12663,6 +12663,29 @@ Demo Board</text>
 <pin name="8" x="5.08" y="10.16" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="9" x="5.08" y="12.7" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <wire x1="-1.27" y1="12.7" x2="0" y2="12.7" width="0.6096" layer="94"/>
+</symbol>
+<symbol name="MURATA_POWER_SUPPLY">
+<wire x1="0" y1="0" x2="81.28" y2="0" width="0.254" layer="94"/>
+<wire x1="81.28" y1="0" x2="81.28" y2="30.48" width="0.254" layer="94"/>
+<wire x1="81.28" y1="30.48" x2="0" y2="30.48" width="0.254" layer="94"/>
+<wire x1="0" y1="30.48" x2="0" y2="0" width="0.254" layer="94"/>
+<text x="15.24" y="10.16" size="3.81" layer="94">Murata Power Supply</text>
+<pin name="V1" x="88.9" y="27.94" rot="R180"/>
+<pin name="PGND" x="88.9" y="22.86" rot="R180"/>
+<pin name="VSB" x="88.9" y="7.62" rot="R180"/>
+<pin name="VSB_RETURN" x="88.9" y="2.54" rot="R180"/>
+<pin name="APS" x="5.08" y="35.56" length="middle" rot="R270"/>
+<pin name="SDA" x="7.62" y="35.56" length="middle" rot="R270"/>
+<pin name="VSENSE-" x="25.4" y="35.56" length="middle" rot="R270"/>
+<pin name="VSENSE+" x="27.94" y="35.56" length="middle" rot="R270"/>
+<pin name="SCL" x="10.16" y="35.56" length="middle" rot="R270"/>
+<pin name="PS_ON" x="71.12" y="35.56" length="middle" rot="R270"/>
+<pin name="SMB_ALERT" x="12.7" y="35.56" length="middle" rot="R270"/>
+<pin name="ACOK" x="53.34" y="35.56" length="middle" rot="R270"/>
+<pin name="PSKILL" x="68.58" y="35.56" length="middle" rot="R270"/>
+<pin name="ISHARE" x="38.1" y="35.56" length="middle" rot="R270"/>
+<pin name="PWOK" x="55.88" y="35.56" length="middle" rot="R270"/>
+<pin name="PRESENT_L" x="50.8" y="35.56" length="middle" rot="R270"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -19293,6 +19316,36 @@ MAX voltage: 100V</description>
 <connect gate="G$1" pin="7" pad="7"/>
 <connect gate="G$1" pin="8" pad="8"/>
 <connect gate="G$1" pin="9" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MURATA_POWER_SUPPLY">
+<gates>
+<gate name="G$1" symbol="MURATA_POWER_SUPPLY" x="-48.26" y="-10.16"/>
+</gates>
+<devices>
+<device name="" package="MURATA_POWER_SUPPLY_CONNECTOR">
+<connects>
+<connect gate="G$1" pin="ACOK" pad="E4"/>
+<connect gate="G$1" pin="APS" pad="A3"/>
+<connect gate="G$1" pin="ISHARE" pad="B5"/>
+<connect gate="G$1" pin="PGND" pad="P$1A P$1B P$1C P$1D P$1E P$1F P$2A P$2B P$2C P$2D P$2E P$2F P$3A P$3B P$3C P$3D P$3E P$3F P$4A P$4B P$4C P$4D P$4E P$4F P$5A P$5B P$5C P$5D P$5E P$5F"/>
+<connect gate="G$1" pin="PRESENT_L" pad="E5"/>
+<connect gate="G$1" pin="PSKILL" pad="A5"/>
+<connect gate="G$1" pin="PS_ON" pad="B4"/>
+<connect gate="G$1" pin="PWOK" pad="C5"/>
+<connect gate="G$1" pin="SCL" pad="A4"/>
+<connect gate="G$1" pin="SDA" pad="C3"/>
+<connect gate="G$1" pin="SMB_ALERT" pad="C4"/>
+<connect gate="G$1" pin="V1" pad="P$6A P$6B P$6C P$6D P$6E P$6F P$7A P$7B P$7C P$7D P$7E P$7F P$8A P$8B P$8C P$8D P$8E P$8F P$9A P$9B P$9C P$9D P$9E P$9F P$10A P$10B P$10C P$10D P$10E P$10F"/>
+<connect gate="G$1" pin="VSB" pad="A1 B1 C1 D1 E1"/>
+<connect gate="G$1" pin="VSB_RETURN" pad="A2 B2"/>
+<connect gate="G$1" pin="VSENSE+" pad="E3"/>
+<connect gate="G$1" pin="VSENSE-" pad="D3"/>
 </connects>
 <technologies>
 <technology name=""/>
