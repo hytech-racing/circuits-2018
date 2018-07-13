@@ -1800,45 +1800,51 @@ Should be Jumped if not needed</text>
 <segment>
 <wire x1="111.76" y1="-20.32" x2="111.76" y2="-12.7" width="0.1524" layer="91"/>
 <pinref part="LED4" gate="LED" pin="C"/>
+<pinref part="R4" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
 <wire x1="101.6" y1="-20.32" x2="101.6" y2="-12.7" width="0.1524" layer="91"/>
 <pinref part="LED3" gate="LED" pin="C"/>
+<pinref part="R3" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$3" class="0">
 <segment>
 <wire x1="91.44" y1="-20.32" x2="91.44" y2="-12.7" width="0.1524" layer="91"/>
 <pinref part="LED2" gate="LED" pin="C"/>
+<pinref part="R2" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
 <wire x1="81.28" y1="-20.32" x2="81.28" y2="-12.7" width="0.1524" layer="91"/>
 <pinref part="LED1" gate="LED" pin="C"/>
+<pinref part="R1" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="V1" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="V1"/>
-<wire x1="111.76" y1="45.72" x2="205.74" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="U$5" gate="G$1" pin="1"/>
-</segment>
-<segment>
 <pinref part="U$3" gate="G$1" pin="P$2"/>
 <wire x1="22.86" y1="-27.94" x2="25.4" y2="-27.94" width="0.1524" layer="91"/>
 <label x="25.4" y="-27.94" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$5" gate="G$1" pin="2"/>
+<wire x1="205.74" y1="43.18" x2="190.5" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="43.18" x2="190.5" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="V1"/>
+<wire x1="190.5" y1="45.72" x2="111.76" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PGND" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="PGND"/>
 <wire x1="111.76" y1="40.64" x2="200.66" y2="40.64" width="0.1524" layer="91"/>
-<pinref part="U$5" gate="G$1" pin="2"/>
-<wire x1="200.66" y1="40.64" x2="200.66" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="200.66" y1="43.18" x2="205.74" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="40.64" x2="200.66" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="U$5" gate="G$1" pin="1"/>
+<wire x1="200.66" y1="45.72" x2="205.74" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$4" gate="G$1" pin="P$1"/>
@@ -1899,6 +1905,10 @@ Should be Jumped if not needed</text>
 <pinref part="U$6" gate="G$1" pin="2"/>
 <wire x1="200.66" y1="20.32" x2="200.66" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="200.66" y1="22.86" x2="205.74" y2="22.86" width="0.1524" layer="91"/>
+<pinref part="R1" gate="G$1" pin="2"/>
+<pinref part="R2" gate="G$1" pin="2"/>
+<pinref part="R3" gate="G$1" pin="2"/>
+<pinref part="R4" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="C1" gate="G$1" pin="2"/>
