@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.4.1">
+<eagle version="9.0.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -3869,7 +3869,7 @@ Leakage Inductance: 0.5 uH
 <part name="R10" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="8.2k"/>
 <part name="R9" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="8.2k"/>
 <part name="R8" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="8.2k"/>
-<part name="C1" library="HyTechDevices" deviceset="CAP" device="" value="220uF"/>
+<part name="C1" library="HyTechDevices" deviceset="CAP" device="" value="180µF"/>
 <part name="U$3" library="HyTechDevices" deviceset="JUMPER" device=".3"/>
 <part name="U$4" library="HyTechDevices" deviceset="JUMPER" device=".3"/>
 <part name="D2" library="HyTechDevices" deviceset="DIODE" device="0805"/>

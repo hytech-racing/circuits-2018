@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.3.1">
+<eagle version="9.0.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1582,10 +1582,11 @@ design rules under a new name.</description>
 <param name="slThermalsForVias" value="0"/>
 <param name="dpMaxLengthDifference" value="10mm"/>
 <param name="dpGapFactor" value="2.5"/>
-<param name="checkGrid" value="0"/>
 <param name="checkAngle" value="0"/>
 <param name="checkFont" value="1"/>
 <param name="checkRestrict" value="1"/>
+<param name="checkStop" value="0"/>
+<param name="checkValues" value="0"/>
 <param name="useDiameter" value="13"/>
 <param name="maxErrors" value="50"/>
 </designrules>
@@ -1928,7 +1929,8 @@ design rules under a new name.</description>
 <contactref element="U$1" pad="VIN"/>
 <contactref element="5VREG" pad="3"/>
 <wire x1="50.165" y1="75.565" x2="43.3035" y2="75.565" width="0.6096" layer="16"/>
-<wire x1="53.467" y1="72.263" x2="53.467" y2="68.072" width="0.6096" layer="16"/>
+<wire x1="53.467" y1="72.263" x2="53.467" y2="70.104" width="0.6096" layer="16"/>
+<wire x1="53.467" y1="70.104" x2="53.467" y2="68.072" width="0.6096" layer="16"/>
 <wire x1="50.165" y1="75.565" x2="53.467" y2="72.263" width="0.6096" layer="16"/>
 <contactref element="R10" pad="1"/>
 <wire x1="25.3275" y1="72.39" x2="25.3365" y2="72.381" width="0.6096" layer="16"/>
