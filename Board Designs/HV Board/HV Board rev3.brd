@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.4.1">
+<eagle version="9.0.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -4203,6 +4203,7 @@ design rules under a new name.</description>
 <param name="checkFont" value="1"/>
 <param name="checkRestrict" value="1"/>
 <param name="checkStop" value="0"/>
+<param name="checkValues" value="0"/>
 <param name="useDiameter" value="13"/>
 <param name="maxErrors" value="50"/>
 </designrules>
@@ -4430,7 +4431,7 @@ design rules under a new name.</description>
 <element name="R10" library="HyTechDevices" package="0805" value="8.2k" x="101.854" y="50.292" rot="MR180"/>
 <element name="R9" library="HyTechDevices" package="0805" value="8.2k" x="105.664" y="50.292" rot="MR0"/>
 <element name="R8" library="HyTechDevices" package="0805" value="8.2k" x="109.474" y="50.292" rot="MR180"/>
-<element name="C1" library="HyTechDevices" package="LLS2V221MELZ" value="220uF" x="189.357" y="35.941" rot="R90"/>
+<element name="C1" library="HyTechDevices" package="LLS2V221MELZ" value="180µF" x="189.357" y="35.941" rot="R90"/>
 <element name="U$3" library="HyTechDevices" package="AXIAL-0.3" value="JUMPER.3" x="145.034" y="26.162"/>
 <element name="U$4" library="HyTechDevices" package="AXIAL-0.3" value="JUMPER.3" x="193.548" y="49.276"/>
 <element name="D2" library="HyTechDevices" package="0805_D" value="DIODE0805" x="67.31" y="9.144" rot="MR0"/>

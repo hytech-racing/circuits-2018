@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.3.1">
+<eagle version="9.0.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -2785,7 +2785,7 @@ Source: http://www.molex.com</description>
 <instance part="X2" gate="-8" x="101.6" y="78.74" rot="R90"/>
 <instance part="X2" gate="-4" x="30.48" y="38.1"/>
 <instance part="X2" gate="-11" x="241.3" y="111.76" rot="R180"/>
-<instance part="X2" gate="-6" x="261.62" y="109.22"/>
+<instance part="X2" gate="-6" x="284.48" y="106.68"/>
 <instance part="R2" gate="G$1" x="-58.42" y="55.88" rot="R270"/>
 <instance part="R3" gate="G$1" x="66.04" y="55.88" rot="R270"/>
 <instance part="R5" gate="G$1" x="198.12" y="127"/>
@@ -3296,6 +3296,7 @@ Source: http://www.molex.com</description>
 <segment>
 <pinref part="U$3" gate="G$1" pin="S"/>
 <pinref part="X2" gate="-6" pin="S"/>
+<wire x1="281.94" y1="106.68" x2="259.08" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">

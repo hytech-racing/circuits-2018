@@ -5339,8 +5339,10 @@ when optocoupler resistors are removed!</text>
 <text x="111.76" y="76.2" size="5.08" layer="90">Shutdown Circuit and BSPD</text>
 <text x="314.96" y="17.78" size="1.778" layer="91">Use these jumpers to select
 DASH_IO{7,8} output voltage</text>
-<text x="200.66" y="149.86" size="1.778" layer="91">⇦ Pullup/down resistors to detect open circuit.
-Install one per signal on ACCEL1 and ACCEL2.</text>
+<text x="200.66" y="149.86" size="1.778" layer="91">⇦ Pullup/down resistors to detect open circuit. Install
+only one per signal on ACCEL1 and ACCEL2.</text>
+<text x="228.6" y="134.62" size="1.778" layer="91">⇦ Only install JMP1 and JMP2
+if U$24 is not installed.</text>
 </plain>
 <moduleinsts>
 <moduleinst name="BSPD1" module="BSPD" x="251.46" y="25.4"/>
